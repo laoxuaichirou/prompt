@@ -1,0 +1,29 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W052/template-control.png",
+    "results/W052/template-new-person.png"
+  ],
+  "checks": [
+    {
+      "requirement": "身份解耦JSON及两图",
+      "result": "符合",
+      "evidence": "JSON不固化发型五官；分别生成原人物控制与目标女性图"
+    },
+    {
+      "requirement": "身份替换",
+      "result": "基本符合",
+      "evidence": "目标女性黑短发小痣可辨，蓝衣与客厅构图基本保留"
+    },
+    {
+      "requirement": "背景规则与画面元素",
+      "result": "存在问题",
+      "evidence": "控制图将明令保留的花朵电视改成雪山湖泊；两图模板细节不一致"
+    }
+  ],
+  "conclusion": "反推→换角色流程实际执行，主体可替换，但不能保证背景规则完整保留；原语言只是推测。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:52:08+08:00",
+  "stability_verified": false
+}

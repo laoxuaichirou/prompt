@@ -5813,13 +5813,48 @@
           "reference_material": [
             "materials/bottle-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W051/rewritten-still-life.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "961d91833b31caeab3e3ab00c837b9fdd6509fb0c2a67c847cdbc6d3afcada91",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-11e25fed-a408-4b07-9d44-99473599f88f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:48:36+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:46:03+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W051/rewritten-still-life.png"
+      ],
+      "checks": [
+        {
+          "requirement": "通用静物分流且中文单段",
+          "result": "符合",
+          "evidence": "先生成连续中文静物提示词，明确无可识别文字，记录在meta_output"
+        },
+        {
+          "requirement": "瓶子材质与光",
+          "result": "符合",
+          "evidence": "黑齿盖、琥珀窄颈圆肩瓶、石面暖光透射，无品牌或多余物件"
+        }
+      ],
+      "conclusion": "所选通用分支最小用例符合主要要求；其他两分支没有据此验证。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:52:08+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[已投产·5分] 图像 Prompt 改写专家丨三合一（喂给LLM）.md",
       "original_sha256": "8da9e5c1b25a396a573c3d5b6d659243345415a2736bc3e359f19d443af1cf75",
@@ -5880,8 +5915,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W052/template-control.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "cbee417fbf6b3871052a227a29fe1e7d38ec45e1bf220fdbe483e27531184ca9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-44144fd6-2448-4259-8fe1-988699317f5a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:45+08:00"
         },
         {
           "case_id": "template-new-person",
@@ -5890,13 +5938,54 @@
             "results/W014/fashion-01.png",
             "materials/adult-woman-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W052/template-new-person.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "c8b8d8c828280981bc06de00e0e6a101ceebbddeb5e4c7b409ac1c3cbae1c6c8",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-060100ac-cf81-45f2-930e-6e2ef8d17830.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:45+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:46:03+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W052/template-control.png",
+        "results/W052/template-new-person.png"
+      ],
+      "checks": [
+        {
+          "requirement": "身份解耦JSON及两图",
+          "result": "符合",
+          "evidence": "JSON不固化发型五官；分别生成原人物控制与目标女性图"
+        },
+        {
+          "requirement": "身份替换",
+          "result": "基本符合",
+          "evidence": "目标女性黑短发小痣可辨，蓝衣与客厅构图基本保留"
+        },
+        {
+          "requirement": "背景规则与画面元素",
+          "result": "存在问题",
+          "evidence": "控制图将明令保留的花朵电视改成雪山湖泊；两图模板细节不一致"
+        }
+      ],
+      "conclusion": "反推→换角色流程实际执行，主体可替换，但不能保证背景规则完整保留；原语言只是推测。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:52:08+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
       "original_sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
@@ -5944,8 +6033,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W053/action-mid-01.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "8fcc6402b8417b9b3d7e7c3dab504b036b4dc593f0f24cead9b2cc511799c268",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fbbcf86a-580a-43a8-b0cb-e4a276b8e571.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:33+08:00"
         },
         {
           "case_id": "action-mid-02",
@@ -5953,8 +6055,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W053/action-mid-02.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "2f561a7723c746b735ac404b807cb70e77b9a183ae42325109df72cae2832035",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7f05642f-5437-477a-9baa-08e41de670f4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:07+08:00"
         },
         {
           "case_id": "action-mid-03",
@@ -5962,13 +6077,55 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W053/action-mid-03.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e00be04c31fa66920841a3041a713dd34ca02aeb1ec8c8ee7cf3a4993b313d42",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d7dc7cb5-c1cd-4cf1-b5b9-ecb3ca68e63f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:33+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:46:03+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W053/action-mid-01.png",
+        "results/W053/action-mid-02.png",
+        "results/W053/action-mid-03.png"
+      ],
+      "checks": [
+        {
+          "requirement": "三组动作和自然情绪",
+          "result": "符合",
+          "evidence": "合掌、手扶对侧肩、双臂摊手三姿态不同，表情均克制"
+        },
+        {
+          "requirement": "腰上中景及同一人物",
+          "result": "基本符合",
+          "evidence": "三图主要为上半身，未出现膝鞋；发际线胡茬蓝衣暖客厅连续"
+        },
+        {
+          "requirement": "相似度≤30%",
+          "result": "未量化",
+          "evidence": "原模板没有给相似度计算方法，不提供伪精确百分比"
+        }
+      ],
+      "conclusion": "所选动作表情模板经文本扩写和三次实际生图，主要可见要求符合；未验证其余7模板。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:52:08+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[已投产·4分] 【LLM】元提示词模板.md",
       "original_sha256": "a2c5266096c81af94fe9e504bde4336eba66e8064d44d49b2752bccef5cadd71",
@@ -6006,13 +6163,53 @@
           "case_id": "enhanced-reading-poster",
           "final_prompt": "一张竖向米白纸质活动海报，上方居中以深棕色印刷衬线汉字写出\"午后有光\"，下方仅有较小的\"慢下来，读一页\"，字形端正清晰。画面下半部，一本封面没有字的米色书摊放在浅木桌上，旁边只有一只无图案白色陶瓷杯，杯口有很轻的热气。左侧窗光在木桌和纸页上投下斜向柔和阴影，背景为无装饰米白墙面，纸面细微纤维、木纹与陶瓷反光自然可见，棕白暖色写实静物摄影，画幅3:4。",
           "reference_material": [],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W054/enhanced-reading-poster.png",
+              "width": 1086,
+              "height": 1448,
+              "sha256": "c672a2fbacda93aaaa7c16954881321ccbcf2c03e103f50a6d70131c70f68ae6",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-833e9769-ce34-4b72-9a5d-7c27d3a85552.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:49:58+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:46:03+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W054/enhanced-reading-poster.png"
+      ],
+      "checks": [
+        {
+          "requirement": "标题、副标题完整转录",
+          "result": "符合",
+          "evidence": "午后有光与慢下来，读一页均可读，棕白布局和暖窗光符合"
+        },
+        {
+          "requirement": "书本状态",
+          "result": "不符合",
+          "evidence": "最终提示词要求一本书摊放，生成图中的书闭合"
+        },
+        {
+          "requirement": "元输出无标签",
+          "result": "符合",
+          "evidence": "输出连续描述且没有8K或masterpiece等元标签"
+        }
+      ],
+      "conclusion": "增强元提示词及实际海报已完成，文字符合但书本开合状态偏离，不判完整通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:52:08+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词增强.md",
       "original_sha256": "db4b11514fbb6b98aa46c03003a57b9052f23c21e125087e53dfcffa2a063c0a",
@@ -6058,18 +6255,160 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W055/cool-relighting.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "2d4a31db4b3970aecc0440f7687ad49b9ad8456b038d0ffacc2a35090b7e2a32",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fa4b4617-b880-444c-8673-e1e9c575b92c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:50:37+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:46:03+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W055/cool-relighting.png"
+      ],
+      "checks": [
+        {
+          "requirement": "保留主体与构图",
+          "result": "基本符合",
+          "evidence": "同一男性、扶沙发交叉腿与主要客厅元素保留"
+        },
+        {
+          "requirement": "冷色侧逆光与青蓝暗部",
+          "result": "基本符合",
+          "evidence": "窗外/暗部及地板明显冷蓝，头肩侧缘有轮廓光，肤色仍自然保留暖色"
+        },
+        {
+          "requirement": "权重适配记录",
+          "result": "符合",
+          "evidence": "元输出有1.2/1.3，最终工具用自然语言，不冒充实际SD权重"
+        }
+      ],
+      "conclusion": "光影元提示词→重绘最小用例主要符合；不验证SD权重和其他Agent能力。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:52:08+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[仅参考·3分] 【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路.md",
       "original_sha256": "a1e6849d478c4f04a826aa23dd3a987f4bdfdd58816469d6320ab4a2dbace0b9",
       "original_test_status": "存在问题",
       "original_test_conclusion": "光影编辑主体保留良好；分辨率及原SD权重未验证，不能算原模型完整通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W056",
+      "source_id": "T065",
+      "title": "提示词设计（教学用-反推部分修改）",
+      "categories": [
+        "prompt"
+      ],
+      "type": "教学架构师v4元提示词→多图空间合成→真实生图",
+      "test_input": {
+        "模式": "2 多图逻辑缝合",
+        "request": "把图1的琥珀瓶放在图2客厅茶几上，保留图2环境光影，写实无字。"
+      },
+      "reference_material": [
+        "materials/bottle-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "明确选择第四段完整v4，旧v1–v3不混入；元输出只含一段中文最终提示词，无解析过程/负向字段。",
+        "2倍烛台是测试输入补充尺度，非测量真实商品。",
+        "将未修改元素明确保留，增加自然接触阴影来检查多图合成空间逻辑。"
+      ],
+      "selected_source_prompt": "Role: 视觉提示词架构与逻辑增强专家 v4",
+      "meta_output": "将图一中的无品牌琥珀玻璃瓶放在图二客厅的木茶几前景中央，瓶身保持图一窄颈圆肩、厚玻璃底、黑色细齿瓶盖和通透琥珀色，瓶子底部稳固接触桌面，尺寸约为旁边烛台高度的两倍，不漂浮；图二湖景日落客厅的米色沙发、右侧木柜花朵电视、左侧大窗和金色湖面保持原有布局，瓶身承接左窗暖金侧光并在桌面形成自然接触阴影，玻璃折射与木桌反光一致，写实静物与室内环境融合，横向3:2构图，图中不加入人物、品牌或可识别文字。",
+      "cases": [
+        {
+          "case_id": "bottle-in-room",
+          "final_prompt": "将图一中的无品牌琥珀玻璃瓶放在图二客厅的木茶几前景中央，瓶身保持图一窄颈圆肩、厚玻璃底、黑色细齿瓶盖和通透琥珀色，瓶子底部稳固接触桌面，尺寸约为旁边烛台高度的两倍，不漂浮；图二湖景日落客厅的米色沙发、右侧木柜花朵电视、左侧大窗和金色湖面保持原有布局，瓶身承接左窗暖金侧光并在桌面形成自然接触阴影，玻璃折射与木桌反光一致，写实静物与室内环境融合，横向3:2构图，图中不加入人物、品牌或可识别文字。",
+          "reference_material": [
+            "materials/bottle-synthetic.png",
+            "results/W009/tv-room.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:49:07+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词设计（教学用-反推部分修改）.md",
+      "original_sha256": "49116938c3aa95107c8e1431fd9ce8c3929db81dab4eafb1d6e17760d6ccfd95",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "v4单图局部属性编辑最小用例符合要求；不代表整个教学页所有版本通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W057",
+      "source_id": "T069",
+      "title": "MJ提示词生成器system prompt（原Z image页，标题错配）",
+      "categories": [
+        "prompt"
+      ],
+      "type": "MJ提示词生成器元提示词→目标格式字符串→ChatGPT适配实际生图",
+      "test_input": {
+        "主题": "玻璃球内的微型植物天文台悬浮雾山",
+        "风格": "写实材质建筑概念图",
+        "限制": "无人无字无品牌"
+      },
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原页标题错配以实际MJ生成器正文为准，先输出单一连续英文MJ字符串。",
+        "原格式示例单横线参数规范为MJ双横线，单独记录；最终工具不接受MJ参数，移除--v/--s/--style，并语义转换比例与排除项。",
+        "没有运行Midjourney、Z-image，也未验证MJ参数兼容性或版本；只属ChatGPT适配。"
+      ],
+      "selected_source_prompt": "You are an expert AI assistant…advanced Midjourney prompts",
+      "meta_output": {
+        "midjourney_format_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood --ar 16:9 --v 6.0 --s 250 --style raw --no text, logos, humans",
+        "adapted_image_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood. Horizontal 16:9. No text, logos or humans.",
+        "actual_model": "未知",
+        "original_target_model_tested": false
+      },
+      "cases": [
+        {
+          "case_id": "botanical-observatory",
+          "final_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood. Horizontal 16:9. No text, logos or humans.",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:49:07+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/模型工具/[仅参考·3分] MJ提示词生成器system prompt（原Z image页，标题错配）.md",
+      "original_sha256": "b124838bdcb8809a2b1a81b283ad5d8f5c8438f08493608a08b50e784e62e92f",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "元提示词展开后的水彩最小用例符合视觉要求，仅ChatGPT适配测试。",
       "original_evidence_is_new_test": false
     }
   }

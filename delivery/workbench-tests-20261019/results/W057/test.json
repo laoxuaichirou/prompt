@@ -1,0 +1,41 @@
+{
+  "test_id": "W057",
+  "source_id": "T069",
+  "title": "MJ提示词生成器system prompt（原Z image页，标题错配）",
+  "categories": [
+    "prompt"
+  ],
+  "type": "MJ提示词生成器元提示词→目标格式字符串→ChatGPT适配实际生图",
+  "test_input": {
+    "主题": "玻璃球内的微型植物天文台悬浮雾山",
+    "风格": "写实材质建筑概念图",
+    "限制": "无人无字无品牌"
+  },
+  "reference_material": [],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "原页标题错配以实际MJ生成器正文为准，先输出单一连续英文MJ字符串。",
+    "原格式示例单横线参数规范为MJ双横线，单独记录；最终工具不接受MJ参数，移除--v/--s/--style，并语义转换比例与排除项。",
+    "没有运行Midjourney、Z-image，也未验证MJ参数兼容性或版本；只属ChatGPT适配。"
+  ],
+  "selected_source_prompt": "You are an expert AI assistant…advanced Midjourney prompts",
+  "meta_output": {
+    "midjourney_format_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood --ar 16:9 --v 6.0 --s 250 --style raw --no text, logos, humans",
+    "adapted_image_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood. Horizontal 16:9. No text, logos or humans.",
+    "actual_model": "未知",
+    "original_target_model_tested": false
+  },
+  "cases": [
+    {
+      "case_id": "botanical-observatory",
+      "final_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood. Horizontal 16:9. No text, logos or humans.",
+      "reference_material": [],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:49:07+08:00"
+}

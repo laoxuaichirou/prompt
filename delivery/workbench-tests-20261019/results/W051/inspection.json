@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W051/rewritten-still-life.png"
+  ],
+  "checks": [
+    {
+      "requirement": "通用静物分流且中文单段",
+      "result": "符合",
+      "evidence": "先生成连续中文静物提示词，明确无可识别文字，记录在meta_output"
+    },
+    {
+      "requirement": "瓶子材质与光",
+      "result": "符合",
+      "evidence": "黑齿盖、琥珀窄颈圆肩瓶、石面暖光透射，无品牌或多余物件"
+    }
+  ],
+  "conclusion": "所选通用分支最小用例符合主要要求；其他两分支没有据此验证。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:52:08+08:00",
+  "stability_verified": false
+}

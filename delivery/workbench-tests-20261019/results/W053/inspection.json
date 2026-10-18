@@ -1,0 +1,30 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W053/action-mid-01.png",
+    "results/W053/action-mid-02.png",
+    "results/W053/action-mid-03.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三组动作和自然情绪",
+      "result": "符合",
+      "evidence": "合掌、手扶对侧肩、双臂摊手三姿态不同，表情均克制"
+    },
+    {
+      "requirement": "腰上中景及同一人物",
+      "result": "基本符合",
+      "evidence": "三图主要为上半身，未出现膝鞋；发际线胡茬蓝衣暖客厅连续"
+    },
+    {
+      "requirement": "相似度≤30%",
+      "result": "未量化",
+      "evidence": "原模板没有给相似度计算方法，不提供伪精确百分比"
+    }
+  ],
+  "conclusion": "所选动作表情模板经文本扩写和三次实际生图，主要可见要求符合；未验证其余7模板。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:52:08+08:00",
+  "stability_verified": false
+}
