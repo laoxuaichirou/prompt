@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W015/winter-page.png"
+  ],
+  "checks": [
+    {
+      "requirement": "页面视觉布局",
+      "result": "符合要求",
+      "evidence": "顶部森林主视觉，下方四张堆叠特色卡片和对应按钮，竖版941×1672。"
+    },
+    {
+      "requirement": "指定文案与人物",
+      "result": "符合要求",
+      "evidence": "永恒的优雅/柔软的针织/冬日白色/为舒适而设计及按钮可读，多处保留同一男子稀疏发际线与脸型，无Willy签名。"
+    },
+    {
+      "requirement": "冬季风格与边界",
+      "result": "符合要求",
+      "evidence": "桦树雪景、米色针织与围巾手套形成冷暖对比；交付为设计图，没有声称真实网页可交互。"
+    }
+  ],
+  "conclusion": "上传成年男性到冬季系列页面视觉的新适配用例符合主要可见要求；只验设计图，不验网页交互或真实服装商品保真。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:57:45+08:00",
+  "stability_verified": false
+}

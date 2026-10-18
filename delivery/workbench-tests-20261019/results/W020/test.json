@@ -1,0 +1,35 @@
+{
+  "test_id": "W020",
+  "source_id": "T055",
+  "title": "衣服悬浮在空中",
+  "categories": [
+    "fashion"
+  ],
+  "type": "一句概念提示词→服装悬浮参考适配",
+  "test_input": "将合成平铺刷手服变成隐形人体轮廓的悬浮服装图。",
+  "reference_material": [
+    "materials/scrubs-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "原文只一句悬浮概念，追加商品参考、背景、服装细节与排除物件是本次适配，不当成原版完整模板。",
+    "目标仅是视觉悬浮与衣物保留，不证明真实物理悬浮。"
+  ],
+  "selected_source_prompt": "A shape is an illusion created by placing clothes floating in the air.",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "floating-clothes",
+      "final_prompt": "A shape is an illusion created by placing clothes floating in the air. Use only the exact gray-blue scrub top and matching trousers from the supplied flat-lay reference. Arrange them floating vertically in a natural invisible-person silhouette on a clean light-gray studio background, with a clear air gap below the hems and a soft shadow on the floor. Preserve V neck, short sleeves, three top front pockets, blank chest tab, drawstring waist and the existing thigh pocket. Do not include a human, head, skin, visible mannequin, stethoscope, shoes, hanger, labels or text. High-quality realistic commercial clothing photo.",
+      "reference_material": [
+        "materials/scrubs-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T01:55:44+08:00"
+}

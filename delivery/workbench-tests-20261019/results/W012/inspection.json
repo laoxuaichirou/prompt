@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W012/scrubs-ad.png"
+  ],
+  "checks": [
+    {
+      "requirement": "双栏与原英文文案",
+      "result": "符合要求",
+      "evidence": "左平铺右真人，顶部BOUGHT FOR THE WARD. USED FOR THE NAP.及底部Still the best choice.清楚正确。"
+    },
+    {
+      "requirement": "人物参考绑定",
+      "result": "符合要求",
+      "evidence": "同一成年男子的稀疏发际线、短发和胡须保留，床头暖光与放松姿态符合。"
+    },
+    {
+      "requirement": "服装与配件",
+      "result": "基本符合",
+      "evidence": "平铺侧三前袋V领、白小方块、抽绳、大腿袋、听诊器与白鞋可见；真人穿同色同款，腿部和部分袋位被毯子及手遮挡，未逐部位证实。"
+    }
+  ],
+  "conclusion": "新增人物参考的双栏服装广告最小用例符合主要可见要求；被遮部分服装细节未验证，不能证明实物试穿尺寸。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:57:45+08:00",
+  "stability_verified": false
+}

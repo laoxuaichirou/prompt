@@ -1,0 +1,36 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W014/fashion-01.png",
+    "results/W014/fashion-02.png",
+    "results/W014/fashion-03.png",
+    "results/W014/fashion-04.png"
+  ],
+  "checks": [
+    {
+      "requirement": "元提示词执行与完整输出",
+      "result": "符合要求",
+      "evidence": "先保存单一英文JSON及4个Prompt，再真实生成四张独立图并逐一打开。"
+    },
+    {
+      "requirement": "三图角色绑定",
+      "result": "基本符合",
+      "evidence": "人脸来自图1、灰蓝刷手服来自图2、湖景沙发及花朵电视来自图3，各图角色没有明显混淆。"
+    },
+    {
+      "requirement": "四种姿态与景别",
+      "result": "存在问题",
+      "evidence": "站立、行走、坐姿已区分；第4张要求close-to-medium却为含全腿的坐姿广景，与第3张体态接近；第2张侧角不明显。"
+    },
+    {
+      "requirement": "严格服装保真",
+      "result": "未完全验证",
+      "evidence": "前袋与抽绳部分遮挡，不能凭四图宣称所有结构均精确一致。"
+    }
+  ],
+  "conclusion": "三图融合功能可见，但四姿态的景别区分与服装完整保真仍有问题。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:57:45+08:00",
+  "stability_verified": false
+}

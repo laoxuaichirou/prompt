@@ -1001,5 +1001,977 @@
       "original_test_conclusion": "指定自制参考的图鉴布局复现符合主要要求，结论仅限该最小用例。",
       "original_evidence_is_new_test": false
     }
+  },
+  {
+    "test": {
+      "test_id": "W011",
+      "source_id": "T092",
+      "title": "96组角度提示词",
+      "categories": [
+        "product"
+      ],
+      "type": "角度模板，八张独立参考编辑",
+      "test_input": "用新合成椅子替换上一轮其他商品，只测第1组平视全景八方位。",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "以chair reference替换<sks>模型触发占位，不加载LoRA。",
+        "每角度独立生成并复用同一参考，不能单图验收八视图。",
+        "其余95组/子页不算覆盖；照片未见结构只能推演。"
+      ],
+      "selected_source_prompt": "：eye-level + wide shot（平视全景）**\n### **plain**复制\n`<sks> front view eye-level shot wide shot<br><sks> front-right quarter view eye-level shot wide shot<br><sks> right side view eye-level shot wide shot<br><sks> back-right quarter view eye-level shot wide shot<br><sks> back view eye-level shot wide shot<br><sks> back-left quarter view eye-level shot wide shot<br><sks> left side view eye-level shot wide shot<br><sks> front-left quarter view eye-level shot wide shot`\n---\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "view-01",
+          "final_prompt": "Show the exact same fictional chair from the reference. front view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 1 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-01.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "d059733a16af89e5273ac9486c74f61fff24471c0e5bb5a2a1c113b6cc8e1be6",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-01aafef9-fdf5-4e3d-8e2d-632e8b6540f6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:47:58+08:00"
+        },
+        {
+          "case_id": "view-02",
+          "final_prompt": "Show the exact same fictional chair from the reference. front-right quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 2 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-02.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "245d530a5f42ee17709fc6ee49e32e9028d7940f6d4dcaa2236bc680537ed3f1",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-97ca0736-3c79-48a8-b373-20608ef694a7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:47:03+08:00"
+        },
+        {
+          "case_id": "view-03",
+          "final_prompt": "Show the exact same fictional chair from the reference. right side view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 3 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-03.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "2a516379af83aec57e142621ccf8f8122d577023fd2ee337f9a55790424293ee",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9ae864d4-e561-4dd4-9dcb-bf07b19f7f3c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:47:31+08:00"
+        },
+        {
+          "case_id": "view-04",
+          "final_prompt": "Show the exact same fictional chair from the reference. back-right quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 4 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-04.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "1121f3a48b98357439aa2c740b5c40de94f3bc80e9a2a557ff95e0f447590e74",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-72a951ba-34e2-4e18-bab7-fe9fba09ead8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:48:17+08:00"
+        },
+        {
+          "case_id": "view-05",
+          "final_prompt": "Show the exact same fictional chair from the reference. back view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 5 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-05.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "c6e6b6ebcc829f85836311b90315c4462980f928a8ba09642c3b6d8ec37d9ca8",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b8e9d7d2-f6cf-4da9-b3ee-ddfffafab1dc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:47:31+08:00"
+        },
+        {
+          "case_id": "view-06",
+          "final_prompt": "Show the exact same fictional chair from the reference. back-left quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 6 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-06.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "81eb32095abbdabe58d3ef962dbc9a6284d1ba710bfdb45b7ed69dd4e5eeaf62",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c02f71ed-28d0-41d8-bbca-019f0fe0106a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:48:17+08:00"
+        },
+        {
+          "case_id": "view-07",
+          "final_prompt": "Show the exact same fictional chair from the reference. left side view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 7 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-07.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "28336c28a3c38a39751fb5cc25325edc2e432780aa06e83044ef323afa32d90e",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6271690c-191f-4a32-ba5a-8dc4a221b73f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:48:53+08:00"
+        },
+        {
+          "case_id": "view-08",
+          "final_prompt": "Show the exact same fictional chair from the reference. front-left quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 8 of an eight-view comparison; do not create a grid.",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W011/view-08.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "875d4a66ee5fe386af10e67366fa8fc55de43cb34525eec177b4d7879e4360ec",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": null,
+            "save_method": "tool returned only data URL; original PNG bytes saved directly"
+          },
+          "generated_at": "2026-10-19T01:50:13+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:45:26+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W011/view-01.png",
+        "results/W011/view-02.png",
+        "results/W011/view-03.png",
+        "results/W011/view-04.png",
+        "results/W011/view-05.png",
+        "results/W011/view-06.png",
+        "results/W011/view-07.png",
+        "results/W011/view-08.png"
+      ],
+      "checks": [
+        {
+          "requirement": "八角度独立输出",
+          "result": "符合要求",
+          "evidence": "view-01至08均已生成并逐张打开，8张1312×1199，统一灰底/同椅材料。"
+        },
+        {
+          "requirement": "严格方位和角度区分",
+          "result": "不符合",
+          "evidence": "正面有效，但view-03与view-07均为相似朝向的侧偏角；view-05要求背面却仍为背部斜角；view-04与06同向背部斜角相近，未形成严格八方位环绕。"
+        },
+        {
+          "requirement": "商品几何保留",
+          "result": "存在问题/未验证",
+          "evidence": "背部新增横向黑色支撑条，正面坐垫和靠背宽高观感有变化；新露出的背部结构仅为推演，无实物依据。"
+        }
+      ],
+      "conclusion": "八视图已完整对比，方向区分与严格侧背面未满足；不把八张已出图当作八角度通过，其他角度组未执行。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:53:28+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·5分] 96组角度提示词.md",
+      "original_sha256": "14f0685c721c51ce283f46fb2633e04f4013c3a2dd5a29a87a3aae9c43f858e1",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "第一组八角度已实际对比；纯侧面不严格、产品几何有漂移，8K未达到。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W012",
+      "source_id": "T004",
+      "title": "广告创意",
+      "categories": [
+        "fashion",
+        "graphic"
+      ],
+      "type": "元提示词→双栏服装广告",
+      "test_input": "图1合成刷手服平铺，图2合成成年男子；自动提取袋位配色并填原广告模板。",
+      "reference_material": [
+        "materials/scrubs-synthetic.png",
+        "materials/adult-man-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "执行原医疗服饰元提示词，填入图中可见服装细节。",
+        "固定年轻女性改为上传成年男性身份，新增人物参考入口；不添加原参考不存在的品牌标志。",
+        "因腿部毯子遮挡，裤子被遮部分无法验证袋位，需保留验收限制。"
+      ],
+      "selected_source_prompt": "\n\n```bash\n你是专业医疗服饰广告提示词工程师。用户会提供一张参考图（平铺图或模特图），你需要根据参考图提取服装特征，填充到以下固定广告模板中。\n\n【模板】\n制作一张精致的医疗服饰品牌商业广告大片，采用自由比例和分屏排版设计。\n\n顶部横幅：在全宽区域使用厚重的白色无衬线字体标注醒目标题：BOUGHT FOR THE WARD. USED FOR THE NAP.\n\n构图：画面垂直平分为左右两个面板。\n\n左侧面板：高端产品展示。在平滑的浅灰色摄影棚背景下，精致平铺展示一套医疗刷手服：1件莫兰迪淡蓝色V领上衣（胸前带有精致的品牌小标志）、1条同色系多口袋运动剪裁长裤、1个简约的银色听诊器、以及1双洁白的专业医疗运动鞋。光影柔和，突出面料的抗皱质感和透气孔细节，具备极强的电商广告视觉吸引力。\n\n右侧面板：真实生活场景。一名年轻的女性医护人员穿着同样的淡蓝色医疗服，神情极其疲惫但放松地瘫坐在光线昏暗、温馨舒适的卧室大床上。她侧身陷入厚重的白色羽绒枕头中，身上盖着半截毛绒毯子，床头柜上凌乱地摆放着：1个外卖咖啡杯、1个正在充电的智能手机、几本医学书籍和一副黑框眼镜。画面充满生活气息与共鸣，展现高强度工作后的彻底放松。\n\n底部中心：叠加一行较小的白色说明文字，使用简洁字体：Still the best choice.\n\n视觉要求：高端摄影美学，清晰的织物纹理渲染，品牌感十足的调色。通过左侧的专业严谨与右侧的居家松弛，形成强烈的视觉对比，体现服装在不同场景下的极致舒适度。\n\n【提取规则】\n1. 颜色：主色 + 撞色（如 dusty rose + bright pink drawstring）\n2. 上衣：领型 / 袖长 / 所有可见口袋位置 / 品牌标签位置 / 特殊细节（肩环/开衩等）\n3. 下装：裤型 / 腰头类型 / 所有可见口袋位置 / 裤脚细节\n4. 配件：根据参考图判断是否需要保留（平铺图通常不需要额外配件，模特图可能已有鞋/听诊器）\n5. 输出时必须追加：严格以用户提供的参考图为准...\n\n【禁止】\n- 不要编造参考图中没有的细节\n- 不要简化口袋数量\n- 不要改变颜色\n\n【输出】\n只输出填充后的完整中文提示词。\n```\n",
+      "meta_output": "制作一张精致医疗服饰商业广告，左右两个等宽面板。顶部横跨全宽用醒目白色无衬线字体准确写“BOUGHT FOR THE WARD. USED FOR THE NAP.”。左侧浅灰摄影棚平铺展示图1同款整套服装：与服装参考图一致的灰蓝色短袖V领刷手服，上衣有胸前一个带空白白色小方块标记的贴袋、下摆左右两个大贴袋；同色松紧抽绳直筒长裤，两个斜插口袋及参考图画面左侧一个大腿贴袋。保留可见袋位、领口、抽绳与色调，不增加背袋或文字商标。附参考图中的一副银黑听诊器和一双白鞋，柔光、纹理清楚。右侧用图2的同一虚构成年男性作为医护模特，参考人物的稀疏后退发际线、短黑发夹少量灰、淡胡须、脸型和五官保持，不美化成另一张年轻脸。穿完全相同的灰蓝刷手服，疲惫但放松地靠在温馨卧室床的白色枕头上，毛绒毯盖住小腿，不遮挡上衣主要口袋。床头柜有外卖咖啡、充电手机、无字封面的书和黑框眼镜，暗暖床头光。底部准确写白色小字“Still the best choice.”。商业摄影质感，左右服装保持，严格以用户提供的参考图为准。",
+      "cases": [
+        {
+          "case_id": "scrubs-ad",
+          "final_prompt": "制作一张精致医疗服饰商业广告，左右两个等宽面板。顶部横跨全宽用醒目白色无衬线字体准确写“BOUGHT FOR THE WARD. USED FOR THE NAP.”。左侧浅灰摄影棚平铺展示图1同款整套服装：与服装参考图一致的灰蓝色短袖V领刷手服，上衣有胸前一个带空白白色小方块标记的贴袋、下摆左右两个大贴袋；同色松紧抽绳直筒长裤，两个斜插口袋及参考图画面左侧一个大腿贴袋。保留可见袋位、领口、抽绳与色调，不增加背袋或文字商标。附参考图中的一副银黑听诊器和一双白鞋，柔光、纹理清楚。右侧用图2的同一虚构成年男性作为医护模特，参考人物的稀疏后退发际线、短黑发夹少量灰、淡胡须、脸型和五官保持，不美化成另一张年轻脸。穿完全相同的灰蓝刷手服，疲惫但放松地靠在温馨卧室床的白色枕头上，毛绒毯盖住小腿，不遮挡上衣主要口袋。床头柜有外卖咖啡、充电手机、无字封面的书和黑框眼镜，暗暖床头光。底部准确写白色小字“Still the best choice.”。商业摄影质感，左右服装保持，严格以用户提供的参考图为准。",
+          "reference_material": [
+            "materials/scrubs-synthetic.png",
+            "materials/adult-man-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W012/scrubs-ad.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "aaac375838881b26de5bd42c5c0641ac79beb31959b2bd0993e5ebaf966a8868",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fb02d3b6-b598-4828-91a8-657160f50436.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:51:47+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:45:26+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W012/scrubs-ad.png"
+      ],
+      "checks": [
+        {
+          "requirement": "双栏与原英文文案",
+          "result": "符合要求",
+          "evidence": "左平铺右真人，顶部BOUGHT FOR THE WARD. USED FOR THE NAP.及底部Still the best choice.清楚正确。"
+        },
+        {
+          "requirement": "人物参考绑定",
+          "result": "符合要求",
+          "evidence": "同一成年男子的稀疏发际线、短发和胡须保留，床头暖光与放松姿态符合。"
+        },
+        {
+          "requirement": "服装与配件",
+          "result": "基本符合",
+          "evidence": "平铺侧三前袋V领、白小方块、抽绳、大腿袋、听诊器与白鞋可见；真人穿同色同款，腿部和部分袋位被毯子及手遮挡，未逐部位证实。"
+        }
+      ],
+      "conclusion": "新增人物参考的双栏服装广告最小用例符合主要可见要求；被遮部分服装细节未验证，不能证明实物试穿尺寸。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:57:45+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/海报封面/[待测试·4分] 广告创意.md",
+      "original_sha256": "05fce292ec1f330cf3104c43b4cfa199c4d9708ba720636e0366ed8abaea8043",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三次适配文字子项均命中，但服装细节在穿着侧受遮挡和裤脚变化影响；整体存在问题。三次成功不代表稳定性已验证，不冒充原模型实测。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W013",
+      "source_id": "T007",
+      "title": "商业广告25分镜",
+      "categories": [
+        "fashion",
+        "story"
+      ],
+      "type": "直接网格广告提示词＋填充三幕变量",
+      "test_input": "人物图＋服装图，填入诊所休息区的25个静态服装广告镜头。",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原文竖幅总图与5×5每格横16:9有几何冲突，本适配优先25格与横16:9子格，因此总图16:9，不声称原文所有布局同时满足。",
+        "填入三幕场景及25格动作，人物/产品分别绑定参考图。",
+        "原文8K和100%保证改为高细节目标与实际验收；原文原样另存。",
+        "只测静态广告分镜，不宣称生成广告视频。"
+      ],
+      "selected_source_prompt": "\n\n```bash\nA pure vertical 5x5 image grid collage containing 25 horizontal 16:9 panels, edge-to-edge, no text, no borders, no watermarks, photorealistic cinematic commercial photography, high-end color grading, 8k resolution, sharp focus, shallow depth of field.\n\n--- VISUAL ANCHOR SETTING (USER DEFINED) ---\nKey reference frame position: 【Act 1 / Act 2 / Act 3】\nAll panels strictly match: character's face, product's design, lighting tone, color style from references\n------------------------------------------\n\n--- MANDATORY COMMERCIAL CONTINUITY ---\n1. Fixed character: face, hair, outfit, makeup 100% unchanged in all 25 panels\n2. Fixed product: shape, color, texture, details 100% consistent, no occlusion, always clear visual focus\n3. Unified light logic & color grade, no scene jump, no style inconsistency\n4. Complete 3-act narrative: Setup → Development → Closing\n---------------------------------------\n\nCore Character: Match reference image\nCore Product: Match reference image\n\nAct 1 (Rows 1-2): 【Scene 1 + Light + Narrative action】\nAct 2 (Row 3): 【Scene 2 + Light + Product display + Close-up】\nAct 3 (Rows 4-5): 【Scene 3 + Light + Dynamic shot + Ending】\n```\n",
+      "meta_output": {
+        "key_reference_act": 2,
+        "shots": [
+          "走进休息区的全身",
+          "正面站定展示上衣",
+          "手臂稍离身体展示V领和前袋",
+          "侧面缓慢转身",
+          "镜头接近胸袋",
+          "手轻触上衣下摆但不挡口袋",
+          "双脚分开自然站姿",
+          "腰部抽绳近景",
+          "裤腿大腿贴袋近景",
+          "面部疲惫浅笑",
+          "中景双臂自然下垂",
+          "俯拍同款衣料纹理",
+          "胸袋白方块细节",
+          "裤脚直筒细节",
+          "全身四分之三侧面",
+          "走向同一空间的座椅",
+          "侧面缓缓落座",
+          "正面坐姿休息",
+          "手放在椅侧的中景",
+          "抬头向窗边望",
+          "近景自然微笑",
+          "从椅子起身",
+          "整理衣摆后自然站立",
+          "走向门口回望",
+          "回到正面全身结束"
+        ],
+        "layout": "5x5, cells16:9, overall16:9"
+      },
+      "cases": [
+        {
+          "case_id": "ad-25",
+          "final_prompt": "Create one native 5 by 5 grid with exactly 25 horizontal 16:9 panels. Overall sheet is landscape 16:9, no text, no borders or watermarks. Photorealistic cinematic clothing commercial. Image 1 supplies the same fictional adult man, preserving thinning hairline, short dark hair and facial stubble. Image 2 supplies the exact gray-blue scrub set with V neck, three front top pockets, blank white chest tab, drawstring straight pants and its visible thigh pocket. Keep clothing construction consistent throughout. Same quiet clinic staff lounge with warm window side light and restrained neutral grade in all panels. Three acts: rows 1-2 arrival and clothing introduction, row 3 details, rows 4-5 rest and exit. Reference key frame is Act 2. Read panels in row-major order:\n1. 走进休息区的全身.\n2. 正面站定展示上衣.\n3. 手臂稍离身体展示V领和前袋.\n4. 侧面缓慢转身.\n5. 镜头接近胸袋.\n6. 手轻触上衣下摆但不挡口袋.\n7. 双脚分开自然站姿.\n8. 腰部抽绳近景.\n9. 裤腿大腿贴袋近景.\n10. 面部疲惫浅笑.\n11. 中景双臂自然下垂.\n12. 俯拍同款衣料纹理.\n13. 胸袋白方块细节.\n14. 裤脚直筒细节.\n15. 全身四分之三侧面.\n16. 走向同一空间的座椅.\n17. 侧面缓缓落座.\n18. 正面坐姿休息.\n19. 手放在椅侧的中景.\n20. 抬头向窗边望.\n21. 近景自然微笑.\n22. 从椅子起身.\n23. 整理衣摆后自然站立.\n24. 走向门口回望.\n25. 回到正面全身结束.\nAll panels use the same adult and product, avoid covering the featured garment detail. Fine photographic detail, native output dimensions will be recorded; no promise of true 8K or 100 percent identity.",
+          "reference_material": [
+            "materials/adult-man-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W013/ad-25.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "2fa347f648ce0ce0fbf79ef82e0ed0d12db9245e23fdec6c29d27dcee71d3c15",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bbe3b0ab-a689-4b8e-b42f-45e47c2e2e16.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:53:28+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:45:26+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W013/ad-25.png"
+      ],
+      "checks": [
+        {
+          "requirement": "25格与三幕",
+          "result": "符合要求",
+          "evidence": "5×5共25格，进场/展示/细节/休息/离开序列可见，总图1672×941约16:9。"
+        },
+        {
+          "requirement": "布局冲突适配",
+          "result": "已记录",
+          "evidence": "原整体竖幅与子格横16:9不兼容，本例优先横幅25格，不算原全条件通过。"
+        },
+        {
+          "requirement": "边框与人物/服装严格连续",
+          "result": "存在问题",
+          "evidence": "图中有白色分隔线；部分远景格脸部和发量观感变化；细节格无脸，不能核实25格人物身份均一致，部分袋位被遮挡或简化。"
+        }
+      ],
+      "conclusion": "静态25格广告完成，但边框、细小人物和服装一致性不足；无视频生成测试。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:57:45+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[待测试·3分] 商业广告25分镜.md",
+      "original_sha256": "c91e24de6b945bc88e19a4fe2dee4eac29cdac9714fd4297b535cd29c4e35ea0",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "25格数量与大致三幕命中，边框、无遮挡和8K要求未满足；仅静态适配测试，不是视频生成通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W014",
+      "source_id": "T011",
+      "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+      "categories": [
+        "fashion"
+      ],
+      "type": "三参考元提示词→英文JSON→四张独立图片",
+      "test_input": "图1成年男子身份、图2刷手服、图3本轮湖景客厅；四种适配姿态。",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选取原优化英文元提示词，去掉教学分析和重复中译。",
+        "执行得到一个英文JSON对象，四Prompt均绑定三图角色。",
+        "Mina仅原示例别名，不覆盖真实参考脸；不推断真实族裔。",
+        "工作台版移除未获工具保证的8K/绝对保真承诺，改为生成后核对像素与身份；原文保留。"
+      ],
+      "selected_source_prompt": "# Role: AI Visual Fashion Compiler (Context-Aware Edition)\n\n## 🎯 OBJECTIVE\nAnalyze 3 input images to generate 4 diverse, photorealistic prompts.\nThe AI must intelligently adapt the **Model's Pose** to fit the **Scene (Image 3)** naturally.\n**CRITICAL: OUTPUT MUST BE A SINGLE JSON OBJECT IN ENGLISH. NO EXTRA CONTENT.**\n\n## 📥 INPUT MAPPING\n*   **Image 1**: The Face (Person Reference) - Use <image> placeholder for image input\n*   **Image 2**: The Outfit (Clothing Reference) - Use <image> placeholder for image input\n*   **Image 3**: The Scene (Environment Reference) - Use <image> placeholder for image input\n\n## 🧠 ANALYSIS & CREATIVE LOGIC\n1.  **Analyze Image 1 (Face)**:\n    *   Extract race, facial features (e.g., almond eyes, soft lips, sharp jawline), hairstyle (length, texture, color), makeup style (natural, smoky, matte). Assign name \"Mina\".\n    *   *Logic*: `VAR_MODEL` = \"A photorealistic portrait of 'Mina', , , , , realistic skin texture, 8k detail\"\n\n2.  **Analyze Image 2 (Outfit)**:\n    *   Extract clothing items (top, bottom, outerwear), color palette, fabric texture (e.g., cotton, silk, leather), accessories (e.g., necklace, belt, gloves, bag, shoes). Ignore background completely.\n    *   *Logic*: `VAR_OUTFIT` = \"wearing  in  with , paired with  and matching , well-fitted silhouette\"\n\n3.  **Analyze Image 3 (Scene)**:\n    *   Extract location (e.g., urban street, park bench, café interior), lighting type (e.g., golden hour, neon backlight, soft indoor light), atmosphere (e.g., cozy, vibrant, minimalist), foreground/midground elements (e.g., flower bed, wooden table, street lamp).\n    *   *Logic*: `VAR_ENV` = \"[Location], , , \"\n    *   *Style Tag*: One concise English keyword (e.g., \"Autumn\", \"Urban\", \"Elegant\", \"Casual\").\n\n4.  **✨ DYNAMIC POSE GENERATION (The Upgrade)**:\n    *   Generate 4 *distinct, non-repeating* poses that logically fit `VAR_ENV` AND match the outfit's style (e.g., formal dress → no intense sports poses; casual wear → flexible dynamic poses).\n    *   **Pose 1 (Full Body)**: A pose interacting with the scene's elements (e.g., leaning on a street lamp, touching flower petals, sitting on a café chair).\n    *   **Pose 2 (Dynamic/Motion)**: A natural movement pose suitable for the scene (e.g., walking along the path, flipping hair in the breeze, turning around gently).\n    *   **Pose 3 (Relaxed/Vibe)**: A casual relaxed pose (e.g., leaning against a wall with hands in pockets, lounging on a bench, holding a scene-relevant prop like a book or coffee cup).\n    *   **Pose 4 (Cinematic)**: An artistic angle or emotional pose matching the lighting (e.g., looking into the sunset, side profile against neon light, soft smile with backlit hair).\n\n## 📝 PROMPT ASSEMBLY\n*   **P1**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 1 fitting the Scene], full body shot, sharp focus, background is [VAR_ENV]`\n*   **P2**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 2 with Motion], side angle shot, slight natural motion blur, background is [VAR_ENV]`\n*   **P3**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 3 Relaxed], medium shot, depth of field, soft bokeh, background is [VAR_ENV]`\n*   **P4**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 4 Cinematic], emotional expression, dramatic lighting enhancement, close-up to medium shot, background is [VAR_ENV]`\n\n## 📤 FINAL OUTPUT FORMAT\n**STRICT RULE**: Output ONLY the raw JSON string. No markdown, no code blocks, no explanations, no extra text.\nNote: \"ModelsLogic\" and \"OutfitLogic\" are analysis summaries (not part of the final Prompts).\n\n{\n  \"style\": \"Style Keyword from Image 3 (One English Word)\",\n  \"ModelsLogic\": \"Full text of VAR_MODEL (English)\",\n  \"OutfitLogic\": \"Full text of VAR_OUTFIT (English)\",\n  \"Prompt1\": \"Full text of P1 (English)\",\n  \"Prompt2\": \"Full text of P2 (English)\",\n  \"Prompt3\": \"Full text of P3 (English)\",\n  \"Prompt4\": \"Full text of P4 (English)\"\n}\n\n",
+      "meta_output": {
+        "style": "Lakeside",
+        "ModelsLogic": "the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture",
+        "OutfitLogic": "the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes",
+        "Prompt1": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, standing next to the sofa with one hand lightly touching the sofa back, full body with both feet visible. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+        "Prompt2": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, walking gently beside the sofa, side angle, slight natural motion blur while the face remains clear. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+        "Prompt3": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, seated naturally at the edge of the sofa, hands relaxed, medium shot and soft background bokeh. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+        "Prompt4": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, close-to-medium portrait turned toward the sunset window, quiet reflective expression, cinematic warm rim light. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked."
+      },
+      "cases": [
+        {
+          "case_id": "fashion-01",
+          "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, standing next to the sofa with one hand lightly touching the sofa back, full body with both feet visible. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+          "reference_material": [
+            "materials/adult-man-synthetic.png",
+            "materials/scrubs-synthetic.png",
+            "results/W009/tv-room.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W014/fashion-01.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "7f8911044e074ad7615cf95b6ae8ee695b75aa268e76cbe6e75f2949d2c6efa9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6b4db167-865a-4a14-bedd-e30af979413e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:53:23+08:00"
+        },
+        {
+          "case_id": "fashion-02",
+          "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, walking gently beside the sofa, side angle, slight natural motion blur while the face remains clear. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+          "reference_material": [
+            "materials/adult-man-synthetic.png",
+            "materials/scrubs-synthetic.png",
+            "results/W009/tv-room.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W014/fashion-02.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "17adeaa815dff45d0449de388942406f342cc2dabe77134d921bf1a31a4d9661",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bdfecb9c-02f0-42ed-b856-cdea7bba18d1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:54:13+08:00"
+        },
+        {
+          "case_id": "fashion-03",
+          "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, seated naturally at the edge of the sofa, hands relaxed, medium shot and soft background bokeh. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+          "reference_material": [
+            "materials/adult-man-synthetic.png",
+            "materials/scrubs-synthetic.png",
+            "results/W009/tv-room.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W014/fashion-03.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "49dbc6b55a92bffd29e58e849649611f2f7f9a84a36527529974430df8ad46c2",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c390ba7f-1fd1-445c-bbaa-ae734140c65c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:52:38+08:00"
+        },
+        {
+          "case_id": "fashion-04",
+          "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, close-to-medium portrait turned toward the sunset window, quiet reflective expression, cinematic warm rim light. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+          "reference_material": [
+            "materials/adult-man-synthetic.png",
+            "materials/scrubs-synthetic.png",
+            "results/W009/tv-room.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W014/fashion-04.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "e4c5b540e0bc9856ffed2f669fee8f722bc100dc42f8fcb36eabe4d6df72244d",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-309db25f-0f48-4f0f-9b3e-ae905e5fbb23.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:54:06+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:45:26+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W014/fashion-01.png",
+        "results/W014/fashion-02.png",
+        "results/W014/fashion-03.png",
+        "results/W014/fashion-04.png"
+      ],
+      "checks": [
+        {
+          "requirement": "元提示词执行与完整输出",
+          "result": "符合要求",
+          "evidence": "先保存单一英文JSON及4个Prompt，再真实生成四张独立图并逐一打开。"
+        },
+        {
+          "requirement": "三图角色绑定",
+          "result": "基本符合",
+          "evidence": "人脸来自图1、灰蓝刷手服来自图2、湖景沙发及花朵电视来自图3，各图角色没有明显混淆。"
+        },
+        {
+          "requirement": "四种姿态与景别",
+          "result": "存在问题",
+          "evidence": "站立、行走、坐姿已区分；第4张要求close-to-medium却为含全腿的坐姿广景，与第3张体态接近；第2张侧角不明显。"
+        },
+        {
+          "requirement": "严格服装保真",
+          "result": "未完全验证",
+          "evidence": "前袋与抽绳部分遮挡，不能凭四图宣称所有结构均精确一致。"
+        }
+      ],
+      "conclusion": "三图融合功能可见，但四姿态的景别区分与服装完整保真仍有问题。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:57:45+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/人像摄影/[已投产·5分] AI时尚丨JSON人物场景动作丨LLM提示词优化.md",
+      "original_sha256": "86ff0fcbfd9f644a18a837f5f928054cf516790b35f3ecd61912d593ce78ee4c",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三图融合4图已实测，场景与服装大体有效；动态姿势指令失效，景别多样性较有限。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W015",
+      "source_id": "T017",
+      "title": "【服装展示】冬季时尚系列落地页设计，雪景",
+      "categories": [
+        "fashion"
+      ],
+      "type": "固定文生落地页→上传人物的页面视觉适配",
+      "test_input": "合成成年男性照片作为人物输入，制作虚构冬季针织系列页面设计图。",
+      "reference_material": [
+        "materials/adult-man-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "固定欧亚年轻女性长相改为上传成年男性，新增人物照片入口。",
+        "丝绸长裙改为米色长裤，保持冬季针织系列，属于明确适配而非原版。",
+        "羊绒卖点改为中性针织描述，删除Willy作者签名。",
+        "只验证视觉设计图，不冒充可点击的真实落地页。"
+      ],
+      "selected_source_prompt": "\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/be7321ca-1dd3-479d-b870-e814440a9f4c/%E9%A2%84%E8%A7%88%E5%9B%BE.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667EYQ63Z3%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091848Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJIMEYCIQCUghr70%2FCnE6z9KJVJPBJTwYWqbvFzTLRnRr8S5fFI4AIhAKb4leHs79niQkiw3cmryLU5dbfKUCeSkmddXjbLwoNLKogECPn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzpKf0gZn2yBc2tx18q3AMGJOxGaxl%2Fqiw8WxFvOMfthQPORlgDo3arciHPQbYZGPtqY0ju%2FfvEpmD7ISuTnumhm66KfJ%2BjBmO1N29FwBGp%2F9QsV%2BmDgJsJcwJHhVnEA%2BBiv0%2Bk5sR41mUgb28vXL%2FBIc28rT95p05WlSvEuaOzq8NmKiRQ%2BjiM%2BTX8hmoeeer0cMHXn353KMTFIqjvtSiqLTwVD8btVMe83YSADLD8cUQ5pnBZowamlW%2BTcc9wUsSsvG6quMSuGQKC3C9tSYVcbFkopFfmp1ScCt9oGY2bxECt38AdI8j0IALemdh36zHcNaWIIWeFVOy%2FlV%2BtTZuYBvXxvbTYWu%2FjEl3G02cFTye6GTNCAeMaBskdC4LNmGensnrzH%2FmKoKqdUyXlg7yBVT864n8rVduuKGz5WtqryG2dmmzOVmsABfCE0qUR352gje%2BJe9fIzhfAahPWw0d%2Bort4u3kHmiZmrCURhd%2F3xRZgBYa8CEhI0yOk4BbHoc3kx1j8jyRxT9VlS%2Bnt5g%2B3uf2sYGq7Y4WB9ymLGVJ%2FYG2NoE3PVHDXnJlDk224Op8yWrwJ0LV8sGT3RdEGHUq8bwnqjrefvPcX3MqgxWqVz6aj7tpWAgpkbYT1PK1xRN42HBEchWBVs8gZyjCx08zWBjqkAZuGEBJb5ITUzWm4yzHLsT29%2F1WMyFHniLlt9zvhigVrQmgiDsHy%2FFd3gBi3U7Y8iL9W0YPyW7KnJiQfgbNm47T39rUwKszAIX1TYkC4SW5S%2BV5nC5yplZUqO1XxalpR%2BV7SsV0KI3PrQN1FP%2F13pbRPFpAfPf8ncvvvdN4kaUbq20%2FlLU57UVA7VikkPO56TACFtCdj4vY%2FBOUW0W9wVOXQaLbN&X-Amz-Signature=faa7d27b09f794cfe65ba935313730146a6da465bb1979f0b4670cbe4679ef78&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.316079fd-bc38-8059-af6f-cd53b00d6667.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\n冬季时尚系列着陆页设计，垂直滚动布局，顶部全幅图像，下方为特色卡片，堆叠式版块。\n时尚编辑肖像：一位 20 岁出头的年轻欧亚女性，脸型纤细呈鹅蛋形，V 形下颌线，站在白雪皑皑的桦树林中。她留着波浪状的浅棕色长发，带有金色焦糖挑染，发间点缀着晶莹的雪花。她拥有一双明亮的大鹿眼，呈蓝绿色，睫毛纤长自然。皮肤如瓷般水润透亮，散发着健康的光泽，呈现玻璃肌效果。脸颊上泛着柔和的玫瑰色腮红，双唇涂有光泽粉色唇彩，绽放出灿烂的笑容，露出洁白的牙齿。鼻梁纤细挺直，五官精致柔美，散发着空灵的娃娃般美感。她身穿米色绞花针织超大毛衣，颈部舒适地缠绕着象牙色针织围巾，戴着配套的米色针织手套，轻触桦树皮。下身穿着一条带有精致花卉图案的飘逸褶皱真丝长裙。姿态优雅放松，头部微微倾斜，表情柔和梦幻。背景是白雪覆盖的桦树林，散发着美丽的光斑，雪花轻轻飘落，冬季光线柔和弥漫。使用 85mm f1.4 镜头拍摄，景深较浅，色调为冷蓝色和暖米色，呈现高端时尚编辑风格。\n特色卡片：\n- 卡片 1：“永恒的优雅”——女性在森林中的图像，描述系列的核心价值，行动号召“探索系列”\n- 卡片 2：“最柔软的羊绒”——羊绒毛衣的特写镜头，详细介绍材质和工艺，行动号召“选购毛衣”\n- 卡片 3：“冬日白色”——系列中精选的象牙色和米色单品，行动号召“选购白色单品”\n- 卡片 4：“为舒适而设计”——描述宽松版型和舒适设计，行动号召“了解更多”<br>右下角小字优雅地放置着时尚手写签名“Willy”。\n<empty-block/>\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "winter-page",
+          "final_prompt": "生成一张完整的冬季时尚系列着陆页视觉设计图，长竖幅、顶部全幅主视觉、下方四张特色卡片堆叠排列。使用上传图片里的同一虚构成年男子作为全页模特，保留稀疏后退发际线、短黑灰发、淡胡须、脸型与五官，不换成年轻女性。主视觉：本人穿米色绞花针织大毛衣、象牙围巾和米色针织手套、米色长裤，站在白雪桦树林轻触树皮，冷蓝雪景与暖米穿搭、自然微笑和柔和散景。下面四张卡片依次是“永恒的优雅”配同人森林照及按钮“探索系列”；“柔软的针织”配同款毛衣特写及“选购毛衣”；“冬日白色”配同款象牙米色单品及“选购白色单品”；“为舒适而设计”配宽松针织细节及“了解更多”。所有展示文字清晰正确，无额外作者签名，无真实品牌或价格。真实时尚编辑摄影与可读网页视觉排版，只生成设计图，不输出网页代码。",
+          "reference_material": [
+            "materials/adult-man-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W015/winter-page.png",
+              "width": 941,
+              "height": 1672,
+              "sha256": "e205bab7f64e0e551fd5c91967e876781470e8917d12975e85cd047cbbe5b302",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-97281609-391c-4dd9-9428-b77235f0f71d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T01:54:06+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:45:26+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W015/winter-page.png"
+      ],
+      "checks": [
+        {
+          "requirement": "页面视觉布局",
+          "result": "符合要求",
+          "evidence": "顶部森林主视觉，下方四张堆叠特色卡片和对应按钮，竖版941×1672。"
+        },
+        {
+          "requirement": "指定文案与人物",
+          "result": "符合要求",
+          "evidence": "永恒的优雅/柔软的针织/冬日白色/为舒适而设计及按钮可读，多处保留同一男子稀疏发际线与脸型，无Willy签名。"
+        },
+        {
+          "requirement": "冬季风格与边界",
+          "result": "符合要求",
+          "evidence": "桦树雪景、米色针织与围巾手套形成冷暖对比；交付为设计图，没有声称真实网页可交互。"
+        }
+      ],
+      "conclusion": "上传成年男性到冬季系列页面视觉的新适配用例符合主要可见要求；只验设计图，不验网页交互或真实服装商品保真。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:57:45+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·5分] 【服装展示】冬季时尚系列落地页设计，雪景.md",
+      "original_sha256": "b6f68c7cf278e80f5ef2d884fd88f2ba5aaea6b2918db34ec19c02298f352c88",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "本次静态落地页核心布局、人物服装及指定文案符合模型初评；仅一次适配，不代表中文长期稳定性或真实网页可用。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W016",
+      "source_id": "T019",
+      "title": "电商模特组图生成-根据需要修改",
+      "categories": [
+        "fashion"
+      ],
+      "type": "直接参考编辑，九景别网格",
+      "test_input": "上传本轮人物穿刷手服的客厅全身图，检查九个景别的同人同衣同光。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原固定女模特改为照片中的成年男子。",
+        "沿用原1:1及镜头顺序，明确各景别范围；不复用上一轮成图。"
+      ],
+      "selected_source_prompt": "\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/1e3431e0-57b3-4779-9a36-6f123bad582b/%E9%A2%84%E8%A7%88%E5%9B%BE_%283%29.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YQHZBT4C%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091848Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQCOAY%2FIaPG8HfF7JUim8CqRQTBuMRUnRcJy%2FG7EtmuMmAIgUFIZgM4tAfT2ci5aaGEZs2bMuZ63dY3ZjGPe4L6lPaQqiAQI%2BP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDIRX4oBcK1nrcAzGBSrcAzruGO%2FJ4whMcu58H6nEsJl%2F5eTBIu%2FhEp3esXOvc2tCXgmMz4FwwAE4sPAmb%2BcVdF%2BM2jDJ5AXH27qDYZz8iHoonhJiSfdBEQG3A93lBrQW7xFOzVIaabK98RvcCgXApbj1wT8isPbqOqc%2FcXZC0hJ%2BeCp3%2F7oGgBg3m2bFN39fNdFQXMWVajmXlh8nYEhSiDu4YWidKbgCBsIeet43hjHiDDqnq05TH6pya89hskOhhUzUfifqz1El5EQzUNFvGkCVGFJLMhSDK4rlIZk0mrsmN6TP7vlxQml1CdgPsRHjlQxXW2XlPaq794uizvPey0S3hyk%2FYkWMABvoeTS%2B5UB%2FIEMkguK426wP8390Mkct%2FHV5x9982oFnDum%2BXZIIN0rxBMDsp9lcqhPqKESvYEoI%2B1HHo6qEDoe%2FIx2ueZX8U8NvbxnC%2FmX%2Fn0lgN6dyg1KMXt8FmHBLUNHblGOR3uOReDGOTLX%2B74qunygRLg7PEC474p8rOc77PbVX7Icqp2DoZnuf5oc0ntcvRkVJDlhLsQKT5CZbE3d5cFjuNaPyhosStqK6eWo8O4p1elzUnVSoaSskztzS5KRgGQZ%2FiAstXwlA5olO%2BSHnA7AhKqX%2BxHxcYxBtzRDW8v15MMrTzNYGOqUBpUJU5sTi1RWgq4N%2B9a35mMQgKD6VUklGjrrRinG8%2Bfv7UjARgE9gXO%2F5V5HB1KWLMeSj%2F0uNH1WlDIqPT2Afg5hbFCCP5r9MD6j3Rc%2FHgjjkQ4S5jKlRpnt9Bi3lzkmAIVaJXi%2BYu0r7KVqux693ndwOMTbYET2WTQBm%2BIi%2Fm6ckbJwr8m%2F6V9j7ZFfYxHM6tviQ9dMgpz7X4%2FExsfM9AQoJpiBw&X-Amz-Signature=30f54c49f3faac29cedb1f3b3f04eca1601fcc8c11951ecc21d5d1bb388eaa64&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.316079fd-bc38-80d4-a29b-c594064bbe59.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\n根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。\n一位固定的女模特，同样的服装，同样的灯光。\n镜头拍摄顺序：\n第一行：ELS、LS、MLS\n第 2 行：MS、MCU、CU\n第 3 行：ECU（细节）、低角度拍摄、高角度拍摄\n面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。\n高端时尚杂志风格，简洁的背景，奢华电商风格。\n<empty-block/>\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "model-grid",
+          "final_prompt": "根据上传图中同一虚构成年男子、同套灰蓝刷手服与同一湖景客厅，生成一个3×3电影故事板网格，只生成一张拼图，不加文字，整体1:1。保持本人稀疏发际线、短黑灰发、淡胡须、脸型、三前袋V领上衣、抽绳裤及白鞋。相同灯光和色调。镜头顺序：第一行ELS极远环境、LS全身、MLS膝上中远；第二行MS腰上、MCU胸上、CU脸部；第三行ECU胸袋与白方块细节、明显低机位仰拍本人、明显高机位俯拍本人。各格景别和角度必须可区分，保留同一沙发、电视柜与日落窗的空间锚点。真实皮肤和杂志电商摄影，细节可见。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T01:55:44+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·5分] 电商模特组图生成-根据需要修改.md",
+      "original_sha256": "408808cea0e8b5c778945a3c4ed27984e92116c4cfcae71f28b4e82cb36af21b",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "九景别最小用例已实测，大部分层级有效，MLS偏近；单张宫格不证明跨调用一致性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W017",
+      "source_id": "T020",
+      "title": "【元提示词】商业摄影",
+      "categories": [
+        "fashion"
+      ],
+      "type": "商业摄影元提示词→四动作→四张图",
+      "test_input": "输入本轮已生成人物客厅全身图，文字：第一张清晰展示服装，另三张为不同创意姿态。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "先按原契约生成四行姿势方案，再绑定同一参考实际生成四张独立图。",
+        "动作方案由本助手执行原元提示词得到；文本输出与真实图片分别保存。"
+      ],
+      "selected_source_prompt": "\n\n```bash\n# Role\n你是一位拥有 20 年经验的资深时尚摄影师，擅长通过肢体语言挖掘模特特质，精通光影构图与视觉叙事。\n\n# Task\n请深入分析提供的【图片】（包括模特特征、服装风格、场景氛围）及【文字】描述，基于此构思四个全新的模特动作方案。\n\n# Requirements\n1. **姿势 1（电商展示）**：聚焦产品卖点。动作需清晰展示服装剪裁、面料质感或配饰细节，姿态自然大方，符合商业拍摄标准，确保主体无遮挡。\n2. **姿势 2、3、4（创意视觉）**：打破常规。利用极具张力的肢体线条、非常规视角或动态模糊感，营造强烈的视觉冲击力和艺术氛围，激发观者想象。\n3. **输出格式**：严格仅输出以下内容，不要包含任何开场白、解释、分析过程或结束语。\n\n# Output Format\n姿势 1：[电商展示动作描述]\n姿势 2：[创意视觉动作描述 A]\n姿势 3：[创意视觉动作描述 B]\n姿势 4：[创意视觉动作描述 C]\n```\n",
+      "meta_output": "姿势 1：正面全身站立，双脚平行，双臂离开躯干约十厘米，清楚展示上衣三前袋、V领、抽绳与裤腿，不交叉手臂。\n姿势 2：低机位三分之二侧身，左脚踏前形成轻微弓步，双臂向身体两侧伸展，保留服装前片并形成有张力的斜线。\n姿势 3：从侧方拍摄人物沿沙发旁缓慢走动转身，衣料下摆有自然轻微拖影而面部清晰，留出运动方向空间。\n姿势 4：靠近窗边的中近景，人物手轻触沙发靠背，抬头望向侧上方暖光，强侧逆光勾勒脸与V领，表情安静。",
+      "cases": [
+        {
+          "case_id": "pose-01",
+          "final_prompt": "使用上传参考图里的同一虚构成年男子、灰蓝刷手服和暖色湖景客厅，保留稀疏发际线、黑灰短发和淡胡须、脸型、服装袋位和抽绳；只改变拍摄姿态及机位，不换身份、服装、场景。正面全身站立，双脚平行，双臂离开躯干约十厘米，清楚展示上衣三前袋、V领、抽绳与裤腿，不交叉手臂。自然商业人像摄影，仅生成本条对应的一张独立图，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "pose-02",
+          "final_prompt": "使用上传参考图里的同一虚构成年男子、灰蓝刷手服和暖色湖景客厅，保留稀疏发际线、黑灰短发和淡胡须、脸型、服装袋位和抽绳；只改变拍摄姿态及机位，不换身份、服装、场景。低机位三分之二侧身，左脚踏前形成轻微弓步，双臂向身体两侧伸展，保留服装前片并形成有张力的斜线。自然商业人像摄影，仅生成本条对应的一张独立图，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "pose-03",
+          "final_prompt": "使用上传参考图里的同一虚构成年男子、灰蓝刷手服和暖色湖景客厅，保留稀疏发际线、黑灰短发和淡胡须、脸型、服装袋位和抽绳；只改变拍摄姿态及机位，不换身份、服装、场景。从侧方拍摄人物沿沙发旁缓慢走动转身，衣料下摆有自然轻微拖影而面部清晰，留出运动方向空间。自然商业人像摄影，仅生成本条对应的一张独立图，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "pose-04",
+          "final_prompt": "使用上传参考图里的同一虚构成年男子、灰蓝刷手服和暖色湖景客厅，保留稀疏发际线、黑灰短发和淡胡须、脸型、服装袋位和抽绳；只改变拍摄姿态及机位，不换身份、服装、场景。靠近窗边的中近景，人物手轻触沙发靠背，抬头望向侧上方暖光，强侧逆光勾勒脸与V领，表情安静。自然商业人像摄影，仅生成本条对应的一张独立图，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T01:55:44+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】商业摄影.md",
+      "original_sha256": "76d52004205b244daaf519d95e3b8c62f76c9a20e6351d60474669c8389a24cd",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "四方案到四图链路完成，动作多样但机位/景别未全部命中，不能完整通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W018",
+      "source_id": "T024",
+      "title": "换装提示词示例",
+      "categories": [
+        "fashion",
+        "edit"
+      ],
+      "type": "双参考精确换装",
+      "test_input": "坐姿成年女性白T恤/深裤→同一灰蓝刷手服，保留原姿态与背景。",
+      "reference_material": [
+        "materials/seated-adult-synthetic.png",
+        "materials/scrubs-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择原换服装英文完整子模板，不把服装提取/换头/其他版本算覆盖。",
+        "明确参考图角色与不换听诊器；补充原衣替换与遮挡细节。",
+        "长裤补全属虚构服装试穿，不作真实穿着尺寸预测。"
+      ],
+      "selected_source_prompt": "Perform a clothing swap: replace all garments worn by the person in image 1 with the outfit from image 2.\n\nUse the outfit from image 2 as a complete and consistent set. Do not mix with any original clothing from image 1.\n\nStrictly preserve identity and structure: pose, body proportions, face, hairstyle, skin tone, lighting conditions, and camera composition must remain unchanged.\n\nThe new clothing must be physically plausible: properly fitted to the body, respecting anatomy, gravity, fabric behavior, and perspective. Generate realistic folds, tension, and contact with the body.\n\nEnsure correct occlusion handling: hair, arms, and body parts must naturally overlap or interact with the clothing without artifacts.\n\nCompletely remove original clothing. No remnants, layering errors, or visual artifacts are allowed.\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "clothes-swap",
+          "final_prompt": "Image 1 is the fictional seated adult woman and must supply unchanged face, short bob, cheek mole, exact seated posture, hand position, body proportions, gray studio steps, framing and lighting. Image 2 supplies only the gray-blue short sleeve V-neck scrub top and full straight drawstring trousers, plus the white shoes. Keep all reference clothing details visible where not occluded, including three top front pockets and the visible thigh patch pocket. The stethoscope in image 2 is an accessory not requested and should not be added. Fully cover the previously bare lower legs with the new full-length trousers while retaining the seated joint positions.\nPerform a clothing swap: replace all garments worn by the person in image 1 with the outfit from image 2.\n\nUse the outfit from image 2 as a complete and consistent set. Do not mix with any original clothing from image 1.\n\nStrictly preserve identity and structure: pose, body proportions, face, hairstyle, skin tone, lighting conditions, and camera composition must remain unchanged.\n\nThe new clothing must be physically plausible: properly fitted to the body, respecting anatomy, gravity, fabric behavior, and perspective. Generate realistic folds, tension, and contact with the body.\n\nEnsure correct occlusion handling: hair, arms, and body parts must naturally overlap or interact with the clothing without artifacts.\n\nCompletely remove original clothing. No remnants, layering errors, or visual artifacts are allowed.\n",
+          "reference_material": [
+            "materials/seated-adult-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T01:55:44+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
+      "original_sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "两版换装链路已实测，主版本次细节较好；初版抽绳变化，严格服装保真未全部满足。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W019",
+      "source_id": "T051",
+      "title": "【元提示词】服装立体化lora：3Dghostmannequin",
+      "categories": [
+        "fashion"
+      ],
+      "type": "服装立体化元提示词→去人留上衣",
+      "test_input": "从本轮穿衣全身照片只提取上衣，制作无可见模特的立体服装商品图。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "执行原第二版强制前缀契约，只保留上衣，保留3个前袋。",
+        "本工具不运行ComfyUI或3Dghostmannequin LoRA，只测试视觉目标适配。",
+        "原照片不可见后侧只可推演，不能证明真实背面结构。"
+      ],
+      "selected_source_prompt": "：\n1. **强制开头顺序**：\n\t- 第1段：`remove person, only keep clothing,`（明确指令：移除人物，仅保留衣物）\n\t- 第2段：`3Dghostmannequin,`（触发虚拟模特效果）\n\t- 第3段：衣物细节描述\n\t- 第4段：背景+画质词\n2. 保留范围处理：\n\t- 若用户指定「只保留裤子/只保留上衣」，仅描述对应单品\n\t- 若未指定或要求「全部保留」，则描述整套穿搭，用`paired with`连接\n3. 衣物描述：\n\t- 从参考图/用户需求提取：颜色、材质、版型、关键细节（如口袋、纽扣、褶皱）\n\t- 使用专业术语（如short-sleeve button-up, high-waisted）\n\t- 简洁不冗余\n4. 场景/背景：\n\t- 按用户指定输出，未指定时默认：`clean solid neutral background`\n\t- 必须包含`solid`强调「纯色无纹理」\n5. 画质词固定结尾：<br>`soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution`\n6. 禁止输出：Lora权重、步数、模型名称等参数\n7. 语言要求：最终提示词必须为英文，句式流畅、指令清晰\n现在，根据用户输入的需求和参考图，直接输出优化后的提示词：<br>[用户需求+参考图信息\\]\n<empty-block/>\n<empty-block/>\n",
+      "meta_output": "remove person, only keep clothing, 3Dghostmannequin, only the gray-blue short-sleeve V-neck scrub top from the reference, keep its left chest patch pocket with a blank small white square tab and two lower front patch pockets, same neckline, sleeves, hem, stitching, blue tone and fabric texture, hollow neck and sleeve openings, natural garment volume without any visible mannequin or human body, no trousers, shoes, hands, head or background furniture, clean solid neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+      "cases": [
+        {
+          "case_id": "ghost-top",
+          "final_prompt": "remove person, only keep clothing, 3Dghostmannequin, only the gray-blue short-sleeve V-neck scrub top from the reference, keep its left chest patch pocket with a blank small white square tab and two lower front patch pockets, same neckline, sleeves, hem, stitching, blue tone and fabric texture, hollow neck and sleeve openings, natural garment volume without any visible mannequin or human body, no trousers, shoes, hands, head or background furniture, clean solid neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T01:55:44+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】服装立体化lora：3Dghostmannequin.md",
+      "original_sha256": "649dfe5d3bb13af23a67f17cf478c0a6a77bcae1725452dbcaa89d420d3a08f2",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "元输出按固定3Dghostmannequin开头与英文画质词结尾；实图仅保留蓝色V领短袖上衣，胸1下摆2贴袋、白色空白织标与侧开衩均在，无人体/模特/裤鞋/听诊器，立体中空质感基本符合本用例。未运行原ComfyUI/LoRA。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W020",
+      "source_id": "T055",
+      "title": "衣服悬浮在空中",
+      "categories": [
+        "fashion"
+      ],
+      "type": "一句概念提示词→服装悬浮参考适配",
+      "test_input": "将合成平铺刷手服变成隐形人体轮廓的悬浮服装图。",
+      "reference_material": [
+        "materials/scrubs-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原文只一句悬浮概念，追加商品参考、背景、服装细节与排除物件是本次适配，不当成原版完整模板。",
+        "目标仅是视觉悬浮与衣物保留，不证明真实物理悬浮。"
+      ],
+      "selected_source_prompt": "A shape is an illusion created by placing clothes floating in the air.",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "floating-clothes",
+          "final_prompt": "A shape is an illusion created by placing clothes floating in the air. Use only the exact gray-blue scrub top and matching trousers from the supplied flat-lay reference. Arrange them floating vertically in a natural invisible-person silhouette on a clean light-gray studio background, with a clear air gap below the hems and a soft shadow on the floor. Preserve V neck, short sleeves, three top front pockets, blank chest tab, drawstring waist and the existing thigh pocket. Do not include a human, head, skin, visible mannequin, stethoscope, shoes, hanger, labels or text. High-quality realistic commercial clothing photo.",
+          "reference_material": [
+            "materials/scrubs-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T01:55:44+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/电商产品/[仅参考·2分] 衣服悬浮在空中.md",
+      "original_sha256": "47409a2014d70965d62179eff307f2982f5fd3b0658e50eb2fbf4a08d5e4932c",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "空心人形由蓝色刷手服上衣和长裤形成，服装悬空有投影，无实际人体或模特，鞋和听诊器已移除；三上衣口袋与裤腿贴袋基本保留。原始单句很简略，本用例增加了明确的服装/形状输入，不代表裸句独立稳定性通过。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
   }
 ]

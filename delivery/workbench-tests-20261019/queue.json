@@ -140,9 +140,9 @@
       "product"
     ],
     "batch": 3,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 8,
+    "opened_images": 8,
     "result_dir": "results/W011"
   },
   {
@@ -154,9 +154,9 @@
       "graphic"
     ],
     "batch": 3,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W012"
   },
   {
@@ -168,9 +168,9 @@
       "story"
     ],
     "batch": 3,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W013"
   },
   {
@@ -181,9 +181,9 @@
       "fashion"
     ],
     "batch": 3,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 4,
+    "opened_images": 4,
     "result_dir": "results/W014"
   },
   {
@@ -194,9 +194,9 @@
       "fashion"
     ],
     "batch": 3,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W015"
   },
   {
@@ -207,7 +207,7 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W016"
@@ -220,7 +220,7 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W017"
@@ -234,7 +234,7 @@
       "edit"
     ],
     "batch": 4,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W018"
@@ -247,7 +247,7 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W019"
@@ -260,7 +260,7 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W020"

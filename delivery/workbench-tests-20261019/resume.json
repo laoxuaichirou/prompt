@@ -1,73 +1,6 @@
 {
-  "next_test_id": "W011",
+  "next_test_id": "W016",
   "unfinished": [
-    {
-      "id": "W011",
-      "source_id": "T092",
-      "title": "96组角度提示词",
-      "categories": [
-        "product"
-      ],
-      "batch": 3,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W011"
-    },
-    {
-      "id": "W012",
-      "source_id": "T004",
-      "title": "广告创意",
-      "categories": [
-        "fashion",
-        "graphic"
-      ],
-      "batch": 3,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W012"
-    },
-    {
-      "id": "W013",
-      "source_id": "T007",
-      "title": "商业广告25分镜",
-      "categories": [
-        "fashion",
-        "story"
-      ],
-      "batch": 3,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W013"
-    },
-    {
-      "id": "W014",
-      "source_id": "T011",
-      "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
-      "categories": [
-        "fashion"
-      ],
-      "batch": 3,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W014"
-    },
-    {
-      "id": "W015",
-      "source_id": "T017",
-      "title": "【服装展示】冬季时尚系列落地页设计，雪景",
-      "categories": [
-        "fashion"
-      ],
-      "batch": 3,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W015"
-    },
     {
       "id": "W016",
       "source_id": "T019",
@@ -76,7 +9,7 @@
         "fashion"
       ],
       "batch": 4,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W016"
@@ -89,7 +22,7 @@
         "fashion"
       ],
       "batch": 4,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W017"
@@ -103,7 +36,7 @@
         "edit"
       ],
       "batch": 4,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W018"
@@ -116,7 +49,7 @@
         "fashion"
       ],
       "batch": 4,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W019"
@@ -129,7 +62,7 @@
         "fashion"
       ],
       "batch": 4,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W020"
@@ -616,5 +549,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T01:43:23+08:00"
+  "updated_at": "2026-10-19T01:57:46+08:00"
 }

@@ -1,0 +1,35 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W011/view-01.png",
+    "results/W011/view-02.png",
+    "results/W011/view-03.png",
+    "results/W011/view-04.png",
+    "results/W011/view-05.png",
+    "results/W011/view-06.png",
+    "results/W011/view-07.png",
+    "results/W011/view-08.png"
+  ],
+  "checks": [
+    {
+      "requirement": "八角度独立输出",
+      "result": "符合要求",
+      "evidence": "view-01至08均已生成并逐张打开，8张1312×1199，统一灰底/同椅材料。"
+    },
+    {
+      "requirement": "严格方位和角度区分",
+      "result": "不符合",
+      "evidence": "正面有效，但view-03与view-07均为相似朝向的侧偏角；view-05要求背面却仍为背部斜角；view-04与06同向背部斜角相近，未形成严格八方位环绕。"
+    },
+    {
+      "requirement": "商品几何保留",
+      "result": "存在问题/未验证",
+      "evidence": "背部新增横向黑色支撑条，正面坐垫和靠背宽高观感有变化；新露出的背部结构仅为推演，无实物依据。"
+    }
+  ],
+  "conclusion": "八视图已完整对比，方向区分与严格侧背面未满足；不把八张已出图当作八角度通过，其他角度组未执行。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:53:28+08:00",
+  "stability_verified": false
+}

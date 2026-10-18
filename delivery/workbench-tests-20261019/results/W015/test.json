@@ -1,0 +1,50 @@
+{
+  "test_id": "W015",
+  "source_id": "T017",
+  "title": "【服装展示】冬季时尚系列落地页设计，雪景",
+  "categories": [
+    "fashion"
+  ],
+  "type": "固定文生落地页→上传人物的页面视觉适配",
+  "test_input": "合成成年男性照片作为人物输入，制作虚构冬季针织系列页面设计图。",
+  "reference_material": [
+    "materials/adult-man-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "固定欧亚年轻女性长相改为上传成年男性，新增人物照片入口。",
+    "丝绸长裙改为米色长裤，保持冬季针织系列，属于明确适配而非原版。",
+    "羊绒卖点改为中性针织描述，删除Willy作者签名。",
+    "只验证视觉设计图，不冒充可点击的真实落地页。"
+  ],
+  "selected_source_prompt": "\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/be7321ca-1dd3-479d-b870-e814440a9f4c/%E9%A2%84%E8%A7%88%E5%9B%BE.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667EYQ63Z3%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091848Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJIMEYCIQCUghr70%2FCnE6z9KJVJPBJTwYWqbvFzTLRnRr8S5fFI4AIhAKb4leHs79niQkiw3cmryLU5dbfKUCeSkmddXjbLwoNLKogECPn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzpKf0gZn2yBc2tx18q3AMGJOxGaxl%2Fqiw8WxFvOMfthQPORlgDo3arciHPQbYZGPtqY0ju%2FfvEpmD7ISuTnumhm66KfJ%2BjBmO1N29FwBGp%2F9QsV%2BmDgJsJcwJHhVnEA%2BBiv0%2Bk5sR41mUgb28vXL%2FBIc28rT95p05WlSvEuaOzq8NmKiRQ%2BjiM%2BTX8hmoeeer0cMHXn353KMTFIqjvtSiqLTwVD8btVMe83YSADLD8cUQ5pnBZowamlW%2BTcc9wUsSsvG6quMSuGQKC3C9tSYVcbFkopFfmp1ScCt9oGY2bxECt38AdI8j0IALemdh36zHcNaWIIWeFVOy%2FlV%2BtTZuYBvXxvbTYWu%2FjEl3G02cFTye6GTNCAeMaBskdC4LNmGensnrzH%2FmKoKqdUyXlg7yBVT864n8rVduuKGz5WtqryG2dmmzOVmsABfCE0qUR352gje%2BJe9fIzhfAahPWw0d%2Bort4u3kHmiZmrCURhd%2F3xRZgBYa8CEhI0yOk4BbHoc3kx1j8jyRxT9VlS%2Bnt5g%2B3uf2sYGq7Y4WB9ymLGVJ%2FYG2NoE3PVHDXnJlDk224Op8yWrwJ0LV8sGT3RdEGHUq8bwnqjrefvPcX3MqgxWqVz6aj7tpWAgpkbYT1PK1xRN42HBEchWBVs8gZyjCx08zWBjqkAZuGEBJb5ITUzWm4yzHLsT29%2F1WMyFHniLlt9zvhigVrQmgiDsHy%2FFd3gBi3U7Y8iL9W0YPyW7KnJiQfgbNm47T39rUwKszAIX1TYkC4SW5S%2BV5nC5yplZUqO1XxalpR%2BV7SsV0KI3PrQN1FP%2F13pbRPFpAfPf8ncvvvdN4kaUbq20%2FlLU57UVA7VikkPO56TACFtCdj4vY%2FBOUW0W9wVOXQaLbN&X-Amz-Signature=faa7d27b09f794cfe65ba935313730146a6da465bb1979f0b4670cbe4679ef78&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.316079fd-bc38-8059-af6f-cd53b00d6667.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\n冬季时尚系列着陆页设计，垂直滚动布局，顶部全幅图像，下方为特色卡片，堆叠式版块。\n时尚编辑肖像：一位 20 岁出头的年轻欧亚女性，脸型纤细呈鹅蛋形，V 形下颌线，站在白雪皑皑的桦树林中。她留着波浪状的浅棕色长发，带有金色焦糖挑染，发间点缀着晶莹的雪花。她拥有一双明亮的大鹿眼，呈蓝绿色，睫毛纤长自然。皮肤如瓷般水润透亮，散发着健康的光泽，呈现玻璃肌效果。脸颊上泛着柔和的玫瑰色腮红，双唇涂有光泽粉色唇彩，绽放出灿烂的笑容，露出洁白的牙齿。鼻梁纤细挺直，五官精致柔美，散发着空灵的娃娃般美感。她身穿米色绞花针织超大毛衣，颈部舒适地缠绕着象牙色针织围巾，戴着配套的米色针织手套，轻触桦树皮。下身穿着一条带有精致花卉图案的飘逸褶皱真丝长裙。姿态优雅放松，头部微微倾斜，表情柔和梦幻。背景是白雪覆盖的桦树林，散发着美丽的光斑，雪花轻轻飘落，冬季光线柔和弥漫。使用 85mm f1.4 镜头拍摄，景深较浅，色调为冷蓝色和暖米色，呈现高端时尚编辑风格。\n特色卡片：\n- 卡片 1：“永恒的优雅”——女性在森林中的图像，描述系列的核心价值，行动号召“探索系列”\n- 卡片 2：“最柔软的羊绒”——羊绒毛衣的特写镜头，详细介绍材质和工艺，行动号召“选购毛衣”\n- 卡片 3：“冬日白色”——系列中精选的象牙色和米色单品，行动号召“选购白色单品”\n- 卡片 4：“为舒适而设计”——描述宽松版型和舒适设计，行动号召“了解更多”<br>右下角小字优雅地放置着时尚手写签名“Willy”。\n<empty-block/>\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "winter-page",
+      "final_prompt": "生成一张完整的冬季时尚系列着陆页视觉设计图，长竖幅、顶部全幅主视觉、下方四张特色卡片堆叠排列。使用上传图片里的同一虚构成年男子作为全页模特，保留稀疏后退发际线、短黑灰发、淡胡须、脸型与五官，不换成年轻女性。主视觉：本人穿米色绞花针织大毛衣、象牙围巾和米色针织手套、米色长裤，站在白雪桦树林轻触树皮，冷蓝雪景与暖米穿搭、自然微笑和柔和散景。下面四张卡片依次是“永恒的优雅”配同人森林照及按钮“探索系列”；“柔软的针织”配同款毛衣特写及“选购毛衣”；“冬日白色”配同款象牙米色单品及“选购白色单品”；“为舒适而设计”配宽松针织细节及“了解更多”。所有展示文字清晰正确，无额外作者签名，无真实品牌或价格。真实时尚编辑摄影与可读网页视觉排版，只生成设计图，不输出网页代码。",
+      "reference_material": [
+        "materials/adult-man-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W015/winter-page.png",
+          "width": 941,
+          "height": 1672,
+          "sha256": "e205bab7f64e0e551fd5c91967e876781470e8917d12975e85cd047cbbe5b302",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-97281609-391c-4dd9-9428-b77235f0f71d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:54:06+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:45:26+08:00"
+}

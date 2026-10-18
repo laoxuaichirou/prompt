@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W013/ad-25.png"
+  ],
+  "checks": [
+    {
+      "requirement": "25格与三幕",
+      "result": "符合要求",
+      "evidence": "5×5共25格，进场/展示/细节/休息/离开序列可见，总图1672×941约16:9。"
+    },
+    {
+      "requirement": "布局冲突适配",
+      "result": "已记录",
+      "evidence": "原整体竖幅与子格横16:9不兼容，本例优先横幅25格，不算原全条件通过。"
+    },
+    {
+      "requirement": "边框与人物/服装严格连续",
+      "result": "存在问题",
+      "evidence": "图中有白色分隔线；部分远景格脸部和发量观感变化；细节格无脸，不能核实25格人物身份均一致，部分袋位被遮挡或简化。"
+    }
+  ],
+  "conclusion": "静态25格广告完成，但边框、细小人物和服装一致性不足；无视频生成测试。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:57:45+08:00",
+  "stability_verified": false
+}

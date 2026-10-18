@@ -1,0 +1,36 @@
+{
+  "test_id": "W019",
+  "source_id": "T051",
+  "title": "【元提示词】服装立体化lora：3Dghostmannequin",
+  "categories": [
+    "fashion"
+  ],
+  "type": "服装立体化元提示词→去人留上衣",
+  "test_input": "从本轮穿衣全身照片只提取上衣，制作无可见模特的立体服装商品图。",
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "执行原第二版强制前缀契约，只保留上衣，保留3个前袋。",
+    "本工具不运行ComfyUI或3Dghostmannequin LoRA，只测试视觉目标适配。",
+    "原照片不可见后侧只可推演，不能证明真实背面结构。"
+  ],
+  "selected_source_prompt": "：\n1. **强制开头顺序**：\n\t- 第1段：`remove person, only keep clothing,`（明确指令：移除人物，仅保留衣物）\n\t- 第2段：`3Dghostmannequin,`（触发虚拟模特效果）\n\t- 第3段：衣物细节描述\n\t- 第4段：背景+画质词\n2. 保留范围处理：\n\t- 若用户指定「只保留裤子/只保留上衣」，仅描述对应单品\n\t- 若未指定或要求「全部保留」，则描述整套穿搭，用`paired with`连接\n3. 衣物描述：\n\t- 从参考图/用户需求提取：颜色、材质、版型、关键细节（如口袋、纽扣、褶皱）\n\t- 使用专业术语（如short-sleeve button-up, high-waisted）\n\t- 简洁不冗余\n4. 场景/背景：\n\t- 按用户指定输出，未指定时默认：`clean solid neutral background`\n\t- 必须包含`solid`强调「纯色无纹理」\n5. 画质词固定结尾：<br>`soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution`\n6. 禁止输出：Lora权重、步数、模型名称等参数\n7. 语言要求：最终提示词必须为英文，句式流畅、指令清晰\n现在，根据用户输入的需求和参考图，直接输出优化后的提示词：<br>[用户需求+参考图信息\\]\n<empty-block/>\n<empty-block/>\n",
+  "meta_output": "remove person, only keep clothing, 3Dghostmannequin, only the gray-blue short-sleeve V-neck scrub top from the reference, keep its left chest patch pocket with a blank small white square tab and two lower front patch pockets, same neckline, sleeves, hem, stitching, blue tone and fabric texture, hollow neck and sleeve openings, natural garment volume without any visible mannequin or human body, no trousers, shoes, hands, head or background furniture, clean solid neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+  "cases": [
+    {
+      "case_id": "ghost-top",
+      "final_prompt": "remove person, only keep clothing, 3Dghostmannequin, only the gray-blue short-sleeve V-neck scrub top from the reference, keep its left chest patch pocket with a blank small white square tab and two lower front patch pockets, same neckline, sleeves, hem, stitching, blue tone and fabric texture, hollow neck and sleeve openings, natural garment volume without any visible mannequin or human body, no trousers, shoes, hands, head or background furniture, clean solid neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T01:55:44+08:00"
+}

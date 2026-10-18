@@ -1,0 +1,39 @@
+{
+  "test_id": "W018",
+  "source_id": "T024",
+  "title": "换装提示词示例",
+  "categories": [
+    "fashion",
+    "edit"
+  ],
+  "type": "双参考精确换装",
+  "test_input": "坐姿成年女性白T恤/深裤→同一灰蓝刷手服，保留原姿态与背景。",
+  "reference_material": [
+    "materials/seated-adult-synthetic.png",
+    "materials/scrubs-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选择原换服装英文完整子模板，不把服装提取/换头/其他版本算覆盖。",
+    "明确参考图角色与不换听诊器；补充原衣替换与遮挡细节。",
+    "长裤补全属虚构服装试穿，不作真实穿着尺寸预测。"
+  ],
+  "selected_source_prompt": "Perform a clothing swap: replace all garments worn by the person in image 1 with the outfit from image 2.\n\nUse the outfit from image 2 as a complete and consistent set. Do not mix with any original clothing from image 1.\n\nStrictly preserve identity and structure: pose, body proportions, face, hairstyle, skin tone, lighting conditions, and camera composition must remain unchanged.\n\nThe new clothing must be physically plausible: properly fitted to the body, respecting anatomy, gravity, fabric behavior, and perspective. Generate realistic folds, tension, and contact with the body.\n\nEnsure correct occlusion handling: hair, arms, and body parts must naturally overlap or interact with the clothing without artifacts.\n\nCompletely remove original clothing. No remnants, layering errors, or visual artifacts are allowed.\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "clothes-swap",
+      "final_prompt": "Image 1 is the fictional seated adult woman and must supply unchanged face, short bob, cheek mole, exact seated posture, hand position, body proportions, gray studio steps, framing and lighting. Image 2 supplies only the gray-blue short sleeve V-neck scrub top and full straight drawstring trousers, plus the white shoes. Keep all reference clothing details visible where not occluded, including three top front pockets and the visible thigh patch pocket. The stethoscope in image 2 is an accessory not requested and should not be added. Fully cover the previously bare lower legs with the new full-length trousers while retaining the seated joint positions.\nPerform a clothing swap: replace all garments worn by the person in image 1 with the outfit from image 2.\n\nUse the outfit from image 2 as a complete and consistent set. Do not mix with any original clothing from image 1.\n\nStrictly preserve identity and structure: pose, body proportions, face, hairstyle, skin tone, lighting conditions, and camera composition must remain unchanged.\n\nThe new clothing must be physically plausible: properly fitted to the body, respecting anatomy, gravity, fabric behavior, and perspective. Generate realistic folds, tension, and contact with the body.\n\nEnsure correct occlusion handling: hair, arms, and body parts must naturally overlap or interact with the clothing without artifacts.\n\nCompletely remove original clothing. No remnants, layering errors, or visual artifacts are allowed.\n",
+      "reference_material": [
+        "materials/seated-adult-synthetic.png",
+        "materials/scrubs-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T01:55:44+08:00"
+}

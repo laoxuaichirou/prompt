@@ -1,0 +1,196 @@
+{
+  "test_id": "W011",
+  "source_id": "T092",
+  "title": "96组角度提示词",
+  "categories": [
+    "product"
+  ],
+  "type": "角度模板，八张独立参考编辑",
+  "test_input": "用新合成椅子替换上一轮其他商品，只测第1组平视全景八方位。",
+  "reference_material": [
+    "materials/chair-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "以chair reference替换<sks>模型触发占位，不加载LoRA。",
+    "每角度独立生成并复用同一参考，不能单图验收八视图。",
+    "其余95组/子页不算覆盖；照片未见结构只能推演。"
+  ],
+  "selected_source_prompt": "：eye-level + wide shot（平视全景）**\n### **plain**复制\n`<sks> front view eye-level shot wide shot<br><sks> front-right quarter view eye-level shot wide shot<br><sks> right side view eye-level shot wide shot<br><sks> back-right quarter view eye-level shot wide shot<br><sks> back view eye-level shot wide shot<br><sks> back-left quarter view eye-level shot wide shot<br><sks> left side view eye-level shot wide shot<br><sks> front-left quarter view eye-level shot wide shot`\n---\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "view-01",
+      "final_prompt": "Show the exact same fictional chair from the reference. front view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 1 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-01.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "d059733a16af89e5273ac9486c74f61fff24471c0e5bb5a2a1c113b6cc8e1be6",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-01aafef9-fdf5-4e3d-8e2d-632e8b6540f6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:47:58+08:00"
+    },
+    {
+      "case_id": "view-02",
+      "final_prompt": "Show the exact same fictional chair from the reference. front-right quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 2 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-02.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "245d530a5f42ee17709fc6ee49e32e9028d7940f6d4dcaa2236bc680537ed3f1",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-97ca0736-3c79-48a8-b373-20608ef694a7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:47:03+08:00"
+    },
+    {
+      "case_id": "view-03",
+      "final_prompt": "Show the exact same fictional chair from the reference. right side view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 3 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-03.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "2a516379af83aec57e142621ccf8f8122d577023fd2ee337f9a55790424293ee",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9ae864d4-e561-4dd4-9dcb-bf07b19f7f3c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:47:31+08:00"
+    },
+    {
+      "case_id": "view-04",
+      "final_prompt": "Show the exact same fictional chair from the reference. back-right quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 4 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-04.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "1121f3a48b98357439aa2c740b5c40de94f3bc80e9a2a557ff95e0f447590e74",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-72a951ba-34e2-4e18-bab7-fe9fba09ead8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:48:17+08:00"
+    },
+    {
+      "case_id": "view-05",
+      "final_prompt": "Show the exact same fictional chair from the reference. back view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 5 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-05.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "c6e6b6ebcc829f85836311b90315c4462980f928a8ba09642c3b6d8ec37d9ca8",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b8e9d7d2-f6cf-4da9-b3ee-ddfffafab1dc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:47:31+08:00"
+    },
+    {
+      "case_id": "view-06",
+      "final_prompt": "Show the exact same fictional chair from the reference. back-left quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 6 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-06.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "81eb32095abbdabe58d3ef962dbc9a6284d1ba710bfdb45b7ed69dd4e5eeaf62",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c02f71ed-28d0-41d8-bbca-019f0fe0106a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:48:17+08:00"
+    },
+    {
+      "case_id": "view-07",
+      "final_prompt": "Show the exact same fictional chair from the reference. left side view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 7 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-07.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "28336c28a3c38a39751fb5cc25325edc2e432780aa06e83044ef323afa32d90e",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6271690c-191f-4a32-ba5a-8dc4a221b73f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:48:53+08:00"
+    },
+    {
+      "case_id": "view-08",
+      "final_prompt": "Show the exact same fictional chair from the reference. front-left quarter view, eye-level shot, wide shot. One single full chair in the image, neutral light-gray seamless studio, consistent soft lighting, beige upholstery, natural-oak armrests and legs, thin matte-black support frame. Preserve proportions and construction; do not redesign. No words or labels. New unobserved sides are synthetic inference. This is only output 8 of an eight-view comparison; do not create a grid.",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W011/view-08.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "875d4a66ee5fe386af10e67366fa8fc55de43cb34525eec177b4d7879e4360ec",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": null,
+        "save_method": "tool returned only data URL; original PNG bytes saved directly"
+      },
+      "generated_at": "2026-10-19T01:50:13+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:45:26+08:00"
+}

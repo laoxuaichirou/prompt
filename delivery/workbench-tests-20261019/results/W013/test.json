@@ -1,0 +1,83 @@
+{
+  "test_id": "W013",
+  "source_id": "T007",
+  "title": "商业广告25分镜",
+  "categories": [
+    "fashion",
+    "story"
+  ],
+  "type": "直接网格广告提示词＋填充三幕变量",
+  "test_input": "人物图＋服装图，填入诊所休息区的25个静态服装广告镜头。",
+  "reference_material": [
+    "materials/adult-man-synthetic.png",
+    "materials/scrubs-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "原文竖幅总图与5×5每格横16:9有几何冲突，本适配优先25格与横16:9子格，因此总图16:9，不声称原文所有布局同时满足。",
+    "填入三幕场景及25格动作，人物/产品分别绑定参考图。",
+    "原文8K和100%保证改为高细节目标与实际验收；原文原样另存。",
+    "只测静态广告分镜，不宣称生成广告视频。"
+  ],
+  "selected_source_prompt": "\n\n```bash\nA pure vertical 5x5 image grid collage containing 25 horizontal 16:9 panels, edge-to-edge, no text, no borders, no watermarks, photorealistic cinematic commercial photography, high-end color grading, 8k resolution, sharp focus, shallow depth of field.\n\n--- VISUAL ANCHOR SETTING (USER DEFINED) ---\nKey reference frame position: 【Act 1 / Act 2 / Act 3】\nAll panels strictly match: character's face, product's design, lighting tone, color style from references\n------------------------------------------\n\n--- MANDATORY COMMERCIAL CONTINUITY ---\n1. Fixed character: face, hair, outfit, makeup 100% unchanged in all 25 panels\n2. Fixed product: shape, color, texture, details 100% consistent, no occlusion, always clear visual focus\n3. Unified light logic & color grade, no scene jump, no style inconsistency\n4. Complete 3-act narrative: Setup → Development → Closing\n---------------------------------------\n\nCore Character: Match reference image\nCore Product: Match reference image\n\nAct 1 (Rows 1-2): 【Scene 1 + Light + Narrative action】\nAct 2 (Row 3): 【Scene 2 + Light + Product display + Close-up】\nAct 3 (Rows 4-5): 【Scene 3 + Light + Dynamic shot + Ending】\n```\n",
+  "meta_output": {
+    "key_reference_act": 2,
+    "shots": [
+      "走进休息区的全身",
+      "正面站定展示上衣",
+      "手臂稍离身体展示V领和前袋",
+      "侧面缓慢转身",
+      "镜头接近胸袋",
+      "手轻触上衣下摆但不挡口袋",
+      "双脚分开自然站姿",
+      "腰部抽绳近景",
+      "裤腿大腿贴袋近景",
+      "面部疲惫浅笑",
+      "中景双臂自然下垂",
+      "俯拍同款衣料纹理",
+      "胸袋白方块细节",
+      "裤脚直筒细节",
+      "全身四分之三侧面",
+      "走向同一空间的座椅",
+      "侧面缓缓落座",
+      "正面坐姿休息",
+      "手放在椅侧的中景",
+      "抬头向窗边望",
+      "近景自然微笑",
+      "从椅子起身",
+      "整理衣摆后自然站立",
+      "走向门口回望",
+      "回到正面全身结束"
+    ],
+    "layout": "5x5, cells16:9, overall16:9"
+  },
+  "cases": [
+    {
+      "case_id": "ad-25",
+      "final_prompt": "Create one native 5 by 5 grid with exactly 25 horizontal 16:9 panels. Overall sheet is landscape 16:9, no text, no borders or watermarks. Photorealistic cinematic clothing commercial. Image 1 supplies the same fictional adult man, preserving thinning hairline, short dark hair and facial stubble. Image 2 supplies the exact gray-blue scrub set with V neck, three front top pockets, blank white chest tab, drawstring straight pants and its visible thigh pocket. Keep clothing construction consistent throughout. Same quiet clinic staff lounge with warm window side light and restrained neutral grade in all panels. Three acts: rows 1-2 arrival and clothing introduction, row 3 details, rows 4-5 rest and exit. Reference key frame is Act 2. Read panels in row-major order:\n1. 走进休息区的全身.\n2. 正面站定展示上衣.\n3. 手臂稍离身体展示V领和前袋.\n4. 侧面缓慢转身.\n5. 镜头接近胸袋.\n6. 手轻触上衣下摆但不挡口袋.\n7. 双脚分开自然站姿.\n8. 腰部抽绳近景.\n9. 裤腿大腿贴袋近景.\n10. 面部疲惫浅笑.\n11. 中景双臂自然下垂.\n12. 俯拍同款衣料纹理.\n13. 胸袋白方块细节.\n14. 裤脚直筒细节.\n15. 全身四分之三侧面.\n16. 走向同一空间的座椅.\n17. 侧面缓缓落座.\n18. 正面坐姿休息.\n19. 手放在椅侧的中景.\n20. 抬头向窗边望.\n21. 近景自然微笑.\n22. 从椅子起身.\n23. 整理衣摆后自然站立.\n24. 走向门口回望.\n25. 回到正面全身结束.\nAll panels use the same adult and product, avoid covering the featured garment detail. Fine photographic detail, native output dimensions will be recorded; no promise of true 8K or 100 percent identity.",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W013/ad-25.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "2fa347f648ce0ce0fbf79ef82e0ed0d12db9245e23fdec6c29d27dcee71d3c15",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bbe3b0ab-a689-4b8e-b42f-45e47c2e2e16.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:53:28+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:45:26+08:00"
+}

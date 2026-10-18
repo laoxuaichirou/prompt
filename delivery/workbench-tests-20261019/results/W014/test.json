@@ -1,0 +1,134 @@
+{
+  "test_id": "W014",
+  "source_id": "T011",
+  "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+  "categories": [
+    "fashion"
+  ],
+  "type": "三参考元提示词→英文JSON→四张独立图片",
+  "test_input": "图1成年男子身份、图2刷手服、图3本轮湖景客厅；四种适配姿态。",
+  "reference_material": [
+    "materials/adult-man-synthetic.png",
+    "materials/scrubs-synthetic.png",
+    "results/W009/tv-room.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选取原优化英文元提示词，去掉教学分析和重复中译。",
+    "执行得到一个英文JSON对象，四Prompt均绑定三图角色。",
+    "Mina仅原示例别名，不覆盖真实参考脸；不推断真实族裔。",
+    "工作台版移除未获工具保证的8K/绝对保真承诺，改为生成后核对像素与身份；原文保留。"
+  ],
+  "selected_source_prompt": "# Role: AI Visual Fashion Compiler (Context-Aware Edition)\n\n## 🎯 OBJECTIVE\nAnalyze 3 input images to generate 4 diverse, photorealistic prompts.\nThe AI must intelligently adapt the **Model's Pose** to fit the **Scene (Image 3)** naturally.\n**CRITICAL: OUTPUT MUST BE A SINGLE JSON OBJECT IN ENGLISH. NO EXTRA CONTENT.**\n\n## 📥 INPUT MAPPING\n*   **Image 1**: The Face (Person Reference) - Use <image> placeholder for image input\n*   **Image 2**: The Outfit (Clothing Reference) - Use <image> placeholder for image input\n*   **Image 3**: The Scene (Environment Reference) - Use <image> placeholder for image input\n\n## 🧠 ANALYSIS & CREATIVE LOGIC\n1.  **Analyze Image 1 (Face)**:\n    *   Extract race, facial features (e.g., almond eyes, soft lips, sharp jawline), hairstyle (length, texture, color), makeup style (natural, smoky, matte). Assign name \"Mina\".\n    *   *Logic*: `VAR_MODEL` = \"A photorealistic portrait of 'Mina', , , , , realistic skin texture, 8k detail\"\n\n2.  **Analyze Image 2 (Outfit)**:\n    *   Extract clothing items (top, bottom, outerwear), color palette, fabric texture (e.g., cotton, silk, leather), accessories (e.g., necklace, belt, gloves, bag, shoes). Ignore background completely.\n    *   *Logic*: `VAR_OUTFIT` = \"wearing  in  with , paired with  and matching , well-fitted silhouette\"\n\n3.  **Analyze Image 3 (Scene)**:\n    *   Extract location (e.g., urban street, park bench, café interior), lighting type (e.g., golden hour, neon backlight, soft indoor light), atmosphere (e.g., cozy, vibrant, minimalist), foreground/midground elements (e.g., flower bed, wooden table, street lamp).\n    *   *Logic*: `VAR_ENV` = \"[Location], , , \"\n    *   *Style Tag*: One concise English keyword (e.g., \"Autumn\", \"Urban\", \"Elegant\", \"Casual\").\n\n4.  **✨ DYNAMIC POSE GENERATION (The Upgrade)**:\n    *   Generate 4 *distinct, non-repeating* poses that logically fit `VAR_ENV` AND match the outfit's style (e.g., formal dress → no intense sports poses; casual wear → flexible dynamic poses).\n    *   **Pose 1 (Full Body)**: A pose interacting with the scene's elements (e.g., leaning on a street lamp, touching flower petals, sitting on a café chair).\n    *   **Pose 2 (Dynamic/Motion)**: A natural movement pose suitable for the scene (e.g., walking along the path, flipping hair in the breeze, turning around gently).\n    *   **Pose 3 (Relaxed/Vibe)**: A casual relaxed pose (e.g., leaning against a wall with hands in pockets, lounging on a bench, holding a scene-relevant prop like a book or coffee cup).\n    *   **Pose 4 (Cinematic)**: An artistic angle or emotional pose matching the lighting (e.g., looking into the sunset, side profile against neon light, soft smile with backlit hair).\n\n## 📝 PROMPT ASSEMBLY\n*   **P1**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 1 fitting the Scene], full body shot, sharp focus, background is [VAR_ENV]`\n*   **P2**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 2 with Motion], side angle shot, slight natural motion blur, background is [VAR_ENV]`\n*   **P3**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 3 Relaxed], medium shot, depth of field, soft bokeh, background is [VAR_ENV]`\n*   **P4**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 4 Cinematic], emotional expression, dramatic lighting enhancement, close-up to medium shot, background is [VAR_ENV]`\n\n## 📤 FINAL OUTPUT FORMAT\n**STRICT RULE**: Output ONLY the raw JSON string. No markdown, no code blocks, no explanations, no extra text.\nNote: \"ModelsLogic\" and \"OutfitLogic\" are analysis summaries (not part of the final Prompts).\n\n{\n  \"style\": \"Style Keyword from Image 3 (One English Word)\",\n  \"ModelsLogic\": \"Full text of VAR_MODEL (English)\",\n  \"OutfitLogic\": \"Full text of VAR_OUTFIT (English)\",\n  \"Prompt1\": \"Full text of P1 (English)\",\n  \"Prompt2\": \"Full text of P2 (English)\",\n  \"Prompt3\": \"Full text of P3 (English)\",\n  \"Prompt4\": \"Full text of P4 (English)\"\n}\n\n",
+  "meta_output": {
+    "style": "Lakeside",
+    "ModelsLogic": "the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture",
+    "OutfitLogic": "the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes",
+    "Prompt1": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, standing next to the sofa with one hand lightly touching the sofa back, full body with both feet visible. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+    "Prompt2": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, walking gently beside the sofa, side angle, slight natural motion blur while the face remains clear. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+    "Prompt3": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, seated naturally at the edge of the sofa, hands relaxed, medium shot and soft background bokeh. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+    "Prompt4": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, close-to-medium portrait turned toward the sunset window, quiet reflective expression, cinematic warm rim light. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked."
+  },
+  "cases": [
+    {
+      "case_id": "fashion-01",
+      "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, standing next to the sofa with one hand lightly touching the sofa back, full body with both feet visible. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W014/fashion-01.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "7f8911044e074ad7615cf95b6ae8ee695b75aa268e76cbe6e75f2949d2c6efa9",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6b4db167-865a-4a14-bedd-e30af979413e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:53:23+08:00"
+    },
+    {
+      "case_id": "fashion-02",
+      "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, walking gently beside the sofa, side angle, slight natural motion blur while the face remains clear. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W014/fashion-02.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "17adeaa815dff45d0449de388942406f342cc2dabe77134d921bf1a31a4d9661",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bdfecb9c-02f0-42ed-b856-cdea7bba18d1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:54:13+08:00"
+    },
+    {
+      "case_id": "fashion-03",
+      "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, seated naturally at the edge of the sofa, hands relaxed, medium shot and soft background bokeh. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W014/fashion-03.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "49dbc6b55a92bffd29e58e849649611f2f7f9a84a36527529974430df8ad46c2",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c390ba7f-1fd1-445c-bbaa-ae734140c65c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:52:38+08:00"
+    },
+    {
+      "case_id": "fashion-04",
+      "final_prompt": "Reference image 1 is identity only; image 2 is outfit only; image 3 is scene only. Photorealistic image of the same fictional adult man in image 1, with a receding thinning dark hairline, short dark-and-gray hair, mild facial stubble, preserved face shape and realistic skin texture, wearing the exact gray-blue V-neck short-sleeved scrub top and drawstring straight trousers in image 2, retaining three top front pockets, small blank white chest tab and the visible thigh patch pocket, with the supplied white shoes, close-to-medium portrait turned toward the sunset window, quiet reflective expression, cinematic warm rim light. Background is the warm sunset lakeside living room from image 3, with floor-to-ceiling window, pale sofa and wooden TV console; preserve layout anchors. Do not mix image roles or rejuvenate the face. Create one separate image. High detail; actual pixel dimensions will be checked.",
+      "reference_material": [
+        "materials/adult-man-synthetic.png",
+        "materials/scrubs-synthetic.png",
+        "results/W009/tv-room.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W014/fashion-04.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "e4c5b540e0bc9856ffed2f669fee8f722bc100dc42f8fcb36eabe4d6df72244d",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-309db25f-0f48-4f0f-9b3e-ae905e5fbb23.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T01:54:06+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:45:26+08:00"
+}
