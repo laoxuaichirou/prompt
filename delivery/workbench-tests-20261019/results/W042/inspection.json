@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W042/identity-locked-edit.png"
+  ],
+  "checks": [
+    {
+      "requirement": "来源锁定JSON",
+      "result": "符合",
+      "evidence": "先生成记录完整source/image_locked JSON，无未决null，身份从图像取值"
+    },
+    {
+      "requirement": "只换深绿长袖针织衫",
+      "result": "基本符合",
+      "evidence": "上衣变深绿针织，短发小痣、裤鞋、姿势、灰棚全身构图可见保留"
+    }
+  ],
+  "conclusion": "最小身份锁定编辑符合主要可见要求；未量化身份相似度，也未验证引擎确定性或原指定模型。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:41:19+08:00",
+  "stability_verified": false
+}

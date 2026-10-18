@@ -30,8 +30,21 @@
       "reference_material": [
         "materials/marked-adult-synthetic.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W044/remove-test-marks.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "92e55adf9b7fec5127cd58b3f04d73494d7c2a369097d95a341d874cfc2b5504",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-e04499ee-f9d1-4bec-ae60-beeb7a87f4db.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:39:33+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:34:28+08:00"

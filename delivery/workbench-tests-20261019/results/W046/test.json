@@ -1,0 +1,51 @@
+{
+  "test_id": "W046",
+  "source_id": "T025",
+  "title": "22种AI调色提示词22种AI调色提示词",
+  "categories": [
+    "edit"
+  ],
+  "type": "22种调色预设→同一参考两种对比",
+  "test_input": {
+    "选项": [
+      "LOOK01现代黑色电影",
+      "LOOK17现代青橙"
+    ],
+    "主体": "同一合成蓝衣男性日落客厅"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "仅选择22种中的两种做最小风格对比，未验证其余20种。",
+    "原各LOOK固定示例主体替换为同一上传照片，保留调色配方；添加构图保持指令。",
+    "这是视觉胶片模拟，不是实际胶片/电影摄影工艺测试。"
+  ],
+  "selected_source_prompt": "LOOK01及LOOK17",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "look-01-noir",
+      "final_prompt": "对提供的同一参考照片只进行所选调色，不更换人物或场景，不改姿势构图物体位置与服装设计，不添加任何文字或水印。调色风格：现代黑色电影。高对比度黑白影像，浓郁深沉的黑色，纯净的银白色高光，细腻的胶片颗粒，锐利的纹理质感。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "look-17-teal-orange",
+      "final_prompt": "对提供的同一参考照片只进行所选调色，不更换人物或场景，不改姿势构图物体位置与服装设计，不添加任何文字或水印。调色风格：电影化青橙色调。阴影为冷调深青蓝色，中间调温暖饱和以突出肤色，高光呈现柔和琥珀色。高对比度，大片质感。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:40:14+08:00"
+}

@@ -1,71 +1,6 @@
 {
-  "next_test_id": "W041",
+  "next_test_id": "W046",
   "unfinished": [
-    {
-      "id": "W041",
-      "source_id": "T173",
-      "title": "镜头角度与提示词：6 - Camera Angles & Movements",
-      "categories": [
-        "story"
-      ],
-      "batch": 9,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W041"
-    },
-    {
-      "id": "W042",
-      "source_id": "T006",
-      "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
-      "categories": [
-        "edit"
-      ],
-      "batch": 9,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W042"
-    },
-    {
-      "id": "W043",
-      "source_id": "T021",
-      "title": "GPT2画质修复元提示词",
-      "categories": [
-        "edit"
-      ],
-      "batch": 9,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W043"
-    },
-    {
-      "id": "W044",
-      "source_id": "T022",
-      "title": "编辑模型思考",
-      "categories": [
-        "edit"
-      ],
-      "batch": 9,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W044"
-    },
-    {
-      "id": "W045",
-      "source_id": "T023",
-      "title": "高清修复提示词模板",
-      "categories": [
-        "edit"
-      ],
-      "batch": 9,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W045"
-    },
     {
       "id": "W046",
       "source_id": "T025",
@@ -74,7 +9,7 @@
         "edit"
       ],
       "batch": 10,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W046"
@@ -87,7 +22,7 @@
         "edit"
       ],
       "batch": 10,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W047"
@@ -100,7 +35,7 @@
         "edit"
       ],
       "batch": 10,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W048"
@@ -113,7 +48,7 @@
         "edit"
       ],
       "batch": 10,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W049"
@@ -126,7 +61,7 @@
         "edit"
       ],
       "batch": 10,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W050"
@@ -223,5 +158,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T02:37:41+08:00"
+  "updated_at": "2026-10-19T02:41:19+08:00"
 }

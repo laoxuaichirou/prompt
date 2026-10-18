@@ -533,9 +533,9 @@
       "story"
     ],
     "batch": 9,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 2,
+    "opened_images": 2,
     "result_dir": "results/W041"
   },
   {
@@ -546,9 +546,9 @@
       "edit"
     ],
     "batch": 9,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W042"
   },
   {
@@ -559,9 +559,9 @@
       "edit"
     ],
     "batch": 9,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W043"
   },
   {
@@ -572,9 +572,9 @@
       "edit"
     ],
     "batch": 9,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W044"
   },
   {
@@ -585,9 +585,9 @@
       "edit"
     ],
     "batch": 9,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W045"
   },
   {
@@ -598,7 +598,7 @@
       "edit"
     ],
     "batch": 10,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W046"
@@ -611,7 +611,7 @@
       "edit"
     ],
     "batch": 10,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W047"
@@ -624,7 +624,7 @@
       "edit"
     ],
     "batch": 10,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W048"
@@ -637,7 +637,7 @@
       "edit"
     ],
     "batch": 10,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W049"
@@ -650,7 +650,7 @@
       "edit"
     ],
     "batch": 10,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W050"

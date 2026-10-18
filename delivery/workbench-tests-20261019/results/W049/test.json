@@ -1,0 +1,40 @@
+{
+  "test_id": "W049",
+  "source_id": "T099",
+  "title": "换姿势",
+  "categories": [
+    "edit"
+  ],
+  "type": "双图编辑指令→保留身份换姿势",
+  "test_input": {
+    "图1": "蓝衣成年男性，身份及服装",
+    "图2": "短发成年女性坐在灰阶梯抱起一条膝盖，只取姿态"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png",
+    "materials/seated-adult-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "左右映射为本工具参考图1/2；为消除误混人物，单独补充素材分工。",
+    "灰阶梯是图2姿态空间，本例不要求保留图1客厅背景。"
+  ],
+  "selected_source_prompt": "请将左边图片中的人物形象…右边姿态和动作",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "pose-transfer",
+      "final_prompt": "请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。左边指第一张参考图，右边指第二张。只采用图2坐在阶梯上一条腿抬起双臂环抱膝盖的姿态；图1男性的脸、稀疏发型、蓝衣裤和白鞋保留，不采用图2的性别脸服装。生成一张完整全身竖图2:3，无文字。",
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/seated-adult-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:40:14+08:00"
+}

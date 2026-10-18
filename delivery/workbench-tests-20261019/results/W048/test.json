@@ -1,0 +1,68 @@
+{
+  "test_id": "W048",
+  "source_id": "T095",
+  "title": "【图片提示词】添加、删除、替换提示词增强",
+  "categories": [
+    "edit"
+  ],
+  "type": "编辑指令重写元提示词→添加/删除/替换三个独立测试",
+  "test_input": {
+    "requests": [
+      "茶几加白杯",
+      "删电视",
+      "橙靠垫换深绿"
+    ],
+    "各自基底": "相同参考照片，非累计修改"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "按末尾明确格式只输出简体中文，不用前文相冲突JSON；本例无文本编辑，不触发引号冲突。",
+    "添加/删除/替换分别独立实际生图，不串联覆盖。",
+    "Qwen-Image原模型未测试。"
+  ],
+  "selected_source_prompt": "#编辑指令重写器",
+  "meta_output": {
+    "rewritten": [
+      "在参考照片茶几上添加一个无图案白色陶瓷咖啡杯，放在前景空位，尺寸和透视自然；保持人物、原有物件、背景和光线不变。",
+      "删除参考照片右侧木柜上的电视机及其支脚，用原墙面自然补齐该区域，保留木柜、人物、花瓶和其他物件，构图光影不变。",
+      "将参考照片米色沙发上的橙色靠垫替换为相同位置和大小的深绿色亚麻靠垫；保持人物、沙发、其他物件、构图及光影不变。"
+    ],
+    "format_conflict": "JSON示例 vs 最后纯文本约束，采用后者"
+  },
+  "cases": [
+    {
+      "case_id": "add-mug",
+      "final_prompt": "在参考照片茶几上添加一个无图案白色陶瓷咖啡杯，放在前景空位，尺寸和透视自然；保持人物、原有物件、背景和光线不变。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "remove-tv",
+      "final_prompt": "删除参考照片右侧木柜上的电视机及其支脚，用原墙面自然补齐该区域，保留木柜、人物、花瓶和其他物件，构图光影不变。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "replace-cushion",
+      "final_prompt": "将参考照片米色沙发上的橙色靠垫替换为相同位置和大小的深绿色亚麻靠垫；保持人物、沙发、其他物件、构图及光影不变。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:40:14+08:00"
+}

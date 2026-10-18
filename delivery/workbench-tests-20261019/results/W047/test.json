@@ -1,0 +1,57 @@
+{
+  "test_id": "W047",
+  "source_id": "T093",
+  "title": "动态光影超精细写真",
+  "categories": [
+    "edit"
+  ],
+  "type": "笼统系列写真直接提示词→冷暖两种动态机位",
+  "test_input": {
+    "系列数量": 2,
+    "版本": [
+      "冷蓝低机位",
+      "暖金高机位"
+    ]
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "保留原英文语病正文，在后面单独填充2种系列风格、动态机位和人物服装条件。",
+    "原文无具体冷暖配方，这些是本轮测试输入，不称为原库预设。",
+    "两图用于最小系列比较；Nano Banana未调用。"
+  ],
+  "selected_source_prompt": "Transform the original photo into a dramatic…set of styles",
+  "meta_output": {
+    "original_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading.",
+    "filled_versions": [
+      "cool low angle",
+      "warm high angle"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "cool-low",
+      "final_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading. Use the adult man identity from the reference photo: same receding thinning dark hair, light stubble, same blue-gray V-neck outfit. One independent 16:9 portrait with no text. Version A: low camera below chest looking upward, three-quarter torso pose, cool blue cinematic sidelight and deep shadow, photoreal skin, crisp texture, high contrast. Same sunset living room layout may remain subtly visible.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "warm-high",
+      "final_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading. Use the adult man identity from the reference photo: same receding thinning dark hair, light stubble, same blue-gray V-neck outfit. One independent 16:9 portrait with no text. Version B: high camera above head looking downward, head turned upward, warm golden cinematic sidelight and deep shadow, photoreal skin, crisp texture, high contrast. Same sunset living room layout may remain subtly visible.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:40:14+08:00"
+}

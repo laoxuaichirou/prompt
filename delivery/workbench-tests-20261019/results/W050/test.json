@@ -1,0 +1,41 @@
+{
+  "test_id": "W050",
+  "source_id": "T134",
+  "title": "人物一致性",
+  "categories": [
+    "edit"
+  ],
+  "type": "换人直接指令→场景身份替换",
+  "test_input": {
+    "图1": "蓝衣男性日落客厅，取服装/姿态/构图",
+    "图2": "黑短发左脸小痣成年女性，取身份"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png",
+    "materials/adult-woman-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选第一段完整人物替换指令，不测试独立第二段10角度模板。",
+    "填充写实电影风格；单独补充分工，避免图2服装错误迁移。",
+    "原图隐藏信息不可证明100%身份结构，按可见锚点初评。"
+  ],
+  "selected_source_prompt": "请将图1中的人物完全替换为第二张图片中的人物",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "replace-person",
+      "final_prompt": "请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。\n<empty-block/>\n<empty-block/>图1/图2对应本工具参考顺序。保留第一图蓝色V领套装和白鞋、扶沙发站姿、客厅布置、花朵电视及日落。替换为第二图成年女性的脸、黑色短发、左脸颊小痣和体型，不混合两人的脸，不采用第二图白T恤。横图16:9，无文字。",
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/adult-woman-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:40:14+08:00"
+}

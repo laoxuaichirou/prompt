@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W043/repair-v3.png"
+  ],
+  "checks": [
+    {
+      "requirement": "先诊断后修复",
+      "result": "符合",
+      "evidence": "A污染清除型与设计/污染区分已存；输出包含正向及强制指令"
+    },
+    {
+      "requirement": "彩噪压缩清除且内容保留",
+      "result": "基本符合",
+      "evidence": "灰背景明显干净，发丝衣料面部清晰，白T深蓝裤白鞋及小痣保留"
+    }
+  ],
+  "conclusion": "可见画质改善且主体构图基本保留；细节为生成式重建，不能证明失真信息恢复为真值。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:41:19+08:00",
+  "stability_verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W041/high-angle.png",
+    "results/W041/low-angle.png"
+  ],
+  "checks": [
+    {
+      "requirement": "俯拍仰拍明确差异",
+      "result": "符合",
+      "evidence": "一张明显从头顶上方俯视，一张地面向上仰视；视线按机位上抬/下看"
+    },
+    {
+      "requirement": "身份服装空间",
+      "result": "基本符合",
+      "evidence": "稀疏发型男性、蓝色套装白鞋及花朵电视金色客厅可辨"
+    }
+  ],
+  "conclusion": "高低机位静态对比主要符合；词典其他镜头和所有运镜未验证。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:41:19+08:00",
+  "stability_verified": false
+}

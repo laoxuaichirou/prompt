@@ -4633,8 +4633,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W041/high-angle.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e5fcab5a392af056c554b42571c478b3c6ceb45ca2cc5e2e824ae513f87e43a9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f4b6e81f-2b07-45ef-8c6f-e9a227687c9e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:40:02+08:00"
         },
         {
           "case_id": "low-angle",
@@ -4642,13 +4655,49 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W041/low-angle.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "a9c99aa58b330fbbb9159ca5f95cf2735bafdfe917a6adf785cc253584639979",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-efef90c6-06e5-4fdf-b938-32dd5c689b1c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:40:14+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:34:28+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W041/high-angle.png",
+        "results/W041/low-angle.png"
+      ],
+      "checks": [
+        {
+          "requirement": "俯拍仰拍明确差异",
+          "result": "符合",
+          "evidence": "一张明显从头顶上方俯视，一张地面向上仰视；视线按机位上抬/下看"
+        },
+        {
+          "requirement": "身份服装空间",
+          "result": "基本符合",
+          "evidence": "稀疏发型男性、蓝色套装白鞋及花朵电视金色客厅可辨"
+        }
+      ],
+      "conclusion": "高低机位静态对比主要符合；词典其他镜头和所有运镜未验证。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:41:19+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/视频分镜/[已投产·4分] 镜头角度与提示词：6 - Camera Angles & Movements.md",
       "original_sha256": "0e96a453a8e6fecb54065c206fa37527629658f74f66e58643aba3c735fe795a",
@@ -4877,13 +4926,48 @@
           "reference_material": [
             "materials/adult-woman-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W042/identity-locked-edit.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "a6bee9086450a41bbaf41309f9b4ebf7bf842da7d26f23027d91427f651dd1c3",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-8a3e2aec-95af-489b-8c45-e8b184582ef8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:39:13+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:34:28+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W042/identity-locked-edit.png"
+      ],
+      "checks": [
+        {
+          "requirement": "来源锁定JSON",
+          "result": "符合",
+          "evidence": "先生成记录完整source/image_locked JSON，无未决null，身份从图像取值"
+        },
+        {
+          "requirement": "只换深绿长袖针织衫",
+          "result": "基本符合",
+          "evidence": "上衣变深绿针织，短发小痣、裤鞋、姿势、灰棚全身构图可见保留"
+        }
+      ],
+      "conclusion": "最小身份锁定编辑符合主要可见要求；未量化身份相似度，也未验证引擎确定性或原指定模型。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:41:19+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
       "original_sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
@@ -4931,13 +5015,48 @@
           "reference_material": [
             "materials/damaged-adult-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W043/repair-v3.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "48caac4a4aa4d1a36816451ae9d20fb3c8b160f221f10affcf21a629b1b6b0d3",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-138e019c-6453-47e2-aef5-ad68feb59ebe.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:40:14+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:34:28+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W043/repair-v3.png"
+      ],
+      "checks": [
+        {
+          "requirement": "先诊断后修复",
+          "result": "符合",
+          "evidence": "A污染清除型与设计/污染区分已存；输出包含正向及强制指令"
+        },
+        {
+          "requirement": "彩噪压缩清除且内容保留",
+          "result": "基本符合",
+          "evidence": "灰背景明显干净，发丝衣料面部清晰，白T深蓝裤白鞋及小痣保留"
+        }
+      ],
+      "conclusion": "可见画质改善且主体构图基本保留；细节为生成式重建，不能证明失真信息恢复为真值。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:41:19+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·5分] GPT2画质修复元提示词.md",
       "original_sha256": "c62773b764bd1e9cf0c2dc61fa50f4befc94b8fd13ac5960ca2996ba1bb4f7ab",
@@ -4979,13 +5098,48 @@
           "reference_material": [
             "materials/marked-adult-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W044/remove-test-marks.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "92e55adf9b7fec5127cd58b3f04d73494d7c2a369097d95a341d874cfc2b5504",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-e04499ee-f9d1-4bec-ae60-beeb7a87f4db.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:39:33+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:34:28+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W044/remove-test-marks.png"
+      ],
+      "checks": [
+        {
+          "requirement": "自制测试文字清除",
+          "result": "符合",
+          "evidence": "四角TEST及对角DEMO均不再可见，原遮挡区无明显接缝"
+        },
+        {
+          "requirement": "人物服装和背景保持",
+          "result": "基本符合",
+          "evidence": "黑短发小痣、白T蓝裤白鞋、灰色棚景与站姿保留"
+        }
+      ],
+      "conclusion": "直接移除自制合成标注最小用例主要符合；不代表教程80场景或四模型能力表已验证。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:41:19+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·5分] 编辑模型思考.md",
       "original_sha256": "ca1dbd73e411f7c12e9f878faa8be1c6e36fe3b92ecc2177e3517982e0ca934f",
@@ -5027,18 +5181,365 @@
           "reference_material": [
             "materials/damaged-adult-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W045/strict-restore.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "5b1caaa84a68a53392cf51f3c5cad25cec471f39f412329cdaaf106d9769c4e9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-489cc008-6d24-4d8c-92c2-557e0fab89af.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:40:14+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:34:28+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W045/strict-restore.png"
+      ],
+      "checks": [
+        {
+          "requirement": "自然高保真可见修复",
+          "result": "基本符合",
+          "evidence": "彩噪及块状模糊消失，主体衣服背景保持，纹理较自然"
+        },
+        {
+          "requirement": "4K超分辨率",
+          "result": "不符合",
+          "evidence": "实际输出1024×1536，与输入尺寸相同，未达到4K"
+        },
+        {
+          "requirement": "仅恢复真实原有细节",
+          "result": "无法核验",
+          "evidence": "只有受损参考输入，清晰皮肤/纤维为模型推断，无法证明真实恢复"
+        }
+      ],
+      "conclusion": "已真实修复出图，但4K硬要求不满足，真实细节来源不可验证；不能标记完整通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:41:19+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·4分] 高清修复提示词模板.md",
       "original_sha256": "fdc9a8e2771a84e1aa8f27da46da7be77a35189a2b25ced1b0c43a4e43d51b24",
       "original_test_status": "存在问题",
       "original_test_conclusion": "合成降质人像视觉清理成功，但4K要求未满足；生成式纹理不是被证实的真实信息恢复。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W046",
+      "source_id": "T025",
+      "title": "22种AI调色提示词22种AI调色提示词",
+      "categories": [
+        "edit"
+      ],
+      "type": "22种调色预设→同一参考两种对比",
+      "test_input": {
+        "选项": [
+          "LOOK01现代黑色电影",
+          "LOOK17现代青橙"
+        ],
+        "主体": "同一合成蓝衣男性日落客厅"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "仅选择22种中的两种做最小风格对比，未验证其余20种。",
+        "原各LOOK固定示例主体替换为同一上传照片，保留调色配方；添加构图保持指令。",
+        "这是视觉胶片模拟，不是实际胶片/电影摄影工艺测试。"
+      ],
+      "selected_source_prompt": "LOOK01及LOOK17",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "look-01-noir",
+          "final_prompt": "对提供的同一参考照片只进行所选调色，不更换人物或场景，不改姿势构图物体位置与服装设计，不添加任何文字或水印。调色风格：现代黑色电影。高对比度黑白影像，浓郁深沉的黑色，纯净的银白色高光，细腻的胶片颗粒，锐利的纹理质感。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "look-17-teal-orange",
+          "final_prompt": "对提供的同一参考照片只进行所选调色，不更换人物或场景，不改姿势构图物体位置与服装设计，不添加任何文字或水印。调色风格：电影化青橙色调。阴影为冷调深青蓝色，中间调温暖饱和以突出肤色，高光呈现柔和琥珀色。高对比度，大片质感。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:40:14+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·4分] 22种AI调色提示词22种AI调色提示词.md",
+      "original_sha256": "4918c7af452d97b5f8945915cf4722b2bfc56862f962b01d058e0300d8029602",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "所选01与17两个直接生图子例符合视觉初评；其余20组、纯调色控制变量及稳定性未验证。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W047",
+      "source_id": "T093",
+      "title": "动态光影超精细写真",
+      "categories": [
+        "edit"
+      ],
+      "type": "笼统系列写真直接提示词→冷暖两种动态机位",
+      "test_input": {
+        "系列数量": 2,
+        "版本": [
+          "冷蓝低机位",
+          "暖金高机位"
+        ]
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "保留原英文语病正文，在后面单独填充2种系列风格、动态机位和人物服装条件。",
+        "原文无具体冷暖配方，这些是本轮测试输入，不称为原库预设。",
+        "两图用于最小系列比较；Nano Banana未调用。"
+      ],
+      "selected_source_prompt": "Transform the original photo into a dramatic…set of styles",
+      "meta_output": {
+        "original_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading.",
+        "filled_versions": [
+          "cool low angle",
+          "warm high angle"
+        ]
+      },
+      "cases": [
+        {
+          "case_id": "cool-low",
+          "final_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading. Use the adult man identity from the reference photo: same receding thinning dark hair, light stubble, same blue-gray V-neck outfit. One independent 16:9 portrait with no text. Version A: low camera below chest looking upward, three-quarter torso pose, cool blue cinematic sidelight and deep shadow, photoreal skin, crisp texture, high contrast. Same sunset living room layout may remain subtly visible.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "warm-high",
+          "final_prompt": "Transform the original photo into a dramatic, photorealistic, ultra-detailed set of  styles characters are included dynamic camera angle with cinematic lighting, high contrast, crisp textures, and precise color grading. Use the adult man identity from the reference photo: same receding thinning dark hair, light stubble, same blue-gray V-neck outfit. One independent 16:9 portrait with no text. Version B: high camera above head looking downward, head turned upward, warm golden cinematic sidelight and deep shadow, photoreal skin, crisp texture, high contrast. Same sunset living room layout may remain subtly visible.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:40:14+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[仅参考·2分] 动态光影超精细写真.md",
+      "original_sha256": "2f4d2731d743d0abb0079ab52b2cff1fd2dbdf472c0caeab7ca83760e0a711c4",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "补入明确样式后，双图系列最小用例符合主要视觉要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W048",
+      "source_id": "T095",
+      "title": "【图片提示词】添加、删除、替换提示词增强",
+      "categories": [
+        "edit"
+      ],
+      "type": "编辑指令重写元提示词→添加/删除/替换三个独立测试",
+      "test_input": {
+        "requests": [
+          "茶几加白杯",
+          "删电视",
+          "橙靠垫换深绿"
+        ],
+        "各自基底": "相同参考照片，非累计修改"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "按末尾明确格式只输出简体中文，不用前文相冲突JSON；本例无文本编辑，不触发引号冲突。",
+        "添加/删除/替换分别独立实际生图，不串联覆盖。",
+        "Qwen-Image原模型未测试。"
+      ],
+      "selected_source_prompt": "#编辑指令重写器",
+      "meta_output": {
+        "rewritten": [
+          "在参考照片茶几上添加一个无图案白色陶瓷咖啡杯，放在前景空位，尺寸和透视自然；保持人物、原有物件、背景和光线不变。",
+          "删除参考照片右侧木柜上的电视机及其支脚，用原墙面自然补齐该区域，保留木柜、人物、花瓶和其他物件，构图光影不变。",
+          "将参考照片米色沙发上的橙色靠垫替换为相同位置和大小的深绿色亚麻靠垫；保持人物、沙发、其他物件、构图及光影不变。"
+        ],
+        "format_conflict": "JSON示例 vs 最后纯文本约束，采用后者"
+      },
+      "cases": [
+        {
+          "case_id": "add-mug",
+          "final_prompt": "在参考照片茶几上添加一个无图案白色陶瓷咖啡杯，放在前景空位，尺寸和透视自然；保持人物、原有物件、背景和光线不变。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "remove-tv",
+          "final_prompt": "删除参考照片右侧木柜上的电视机及其支脚，用原墙面自然补齐该区域，保留木柜、人物、花瓶和其他物件，构图光影不变。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "replace-cushion",
+          "final_prompt": "将参考照片米色沙发上的橙色靠垫替换为相同位置和大小的深绿色亚麻靠垫；保持人物、沙发、其他物件、构图及光影不变。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:40:14+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[仅参考·4分] 【图片提示词】添加、删除、替换提示词增强.md",
+      "original_sha256": "1d79cef19197d235bafe4ca6c47cf7de319f014b59e7c51a649d7256d531d663",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三子例均实际出图，删除和换字表现良好；添加有局部背景改动，原格式合同存在冲突。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W049",
+      "source_id": "T099",
+      "title": "换姿势",
+      "categories": [
+        "edit"
+      ],
+      "type": "双图编辑指令→保留身份换姿势",
+      "test_input": {
+        "图1": "蓝衣成年男性，身份及服装",
+        "图2": "短发成年女性坐在灰阶梯抱起一条膝盖，只取姿态"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/seated-adult-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "左右映射为本工具参考图1/2；为消除误混人物，单独补充素材分工。",
+        "灰阶梯是图2姿态空间，本例不要求保留图1客厅背景。"
+      ],
+      "selected_source_prompt": "请将左边图片中的人物形象…右边姿态和动作",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "pose-transfer",
+          "final_prompt": "请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。左边指第一张参考图，右边指第二张。只采用图2坐在阶梯上一条腿抬起双臂环抱膝盖的姿态；图1男性的脸、稀疏发型、蓝衣裤和白鞋保留，不采用图2的性别脸服装。生成一张完整全身竖图2:3，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png",
+            "materials/seated-adult-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:40:14+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·3分] 换姿势.md",
+      "original_sha256": "1c1e8d0ae36d8d33b89ba498195296e937984d8d09131fcbf0da11394a219e8d",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "双参考姿态转换最小用例符合主要要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W050",
+      "source_id": "T134",
+      "title": "人物一致性",
+      "categories": [
+        "edit"
+      ],
+      "type": "换人直接指令→场景身份替换",
+      "test_input": {
+        "图1": "蓝衣男性日落客厅，取服装/姿态/构图",
+        "图2": "黑短发左脸小痣成年女性，取身份"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/adult-woman-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选第一段完整人物替换指令，不测试独立第二段10角度模板。",
+        "填充写实电影风格；单独补充分工，避免图2服装错误迁移。",
+        "原图隐藏信息不可证明100%身份结构，按可见锚点初评。"
+      ],
+      "selected_source_prompt": "请将图1中的人物完全替换为第二张图片中的人物",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "replace-person",
+          "final_prompt": "请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。\n<empty-block/>\n<empty-block/>图1/图2对应本工具参考顺序。保留第一图蓝色V领套装和白鞋、扶沙发站姿、客厅布置、花朵电视及日落。替换为第二图成年女性的脸、黑色短发、左脸颊小痣和体型，不混合两人的脸，不采用第二图白T恤。横图16:9，无文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png",
+            "materials/adult-woman-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:40:14+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
+      "original_sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。",
       "original_evidence_is_new_test": false
     }
   }

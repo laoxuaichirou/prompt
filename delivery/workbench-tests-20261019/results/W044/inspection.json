@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W044/remove-test-marks.png"
+  ],
+  "checks": [
+    {
+      "requirement": "自制测试文字清除",
+      "result": "符合",
+      "evidence": "四角TEST及对角DEMO均不再可见，原遮挡区无明显接缝"
+    },
+    {
+      "requirement": "人物服装和背景保持",
+      "result": "基本符合",
+      "evidence": "黑短发小痣、白T蓝裤白鞋、灰色棚景与站姿保留"
+    }
+  ],
+  "conclusion": "直接移除自制合成标注最小用例主要符合；不代表教程80场景或四模型能力表已验证。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:41:19+08:00",
+  "stability_verified": false
+}
