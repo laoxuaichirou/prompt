@@ -1,0 +1,86 @@
+[
+  {
+    "file": "original-images-01-of-14.zip",
+    "bytes": 35410323,
+    "images": 19,
+    "sha256": "5902f70cb28859f8395c38029873f9aeb9fc8a0518a102f9b3ebe881cc58c31a"
+  },
+  {
+    "file": "original-images-02-of-14.zip",
+    "bytes": 36157841,
+    "images": 17,
+    "sha256": "319ead4623ff20ae12c92d91741c1ccd6c8ca147d0aa8c08840089be64c6212d"
+  },
+  {
+    "file": "original-images-03-of-14.zip",
+    "bytes": 36725128,
+    "images": 17,
+    "sha256": "17d3c1d0a1f45df4e395216b20381c3199191337a3b05c5984f73f8c520ab56f"
+  },
+  {
+    "file": "original-images-04-of-14.zip",
+    "bytes": 36663421,
+    "images": 16,
+    "sha256": "a81792f1c299c01bcd486ac63f7d6b36fd4f1f878555033de3dd1e8001bbc8a0"
+  },
+  {
+    "file": "original-images-05-of-14.zip",
+    "bytes": 35567128,
+    "images": 18,
+    "sha256": "9346fb5645d0a4a41a6692563749180e3c469860265edee1196ce57e026a117c"
+  },
+  {
+    "file": "original-images-06-of-14.zip",
+    "bytes": 36759743,
+    "images": 18,
+    "sha256": "fca5c2ae923e014fef82416c387a684751933d02de58a9b9e8032a48e61cf0b5"
+  },
+  {
+    "file": "original-images-07-of-14.zip",
+    "bytes": 35250076,
+    "images": 22,
+    "sha256": "9aad1a31d057ee221ef0f775da611deeacf646592c1405d576fe97b84084da07"
+  },
+  {
+    "file": "original-images-08-of-14.zip",
+    "bytes": 37747067,
+    "images": 17,
+    "sha256": "40eb2afc7f0577d647e9b604b7d48339517c88416685a51eedd1e60293ea63ab"
+  },
+  {
+    "file": "original-images-09-of-14.zip",
+    "bytes": 35825111,
+    "images": 18,
+    "sha256": "97681b91bbcc71a896206ed7a1fd76d33cc4bf67a07d4a815a86b7b43b4c512b"
+  },
+  {
+    "file": "original-images-10-of-14.zip",
+    "bytes": 37312086,
+    "images": 15,
+    "sha256": "1af3ab7c6ee4814381b0ff50db382b219b35d3d6731459f829aa2056db01510a"
+  },
+  {
+    "file": "original-images-11-of-14.zip",
+    "bytes": 36922349,
+    "images": 17,
+    "sha256": "edc056a4605e81cef784dadb191b5ca88cd0b880ae58600a652ac981584ae230"
+  },
+  {
+    "file": "original-images-12-of-14.zip",
+    "bytes": 36265163,
+    "images": 16,
+    "sha256": "de9aad8f184eea214cf14b12aab56f4fc29d13755071b89511951230ee61a3c4"
+  },
+  {
+    "file": "original-images-13-of-14.zip",
+    "bytes": 36476439,
+    "images": 19,
+    "sha256": "5077ab6382542d23828f0034c5a6d3e5732f1c362bb78e96a852a07508114d83"
+  },
+  {
+    "file": "original-images-14-of-14.zip",
+    "bytes": 6670192,
+    "images": 4,
+    "sha256": "34282f18103cdb1137fd2fad81aa608e4e0c66b61632e6ca7c8ddf02b3ab24f6"
+  }
+]
