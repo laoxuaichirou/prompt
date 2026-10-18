@@ -1,0 +1,36 @@
+{
+  "test_id": "W027",
+  "source_id": "T005",
+  "title": "四宫格分镜",
+  "categories": [
+    "story"
+  ],
+  "type": "动漫人物参考→四宫格静态分镜",
+  "test_input": "上传两位合成成年动漫人物，都市黄昏街边交谈，四个视角。",
+  "reference_material": [
+    "materials/anime-adults-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "将原四宫格要求编译为2×2，每格及整体均16:9，无黑色描边。",
+    "明确一张参考中的两个人物身份，场景按剧本替换，不沿用灰色人物背景。",
+    "只生成静态动漫分镜，不声明视频生成完成。"
+  ],
+  "selected_source_prompt": "按照我提供的1个或多个人物形象图片和文字剧本，生成动漫的分镜图，一共4个分镜，分镜画面比例必须是为横版16:9，将生成好的分镜变成4宫格反馈给我，宫格之间不要有黑线，无线拼接。\n\n\n\n注意事项：\n\n\n\n1、镜头里不需要展示文字对白的部分，\n\n2、镜头里的场景不要受到人物形象图片里的场景影响，只需要按照与人物形象一样的艺术风格结合剧本里的文字描述去生成分镜的场景或是按照我提供的图片场景去生成\n\n3、分镜需要有张力，动作、表情等细节需要生动\n\n4、需要是动画视频的分镜，不是漫画书的风格，注意构图上不要上漫画书风格\n\n5、每个分镜头的画面比例必须是横版16:9，分镜头图片之间不需要有黑色描边分割\n\n6、画面里不能出现英文。\n\n整体画面视觉风格：中国现代都市风动漫，黄昏时刻淡蓝色调的天空\n\n基本场景：两个人站在繁华都市街道上交谈的不同视角展示\n\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "anime-four",
+      "final_prompt": "Create one native 2 by 2 seamless four-panel anime storyboard, overall landscape 16:9, each panel horizontal 16:9, without black panel borders. Use the same two fictional adults from the supplied character reference: adult woman with black bob, orange jacket, white top, black trousers and white sneakers; adult man with silver-gray short hair, dark navy long coat, cream sweater, gray trousers and black shoes. Preserve the character art style, faces and outfits, but ignore the gray reference background. Scene: a busy modern Chinese city street at dusk with a pale blue sky, stylized background pedestrians and storefront shapes without readable signs. Frame 1 wide shot: woman on left and man on right face each other on the sidewalk. Frame 2 over the woman shoulder toward the man, he gestures with an open hand. Frame 3 reverse over the man shoulder toward the woman, she smiles and lightly tilts her head. Frame 4 side two-shot, both laugh naturally and start walking in the same direction. Lively expressions and visual tension, cinematic animation keyframes rather than comic-book pages. No dialogue, no captions, no English or other readable text.",
+      "reference_material": [
+        "materials/anime-adults-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:10:43+08:00"
+}

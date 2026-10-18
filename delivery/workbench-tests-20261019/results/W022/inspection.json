@@ -1,0 +1,23 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W022/cover-negative-space.png"
+  ],
+  "checks": [
+    {
+      "requirement": "人物身份及无文字",
+      "result": "符合",
+      "evidence": "同一合成成年男性，灰T恤，纯净渐变背景无文字"
+    },
+    {
+      "requirement": "人物在右侧并不贴边，左侧60%留白",
+      "result": "存在问题",
+      "evidence": "人物肩膀触及右边缘，下部身体向左侵占留白区域"
+    }
+  ],
+  "conclusion": "已出图，身份保留；边缘安全距离及留白比例未充分满足。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:14:51+08:00",
+  "stability_verified": false
+}

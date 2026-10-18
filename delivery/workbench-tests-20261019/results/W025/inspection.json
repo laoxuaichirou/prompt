@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W025/leaf-story-grid.png"
+  ],
+  "checks": [
+    {
+      "requirement": "9镜头JSON和标签式提示词",
+      "result": "符合",
+      "evidence": "已存完整九镜头规划，每镜头20–35英文词及排除项"
+    },
+    {
+      "requirement": "完整静态九格叙事",
+      "result": "符合",
+      "evidence": "闭合书→翻书→发现叶片→举叶→望日落→微笑→归还叶片→合书；无字幕"
+    },
+    {
+      "requirement": "角色场景连续性",
+      "result": "基本符合",
+      "evidence": "蓝色衣服、同一男性及日落客厅贯穿；局部脸部和陈设有生成差异"
+    }
+  ],
+  "conclusion": "最小静态分镜用例符合主要要求。仅验证分镜图；NanoBananaPro为原输出格式字段，实际工具image_gen，视频未生成。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:14:51+08:00",
+  "stability_verified": false
+}

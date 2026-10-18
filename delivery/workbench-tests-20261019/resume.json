@@ -1,71 +1,6 @@
 {
-  "next_test_id": "W021",
+  "next_test_id": "W026",
   "unfinished": [
-    {
-      "id": "W021",
-      "source_id": "T030",
-      "title": "image-2水彩拼贴旅行海报提示词！",
-      "categories": [
-        "graphic"
-      ],
-      "batch": 5,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W021"
-    },
-    {
-      "id": "W022",
-      "source_id": "T074",
-      "title": "封面常用提示词",
-      "categories": [
-        "graphic"
-      ],
-      "batch": 5,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W022"
-    },
-    {
-      "id": "W023",
-      "source_id": "T081",
-      "title": "封面大师",
-      "categories": [
-        "graphic"
-      ],
-      "batch": 5,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W023"
-    },
-    {
-      "id": "W024",
-      "source_id": "T084",
-      "title": "电商海报生成元提示词",
-      "categories": [
-        "graphic"
-      ],
-      "batch": 5,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W024"
-    },
-    {
-      "id": "W025",
-      "source_id": "T002",
-      "title": "NanoBananaPro 分镜拆解助手（未测试）",
-      "categories": [
-        "story"
-      ],
-      "batch": 5,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W025"
-    },
     {
       "id": "W026",
       "source_id": "T003",
@@ -74,7 +9,7 @@
         "story"
       ],
       "batch": 6,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W026"
@@ -87,7 +22,7 @@
         "story"
       ],
       "batch": 6,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W027"
@@ -100,7 +35,7 @@
         "story"
       ],
       "batch": 6,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W028"
@@ -113,7 +48,7 @@
         "story"
       ],
       "batch": 6,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W029"
@@ -126,7 +61,7 @@
         "story"
       ],
       "batch": 6,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W030"
@@ -483,5 +418,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T02:05:27+08:00"
+  "updated_at": "2026-10-19T02:14:52+08:00"
 }

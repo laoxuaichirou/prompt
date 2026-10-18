@@ -24,8 +24,21 @@
       "case_id": "hangzhou-watercolor",
       "final_prompt": "创作一张以杭州西湖为主题的水彩拼贴旅行海报，竖版3:4。柔和粉彩色调与黄昏金色光影，照片拼贴与水彩手绘融合，纸张纹理与晕染边缘清楚。主场景是夕阳下苏堤湖畔步道，一名虚构成年游客在左侧推着自行车缓行，岸边树木轻盈、水面平静倒映暖金色天光。背景远处为雷峰塔、石拱桥、湖上小船与江南屋檐，青绿和米色半透明几何片、水彩泼洒叠层有层次而不杂乱。左上大标题准确写“HANGZHOU 2026”，下方中文“湖山入画，慢游杭州”；右上竖排中文“西湖慢行”，下方小型大写“HANGZHOU ZHEJIANG”；左下短句“在湖边，等一场日落”配简洁水波图标；底部居中手写“Hangzhou”；右下竖排英文“Lake Art Boats People Slow Life”。无广州塔、轻轨或珠江游轮。温暖宁静、空气感强，现代文艺旅行宣传设计，不添加品牌与作者签名。",
       "reference_material": [],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W021/hangzhou-watercolor.png",
+          "width": 1086,
+          "height": 1448,
+          "sha256": "29833f8fad374fa8e3cded5f68e74750fca35d66fea2de3410cee250c465682e",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ec958e06-7699-47a8-a649-7d628ca2228d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:07:53+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:02:56+08:00"

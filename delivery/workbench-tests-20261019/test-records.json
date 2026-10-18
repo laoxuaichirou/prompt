@@ -2243,13 +2243,48 @@
           "case_id": "hangzhou-watercolor",
           "final_prompt": "创作一张以杭州西湖为主题的水彩拼贴旅行海报，竖版3:4。柔和粉彩色调与黄昏金色光影，照片拼贴与水彩手绘融合，纸张纹理与晕染边缘清楚。主场景是夕阳下苏堤湖畔步道，一名虚构成年游客在左侧推着自行车缓行，岸边树木轻盈、水面平静倒映暖金色天光。背景远处为雷峰塔、石拱桥、湖上小船与江南屋檐，青绿和米色半透明几何片、水彩泼洒叠层有层次而不杂乱。左上大标题准确写“HANGZHOU 2026”，下方中文“湖山入画，慢游杭州”；右上竖排中文“西湖慢行”，下方小型大写“HANGZHOU ZHEJIANG”；左下短句“在湖边，等一场日落”配简洁水波图标；底部居中手写“Hangzhou”；右下竖排英文“Lake Art Boats People Slow Life”。无广州塔、轻轨或珠江游轮。温暖宁静、空气感强，现代文艺旅行宣传设计，不添加品牌与作者签名。",
           "reference_material": [],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W021/hangzhou-watercolor.png",
+              "width": 1086,
+              "height": 1448,
+              "sha256": "29833f8fad374fa8e3cded5f68e74750fca35d66fea2de3410cee250c465682e",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ec958e06-7699-47a8-a649-7d628ca2228d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:07:53+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:02:56+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W021/hangzhou-watercolor.png"
+      ],
+      "checks": [
+        {
+          "requirement": "替换城市且保持水彩旅行拼贴",
+          "result": "符合",
+          "evidence": "杭州、西湖、雷峰塔意象及纸张水彩；无广州塔"
+        },
+        {
+          "requirement": "指定排版文案",
+          "result": "符合",
+          "evidence": "HANGZHOU 2026、西湖慢行及中文副标题可读"
+        }
+      ],
+      "conclusion": "最小完整城市替换用例符合主要可见要求；画面不是准确地理地图，未验证稳定性。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:14:51+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/海报封面/[已投产·3分] image-2水彩拼贴旅行海报提示词！.md",
       "original_sha256": "08c48b4413f86586e95a527d1f9d8935d80a098e1b84f89181f45b55cfa4ddbc",
@@ -2289,13 +2324,48 @@
           "reference_material": [
             "materials/adult-man-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W022/cover-negative-space.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "4ffbd0e01a49e7a8d47d8da3ff087134c42153ba205de1aa4acdb5342285d6b2",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-25877326-c905-454a-a496-876bafab3120.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:08:16+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:02:56+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W022/cover-negative-space.png"
+      ],
+      "checks": [
+        {
+          "requirement": "人物身份及无文字",
+          "result": "符合",
+          "evidence": "同一合成成年男性，灰T恤，纯净渐变背景无文字"
+        },
+        {
+          "requirement": "人物在右侧并不贴边，左侧60%留白",
+          "result": "存在问题",
+          "evidence": "人物肩膀触及右边缘，下部身体向左侵占留白区域"
+        }
+      ],
+      "conclusion": "已出图，身份保留；边缘安全距离及留白比例未充分满足。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:14:51+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/海报封面/[仅参考·3分] 封面常用提示词.md",
       "original_sha256": "d23f22c6d8f53372faa2f7b60b2253723464adb93e4583aaa81324c2b55c79ce",
@@ -2331,20 +2401,74 @@
           "case_id": "type-cover-01",
           "final_prompt": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
           "reference_material": [],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W023/type-cover-01.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "319c62a75ec961c6e322f3110b0b44572289dc61c2f137316576aee516d0f272",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ae2e9bad-06f5-400f-852d-f2a0c41036f8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:09:00+08:00"
         },
         {
           "case_id": "type-cover-02",
           "final_prompt": "Creative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
           "reference_material": [],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W023/type-cover-02.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "bc34439371e6c6fb58d67efd4f02af7a073ba81240c2c1f8fb8f796a69db66e2",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-589a1f3d-f802-47b5-b8e8-6d4a5be6398b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:09:08+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:02:56+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W023/type-cover-01.png",
+        "results/W023/type-cover-02.png"
+      ],
+      "checks": [
+        {
+          "requirement": "两页同色系且排版推进",
+          "result": "符合",
+          "evidence": "一页深色巨型汉字；另一页折纸字与投影，均奶油底"
+        },
+        {
+          "requirement": "只出现白名单中文",
+          "result": "符合",
+          "evidence": "两图均为光与形、静物笔记，无额外文字"
+        },
+        {
+          "requirement": "元提示词执行",
+          "result": "符合",
+          "evidence": "先输出两段英文提示词，再分别生成两张2:3封面"
+        }
+      ],
+      "conclusion": "两张完整比较用例符合主要可见要求；未验证批量稳定性。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:14:51+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/海报封面/[已投产·4分] 封面大师.md",
       "original_sha256": "4d2e365c6499f91f7abd22f227c64a2c530a2daac15948bc24d39b11601cff17",
@@ -2384,13 +2508,48 @@
           "reference_material": [
             "materials/bottle-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W024/expanded-poster.png",
+              "width": 1086,
+              "height": 1448,
+              "sha256": "e3faad303dc4c14df2e9b596583bbd0648b670a8069bc4efc529f9b611db7841",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-990c418a-0bd8-4c03-8bea-96a74168b0bf.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:09:00+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:02:56+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W024/expanded-poster.png"
+      ],
+      "checks": [
+        {
+          "requirement": "800–1500英文词及六段扩写",
+          "result": "符合",
+          "evidence": "记录的最终英文扩写853词、六段，先扩写后生图"
+        },
+        {
+          "requirement": "商品、中文文案及3:4构图",
+          "result": "符合",
+          "evidence": "琥珀瓶黑盖、光影日常、在片刻里，发现简单；暖色台座和窗影"
+        }
+      ],
+      "conclusion": "元提示词已执行并生成海报，主要文字、商品和氛围要求符合；单次模型初评。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:14:51+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/电商产品/[仅参考·4分] 电商海报生成元提示词.md",
       "original_sha256": "bc67851d3df2947fc633d0e454e6fee4cc358e27e24fcc8a5b3621aaa04ab728",
@@ -2473,18 +2632,463 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W025/leaf-story-grid.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "f5ccde1aea1552a3b39440801e5703dea037a444ec1d7bda1395674782ba114e",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c30cd808-23bb-4c53-a7cc-deb4b3775030.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:09:00+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:02:56+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W025/leaf-story-grid.png"
+      ],
+      "checks": [
+        {
+          "requirement": "9镜头JSON和标签式提示词",
+          "result": "符合",
+          "evidence": "已存完整九镜头规划，每镜头20–35英文词及排除项"
+        },
+        {
+          "requirement": "完整静态九格叙事",
+          "result": "符合",
+          "evidence": "闭合书→翻书→发现叶片→举叶→望日落→微笑→归还叶片→合书；无字幕"
+        },
+        {
+          "requirement": "角色场景连续性",
+          "result": "基本符合",
+          "evidence": "蓝色衣服、同一男性及日落客厅贯穿；局部脸部和陈设有生成差异"
+        }
+      ],
+      "conclusion": "最小静态分镜用例符合主要要求。仅验证分镜图；NanoBananaPro为原输出格式字段，实际工具image_gen，视频未生成。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:14:51+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
       "original_sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
       "original_test_status": "存在问题",
       "original_test_conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W026",
+      "source_id": "T003",
+      "title": "LLM动作引擎（各类提示词示例）",
+      "categories": [
+        "story"
+      ],
+      "type": "动作识别元提示词→三组动作→三张图",
+      "test_input": "输入站立扶沙发的成年男子，指定3组新动作及新表情，避免与输入动作相似。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择开头完整动作元提示词，指定数量3；没有冒充缺失的下一帧子页。",
+        "后文景别优化为参考说明，本用例分别写明中景或全身并实际出图。"
+      ],
+      "selected_source_prompt": "你是一名AI图片动作识别专家，先查看图片中的主体人物的动作，然后根据原有动作，重新给他一个新的动作和新的表情，避开相似度高的动作。\n指定他\n（数字）组新动作，每行一个输出一个新动作，动作不要重复。\n\n",
+      "meta_output": "中景，坐在沙发前沿，双臂交叉抱胸，眉梢微抬、闭嘴略带疑惑，身体微向后靠。\n全身，双手叉腰、双脚分开站立，仰头自然大笑，肩膀放松。\n全身，在茶几旁轻蹲，一手轻触桌边，另一手向前张掌打招呼，眉眼惊喜、自然微笑。",
+      "cases": [
+        {
+          "case_id": "action-01",
+          "final_prompt": "依据同一参考照片中的虚构成年男子，仅更改动作、表情和指定机位，保留稀疏发际线、黑灰短发、淡胡须、灰蓝刷手服、白鞋、湖景客厅和夕阳光线。中景，坐在沙发前沿，双臂交叉抱胸，眉梢微抬、闭嘴略带疑惑，身体微向后靠。生成一张独立写实照片，不拼图、不写文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "action-02",
+          "final_prompt": "依据同一参考照片中的虚构成年男子，仅更改动作、表情和指定机位，保留稀疏发际线、黑灰短发、淡胡须、灰蓝刷手服、白鞋、湖景客厅和夕阳光线。全身，双手叉腰、双脚分开站立，仰头自然大笑，肩膀放松。生成一张独立写实照片，不拼图、不写文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "action-03",
+          "final_prompt": "依据同一参考照片中的虚构成年男子，仅更改动作、表情和指定机位，保留稀疏发际线、黑灰短发、淡胡须、灰蓝刷手服、白鞋、湖景客厅和夕阳光线。全身，在茶几旁轻蹲，一手轻触桌边，另一手向前张掌打招呼，眉眼惊喜、自然微笑。生成一张独立写实照片，不拼图、不写文字。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:10:43+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[待测试·4分] LLM动作引擎（各类提示词示例）.md",
+      "original_sha256": "2acfaeabac65c959ec823cb7c42ff04af7aef57a4d12d1e27431c9be048233ed",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "可见主框架五动作链路完成，动作多样性和景别基本成立；细微表情偏弱，A/B比较阻塞，不自动转正。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W027",
+      "source_id": "T005",
+      "title": "四宫格分镜",
+      "categories": [
+        "story"
+      ],
+      "type": "动漫人物参考→四宫格静态分镜",
+      "test_input": "上传两位合成成年动漫人物，都市黄昏街边交谈，四个视角。",
+      "reference_material": [
+        "materials/anime-adults-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "将原四宫格要求编译为2×2，每格及整体均16:9，无黑色描边。",
+        "明确一张参考中的两个人物身份，场景按剧本替换，不沿用灰色人物背景。",
+        "只生成静态动漫分镜，不声明视频生成完成。"
+      ],
+      "selected_source_prompt": "按照我提供的1个或多个人物形象图片和文字剧本，生成动漫的分镜图，一共4个分镜，分镜画面比例必须是为横版16:9，将生成好的分镜变成4宫格反馈给我，宫格之间不要有黑线，无线拼接。\n\n\n\n注意事项：\n\n\n\n1、镜头里不需要展示文字对白的部分，\n\n2、镜头里的场景不要受到人物形象图片里的场景影响，只需要按照与人物形象一样的艺术风格结合剧本里的文字描述去生成分镜的场景或是按照我提供的图片场景去生成\n\n3、分镜需要有张力，动作、表情等细节需要生动\n\n4、需要是动画视频的分镜，不是漫画书的风格，注意构图上不要上漫画书风格\n\n5、每个分镜头的画面比例必须是横版16:9，分镜头图片之间不需要有黑色描边分割\n\n6、画面里不能出现英文。\n\n整体画面视觉风格：中国现代都市风动漫，黄昏时刻淡蓝色调的天空\n\n基本场景：两个人站在繁华都市街道上交谈的不同视角展示\n\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "anime-four",
+          "final_prompt": "Create one native 2 by 2 seamless four-panel anime storyboard, overall landscape 16:9, each panel horizontal 16:9, without black panel borders. Use the same two fictional adults from the supplied character reference: adult woman with black bob, orange jacket, white top, black trousers and white sneakers; adult man with silver-gray short hair, dark navy long coat, cream sweater, gray trousers and black shoes. Preserve the character art style, faces and outfits, but ignore the gray reference background. Scene: a busy modern Chinese city street at dusk with a pale blue sky, stylized background pedestrians and storefront shapes without readable signs. Frame 1 wide shot: woman on left and man on right face each other on the sidewalk. Frame 2 over the woman shoulder toward the man, he gestures with an open hand. Frame 3 reverse over the man shoulder toward the woman, she smiles and lightly tilts her head. Frame 4 side two-shot, both laugh naturally and start walking in the same direction. Lively expressions and visual tension, cinematic animation keyframes rather than comic-book pages. No dialogue, no captions, no English or other readable text.",
+          "reference_material": [
+            "materials/anime-adults-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:10:43+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[待测试·4分] 四宫格分镜.md",
+      "original_sha256": "9739d207a56b1bf820d0710d0afcf55d38a81f756c556f15b1e4c5122307cf04",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "四宫格静态适配已实测，主体要求大体满足；新增挎包与点头符号为偏差，不能给出严格全项通过或视频通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W028",
+      "source_id": "T036",
+      "title": "【9宫格分镜】人物一致性分镜提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "分镜元提示词→九景别叙事网格",
+      "test_input": "同一人物客厅参考，剧情：注意夕阳、走向窗边、放松后回到沙发坐下。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择原完整英文模板，SCENE INPUT中的维京人示例替换为本轮剧情，不使用示例脸和服装。",
+        "先保存九个景别/动作计划，再生成原生九格；主体为男子，环境作为连续性锚点。",
+        "只做一个静态九格用例，真实运动、身份100%和全部视频链路均不算验证。"
+      ],
+      "selected_source_prompt": "<instruction>\nAnalyze the entire movie scene. Identify ALL key subjects present (whether it's a single person,\na group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.\nGenerate a cohesive 3x3 grid \"Cinematic Contact Sheet\" featuring 9 distinct camera shots of\nexactly these subjects in the same environment.\nYou must adapt the standard cinematic shot types to fit the content (e.g., if a group, keep the\ngroup together; if an object, frame the whole object):\n**Row 1 (Establishing Context):**\n1. **Extreme Long Shot (ELS):** The subject(s) are seen small within the vast environment.\n2. **Long Shot (LS):** The complete subject(s) or group is visible from top to bottom (head to\ntoe / wheels to roof).\n3. **Medium Long Shot (American/3-4):** Framed from knees up (for people) or a 3/4 view (for\nobjects).\n**Row 2 (The Core Coverage):**\n4. **Medium Shot (MS):** Framed from the waist up (or the central core of the object). Focus on\ninteraction/action.\n5. **Medium Close-Up (MCU):** Framed from chest up. Intimate framing of the main subject(s).\n6. **Close-Up (CU):** Tight framing on the face(s) or the \"front\" of the object.\n**Row 3 (Details & Angles):**\n7. **Extreme Close-Up (ECU):** Macro detail focusing intensely on a key feature (eyes, hands,\nlogo, texture).\n8. **Low Angle Shot (Worm's Eye):** Looking up at the subject(s) from the ground\n(imposing/heroic).\n9. **High Angle Shot (Bird's Eye):** Looking down on the subject(s) from above.\nEnsure strict consistency: The same people/objects, same clothes, and same lighting across all\n9 panels. The depth of field should shift realistically (bokeh in close-ups).\n</instruction>\nA professional 3x3 cinematic storyboard grid containing 9 panels.\nThe grid showcases the specific subjects/scene from the input image in a comprehensive range\nof focal lengths.\n**Top Row:** Wide environmental shot, Full view, 3/4 cut.\n**Middle Row:** Waist-up view, Chest-up view, Face/Front close-up.\n**Bottom Row:** Macro detail, Low Angle, High Angle.\nAll frames feature photorealistic textures, consistent cinematic color grading, and correct\nframing for the specific number of subjects or objects analyzed.\n\nAnalyze the input image and identify the main subject(s). Maintain perfect consistency in\nappearance, proportions, materials, colors, and style across all frames.\nRead the SCENE INPUT and generate a cinematic 9-scene sequence that progresses logically\nfrom start to finish. Each frame should represent the next meaningful moment based on the\nscene description.\nThe AI chooses all camera angles and framing automatically.\nEnsure cinematic lighting, consistent color grading, realistic depth of field, and coherent\nenvironmental evolution. No repeated shots.\nSCENE INPUT:\na viking visits his village after a long time\nFrame 1:\nFrame 2:\nFrame 3:\nFrame 4:\nFrame 5:\nFrame 6:\nFrame 7:\nFrame 8:\nFrame 9:\n",
+      "meta_output": {
+        "scene_input": "男子看夕阳后回沙发坐下",
+        "frames": [
+          "1. ELS: 男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间。",
+          "2. LS: 完整全身，男子松开沙发扶手，转向窗边。",
+          "3. MLS: 膝上景别，男子移步至窗边，望向湖面。",
+          "4. MS: 腰上景别，男子回头看向沙发，肩膀放松。",
+          "5. MCU: 胸上景别，男子露出很轻的微笑。",
+          "6. CU: 脸部特写，保留稀疏发际线和淡胡须，眼神柔和。",
+          "7. ECU: 手指轻搭同一沙发靠背的微距，保留灰蓝袖口。",
+          "8. LOW: 低机位，男子站在沙发前，夕阳侧逆光。",
+          "9. HIGH: 明显俯视，男子在同一沙发边缘坐下，安静微笑，结束。"
+        ]
+      },
+      "cases": [
+        {
+          "case_id": "continuity-nine",
+          "final_prompt": "Create one native 3x3 cinematic contact sheet based on the reference, landscape 16:9. Same fictional adult man, thinning black-gray hair and stubble, same gray-blue scrubs and white shoes, same lakeside sunset living room with sofa, wooden console and flower-screen TV. Main subject is the man, environment anchors may fall outside tight close-ups. Preserve lighting and color grade. No text or labels. Follow the next nine story moments and shot sizes in row-major order:\n1. ELS: 男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间。\n2. LS: 完整全身，男子松开沙发扶手，转向窗边。\n3. MLS: 膝上景别，男子移步至窗边，望向湖面。\n4. MS: 腰上景别，男子回头看向沙发，肩膀放松。\n5. MCU: 胸上景别，男子露出很轻的微笑。\n6. CU: 脸部特写，保留稀疏发际线和淡胡须，眼神柔和。\n7. ECU: 手指轻搭同一沙发靠背的微距，保留灰蓝袖口。\n8. LOW: 低机位，男子站在沙发前，夕阳侧逆光。\n9. HIGH: 明显俯视，男子在同一沙发边缘坐下，安静微笑，结束。\nRealistic depth of field: deeper on wides, natural bokeh on close-ups. Keep nine shots distinct and the action calm and continuous.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:10:43+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·5分] 【9宫格分镜】人物一致性分镜提示词.md",
+      "original_sha256": "37fbea188ff46a0f44a9d8303f29ed8c816b3421b4970f8891ddebb140e0f7bb",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "9格与大部分景别命中，人物/白衬衫黑裤/臂搭外套/黑包/右侧列车基本一致；首格ELS仍是近距离全身，与第二格重复，MLS也裁得偏近，不能给出9镜全命中。 模型单轮初评，未宣称视频通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W029",
+      "source_id": "T037",
+      "title": "【九宫格】1图转电影分镜图提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "完整参考图分镜规划→带标签九格",
+      "test_input": "单张人物客厅图，默认9关键帧，计划18秒静态预演，含场景/主题/镜头方案与逐镜参数。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "只选第一完整电影分镜元提示词，不用第二角度-only模板代替完整流程。",
+        "已按A-D保存分析、主题、拍摄方案和九个关键帧，再实际生成E主网格；文本与图片分别保存。",
+        "18秒仅剪辑计划，没有实际视频或音效；不新增原参考没有的角色和道具。"
+      ],
+      "selected_source_prompt": "<role>\nYou are an award-winning trailer director + cinematographer + storyboard artist. Your job: turn ONE reference image into a cohesive cinematic short sequence, then output AI-video-ready keyframes.\n</role>\n\n<input>\nUser provides: one reference image (image).\n</input>\n\n<non-negotiable rules - continuity & truthfulness>\nFirst, analyze the full composition: identify ALL key subjects (person/group/vehicle/object/animal/props/environment elements) and describe spatial relationships and interactions (left/right/foreground/background, facing direction, what each is doing).\nDo NOT guess real identities, exact real-world locations, or brand ownership. Stick to visible facts. Mood/atmosphere inference is allowed, but never present it as real-world truth.\nStrict continuity across ALL shots: same subjects, same wardrobe/appearance, same environment, same time-of-day and lighting style. Only action, expression, blocking, framing, angle, and camera movement may change.\nDepth of field must be realistic: deeper in wides, shallower in close-ups with natural bokeh. Keep ONE consistent cinematic color grade across the entire sequence.\nDo NOT introduce new characters/objects not present in the reference image. If you need tension/conflict, imply it off-screen (shadow, sound, reflection, occlusion, gaze).\n</non-negotiable rules - continuity & truthfulness>\n\n<goal>\nExpand the image into a 10–20 second cinematic clip with a clear theme and emotional progression (setup → build → turn → payoff).\nThe user will generate video clips from your keyframes and stitch them into a final sequence.\n</goal>\n\n<step 1 - scene breakdown>\nOutput (with clear subheadings):\nSubjects: list each key subject (A/B/C…), describe visible traits (wardrobe/material/form), relative positions, facing direction, action/state, and any interaction.\nEnvironment & Lighting: interior/exterior, spatial layout, background elements, ground/walls/materials, light direction & quality (hard/soft; key/fill/rim), implied time-of-day, 3–8 vibe keywords.\nVisual Anchors: list 3–6 visual traits that must stay constant across all shots (palette, signature prop, key light source, weather/fog/rain, grain/texture, background markers).\n</step 1 - scene breakdown>\n\n<step 2 - theme & story>\nFrom the image, propose:\nTheme: one sentence.\nLogline: one restrained trailer-style sentence grounded in what the image can support.\nEmotional Arc: 4 beats (setup/build/turn/payoff), one line each.\n</step 2 - theme & story>\n\n<step 3 - cinematic approach>\nChoose and explain your filmmaking approach (must include):\nShot progression strategy: how you move from wide to close (or reverse) to serve the beats\nCamera movement plan: push/pull/pan/dolly/track/orbit/handheld micro-shake/gimbal—and WHY\nLens & exposure suggestions: focal length range (18/24/35/50/85mm etc.), DoF tendency (shallow/medium/deep), shutter “feel” (cinematic vs documentary)\nLight & color: contrast, key tones, material rendering priorities, optional grain (must match the reference style)\n</step 3 - cinematic approach>\n\n<step 4 - keyframes for AI video (primary deliverable)>\nOutput a Keyframe List: default 9–12 frames (later assembled into ONE master grid). These frames must stitch into a coherent 10–20s sequence with a clear 4-beat arc.\nEach frame must be a plausible continuation within the SAME environment.\n\nUse this exact format per frame:\n\n[KF# | suggested duration (sec) | shot type (ELS/LS/MLS/MS/MCU/CU/ECU/Low/Worm’s-eye/High/Bird’s-eye/Insert)]\nComposition: subject placement, foreground/mid/background, leading lines, gaze direction\nAction/beat: what visibly happens (simple, executable)\nCamera: height, angle, movement (e.g., slow 5% push-in / 1m lateral move / subtle handheld)\nLens/DoF: focal length (mm), DoF (shallow/medium/deep), focus target\nLighting & grade: keep consistent; call out highlight/shadow emphasis\nSound/atmos (optional): one line (wind, city hum, footsteps, metal creak) to support editing rhythm\nHard requirements:\nMust include: 1 environment-establishing wide, 1 intimate close-up, 1 extreme detail ECU, and 1 power-angle shot (low or high).\nEnsure edit-motivated continuity between shots (eyeline match, action continuation, consistent screen direction / axis).\n</step 4 - keyframes for AI video>\n\n<step 5 - contact sheet output (MUST OUTPUT ONE BIG GRID IMAGE)>\nYou MUST additionally output ONE single master image: a Cinematic Contact Sheet / Storyboard Grid containing ALL keyframes in one large image.\nDefault grid: 3x3. If more than 9 keyframes, use 4x3 or 5x3 so every keyframe fits into ONE image.\nRequirements:\nThe single master image must include every keyframe as a separate panel (one shot per cell) for easy selection.\nEach panel must be clearly labeled: KF number + shot type + suggested duration (labels placed in safe margins, never covering the subject).\nStrict continuity across ALL panels: same subjects, same wardrobe/appearance, same environment, same lighting & same cinematic color grade; only action/expression/blocking/framing/movement changes.\nDoF shifts realistically: shallow in close-ups, deeper in wides; photoreal textures and consistent grading.\nAfter the master grid image, output the full text breakdown for each KF in order so the user can regenerate any single frame at higher quality.\n</step 5 - contact sheet output>\n\n<final output format>\nOutput in this order:\nA) Scene Breakdown\nB) Theme & Story\nC) Cinematic Approach\nD) Keyframes (KF# list)\nE) ONE Master Contact Sheet Image (All KFs in one grid)\n</final output format>\n",
+      "meta_output": {
+        "A_scene_breakdown": {
+          "subjects": [
+            "同一虚构成年男子：稀疏黑灰短发、淡胡须、灰蓝刷手服、白鞋；原图站立扶沙发"
+          ],
+          "environment": "湖景落地窗在左、米色沙发、茶几、木电视柜与花朵电视，夕阳暖光",
+          "visual_anchors": [
+            "稀疏发际线与胡须",
+            "灰蓝V领三前袋上衣",
+            "米色沙发",
+            "木电视柜和紫金花屏",
+            "湖面夕阳"
+          ]
+        },
+        "B_theme_story": {
+          "theme": "忙碌后的安静一刻",
+          "logline": "男子被窗外夕阳吸引，短暂凝望后放松坐下",
+          "emotional_arc": [
+            "站立停顿",
+            "注意夕阳",
+            "表情放松",
+            "回坐微笑"
+          ]
+        },
+        "C_cinematic_approach": {
+          "progression": "广到近再回到空间",
+          "camera_plan": "小幅推进/侧移仅作为后续视频建议",
+          "lens_exposure": "24-85mm视觉建议，广景深到浅景深，非实测参数",
+          "light_color": "同一夕阳色温与米色/灰蓝调"
+        },
+        "D_keyframes": [
+          {
+            "id": "KF1",
+            "suggested_duration_seconds": 2,
+            "shot_type": "ELS",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF1 ELS 2s"
+          },
+          {
+            "id": "KF2",
+            "suggested_duration_seconds": 2,
+            "shot_type": "LS",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "完整全身，男子松开沙发扶手，转向窗边",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF2 LS 2s"
+          },
+          {
+            "id": "KF3",
+            "suggested_duration_seconds": 2,
+            "shot_type": "MLS",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "膝上景别，男子移步至窗边，望向湖面",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF3 MLS 2s"
+          },
+          {
+            "id": "KF4",
+            "suggested_duration_seconds": 2,
+            "shot_type": "MS",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "腰上景别，男子回头看向沙发，肩膀放松",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF4 MS 2s"
+          },
+          {
+            "id": "KF5",
+            "suggested_duration_seconds": 2,
+            "shot_type": "MCU",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "胸上景别，男子露出很轻的微笑",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF5 MCU 2s"
+          },
+          {
+            "id": "KF6",
+            "suggested_duration_seconds": 2,
+            "shot_type": "CU",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "脸部特写，保留稀疏发际线和淡胡须，眼神柔和",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF6 CU 2s"
+          },
+          {
+            "id": "KF7",
+            "suggested_duration_seconds": 2,
+            "shot_type": "ECU",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "手指轻搭同一沙发靠背的微距，保留灰蓝袖口",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF7 ECU 2s"
+          },
+          {
+            "id": "KF8",
+            "suggested_duration_seconds": 2,
+            "shot_type": "LOW",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "低机位，男子站在沙发前，夕阳侧逆光",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF8 LOW 2s"
+          },
+          {
+            "id": "KF9",
+            "suggested_duration_seconds": 2,
+            "shot_type": "HIGH",
+            "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+            "action": "明显俯视，男子在同一沙发边缘坐下，安静微笑，结束",
+            "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+            "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+            "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+            "label": "KF9 HIGH 2s"
+          }
+        ],
+        "video_duration_plan_seconds": 18,
+        "actual_video_generated": false
+      },
+      "cases": [
+        {
+          "case_id": "labeled-story-grid",
+          "final_prompt": "Create ONE labeled 3x3 cinematic contact sheet, landscape 16:9 overall, of the same fictional adult man and exact room in the attached reference. Preserve his receding thinning hairline, short dark-gray hair, stubble, face, gray-blue scrubs and white shoes. Keep the same sunset time, window, pale sofa, wooden console and flower-screen TV. Do not add a person, animal or new prop. Only pose, gaze, action, framing and camera angle may change. Story: notice the sunset, become calm, then sit. Each panel has a narrow safe bottom margin carrying exactly its specified label, without covering faces or objects. Nine row-major panels:\nKF1 ELS 2s: 男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间。\nKF2 LS 2s: 完整全身，男子松开沙发扶手，转向窗边。\nKF3 MLS 2s: 膝上景别，男子移步至窗边，望向湖面。\nKF4 MS 2s: 腰上景别，男子回头看向沙发，肩膀放松。\nKF5 MCU 2s: 胸上景别，男子露出很轻的微笑。\nKF6 CU 2s: 脸部特写，保留稀疏发际线和淡胡须，眼神柔和。\nKF7 ECU 2s: 手指轻搭同一沙发靠背的微距，保留灰蓝袖口。\nKF8 LOW 2s: 低机位，男子站在沙发前，夕阳侧逆光。\nKF9 HIGH 2s: 明显俯视，男子在同一沙发边缘坐下，安静微笑，结束。\nShallow natural bokeh in closeups, deeper wide shots. All frames are static keyframes, not a generated 18-second movie.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:10:43+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·5分] 【九宫格】1图转电影分镜图提示词.md",
+      "original_sha256": "9e3fedfe9c25bfc849a654cf7c270d6391bdc9bf19072e4dd7c34589a12a5128",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "九个KF编号、景别标签与1.6s均可读，面部/花束/白衬衫绿围裙/暖花店延续；首尾ELS不够远且与LS近似，具体运镜幅度规划未完整覆盖，本轮不验证14.4秒动态视频。 模型单轮初评，未宣称视频通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W030",
+      "source_id": "T039",
+      "title": "分镜导演与动作编排专家",
+      "categories": [
+        "story"
+      ],
+      "type": "两段元提示词→动作叙事→八格火柴人预演",
+      "test_input": "用户创意：替身在练习场跃下低台落软垫，藏到障碍后观察，再投软沙包命中练习标靶。",
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "先执行第一元提示词，得到150-200词英文八节点动作叙事，再执行第二段编译八格预演图。",
+        "本次叙事169词；虚构训练场软垫和沙包替代示例伤害情节，属于本次用户测试输入。",
+        "图像只验动作预演与八格结构，不验证真实动作安全、运动流畅或视频。"
+      ],
+      "selected_source_prompt": [
+        "你是一位拥有20年经验的动作电影编剧、分镜导演与动作编排专家。\n\n你的任务是将用户的一个简单创意想法，扩展为一段具有电影级动作编排的专业叙事文本。这段文本将作为后续\"预演分镜生成\"的原始素材，因此必须满足极高的动作密度和镜头可读性。\n\n## 输出要求\n\n只输出一段英文动作叙事（150-200个单词），不要输出任何解释、标题、分析或分镜表格。这段叙事必须可以直接被复制使用，作为分镜师的工作素材。\n\n## 叙事结构模板（必须严格遵循）\n\n你的输出必须包含以下8个连续动作节点，按时间顺序排列，每个节点之间必须有清晰的动量传递：\n\n1. **启动/接近**：角色在什么空间位置，以什么方式接近目标（奔跑、滑行、潜行、驾驶等），包含环境互动\n2. **跃起/升空**：角色离开当前平面，进入空中，展示垂直动量\n3. **俯冲/下落**：角色从高处向目标下降，展示重力与精准度\n4. **冲击/命中**：与目标发生物理接触，展示力量、反作用力和结果\n5. **转移/隐蔽**：角色立即从暴露位置转移到隐蔽位置，制造节奏变化（张→弛）\n6. **观察/侦察**：角色在隐蔽处收集信息，情绪紧张，包含特写级细节（眼神、呼吸、手势）\n7. **准备/蓄力**：角色为下一次行动做准备，拿起武器或调整姿态，展示意图\n8. **释放/终结**：动作的高潮，武器/技能释放，目标被击中，展示因果关系和结果\n\n## 叙事质量要求\n\n- **空间层次**：每个动作必须明确角色在什么空间位置（屋顶/空中/地面/角落/阴影中等）\n- **动量传递**：前一个动作的结束状态必须是后一个动作的开始条件（惯性、余势、反作用力）\n- **情绪曲线**：不能全程高潮。必须有\"高速→冲击→静默→紧张→爆发\"的节奏变化\n- **镜头暗示**：在叙事中自然嵌入景别提示，如\"Cut to a close-up of his eyes\"、\"Bird's-eye view\"、\"Over-the-shoulder\"等\n- **环境互动**：角色必须持续与环境发生关系（屋顶边缘、墙壁拐角、月光、阴影、雨水、霓虹等）\n- **身体力学**：描述重心转移、惯性方向、落地缓冲、预备动作和跟随动作\n- **感官细节**：在关键转折点加入声音、光影、速度感、触觉反馈\n\n## 词汇与风格指南\n\n- 使用电影级动作动词：sprint, launch, descend, crash, slip, peer, flick, stumble, recoil, roll, brace, coil, snap, streak, slam\n- 使用精准的空间介词：across, beneath, behind, around, through, into, onto, off, over\n- 使用动态形容词：unsuspecting, focused, alert, tense, precise, fluid, silent, sudden\n- 句子节奏：短句制造速度感，长句制造张力，交替使用\n- 不要对话，不要内心独白，不要解释性文字，只描述可见的动作和状态\n\n## 参考范例（质量标杆）\n\n以下是一段符合要求的叙事，供你参考其节奏、密度和专业度：\n\n\"A ninja sprints across a rooftop beneath the moonlit night sky before launching high into the air. He descends with precision, crashing down onto an unsuspecting enemy and driving them to the ground. As the enemy falls, the ninja immediately slips behind the corner of a nearby structure, disappearing from sight. Cut to a close-up of his eyes peering around the edge of the wall—focused, alert, and tense as he scans for danger. Spotting another enemy nearby, he quietly reaches for a ninja star. Without hesitation, he flicks his wrist and sends the weapon flying across the scene. The spinning star cuts through the air and strikes the second enemy, who stumbles backward from the impact before collapsing to the ground.\"\n\n## 用户创意\n[用户在这里输入自己的简单想法，例如：\"一个赛博朋克刺客在雨夜的高楼间追逐目标\" 或 \"一个机甲战士从空中降落到战场中央\"]\n",
+        "You are an elite action-film previs storyboard artist and cinematic director.\n\nYour task is to convert the user's idea into a highly detailed image-generation prompt for a single storyboard sheet containing 8 continuous sequential action frames.\n\nThe goal is not realism or finished concept art.\n\nThe goal is to communicate:\n\n- action choreography\n- movement\n- camera language\n- timing\n- momentum\n- staging\n- visual storytelling\n- dynamic composition\n\nVISUAL STYLE\n\nCreate a rough director-style previs storyboard.\n\nUse only:\n\n- minimalist stick figures\n- simple gesture drawings\n- construction-line anatomy\n- motion arcs\n- speed lines\n- camera framing indicators\n- directional arrows\n- momentum trails\n- impact marks\n- environmental movement cues\n\nDo NOT include:\n\n- realistic anatomy\n- muscles\n- clothing details\n- costumes\n- shoes\n- facial rendering\n- textures\n- shading\n- polished illustration\n- comic-book rendering\n- finished character design\n\nCharacters should appear as simple action mannequins whose purpose is only to communicate movement.\n\nSTORYBOARD STRUCTURE\n\nGenerate:\n\n- 8 continuous action panels\n- arranged in a storyboard grid\n- each panel representing the next moment in time\n\nEvery frame should feel connected to the previous frame.\n\nShow clear progression of:\n\n- movement\n- momentum\n- action escalation\n- camera movement\n- visual rhythm\n\nCAMERA DIRECTION\n\nUse highly varied cinematic camera language.\n\nPossible examples:\n\n- extreme wide shot\n- wide shot\n- medium shot\n- close-up\n- extreme close-up\n- over-the-shoulder\n- low angle\n- high angle\n- bird's-eye view\n- worm's-eye view\n- Dutch angle\n- tracking shot\n- handheld energy\n- push-in framing\n- pull-back framing\n\nAvoid repetitive framing.\n\nEvery panel should introduce a meaningful camera choice.\n\nACTION VISUALIZATION\n\nEmphasize:\n\n- body mechanics\n- weight shifts\n- momentum\n- anticipation\n- follow-through\n- directional force\n- action readability\n\nVisualize movement using:\n\n- motion trails\n- gesture overlaps\n- action arcs\n- trajectory lines\n- force indicators\n- impact symbols\n- environmental reactions\n\nThe action should feel energetic and easy to understand at a glance.\n\nOBJECT INTERACTION\n\nWhen the user's idea includes props, weapons, tools, vehicles, powers, or environmental interaction:\n\n- make them visually dominant\n- clearly show how they move through space\n- exaggerate motion paths\n- show cause and effect\n- emphasize silhouettes and readability\n\nEFFECTS\n\nEffects should be represented as rough previs graphics:\n\n- ink splashes\n- smoke trails\n- debris\n- energy streaks\n- particles\n- geometric motion shapes\n- environmental reactions\n\nKeep effects simple and readable.\n\nUse them only to reinforce movement and direction.\n\nTEXT USAGE\n\nUse very little text.\n\nOnly include:\n\n- occasional camera notes\n- simple action notes\n- short directional labels\n\nNever use dialogue.\n\nNever use captions that dominate the image.\n\nDRAWING STYLE\n\nThe final image should resemble:\n\n- film previs\n- stunt choreography planning\n- action blocking sheets\n- animation planning boards\n- director thumbnail sketches\n- cinematic motion studies\n\nPrioritize clarity of action over artistic polish.\n\nThe storyboard should feel like it was created by an action director planning a complex sequence before production.\n\nOUTPUT FORMAT\n\nCreate a single image containing all 8 storyboard panels.\n\nEnsure strong visual variety across the panels while maintaining continuous action flow.\n\nThe image should communicate movement, timing, camera choreography, and cinematic energy immediately, even when viewed from a distance.\n"
+      ],
+      "meta_output": {
+        "action_narrative": "A stunt performer sprints across an empty training courtyard toward a low platform, feet kicking a short trail of dust. From a wide side view, the performer plants one foot and launches upward, arms counterbalancing the rise. At the apex, the body folds slightly and descends toward a padded landing marker. Both feet contact the pad, knees compress, and a clear impact arc shows the downward force becoming forward momentum. Using that motion, the performer slips behind a waist-high wooden barrier, leaving the open center of the courtyard. Cut to a tight overhead framing: one hand rests on the barrier as the head turns to inspect a circular practice target across the same space. The performer lowers the center of gravity, draws a soft beanbag backward, and coils the throwing shoulder while the opposite foot braces against the ground. In the final low angle view, the shoulder snaps forward, the arm follows through, and the beanbag traces a clean curved path into the target, producing a simple impact burst.",
+        "word_count": 169,
+        "panels": [
+          "wide side: sprint toward low platform",
+          "low angle: launch upward off platform",
+          "high angle: descend toward soft pad",
+          "side medium: land with compressed knees and impact arrows",
+          "wide: slip behind wooden barrier",
+          "close: head peers around barrier toward circular target",
+          "over shoulder: coil throwing arm holding beanbag",
+          "low wide: release beanbag, arc path, target impact"
+        ]
+      },
+      "cases": [
+        {
+          "case_id": "action-previs-eight",
+          "final_prompt": "You are an elite action-film previs storyboard artist and cinematic director.\n\nYour task is to convert the user's idea into a highly detailed image-generation prompt for a single storyboard sheet containing 8 continuous sequential action frames.\n\nThe goal is not realism or finished concept art.\n\nThe goal is to communicate:\n\n- action choreography\n- movement\n- camera language\n- timing\n- momentum\n- staging\n- visual storytelling\n- dynamic composition\n\nVISUAL STYLE\n\nCreate a rough director-style previs storyboard.\n\nUse only:\n\n- minimalist stick figures\n- simple gesture drawings\n- construction-line anatomy\n- motion arcs\n- speed lines\n- camera framing indicators\n- directional arrows\n- momentum trails\n- impact marks\n- environmental movement cues\n\nDo NOT include:\n\n- realistic anatomy\n- muscles\n- clothing details\n- costumes\n- shoes\n- facial rendering\n- textures\n- shading\n- polished illustration\n- comic-book rendering\n- finished character design\n\nCharacters should appear as simple action mannequins whose purpose is only to communicate movement.\n\nSTORYBOARD STRUCTURE\n\nGenerate:\n\n- 8 continuous action panels\n- arranged in a storyboard grid\n- each panel representing the next moment in time\n\nEvery frame should feel connected to the previous frame.\n\nShow clear progression of:\n\n- movement\n- momentum\n- action escalation\n- camera movement\n- visual rhythm\n\nCAMERA DIRECTION\n\nUse highly varied cinematic camera language.\n\nPossible examples:\n\n- extreme wide shot\n- wide shot\n- medium shot\n- close-up\n- extreme close-up\n- over-the-shoulder\n- low angle\n- high angle\n- bird's-eye view\n- worm's-eye view\n- Dutch angle\n- tracking shot\n- handheld energy\n- push-in framing\n- pull-back framing\n\nAvoid repetitive framing.\n\nEvery panel should introduce a meaningful camera choice.\n\nACTION VISUALIZATION\n\nEmphasize:\n\n- body mechanics\n- weight shifts\n- momentum\n- anticipation\n- follow-through\n- directional force\n- action readability\n\nVisualize movement using:\n\n- motion trails\n- gesture overlaps\n- action arcs\n- trajectory lines\n- force indicators\n- impact symbols\n- environmental reactions\n\nThe action should feel energetic and easy to understand at a glance.\n\nOBJECT INTERACTION\n\nWhen the user's idea includes props, weapons, tools, vehicles, powers, or environmental interaction:\n\n- make them visually dominant\n- clearly show how they move through space\n- exaggerate motion paths\n- show cause and effect\n- emphasize silhouettes and readability\n\nEFFECTS\n\nEffects should be represented as rough previs graphics:\n\n- ink splashes\n- smoke trails\n- debris\n- energy streaks\n- particles\n- geometric motion shapes\n- environmental reactions\n\nKeep effects simple and readable.\n\nUse them only to reinforce movement and direction.\n\nTEXT USAGE\n\nUse very little text.\n\nOnly include:\n\n- occasional camera notes\n- simple action notes\n- short directional labels\n\nNever use dialogue.\n\nNever use captions that dominate the image.\n\nDRAWING STYLE\n\nThe final image should resemble:\n\n- film previs\n- stunt choreography planning\n- action blocking sheets\n- animation planning boards\n- director thumbnail sketches\n- cinematic motion studies\n\nPrioritize clarity of action over artistic polish.\n\nThe storyboard should feel like it was created by an action director planning a complex sequence before production.\n\nOUTPUT FORMAT\n\nCreate a single image containing all 8 storyboard panels.\n\nEnsure strong visual variety across the panels while maintaining continuous action flow.\n\nThe image should communicate movement, timing, camera choreography, and cinematic energy immediately, even when viewed from a distance.\n\nUSER IDEA: A stunt performer practices on an empty training courtyard with a low platform, soft landing pad, one barrier and a circular practice target. No enemy, injury or realistic weapon. Use the following narrative as source material: A stunt performer sprints across an empty training courtyard toward a low platform, feet kicking a short trail of dust. From a wide side view, the performer plants one foot and launches upward, arms counterbalancing the rise. At the apex, the body folds slightly and descends toward a padded landing marker. Both feet contact the pad, knees compress, and a clear impact arc shows the downward force becoming forward momentum. Using that motion, the performer slips behind a waist-high wooden barrier, leaving the open center of the courtyard. Cut to a tight overhead framing: one hand rests on the barrier as the head turns to inspect a circular practice target across the same space. The performer lowers the center of gravity, draws a soft beanbag backward, and coils the throwing shoulder while the opposite foot braces against the ground. In the final low angle view, the shoulder snaps forward, the arm follows through, and the beanbag traces a clean curved path into the target, producing a simple impact burst.\nExactly 8 panels in a clean 4-column by 2-row sheet, black pencil gesture lines on white. Draw the performer only as a circle head and simple single-line limbs with tiny joint dots. No realistic anatomy, clothes, muscles, rendered face, textured surfaces, shading or colored fill. Panels:\n1. wide side: sprint toward low platform\n2. low angle: launch upward off platform\n3. high angle: descend toward soft pad\n4. side medium: land with compressed knees and impact arrows\n5. wide: slip behind wooden barrier\n6. close: head peers around barrier toward circular target\n7. over shoulder: coil throwing arm holding beanbag\n8. low wide: release beanbag, arc path, target impact\nUse motion arcs and arrows to make force and cause/effect legible; minimal panel numbers are allowed, no dialogue.",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:10:43+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·5分] 分镜导演与动作编排专家.md",
+      "original_sha256": "1392657912aecb71615c4ec640aec06dd609f735daa4cf1864a2b4ce1dee72b5",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。 模型单轮初评，未宣称视频通过。",
       "original_evidence_is_new_test": false
     }
   }

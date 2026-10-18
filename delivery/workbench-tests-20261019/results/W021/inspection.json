@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W021/hangzhou-watercolor.png"
+  ],
+  "checks": [
+    {
+      "requirement": "替换城市且保持水彩旅行拼贴",
+      "result": "符合",
+      "evidence": "杭州、西湖、雷峰塔意象及纸张水彩；无广州塔"
+    },
+    {
+      "requirement": "指定排版文案",
+      "result": "符合",
+      "evidence": "HANGZHOU 2026、西湖慢行及中文副标题可读"
+    }
+  ],
+  "conclusion": "最小完整城市替换用例符合主要可见要求；画面不是准确地理地图，未验证稳定性。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:14:51+08:00",
+  "stability_verified": false
+}

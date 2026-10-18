@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W024/expanded-poster.png"
+  ],
+  "checks": [
+    {
+      "requirement": "800–1500英文词及六段扩写",
+      "result": "符合",
+      "evidence": "记录的最终英文扩写853词、六段，先扩写后生图"
+    },
+    {
+      "requirement": "商品、中文文案及3:4构图",
+      "result": "符合",
+      "evidence": "琥珀瓶黑盖、光影日常、在片刻里，发现简单；暖色台座和窗影"
+    }
+  ],
+  "conclusion": "元提示词已执行并生成海报，主要文字、商品和氛围要求符合；单次模型初评。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:14:51+08:00",
+  "stability_verified": false
+}

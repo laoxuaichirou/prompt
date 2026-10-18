@@ -1,0 +1,169 @@
+{
+  "test_id": "W029",
+  "source_id": "T037",
+  "title": "【九宫格】1图转电影分镜图提示词",
+  "categories": [
+    "story"
+  ],
+  "type": "完整参考图分镜规划→带标签九格",
+  "test_input": "单张人物客厅图，默认9关键帧，计划18秒静态预演，含场景/主题/镜头方案与逐镜参数。",
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "只选第一完整电影分镜元提示词，不用第二角度-only模板代替完整流程。",
+    "已按A-D保存分析、主题、拍摄方案和九个关键帧，再实际生成E主网格；文本与图片分别保存。",
+    "18秒仅剪辑计划，没有实际视频或音效；不新增原参考没有的角色和道具。"
+  ],
+  "selected_source_prompt": "<role>\nYou are an award-winning trailer director + cinematographer + storyboard artist. Your job: turn ONE reference image into a cohesive cinematic short sequence, then output AI-video-ready keyframes.\n</role>\n\n<input>\nUser provides: one reference image (image).\n</input>\n\n<non-negotiable rules - continuity & truthfulness>\nFirst, analyze the full composition: identify ALL key subjects (person/group/vehicle/object/animal/props/environment elements) and describe spatial relationships and interactions (left/right/foreground/background, facing direction, what each is doing).\nDo NOT guess real identities, exact real-world locations, or brand ownership. Stick to visible facts. Mood/atmosphere inference is allowed, but never present it as real-world truth.\nStrict continuity across ALL shots: same subjects, same wardrobe/appearance, same environment, same time-of-day and lighting style. Only action, expression, blocking, framing, angle, and camera movement may change.\nDepth of field must be realistic: deeper in wides, shallower in close-ups with natural bokeh. Keep ONE consistent cinematic color grade across the entire sequence.\nDo NOT introduce new characters/objects not present in the reference image. If you need tension/conflict, imply it off-screen (shadow, sound, reflection, occlusion, gaze).\n</non-negotiable rules - continuity & truthfulness>\n\n<goal>\nExpand the image into a 10–20 second cinematic clip with a clear theme and emotional progression (setup → build → turn → payoff).\nThe user will generate video clips from your keyframes and stitch them into a final sequence.\n</goal>\n\n<step 1 - scene breakdown>\nOutput (with clear subheadings):\nSubjects: list each key subject (A/B/C…), describe visible traits (wardrobe/material/form), relative positions, facing direction, action/state, and any interaction.\nEnvironment & Lighting: interior/exterior, spatial layout, background elements, ground/walls/materials, light direction & quality (hard/soft; key/fill/rim), implied time-of-day, 3–8 vibe keywords.\nVisual Anchors: list 3–6 visual traits that must stay constant across all shots (palette, signature prop, key light source, weather/fog/rain, grain/texture, background markers).\n</step 1 - scene breakdown>\n\n<step 2 - theme & story>\nFrom the image, propose:\nTheme: one sentence.\nLogline: one restrained trailer-style sentence grounded in what the image can support.\nEmotional Arc: 4 beats (setup/build/turn/payoff), one line each.\n</step 2 - theme & story>\n\n<step 3 - cinematic approach>\nChoose and explain your filmmaking approach (must include):\nShot progression strategy: how you move from wide to close (or reverse) to serve the beats\nCamera movement plan: push/pull/pan/dolly/track/orbit/handheld micro-shake/gimbal—and WHY\nLens & exposure suggestions: focal length range (18/24/35/50/85mm etc.), DoF tendency (shallow/medium/deep), shutter “feel” (cinematic vs documentary)\nLight & color: contrast, key tones, material rendering priorities, optional grain (must match the reference style)\n</step 3 - cinematic approach>\n\n<step 4 - keyframes for AI video (primary deliverable)>\nOutput a Keyframe List: default 9–12 frames (later assembled into ONE master grid). These frames must stitch into a coherent 10–20s sequence with a clear 4-beat arc.\nEach frame must be a plausible continuation within the SAME environment.\n\nUse this exact format per frame:\n\n[KF# | suggested duration (sec) | shot type (ELS/LS/MLS/MS/MCU/CU/ECU/Low/Worm’s-eye/High/Bird’s-eye/Insert)]\nComposition: subject placement, foreground/mid/background, leading lines, gaze direction\nAction/beat: what visibly happens (simple, executable)\nCamera: height, angle, movement (e.g., slow 5% push-in / 1m lateral move / subtle handheld)\nLens/DoF: focal length (mm), DoF (shallow/medium/deep), focus target\nLighting & grade: keep consistent; call out highlight/shadow emphasis\nSound/atmos (optional): one line (wind, city hum, footsteps, metal creak) to support editing rhythm\nHard requirements:\nMust include: 1 environment-establishing wide, 1 intimate close-up, 1 extreme detail ECU, and 1 power-angle shot (low or high).\nEnsure edit-motivated continuity between shots (eyeline match, action continuation, consistent screen direction / axis).\n</step 4 - keyframes for AI video>\n\n<step 5 - contact sheet output (MUST OUTPUT ONE BIG GRID IMAGE)>\nYou MUST additionally output ONE single master image: a Cinematic Contact Sheet / Storyboard Grid containing ALL keyframes in one large image.\nDefault grid: 3x3. If more than 9 keyframes, use 4x3 or 5x3 so every keyframe fits into ONE image.\nRequirements:\nThe single master image must include every keyframe as a separate panel (one shot per cell) for easy selection.\nEach panel must be clearly labeled: KF number + shot type + suggested duration (labels placed in safe margins, never covering the subject).\nStrict continuity across ALL panels: same subjects, same wardrobe/appearance, same environment, same lighting & same cinematic color grade; only action/expression/blocking/framing/movement changes.\nDoF shifts realistically: shallow in close-ups, deeper in wides; photoreal textures and consistent grading.\nAfter the master grid image, output the full text breakdown for each KF in order so the user can regenerate any single frame at higher quality.\n</step 5 - contact sheet output>\n\n<final output format>\nOutput in this order:\nA) Scene Breakdown\nB) Theme & Story\nC) Cinematic Approach\nD) Keyframes (KF# list)\nE) ONE Master Contact Sheet Image (All KFs in one grid)\n</final output format>\n",
+  "meta_output": {
+    "A_scene_breakdown": {
+      "subjects": [
+        "同一虚构成年男子：稀疏黑灰短发、淡胡须、灰蓝刷手服、白鞋；原图站立扶沙发"
+      ],
+      "environment": "湖景落地窗在左、米色沙发、茶几、木电视柜与花朵电视，夕阳暖光",
+      "visual_anchors": [
+        "稀疏发际线与胡须",
+        "灰蓝V领三前袋上衣",
+        "米色沙发",
+        "木电视柜和紫金花屏",
+        "湖面夕阳"
+      ]
+    },
+    "B_theme_story": {
+      "theme": "忙碌后的安静一刻",
+      "logline": "男子被窗外夕阳吸引，短暂凝望后放松坐下",
+      "emotional_arc": [
+        "站立停顿",
+        "注意夕阳",
+        "表情放松",
+        "回坐微笑"
+      ]
+    },
+    "C_cinematic_approach": {
+      "progression": "广到近再回到空间",
+      "camera_plan": "小幅推进/侧移仅作为后续视频建议",
+      "lens_exposure": "24-85mm视觉建议，广景深到浅景深，非实测参数",
+      "light_color": "同一夕阳色温与米色/灰蓝调"
+    },
+    "D_keyframes": [
+      {
+        "id": "KF1",
+        "suggested_duration_seconds": 2,
+        "shot_type": "ELS",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF1 ELS 2s"
+      },
+      {
+        "id": "KF2",
+        "suggested_duration_seconds": 2,
+        "shot_type": "LS",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "完整全身，男子松开沙发扶手，转向窗边",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF2 LS 2s"
+      },
+      {
+        "id": "KF3",
+        "suggested_duration_seconds": 2,
+        "shot_type": "MLS",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "膝上景别，男子移步至窗边，望向湖面",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF3 MLS 2s"
+      },
+      {
+        "id": "KF4",
+        "suggested_duration_seconds": 2,
+        "shot_type": "MS",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "腰上景别，男子回头看向沙发，肩膀放松",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF4 MS 2s"
+      },
+      {
+        "id": "KF5",
+        "suggested_duration_seconds": 2,
+        "shot_type": "MCU",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "胸上景别，男子露出很轻的微笑",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF5 MCU 2s"
+      },
+      {
+        "id": "KF6",
+        "suggested_duration_seconds": 2,
+        "shot_type": "CU",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "脸部特写，保留稀疏发际线和淡胡须，眼神柔和",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF6 CU 2s"
+      },
+      {
+        "id": "KF7",
+        "suggested_duration_seconds": 2,
+        "shot_type": "ECU",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "手指轻搭同一沙发靠背的微距，保留灰蓝袖口",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF7 ECU 2s"
+      },
+      {
+        "id": "KF8",
+        "suggested_duration_seconds": 2,
+        "shot_type": "LOW",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "低机位，男子站在沙发前，夕阳侧逆光",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF8 LOW 2s"
+      },
+      {
+        "id": "KF9",
+        "suggested_duration_seconds": 2,
+        "shot_type": "HIGH",
+        "composition": "同一客厅，男子为主，窗左/电视右的轴线保持",
+        "action": "明显俯视，男子在同一沙发边缘坐下，安静微笑，结束",
+        "camera": "静态关键帧；剪辑建议缓慢推进或小幅侧移，未生成运动",
+        "lens_and_dof": "广景24-35mm观感，近景50-85mm观感；景深随景别变浅，非真实相机参数",
+        "lighting_grade": "夕阳暖橙、灰蓝衣物、米色沙发保持",
+        "label": "KF9 HIGH 2s"
+      }
+    ],
+    "video_duration_plan_seconds": 18,
+    "actual_video_generated": false
+  },
+  "cases": [
+    {
+      "case_id": "labeled-story-grid",
+      "final_prompt": "Create ONE labeled 3x3 cinematic contact sheet, landscape 16:9 overall, of the same fictional adult man and exact room in the attached reference. Preserve his receding thinning hairline, short dark-gray hair, stubble, face, gray-blue scrubs and white shoes. Keep the same sunset time, window, pale sofa, wooden console and flower-screen TV. Do not add a person, animal or new prop. Only pose, gaze, action, framing and camera angle may change. Story: notice the sunset, become calm, then sit. Each panel has a narrow safe bottom margin carrying exactly its specified label, without covering faces or objects. Nine row-major panels:\nKF1 ELS 2s: 男子在宽阔湖景客厅中站立，夕阳窗、沙发、茶几和电视建立空间。\nKF2 LS 2s: 完整全身，男子松开沙发扶手，转向窗边。\nKF3 MLS 2s: 膝上景别，男子移步至窗边，望向湖面。\nKF4 MS 2s: 腰上景别，男子回头看向沙发，肩膀放松。\nKF5 MCU 2s: 胸上景别，男子露出很轻的微笑。\nKF6 CU 2s: 脸部特写，保留稀疏发际线和淡胡须，眼神柔和。\nKF7 ECU 2s: 手指轻搭同一沙发靠背的微距，保留灰蓝袖口。\nKF8 LOW 2s: 低机位，男子站在沙发前，夕阳侧逆光。\nKF9 HIGH 2s: 明显俯视，男子在同一沙发边缘坐下，安静微笑，结束。\nShallow natural bokeh in closeups, deeper wide shots. All frames are static keyframes, not a generated 18-second movie.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:10:43+08:00"
+}

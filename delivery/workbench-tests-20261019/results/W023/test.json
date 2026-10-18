@@ -24,15 +24,41 @@
       "case_id": "type-cover-01",
       "final_prompt": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
       "reference_material": [],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W023/type-cover-01.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "319c62a75ec961c6e322f3110b0b44572289dc61c2f137316576aee516d0f272",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ae2e9bad-06f5-400f-852d-f2a0c41036f8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:09:00+08:00"
     },
     {
       "case_id": "type-cover-02",
       "final_prompt": "Creative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
       "reference_material": [],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W023/type-cover-02.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "bc34439371e6c6fb58d67efd4f02af7a073ba81240c2c1f8fb8f796a69db66e2",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-589a1f3d-f802-47b5-b8e8-6d4a5be6398b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:09:08+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:02:56+08:00"

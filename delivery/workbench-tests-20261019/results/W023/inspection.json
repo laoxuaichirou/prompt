@@ -1,0 +1,29 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W023/type-cover-01.png",
+    "results/W023/type-cover-02.png"
+  ],
+  "checks": [
+    {
+      "requirement": "两页同色系且排版推进",
+      "result": "符合",
+      "evidence": "一页深色巨型汉字；另一页折纸字与投影，均奶油底"
+    },
+    {
+      "requirement": "只出现白名单中文",
+      "result": "符合",
+      "evidence": "两图均为光与形、静物笔记，无额外文字"
+    },
+    {
+      "requirement": "元提示词执行",
+      "result": "符合",
+      "evidence": "先输出两段英文提示词，再分别生成两张2:3封面"
+    }
+  ],
+  "conclusion": "两张完整比较用例符合主要可见要求；未验证批量稳定性。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:14:51+08:00",
+  "stability_verified": false
+}
