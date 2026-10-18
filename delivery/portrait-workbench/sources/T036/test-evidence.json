@@ -1,0 +1,61 @@
+{
+  "test": {
+    "test_id": "T036",
+    "title": "【9宫格分镜】人物一致性分镜提示词",
+    "type": "元提示词→分镜文本→静态图",
+    "test_input": "{\"scene_input\":\"同一32岁成年通勤者在现代地铁站准备离开站台；同一白衬衫、黑长裤、臂搭黑外套与手提包。\",\"shots\":[\"ELS, same adult woman small in metro platform, train right, neutral white station light\",\"LS, same woman full body by train, white shirt black trousers jacket on arm black bag\",\"MLS, same woman from knees up, turning toward exit, train right background\",\"MS, same woman waist up, glancing toward exit, same platform and white light\",\"MCU, same woman chest up, calm expression, short black bob, no wardrobe change\",\"CU, same woman's face, left cheek beauty mark, natural skin, soft station bokeh\",\"ECU, woman's hand gripping black bag handle, white cuff, train reflections\",\"low angle, same woman starting to walk along platform, black trousers, no new items\",\"high angle, same woman walking away toward platform exit, same station environment\"]}",
+    "reference_material": [
+      "results/T001-fixed-person/02-metro.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只测试选定可见框架，不把原库5分当本轮证据。",
+      "替换SCENE INPUT示例为合成地铁场景，先输出9条镜头文本。"
+    ],
+    "selected_source_prompt": "Create ONE native seamless 3x3 cinematic contact sheet of the exact person and scene in the supplied synthetic metro reference, without text or timecodes. Same face, short bob, white shirt, black trousers, black jacket on arm and black bag in all cells. Train on right, identical lighting and station. Nine frames in reading order:\nELS, same adult woman small in metro platform, train right, neutral white station light\nLS, same woman full body by train, white shirt black trousers jacket on arm black bag\nMLS, same woman from knees up, turning toward exit, train right background\nMS, same woman waist up, glancing toward exit, same platform and white light\nMCU, same woman chest up, calm expression, short black bob, no wardrobe change\nCU, same woman's face, left cheek beauty mark, natural skin, soft station bokeh\nECU, woman's hand gripping black bag handle, white cuff, train reflections\nlow angle, same woman starting to walk along platform, black trousers, no new items\nhigh angle, same woman walking away toward platform exit, same station environment",
+    "final_prompt": "Create ONE native seamless 3x3 cinematic contact sheet of the exact person and scene in the supplied synthetic metro reference, without text or timecodes. Same face, short bob, white shirt, black trousers, black jacket on arm and black bag in all cells. Train on right, identical lighting and station. Nine frames in reading order:\nELS, same adult woman small in metro platform, train right, neutral white station light\nLS, same woman full body by train, white shirt black trousers jacket on arm black bag\nMLS, same woman from knees up, turning toward exit, train right background\nMS, same woman waist up, glancing toward exit, same platform and white light\nMCU, same woman chest up, calm expression, short black bob, no wardrobe change\nCU, same woman's face, left cheek beauty mark, natural skin, soft station bokeh\nECU, woman's hand gripping black bag handle, white cuff, train reflections\nlow angle, same woman starting to walk along platform, black trousers, no new items\nhigh angle, same woman walking away toward platform exit, same station environment",
+    "meta_output": {
+      "scene_input": "同一32岁成年通勤者在现代地铁站准备离开站台；同一白衬衫、黑长裤、臂搭黑外套与手提包。",
+      "shots": [
+        "ELS, same adult woman small in metro platform, train right, neutral white station light",
+        "LS, same woman full body by train, white shirt black trousers jacket on arm black bag",
+        "MLS, same woman from knees up, turning toward exit, train right background",
+        "MS, same woman waist up, glancing toward exit, same platform and white light",
+        "MCU, same woman chest up, calm expression, short black bob, no wardrobe change",
+        "CU, same woman's face, left cheek beauty mark, natural skin, soft station bokeh",
+        "ECU, woman's hand gripping black bag handle, white cuff, train reflections",
+        "low angle, same woman starting to walk along platform, black trousers, no new items",
+        "high angle, same woman walking away toward platform exit, same station environment"
+      ]
+    },
+    "original_filename": "提示词库/视频分镜/[已投产·5分] 【9宫格分镜】人物一致性分镜提示词.md",
+    "original_sha256": "37fbea188ff46a0f44a9d8303f29ed8c816b3421b4970f8891ddebb140e0f7bb",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T001-fixed-person/02-metro.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "核心结构、视觉连续性与原文约束",
+        "result": "存在问题",
+        "evidence": "9格与大部分景别命中，人物/白衬衫黑裤/臂搭外套/黑包/右侧列车基本一致；首格ELS仍是近距离全身，与第二格重复，MLS也裁得偏近，不能给出9镜全命中。"
+      }
+    ],
+    "conclusion": "9格与大部分景别命中，人物/白衬衫黑裤/臂搭外套/黑包/右侧列车基本一致；首格ELS仍是近距离全身，与第二格重复，MLS也裁得偏近，不能给出9镜全命中。 模型单轮初评，未宣称视频通过。"
+  },
+  "images": [
+    {
+      "file": "results/T036-shot9/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "fcc6da50d5d2a1ae59618549de394ea2fb6d8e68ac2dfcb8285f8f2b51860548"
+    }
+  ]
+}

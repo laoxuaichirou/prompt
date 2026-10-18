@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T133",
+    "title": "九宫格拼贴画",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman in the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充32岁虚构成年女性，使用同一合成参考；原示例图不当作已取得素材。",
+      "清理导出括号反斜杠与HTML换行；本工具不提供reference strength，0.5-0.7不作为实际参数宣称。"
+    ],
+    "selected_source_prompt": "\\{\n  \"project_settings\": \\{\n    \"task_type\": \"Single_Image_Contact_Sheet (9-Grid)\",\n    \"aspect_ratio\": \"3:4\",\n    \"resolution_mode\": \"High / Upscale (Crucial for face details in grids)\",\n    \"batch_size\": 1\n  \\},\n  \"reference_config\": \\{\n    \"usage\": \"Upload Reference Image -\\> Set Strength to 0.5-0.7\",\n    \"purpose\": \"Define the 3x3 grid structure and character identity\"\n  \\},\n  \"prompt_payload\": \\{\n    \"structure_trigger\": \"A single contact sheet image containing a 3x3 photo grid matrix\",\n    \"grid_logic\": \"9 distinct panels separated by thin white borders\",\n    \"subject_consistency\": \"Same young asian woman in all 9 panels, identical outfit, identical hairstyle\",\n    \"expression_variation\": \"9 different facial expressions (winking, tongue out, surprised, laughing, serious, etc.)\",\n    \"camera_angles\": \"Varied angles in each panel (high angle, low angle, straight on)\",\n    \"visual_style\": \"Photorealistic, Studio lighting, Light grey background, K-pop idol photocard style\"\n  \\},\n  \"negative_prompt\": [\n    \"One single portrait\",\n    \"merged bodies\",\n    \"distorted grid lines\",\n    \"missing panels\",\n    \"cartoon\",\n    \"illustration\",\n    \"different clothes\"\n  \\]\n\\}",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the synthetic reference. {\n  \"project_settings\": {\n    \"task_type\": \"Single_Image_Contact_Sheet (9-Grid)\",\n    \"aspect_ratio\": \"3:4\",\n    \"resolution_mode\": \"High / Upscale (Crucial for face details in grids)\",\n    \"batch_size\": 1\n  },\n  \"reference_config\": {\n    \"usage\": \"Upload Reference Image -> Set Strength to 0.5-0.7\",\n    \"purpose\": \"Define the 3x3 grid structure and character identity\"\n  },\n  \"prompt_payload\": {\n    \"structure_trigger\": \"A single contact sheet image containing a 3x3 photo grid matrix\",\n    \"grid_logic\": \"9 distinct panels separated by thin white borders\",\n    \"subject_consistency\": \"Same young asian woman in all 9 panels, identical outfit, identical hairstyle\",\n    \"expression_variation\": \"9 different facial expressions (winking, tongue out, surprised, laughing, serious, etc.)\",\n    \"camera_angles\": \"Varied angles in each panel (high angle, low angle, straight on)\",\n    \"visual_style\": \"Photorealistic, Studio lighting, Light grey background, K-pop idol photocard style\"\n  },\n  \"negative_prompt\": [\n    \"One single portrait\",\n    \"merged bodies\",\n    \"distorted grid lines\",\n    \"missing panels\",\n    \"cartoon\",\n    \"illustration\",\n    \"different clothes\"\n  ]\n}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the synthetic reference. {\n  \"project_settings\": {\n    \"task_type\": \"Single_Image_Contact_Sheet (9-Grid)\",\n    \"aspect_ratio\": \"3:4\",\n    \"resolution_mode\": \"High / Upscale (Crucial for face details in grids)\",\n    \"batch_size\": 1\n  },\n  \"reference_config\": {\n    \"usage\": \"Upload Reference Image -> Set Strength to 0.5-0.7\",\n    \"purpose\": \"Define the 3x3 grid structure and character identity\"\n  },\n  \"prompt_payload\": {\n    \"structure_trigger\": \"A single contact sheet image containing a 3x3 photo grid matrix\",\n    \"grid_logic\": \"9 distinct panels separated by thin white borders\",\n    \"subject_consistency\": \"Same young asian woman in all 9 panels, identical outfit, identical hairstyle\",\n    \"expression_variation\": \"9 different facial expressions (winking, tongue out, surprised, laughing, serious, etc.)\",\n    \"camera_angles\": \"Varied angles in each panel (high angle, low angle, straight on)\",\n    \"visual_style\": \"Photorealistic, Studio lighting, Light grey background, K-pop idol photocard style\"\n  },\n  \"negative_prompt\": [\n    \"One single portrait\",\n    \"merged bodies\",\n    \"distorted grid lines\",\n    \"missing panels\",\n    \"cartoon\",\n    \"illustration\",\n    \"different clothes\"\n  ]\n}",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 九宫格拼贴画.md",
+    "original_sha256": "476b757a35aed3c769f0cca0b092752d25003ad4be7c94dd8eb4a9000c89e113",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格/指定表情/服装",
+        "result": "基本符合",
+        "evidence": "九格细白线，眨眼、吐舌、惊讶、大笑、严肃等主要表情完成，白T短发灰背景一致。"
+      },
+      {
+        "requirement": "九种表情/高低机位",
+        "result": "存在问题",
+        "evidence": "中间与下中均闭嘴微笑，主要区别是V手势；未见明显仰拍，机位变化不足；reference strength并非实际工具参数。"
+      }
+    ],
+    "conclusion": "九格已出图，表情区分和低角度要求未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T133-expression-grid/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "dc2c9186e39d4dfc5f19d1a8ced0c005089ea65ce5fcd3aa6ccc60eb8007b2f6"
+    }
+  ]
+}

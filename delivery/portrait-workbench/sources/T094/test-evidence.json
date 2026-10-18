@@ -1,0 +1,127 @@
+{
+  "test": {
+    "test_id": "T094",
+    "title": "预判前后时间的画面",
+    "type": "参考图时间推演编辑",
+    "test_input": "以T001花店成年人物持花束图为当前；分别生成5分钟前、30分钟后、1小时后、2小时后，共四张。没有真实时序照片作为验证真值。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "四个时间点拆为四次调用，不合成拼图；不预先替工具编写未来情节",
+      "复用同一花店合成参考；只检查场景连续和时间推演是否明显，不把虚构未来当真实预测准确率"
+    ],
+    "selected_source_prompt": "请分别显示5分钟前/30分钟后/1小时后/2小时后的效果",
+    "final_prompt": [
+      "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成5分钟前这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+      "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成30分钟后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+      "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成1小时后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+      "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成2小时后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。"
+    ],
+    "cases": [
+      {
+        "name": "01",
+        "time": "5分钟前",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成5分钟前这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      },
+      {
+        "name": "02",
+        "time": "30分钟后",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成30分钟后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      },
+      {
+        "name": "03",
+        "time": "1小时后",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成1小时后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      },
+      {
+        "name": "04",
+        "time": "2小时后",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "参考图是当前时刻的一张合成花店照片。原始要求：请分别显示5分钟前/30分钟后/1小时后/2小时后的效果。本次调用只生成2小时后这一张独立场景图，其他时间点由其他独立调用完成，不要拼图，不加时间文字。保持同一成年人物身份和花店空间，在该时间点做合理的视觉推演，不要将虚构场景当作事实记录。",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[仅参考·2分] 预判前后时间的画面.md",
+    "original_sha256": "fa5193cee84a2ca3e4156b91ca972a3dcfb0c57b77a6e166cfc32807efb4c51a",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T001-fixed-person/04-florist.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 4,
+    "opened": 4,
+    "checks": [
+      {
+        "requirement": "四时间点出图",
+        "result": "已出图",
+        "evidence": "5分钟前/30分钟后/1小时后/2小时后各一张独立图，均已打开。"
+      },
+      {
+        "requirement": "场景与人物连续",
+        "result": "基本符合",
+        "evidence": "花店、绿围裙白衬衫、同一人物和花束制作主题连贯；最后出现粉色缎带、前几张仍整理花束。"
+      },
+      {
+        "requirement": "时间差可辨/真实预测",
+        "result": "不可验证/存在问题",
+        "evidence": "图中没有足以区分30分钟和1小时的时间依据；没有真实时序照片或给定事件过程，不可判预测准确。"
+      }
+    ],
+    "conclusion": "四图已生成，只有合理场景续写证据，精确时间推演和真实预测未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T094-time-inference/01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d7a17c5f248f29f86c52be5e75369f5fa61848c75ac1fcac47f17f6347b1234e"
+    },
+    {
+      "file": "results/T094-time-inference/02.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e240e73560b6ca65975d4c8190d8be05df670eb4586ce8f1bbb1955d6513e365"
+    },
+    {
+      "file": "results/T094-time-inference/03.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1092b84cb464709e5640ca2624e6b00d2f0f33184c5ff2f58e586fc1cfd55997"
+    },
+    {
+      "file": "results/T094-time-inference/04.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "680d0101c4aed7c8e7f02b0a76f1c12abee20688320f21beff63c59763f79588"
+    }
+  ]
+}

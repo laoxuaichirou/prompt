@@ -1,0 +1,67 @@
+{
+  "test": {
+    "test_id": "T088",
+    "title": "卡通风格钥匙扣",
+    "type": "直接结构化生图/参考编辑",
+    "test_input": "成年人物身份参考使用同一合成32岁女性；测试完整英文JSON的黄色滑板车钥匙扣。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只用英文原版；清理反斜杠转义的花括号和HTML换行，high detail之间的换行合并为空格；不使用损坏中文",
+      "成年角色Q版处理，不将大头风格理解成儿童"
+    ],
+    "selected_source_prompt": "{\n  \"reference\": \"use uploaded image as facial reference, preserve original face and identity exactly\",\n  \"character_type\": \"caricature-style keychain, gender-neutral\",\n  \"pose\": \"riding a yellow scooter indoors\",\n  \"head_style\": \"oversized head with joyful, playful smile\",\n  \"outfit_beanie\": \"yellow knit beanie\",\n  \"outfit_top\": \"striped yellow-black sweater\",\n  \"outfit_bottom\": \"denim shorts\",\n  \"socks\": \"white socks\",\n  \"footwear\": \"white sneakers\",\n  \"keychain_detail\": \"blue strap labeled 'SAMMU'\",\n  \"lighting\": \"soft indoor lighting\",\n  \"depth_of_field\": \"shallow depth of field\",\n  \"background\": \"mall-like indoor environment\",\n  \"style\": \"whimsical, toy-like, premium collectible\",\n  \"photography\": \"cinematic product photography\",\n  \"texture\": \"smooth plastic, high detail finish\"\n}",
+    "final_prompt": [
+      "Use the supplied fictional 32-year-old adult person as facial reference. Render the following keychain product JSON: {\"reference\": \"use uploaded image as facial reference, preserve original face and identity exactly\", \"character_type\": \"caricature-style keychain, gender-neutral\", \"pose\": \"riding a yellow scooter indoors\", \"head_style\": \"oversized head with joyful, playful smile\", \"outfit_beanie\": \"yellow knit beanie\", \"outfit_top\": \"striped yellow-black sweater\", \"outfit_bottom\": \"denim shorts\", \"socks\": \"white socks\", \"footwear\": \"white sneakers\", \"keychain_detail\": \"blue strap labeled 'SAMMU'\", \"lighting\": \"soft indoor lighting\", \"depth_of_field\": \"shallow depth of field\", \"background\": \"mall-like indoor environment\", \"style\": \"whimsical, toy-like, premium collectible\", \"photography\": \"cinematic product photography\", \"texture\": \"smooth plastic, high detail finish\"}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "Use the supplied fictional 32-year-old adult person as facial reference. Render the following keychain product JSON: {\"reference\": \"use uploaded image as facial reference, preserve original face and identity exactly\", \"character_type\": \"caricature-style keychain, gender-neutral\", \"pose\": \"riding a yellow scooter indoors\", \"head_style\": \"oversized head with joyful, playful smile\", \"outfit_beanie\": \"yellow knit beanie\", \"outfit_top\": \"striped yellow-black sweater\", \"outfit_bottom\": \"denim shorts\", \"socks\": \"white socks\", \"footwear\": \"white sneakers\", \"keychain_detail\": \"blue strap labeled 'SAMMU'\", \"lighting\": \"soft indoor lighting\", \"depth_of_field\": \"shallow depth of field\", \"background\": \"mall-like indoor environment\", \"style\": \"whimsical, toy-like, premium collectible\", \"photography\": \"cinematic product photography\", \"texture\": \"smooth plastic, high detail finish\"}",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[已投产·4分] 卡通风格钥匙扣.md",
+    "original_sha256": "9a3519cec8c8c182a49490be8cba6ef508b070ac8dfc47bcbaf42df7fdbd1d0c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "钥匙扣、服装、文字",
+        "result": "符合要求",
+        "evidence": "黄帽、黄黑条纹毛衣、牛仔短裤、白袜白鞋、黄滑板车、蓝挂带SAMMU与商场景深出现。"
+      },
+      {
+        "requirement": "玩具塑料质感/面部精确锁定",
+        "result": "存在问题",
+        "evidence": "面部和针织更像真实皮肤/衣料，光滑塑料质感不足；大头卡通化改变比例，不能声称原脸完全不变。"
+      }
+    ],
+    "conclusion": "钥匙扣主体和服饰文字落实，塑料材质与精确面貌要求未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T088-keychain/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "deda9daefcfd9a3d24a905a0787f3fd284a9afffb6ec5f4d7f305a1f5f98b02e"
+    }
+  ]
+}

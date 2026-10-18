@@ -1,0 +1,40 @@
+{
+  "test": {
+    "test_id": "T047",
+    "title": "撒娇少女特写",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一32岁虚构成年女性脸部；长发与黑裙按正文。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "年龄固定32岁成年人，原young adult仍保留成年含义。",
+      "原文长发、雀斑为明确造型，允许覆盖参考短发；非真人明星照片。"
+    ],
+    "selected_source_prompt": "{\n  \"style\": \"ultra-realistic celebrity portrait, soft romantic photography\",\n  \"subject\": {\n    \"identity\": \"based on uploaded reference\",\n    \"gender\": \"female\",\n    \"age\": \"young adult\",\n    \"pose\": \"tilting head slightly to the side, looking up at camera through lashes, playful and cute posture\",\n    \"expression\": \"pouting lips, acting cute, puppy eyes, innocent look, 'sajiao' vibe\",\n    \"facial_details\": {\n      \"eyes\": \"big imploring eyes, looking up, soft gaze\",\n      \"mouth\": \"pouted lips, slight pout\",\n      \"cheeks\": \"faint blush\",\n      \"freckles\": \"visible natural freckles across nose and cheeks\",\n      \"makeup\": {\n        \"skin\": \"dewy natural finish\",\n        \"lips\": \"glossy pink\",\n        \"eyes\": \"doe-eyed makeup\"\n      }\n    },\n    \"hair\": {\n      \"color\": \"jet black\",\n      \"length\": \"long\",\n      \"style\": \"straight, soft texture, falling over one shoulder\"\n    },\n    \"outfit\": {\n      \"dress\": \"black fitted dress with deep plunging V-neckline\",\n      \"jewelry\": {\n        \"earrings\": \"long dangling gold chain earrings\",\n        \"necklaces\": \"layered gold necklaces with a small heart pendant\"\n      }\n    }\n  },\n  \"environment\": {\n    \"setting\": \"soft studio setting\",\n    \"background\": \"creamy soft focus background, blurred\"\n  },\n  \"lighting\": {\n    \"type\": \"soft diffused light\",\n    \"mood\": \"romantic, sweet, charming\",\n    \"tone\": \"warm peach and cream tones\"\n  },\n  \"camera\": {\n    \"shot_type\": \"close-up portrait\",\n    \"angle\": \"slightly high angle (to emphasize big eyes)\",\n    \"focus\": \"sharp focus on eyes\",\n    \"lens\": \"85mm f/1.4\"\n  },\n  \"quality\": {\n    \"resolution\": \"8k\",\n    \"texture\": \"realistic skin texture\",\n    \"aesthetic\": \"k-pop aesthetic influence, soft dreamy style\"\n  }\n}\n",
+    "final_prompt": "The supplied person is entirely fictional and32 years old, clearly ADULT. Preserve adult facial identity only; change hairstyle and clothing as described. Celebrity portrait means photographic style, no real celebrity. {\n  \"style\": \"ultra-realistic celebrity portrait, soft romantic photography\",\n  \"subject\": {\n    \"identity\": \"based on uploaded reference\",\n    \"gender\": \"female\",\n    \"age\": \"young adult\",\n    \"pose\": \"tilting head slightly to the side, looking up at camera through lashes, playful and cute posture\",\n    \"expression\": \"pouting lips, acting cute, puppy eyes, innocent look, 'sajiao' vibe\",\n    \"facial_details\": {\n      \"eyes\": \"big imploring eyes, looking up, soft gaze\",\n      \"mouth\": \"pouted lips, slight pout\",\n      \"cheeks\": \"faint blush\",\n      \"freckles\": \"visible natural freckles across nose and cheeks\",\n      \"makeup\": {\n        \"skin\": \"dewy natural finish\",\n        \"lips\": \"glossy pink\",\n        \"eyes\": \"doe-eyed makeup\"\n      }\n    },\n    \"hair\": {\n      \"color\": \"jet black\",\n      \"length\": \"long\",\n      \"style\": \"straight, soft texture, falling over one shoulder\"\n    },\n    \"outfit\": {\n      \"dress\": \"black fitted dress with deep plunging V-neckline\",\n      \"jewelry\": {\n        \"earrings\": \"long dangling gold chain earrings\",\n        \"necklaces\": \"layered gold necklaces with a small heart pendant\"\n      }\n    }\n  },\n  \"environment\": {\n    \"setting\": \"soft studio setting\",\n    \"background\": \"creamy soft focus background, blurred\"\n  },\n  \"lighting\": {\n    \"type\": \"soft diffused light\",\n    \"mood\": \"romantic, sweet, charming\",\n    \"tone\": \"warm peach and cream tones\"\n  },\n  \"camera\": {\n    \"shot_type\": \"close-up portrait\",\n    \"angle\": \"slightly high angle (to emphasize big eyes)\",\n    \"focus\": \"sharp focus on eyes\",\n    \"lens\": \"85mm f/1.4\"\n  },\n  \"quality\": {\n    \"resolution\": \"8k\",\n    \"texture\": \"realistic skin texture\",\n    \"aesthetic\": \"k-pop aesthetic influence, soft dreamy style\"\n  }\n}\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 撒娇少女特写.md",
+    "original_sha256": "cedb401bbd83a27b9d288af453f1db38c114cf4b6372cb849075873b8eb00812",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际生图",
+        "result": "阻塞",
+        "evidence": "工具HTTP400、moderation_blocked、output阶段。返回类别：sexual。没有返回图片，未尝试绕过。"
+      }
+    ],
+    "conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。"
+  },
+  "images": []
+}

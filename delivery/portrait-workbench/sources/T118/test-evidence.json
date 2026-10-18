@@ -1,0 +1,55 @@
+{
+  "test": {
+    "test_id": "T118",
+    "title": "垂直三格拼贴画",
+    "type": "英文JSON三格自拍",
+    "test_input": "同一合成成年参考作为面貌，人物明确32岁；长棕卷发按正文，服装从bralette or camisole分支选粉色蕾丝边吊带背心。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择完整英文版本，年龄填32岁；选择原文允许的camisole分支，不使用损坏中文",
+      "原文三种表情/手势及中格爱心皇冠保持，不以一张单人照片替代三格"
+    ],
+    "selected_source_prompt": "{\n  \"image_structure\": {\n    \"layout\": \"Vertical three-panel collage\",\n    \"aspect_ratio\": \"Tall vertical strip\",\n    \"shot_type\": \"Close-up selfies\"\n  },\n  \"subject_details\": {\n    \"demographics\": \"Young woman with long, wavy brunette hair\",\n    \"skin\": \"Natural skin texture, minimal or no makeup\",\n    \"clothing\": \"Pink lace-trimmed bralette or camisole top with thin spaghetti straps\",\n    \"accessories\": \"Long manicured nails (nude/pale pink color)\"\n  },\n  \"environment\": {\n    \"setting\": \"Dimly lit bedroom or hotel room interior\",\n    \"background_elements\": [\n      \"Beige/cream colored walls\",\n      \"Heavy brown curtains on the left side\",\n      \"Partial view of a bed headboard in the background\"\n    ]\n  },\n  \"lighting_and_style\": {\n    \"lighting\": \"Warm, indoor artificial lighting, low-light conditions\",\n    \"aesthetic\": \"Candid selfie style, slightly grainy phone camera quality, early 2010s social media aesthetic, flash photography look\",\n    \"mood\": \"Casual, intimate, playful\"\n  },\n  \"panel_breakdown\": {\n    \"top_panel\": {\n      \"expression\": \"Pouting or confused, eyebrows slightly furrowed\",\n      \"pose\": \"Finger hooked over bottom lip, looking directly at camera\"\n    },\n    \"middle_panel\": {\n      \"expression\": \"Soft smile, looking directly at camera\",\n      \"overlay_effect\": \"Digital pink heart crown filter (Snapchat style) floating around the head\"\n    },\n    \"bottom_panel\": {\n      \"expression\": \"Relaxed, mouth slightly open, gazing at camera\",\n      \"pose\": \"Head tilted to the side, hand gently touching chin and lower lip\"\n    }\n  }\n}\n",
+    "final_prompt": [
+      "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n{\"image_structure\": {\"layout\": \"Vertical three-panel collage\", \"aspect_ratio\": \"Tall vertical strip\", \"shot_type\": \"Close-up selfies\"}, \"subject_details\": {\"demographics\": \"A fictional 32-year-old adult woman with long wavy brunette hair\", \"skin\": \"Natural skin texture, minimal or no makeup\", \"clothing\": \"Pink lace-trimmed camisole top with thin spaghetti straps\", \"accessories\": \"Long manicured nails (nude/pale pink color)\"}, \"environment\": {\"setting\": \"Dimly lit bedroom or hotel room interior\", \"background_elements\": [\"Beige/cream colored walls\", \"Heavy brown curtains on the left side\", \"Partial view of a bed headboard in the background\"]}, \"lighting_and_style\": {\"lighting\": \"Warm, indoor artificial lighting, low-light conditions\", \"aesthetic\": \"Candid selfie style, slightly grainy phone camera quality, early 2010s social media aesthetic, flash photography look\", \"mood\": \"Casual, intimate, playful\"}, \"panel_breakdown\": {\"top_panel\": {\"expression\": \"Pouting or confused, eyebrows slightly furrowed\", \"pose\": \"Finger hooked over bottom lip, looking directly at camera\"}, \"middle_panel\": {\"expression\": \"Soft smile, looking directly at camera\", \"overlay_effect\": \"Digital pink heart crown filter (Snapchat style) floating around the head\"}, \"bottom_panel\": {\"expression\": \"Relaxed, mouth slightly open, gazing at camera\", \"pose\": \"Head tilted to the side, hand gently touching chin and lower lip\"}}}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n{\"image_structure\": {\"layout\": \"Vertical three-panel collage\", \"aspect_ratio\": \"Tall vertical strip\", \"shot_type\": \"Close-up selfies\"}, \"subject_details\": {\"demographics\": \"A fictional 32-year-old adult woman with long wavy brunette hair\", \"skin\": \"Natural skin texture, minimal or no makeup\", \"clothing\": \"Pink lace-trimmed camisole top with thin spaghetti straps\", \"accessories\": \"Long manicured nails (nude/pale pink color)\"}, \"environment\": {\"setting\": \"Dimly lit bedroom or hotel room interior\", \"background_elements\": [\"Beige/cream colored walls\", \"Heavy brown curtains on the left side\", \"Partial view of a bed headboard in the background\"]}, \"lighting_and_style\": {\"lighting\": \"Warm, indoor artificial lighting, low-light conditions\", \"aesthetic\": \"Candid selfie style, slightly grainy phone camera quality, early 2010s social media aesthetic, flash photography look\", \"mood\": \"Casual, intimate, playful\"}, \"panel_breakdown\": {\"top_panel\": {\"expression\": \"Pouting or confused, eyebrows slightly furrowed\", \"pose\": \"Finger hooked over bottom lip, looking directly at camera\"}, \"middle_panel\": {\"expression\": \"Soft smile, looking directly at camera\", \"overlay_effect\": \"Digital pink heart crown filter (Snapchat style) floating around the head\"}, \"bottom_panel\": {\"expression\": \"Relaxed, mouth slightly open, gazing at camera\", \"pose\": \"Head tilted to the side, hand gently touching chin and lower lip\"}}}",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 垂直三格拼贴画.md",
+    "original_sha256": "65bc920dfd5b651ca29ba604fb97d8b31b3747015957705906eb395014c494fe",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "工具结果",
+        "result": "阻塞",
+        "evidence": "output阶段sexual分类拒绝，无返回图片。未通过换词重试绕过过滤。"
+      }
+    ],
+    "conclusion": "已实际调用，输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

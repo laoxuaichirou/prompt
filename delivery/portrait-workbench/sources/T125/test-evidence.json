@@ -1,0 +1,35 @@
+{
+  "test": {
+    "test_id": "T125",
+    "title": "Nano banana",
+    "type": "目录/空正文",
+    "test_input": "读取导出正文，未提供提示词。",
+    "reference_material": [],
+    "tool": "无（缺失未调用）",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [],
+    "selected_source_prompt": "",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] Nano banana.md",
+    "original_sha256": "d15207598bfe7bd574258f5e4cec6c4ec27e1099055095918d4e144c2a1d6e52",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "正文",
+        "result": "缺失",
+        "evidence": "仅目录标题，正文为空；子条目单独测试结果不能替代本父页实际提示词。"
+      }
+    ],
+    "conclusion": "缺少提示词，无图，不能判生图实测通过。"
+  },
+  "images": []
+}

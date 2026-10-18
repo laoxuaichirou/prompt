@@ -1,0 +1,76 @@
+{
+  "test": {
+    "test_id": "T112",
+    "title": "Q版小人",
+    "type": "双参考掌心Q版编辑",
+    "test_input": "图1为合成32岁女性，图2为同一合成掌心素材。本条与T078相近，但做一次新的独立工具调用。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/materials/palm-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入普通成年人物与手部素材，不声称原库图2复现",
+      "只执行第一段完整指令，待优化备注另记；没有用T078旧图片冒充本条出图"
+    ],
+    "selected_source_prompt": "一只手掌中托着图1人物迷你Q版的形象（非玩偶），不改变人物相貌穿着特征人物站在掌心中央，一只成人的手指轻轻戳着脸颊，背景为纯净的浅蓝色纯色墙面，画面聚焦于人物和手掌，构图居中。 人物脸颊肉嘟嘟，眼神呆萌又无辜看着镜头，表情生动自然。 视觉风格与光影：俯拍视角，日系清新治愈风，暖色调光影柔和，光线均匀打在主体上，无明显阴影，画面清晰度高，细节丰富（如皮肤纹理、衣物质感），整体氛围可爱温馨，萌系风格突出。采用9:16竖版构图，成人手掌占据画面两侧，参考图2",
+    "final_prompt": [
+      "图1为虚构32岁成年人，Q版只改变比例；图2为合成手部构图参考。\n一只手掌中托着图1人物迷你Q版的形象（非玩偶），不改变人物相貌穿着特征人物站在掌心中央，一只成人的手指轻轻戳着脸颊，背景为纯净的浅蓝色纯色墙面，画面聚焦于人物和手掌，构图居中。 人物脸颊肉嘟嘟，眼神呆萌又无辜看着镜头，表情生动自然。 视觉风格与光影：俯拍视角，日系清新治愈风，暖色调光影柔和，光线均匀打在主体上，无明显阴影，画面清晰度高，细节丰富（如皮肤纹理、衣物质感），整体氛围可爱温馨，萌系风格突出。采用9:16竖版构图，成人手掌占据画面两侧，参考图2"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/palm-synthetic.png"
+        ],
+        "prompt": "图1为虚构32岁成年人，Q版只改变比例；图2为合成手部构图参考。\n一只手掌中托着图1人物迷你Q版的形象（非玩偶），不改变人物相貌穿着特征人物站在掌心中央，一只成人的手指轻轻戳着脸颊，背景为纯净的浅蓝色纯色墙面，画面聚焦于人物和手掌，构图居中。 人物脸颊肉嘟嘟，眼神呆萌又无辜看着镜头，表情生动自然。 视觉风格与光影：俯拍视角，日系清新治愈风，暖色调光影柔和，光线均匀打在主体上，无明显阴影，画面清晰度高，细节丰富（如皮肤纹理、衣物质感），整体氛围可爱温馨，萌系风格突出。采用9:16竖版构图，成人手掌占据画面两侧，参考图2",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/palm-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] Q版小人.md",
+    "original_sha256": "3eb47e98c50d0e3919a5470695f1ad119736ef6e691273782a209120f0bcb718",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/palm-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "掌心互动与服饰",
+        "result": "符合要求",
+        "evidence": "人物站掌心中央、食指触脸、浅蓝背景、9:16俯拍；白T深蓝裤白鞋保留。"
+      },
+      {
+        "requirement": "相貌不变",
+        "result": "存在问题",
+        "evidence": "大眼、脸颊和头身比例大幅改变，无法满足字面相貌不变；仅能保留短发和小痣等识别线索。"
+      },
+      {
+        "requirement": "独立运行",
+        "result": "已执行",
+        "evidence": "本条新调用，新文件，未复用T078旧输出作为本轮证据。"
+      }
+    ],
+    "conclusion": "掌心Q版主要构图完成，脸部比例改变不满足原文相貌不变。"
+  },
+  "images": [
+    {
+      "file": "results/T112-palm-chibi/output.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "de852505c2573fd96e72b48cd24151f5ab0d242ecded328c55a98db8072461a1"
+    }
+  ]
+}

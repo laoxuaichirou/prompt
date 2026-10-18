@@ -1,0 +1,85 @@
+{
+  "test": {
+    "test_id": "T025",
+    "title": "22种AI调色提示词22种AI调色提示词",
+    "type": "直接生图场景提示词合集抽测",
+    "test_input": "抽测LOOK01现代黑色电影与LOOK17青橙色调，复用同一合成成年人物参考。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试；后端模型未知，非原模型实测",
+    "changes": [
+      "完整原文另存，所选子模板及未覆盖范围分开记录。",
+      "此页虽归在图像编辑，正文实际是含固定场景的22组直接生图提示词。",
+      "只抽测01与17，另外20组未执行，不宣称全22组通过。",
+      "两个原例场景不同，保留原例；共用同一角色参考，不能将输出差异归因于纯调色控制变量。",
+      "额外明确成年与同一合成人物；LOOK17按原例添加雀斑。"
+    ],
+    "final_prompts": [
+      {
+        "id": "T025-look01",
+        "prompt": "以参考中的同一位32岁虚构成年女性作为人物设定，生成一张独立照片；按以下原例改变场景与造型，不做宫格。\n调色风格：现代黑色电影。高对比度黑白影像，浓郁深沉的黑色，纯净的银白色高光，细腻的胶片颗粒，锐利的纹理质感。画面主体：一位女子在夜晚的雨街行走，潮湿的路面映照着霓虹灯光。",
+        "refs": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "id": "T025-look17",
+        "prompt": "以参考中的同一位32岁虚构成年女性作为人物设定，生成一张独立照片；按以下原例改变场景与造型，不做宫格；雀斑按原例要求添加。\n调色风格：电影化青橙色调。阴影为冷调深青蓝色，中间调温暖饱和以突出肤色，高光呈现柔和琥珀色。高对比度，大片质感。画面主体：自然窗光下雀斑女性的超写实特写。",
+        "refs": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "original_filename": "提示词库/图像编辑/[已投产·4分] 22种AI调色提示词22种AI调色提示词.md",
+    "original_sha256": "4918c7af452d97b5f8945915cf4722b2bfc56862f962b01d058e0300d8029602",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "LOOK01黑色电影原例",
+        "result": "符合本次用例",
+        "evidence": "同一合成成年人物在雨夜街道行走，高对比黑白、深黑与银白霓虹反射、细颗粒明显。"
+      },
+      {
+        "requirement": "LOOK17青橙原例",
+        "result": "符合本次用例",
+        "evidence": "窗边雀斑特写，背景深青蓝、肤色暖橙、高光琥珀，肤质清晰。"
+      },
+      {
+        "requirement": "同一参考复用",
+        "result": "已执行",
+        "evidence": "两图同用adult-woman-synthetic.png；原例本来不同场景、造型，不能据此评估纯调色保真。"
+      },
+      {
+        "requirement": "22组全覆盖、纯调色对照与稳定性",
+        "result": "未执行",
+        "evidence": "只抽测01/17两例，其余20组未测；未测同构图仅颜色变化，也未调用Higgsfield。"
+      }
+    ],
+    "conclusion": "所选01与17两个直接生图子例符合视觉初评；其余20组、纯调色控制变量及稳定性未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T025-color-looks/T025-look01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6e2cb2d0e84d29f80597b13384edefca9e61d1585be4240825f8c20905dc333b"
+    },
+    {
+      "file": "results/T025-color-looks/T025-look17.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "636950ab32ccf225374b34e2d6368ee1f5edda0d2ddbd1580cc77a8197b16434"
+    }
+  ]
+}

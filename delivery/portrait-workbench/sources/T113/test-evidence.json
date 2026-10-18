@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T113",
+    "title": "【人像】3x3网格照片拼贴",
+    "type": "男性九宫格参考编辑",
+    "test_input": "上传同一合成43岁男性脸部参考，按英文原版做九姿势蓝天亨利衫组图。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-man-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "英文原文整段连续重复两遍，只删完全相同的第二遍，不改内容",
+      "保留8K与焦距文字作为要求，不当作真实分辨率/镜头证明"
+    ],
+    "selected_source_prompt": "A high-resolution 3x3 grid photo collage featuring nine distinct, dynamic poses of a male subject with the uploaded face as reference, set against a vibrant, cloud-speckled azure sky illuminated by harsh, high-key natural sunlight that creates crisp, defined shadows. The subject is dressed in a textured light beige long-sleeve henley shirt with the top buttons undone and dark blue denim jeans, accessorized with a thin silver necklace. The cinematography utilizes a mix of focal lengths, shifting from wide-angle 35mm full-body shots to intimate 85mm portrait close-ups. The poses are expressive and varied, including a wide-legged power stance with hands clasped behind the head, a forced-perspective shot with a palm extended directly toward the camera lens, a playful close-up peering through an \"OK\" finger gesture over one eye, a cheerful center shot resting the chin in both hands, and a moody pose covering half the face with a hand. The image quality is hyper-realistic with 8k resolution, showcasing intricate skin texture, subsurface scattering, realistic fabric folds, and individual hair strands, rendered with the polished aesthetic of a high-end commercial fashion lookbook or lifestyle campaign.",
+    "final_prompt": [
+      "A high-resolution 3x3 grid photo collage featuring nine distinct, dynamic poses of a male subject with the uploaded face as reference, set against a vibrant, cloud-speckled azure sky illuminated by harsh, high-key natural sunlight that creates crisp, defined shadows. The subject is dressed in a textured light beige long-sleeve henley shirt with the top buttons undone and dark blue denim jeans, accessorized with a thin silver necklace. The cinematography utilizes a mix of focal lengths, shifting from wide-angle 35mm full-body shots to intimate 85mm portrait close-ups. The poses are expressive and varied, including a wide-legged power stance with hands clasped behind the head, a forced-perspective shot with a palm extended directly toward the camera lens, a playful close-up peering through an \"OK\" finger gesture over one eye, a cheerful center shot resting the chin in both hands, and a moody pose covering half the face with a hand. The image quality is hyper-realistic with 8k resolution, showcasing intricate skin texture, subsurface scattering, realistic fabric folds, and individual hair strands, rendered with the polished aesthetic of a high-end commercial fashion lookbook or lifestyle campaign."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-man-synthetic.png"
+        ],
+        "prompt": "A high-resolution 3x3 grid photo collage featuring nine distinct, dynamic poses of a male subject with the uploaded face as reference, set against a vibrant, cloud-speckled azure sky illuminated by harsh, high-key natural sunlight that creates crisp, defined shadows. The subject is dressed in a textured light beige long-sleeve henley shirt with the top buttons undone and dark blue denim jeans, accessorized with a thin silver necklace. The cinematography utilizes a mix of focal lengths, shifting from wide-angle 35mm full-body shots to intimate 85mm portrait close-ups. The poses are expressive and varied, including a wide-legged power stance with hands clasped behind the head, a forced-perspective shot with a palm extended directly toward the camera lens, a playful close-up peering through an \"OK\" finger gesture over one eye, a cheerful center shot resting the chin in both hands, and a moody pose covering half the face with a hand. The image quality is hyper-realistic with 8k resolution, showcasing intricate skin texture, subsurface scattering, realistic fabric folds, and individual hair strands, rendered with the polished aesthetic of a high-end commercial fashion lookbook or lifestyle campaign.",
+        "reference_material_portable": [
+          "materials/adult-man-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 【人像】3x3网格照片拼贴.md",
+    "original_sha256": "2632e83d14d190a25cc49e5a19f60cedf91a556222d6a1e89490ba703c0c2fa1",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-man-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格/指定五动作/衣着",
+        "result": "符合要求",
+        "evidence": "九格、双手抱头、向镜头伸掌、OK眼圈、双托腮、半遮脸均出现，米色亨利衫/牛仔裤/银链和蓝天背景落实。"
+      },
+      {
+        "requirement": "九种动作不重复/全身镜头",
+        "result": "存在问题",
+        "evidence": "第4与第7格均为坐姿手臂搭膝，仅裁切不同；没有清楚完整含双脚的全身镜头。"
+      },
+      {
+        "requirement": "8K/镜头真实性",
+        "result": "未满足/未验证",
+        "evidence": "非8K，35mm/85mm不能由图像证明。"
+      }
+    ],
+    "conclusion": "男性九宫格完成主要动作，但重复姿势、全身镜头与8K未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T113-male-grid9/output.png",
+      "width": 1199,
+      "height": 1312,
+      "sha256": "f388c38219cc5ccb42b3a0afa2af0f072bfc475cd3f159c94560c6b281c4ae39"
+    }
+  ]
+}

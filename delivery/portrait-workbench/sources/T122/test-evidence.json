@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T122",
+    "title": "超现实亲子时尚大片",
+    "type": "直接生图/参考图编辑",
+    "test_input": "Test subjects are wholly fictional adults: father aged 50, mother aged 48, and their adult daughter aged 22. Choose denim for the mother jacket. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构父50/母48/成年女儿22岁，母亲夹克选择原文denim分支。"
+    ],
+    "selected_source_prompt": "Ultra-realistic family fashion infographic photography featuring a Father, Mother, and Daughter in coordinated casual outfits, arranged in a balanced circular exploded composition.\nFloating elements organized clockwise around the trio:\n• Father: neutral baseball cap, classic wristwatch, cotton crew-neck tee, lightweight casual jacket, tailored denim jeans, leather belt, ankle socks, white sneakers.\n• Mother: soft knit hat, minimal gold earrings, relaxed-fit cotton top, cropped denim or linen jacket, high-waist jeans, leather belt, clean sneakers, structured mini handbag.\n• Daughter: playful hair accessories, soft cotton tee, light denim jacket, stretch jeans, ankle socks, pastel sneakers, mini backpack.\nEach clothing item suspended mid-air with fine dotted guide lines connecting back to each family member.\nMinimal editorial labels highlighting fabric, color, and material details (cotton, denim, leather, rubber sole).\nClean studio background with subtle gradient.\nSoft diffused lighting for a warm, wholesome mood.\nPremium lifestyle editorial styling, ultra-sharp focus, natural skin tones, 8K quality, high-end fashion catalog aesthetic.\n",
+    "final_prompt": [
+      "Test subjects are wholly fictional adults: father aged 50, mother aged 48, and their adult daughter aged 22. Choose denim for the mother jacket. Ultra-realistic family fashion infographic photography featuring a Father, Mother, and Daughter in coordinated casual outfits, arranged in a balanced circular exploded composition.\nFloating elements organized clockwise around the trio:\n• Father: neutral baseball cap, classic wristwatch, cotton crew-neck tee, lightweight casual jacket, tailored denim jeans, leather belt, ankle socks, white sneakers.\n• Mother: soft knit hat, minimal gold earrings, relaxed-fit cotton top, cropped denim or linen jacket, high-waist jeans, leather belt, clean sneakers, structured mini handbag.\n• Daughter: playful hair accessories, soft cotton tee, light denim jacket, stretch jeans, ankle socks, pastel sneakers, mini backpack.\nEach clothing item suspended mid-air with fine dotted guide lines connecting back to each family member.\nMinimal editorial labels highlighting fabric, color, and material details (cotton, denim, leather, rubber sole).\nClean studio background with subtle gradient.\nSoft diffused lighting for a warm, wholesome mood.\nPremium lifestyle editorial styling, ultra-sharp focus, natural skin tones, 8K quality, high-end fashion catalog aesthetic.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Test subjects are wholly fictional adults: father aged 50, mother aged 48, and their adult daughter aged 22. Choose denim for the mother jacket. Ultra-realistic family fashion infographic photography featuring a Father, Mother, and Daughter in coordinated casual outfits, arranged in a balanced circular exploded composition.\nFloating elements organized clockwise around the trio:\n• Father: neutral baseball cap, classic wristwatch, cotton crew-neck tee, lightweight casual jacket, tailored denim jeans, leather belt, ankle socks, white sneakers.\n• Mother: soft knit hat, minimal gold earrings, relaxed-fit cotton top, cropped denim or linen jacket, high-waist jeans, leather belt, clean sneakers, structured mini handbag.\n• Daughter: playful hair accessories, soft cotton tee, light denim jacket, stretch jeans, ankle socks, pastel sneakers, mini backpack.\nEach clothing item suspended mid-air with fine dotted guide lines connecting back to each family member.\nMinimal editorial labels highlighting fabric, color, and material details (cotton, denim, leather, rubber sole).\nClean studio background with subtle gradient.\nSoft diffused lighting for a warm, wholesome mood.\nPremium lifestyle editorial styling, ultra-sharp focus, natural skin tones, 8K quality, high-end fashion catalog aesthetic.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 超现实亲子时尚大片.md",
+    "original_sha256": "a6a3cc9216e2f8a6a674456feddce766d253d4e75347556cbb68b2650fcbc314",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "三人/衣饰拆解",
+        "result": "基本符合",
+        "evidence": "成年父母女儿居中，三组列出的帽、表、衣、裤、鞋、包等均可辨，衣物悬浮且有材质标签。"
+      },
+      {
+        "requirement": "引线/8K/材质",
+        "result": "存在问题",
+        "evidence": "多条虚线仅构成外圈，未逐件明确连接正确人物；非8K，棉含量、14K与皮革等为虚构文字不可当实物事实。"
+      }
+    ],
+    "conclusion": "家庭时尚拆解成图，逐件引线及8K未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T122-family-fashion/output.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "e479b3be35197cb3ed39a5222ef46a7a0280cb81fab6c55957207b87b31297bd"
+    }
+  ]
+}

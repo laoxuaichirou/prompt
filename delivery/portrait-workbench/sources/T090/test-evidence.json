@@ -1,0 +1,353 @@
+{
+  "test": {
+    "test_id": "T090",
+    "title": "示例：2511产品展示分镜",
+    "type": "12条Next Scene→12张独立静态分镜",
+    "test_input": "原文她=32岁合成女性，统一白衬衫白长裤白鞋；化妆品=合成琥珀瓶作为虚构无品牌护肤油道具；白沙发/白墙场景。所有12条各生成一张独立静帧。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "动作/景别按12条原文分别保留；本工具只生成相应静止时刻，不能验证慢推、跟拍、环绕等连续运镜",
+      "人物参考仅锁脸/发型/体型，穿白色服装为原场景要求；不是保持原素材深蓝裤子",
+      "合成瓶子作为普通护肤油道具，不当成真实化妆品、功能或品牌测试"
+    ],
+    "selected_source_prompt": "Next Scene: 她端坐在白色的沙发上，手持化妆品，镜头从侧面慢推到特写，光线柔和，背景白色墙面与装饰品简约协调，展现产品质感。\nNext Scene: 镜头俯拍，她低头轻触化妆品，手指动作优雅，背景增加桌面上的化妆品瓶罐，光线聚焦在她的手与化妆品上。\nNext Scene: 她轻抬头微笑，镜头从远景拉至中景，展示她的整体坐姿，背景为简洁的室内空间，光线柔和，增加层次感。\nNext Scene: 镜头环绕，她转动手腕展示产品，光线从左侧打出自然阴影，背景延续白色墙面，营造高级质感。\nNext Scene: 她轻轻将化妆品涂抹在手背，镜头特写慢推，细腻的光线展现产品的质地与肌肤的光泽，背景保持简约。\nNext Scene: 她站起身，镜头从低角度慢推到中景，展现她优雅的动作与流畅的白色服饰线条，背景加入一丝暖色光。\nNext Scene: 镜头侧移，她手持化妆品站立，微微侧身，光线柔和地照亮她的面部与产品，背景延续白色墙面。\nNext Scene: 她轻步走向镜头，镜头跟拍至中景，服饰随动作自然摆动，光线从正面打出，背景简约但富有层次。\nNext Scene: 镜头特写她手中的化妆品，手指轻触瓶盖，光线聚焦在产品细节，背景虚化，突出产品质感。\nNext Scene: 她将化妆品轻轻涂抹在脸颊，镜头特写捕捉肌肤细腻质感，光线柔美，背景延续白色空间。\nNext Scene: 她转身面对镜头，镜头从远景慢推到中景，展现她的整体形象与化妆品的展示，光线自然且柔和。\nNext Scene: 镜头俯拍她摆放化妆品的桌面，手轻轻调整产品位置，光线集中在产品上，背景保持简洁白色风格。",
+    "final_prompt": [
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她端坐在白色的沙发上，手持化妆品，镜头从侧面慢推到特写，光线柔和，背景白色墙面与装饰品简约协调，展现产品质感。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头俯拍，她低头轻触化妆品，手指动作优雅，背景增加桌面上的化妆品瓶罐，光线聚焦在她的手与化妆品上。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻抬头微笑，镜头从远景拉至中景，展示她的整体坐姿，背景为简洁的室内空间，光线柔和，增加层次感。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头环绕，她转动手腕展示产品，光线从左侧打出自然阴影，背景延续白色墙面，营造高级质感。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻轻将化妆品涂抹在手背，镜头特写慢推，细腻的光线展现产品的质地与肌肤的光泽，背景保持简约。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她站起身，镜头从低角度慢推到中景，展现她优雅的动作与流畅的白色服饰线条，背景加入一丝暖色光。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头侧移，她手持化妆品站立，微微侧身，光线柔和地照亮她的面部与产品，背景延续白色墙面。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻步走向镜头，镜头跟拍至中景，服饰随动作自然摆动，光线从正面打出，背景简约但富有层次。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头特写她手中的化妆品，手指轻触瓶盖，光线聚焦在产品细节，背景虚化，突出产品质感。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她将化妆品轻轻涂抹在脸颊，镜头特写捕捉肌肤细腻质感，光线柔美，背景延续白色空间。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她转身面对镜头，镜头从远景慢推到中景，展现她的整体形象与化妆品的展示，光线自然且柔和。",
+      "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头俯拍她摆放化妆品的桌面，手轻轻调整产品位置，光线集中在产品上，背景保持简洁白色风格。"
+    ],
+    "cases": [
+      {
+        "name": "scene01",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她端坐在白色的沙发上，手持化妆品，镜头从侧面慢推到特写，光线柔和，背景白色墙面与装饰品简约协调，展现产品质感。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她端坐在白色的沙发上，手持化妆品，镜头从侧面慢推到特写，光线柔和，背景白色墙面与装饰品简约协调，展现产品质感。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene02",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 镜头俯拍，她低头轻触化妆品，手指动作优雅，背景增加桌面上的化妆品瓶罐，光线聚焦在她的手与化妆品上。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头俯拍，她低头轻触化妆品，手指动作优雅，背景增加桌面上的化妆品瓶罐，光线聚焦在她的手与化妆品上。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene03",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她轻抬头微笑，镜头从远景拉至中景，展示她的整体坐姿，背景为简洁的室内空间，光线柔和，增加层次感。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻抬头微笑，镜头从远景拉至中景，展示她的整体坐姿，背景为简洁的室内空间，光线柔和，增加层次感。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene04",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 镜头环绕，她转动手腕展示产品，光线从左侧打出自然阴影，背景延续白色墙面，营造高级质感。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头环绕，她转动手腕展示产品，光线从左侧打出自然阴影，背景延续白色墙面，营造高级质感。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene05",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她轻轻将化妆品涂抹在手背，镜头特写慢推，细腻的光线展现产品的质地与肌肤的光泽，背景保持简约。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻轻将化妆品涂抹在手背，镜头特写慢推，细腻的光线展现产品的质地与肌肤的光泽，背景保持简约。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene06",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她站起身，镜头从低角度慢推到中景，展现她优雅的动作与流畅的白色服饰线条，背景加入一丝暖色光。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她站起身，镜头从低角度慢推到中景，展现她优雅的动作与流畅的白色服饰线条，背景加入一丝暖色光。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene07",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 镜头侧移，她手持化妆品站立，微微侧身，光线柔和地照亮她的面部与产品，背景延续白色墙面。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头侧移，她手持化妆品站立，微微侧身，光线柔和地照亮她的面部与产品，背景延续白色墙面。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene08",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她轻步走向镜头，镜头跟拍至中景，服饰随动作自然摆动，光线从正面打出，背景简约但富有层次。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她轻步走向镜头，镜头跟拍至中景，服饰随动作自然摆动，光线从正面打出，背景简约但富有层次。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene09",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 镜头特写她手中的化妆品，手指轻触瓶盖，光线聚焦在产品细节，背景虚化，突出产品质感。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头特写她手中的化妆品，手指轻触瓶盖，光线聚焦在产品细节，背景虚化，突出产品质感。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene10",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她将化妆品轻轻涂抹在脸颊，镜头特写捕捉肌肤细腻质感，光线柔美，背景延续白色空间。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她将化妆品轻轻涂抹在脸颊，镜头特写捕捉肌肤细腻质感，光线柔美，背景延续白色空间。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene11",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 她转身面对镜头，镜头从远景慢推到中景，展现她的整体形象与化妆品的展示，光线自然且柔和。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 她转身面对镜头，镜头从远景慢推到中景，展现她的整体形象与化妆品的展示，光线自然且柔和。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene12",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "source_scene": "Next Scene: 镜头俯拍她摆放化妆品的桌面，手轻轻调整产品位置，光线集中在产品上，背景保持简洁白色风格。",
+        "prompt": "静态电影广告分镜，单张独立图片，不加分格、字幕或编号。图1仅锁定同一虚构32岁成年女性脸部、短黑发、小痣与体型，统一穿不透明白衬衫、白色长裤与白鞋；图2锁定同一单只无品牌琥珀瓶黑色旋盖，作为虚构护肤油道具，无瓶贴无文字。白色沙发、白墙、简约桌面，柔和棚光。把以下原分镜表现为其中一个清晰静止时刻，按原景别与角度取景；不把静态图当作完成连续运镜。\nNext Scene: 镜头俯拍她摆放化妆品的桌面，手轻轻调整产品位置，光线集中在产品上，背景保持简洁白色风格。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[已投产·4分] 示例：2511产品展示分镜.md",
+    "original_sha256": "5355a2f9d0107f51a45f900c5693b80f4cb5c4db1a2d8243fc86baa3469c6731",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/bottle-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 12,
+    "opened": 12,
+    "checks": [
+      {
+        "requirement": "01 白沙发坐姿持瓶/侧向近景",
+        "result": "部分符合",
+        "evidence": "坐沙发持瓶成立；取景偏三分之四身，不能验证侧向慢推。上衣为T恤。"
+      },
+      {
+        "requirement": "02 俯拍低头触产品/桌面瓶罐",
+        "result": "基本符合",
+        "evidence": "俯视触盖、低头和桌面化妆品具备；上衣为T恤。"
+      },
+      {
+        "requirement": "03 抬头微笑展示整体坐姿",
+        "result": "基本符合",
+        "evidence": "白沙发、微笑与完整坐姿清楚；静帧不能证明远到中的变化。"
+      },
+      {
+        "requirement": "04 转手腕展示产品/左侧光",
+        "result": "部分符合",
+        "evidence": "双手托持产品、左侧柔光和白墙可见；转腕/环绕未验证。"
+      },
+      {
+        "requirement": "05 手背涂抹特写",
+        "result": "基本符合",
+        "evidence": "透明油质涂在手背、指尖轻抹清楚；衣服变为有领长袖白衬衫。"
+      },
+      {
+        "requirement": "06 起身/低角度/暖色光",
+        "result": "部分符合",
+        "evidence": "低角度全身与暖光出现，画面是已站立踏步；非中景，不能判断起身过程。"
+      },
+      {
+        "requirement": "07 站立微侧身持产品",
+        "result": "基本符合",
+        "evidence": "半侧站立持瓶、白墙及柔光符合；上衣又变回T恤。"
+      },
+      {
+        "requirement": "08 向镜头走/中景/衣摆",
+        "result": "部分符合",
+        "evidence": "迈步朝镜头成立，取景偏全身且脚部截断，衣摆运动不明显。"
+      },
+      {
+        "requirement": "09 手中产品与手指触盖特写",
+        "result": "基本符合",
+        "evidence": "瓶子与触盖手指清楚，脸部虚化；上衣为有领衬衫。"
+      },
+      {
+        "requirement": "10 脸颊涂抹特写",
+        "result": "基本符合",
+        "evidence": "脸颊油质、涂抹指尖、开盖瓶与桌面瓶盖清楚；上衣又是T恤。"
+      },
+      {
+        "requirement": "11 面向镜头的产品展示",
+        "result": "部分符合",
+        "evidence": "正面持瓶成立，但为全身广景；上衣为有领衬衫，不能证明远到中推镜。"
+      },
+      {
+        "requirement": "12 俯拍桌面调整产品位置",
+        "result": "基本符合",
+        "evidence": "俯视桌面、双手调整瓶子，其他化妆品辅助道具和白色场景清楚。"
+      },
+      {
+        "requirement": "跨镜服装/产品/身份",
+        "result": "存在问题",
+        "evidence": "12图里T恤与有领长袖衬衫反复切换；瓶子相对手脸的尺度存在变化，尤其01和04。脸部总体接近但不支持完美一致。"
+      },
+      {
+        "requirement": "视频/连续运镜",
+        "result": "未执行",
+        "evidence": "12张均独立静态分镜，无真实推镜/跟拍/环绕/转腕连续过程或视频。"
+      }
+    ],
+    "conclusion": "十二条均生成并逐图检查；服装连续性和部分景别存在问题，不能判整套一致性或视频生成通过。"
+  },
+  "images": [
+    {
+      "file": "results/T090-product-story12/scene01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "bcac91d81b32e2c11fd5a4a48436d97f931d12e1fa7b79aa812526729a07fcf8"
+    },
+    {
+      "file": "results/T090-product-story12/scene02.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f3cd042a621dd5f63e5142c19106e92e8e6abce0e5a454e869607ac15fe0485a"
+    },
+    {
+      "file": "results/T090-product-story12/scene03.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f1d618633bdfeeeaedb8f7831039aeeb40d3c09da1c3e49143c32b8da5be2e3c"
+    },
+    {
+      "file": "results/T090-product-story12/scene04.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0bd43f17508e39e3873d79d41e145887681d95121ec65b62eb1334a76435eebc"
+    },
+    {
+      "file": "results/T090-product-story12/scene05.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "32a1acebcfd6e1300e03dca898458856f376a4c095d560c84bcd7f78a4c6bfef"
+    },
+    {
+      "file": "results/T090-product-story12/scene06.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d28072e142d782594f508c02931314b20b8fe1cb427214f61e0072989c90de68"
+    },
+    {
+      "file": "results/T090-product-story12/scene07.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "76c4ac4696b055fff5cacb4d9a21746ffdc2e4a78c387628ea6a2f00ec50d223"
+    },
+    {
+      "file": "results/T090-product-story12/scene08.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a6c2e86f123f01694ce6f2830af27058548b4a57bef6cd6c5c012dec7658d0bf"
+    },
+    {
+      "file": "results/T090-product-story12/scene09.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "300bccdd57a9b5f5fc5914ac90f38a106ce909a1df0213682e7056e07eeafc80"
+    },
+    {
+      "file": "results/T090-product-story12/scene10.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "58f0e5b38edf922616b061a23449ffd6efc923441d0e7461536bc1479787e88e"
+    },
+    {
+      "file": "results/T090-product-story12/scene11.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0c2376a5bce69f9dc40ae690f473cdc0f74bc3fb6077a0708e248cb29a7b2fbe"
+    },
+    {
+      "file": "results/T090-product-story12/scene12.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a3a292916b64136885c7275e308470d42e679417227fa971c0520d0a5fcc2d9d"
+    }
+  ]
+}

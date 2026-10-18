@@ -1,0 +1,53 @@
+{
+  "test": {
+    "test_id": "T026",
+    "title": "超真实3D INS广告大片",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "合成成年人物坐姿参考，按正文渲染实体3D社交卡片。",
+    "reference_material": [
+      "materials/seated-adult-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文完整代码块，中文栏误贴英文，不重复执行。",
+      "原始外链示例图未作为输入；另造成年坐姿合成参考，不能验证对原例的姿态复现。",
+      "服装Nike字标按原文要求生成，但未获得真实商品实物基准；不宣称官方广告或像素准确UI。"
+    ],
+    "selected_source_prompt": "Create a hyper-realistic, cinematic Instagram post layout where the Instagram UI exists as a physical, tangible 3D object, photographed like a premium commercial product shot. The result should feel indistinguishable from a real studio photograph.\nInstagram Frame (UI Accuracy – Critical)\nAuthentic Instagram interface rendered as a solid white physical 3D card\nSmooth matte plastic surface with subtle micro-texture\nSlight thickness visible on edges, realistic bevels\nPerfectly rounded corners (exact Instagram radius)\nSoft studio reflections and realistic edge highlights\nTop Bar (Pixel-accurate UI):\nCircular profile avatar on the left\nUsername text: “June” in Instagram’s default bold UI font\nLight blue FOLLOW button with correct proportions\nThree-dot menu icon aligned to the far right\nExact spacing, typography, and icon sizing matching the real Instagram app\nAspect ratio 1:1, centered, balanced, premium composition.\nMain Subject (Pose – Match Reference Image Exactly)\nA photorealistic athletic woman partially emerging out of the Instagram frame into real 3D space\nSeated pose identical to the reference image:\nBoth legs bent and angled to the side\nOne knee slightly raised and closer to the chest\nArms gently wrapped around the raised knee\nHands relaxed, fingers naturally resting\nTorso leaning slightly back against the frame edge\nExpression: calm, thoughtful, self-assured\nGaze: looking slightly to the side and upward, not engaging the camera\nNatural body proportions, relaxed posture, editorial realism\nNo exaggerated curves, no artificial posing\nClothing (Nike Only – Realistic Fit)\nMuted ivory / off-white Nike fitted short-sleeve blouse\nSoft neutral tone that contrasts beautifully with the background\nVisible white Nike swoosh\nNatural fabric stretch and tension\nDeep blue Nike athletic pants, length up to the knee\nTailored, performance-fit silhouette\nRealistic fabric weight with subtle folds at the knee bend\nClean stitching and breathable sports material\nClean white Nike sneakers\nSlight wear realism\nCorrect sole texture and stitching\nPremium sportswear look, real commercial styling\nNo distortion, no fantasy fashion\nBackground (Inside the Instagram Post Only)\nDark indoor gym or studio environment\nCool blue and muted purple cinematic lighting\nSoft haze in the background\nSubtle volumetric light beams barely visible\nShallow depth of field, background softly blurred\nSubject and Instagram frame remain sharp and dominant\nLighting & Photorealism\nStudio-grade cinematic lighting\nSoft key light illuminating the subject naturally\nGentle rim light outlining the body and Instagram frame\nRealistic skin texture with visible pores and natural highlights\nAccurate contact shadows where the subject touches the frame\nPhysically correct light falloff and reflections\nFooter UI (Engagement Section)\nInstagram action icons: like, comment, share, save (accurate icons)\nText visible: “785 likes”\nCaption begins with June\nCaption text:\nFreedom isn’t found in comfort.\nIt’s built in the quiet moments where discipline meets belief.\nHashtags partially visible and naturally cropped\nOverall Style & Quality\nUltra-high resolution\nAdvertising-grade realism\nClean, modern, editorial Instagram aesthetic\nHyper-realistic blend of 3D object + real photography\nNo extra elements\nNo text errors\nNo distortion\nLooks like a real product photoshoot, not AI art\n",
+    "final_prompt": "Use the supplied synthetic 32-year-old adult woman's face and seated pose as the reference; this is a fictional mock advertisement, not a real social account. Render exactly one image.\nCreate a hyper-realistic, cinematic Instagram post layout where the Instagram UI exists as a physical, tangible 3D object, photographed like a premium commercial product shot. The result should feel indistinguishable from a real studio photograph.\nInstagram Frame (UI Accuracy – Critical)\nAuthentic Instagram interface rendered as a solid white physical 3D card\nSmooth matte plastic surface with subtle micro-texture\nSlight thickness visible on edges, realistic bevels\nPerfectly rounded corners (exact Instagram radius)\nSoft studio reflections and realistic edge highlights\nTop Bar (Pixel-accurate UI):\nCircular profile avatar on the left\nUsername text: “June” in Instagram’s default bold UI font\nLight blue FOLLOW button with correct proportions\nThree-dot menu icon aligned to the far right\nExact spacing, typography, and icon sizing matching the real Instagram app\nAspect ratio 1:1, centered, balanced, premium composition.\nMain Subject (Pose – Match Reference Image Exactly)\nA photorealistic athletic woman partially emerging out of the Instagram frame into real 3D space\nSeated pose identical to the reference image:\nBoth legs bent and angled to the side\nOne knee slightly raised and closer to the chest\nArms gently wrapped around the raised knee\nHands relaxed, fingers naturally resting\nTorso leaning slightly back against the frame edge\nExpression: calm, thoughtful, self-assured\nGaze: looking slightly to the side and upward, not engaging the camera\nNatural body proportions, relaxed posture, editorial realism\nNo exaggerated curves, no artificial posing\nClothing (Nike Only – Realistic Fit)\nMuted ivory / off-white Nike fitted short-sleeve blouse\nSoft neutral tone that contrasts beautifully with the background\nVisible white Nike swoosh\nNatural fabric stretch and tension\nDeep blue Nike athletic pants, length up to the knee\nTailored, performance-fit silhouette\nRealistic fabric weight with subtle folds at the knee bend\nClean stitching and breathable sports material\nClean white Nike sneakers\nSlight wear realism\nCorrect sole texture and stitching\nPremium sportswear look, real commercial styling\nNo distortion, no fantasy fashion\nBackground (Inside the Instagram Post Only)\nDark indoor gym or studio environment\nCool blue and muted purple cinematic lighting\nSoft haze in the background\nSubtle volumetric light beams barely visible\nShallow depth of field, background softly blurred\nSubject and Instagram frame remain sharp and dominant\nLighting & Photorealism\nStudio-grade cinematic lighting\nSoft key light illuminating the subject naturally\nGentle rim light outlining the body and Instagram frame\nRealistic skin texture with visible pores and natural highlights\nAccurate contact shadows where the subject touches the frame\nPhysically correct light falloff and reflections\nFooter UI (Engagement Section)\nInstagram action icons: like, comment, share, save (accurate icons)\nText visible: “785 likes”\nCaption begins with June\nCaption text:\nFreedom isn’t found in comfort.\nIt’s built in the quiet moments where discipline meets belief.\nHashtags partially visible and naturally cropped\nOverall Style & Quality\nUltra-high resolution\nAdvertising-grade realism\nClean, modern, editorial Instagram aesthetic\nHyper-realistic blend of 3D object + real photography\nNo extra elements\nNo text errors\nNo distortion\nLooks like a real product photoshoot, not AI art\n",
+    "original_filename": "提示词库/海报封面/[已投产·5分] 超真实3D INS广告大片.md",
+    "original_sha256": "75973f89ec17ccb1b3bd407cd28f099fd4c344b15eb38886d130636df702051c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/seated-adult-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "实体卡片、坐姿、指定文字",
+        "result": "核心命中",
+        "evidence": "June、FOLLOW、785 likes和两句caption均可读，人物与坐姿基本保留，卡片有厚度、圆角及接触阴影。"
+      },
+      {
+        "requirement": "卡片内背景限制、精确UI",
+        "result": "存在问题/无法核实",
+        "evidence": "健身房也出现在卡片外侧；无当前官方UI像素基准，不能宣称pixel-accurate。Nike鞋上字标不清，不能确认品牌完整性。"
+      }
+    ],
+    "conclusion": "实体卡片与文字本次有效，外部背景限制未满足，精确UI和真实商品还原未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T026-instagram3d/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "026266a638d0a712668d69d0f7978b63e20b15652fcdd9e719758b5b6c7e9954"
+    }
+  ]
+}

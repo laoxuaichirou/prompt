@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T138",
+    "title": "创建您自己的3D漫画",
+    "type": "直接生图/变量模板",
+    "test_input": "The subject is the fictional 32-year-old adult woman from the synthetic reference. Choose a bright teal background. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；原文与最终输入分别保存。",
+      "背景色变量填青绿色。"
+    ],
+    "selected_source_prompt": "A highly stylized 3D caricature of me, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence.",
+    "final_prompt": [
+      "The subject is the fictional 32-year-old adult woman from the synthetic reference. Choose a bright teal background. A highly stylized 3D caricature of me, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is the fictional 32-year-old adult woman from the synthetic reference. Choose a bright teal background. A highly stylized 3D caricature of me, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 创建您自己的3D漫画.md",
+    "original_sha256": "25086f414259146e52aef13206e58e253b190f8c4caf7d22f0d3de8952f002f6",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3D漫画/夸张/背景",
+        "result": "符合要求",
+        "evidence": "大头大眼短黑发女性、抛光塑料感与柔和光线，白T深蓝裤白鞋、青绿纯色背景。"
+      },
+      {
+        "requirement": "边界",
+        "result": "模型初评",
+        "evidence": "根据普通合成人物转风格，非原人物身份精确重建。"
+      }
+    ],
+    "conclusion": "本次3D漫画风格用例符合可见要求。"
+  },
+  "images": [
+    {
+      "file": "results/T138-own-caricature/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1ac7cf9cee0dd7f71c34beedd1f9aa95b74d3733698c28c719c1580fc926a870"
+    }
+  ]
+}

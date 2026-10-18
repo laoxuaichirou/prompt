@@ -1,0 +1,67 @@
+{
+  "test": {
+    "test_id": "T114",
+    "title": "【人像】第一人称视角牵手照片",
+    "type": "原指定真实人物条目的虚构成年适配生图",
+    "test_input": "仅测试虚构32岁成年女性替代版的第一人称牵手/化妆间构图；长发造型、红裙丝袜金项链、闪光灯和镜后背影要求保留。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原库点名刘亦菲并含性化服饰/视角描述；本轮不执行该真实人物版本，以合成成年角色替代，不声称原人物/原版实测通过",
+      "删去说明：知名名人可能生成失败，可换模型试试这一聊天式说明；保留原文件全文",
+      "只替换人物姓名，其余服饰和构图要求保留；不得将成图当真实人物或真实关系照片"
+    ],
+    "selected_source_prompt": "一张超写实的第一人称男友视角照片，画面前景是男性的一只手正牵着长发造型的刘亦菲的手，她身穿红色吊带紧身胸衣短裙搭配红色薄透丝袜，佩戴金色项链，在后台化妆间内眼神迷人地注视着镜头，背景可见摆满化妆品的桌子及带灯泡的化妆镜（映出背影），采用直射闪光灯摄影风格，8K极致细节真实质感。",
+    "final_prompt": [
+      "一张超写实的第一人称男友视角照片，画面前景是男性的一只手正牵着长发造型的虚构32岁成年女性（面部以所附合成参考为准）的手，她身穿红色吊带紧身胸衣短裙搭配红色薄透丝袜，佩戴金色项链，在后台化妆间内眼神迷人地注视着镜头，背景可见摆满化妆品的桌子及带灯泡的化妆镜（映出背影），采用直射闪光灯摄影风格，8K极致细节真实质感。"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "一张超写实的第一人称男友视角照片，画面前景是男性的一只手正牵着长发造型的虚构32岁成年女性（面部以所附合成参考为准）的手，她身穿红色吊带紧身胸衣短裙搭配红色薄透丝袜，佩戴金色项链，在后台化妆间内眼神迷人地注视着镜头，背景可见摆满化妆品的桌子及带灯泡的化妆镜（映出背影），采用直射闪光灯摄影风格，8K极致细节真实质感。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_person_version": "未执行，仅虚构成年人替代版；不可标原版生图实测通过",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 【人像】第一人称视角牵手照片.md",
+    "original_sha256": "3032ad42e3fe11efd11b25ab46d728a8ab5763013ad6d95cd604e5489ccff3d7",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "原真实人物版本",
+        "result": "未执行",
+        "evidence": "原文点名真实人物的版本未执行；只对虚构成年替代版发起生图。"
+      },
+      {
+        "requirement": "实际工具返回",
+        "result": "阻塞",
+        "evidence": "HTTP400 moderation_blocked，input阶段sexual分类。最终Prompt及原始错误已保存，没有返回图片。"
+      },
+      {
+        "requirement": "结论范围",
+        "result": "无图片不可验收",
+        "evidence": "这是本工具的内容过滤结果，非额度耗尽或原指定模型实测结果；未换词绕过。"
+      }
+    ],
+    "conclusion": "虚构成年适配版亦被工具输入过滤拒绝；无图片，绝不能标记生图实测通过。"
+  },
+  "images": []
+}

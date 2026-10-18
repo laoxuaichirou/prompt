@@ -1,0 +1,61 @@
+{
+  "test": {
+    "test_id": "T013",
+    "title": "【人像】九格机车骑士写真",
+    "type": "直接JSON图像提示词",
+    "test_input": "同一合成年人成为机车骑士，原生3×3九场景。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原标签不作为本轮证据",
+    "changes": [
+      "去除元数据、外链示例图和中英重复版本，仅用首个完整正式提示词。",
+      "补充明确成年年龄，测试主体均虚构。"
+    ],
+    "final_prompt": "The reference is a fictional ADULT woman, age 32. Preserve her face only, replace wardrobe and scenes as specified. Generate one image according to the full specification below; for JSON instructions render the described image, do not output JSON text.\n{\n  \"Objective\": \"Create a 3x3 grid photo collage with motorcycle biker aesthetics\",\n  \"FaceReference\": {\n    \"Mode\": \"Strict face preservation\",\n    \"Instruction\": \"Use uploaded reference for exact facial features\",\n    \"Consistency\": \"Face identical across all nine frames\"\n  },\n  \"GridComposition\": {\n    \"Layout\": \"3x3 grid\",\n    \"PoseVariety\": [\n      \"Sitting on vintage motorcycle\",\n      \"Helmet hair flip\",\n      \"Close-up with aviator sunglasses\",\n      \"Riding highway motion\",\n      \"Leaning on gas tank\",\n      \"Adjusting leather gloves\",\n      \"Group ride formation\",\n      \"Gas station stop\",\n      \"Sunset silhouette on bike\"\n    ]\n  },\n  \"PersonaDetails\": {\n    \"Subject\": {\n      \"Type\": \"Same as reference\",\n      \"Wardrobe\": \"Black leather jacket, ripped jeans, motorcycle boots, bandana, silver rings\",\n      \"OverallPresence\": \"Road warrior, rebel freedom\"\n    }\n  },\n  \"Environment\": {\n    \"Setting\": \"Open highway/motorcycle route\",\n    \"Background\": \"Endless road, desert/mountain scenery, vintage gas stations\",\n    \"Lighting\": {\n      \"Style\": \"Harsh sun with chrome reflections\",\n      \"Quality\": \"Gritty, warm, cinematic\"\n    }\n  },\n  \"ImageQuality\": {\n    \"Resolution\": \"8K hyper-realistic\",\n    \"Aesthetic\": \"Harley-Davidson lifestyle campaign\"\n  },\n  \"NegativePrompt\": [\n    \"urban traffic\",\n    \"scooter\",\n    \"different face\",\n    \"altered facial features\"\n  ],\n  \"ResponseFormat\": {\n    \"Layout\": \"3x3 grid\",\n    \"AspectRatio\": \"1:1\"\n  }\n}\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 【人像】九格机车骑士写真.md",
+    "original_sha256": "39d3a635f138d715deaa3ae5ad099637b526d93b7d8515674e81364121f5f343",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格与9项机车动作场景",
+        "result": "基本符合",
+        "evidence": "坐车、持盔拨发、墨镜特写、公路骑行、伏油箱、戴手套、编队、加油站、夕阳侧影依序出现。"
+      },
+      {
+        "requirement": "参考脸九格完全一致",
+        "result": "部分无法核实",
+        "evidence": "可见正脸大体保留参考人物；墨镜、头盔、侧影降低可核实程度，不能把遮挡格判为身份精确匹配。"
+      },
+      {
+        "requirement": "皮夹克、破洞裤、头巾、银戒指",
+        "result": "基本符合",
+        "evidence": "主要服装与配件可见，全身未在每格呈现，靴子部分格被构图裁掉。"
+      },
+      {
+        "requirement": "方形3×3、8K",
+        "result": "方形符合，8K未满足",
+        "evidence": "输出1254×1254，原生像素不是8K。"
+      }
+    ],
+    "conclusion": "机车美学与场景覆盖基本命中，严格逐格锁脸受遮挡限制，8K未达；仅静态适配。"
+  },
+  "images": [
+    {
+      "file": "results/T013-biker9/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "86b9cffbcf1e4e35b458bf33e773c157904ec15a8f2fa381f13762369cb6653c"
+    }
+  ]
+}

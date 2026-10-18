@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T128",
+    "title": "【人像】人和汽车的三视图",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is the fictional 43-year-old adult man in the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-man-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "YOUR NAME变量填ALEX CHEN；车由本工具合成，非实车品牌核验。"
+    ],
+    "selected_source_prompt": "A cinematic automotive photoshoot of me, keeping my real face unchanged. The scene is composed of three perspectives as a :\n\n1. Top Panel: Interior close-up: I am seated inside the car, wearing a fitted black polo shirt, shown in the side mirror reflection. My face is serious and focused, my gaze directed forward with determination. The angle captures only side view part of my profile, framed cleanly within the mirror, emphasizing intensity and precision.\n\n2.Middle Panel: I am standing confidently next to a sleek black Ford Mustang. My posture is relaxed but strong: both arms are crossed over my chest in a confident manner, while my left leg is straight and my right leg bent slightly at the knee, with the foot leaning casually against the car. My gaze is directed slightly off-camera, with a calm and assertive expression. I am wearing a fitted black polo shirt with subtle detailing, slim grey jeans with a clean cut, and brown leather boots. My outfit is minimal yet stylish, emphasizing a modern masculine vibe. Pose like a pro, same face as the uploaded photo.\n\n3. Bottom Panel: Rear car shot: The camera captures the back of the Mustang, showcasing the \"YOUR NAME\" license plate and muscular lines of the car. The photo emphasizes the glossy texture of the vehicle and its aggressive, cinematic presence. The setting is an urban environment with modern architecture and concrete walls, giving a gritty, cinematic atmosphere. The lighting is natural but slightly diffused, highlighting both me and the polished surface of the car.\n\nThe perspectives vary:\n\n- The mirror reflection close-up is shot tight with a portrait focal length (~85mm).\n\n- The exterior full-body shot is taken at eye-level with a slightly wide lens to capture both me and the car in full view.\n\n- The rear car angle uses a low perspective to emphasize power and presence.\n\nStyle: Cinematic automotive editorial, urban setting, moody and stylish, professional fashion-meets- car photography, same face.\n",
+    "final_prompt": [
+      "The subject is the fictional 43-year-old adult man in the synthetic reference. A cinematic automotive photoshoot of me, keeping my real face unchanged. The scene is composed of three perspectives as a :\n\n1. Top Panel: Interior close-up: I am seated inside the car, wearing a fitted black polo shirt, shown in the side mirror reflection. My face is serious and focused, my gaze directed forward with determination. The angle captures only side view part of my profile, framed cleanly within the mirror, emphasizing intensity and precision.\n\n2.Middle Panel: I am standing confidently next to a sleek black Ford Mustang. My posture is relaxed but strong: both arms are crossed over my chest in a confident manner, while my left leg is straight and my right leg bent slightly at the knee, with the foot leaning casually against the car. My gaze is directed slightly off-camera, with a calm and assertive expression. I am wearing a fitted black polo shirt with subtle detailing, slim grey jeans with a clean cut, and brown leather boots. My outfit is minimal yet stylish, emphasizing a modern masculine vibe. Pose like a pro, same face as the uploaded photo.\n\n3. Bottom Panel: Rear car shot: The camera captures the back of the Mustang, showcasing the \"ALEX CHEN\" license plate and muscular lines of the car. The photo emphasizes the glossy texture of the vehicle and its aggressive, cinematic presence. The setting is an urban environment with modern architecture and concrete walls, giving a gritty, cinematic atmosphere. The lighting is natural but slightly diffused, highlighting both me and the polished surface of the car.\n\nThe perspectives vary:\n\n- The mirror reflection close-up is shot tight with a portrait focal length (~85mm).\n\n- The exterior full-body shot is taken at eye-level with a slightly wide lens to capture both me and the car in full view.\n\n- The rear car angle uses a low perspective to emphasize power and presence.\n\nStyle: Cinematic automotive editorial, urban setting, moody and stylish, professional fashion-meets- car photography, same face.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is the fictional 43-year-old adult man in the synthetic reference. A cinematic automotive photoshoot of me, keeping my real face unchanged. The scene is composed of three perspectives as a :\n\n1. Top Panel: Interior close-up: I am seated inside the car, wearing a fitted black polo shirt, shown in the side mirror reflection. My face is serious and focused, my gaze directed forward with determination. The angle captures only side view part of my profile, framed cleanly within the mirror, emphasizing intensity and precision.\n\n2.Middle Panel: I am standing confidently next to a sleek black Ford Mustang. My posture is relaxed but strong: both arms are crossed over my chest in a confident manner, while my left leg is straight and my right leg bent slightly at the knee, with the foot leaning casually against the car. My gaze is directed slightly off-camera, with a calm and assertive expression. I am wearing a fitted black polo shirt with subtle detailing, slim grey jeans with a clean cut, and brown leather boots. My outfit is minimal yet stylish, emphasizing a modern masculine vibe. Pose like a pro, same face as the uploaded photo.\n\n3. Bottom Panel: Rear car shot: The camera captures the back of the Mustang, showcasing the \"ALEX CHEN\" license plate and muscular lines of the car. The photo emphasizes the glossy texture of the vehicle and its aggressive, cinematic presence. The setting is an urban environment with modern architecture and concrete walls, giving a gritty, cinematic atmosphere. The lighting is natural but slightly diffused, highlighting both me and the polished surface of the car.\n\nThe perspectives vary:\n\n- The mirror reflection close-up is shot tight with a portrait focal length (~85mm).\n\n- The exterior full-body shot is taken at eye-level with a slightly wide lens to capture both me and the car in full view.\n\n- The rear car angle uses a low perspective to emphasize power and presence.\n\nStyle: Cinematic automotive editorial, urban setting, moody and stylish, professional fashion-meets- car photography, same face.\n",
+        "reference_material_portable": [
+          "materials/adult-man-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【人像】人和汽车的三视图.md",
+    "original_sha256": "5327f1f7e3f669f06342ee8a483937b473652dae4a64f8d5ec877397c1e67571",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-man-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "三场景/车型外观/车牌",
+        "result": "基本符合",
+        "evidence": "反光镜面部、车旁全身、低位车尾三个面板，黑Polo灰裤棕靴，ALEX CHEN字样正确。"
+      },
+      {
+        "requirement": "指定站姿",
+        "result": "存在问题",
+        "evidence": "中图双臂交叉，但双腿交叉，未实现左腿直立/右腿微弯且脚倚车的指定动作；镜面近三分之二脸，不是仅部分侧脸。"
+      }
+    ],
+    "conclusion": "汽车三联图成图，指定站姿与侧脸取景不精确。"
+  },
+  "images": [
+    {
+      "file": "results/T128-car-three/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ee728a648edb097fcce2d5f02da86639d1f94e53913a0c7bb0ef6eb906876281"
+    }
+  ]
+}

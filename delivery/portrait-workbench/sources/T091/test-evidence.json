@@ -1,0 +1,66 @@
+{
+  "test": {
+    "test_id": "T091",
+    "title": "角色变成3D收藏级Q版人偶",
+    "type": "直接填槽生图",
+    "test_input": "原型槽填入本轮虚构32岁成年女性，短黑发、白T深蓝裤白鞋；用同一成年参考。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择完整中文模板，只填原型槽；不把UnrealEngine5字样当作实际渲染工具证明，8K按原生尺寸验收"
+    ],
+    "selected_source_prompt": "3D 收藏级 Q 版人偶，原型为参考图中虚构32岁成年女性，短黑发、白T恤、深蓝长裤和白鞋，细节丰富，比例协调（大头小身），面部表情生动，采用电影级光影效果，阴影柔和，呈现皮克斯级别的逼真度，触感光滑如乙烯基玩具，采用站姿，服装细节丰富，还原角色造型，专业产品摄影，使用虚幻引擎 5 渲染，背景简洁，呈现玩具展示美感，8K 超高清画质。\n",
+    "final_prompt": [
+      "3D 收藏级 Q 版人偶，原型为参考图中虚构32岁成年女性，短黑发、白T恤、深蓝长裤和白鞋，细节丰富，比例协调（大头小身），面部表情生动，采用电影级光影效果，阴影柔和，呈现皮克斯级别的逼真度，触感光滑如乙烯基玩具，采用站姿，服装细节丰富，还原角色造型，专业产品摄影，使用虚幻引擎 5 渲染，背景简洁，呈现玩具展示美感，8K 超高清画质。\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "3D 收藏级 Q 版人偶，原型为参考图中虚构32岁成年女性，短黑发、白T恤、深蓝长裤和白鞋，细节丰富，比例协调（大头小身），面部表情生动，采用电影级光影效果，阴影柔和，呈现皮克斯级别的逼真度，触感光滑如乙烯基玩具，采用站姿，服装细节丰富，还原角色造型，专业产品摄影，使用虚幻引擎 5 渲染，背景简洁，呈现玩具展示美感，8K 超高清画质。\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[已投产·4分] 角色变成3D收藏级Q版人偶.md",
+    "original_sha256": "e4ce6d6117d2ebb978ef7d15dd94a5b05df2c55e916904102ce835149a5c0a9d",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "造型/服饰/材质",
+        "result": "基本符合",
+        "evidence": "同一角色短黑发小痣、白T深蓝裤白鞋，明显大头小身，站立展示、光泽塑料皮肤与简约影棚。"
+      },
+      {
+        "requirement": "8K和实际渲染",
+        "result": "未满足/未验证",
+        "evidence": "原生图非8K；没有实际使用UnrealEngine5，字样不能当渲染器实测。"
+      }
+    ],
+    "conclusion": "Q版人偶核心造型完成，8K未达到，原文渲染器要求不能验证。"
+  },
+  "images": [
+    {
+      "file": "results/T091-chibi-figure/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f70a99f20667c37ce904beab71d96cee85ba544474658a85cb7139184f2c9f48"
+    }
+  ]
+}

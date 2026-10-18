@@ -1,0 +1,327 @@
+{
+  "test": {
+    "test_id": "T006",
+    "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+    "type": "元提示词→JSON→两次独立图像编辑",
+    "test_input": "将参考图中人物的白色短袖T恤改为深绿色长袖衬衫。面部、年龄、肤色、五官、体型比例、发型、发色、眼色、藏蓝长裤、姿态、表情、视线、灰棚环境、光线类型与照片风格均严格取自参考图且不改变。全身、平视、自然透视，正面中等强度光，室内摄影棚。",
+    "reference_material": "materials/adult-woman-synthetic.png",
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非Nano Banana",
+    "changes": [
+      "只保留首个英文ROLE & OBJECTIVE至FINAL CONSTRAINTS的代码块；第二个翻译分析代码块属于聊天残留，不作原版执行。",
+      "按No Inference规则替换示例默认值：允许image来源且未给文本值的字段改为source=image，身份字段加image_locked。",
+      "同一会话内对相同输入应用两次转换，输出分别保存；不属于独立无上下文的LLM API重跑，不能据此证明确定性。",
+      "绿衬衫是明确文本覆盖；未从参考图臆测年龄或具体长相作为JSON值。"
+    ],
+    "meta_output_run1": {
+      "task": "build_image_prompt_json",
+      "reference_image_policy": {
+        "used": true,
+        "represents": "full character identity unless explicitly overridden by text",
+        "instructions": [
+          "Copy all image-sourced attributes exactly",
+          "No inference, beautification, aging or implicit identity modification"
+        ]
+      },
+      "subject": {
+        "type": "human",
+        "identity_lock": {
+          "face": {
+            "source": "image",
+            "image_locked": true
+          },
+          "age": {
+            "source": "image",
+            "image_locked": true
+          },
+          "skin_tone": {
+            "source": "image",
+            "image_locked": true
+          },
+          "facial_features": {
+            "source": "image",
+            "image_locked": true
+          },
+          "body_proportions": {
+            "source": "image",
+            "image_locked": true
+          },
+          "hair_style": {
+            "source": "image",
+            "image_locked": true
+          },
+          "hair_color": {
+            "source": "image",
+            "image_locked": true
+          },
+          "eye_color": {
+            "source": "image",
+            "image_locked": true
+          }
+        },
+        "pose": {
+          "source": "image",
+          "image_locked": true
+        },
+        "expression": {
+          "source": "image",
+          "image_locked": true
+        },
+        "gaze": {
+          "source": "image",
+          "image_locked": true
+        }
+      },
+      "appearance": {
+        "clothing": {
+          "value": "replace white short-sleeve T-shirt with dark green long-sleeve shirt; retain navy trousers from reference image"
+        },
+        "colors": {
+          "primary_palette": {
+            "source": "image",
+            "image_locked": true
+          },
+          "text_override": {
+            "value": "dark green shirt"
+          }
+        }
+      },
+      "environment": {
+        "location": {
+          "source": "image",
+          "image_locked": true
+        },
+        "details": {
+          "source": "image",
+          "image_locked": true
+        },
+        "time_of_day": {
+          "value": "controlled indoor studio"
+        },
+        "weather": {
+          "value": "indoor environment, weather not applicable"
+        }
+      },
+      "camera": {
+        "framing": {
+          "value": "full body"
+        },
+        "angle": {
+          "value": "eye-level"
+        },
+        "lens_feel": {
+          "value": "natural perspective"
+        }
+      },
+      "lighting": {
+        "type": {
+          "source": "image",
+          "image_locked": true
+        },
+        "direction": {
+          "value": "front-facing light"
+        },
+        "intensity": {
+          "value": "medium intensity"
+        }
+      },
+      "style": {
+        "render_type": {
+          "source": "image",
+          "image_locked": true
+        }
+      },
+      "quality_controls": {
+        "forbidden_changes": [
+          "identity attributes sourced from image",
+          "pose expression gaze hair background or navy trousers",
+          "beautification or aging",
+          "conflicting multiple values for a single attribute"
+        ]
+      }
+    },
+    "meta_output_run2": {
+      "task": "build_image_prompt_json",
+      "reference_image_policy": {
+        "used": true,
+        "represents": "full character identity unless explicitly overridden by text",
+        "instructions": [
+          "Copy all image-sourced attributes exactly",
+          "No inference, beautification, aging or implicit identity modification"
+        ]
+      },
+      "subject": {
+        "type": "human",
+        "identity_lock": {
+          "face": {
+            "source": "image",
+            "image_locked": true
+          },
+          "age": {
+            "source": "image",
+            "image_locked": true
+          },
+          "skin_tone": {
+            "source": "image",
+            "image_locked": true
+          },
+          "facial_features": {
+            "source": "image",
+            "image_locked": true
+          },
+          "body_proportions": {
+            "source": "image",
+            "image_locked": true
+          },
+          "hair_style": {
+            "source": "image",
+            "image_locked": true
+          },
+          "hair_color": {
+            "source": "image",
+            "image_locked": true
+          },
+          "eye_color": {
+            "source": "image",
+            "image_locked": true
+          }
+        },
+        "pose": {
+          "source": "image",
+          "image_locked": true
+        },
+        "expression": {
+          "source": "image",
+          "image_locked": true
+        },
+        "gaze": {
+          "source": "image",
+          "image_locked": true
+        }
+      },
+      "appearance": {
+        "clothing": {
+          "value": "replace white short-sleeve T-shirt with dark green long-sleeve shirt; retain navy trousers from reference image"
+        },
+        "colors": {
+          "primary_palette": {
+            "source": "image",
+            "image_locked": true
+          },
+          "text_override": {
+            "value": "dark green shirt"
+          }
+        }
+      },
+      "environment": {
+        "location": {
+          "source": "image",
+          "image_locked": true
+        },
+        "details": {
+          "source": "image",
+          "image_locked": true
+        },
+        "time_of_day": {
+          "value": "controlled indoor studio"
+        },
+        "weather": {
+          "value": "indoor environment, weather not applicable"
+        }
+      },
+      "camera": {
+        "framing": {
+          "value": "full body"
+        },
+        "angle": {
+          "value": "eye-level"
+        },
+        "lens_feel": {
+          "value": "natural perspective"
+        }
+      },
+      "lighting": {
+        "type": {
+          "source": "image",
+          "image_locked": true
+        },
+        "direction": {
+          "value": "front-facing light"
+        },
+        "intensity": {
+          "value": "medium intensity"
+        }
+      },
+      "style": {
+        "render_type": {
+          "source": "image",
+          "image_locked": true
+        }
+      },
+      "quality_controls": {
+        "forbidden_changes": [
+          "identity attributes sourced from image",
+          "pose expression gaze hair background or navy trousers",
+          "beautification or aging",
+          "conflicting multiple values for a single attribute"
+        ]
+      }
+    },
+    "final_prompt": "Generate an edited image by executing this JSON specification, using the attached synthetic adult reference photograph. Output one single image, not text or a contact sheet. The user text explicitly overrides the white short-sleeved T-shirt with a dark green long-sleeved shirt; navy trousers and all other locked attributes must remain identical to reference. No new accessories or text.\n{\n  \"task\": \"build_image_prompt_json\",\n  \"reference_image_policy\": {\n    \"used\": true,\n    \"represents\": \"full character identity unless explicitly overridden by text\",\n    \"instructions\": [\n      \"Copy all image-sourced attributes exactly\",\n      \"No inference, beautification, aging or implicit identity modification\"\n    ]\n  },\n  \"subject\": {\n    \"type\": \"human\",\n    \"identity_lock\": {\n      \"face\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"age\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"skin_tone\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"facial_features\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"body_proportions\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_style\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"eye_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      }\n    },\n    \"pose\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"expression\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"gaze\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"appearance\": {\n    \"clothing\": {\n      \"value\": \"replace white short-sleeve T-shirt with dark green long-sleeve shirt; retain navy trousers from reference image\"\n    },\n    \"colors\": {\n      \"primary_palette\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"text_override\": {\n        \"value\": \"dark green shirt\"\n      }\n    }\n  },\n  \"environment\": {\n    \"location\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"details\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"time_of_day\": {\n      \"value\": \"controlled indoor studio\"\n    },\n    \"weather\": {\n      \"value\": \"indoor environment, weather not applicable\"\n    }\n  },\n  \"camera\": {\n    \"framing\": {\n      \"value\": \"full body\"\n    },\n    \"angle\": {\n      \"value\": \"eye-level\"\n    },\n    \"lens_feel\": {\n      \"value\": \"natural perspective\"\n    }\n  },\n  \"lighting\": {\n    \"type\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"direction\": {\n      \"value\": \"front-facing light\"\n    },\n    \"intensity\": {\n      \"value\": \"medium intensity\"\n    }\n  },\n  \"style\": {\n    \"render_type\": {\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"quality_controls\": {\n    \"forbidden_changes\": [\n      \"identity attributes sourced from image\",\n      \"pose expression gaze hair background or navy trousers\",\n      \"beautification or aging\",\n      \"conflicting multiple values for a single attribute\"\n    ]\n  }\n}",
+    "determinism_scope": "同会话转换结果可比较；独立模型采样、温度及跨会话确定性未验证",
+    "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
+    "original_sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "JSON可解析及不臆测身份",
+        "result": "基本符合",
+        "evidence": "两个同会话转换JSON可解析，无null，身份由image+image_locked声明；无文字臆测年龄长相。"
+      },
+      {
+        "requirement": "相同输入确定性",
+        "result": "独立调用未验证",
+        "evidence": "本会话两次转换文本一致，但在同一上下文中，不能当作两个独立模型API采样；未证明跨调用确定性。"
+      },
+      {
+        "requirement": "仅将白色短袖改为深绿长袖衬衫",
+        "result": "存在问题",
+        "evidence": "两张实图均为绿色圆领长袖T形上衣，无衬衫的翻领/门襟，中文需求在英文shirt适配中未得到完整保留。"
+      },
+      {
+        "requirement": "身份、姿态、背景保留",
+        "result": "视觉基本符合",
+        "evidence": "两图均同一短发成年人物，痣、站姿、灰棚、藏蓝裤和白鞋大体保留，未见额外配件。"
+      },
+      {
+        "requirement": "原JSON结构固定",
+        "result": "存在适配偏差",
+        "evidence": "appearance.colors增加text_override记录明确绿色覆盖，是适配字段；原示例无此字段，不能宣称严格原始schema输出。"
+      }
+    ],
+    "conclusion": "两次编辑已实测；主体保留较好，衬衫款式未命中。独立LLM确定性测试未完成，不能宣称原模板完全通过。"
+  },
+  "images": [
+    {
+      "file": "results/T006-json-lock/run01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1c96a68fd13287e8b2796427284d4464284de20ff5f3b7a0798278e8f68de962"
+    },
+    {
+      "file": "results/T006-json-lock/run02.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6312d50b03f4122111d5a35a11ffad54f4a002490d8e9955c7040616bd31a3fc"
+    }
+  ]
+}

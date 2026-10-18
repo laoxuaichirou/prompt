@@ -1,0 +1,71 @@
+{
+  "test": {
+    "test_id": "T098",
+    "title": "制作大头贴",
+    "type": "单句参考编辑→九宫格",
+    "test_input": "用同一合成32岁成年人物参考，测试九种不同姿势和表情。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅将Markdown转义3\\*3按显示语义规范为3*3；不替原文预先指定九个表情"
+    ],
+    "selected_source_prompt": "用这张照片，做一个3*3的photo booth grid，每张要用不同的姿势和表情不许重复",
+    "final_prompt": [
+      "用这张照片，做一个3*3的photo booth grid，每张要用不同的姿势和表情不许重复。参考人物为虚构32岁成年人。"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "用这张照片，做一个3*3的photo booth grid，每张要用不同的姿势和表情不许重复。参考人物为虚构32岁成年人。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[已投产·3分] 制作大头贴.md",
+    "original_sha256": "d653eba7f313d670cb7fb1646ae43938e61843ccba7e682624a7b7ccaf29452c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3×3和人物",
+        "result": "符合要求",
+        "evidence": "九格同一成年人物白T灰背景，未多格或少格。"
+      },
+      {
+        "requirement": "九种姿势",
+        "result": "基本符合",
+        "evidence": "自然坐、V手、思考、双托脸、大笑、单托脸、举臂、抱臂、张手惊讶等手势不同。"
+      },
+      {
+        "requirement": "表情不能重复",
+        "result": "存在问题",
+        "evidence": "第2和第7格均眨眼微笑，第1/4/6格的闭口笑也较接近，没有严格实现九种不重复表情。"
+      }
+    ],
+    "conclusion": "九宫格和姿势变化完成，但表情重复，不符合原文严格不重复要求。"
+  },
+  "images": [
+    {
+      "file": "results/T098-photo-booth/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "775233942a41033e440c9b9a50c35f7b2053377e21a359d8535b009703dcee42"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "test": {
+    "test_id": "T110",
+    "title": "人物多角度提示词（3+1版）",
+    "type": "五条可见多视角指令→五张独立图",
+    "test_input": "复用同一32岁成年人物白T深蓝裤白鞋，按正文第一套5条做正面/背面/左90°/右90°/面部特写，白底。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "标题3+1与正文不一致；以实际可见第一套5条为准，不自行减项",
+      "8K/正交相机保留为要求，按输出验收，不能从提示词字样推断工具支持",
+      "其他重复角度/重布光/编辑元提示词/兽人设定及仅链接子页不在本例覆盖"
+    ],
+    "selected_source_prompt": "人物正面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。\n人物背面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。\n人物左侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。\n人物右侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。\n人物面部特写，正视镜头，纯白背景，无影棚布光，8K分辨率。",
+    "final_prompt": [
+      "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物正面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+      "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物背面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+      "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物左侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+      "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物右侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+      "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物面部特写，正视镜头，纯白背景，无影棚布光，8K分辨率。"
+    ],
+    "cases": [
+      {
+        "name": "front",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物正面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "back",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物背面全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "left90",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物左侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "right90",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物右侧90度全身照，站直，双臂自然下垂，头顶与脚底齐框。纯白背景，无影棚布光，正交相机，8K分辨率。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "face",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一合成32岁成人，短黑发、白T深蓝裤白鞋和体型按参考保持。\n人物面部特写，正视镜头，纯白背景，无影棚布光，8K分辨率。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "missing": "人物LoRA/角色设计待测试/人物资产等链接子页未导出",
+    "original_filename": "提示词库/人像摄影/[仅参考·3分] 人物多角度提示词（3+1版）.md",
+    "original_sha256": "5441982dac5f7e35820f1ae92fb02301cde7ef3dcb918b54919d807996cd884b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 5,
+    "opened": 5,
+    "checks": [
+      {
+        "requirement": "正面/背面/左/右/特写",
+        "result": "符合要求",
+        "evidence": "五张独立图分别展示正面、背面、相反方向侧面和正脸特写，白底完整；衣着外观基本保持。"
+      },
+      {
+        "requirement": "一致性与不可见区域",
+        "result": "未验证",
+        "evidence": "背面无法核对脸，原参考未见的后部由模型推演；五官有轻微重绘差异。"
+      },
+      {
+        "requirement": "8K/正交相机",
+        "result": "未满足/未验证",
+        "evidence": "均非8K；仅视觉近似正交，不能证明实际正交渲染相机。"
+      },
+      {
+        "requirement": "其他版本和子页",
+        "result": "未执行/缺失",
+        "evidence": "其他角度、重布光元提示词和链接子页未执行或未导出。"
+      }
+    ],
+    "conclusion": "第一套五视角已完整对比，8K及真实正交相机未验证，不能宣称全部人物资产流程通过。"
+  },
+  "images": [
+    {
+      "file": "results/T110-person-views/back.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e2fcd51ea87255f58d2bf5064f95cda5f8f36bb872d9c1353b82d7fe72c55fa7"
+    },
+    {
+      "file": "results/T110-person-views/face.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4151694a524cd5079a773e953ebb6f08ff2425f78b661d9406831b77945af968"
+    },
+    {
+      "file": "results/T110-person-views/front.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c697023a7b8c26b309c5d3b9277afb9f9f131af9e29e7299ac740c336e04bdb7"
+    },
+    {
+      "file": "results/T110-person-views/left90.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a653b4a701edf1c7c90e40a9019c15341d2263ba323863fd4425a4e866932ede"
+    },
+    {
+      "file": "results/T110-person-views/right90.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6a19a36c63eb61cb71d76db09ed09193c2c5736e054e055590883c65e326eb96"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "test": {
+    "test_id": "T106",
+    "title": "一框六格·风格女王",
+    "type": "直接六格时装生图",
+    "test_input": "同一合成32岁女性脸部参考，使用完整中文版本，六套衣着按原文街头/波西米亚/赛博朋克/晚礼服/商务/未来盔甲。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "英文在8K re处截断，标记缺失；使用库内已经存在的完整中文，不自行补写英文末尾",
+      "只填普通成年人物参考，不改变六种风格要求"
+    ],
+    "selected_source_prompt": "超逼真的电影级肖像，一位美丽女性身着六套风格迥异的时尚服饰，呈现在同一画面中——街头风、波西米亚风、赛博朋克风、奢华晚礼服、商务风、未来主义盔甲。每个姿势都自信而充满活力，采用专业影棚灯光、极致细腻的肌肤质感、Vogue杂志大片风格、纯AI美学，8K高清呈现。\n",
+    "final_prompt": [
+      "同一虚构32岁成年女性，面部以参考图为准。\n超逼真的电影级肖像，一位美丽女性身着六套风格迥异的时尚服饰，呈现在同一画面中——街头风、波西米亚风、赛博朋克风、奢华晚礼服、商务风、未来主义盔甲。每个姿势都自信而充满活力，采用专业影棚灯光、极致细腻的肌肤质感、Vogue杂志大片风格、纯AI美学，8K高清呈现。\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "同一虚构32岁成年女性，面部以参考图为准。\n超逼真的电影级肖像，一位美丽女性身着六套风格迥异的时尚服饰，呈现在同一画面中——街头风、波西米亚风、赛博朋克风、奢华晚礼服、商务风、未来主义盔甲。每个姿势都自信而充满活力，采用专业影棚灯光、极致细腻的肌肤质感、Vogue杂志大片风格、纯AI美学，8K高清呈现。\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "missing": "英文末尾在8K re处截断；本例使用现有中文完整版本",
+    "original_filename": "提示词库/人像摄影/[仅参考·2分] 一框六格·风格女王.md",
+    "original_sha256": "757c5ef9b58c4eeee7f28b867397f0671114a66ef6901f1537e9a7a6b795e1c7",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "六套风格/同框",
+        "result": "符合要求",
+        "evidence": "街头、波西米亚、赛博朋克、金色晚礼服、商务套装、未来盔甲六套明确区分并在一框出现。"
+      },
+      {
+        "requirement": "身份/姿态",
+        "result": "部分符合",
+        "evidence": "短黑发外观大体一致，但不同格面部有漂移；商务姿态相对静态，不能称每格都动态。"
+      },
+      {
+        "requirement": "8K与英文完整性",
+        "result": "未满足/缺失",
+        "evidence": "非8K；英文8K re截断，本例只用库内完整中文，未补写英文。"
+      }
+    ],
+    "conclusion": "中文六风格用例完成，8K、完全一致面貌和每格动态未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T106-six-styles/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6bb6045636b63f3531d0758e3a9e4ef55706e038b489a62edff274aecc405ef8"
+    }
+  ]
+}

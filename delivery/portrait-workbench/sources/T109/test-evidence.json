@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T109",
+    "title": "【图像】 人像摄影提示词丨NanoBananaPro",
+    "type": "资料集合中的完整结构化直接生图子例",
+    "test_input": "选择案例2室内窗户光人像：成年女性读书，中心、平视、高调、柔窗光、手触脸、放松和浅景深。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只选择库内完整案例2，不用残缺加权JSON去推断本工具支持数值权重",
+      "主体明确为虚构32岁成年人；其余案例/工具表格/权重/后附模板未执行"
+    ],
+    "selected_source_prompt": "{\n  \"composition\": \"Center Composition\",\n  \"lighting\": \"Window Light + Soft Light\",\n  \"angle\": \"Eye-Level Shot\",\n  \"depth\": \"Shallow Depth of Field\",\n  \"posing\": \"Hands touching face + Relaxed Posture\",\n  \"style\": \"High Key\",\n  \"subject\": \"A woman reading a book\",\n  \"scene\": \"By a large window in a bright room\",\n  \"mood\": \"Calm, focused, intellectual\",\n  \"aspect_ratio\": \"3:4\"\n}\n",
+    "final_prompt": [
+      "Generate the photographic portrait described in this JSON. {\"composition\": \"Center Composition\", \"lighting\": \"Window Light + Soft Light\", \"angle\": \"Eye-Level Shot\", \"depth\": \"Shallow Depth of Field\", \"posing\": \"Hands touching face + Relaxed Posture\", \"style\": \"High Key\", \"subject\": \"A fictional 32-year-old adult woman reading a book\", \"scene\": \"By a large window in a bright room\", \"mood\": \"Calm, focused, intellectual\", \"aspect_ratio\": \"3:4\"}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [],
+        "prompt": "Generate the photographic portrait described in this JSON. {\"composition\": \"Center Composition\", \"lighting\": \"Window Light + Soft Light\", \"angle\": \"Eye-Level Shot\", \"depth\": \"Shallow Depth of Field\", \"posing\": \"Hands touching face + Relaxed Posture\", \"style\": \"High Key\", \"subject\": \"A fictional 32-year-old adult woman reading a book\", \"scene\": \"By a large window in a bright room\", \"mood\": \"Calm, focused, intellectual\", \"aspect_ratio\": \"3:4\"}",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[仅参考·3分] 【图像】 人像摄影提示词丨NanoBananaPro.md",
+    "original_sha256": "381f77c3c26e1564026f20fb54c69086c4c4215e27c4a3f2293343c6dd2220f4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "案例2六维指令",
+        "result": "符合要求",
+        "evidence": "中心平视读书人像、左窗柔光、高调白色室内、手触脸和放松姿态、背景浅景深均出现。"
+      },
+      {
+        "requirement": "比例",
+        "result": "符合要求",
+        "evidence": "竖幅约3:4。"
+      },
+      {
+        "requirement": "权重与其余模板",
+        "result": "未执行/未验证",
+        "evidence": "未执行加权JSON、其他案例及后附人像模板，不推断工具支持该权重机制。"
+      }
+    ],
+    "conclusion": "完整案例2单图符合要求，结论不覆盖整份控制词资料或权重机制。"
+  },
+  "images": [
+    {
+      "file": "results/T109-portrait-toolbox/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "a04b66946ceae20346a0e5afe05a5d5eed5907e9249c2080938f0aa17b5a122b"
+    }
+  ]
+}

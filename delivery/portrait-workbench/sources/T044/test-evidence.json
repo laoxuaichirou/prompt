@@ -1,0 +1,43 @@
+{
+  "test": {
+    "test_id": "T044",
+    "title": "一幅12张独立照片的秋季时尚拼贴画",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "12位不同的虚构成年女性，年龄23—35；12格秋季时装。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文Original，填入明确成年人范围，不用同一角色参考。",
+      "12张是模板自带12格，不是把12个不同条目拼成总图。"
+    ],
+    "selected_source_prompt": "Create a high‑resolution autumn fashion collage composed of 12 separate photos arranged in a neat grid, each featuring a stylish young woman with different random faces and hairstyles, not resembling any real or famous person. Show her in a variety of cozy outdoor poses: sitting by an old glass greenhouse with a takeaway coffee cup, walking along a tree‑lined path covered in orange leaves,sitting alone on a wooden bench deep in the forest, leaning against a park fence, resting on stone steps with a leather tote bag, lounging on a green park bench in a short dress and knee‑high boots, sitting sideways on a bench, standing near a calm lake lined with orange trees, and standing on a foggy path framed by tall trees. Outfits should mix long wool coats, oversized sweaters, scarves, wide‑brim hat, neutral trousers, knit dresses, and boots in earthy toneslike beige, brown, cream, gray, and black; lighting is warm golden hour with soft, cinematic color grading, shallow depth of field and creamy bokeh, giving the entire collage a cohesive, high‑end editorial influencer aesthetic\nSignature: Shreya Yadav",
+    "final_prompt": "All twelve models are entirely fictional ADULTS aged23-35. Render one native 3-column by 4-row collage with exactly12 cells, one different face and hairstyle per cell, not a consistent single model. Create a high‑resolution autumn fashion collage composed of 12 separate photos arranged in a neat grid, each featuring a stylish young woman with different random faces and hairstyles, not resembling any real or famous person. Show her in a variety of cozy outdoor poses: sitting by an old glass greenhouse with a takeaway coffee cup, walking along a tree‑lined path covered in orange leaves,sitting alone on a wooden bench deep in the forest, leaning against a park fence, resting on stone steps with a leather tote bag, lounging on a green park bench in a short dress and knee‑high boots, sitting sideways on a bench, standing near a calm lake lined with orange trees, and standing on a foggy path framed by tall trees. Outfits should mix long wool coats, oversized sweaters, scarves, wide‑brim hat, neutral trousers, knit dresses, and boots in earthy toneslike beige, brown, cream, gray, and black; lighting is warm golden hour with soft, cinematic color grading, shallow depth of field and creamy bokeh, giving the entire collage a cohesive, high‑end editorial influencer aesthetic\nSignature: Shreya Yadav",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 一幅12张独立照片的秋季时尚拼贴画.md",
+    "original_sha256": "c2eed8e6a43bccd8f19264602b7596cafc16649953e15bbf38d9c01dd55d87d7",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "原文关键视觉要求",
+        "result": "存在问题",
+        "evidence": "3×4共12格及秋景、衣物、指定签名基本命中；多格长发女性的脸型和五官非常相近，未充分体现每格随机不同脸，不能给人物多样性全项通过。"
+      }
+    ],
+    "conclusion": "3×4共12格及秋景、衣物、指定签名基本命中；多格长发女性的脸型和五官非常相近，未充分体现每格随机不同脸，不能给人物多样性全项通过。 单轮模型初评。"
+  },
+  "images": [
+    {
+      "file": "results/T044-autumn12/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ff9d3ef793acfe9570ac48658bef7305a526997479b9603cd95ec66fd57f130c"
+    }
+  ]
+}

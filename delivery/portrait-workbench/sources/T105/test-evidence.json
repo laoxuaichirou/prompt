@@ -1,0 +1,59 @@
+{
+  "test": {
+    "test_id": "T105",
+    "title": "AI分镜",
+    "type": "目录链接/子页原文缺失",
+    "test_input": "核对20个链接子页，未有实质提示词正文导出。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "未自拟缺失框架；不把备注中优质标签当实测证据"
+    ],
+    "selected_source_prompt": "<page url=\"https://app.notion.com/p/31d079fdbc3880088275c9a3a17c4c49\">**Nano Banana Pro 视频创作者提示词实用指南  及8个复制即用的神级模板**</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880aaabbfd09d083c182a\">**为什么你用 AI 做漫剧没电影质感？因为你的提示词里没有这4大类导演级专业术语（建议收藏）**</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38803d9464eadf360c8c1d\">字节Seedance2.0杀疯了！我总结了7种逆天玩法（附教程+提示词）</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388042ba70f602f1e64229\">**精通AI布光：AI影视制作的20种提示词完整指南**</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388035ba73d5cc60a30d5d\">如何控制所生成图片的视角：AI视觉创作中的构图艺术</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38800f9bb5ff35e2f3c234\">**提示词书写中的风格：AI绘画的艺术风格指南**</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38808f93d8e4faaca99dd2\">AI分镜师Agent：从剧本到分镜提示词的智能化工作流</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388025ac1fc6fe4eb7ba32\">AI生成剧本的三种方法：从零到一构建你的故事世界</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880ae882afa53fbd97383\">制作分镜头图片的三种方法：从脚本到画面的艺术</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388076ae65f2a62e650a61\">即梦 Seedance 2.0 全面教学：解锁AI视频生成的多种玩法与合规技巧</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388013a57dfa6b6b1e551b\">AI视频生成提示词指南：运镜术语与示例（中英文对照）</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880af9ce9c9140e79a813\">AI视频制作工业流程指南（精华版）</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38803d82a6f651422dd502\">AI视频制作实战手册（精华版）</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880ecbabbc716814023d1\">AISC API 神级AI编剧引擎 V3.0 产品文档</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38800eb4cefc10b176045e\">工业化AI影视制作全流程指南1.0</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880e6ba43d2871e71b879\">工业化AI影视制作全流程指南2.0</page>\n<page url=\"https://app.notion.com/p/31d079fdbc38804d88b1ca7f3eef0129\">工业级AI视频生产流程文档-KIMI Agent版本</page>\n<page url=\"https://app.notion.com/p/31d079fdbc388036bd81d9bfe9e2cda9\">LTX-2 提示词专家</page>\n<page url=\"https://app.notion.com/p/31d079fdbc3880f2af0bf8cb9c5c4b9f\">灵境V4提示词</page>\n<page url=\"https://app.notion.com/p/31e079fdbc3880a29591fcb90fbe1b21\">9宫格分镜-同一帧9种角度运镜</page>",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "不适用或正文缺失",
+    "missing": [
+      "**Nano Banana Pro 视频创作者提示词实用指南  及8个复制即用的神级模板**",
+      "**为什么你用 AI 做漫剧没电影质感？因为你的提示词里没有这4大类导演级专业术语（建议收藏）**",
+      "字节Seedance2.0杀疯了！我总结了7种逆天玩法（附教程+提示词）",
+      "**精通AI布光：AI影视制作的20种提示词完整指南**",
+      "如何控制所生成图片的视角：AI视觉创作中的构图艺术",
+      "**提示词书写中的风格：AI绘画的艺术风格指南**",
+      "AI分镜师Agent：从剧本到分镜提示词的智能化工作流",
+      "AI生成剧本的三种方法：从零到一构建你的故事世界",
+      "制作分镜头图片的三种方法：从脚本到画面的艺术",
+      "即梦 Seedance 2.0 全面教学：解锁AI视频生成的多种玩法与合规技巧",
+      "AI视频生成提示词指南：运镜术语与示例（中英文对照）",
+      "AI视频制作工业流程指南（精华版）",
+      "AI视频制作实战手册（精华版）",
+      "AISC API 神级AI编剧引擎 V3.0 产品文档",
+      "工业化AI影视制作全流程指南1.0",
+      "工业化AI影视制作全流程指南2.0",
+      "工业级AI视频生产流程文档-KIMI Agent版本",
+      "LTX-2 提示词专家",
+      "灵境V4提示词",
+      "9宫格分镜-同一帧9种角度运镜"
+    ],
+    "original_filename": "提示词库/视频分镜/[仅参考·3分] AI分镜.md",
+    "original_sha256": "c85bb16537bd15e200654d4832953b7f9e0e84d5d595dbe6f37e2a13804a1299",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "可执行提示词",
+        "result": "缺失",
+        "evidence": "20个子页只有链接，布光/角度/分镜方法等正文未导出。"
+      }
+    ],
+    "conclusion": "目录缺少原提示词正文，未生成图片，不能判生图实测通过。"
+  },
+  "images": []
+}

@@ -1,0 +1,114 @@
+{
+  "test": {
+    "test_id": "T057",
+    "title": "逆向提示词反推",
+    "type": "看图反推元提示词→角色替换对比",
+    "test_input": "只看T001花店图反推JSON；用同一反推结果分别生成原角色基线与T032角色替换，比较风格、构图和背景。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png",
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/results/T032-christmas/output.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "语言体系不能从像素可靠确定，记录为英文描述的工作假设而非识别事实；反推不读取原T001提示词",
+      "两组共同使用花店风格参考；基线用素材adult，替换用T032虚构成年人物。角色服饰按花店场景白衬衫绿围裙处理",
+      "JSON反推结果与原文第二段生成引导规则共同传给生图工具"
+    ],
+    "selected_source_prompt": "你是一名专业的 AI 生图提示词工程师，擅长从“生成后的图片”中，反向推导其背后的图像生成提示词结构。\n\n我将提供一张图片。该图片是通过【角色参考图 + 文本提示词】生成的。\n你的任务是：仅根据这张图片，反向还原一个【可复用、可编辑、与角色身份解耦】的生图提示词描述，并以 JSON 格式输出。\n\n【一、核心目标】\n- 输出结果用于：在替换角色参考图后，仍可生成在【整体风格、构图方式、背景气质、画面逻辑】上高度一致的图片\n- 你还原的是“生成该图片所需的提示词逻辑”，而不是对图片做自然语言描述\n\n【二、角色解耦规则（强制）】\n- 不得固化任何具体角色身份或外观特征\n- 不描述独特五官、发型、身份、IP、姓名\n- 所有涉及人物的描述，统一使用中性、抽象表述\n- 默认人物外观完全由外部【角色参考图】控制\n\n【三、背景识别与风格保持（重点新增）】\n- 必须识别并抽象图片中的【背景类型与背景风格】\n- 背景不仅是“场景描述”，而是整体风格的重要组成部分\n- 需要关注并还原以下背景相关特征（按实际情况）：\n  - 背景是写实、插画化、抽象、虚化还是符号化\n  - 背景复杂度（简洁 / 中等 / 丰富）\n  - 背景与主体的关系（陪衬、对比、融合、叙事）\n  - 背景是否承载情绪、故事或视觉节奏\n- 在 JSON 中应明确体现“背景风格”相关的提示词信息\n- 目标是：即使替换角色参考图，背景的视觉语言与整体气质仍保持一致\n\n【四、语言体系识别（必须执行）】\n- 自动识别原始生图提示词更可能使用的语言体系（如中文、英文或其他语言）\n- 在 JSON 中显式标注识别结果\n- 所有提示词内容应使用【该识别出的语言体系】进行书写\n\n【五、JSON 输出要求（自由字段）】\n- 仅输出合法 JSON，不包含任何解释性文本\n- JSON 字段名称与数量不作限制\n- 请根据图片实际信息，自主拆分并生成你认为“有助于复现该图片”的提示词字段\n- 每一个字段的值，都应是【可直接用于生图的提示词片段】\n- 字段命名应语义清晰，便于人类阅读与修改\n\n【六、结构与信息完整性要求】\n- JSON 中至少应涵盖以下信息类型（字段名可自定义）：\n  - 主体的抽象描述（去角色）\n  - 姿态或动作逻辑\n  - 构图方式与镜头视角\n  - 背景类型与背景风格\n  - 场景空间与前后层次关系\n  - 风格、媒介或艺术表现形式\n  - 光影、色彩与视觉节奏\n  - 材质、细节密度或渲染特征\n- 若图片中存在显著的背景元素（如天空、室内结构、街景、图案背景、UI、特效、重复纹理等），应单独体现为字段\n\n【七、风格还原优先级（更新）】\n当信息存在冲突时，请始终优先还原：\n整体风格与媒介 > 构图与镜头语言 > 背景风格与背景气质 > 光影与色彩 > 场景结构 > 主体抽象描述\n\n【八、输出格式规范】\n- 只输出 JSON\n- 不要使用 Markdown\n- 不要添加注释、标题或多余文本\n",
+    "final_prompt": [
+      "Reference image 1 defines composition and florist-shop visual style. Reference image 2 defines the ONLY adult character identity. Create a matching florist portrait; face and hair from reference 2. Preserve reference 1 framing, outfit and bouquet pose. Use this character-neutral reversed JSON: {\"language_system\":\"Chinese-language image description; this is a working hypothesis, not information recoverable with certainty from pixels.\",\"subject\":\"A single adult defined exclusively by the external character reference, wearing a white collared shirt and a dark forest-green canvas apron, holding one kraft-paper-wrapped bouquet with both hands at the waist.\",\"pose\":\"Upright relaxed stance, facing the camera, slight natural smile, eyes looking toward camera; fingers gathered around bouquet stems.\",\"composition\":\"Vertical 2:3 portrait, frontal eye-level, three-quarter-length crop to just above the knees, adult centered, bouquet across lower center-right.\",\"background_style\":\"Photorealistic small florist shop, medium-rich detail, soft shallow-depth-of-field, layered flowers and greenery framing the adult rather than an abstract studio background.\",\"spatial_structure\":\"Soft out-of-focus flowers foreground left; adult and bouquet in focus middle; wooden shelves, glass vases, green plants, pale flowers and a warm hanging bulb receding behind.\",\"flowers\":\"Bouquet of pale pink and peach roses, small white daisy-like flowers with yellow centers, eucalyptus leaves and airy yellow-green sprigs, kraft paper folded outward, natural twine wrap.\",\"lighting_color\":\"Large daylight window left, warm late-afternoon light, soft left highlights and right facial shadow, subdued green, warm cream and pastel pink palette.\",\"rendering\":\"Natural documentary commercial portrait photography, realistic skin and cotton/canvas/paper textures, crisp face and bouquet, soft bokeh, no text.\"}",
+      "Reference image 1 defines composition and florist-shop visual style. Reference image 2 defines the ONLY adult character identity (a fictional adult age 22), face and brown hairstyle. Replace the person in reference 1 with the reference 2 person, retaining reference 1 white shirt and green apron; no winter hat/scarf/snow. Keep florist framing, bouquet pose, background and lighting. Character-neutral reversed JSON: {\"language_system\":\"Chinese-language image description; this is a working hypothesis, not information recoverable with certainty from pixels.\",\"subject\":\"A single adult defined exclusively by the external character reference, wearing a white collared shirt and a dark forest-green canvas apron, holding one kraft-paper-wrapped bouquet with both hands at the waist.\",\"pose\":\"Upright relaxed stance, facing the camera, slight natural smile, eyes looking toward camera; fingers gathered around bouquet stems.\",\"composition\":\"Vertical 2:3 portrait, frontal eye-level, three-quarter-length crop to just above the knees, adult centered, bouquet across lower center-right.\",\"background_style\":\"Photorealistic small florist shop, medium-rich detail, soft shallow-depth-of-field, layered flowers and greenery framing the adult rather than an abstract studio background.\",\"spatial_structure\":\"Soft out-of-focus flowers foreground left; adult and bouquet in focus middle; wooden shelves, glass vases, green plants, pale flowers and a warm hanging bulb receding behind.\",\"flowers\":\"Bouquet of pale pink and peach roses, small white daisy-like flowers with yellow centers, eucalyptus leaves and airy yellow-green sprigs, kraft paper folded outward, natural twine wrap.\",\"lighting_color\":\"Large daylight window left, warm late-afternoon light, soft left highlights and right facial shadow, subdued green, warm cream and pastel pink palette.\",\"rendering\":\"Natural documentary commercial portrait photography, realistic skin and cotton/canvas/paper textures, crisp face and bouquet, soft bokeh, no text.\"}"
+    ],
+    "meta_output": {
+      "language_system": "Chinese-language image description; this is a working hypothesis, not information recoverable with certainty from pixels.",
+      "subject": "A single adult defined exclusively by the external character reference, wearing a white collared shirt and a dark forest-green canvas apron, holding one kraft-paper-wrapped bouquet with both hands at the waist.",
+      "pose": "Upright relaxed stance, facing the camera, slight natural smile, eyes looking toward camera; fingers gathered around bouquet stems.",
+      "composition": "Vertical 2:3 portrait, frontal eye-level, three-quarter-length crop to just above the knees, adult centered, bouquet across lower center-right.",
+      "background_style": "Photorealistic small florist shop, medium-rich detail, soft shallow-depth-of-field, layered flowers and greenery framing the adult rather than an abstract studio background.",
+      "spatial_structure": "Soft out-of-focus flowers foreground left; adult and bouquet in focus middle; wooden shelves, glass vases, green plants, pale flowers and a warm hanging bulb receding behind.",
+      "flowers": "Bouquet of pale pink and peach roses, small white daisy-like flowers with yellow centers, eucalyptus leaves and airy yellow-green sprigs, kraft paper folded outward, natural twine wrap.",
+      "lighting_color": "Large daylight window left, warm late-afternoon light, soft left highlights and right facial shadow, subdued green, warm cream and pastel pink palette.",
+      "rendering": "Natural documentary commercial portrait photography, realistic skin and cotton/canvas/paper textures, crisp face and bouquet, soft bokeh, no text."
+    },
+    "cases": [
+      {
+        "name": "baseline",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png",
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "Reference image 1 defines composition and florist-shop visual style. Reference image 2 defines the ONLY adult character identity. Create a matching florist portrait; face and hair from reference 2. Preserve reference 1 framing, outfit and bouquet pose. Use this character-neutral reversed JSON: {\"language_system\":\"Chinese-language image description; this is a working hypothesis, not information recoverable with certainty from pixels.\",\"subject\":\"A single adult defined exclusively by the external character reference, wearing a white collared shirt and a dark forest-green canvas apron, holding one kraft-paper-wrapped bouquet with both hands at the waist.\",\"pose\":\"Upright relaxed stance, facing the camera, slight natural smile, eyes looking toward camera; fingers gathered around bouquet stems.\",\"composition\":\"Vertical 2:3 portrait, frontal eye-level, three-quarter-length crop to just above the knees, adult centered, bouquet across lower center-right.\",\"background_style\":\"Photorealistic small florist shop, medium-rich detail, soft shallow-depth-of-field, layered flowers and greenery framing the adult rather than an abstract studio background.\",\"spatial_structure\":\"Soft out-of-focus flowers foreground left; adult and bouquet in focus middle; wooden shelves, glass vases, green plants, pale flowers and a warm hanging bulb receding behind.\",\"flowers\":\"Bouquet of pale pink and peach roses, small white daisy-like flowers with yellow centers, eucalyptus leaves and airy yellow-green sprigs, kraft paper folded outward, natural twine wrap.\",\"lighting_color\":\"Large daylight window left, warm late-afternoon light, soft left highlights and right facial shadow, subdued green, warm cream and pastel pink palette.\",\"rendering\":\"Natural documentary commercial portrait photography, realistic skin and cotton/canvas/paper textures, crisp face and bouquet, soft bokeh, no text.\"}",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png",
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "new-identity",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png",
+          "/workspace/image-test-20261018/results/T032-christmas/output.png"
+        ],
+        "prompt": "Reference image 1 defines composition and florist-shop visual style. Reference image 2 defines the ONLY adult character identity (a fictional adult age 22), face and brown hairstyle. Replace the person in reference 1 with the reference 2 person, retaining reference 1 white shirt and green apron; no winter hat/scarf/snow. Keep florist framing, bouquet pose, background and lighting. Character-neutral reversed JSON: {\"language_system\":\"Chinese-language image description; this is a working hypothesis, not information recoverable with certainty from pixels.\",\"subject\":\"A single adult defined exclusively by the external character reference, wearing a white collared shirt and a dark forest-green canvas apron, holding one kraft-paper-wrapped bouquet with both hands at the waist.\",\"pose\":\"Upright relaxed stance, facing the camera, slight natural smile, eyes looking toward camera; fingers gathered around bouquet stems.\",\"composition\":\"Vertical 2:3 portrait, frontal eye-level, three-quarter-length crop to just above the knees, adult centered, bouquet across lower center-right.\",\"background_style\":\"Photorealistic small florist shop, medium-rich detail, soft shallow-depth-of-field, layered flowers and greenery framing the adult rather than an abstract studio background.\",\"spatial_structure\":\"Soft out-of-focus flowers foreground left; adult and bouquet in focus middle; wooden shelves, glass vases, green plants, pale flowers and a warm hanging bulb receding behind.\",\"flowers\":\"Bouquet of pale pink and peach roses, small white daisy-like flowers with yellow centers, eucalyptus leaves and airy yellow-green sprigs, kraft paper folded outward, natural twine wrap.\",\"lighting_color\":\"Large daylight window left, warm late-afternoon light, soft left highlights and right facial shadow, subdued green, warm cream and pastel pink palette.\",\"rendering\":\"Natural documentary commercial portrait photography, realistic skin and cotton/canvas/paper textures, crisp face and bouquet, soft bokeh, no text.\"}",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png",
+          "results/T032-christmas/output.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
+    "original_sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T001-fixed-person/04-florist.png",
+      "materials/adult-woman-synthetic.png",
+      "results/T032-christmas/output.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "角色解耦JSON",
+        "result": "符合要求",
+        "evidence": "未写入固有五官/发型，背景风格/空间/光色等字段齐全。JSON可解析。"
+      },
+      {
+        "requirement": "换角色保场景",
+        "result": "基本符合",
+        "evidence": "两图花店、白衬衫绿围裙、粉色花束、窗光及竖版构图接近；两个人物可区分。"
+      },
+      {
+        "requirement": "姿态与构图严格锁定",
+        "result": "存在问题",
+        "evidence": "新身份图出现明显头部倾斜，肩线变化；花束位置与花朵排列并非原样。"
+      },
+      {
+        "requirement": "识别原始提示词语言",
+        "result": "不可验证",
+        "evidence": "仅凭像素无法确认原始语言。保存的英文工作假设不能当作语言识别成功。"
+      }
+    ],
+    "conclusion": "已完成两角色对比，保留了主要风格和背景；严格姿态锁定失败，语言识别不可验证。"
+  },
+  "images": [
+    {
+      "file": "results/T057-reverse/baseline.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "b968840681aa0d1d900f57c442b754adfaeb14fc6eae598981da77a48c02f51e"
+    },
+    {
+      "file": "results/T057-reverse/new-identity.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d03f136c021efd08c2a3784f3c40697a4a17939ad957763e21b98184aaefe52d"
+    }
+  ]
+}

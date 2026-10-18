@@ -1,0 +1,32 @@
+{
+  "test": {
+    "test_id": "T008",
+    "title": "Banana：好莱坞预告片导演视角单图生成连贯电影分镜",
+    "type": "元提示词（截断）",
+    "test_input": "未运行：原版缺少完整后半段。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "changes": [],
+    "final_prompt": "未构造，不自行补写截断原版。",
+    "missing": "英文与所谓中文两栏均在shutter feel (处中断，后续步骤与输出约定缺失。",
+    "original_filename": "提示词库/视频分镜/[待测试·3分] Banana：好莱坞预告片导演视角单图生成连贯电影分镜.md",
+    "original_sha256": "718270586909b8e42ee29ca57d8ac659fdb9605f6ee26738fdb29bf24785a896",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "完整原版正文",
+        "result": "阻塞",
+        "evidence": "两个代码块均在第三步镜头曝光建议处截断；所谓中文栏仍为同一英文。"
+      }
+    ],
+    "conclusion": "原文截断，不能把补写版当原版；未生成图片，不能标生图通过。"
+  },
+  "images": []
+}

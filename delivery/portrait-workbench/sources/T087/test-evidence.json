@@ -1,0 +1,118 @@
+{
+  "test": {
+    "test_id": "T087",
+    "title": "AI视频广告创作栈：从零打造风格统一视频的8个提示框架",
+    "type": "混合视频流程中的图像素材元提示词",
+    "test_input": "只执行第三步提示5/6/7：角色32岁合成女性、道具合成无品牌瓶；办公室窗边与雨中公交站两个场景，保留身份衣着和产品。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "流程包含真实图像生成阶段，纳入静态子流程；未执行Veo视频/音频/剪辑",
+      "测试员提供广告概念，不凭空替代缺失创意；共两张独立图，不用单图宣称跨场景一致",
+      "原文关于规避平台关键词的建议不作为本会话执行指令"
+    ],
+    "selected_source_prompt": "制作参考图片（真正秘诀）**<br>此步骤常被忽略，也是许多AI视频风格不一的原因。\n在Veo 3.1中使用“文生视频”→不同片段的角色、场景与美学风格不一致。<br>使用参考图片进行“素材生视频”→获得专业级的统一视觉效果。\n**核心任务**：使用NanoBanana Pro（或自选图像生成工具）为每个场景的所有元素创建参考图片。\n**提示5：参考图片需求识别**<br>**用途**：明确每个场景所需的具体图片<br>**提示模板**：<br>我的场景如下：<br>[粘贴分镜中的场景描述\\]\n为保持视觉一致性，制作此场景需要哪些参考图片？请列出所有元素：\n- 角色及其在本场景中的外貌/服装\n- 环境/背景\n- 道具或物品\n- 任何提及的特定视觉元素\n针对每个元素，注明是否需要与之前场景的版本保持一致。\n**提示6：NanoBanana Pro图像生成提示**<br>**用途**：为图像生成器创建优化提示<br>**提示模板**：<br>我需要在NanoBanana Pro中生成此参考图片：<br>[描述所需图片内容\\]\n整体视频风格为：[你的风格，例如“1970年代情景喜剧美学”、“电影感黑色电影风格”、“企业简洁风”\\]\n请撰写优化的NanoBanana Pro提示词，确保生成图像包含：\n- 具体风格描述词\n- 光影与氛围设定\n- 构图细节\n- 相关技术参数\n若为跨场景出现的角色，请注明必须保持一致的元素。\n**提示7：跨场景角色一致性维护**<br>**用途**：为现有角色在不同情境中创建新图像<br>**提示模板**：<br>现有角色[角色名称\\]的参考图片如下：[描述或引用原图\\]\n现在需要创建同一角色在新情境下的图像：\n- 新环境：[描述\\]\n- 新服装/外貌变化：[描述\\]\n- 必须保持一致的相同元素：[面部特征、体型等\\]\n请撰写NanoBanana Pro提示词，在适应新场景的同时保持角色一致性。需包含参考原图的指令。\n**专业建议**：在NanoBanana Pro中，可上传角色旧图以保持一致性。为现有角色创建新场景时务必执行此操作。\n**输出成果**：按场景整理的Figma看板、文件夹或文档，包含所有参考图片。\n",
+    "final_prompt": [
+      "Photorealistic calm commercial reference still for a fictional unbranded tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve her white T-shirt, navy trousers and white sneakers. Use reference 2 for the exact single unbranded amber bottle with black screw cap and no label. The adult sits at a wooden desk beside a large daylight window in a tidy home studio, holding the bottle upright in one hand and looking thoughtfully out of the window. Medium-wide eye-level composition, soft diffused daylight from the left, warm cream and muted green palette, realistic hands and bottle scale, no text or logos.",
+      "Photorealistic calm commercial reference still for the same fictional tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve the white T-shirt, navy trousers and white sneakers from reference 1. Use reference 2 for the same single unbranded amber bottle with black cap and no label. This time the adult stands safely under a modern bus shelter on a rainy afternoon, holding the capped bottle upright in one hand near her waist, looking toward the wet street. Eye-level medium-wide composition, softly diffused cool daylight with warm shelter reflections, restrained cream/green color grade, believable rain beyond the shelter, no other dominant people, no text or logos."
+    ],
+    "meta_output": {
+      "required_assets": [
+        {
+          "asset": "同一虚构成年人物",
+          "consistent": true,
+          "path": "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        },
+        {
+          "asset": "同一无品牌瓶子",
+          "consistent": true,
+          "path": "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        },
+        {
+          "asset": "窗边办公桌与雨中公交站",
+          "consistent": false
+        }
+      ],
+      "prompts": [
+        "Photorealistic calm commercial reference still for a fictional unbranded tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve her white T-shirt, navy trousers and white sneakers. Use reference 2 for the exact single unbranded amber bottle with black screw cap and no label. The adult sits at a wooden desk beside a large daylight window in a tidy home studio, holding the bottle upright in one hand and looking thoughtfully out of the window. Medium-wide eye-level composition, soft diffused daylight from the left, warm cream and muted green palette, realistic hands and bottle scale, no text or logos.",
+        "Photorealistic calm commercial reference still for the same fictional tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve the white T-shirt, navy trousers and white sneakers from reference 1. Use reference 2 for the same single unbranded amber bottle with black cap and no label. This time the adult stands safely under a modern bus shelter on a rainy afternoon, holding the capped bottle upright in one hand near her waist, looking toward the wet street. Eye-level medium-wide composition, softly diffused cool daylight with warm shelter reflections, restrained cream/green color grade, believable rain beyond the shelter, no other dominant people, no text or logos."
+      ]
+    },
+    "cases": [
+      {
+        "name": "desk",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "prompt": "Photorealistic calm commercial reference still for a fictional unbranded tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve her white T-shirt, navy trousers and white sneakers. Use reference 2 for the exact single unbranded amber bottle with black screw cap and no label. The adult sits at a wooden desk beside a large daylight window in a tidy home studio, holding the bottle upright in one hand and looking thoughtfully out of the window. Medium-wide eye-level composition, soft diffused daylight from the left, warm cream and muted green palette, realistic hands and bottle scale, no text or logos.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      },
+      {
+        "name": "bus-stop",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "prompt": "Photorealistic calm commercial reference still for the same fictional tea advertisement. Use reference 1 exclusively for the same fictional 32-year-old adult woman's face, short side-parted black bob, small left-cheek beauty mark and body proportions; preserve the white T-shirt, navy trousers and white sneakers from reference 1. Use reference 2 for the same single unbranded amber bottle with black cap and no label. This time the adult stands safely under a modern bus shelter on a rainy afternoon, holding the capped bottle upright in one hand near her waist, looking toward the wet street. Eye-level medium-wide composition, softly diffused cool daylight with warm shelter reflections, restrained cream/green color grade, believable rain beyond the shelter, no other dominant people, no text or logos.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "materials/bottle-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/电商产品/[已投产·4分] AI视频广告创作栈：从零打造风格统一视频的8个提示框架.md",
+    "original_sha256": "3420a6ab828da5c499e98dbff77fd28931e2c8c4d69cb3c52267e9528570394b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/bottle-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "先执行素材识别与提示词",
+        "result": "已执行",
+        "evidence": "第三步提示5/6/7的素材清单与两个场景Prompt已记录，再生成两张独立图。"
+      },
+      {
+        "requirement": "两个场景与一致性",
+        "result": "基本符合",
+        "evidence": "窗边木桌/雨中候车亭明确不同，成年人物短黑发、小痣、白T深蓝裤白鞋及琥珀瓶黑盖基本保持。细微五官受角度与光线影响。"
+      },
+      {
+        "requirement": "视频成片/跨模型",
+        "result": "未执行",
+        "evidence": "未生成Veo片段、运镜、音频或剪辑；不是原NanoBanana/Veo模型实测。"
+      }
+    ],
+    "conclusion": "第三步静态素材流程的两场景最小用例基本符合要求；不代表完整广告视频流程通过。"
+  },
+  "images": [
+    {
+      "file": "results/T087-ad-stack/bus-stop.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "159088d02e2ad7ab9e5e85c42ac3cc8172e2b954c334d50018c1d22026c3da7d"
+    },
+    {
+      "file": "results/T087-ad-stack/desk.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "326ed57268f93c7f54a7af6d1ffd60cc2f1114d180f4864628e725a83e1a2afc"
+    }
+  ]
+}

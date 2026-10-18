@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T160",
+    "title": "电影照片故事板",
+    "type": "直接生图/参考编辑",
+    "test_input": "The woman is a wholly fictional 28-year-old adult woman. This output is a static storyboard sheet. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；不声称原示例人物或原模型实测。"
+    ],
+    "selected_source_prompt": "A 3x3 cinematic storyboard contact sheet consisting of 9 distinct panels arranged in a grid. The sequence features a young woman with platinum blonde hair in a frozen alpine winter setting.\n\nThe panels display various angles and shots:\n\nClose-ups: Focusing on her rosy cheeks, blue-grey eyes, and snowflakes on her eyelashes.\n\nMedium shots: Showing her wrapped in a black wool coat and blue knit scarf, holding a bouquet of dried white flowers.\n\nWide shots: Capturing her standing alone on the frozen lake with towering snowy mountains in the background.\n\nThe lighting is consistent moody blue-hour twilight across all frames. High-quality film photography aesthetic, photorealistic, 8k resolution, coherent character and color grading.\n",
+    "final_prompt": [
+      "The woman is a wholly fictional 28-year-old adult woman. This output is a static storyboard sheet. A 3x3 cinematic storyboard contact sheet consisting of 9 distinct panels arranged in a grid. The sequence features a young woman with platinum blonde hair in a frozen alpine winter setting.\n\nThe panels display various angles and shots:\n\nClose-ups: Focusing on her rosy cheeks, blue-grey eyes, and snowflakes on her eyelashes.\n\nMedium shots: Showing her wrapped in a black wool coat and blue knit scarf, holding a bouquet of dried white flowers.\n\nWide shots: Capturing her standing alone on the frozen lake with towering snowy mountains in the background.\n\nThe lighting is consistent moody blue-hour twilight across all frames. High-quality film photography aesthetic, photorealistic, 8k resolution, coherent character and color grading.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The woman is a wholly fictional 28-year-old adult woman. This output is a static storyboard sheet. A 3x3 cinematic storyboard contact sheet consisting of 9 distinct panels arranged in a grid. The sequence features a young woman with platinum blonde hair in a frozen alpine winter setting.\n\nThe panels display various angles and shots:\n\nClose-ups: Focusing on her rosy cheeks, blue-grey eyes, and snowflakes on her eyelashes.\n\nMedium shots: Showing her wrapped in a black wool coat and blue knit scarf, holding a bouquet of dried white flowers.\n\nWide shots: Capturing her standing alone on the frozen lake with towering snowy mountains in the background.\n\nThe lighting is consistent moody blue-hour twilight across all frames. High-quality film photography aesthetic, photorealistic, 8k resolution, coherent character and color grading.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 电影照片故事板.md",
+    "original_sha256": "d755bae3718ec6fff0a3df2bd5694ac11ac4a774a3564c1cd5aa8cd14d79a3e5",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格/造型/冬日光",
+        "result": "基本符合",
+        "evidence": "铂金发蓝灰眼红脸颊，黑大衣蓝围巾白干花，冻湖雪山蓝调黄昏，睫毛雪花细节可辨。"
+      },
+      {
+        "requirement": "九个不同镜头/8K",
+        "result": "存在问题",
+        "evidence": "第4与第8格基本为同一低头持花构图；非8K。只生成静态拼图，视频及运动未执行。"
+      }
+    ],
+    "conclusion": "静态冬日分镜已出图，镜头重复与8K未满足，不能据此宣称视频通过。"
+  },
+  "images": [
+    {
+      "file": "results/T160-alpine-storyboard/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a8e489491a07dd86428e1dfd6b192c693463fc3b8b0972a4508a8e24fdb3ced8"
+    }
+  ]
+}

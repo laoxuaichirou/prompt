@@ -1,0 +1,41 @@
+{
+  "test": {
+    "test_id": "T111",
+    "title": "示例+sys prompt提示词（人像+Qwen image 中文字设计）",
+    "type": "仅目录，子页缺失",
+    "test_input": "两个子页分别为Qwen中文字体设计/人像LLM反推，本文件无可执行正文。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "不自拟子页提示词，不把旧评价作为本轮证据"
+    ],
+    "selected_source_prompt": "<page url=\"https://app.notion.com/p/2dd079fdbc388002ba9bf5c1f030ca56\">Qwen-image-中文字体设计（图生图）</page>\n<page url=\"https://app.notion.com/p/2dd079fdbc38805a9ca4f7ea84b2c211\">人像LLM反推</page>",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "missing": [
+      "Qwen-image-中文字体设计（图生图）",
+      "人像LLM反推"
+    ],
+    "original_filename": "提示词库/人像摄影/[仅参考·3分] 示例+sys prompt提示词（人像+Qwen image 中文字设计）.md",
+    "original_sha256": "c75bbb7200e39d6feb291c74529a2cb690f53700c9c6118c87bd23e8a17edaab",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际提示词",
+        "result": "缺失",
+        "evidence": "两个子页仅链接，Qwen中文字体设计和人像LLM反推正文未导出。"
+      }
+    ],
+    "conclusion": "缺少原子页正文，未生成图片，不可判实测通过。"
+  },
+  "images": []
+}

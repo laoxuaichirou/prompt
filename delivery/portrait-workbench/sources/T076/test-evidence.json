@@ -1,0 +1,71 @@
+{
+  "test": {
+    "test_id": "T076",
+    "title": "品牌工作室照片",
+    "type": "变量化直接生图",
+    "test_input": "CHARACTER=参考合成32岁女性，白T深蓝裤白鞋；SOFA_COLOR=sage green；TEXT=OWN YOUR DAY。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅填三个变量，将MJ比例参数改为本工具自然语言；使用同一合成成年参考"
+    ],
+    "selected_source_prompt": "The fictional 32-year-old adult woman from the reference, short black bob, white T-shirt, navy trousers, white sneakers sitting centered on an oversized puffy lounge sofa in sage green, relaxed pose with one hand under chin, full-body. Clean white seamless studio, premium fashion-editorial lighting, hyper-real, minimal. Big spray-paint graffiti on the back wall reading “OWN YOUR DAY” with soft overspray and slight drips. 85mm look, crisp details, no clutter, no watermark. Portrait aspect ratio 3:4.\n",
+    "final_prompt": [
+      "The fictional 32-year-old adult woman from the reference, short black bob, white T-shirt, navy trousers, white sneakers sitting centered on an oversized puffy lounge sofa in sage green, relaxed pose with one hand under chin, full-body. Clean white seamless studio, premium fashion-editorial lighting, hyper-real, minimal. Big spray-paint graffiti on the back wall reading “OWN YOUR DAY” with soft overspray and slight drips. 85mm look, crisp details, no clutter, no watermark. Portrait aspect ratio 3:4.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "The fictional 32-year-old adult woman from the reference, short black bob, white T-shirt, navy trousers, white sneakers sitting centered on an oversized puffy lounge sofa in sage green, relaxed pose with one hand under chin, full-body. Clean white seamless studio, premium fashion-editorial lighting, hyper-real, minimal. Big spray-paint graffiti on the back wall reading “OWN YOUR DAY” with soft overspray and slight drips. 85mm look, crisp details, no clutter, no watermark. Portrait aspect ratio 3:4.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/海报封面/[已投产·3分] 品牌工作室照片.md",
+    "original_sha256": "dffc80c0441f11f5b8c246d674fa8cafcb87a0aeaa335b3d02e36251d54fa2ce",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "变量和构图",
+        "result": "符合要求",
+        "evidence": "同一成年素材人物居中坐鼠尾草绿蓬松沙发，单手托腮、全身含鞋，白色无缝影棚。"
+      },
+      {
+        "requirement": "涂鸦文字与材质",
+        "result": "符合要求",
+        "evidence": "OWN YOUR DAY准确可读，喷漆颗粒、过喷和滴落明显，无其他文案或水印。"
+      },
+      {
+        "requirement": "镜头参数",
+        "result": "未验证",
+        "evidence": "仅85mm视觉描述，未验证真实摄影参数或稳定性。"
+      }
+    ],
+    "conclusion": "三个变量填充后的沙发涂鸦最小用例符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T076-sofa-graffiti/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "23820aa59d0de1c805ea667c2e8cedbfda03626784553e9d7a5a2450fcefdc05"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "test": {
+    "test_id": "T150",
+    "title": "超写实3D漫画肖像",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the face of the fictional 32-year-old adult woman in the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入虚构成年人物，原文保留。",
+      "填充姓名/造型/动作槽：{\"[NAME\\\\]\": \"the fictional adult woman in the reference\", \"[OUTFIT / SIGNATURE LOOK\\\\]\": \"a plain white T-shirt, navy trousers and white sneakers\", \"[POSE / ACTION\\\\]\": \"cheerful standing pose with one hand waving\"}",
+      "1080x1080为原文要求，实际文件尺寸在记录中检验，不后处理伪造。"
+    ],
+    "selected_source_prompt": "Hyper-realistic 3D caricature of [NAME\\], featuring an expressive, oversized head, a short body, and a detailed, energetic facial expression. Wearing [OUTFIT / SIGNATURE LOOK\\], striking a [POSE / ACTION\\]. Studio lighting, cartoonish proportions, Pixar-style 3D rendering, ultra-detailed fabric and skin textures. The body is slightly smaller than the head. 1080x1080 square format.",
+    "final_prompt": [
+      "Use the face of the fictional 32-year-old adult woman in the synthetic reference. Hyper-realistic 3D caricature of the fictional adult woman in the reference, featuring an expressive, oversized head, a short body, and a detailed, energetic facial expression. Wearing a plain white T-shirt, navy trousers and white sneakers, striking a cheerful standing pose with one hand waving. Studio lighting, cartoonish proportions, Pixar-style 3D rendering, ultra-detailed fabric and skin textures. The body is slightly smaller than the head. 1080x1080 square format."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the face of the fictional 32-year-old adult woman in the synthetic reference. Hyper-realistic 3D caricature of the fictional adult woman in the reference, featuring an expressive, oversized head, a short body, and a detailed, energetic facial expression. Wearing a plain white T-shirt, navy trousers and white sneakers, striking a cheerful standing pose with one hand waving. Studio lighting, cartoonish proportions, Pixar-style 3D rendering, ultra-detailed fabric and skin textures. The body is slightly smaller than the head. 1080x1080 square format.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 超写实3D漫画肖像.md",
+    "original_sha256": "6e09fa2239a6737de305ef05e5202518e42f1f44c5a8f0b4bc0f8c613559ff01",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "漫画/服装/动作",
+        "result": "基本符合",
+        "evidence": "短黑发大眼3D女性、白T深蓝裤白鞋，微笑挥手、柔棚光与织物细节。"
+      },
+      {
+        "requirement": "头身比例/尺寸",
+        "result": "存在问题",
+        "evidence": "身体明显长于头部，未满足body slightly smaller than head；文件1254x1254，不是1080x1080。"
+      }
+    ],
+    "conclusion": "3D漫画成图，头身比例与精确尺寸未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T150-caricature-square/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7fc78d8c639ca53fa42e483122f30761407e60c688e6118b410ed27f443c6dc5"
+    }
+  ]
+}

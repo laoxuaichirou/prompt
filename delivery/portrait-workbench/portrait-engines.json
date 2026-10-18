@@ -1,0 +1,981 @@
+{
+  "schema_version": "0.1.0",
+  "engines": [
+    {
+      "id": "T002",
+      "title": "参考图分镜规划",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。基于照片与{{story}}输出原生网格或独立镜头的结构化计划，再转成生图提示词；不要把文字计划当出图结果。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "story": {
+          "default": "人物发现一束花，走近、拿起、观察并微笑",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T002",
+        "title": "NanoBananaPro 分镜拆解助手（未测试）",
+        "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
+        "sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
+        "original_copy": "sources/T002/original.md",
+        "evidence_file": "sources/T002/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。",
+        "source_test_reference_material": [],
+        "source_images": [
+          {
+            "file": "results/T002-storyboard9/storyboard9.png",
+            "width": 1672,
+            "height": 941,
+            "sha256": "3a480691b5d1d0cc8de3542176ff12bd2df99f4d26a20faf7199f5e468163154"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/007-T002-storyboard9.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T003",
+      "title": "动作方案引擎",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。分析人物照片，为{{count}}种不同动作输出明确的四肢位置、表情、机位与英文图像编辑指令。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "count": {
+          "default": 4,
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T003",
+        "title": "LLM动作引擎（各类提示词示例）",
+        "original_filename": "提示词库/视频分镜/[待测试·4分] LLM动作引擎（各类提示词示例）.md",
+        "sha256": "2acfaeabac65c959ec823cb7c42ff04af7aef57a4d12d1e27431c9be048233ed",
+        "original_copy": "sources/T003/original.md",
+        "evidence_file": "sources/T003/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "可见主框架五动作链路完成，动作多样性和景别基本成立；细微表情偏弱，A/B比较阻塞，不自动转正。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T003-action-engine/01-squat.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "ac97d8993c7c777a7f199152d0fbb984a51e3da60f28955a84249b3e64391a11"
+          },
+          {
+            "file": "results/T003-action-engine/02-seated.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "0eeeba6f780543e2f07e62b9118d16f0c5b3c736967101d6d9560f2552e73573"
+          },
+          {
+            "file": "results/T003-action-engine/03-stride.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "338cf07c0f40c56f8d82534f12157bba2bb174f1d95005e321bfe9063b937c0b"
+          },
+          {
+            "file": "results/T003-action-engine/04-stretch.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "01acb54e2c69eca22a315ca5f98317c336bdeffa8f164818204dbb4c4a3af63c"
+          },
+          {
+            "file": "results/T003-action-engine/05-closeup.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "de2f75f7478433016587198684df4d0014c2c4803a66e98c11cc43e75461c40c"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/008-T003-01-squat.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T006",
+      "title": "身份约束JSON编译",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。提取上传人物辨识特征，与{{edit_request}}组合为JSON图像编辑指令；保留原图中的未编辑部分，不承诺绝对身份零漂移。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T006",
+        "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+        "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
+        "sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
+        "original_copy": "sources/T006/original.md",
+        "evidence_file": "sources/T006/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "两次编辑已实测；主体保留较好，衬衫款式未命中。独立LLM确定性测试未完成，不能宣称原模板完全通过。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T006-json-lock/run01.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "1c96a68fd13287e8b2796427284d4464284de20ff5f3b7a0798278e8f68de962"
+          },
+          {
+            "file": "results/T006-json-lock/run02.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "6312d50b03f4122111d5a35a11ffad54f4a002490d8e9955c7040616bd31a3fc"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/017-T006-run01.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T011",
+      "title": "身份服装场景三图融合",
+      "kind": "meta_prompt",
+      "input_mode": "extra",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。图1人物身份、图2服装、图3场景，分别绑定来源；根据{{edit_request}}编译最终编辑提示词，禁止身份与服装来源混淆。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T011",
+        "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] AI时尚丨JSON人物场景动作丨LLM提示词优化.md",
+        "sha256": "86ff0fcbfd9f644a18a837f5f928054cf516790b35f3ecd61912d593ce78ee4c",
+        "original_copy": "sources/T011/original.md",
+        "evidence_file": "sources/T011/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "三图融合4图已实测，场景与服装大体有效；动态姿势指令失效，景别多样性较有限。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png",
+          "materials/scrubs-synthetic.png",
+          "results/T001-fixed-person/06-winter.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T011-fashion-compiler/pose01.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "f798c9a60be1655b56d28dfa73469f568a8e72cded0278b34103b6650f01ceca"
+          },
+          {
+            "file": "results/T011-fashion-compiler/pose02.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "c5df793a38be830986cfe21419c7f31d6fd98085a9af3161704b39eb20846512"
+          },
+          {
+            "file": "results/T011-fashion-compiler/pose03.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "a880d09a7ff62aebffe60bc6c44093b60dbdeaf117998e610c3ce58a3cb4053d"
+          },
+          {
+            "file": "results/T011-fashion-compiler/pose04.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "3229e77a390a81f010a5896377344ef19127df9a97f28a37a9d38ccf217dcbf2"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/021-T011-pose01.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T020",
+      "title": "商业人像动作编排",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。观察参考人物、服装和背景，生成{{count}}种不重复商业摄影动作，分别返回可用于图像编辑的提示词。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "count": {
+          "default": 4,
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T020",
+        "title": "【元提示词】商业摄影",
+        "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】商业摄影.md",
+        "sha256": "76d52004205b244daaf519d95e3b8c62f76c9a20e6351d60474669c8389a24cd",
+        "original_copy": "sources/T020/original.md",
+        "evidence_file": "sources/T020/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "四方案到四图链路完成，动作多样但机位/景别未全部命中，不能完整通过。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T020-commercial-photo/pose01.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "34f6f8965a4911a76667229ce80053257fe0f4088ae3bf646d1ce2daeb6ab439"
+          },
+          {
+            "file": "results/T020-commercial-photo/pose02.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "1c1463353ce9b4f5feca1677421dca51920a17dbf6db2ec0ba9138f5c831f2b0"
+          },
+          {
+            "file": "results/T020-commercial-photo/pose03.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "51b91ab5cef65d9d1254d1b01cf68d394cfdbb210e785b7afdf532c2961dc439"
+          },
+          {
+            "file": "results/T020-commercial-photo/pose04.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "d941d21f18df5aeb212e8ebbfa99d41d90855299f8572208aa6ab4c3cb23516a"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/033-T020-pose01.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T021",
+      "title": "人物照片画质修复",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。诊断参考照片的模糊、噪点与压缩问题，为{{edit_request}}生成保留身份和原构图的修复指令，不虚构真实不可见细节。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T021",
+        "title": "GPT2画质修复元提示词",
+        "original_filename": "提示词库/图像编辑/[已投产·5分] GPT2画质修复元提示词.md",
+        "sha256": "c62773b764bd1e9cf0c2dc61fa50f4befc94b8fd13ac5960ca2996ba1bb4f7ab",
+        "original_copy": "sources/T021/original.md",
+        "evidence_file": "sources/T021/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "本次合成降质人像A型污染清除符合视觉初评；只证明该子用例可用，不证明真实信息恢复或全类型稳定性。",
+        "source_test_reference_material": [
+          "materials/damaged-adult-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T021-gpt-restoration/T021.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "f8ebd7dc989273e7b63eeaaac539670a3470741ac5fd337a8f280979e4b94013"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/037-T021-T021.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T023",
+      "title": "高清修复指令",
+      "kind": "image_edit_tool",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。参考原文高清修复模板，按{{edit_request}}清理画质，保留人物特征和原图内容；实际像素以工具输出为准。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T023",
+        "title": "高清修复提示词模板",
+        "original_filename": "提示词库/图像编辑/[已投产·4分] 高清修复提示词模板.md",
+        "sha256": "fdc9a8e2771a84e1aa8f27da46da7be77a35189a2b25ced1b0c43a4e43d51b24",
+        "original_copy": "sources/T023/original.md",
+        "evidence_file": "sources/T023/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "合成降质人像视觉清理成功，但4K要求未满足；生成式纹理不是被证实的真实信息恢复。",
+        "source_test_reference_material": [
+          "materials/damaged-adult-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T023-hd-restoration/T023.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "492b764a13319e1616f31db8eeec14a962d878c5708740798d0a74aa390212cc"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/039-T023-T023.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T024",
+      "title": "人物换装",
+      "kind": "image_edit_tool",
+      "input_mode": "extra",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。图1为本人，图2为服装实物参考。只将服装替换为图2设计，保留本人脸、姿态、背景与光影，检查口袋、抽绳和边缘。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {},
+      "source": {
+        "test_id": "T024",
+        "title": "换装提示词示例",
+        "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
+        "sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
+        "original_copy": "sources/T024/original.md",
+        "evidence_file": "sources/T024/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "两版换装链路已实测，主版本次细节较好；初版抽绳变化，严格服装保真未全部满足。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png",
+          "materials/scrubs-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T024-clothing-swap/T024-initial.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "e5d346ae399f5e30d30ce87e0049c83aa6731fc6cdae7ad17f7a40067a342328"
+          },
+          {
+            "file": "results/T024-clothing-swap/T024-optimized.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "554da70fe06f44ef50538fde0538229ec95535d4f70bf7b4334738701359bcdf"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/040-T024-T024-initial.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T039",
+      "title": "动作分镜编排",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。为{{story}}编排静态关键姿态与镜头，不使用单帧宣称动作流畅或视频通过。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "story": {
+          "default": "人物发现一束花，走近、拿起、观察并微笑",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T039",
+        "title": "分镜导演与动作编排专家",
+        "original_filename": "提示词库/视频分镜/[已投产·5分] 分镜导演与动作编排专家.md",
+        "sha256": "1392657912aecb71615c4ec640aec06dd609f735daa4cf1864a2b4ce1dee72b5",
+        "original_copy": "sources/T039/original.md",
+        "evidence_file": "sources/T039/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。 模型单轮初评，未宣称视频通过。",
+        "source_test_reference_material": [],
+        "source_images": [
+          {
+            "file": "results/T039-action-previs8/output.png",
+            "width": 1536,
+            "height": 1024,
+            "sha256": "5cd1faa5ad721b28e9c7e9d47714952cf3baf791c5aab0dff8ec8416bec593f2"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/056-T039-output.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T057",
+      "title": "人像风格反推与迁移",
+      "kind": "meta_prompt",
+      "input_mode": "extra",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。先从风格参考图分析构图、服装、光影与场景，再绑定目标人物照片作为身份来源，输出迁移提示词。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {},
+      "source": {
+        "test_id": "T057",
+        "title": "逆向提示词反推",
+        "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
+        "sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
+        "original_copy": "sources/T057/original.md",
+        "evidence_file": "sources/T057/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "已完成两角色对比，保留了主要风格和背景；严格姿态锁定失败，语言识别不可验证。",
+        "source_test_reference_material": [
+          "results/T001-fixed-person/04-florist.png",
+          "materials/adult-woman-synthetic.png",
+          "results/T032-christmas/output.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T057-reverse/baseline.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "b968840681aa0d1d900f57c442b754adfaeb14fc6eae598981da77a48c02f51e"
+          },
+          {
+            "file": "results/T057-reverse/new-identity.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "d03f136c021efd08c2a3784f3c40697a4a17939ad957763e21b98184aaefe52d"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/071-T057-baseline.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T059",
+      "title": "表情动作指令扩写",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。将{{edit_request}}扩写成清楚的表情、头部、躯干和四肢位置指令，保留参考人物与服装。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T059",
+        "title": "【LLM】元提示词模板",
+        "original_filename": "提示词库/提示词工程/[已投产·4分] 【LLM】元提示词模板.md",
+        "sha256": "a2c5266096c81af94fe9e504bde4336eba66e8064d44d49b2752bccef5cadd71",
+        "original_copy": "sources/T059/original.md",
+        "evidence_file": "sources/T059/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "两种姿势已对比；动作大体落实，前倾不足，不能宣称身份完全一致或30%指标通过。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T059-action-template/pose1.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "505e390105c813cc3cff4078c7e2c2c42707b8dbdde394e0d64252b00984731f"
+          },
+          {
+            "file": "results/T059-action-template/pose2.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "ae216a3b8c1d0c15103298b6916e3e9501b045fff6cba1099d54ac2a1aa1b342"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/075-T059-pose1.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T060",
+      "title": "自然语言编辑增强",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。将{{edit_request}}编译成精确图像编辑指令，明确修改部分与应保留的身份、服装、背景。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T060",
+        "title": "提示词增强",
+        "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词增强.md",
+        "sha256": "db4b11514fbb6b98aa46c03003a57b9052f23c21e125087e53dfcffa2a063c0a",
+        "original_copy": "sources/T060/original.md",
+        "evidence_file": "sources/T060/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "简易版背景替换最小用例符合要求，仅为单次模型初评。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T060-enhance/output.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "408410b5a5fbbb5d9e32dfa3ffed82d23113ea0537da5800f6174ca53b1397cf"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/077-T060-output.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T062",
+      "title": "光影描述与迁移",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。提取参考人物及现有光源，为{{edit_request}}定义可见的光源方向、冷暖、阴影和氛围，不把色温数值当已测物理参数。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T062",
+        "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+        "original_filename": "提示词库/提示词工程/[仅参考·3分] 【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路.md",
+        "sha256": "a1e6849d478c4f04a826aa23dd3a987f4bdfdd58816469d6320ab4a2dbace0b9",
+        "original_copy": "sources/T062/original.md",
+        "evidence_file": "sources/T062/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "光影编辑主体保留良好；分辨率及原SD权重未验证，不能算原模型完整通过。",
+        "source_test_reference_material": [
+          "results/T001-fixed-person/04-florist.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T062-lighting-meta/output.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "61c2b2e23a0d3f272553405227c2bd402d82cd00fae9c341bf6b04f030a956a3"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/078-T062-output.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T095",
+      "title": "添加删除替换",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。将{{edit_request}}分解为添加、删除或替换操作，并说明保留其余人物与场景的约束。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "edit_request": {
+          "default": "保持本人，改变姿态与镜头",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T095",
+        "title": "【图片提示词】添加、删除、替换提示词增强",
+        "original_filename": "提示词库/图像编辑/[仅参考·4分] 【图片提示词】添加、删除、替换提示词增强.md",
+        "sha256": "1d79cef19197d235bafe4ca6c47cf7de319f014b59e7c51a649d7256d531d663",
+        "original_copy": "sources/T095/original.md",
+        "evidence_file": "sources/T095/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "三子例均实际出图，删除和换字表现良好；添加有局部背景改动，原格式合同存在冲突。",
+        "source_test_reference_material": [
+          "results/T001-fixed-person/04-florist.png",
+          "results/T084-ecom-poster/output.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T095-edit-rewriter/add.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "c3210dff97418c8df13b91b9a1b97f7a0321bed6cb31773063e7603dd1ac3658"
+          },
+          {
+            "file": "results/T095-edit-rewriter/remove.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "f32be25169f39d944daafddc57d29a9b24cf6dc6a2c4f0b2811c0886e929165f"
+          },
+          {
+            "file": "results/T095-edit-rewriter/replace-text.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "12ccc2b01c5f7368ff92e689a4348f90e49059eea42aad05e68e93c49b28cf48"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/135-T095-add.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T099",
+      "title": "人物姿态迁移",
+      "kind": "image_edit_tool",
+      "input_mode": "extra",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。图1为本人身份与服装，图2只提供身体姿态。把本人调整为图2姿态，保留本人的脸、体型与服装，禁止把图2脸换过来。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {},
+      "source": {
+        "test_id": "T099",
+        "title": "换姿势",
+        "original_filename": "提示词库/图像编辑/[已投产·3分] 换姿势.md",
+        "sha256": "1c1e8d0ae36d8d33b89ba498195296e937984d8d09131fcbf0da11394a219e8d",
+        "original_copy": "sources/T099/original.md",
+        "evidence_file": "sources/T099/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "双参考姿态转换最小用例符合主要要求。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png",
+          "results/T077-full-caricature/output.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T099-pose-transfer/output.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "05e0226b2c78256f0aa2bb108c2099b897deff7831458173362168c08b0414e4"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/141-T099-output.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T134",
+      "title": "场景人物替换",
+      "kind": "image_edit_tool",
+      "input_mode": "extra",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。图1为源场景姿态服装，图2为目标本人。替换为图2身份，保持图1构图、姿态、服装和背景，检查面部混合与道具漂移。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {},
+      "source": {
+        "test_id": "T134",
+        "title": "人物一致性",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
+        "sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
+        "original_copy": "sources/T134/original.md",
+        "evidence_file": "sources/T134/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。",
+        "source_test_reference_material": [
+          "results/T077-full-caricature/output.png",
+          "materials/adult-woman-synthetic.png",
+          "results/T101-middle-man/output.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T134-person-swap/garden.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "87f5e7d8bafbaf2d7a0fd999fd09a9e8f9e66da63358d299d83b7f28043a59b4"
+          },
+          {
+            "file": "results/T134-person-swap/street.png",
+            "width": 1100,
+            "height": 1430,
+            "sha256": "77c86f278fdc718a263b9a4e16229d6fe41bfc3deb91e1d1c9ad71938251aee1"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/172-T134-garden.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T142",
+      "title": "商业人像摄影导演",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。依据照片的真实服装场景，为{{count}}种商业写真姿态输出英文Next Scene编辑指令，示例服装不自动套入真实参考。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "count": {
+          "default": 4,
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T142",
+        "title": "套图写真：顶级商业人像摄影导演",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 套图写真：顶级商业人像摄影导演.md",
+        "sha256": "935bf7992d14d3ef9bbc275d648816dc83f42cf36ed789c5cefc560ffa336acc",
+        "original_copy": "sources/T142/original.md",
+        "evidence_file": "sources/T142/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "元提示词已执行并实测两方案，第二方案侧向姿态不精确；不覆盖全部N值和稳定性。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T142-portrait-director/pose1.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "7e40792ba563afc7cef524794a3f858aec22a051634cda94df16ac0c08e66d5d"
+          },
+          {
+            "file": "results/T142-portrait-director/pose2.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "d9e89d604eae5edbeaee22dc43190c8408f6d22fb8e0ea3354856d8499e5b2c5"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/180-T142-pose1.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T165",
+      "title": "人物特征分析与设定",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。先从照片提取characters/id/description/features JSON档案，再为选定角度输出生图提示词；不得将该静态流程冒称完整20镜工作流。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {},
+      "source": {
+        "test_id": "T165",
+        "title": "未整理整套分镜提示词",
+        "original_filename": "提示词库/视频分镜/[仅参考·3分] 未整理整套分镜提示词.md",
+        "sha256": "fe58921cdfe4c5a77913534518e7b6dce15cb8656b16fdc103a170a3573c7264",
+        "original_copy": "sources/T165/original.md",
+        "evidence_file": "sources/T165/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "首个人物分析元任务及三视角最小用例符合主要视觉要求，不覆盖整套工作流。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T165-character-analysis/back.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "8d765bb6cb21d75921c9d1561075079b54489d4d9eaaba75885763f8a121861e"
+          },
+          {
+            "file": "results/T165-character-analysis/front.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "ecd6ddd23e8e586187073027acb365d64c7965db8478d28b485ff227978cf083"
+          },
+          {
+            "file": "results/T165-character-analysis/side.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "c66a200a45c82684e9b8c3ab8042a0fe1e4788264663f831f8deb2bd37599cc9"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/201-T165-back.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T169",
+      "title": "文本拆成连续镜头",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。将{{story}}拆成{{count}}条Next Scene，保留明确图片引用、年代地点和引号内文字，再实际逐镜生成。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "story": {
+          "default": "人物发现一束花，走近、拿起、观察并微笑",
+          "required": true
+        },
+        "count": {
+          "default": 4,
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T169",
+        "title": "2509+WAN2.2，LLM",
+        "original_filename": "提示词库/视频分镜/[已投产·4分] 2509+WAN2.2，LLM.md",
+        "sha256": "dc90f3234f0630761b57d5c4de3601038ae82a38712026861995821e900a849a",
+        "original_copy": "sources/T169/original.md",
+        "evidence_file": "sources/T169/test-evidence.json",
+        "source_test_status": "存在问题",
+        "source_conclusion": "元任务已执行两图，关键文字正确但木牌与门结构明显漂移。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T169-wan-text-shots/scene1.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "16ce4162e34365f4ca2ee33694443bd28460b2bcf0f40a8c0c76fbf3f18bc8eb"
+          },
+          {
+            "file": "results/T169-wan-text-shots/scene2.png",
+            "width": 1024,
+            "height": 1536,
+            "sha256": "c5f43e11cb0e51f583234f49df4d32c260a4f5b170e89bbda4e8e3784eede607"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/207-T169-scene1.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "存在问题",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    },
+    {
+      "id": "T171",
+      "title": "连续分镜编辑",
+      "kind": "meta_prompt",
+      "input_mode": "single",
+      "category": "engine",
+      "use_as_style_card": false,
+      "prompt_template": "输入照片/参考素材和用户请求。基于上一张人物场景与{{story}}生成下一镜编辑指令，明确景别、镜头方向、动作小步推进与物件位置；实际生成后再用结果作下一镜参考。\n身份只来自明确绑定的人物照片，不用示例姓名或测试合成人物代替。先输出可执行编辑或生图提示词，实际生成结果必须另行验收。",
+      "variables": {
+        "story": {
+          "default": "人物发现一束花，走近、拿起、观察并微笑",
+          "required": true
+        }
+      },
+      "source": {
+        "test_id": "T171",
+        "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
+        "original_filename": "提示词库/视频分镜/[已投产·4分] 【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）.md",
+        "sha256": "78a20b281f69ba0b8f85e056171e2a037d74b4c04777f81b2478fe11f4b16d5d",
+        "original_copy": "sources/T171/original.md",
+        "evidence_file": "sources/T171/test-evidence.json",
+        "source_test_status": "符合要求",
+        "source_conclusion": "原版元任务的两个连续静态用例符合主要可见要求。",
+        "source_test_reference_material": [
+          "results/T164-qwen-next3/scene3.png"
+        ],
+        "source_images": [
+          {
+            "file": "results/T171-continuity-meta/scene1.png",
+            "width": 941,
+            "height": 1672,
+            "sha256": "5e63599e253f4ea6631bd59c660b588a801b10e5f8a91c8d3f88d9326beb5a69"
+          },
+          {
+            "file": "results/T171-continuity-meta/scene2.png",
+            "width": 941,
+            "height": 1672,
+            "sha256": "0458c645683a379eb0b362868971bd6cb4d8bee9069896dd743c20d50b0e2a4b"
+          }
+        ],
+        "preview_url": "https://raw.githubusercontent.com/laoxuaichirou/prompt/image-test-delivery-2026-10-18/delivery/previews/210-T171-scene1.jpg",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "source_test_status": "符合要求",
+      "normalized_prompt_test_status": "未执行生图回归",
+      "pipeline": "文本规划/指令编译→图像编辑或生图→视觉验收",
+      "reference_binding": "single表示输入人物或人物场景照；extra按工具说明提供独立身份、服装、场景或姿态来源。"
+    }
+  ]
+}

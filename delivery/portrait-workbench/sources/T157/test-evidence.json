@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T157",
+    "title": "将明星变成趣味十足的3D卡通肖像",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman in the synthetic reference, wearing her white T-shirt, navy trousers and white sneakers. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；不声称原示例人物或原模型实测。",
+      "姓名槽填虚构合成人物；这是模板适配测试，不冒称真实明星还原。"
+    ],
+    "selected_source_prompt": "Full-body 3D caricature of [Character Name\\] in Pixar/DreamWorks style, featuring expressive large eyes, slightly oversized head, and subtly exaggerated facial features. Realistic skin with soft subsurface scattering, detailed hair, and a gentle warm smile. Smooth polished surfaces with subtle fabric texture on clothing. Dynamic pose showing personality, with full body visible and balanced proportions. Soft ambient lighting, warm reddish-orange gradient background. Cinematic quality, high detail, vibrant yet natural colors, stylized charm with balanced realism.",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the synthetic reference, wearing her white T-shirt, navy trousers and white sneakers. Full-body 3D caricature of the fictional adult woman from the reference in Pixar/DreamWorks style, featuring expressive large eyes, slightly oversized head, and subtly exaggerated facial features. Realistic skin with soft subsurface scattering, detailed hair, and a gentle warm smile. Smooth polished surfaces with subtle fabric texture on clothing. Dynamic pose showing personality, with full body visible and balanced proportions. Soft ambient lighting, warm reddish-orange gradient background. Cinematic quality, high detail, vibrant yet natural colors, stylized charm with balanced realism."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the synthetic reference, wearing her white T-shirt, navy trousers and white sneakers. Full-body 3D caricature of the fictional adult woman from the reference in Pixar/DreamWorks style, featuring expressive large eyes, slightly oversized head, and subtly exaggerated facial features. Realistic skin with soft subsurface scattering, detailed hair, and a gentle warm smile. Smooth polished surfaces with subtle fabric texture on clothing. Dynamic pose showing personality, with full body visible and balanced proportions. Soft ambient lighting, warm reddish-orange gradient background. Cinematic quality, high detail, vibrant yet natural colors, stylized charm with balanced realism.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 将明星变成趣味十足的3D卡通肖像.md",
+    "original_sha256": "065fc14f737fc36f2a804169117a512d8781940ee9f9b0d936139795ae341a91",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "全身3D/造型/背景",
+        "result": "符合要求",
+        "evidence": "虚构人物全身可见，大眼略大头暖笑，白T深蓝裤白鞋，红橙渐变背景，柔光与抛光材质。"
+      },
+      {
+        "requirement": "名人还原",
+        "result": "未执行",
+        "evidence": "角色槽明确填合成人物，未测真实明星还原，不将标题当作已测试证据。"
+      }
+    ],
+    "conclusion": "所填虚构角色的3D卡通模板符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T157-character-cartoon/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "03d1b8f0178747381c1b7ec8b9d767b9f2e2b790b4f1f9a73ee05860387c0a30"
+    }
+  ]
+}

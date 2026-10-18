@@ -1,0 +1,78 @@
+{
+  "test": {
+    "test_id": "T173",
+    "title": "镜头角度与提示词：6 - Camera Angles & Movements",
+    "type": "静态镜头模板对比",
+    "test_input": "同一成人合成参考，分别高角度与低角度，保留白T深蓝裤灰棚。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原文主体位置只留反斜杠，填同一虚构成年女性；同衣同景供机位对比。",
+      "其余静态镜头模板未执行，后半纯运镜目录不可用静态图验收。"
+    ],
+    "selected_source_prompt": "\"High angle shot of \\ seen from above, looking up, cinematic lighting”\n\"Low angle shot of \\ seen from below, looking down, cinematic lighting, powerful stance”",
+    "final_prompt": [
+      "High angle shot of the fictional 32-year-old adult woman from the reference seen from above, looking up, cinematic lighting Keep her original outfit and gray studio background, one photograph.",
+      "Low angle shot of the fictional 32-year-old adult woman from the reference seen from below, looking down, cinematic lighting, powerful stance Keep her original outfit and gray studio background, one photograph."
+    ],
+    "cases": [
+      {
+        "name": "high",
+        "prompt": "High angle shot of the fictional 32-year-old adult woman from the reference seen from above, looking up, cinematic lighting Keep her original outfit and gray studio background, one photograph.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "low",
+        "prompt": "Low angle shot of the fictional 32-year-old adult woman from the reference seen from below, looking down, cinematic lighting, powerful stance Keep her original outfit and gray studio background, one photograph.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/视频分镜/[已投产·4分] 镜头角度与提示词：6 - Camera Angles & Movements.md",
+    "original_sha256": "0e96a453a8e6fecb54065c206fa37527629658f74f66e58643aba3c735fe795a",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "同人高低角对比",
+        "result": "符合要求",
+        "evidence": "高角度图明显从上方看、人物抬眼；低角度图地面仰拍、人物向下看，白T深蓝裤灰棚均保留。"
+      },
+      {
+        "requirement": "范围",
+        "result": "未执行",
+        "evidence": "仅高/低静态模板，其余静态模板与全部真实运镜未执行；两图不证明稳定性。"
+      }
+    ],
+    "conclusion": "所选高低机位两图对比符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T173-camera-angles/high.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6fa1a0733c8b8d9012f39214e0ccb6d19846c276de9a795aa90808ee6b48f5c5"
+    },
+    {
+      "file": "results/T173-camera-angles/low.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "495ce13c51957e70ce02608830a2c2775bab987717c6a9384058029c5d494130"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "test": {
+    "test_id": "T010",
+    "title": "待测试模板",
+    "type": "四个子页索引，无实际模板正文",
+    "test_input": "四子页逐一在附件中按标题查找，均无对应正文文件。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "changes": [],
+    "final_prompt": "未构造，缺失的四个原版模板不自行补写。",
+    "missing": [
+      "分镜制作类（3个子场景）",
+      "图像反推+用户需求（融合提示词模板）",
+      "图像反推+用户需求（多模板：动作/打斗/运镜）",
+      "风格迁移模板（图像转绘，细节一致）"
+    ],
+    "original_filename": "提示词库/视频分镜/[待测试·3分] 待测试模板.md",
+    "original_sha256": "b855e3513e253bb3679796e6cfc22b339072381aec8db1501973f574f1c5920d",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "四子页分别实测",
+        "result": "全部阻塞",
+        "evidence": "正文只有四个<page url>链接，222文件清单内未找到子页正文；未用自行编写模板替代。"
+      }
+    ],
+    "conclusion": "4个子页均缺失，原条目阻塞，未生成图片，不能标生图通过。"
+  },
+  "images": []
+}

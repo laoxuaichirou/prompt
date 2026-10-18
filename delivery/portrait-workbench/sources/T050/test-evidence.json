@@ -1,0 +1,41 @@
+{
+  "test": {
+    "test_id": "T050",
+    "title": "白色枕头上的睡眼惺忪女孩",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一32岁合成成年女性，白枕头与吊带家居肖像。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文Original，去除HTML换行及JSON转义残留。",
+      "修复retouch值内部real skin的未转义双引号，仅语法修复；原文另存。",
+      "明确32岁成年人、完整穿着日常家居照。"
+    ],
+    "selected_source_prompt": "{\n  \"scene\": {\n    \"location\": \"Bedroom, in bed\",\n    \"background\": \"White pillows and soft, rumpled bedsheets, soft morning light\"\n  },\n  \"subject\": {\n    \"age\": \"adult\",\n    \"description\": \"East Asian woman, beautiful 'just woke up' messy hair, sleepy eyes\",\n    \"wardrobe\": \"Simple, thin-strap camisole (e.g., silk or cotton), strap slightly falling off one shoulder\",\n    \"accessories\": \"None\",\n    \"pose\": \"Lying on her stomach in bed, propped up on her elbows, looking at the camera\",\n    \"expression\": \"Soft, sleepy smile, intimate, 'good morning' look\",\n    \"gaze\": \"Direct to camera, soft and alluring\",\n    \"body_notes\": \"Photorealistic, realistic adult proportions; natural skin texture, visible collarbones, 'sleepy' flush\"\n  },\n  \"camera\": {\n    \"sensor\": \"full_frame\",\n    \"focal_length_mm\": 50,\n    \"aperture_f\": 1.8,\n    \"shutter_s\": 0.01,\n    \"iso\": 400,\n    \"white_balance_k\": 5500,\n    \"distance_m\": 1.5,\n    \"camera_height_m\": 0.8,\n    \"framing\": \"Close-up (chest-up), at eye level with her\",\n    \"focus\": \"eye_detect_AF on nearest eye\"\n  },\n  \"lighting\": {\n    \"key\": \"Large, diffused window light from the side, creating very soft shadows\",\n    \"fill\": \"Bounced light from the white sheets\",\n    \"hair\": \"Soft halo from the window\",\n    \"catchlights\": \"Large, soft window catchlights\",\n    \"notes\": \"Very soft, high-key, intimate\"\n  },\n  \"color_grade\": {\n    \"style\": \"Intimate, soft, 'morning' aesthetic\",\n    \"palette\": \"Whites, skin tones, pastels; soft, luminous skin\",\n    \"contrast\": \"Very low, dreamy\",\n    \"saturation\": \"Moderate, soft\"\n  },\n  \"makeup\": {\n    \"eyes\": \"None, 'bare face' look\",\n    \"cheeks\": \"Natural, sleepy flush\",\n    \"lips\": \"Natural, hydrated\"\n  },\n  \"postprocess\": {\n    \"retouch\": \"Professional retouching, maintain \\\"real skin\\\" look\",\n    \"clarity\": \"Selective clarity on eyes and lashes\",\n    \"dodge_burn\": \"Subtle dodge on eyes and collarbone\",\n    \"vignette\": \"Subtle, bright vignette\"\n  },\n  \"art_direction\": {\n    \"mood\": \"Flirty, intimate, ambiguous, soft, sleepy, alluring\",\n    \"keywords\": [\"photorealistic\", \"flirty\", \"morning\", \"in bed\", \"ambiguous\", \"natural beauty\", \"sleepy\"]\n  },\n  \"negative_prompts\": [\n    \"nsfw\",\n    \"underage look\",\n    \"text or logos\",\n    \"plastic doll skin\",\n    \"cg\",\n    \"3d render\",\n    \"anime\",\n    \"heavy makeup\",\n    \"warped hands\"\n  ]\n}",
+    "final_prompt": "The supplied person is an entirely fictional32-year-old ADULT. This is a clothed casual morning portrait; no nudity or sexual activity. Execute the visual JSON, not a JSON response. {\n  \"scene\": {\n    \"location\": \"Bedroom, in bed\",\n    \"background\": \"White pillows and soft, rumpled bedsheets, soft morning light\"\n  },\n  \"subject\": {\n    \"age\": \"adult\",\n    \"description\": \"East Asian woman, beautiful 'just woke up' messy hair, sleepy eyes\",\n    \"wardrobe\": \"Simple, thin-strap camisole (e.g., silk or cotton), strap slightly falling off one shoulder\",\n    \"accessories\": \"None\",\n    \"pose\": \"Lying on her stomach in bed, propped up on her elbows, looking at the camera\",\n    \"expression\": \"Soft, sleepy smile, intimate, 'good morning' look\",\n    \"gaze\": \"Direct to camera, soft and alluring\",\n    \"body_notes\": \"Photorealistic, realistic adult proportions; natural skin texture, visible collarbones, 'sleepy' flush\"\n  },\n  \"camera\": {\n    \"sensor\": \"full_frame\",\n    \"focal_length_mm\": 50,\n    \"aperture_f\": 1.8,\n    \"shutter_s\": 0.01,\n    \"iso\": 400,\n    \"white_balance_k\": 5500,\n    \"distance_m\": 1.5,\n    \"camera_height_m\": 0.8,\n    \"framing\": \"Close-up (chest-up), at eye level with her\",\n    \"focus\": \"eye_detect_AF on nearest eye\"\n  },\n  \"lighting\": {\n    \"key\": \"Large, diffused window light from the side, creating very soft shadows\",\n    \"fill\": \"Bounced light from the white sheets\",\n    \"hair\": \"Soft halo from the window\",\n    \"catchlights\": \"Large, soft window catchlights\",\n    \"notes\": \"Very soft, high-key, intimate\"\n  },\n  \"color_grade\": {\n    \"style\": \"Intimate, soft, 'morning' aesthetic\",\n    \"palette\": \"Whites, skin tones, pastels; soft, luminous skin\",\n    \"contrast\": \"Very low, dreamy\",\n    \"saturation\": \"Moderate, soft\"\n  },\n  \"makeup\": {\n    \"eyes\": \"None, 'bare face' look\",\n    \"cheeks\": \"Natural, sleepy flush\",\n    \"lips\": \"Natural, hydrated\"\n  },\n  \"postprocess\": {\n    \"retouch\": \"Professional retouching, maintain \\\"real skin\\\" look\",\n    \"clarity\": \"Selective clarity on eyes and lashes\",\n    \"dodge_burn\": \"Subtle dodge on eyes and collarbone\",\n    \"vignette\": \"Subtle, bright vignette\"\n  },\n  \"art_direction\": {\n    \"mood\": \"Flirty, intimate, ambiguous, soft, sleepy, alluring\",\n    \"keywords\": [\"photorealistic\", \"flirty\", \"morning\", \"in bed\", \"ambiguous\", \"natural beauty\", \"sleepy\"]\n  },\n  \"negative_prompts\": [\n    \"nsfw\",\n    \"underage look\",\n    \"text or logos\",\n    \"plastic doll skin\",\n    \"cg\",\n    \"3d render\",\n    \"anime\",\n    \"heavy makeup\",\n    \"warped hands\"\n  ]\n}",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 白色枕头上的睡眼惺忪女孩.md",
+    "original_sha256": "329cdbf337ac28e926302cc3626fa52684c2a8e16b557adbca025114881f87b9",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际生图",
+        "result": "阻塞",
+        "evidence": "工具HTTP400、moderation_blocked、output阶段。返回类别：sexual。没有返回图片，未尝试绕过。"
+      }
+    ],
+    "conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。"
+  },
+  "images": []
+}

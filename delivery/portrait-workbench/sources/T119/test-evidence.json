@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T119",
+    "title": "女性面部涂口红和唇彩效果的图像",
+    "type": "四表情/光泽唇部网格",
+    "test_input": "同一32岁合成成年女性参考，按英文2×2四表情叙事，角色按原文虚构韩国女性设定。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "标题与正文不同：本例验收光泽唇部和四种表情，不宣称真实口红色号/产品上脸对照",
+      "保留咬唇、眨眼等原表情，不将其替换成更易成功的姿态"
+    ],
+    "selected_source_prompt": "1. Using the attached image as a motif, we generated a difference image of a woman's face with lipstick and glossy lips. The image consists of four scenes divided into a 2x2 grid.\n\n2. A 2x2 grid cinematic photo collage. Four close-up portraits of the same beautiful Korean woman, creating an emotional narrative sequence.\n\nTop-left panel: Cold and aloof expression, staring directly at the camera, high fashion vibe.\nTop-right panel: A playful wink and a subtle smirk, looking side-glance.\nBottom-left panel: Biting lower lip, looking shy and slightly flirtatious, soft gaze.\nBottom-right panel: A genuine bright laugh, eyes crinkled with joy, head tilted back slightly.\n\nStyle: Analog film photography, heavy film grain, soft focus, dreamlike lighting, glossy lips, dewy skin texture, emotional atmosphere.\n",
+    "final_prompt": [
+      "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n1. Using the attached image as a motif, we generated a difference image of a woman's face with lipstick and glossy lips. The image consists of four scenes divided into a 2x2 grid.\n\n2. A 2x2 grid cinematic photo collage. Four close-up portraits of the same beautiful Korean woman, creating an emotional narrative sequence.\n\nTop-left panel: Cold and aloof expression, staring directly at the camera, high fashion vibe.\nTop-right panel: A playful wink and a subtle smirk, looking side-glance.\nBottom-left panel: Biting lower lip, looking shy and slightly flirtatious, soft gaze.\nBottom-right panel: A genuine bright laugh, eyes crinkled with joy, head tilted back slightly.\n\nStyle: Analog film photography, heavy film grain, soft focus, dreamlike lighting, glossy lips, dewy skin texture, emotional atmosphere.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n1. Using the attached image as a motif, we generated a difference image of a woman's face with lipstick and glossy lips. The image consists of four scenes divided into a 2x2 grid.\n\n2. A 2x2 grid cinematic photo collage. Four close-up portraits of the same beautiful Korean woman, creating an emotional narrative sequence.\n\nTop-left panel: Cold and aloof expression, staring directly at the camera, high fashion vibe.\nTop-right panel: A playful wink and a subtle smirk, looking side-glance.\nBottom-left panel: Biting lower lip, looking shy and slightly flirtatious, soft gaze.\nBottom-right panel: A genuine bright laugh, eyes crinkled with joy, head tilted back slightly.\n\nStyle: Analog film photography, heavy film grain, soft focus, dreamlike lighting, glossy lips, dewy skin texture, emotional atmosphere.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 女性面部涂口红和唇彩效果的图像.md",
+    "original_sha256": "fc92a24b220c2b54ee83ae4907ab81f37ac6e6b2f2a4661317481082c46a960e",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "四格/同一人物/胶片光泽",
+        "result": "基本符合",
+        "evidence": "同一短发人物、四格，左上冷淡、右上眨眼微笑、右下仰头大笑；唇部光泽与胶片边框颗粒可见。"
+      },
+      {
+        "requirement": "左下咬下唇",
+        "result": "存在问题",
+        "evidence": "左下为手指触下唇、嘴微张，未清楚表现咬住下唇。"
+      },
+      {
+        "requirement": "产品验证",
+        "result": "未验证",
+        "evidence": "原文未指定实际口红色号或产品，不将画面当作真实上唇效果验证。"
+      }
+    ],
+    "conclusion": "主要表情与唇部光泽已实现，左下咬唇动作未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T119-lip-emotion4/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4dedbfb547cd9f93743793c8a38ca80fe2a588717e36e6c71454e4c960709ee8"
+    }
+  ]
+}

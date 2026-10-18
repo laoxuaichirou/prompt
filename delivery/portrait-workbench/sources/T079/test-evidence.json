@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T079",
+    "title": "【人像】马斯克励志海报",
+    "type": "直接JSON平面设计指令",
+    "test_input": "使用原文埃隆·马斯克与原文IF YOU DREAM IT YOU CAN DO IT.的黑白半脸字形海报。没有将标语当作其真实言论的来源证据。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "移除嵌套Markdown围栏和孤立句号；JSON字符串中的subject name/quote伪占位语法只保留具体姓名和原标语",
+      "人物为原文指定公众人物，非自制身份参考；不声称真实拍摄或代言"
+    ],
+    "selected_source_prompt": "{\n  \"meta\": {\n    \"image_quality\": \"高\",\n    \"image_type\": \"数字合成 / 平面设计\",\n    \"resolution_estimation\": \"高分辨率竖版海报格式\",\n    \"file_characteristics\": {\n      \"compression_artifacts\": \"低\",\n      \"noise_level\": \"低（照片纹理中可见胶片颗粒）\",\n      \"lens_type_estimation\": \"长焦（面部压缩感暗示）\"\n    }\n  },\n  \"global_context\": {\n    \"scene_description\": \"一张高对比度、黑白分体构图的肖像，描绘了 {\\\"subject name\\\" \\\"埃隆·马斯克\\\"}。图像的左半部分展示了他脸部右侧（观者左侧）逼真、高细节的照片。图像的右半部分是白色背景，他脸部左侧（观者右侧）仅通过大写、粗体、垂直堆叠的衬线字体形状显现，文字内容为“{\\\"quote\\\" \\\"IF YOU DREAM IT YOU CAN DO IT.\\\"}\\\"。\",\n    \"environment_type\": \"工作室/平面艺术\",\n    \"time_of_day\": \"无法辨别\",\n    \"weather_atmosphere\": \"富有远见、激励人心、强烈\",\n    \"lighting\": {\n      \"source\": \"人工影室灯光\",\n      \"direction\": \"侧光（从左侧照亮脸部）\",\n      \"quality\": \"硬朗、戏剧性的明暗对比\",\n      \"color_temperature\": \"单色（黑白）\"\n    },\n    \"color_palette\": {\n      \"dominant_hex_estimates\": [\n        \"#FFFFFF\",\n        \"#000000\",\n        \"#333333\",\n        \"#888888\"\n      ],\n      \"accent_colors\": [],\n      \"contrast_level\": \"高\"\n    }\n  },\n  \"composition\": {\n    \"camera_angle\": \"平视\",\n    \"framing\": \"特写肖像\",\n    \"depth_of_field\": \"深（所有元素都清晰）\",\n    \"focal_point\": \"主体的眼睛和排版信息\",\n    \"symmetry_type\": \"垂直分割不对称\",\n    \"rule_of_thirds_alignment\": \"分割线大致位于脸部的垂直中心线（鼻梁）\"\n  },\n  \"objects\": [\n    {\n      \"id\": \"obj_subject_face\",\n      \"label\": \"埃隆·马斯克（脸部）\",\n      \"category\": \"人物\",\n      \"location\": {\n        \"relative_position\": \"画布左半部分\",\n        \"bounding_box_percentage\": {\n          \"x\": 0.0,\n          \"y\": 0.0,\n          \"width\": 0.5,\n          \"height\": 1.0\n        }\n      },\n      \"dimensions_relative\": \"大（充满高度）\",\n      \"distance_from_camera\": \"特写\",\n      \"pose_orientation\": \"正面，略微倾斜，专注沉思的目光\",\n      \"material\": \"皮肤/生物\",\n      \"surface_properties\": {\n        \"texture\": \"光滑的皮肤，微弱的胡茬，特征性的面部结构\",\n        \"reflectivity\": \"低（鼻子/脸颊有自然皮肤油脂光泽）\",\n        \"micro_details\": \"细微的鱼尾纹，顶部可见直发/波浪发质\",\n        \"wear_state\": \"不适用\"\n      },\n      \"color_details\": {\n        \"base_color_hex\": \"#808080\",\n        \"secondary_colors\": [\n          \"#000000\",\n          \"#FFFFFF\"\n        ],\n        \"gradient_or_pattern\": \"灰度连续色调\"\n      },\n      \"interaction_with_light\": {}\n    }\n  ]\n}",
+    "final_prompt": [
+      "根据以下设计JSON生成一张竖版黑白肖像排版海报。标语只作为用户给定设计文案，不加署名，不代表可验证的人物原话。\n{\"meta\": {\"image_quality\": \"高\", \"image_type\": \"数字合成 / 平面设计\", \"resolution_estimation\": \"高分辨率竖版海报格式\", \"file_characteristics\": {\"compression_artifacts\": \"低\", \"noise_level\": \"低（照片纹理中可见胶片颗粒）\", \"lens_type_estimation\": \"长焦（面部压缩感暗示）\"}}, \"global_context\": {\"scene_description\": \"一张高对比度、黑白分体构图的肖像，描绘了 埃隆·马斯克。图像的左半部分展示了他脸部右侧（观者左侧）逼真、高细节的照片。图像的右半部分是白色背景，他脸部左侧（观者右侧）仅通过大写、粗体、垂直堆叠的衬线字体形状显现，文字内容为“IF YOU DREAM IT YOU CAN DO IT.\\\"。\", \"environment_type\": \"工作室/平面艺术\", \"time_of_day\": \"无法辨别\", \"weather_atmosphere\": \"富有远见、激励人心、强烈\", \"lighting\": {\"source\": \"人工影室灯光\", \"direction\": \"侧光（从左侧照亮脸部）\", \"quality\": \"硬朗、戏剧性的明暗对比\", \"color_temperature\": \"单色（黑白）\"}, \"color_palette\": {\"dominant_hex_estimates\": [\"#FFFFFF\", \"#000000\", \"#333333\", \"#888888\"], \"accent_colors\": [], \"contrast_level\": \"高\"}}, \"composition\": {\"camera_angle\": \"平视\", \"framing\": \"特写肖像\", \"depth_of_field\": \"深（所有元素都清晰）\", \"focal_point\": \"主体的眼睛和排版信息\", \"symmetry_type\": \"垂直分割不对称\", \"rule_of_thirds_alignment\": \"分割线大致位于脸部的垂直中心线（鼻梁）\"}, \"objects\": [{\"id\": \"obj_subject_face\", \"label\": \"埃隆·马斯克（脸部）\", \"category\": \"人物\", \"location\": {\"relative_position\": \"画布左半部分\", \"bounding_box_percentage\": {\"x\": 0.0, \"y\": 0.0, \"width\": 0.5, \"height\": 1.0}}, \"dimensions_relative\": \"大（充满高度）\", \"distance_from_camera\": \"特写\", \"pose_orientation\": \"正面，略微倾斜，专注沉思的目光\", \"material\": \"皮肤/生物\", \"surface_properties\": {\"texture\": \"光滑的皮肤，微弱的胡茬，特征性的面部结构\", \"reflectivity\": \"低（鼻子/脸颊有自然皮肤油脂光泽）\", \"micro_details\": \"细微的鱼尾纹，顶部可见直发/波浪发质\", \"wear_state\": \"不适用\"}, \"color_details\": {\"base_color_hex\": \"#808080\", \"secondary_colors\": [\"#000000\", \"#FFFFFF\"], \"gradient_or_pattern\": \"灰度连续色调\"}, \"interaction_with_light\": {}}]}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [],
+        "prompt": "根据以下设计JSON生成一张竖版黑白肖像排版海报。标语只作为用户给定设计文案，不加署名，不代表可验证的人物原话。\n{\"meta\": {\"image_quality\": \"高\", \"image_type\": \"数字合成 / 平面设计\", \"resolution_estimation\": \"高分辨率竖版海报格式\", \"file_characteristics\": {\"compression_artifacts\": \"低\", \"noise_level\": \"低（照片纹理中可见胶片颗粒）\", \"lens_type_estimation\": \"长焦（面部压缩感暗示）\"}}, \"global_context\": {\"scene_description\": \"一张高对比度、黑白分体构图的肖像，描绘了 埃隆·马斯克。图像的左半部分展示了他脸部右侧（观者左侧）逼真、高细节的照片。图像的右半部分是白色背景，他脸部左侧（观者右侧）仅通过大写、粗体、垂直堆叠的衬线字体形状显现，文字内容为“IF YOU DREAM IT YOU CAN DO IT.\\\"。\", \"environment_type\": \"工作室/平面艺术\", \"time_of_day\": \"无法辨别\", \"weather_atmosphere\": \"富有远见、激励人心、强烈\", \"lighting\": {\"source\": \"人工影室灯光\", \"direction\": \"侧光（从左侧照亮脸部）\", \"quality\": \"硬朗、戏剧性的明暗对比\", \"color_temperature\": \"单色（黑白）\"}, \"color_palette\": {\"dominant_hex_estimates\": [\"#FFFFFF\", \"#000000\", \"#333333\", \"#888888\"], \"accent_colors\": [], \"contrast_level\": \"高\"}}, \"composition\": {\"camera_angle\": \"平视\", \"framing\": \"特写肖像\", \"depth_of_field\": \"深（所有元素都清晰）\", \"focal_point\": \"主体的眼睛和排版信息\", \"symmetry_type\": \"垂直分割不对称\", \"rule_of_thirds_alignment\": \"分割线大致位于脸部的垂直中心线（鼻梁）\"}, \"objects\": [{\"id\": \"obj_subject_face\", \"label\": \"埃隆·马斯克（脸部）\", \"category\": \"人物\", \"location\": {\"relative_position\": \"画布左半部分\", \"bounding_box_percentage\": {\"x\": 0.0, \"y\": 0.0, \"width\": 0.5, \"height\": 1.0}}, \"dimensions_relative\": \"大（充满高度）\", \"distance_from_camera\": \"特写\", \"pose_orientation\": \"正面，略微倾斜，专注沉思的目光\", \"material\": \"皮肤/生物\", \"surface_properties\": {\"texture\": \"光滑的皮肤，微弱的胡茬，特征性的面部结构\", \"reflectivity\": \"低（鼻子/脸颊有自然皮肤油脂光泽）\", \"micro_details\": \"细微的鱼尾纹，顶部可见直发/波浪发质\", \"wear_state\": \"不适用\"}, \"color_details\": {\"base_color_hex\": \"#808080\", \"secondary_colors\": [\"#000000\", \"#FFFFFF\"], \"gradient_or_pattern\": \"灰度连续色调\"}, \"interaction_with_light\": {}}]}",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/海报封面/[已投产·4分] 【人像】马斯克励志海报.md",
+    "original_sha256": "17db45fb6cf9ae2dc7c06e0f68bc5fe214a7fe84e3dac2548becc8854a890c28",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "黑白分体与字形人脸",
+        "result": "符合要求",
+        "evidence": "左半为高对比人脸照片风，右半白底用大衬线字填出脸的另一侧，分割近鼻梁。"
+      },
+      {
+        "requirement": "文案",
+        "result": "符合要求",
+        "evidence": "IF YOU DREAM IT YOU CAN DO IT.各词及句号齐全，分行紧排，没有额外标语。"
+      },
+      {
+        "requirement": "人物与事实范围",
+        "result": "模型初评/未验证",
+        "evidence": "人物相似性为主观初评，没有原照片对照；标语为原文设计输入，不是人物言论事实认证。"
+      }
+    ],
+    "conclusion": "黑白半脸字形海报最小用例符合主要设计要求，人物相似性仅模型初评。"
+  },
+  "images": [
+    {
+      "file": "results/T079-musk-poster/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "2a4482ea65995018e7f036750e8adb1fb532bae1c3d4a16eb9626510164a3897"
+    }
+  ]
+}

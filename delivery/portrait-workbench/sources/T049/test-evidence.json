@@ -1,0 +1,35 @@
+{
+  "test": {
+    "test_id": "T049",
+    "title": "烈焰新娘燃情玫瑰",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "32岁虚构成年新娘，白玫瑰火焰、蕾丝婚纱和烟雾。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文完整正式提示词；明确虚构成人；不宣称真实火焰摄影。"
+    ],
+    "selected_source_prompt": "A cinematic, dark-romantic portrait of a mysterious bride holding a bouquet of white roses that are on fire, orange flames consuming the flowers, soft glowing embers and smoke in the air. The woman is wearing an elegant white lace wedding dress, hair in a loose elegant updo, holding a cigarette between her fingers while exhaling smoke in front of her face. Dramatic low-key lighting, warm firelight illuminating her face from the side, deep shadows, moody atmosphere, gothic aesthetic, ultra-detailed, photorealistic, shallow depth of field, 85mm lens look, high contrast, soft skin texture, cinematic color grading, dark background, volumetric smoke, fantasy realism, 8k quality.\n",
+    "final_prompt": "Use an entirely fictional adult woman aged32 in an artistic fantasy portrait. A cinematic, dark-romantic portrait of a mysterious bride holding a bouquet of white roses that are on fire, orange flames consuming the flowers, soft glowing embers and smoke in the air. The woman is wearing an elegant white lace wedding dress, hair in a loose elegant updo, holding a cigarette between her fingers while exhaling smoke in front of her face. Dramatic low-key lighting, warm firelight illuminating her face from the side, deep shadows, moody atmosphere, gothic aesthetic, ultra-detailed, photorealistic, shallow depth of field, 85mm lens look, high contrast, soft skin texture, cinematic color grading, dark background, volumetric smoke, fantasy realism, 8k quality.\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 烈焰新娘燃情玫瑰.md",
+    "original_sha256": "e50a4fde623769ce085db23a34a3f2fd190e7931900ceb5ac10967094bd7dbab",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际生图",
+        "result": "阻塞",
+        "evidence": "工具HTTP400、moderation_blocked、output阶段。返回类别：sexual。没有返回图片，未尝试绕过。"
+      }
+    ],
+    "conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。"
+  },
+  "images": []
+}

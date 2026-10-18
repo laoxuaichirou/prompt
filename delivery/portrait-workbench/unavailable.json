@@ -1,0 +1,483 @@
+{
+  "disabled_by_tool": [
+    {
+      "id": "T043",
+      "title": "高级时装工作室照片拼贴画",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T043",
+        "title": "高级时装工作室照片拼贴画",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] 高级时装工作室照片拼贴画.md",
+        "sha256": "ab89596785d932c81ee8029f1d16f4ec260707ffd4e4dabf521d64a440583e11",
+        "original_copy": "sources/T043/original.md",
+        "evidence_file": "sources/T043/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "原版适配请求被生图工具输出安全审核拦截，无图片，绝不记为生图通过。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T046",
+      "title": "人物和宝可梦",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T046",
+        "title": "人物和宝可梦",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] 人物和宝可梦.md",
+        "sha256": "0b90b48dcef0147c40914b354be33e2ccec1d598814cd3532a9a43d264448590",
+        "original_copy": "sources/T046/original.md",
+        "evidence_file": "sources/T046/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T047",
+      "title": "撒娇少女特写",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T047",
+        "title": "撒娇少女特写",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] 撒娇少女特写.md",
+        "sha256": "cedb401bbd83a27b9d288af453f1db38c114cf4b6372cb849075873b8eb00812",
+        "original_copy": "sources/T047/original.md",
+        "evidence_file": "sources/T047/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T049",
+      "title": "烈焰新娘燃情玫瑰",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T049",
+        "title": "烈焰新娘燃情玫瑰",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] 烈焰新娘燃情玫瑰.md",
+        "sha256": "e50a4fde623769ce085db23a34a3f2fd190e7931900ceb5ac10967094bd7dbab",
+        "original_copy": "sources/T049/original.md",
+        "evidence_file": "sources/T049/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T050",
+      "title": "白色枕头上的睡眼惺忪女孩",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T050",
+        "title": "白色枕头上的睡眼惺忪女孩",
+        "original_filename": "提示词库/人像摄影/[已投产·5分] 白色枕头上的睡眼惺忪女孩.md",
+        "sha256": "329cdbf337ac28e926302cc3626fa52684c2a8e16b557adbca025114881f87b9",
+        "original_copy": "sources/T050/original.md",
+        "evidence_file": "sources/T050/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "生图工具输出审核拦截，无图片，不得标生图通过；不能据此推断原模型的生成结果。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T114",
+      "title": "【人像】第一人称视角牵手照片",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T114",
+        "title": "【人像】第一人称视角牵手照片",
+        "original_filename": "提示词库/人像摄影/[已投产·3分] 【人像】第一人称视角牵手照片.md",
+        "sha256": "3032ad42e3fe11efd11b25ab46d728a8ab5763013ad6d95cd604e5489ccff3d7",
+        "original_copy": "sources/T114/original.md",
+        "evidence_file": "sources/T114/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "虚构成年适配版亦被工具输入过滤拒绝；无图片，绝不能标记生图实测通过。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T116",
+      "title": "五彩缤纷的电影级照片",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T116",
+        "title": "五彩缤纷的电影级照片",
+        "original_filename": "提示词库/人像摄影/[已投产·3分] 五彩缤纷的电影级照片.md",
+        "sha256": "3bb593526d4f8734f5f86480862cdc8da7e046bde2060605e8e6a9f1c4b86d75",
+        "original_copy": "sources/T116/original.md",
+        "evidence_file": "sources/T116/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "已实际调用，输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T118",
+      "title": "垂直三格拼贴画",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T118",
+        "title": "垂直三格拼贴画",
+        "original_filename": "提示词库/人像摄影/[已投产·3分] 垂直三格拼贴画.md",
+        "sha256": "65bc920dfd5b651ca29ba604fb97d8b31b3747015957705906eb395014c494fe",
+        "original_copy": "sources/T118/original.md",
+        "evidence_file": "sources/T118/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "已实际调用，输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T135",
+      "title": "人物和大型耿鬼",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T135",
+        "title": "人物和大型耿鬼",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 人物和大型耿鬼.md",
+        "sha256": "9d8fa7b32d0b408adbdc2acdb4870828fc252308eb36cfecdd9dbdb83919c142",
+        "original_copy": "sources/T135/original.md",
+        "evidence_file": "sources/T135/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "工具输出过滤阻塞，无图不能验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T144",
+      "title": "居家光影三联画",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T144",
+        "title": "居家光影三联画",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 居家光影三联画.md",
+        "sha256": "4e36dd7937c25fe10882b217e5e553a519a9eb7cd966b71c80149334a9ab729c",
+        "original_copy": "sources/T144/original.md",
+        "evidence_file": "sources/T144/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "工具输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T148",
+      "title": "缎面睡衣甜心眨眼萌拍",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T148",
+        "title": "缎面睡衣甜心眨眼萌拍",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 缎面睡衣甜心眨眼萌拍.md",
+        "sha256": "fc6b53e3d8813720860ca8f8bf0d20a38a41dffbe3f838442802977101d5703f",
+        "original_copy": "sources/T148/original.md",
+        "evidence_file": "sources/T148/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T149",
+      "title": "芭比粉巨人娃娃视差术",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T149",
+        "title": "芭比粉巨人娃娃视差术",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 芭比粉巨人娃娃视差术.md",
+        "sha256": "625c679eef818546dac03d1cbf25d8bb00123ffc2248c0bf700fe32370481c79",
+        "original_copy": "sources/T149/original.md",
+        "evidence_file": "sources/T149/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T152",
+      "title": "金棕草地黑西装六格时尚大片",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T152",
+        "title": "金棕草地黑西装六格时尚大片",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 金棕草地黑西装六格时尚大片.md",
+        "sha256": "731f43faf1de922c84d11717134e565c6386bac35cb31cb830b228242fd797b1",
+        "original_copy": "sources/T152/original.md",
+        "evidence_file": "sources/T152/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [
+          "materials/adult-woman-synthetic.png"
+        ],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    },
+    {
+      "id": "T155",
+      "title": "鱼眼镜头下的日本女子比心",
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "本轮工具内容过滤阻塞，没有返回图片；只保留原文及错误记录，不生成换词绕过版本。",
+      "source": {
+        "test_id": "T155",
+        "title": "鱼眼镜头下的日本女子比心",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] 鱼眼镜头下的日本女子比心.md",
+        "sha256": "05a4eab1397845aa5df561dcf3b330cd5e4c00662ccc1f2782469990966d8092",
+        "original_copy": "sources/T155/original.md",
+        "evidence_file": "sources/T155/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "输出过滤阻塞，无图不可验收。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      }
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "T008",
+      "source": {
+        "test_id": "T008",
+        "title": "Banana：好莱坞预告片导演视角单图生成连贯电影分镜",
+        "original_filename": "提示词库/视频分镜/[待测试·3分] Banana：好莱坞预告片导演视角单图生成连贯电影分镜.md",
+        "sha256": "718270586909b8e42ee29ca57d8ac659fdb9605f6ee26738fdb29bf24785a896",
+        "original_copy": "sources/T008/original.md",
+        "evidence_file": "sources/T008/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "原文截断，不能把补写版当原版；未生成图片，不能标生图通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T010",
+      "source": {
+        "test_id": "T010",
+        "title": "待测试模板",
+        "original_filename": "提示词库/视频分镜/[待测试·3分] 待测试模板.md",
+        "sha256": "b855e3513e253bb3679796e6cfc22b339072381aec8db1501973f574f1c5920d",
+        "original_copy": "sources/T010/original.md",
+        "evidence_file": "sources/T010/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "4个子页均缺失，原条目阻塞，未生成图片，不能标生图通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T068",
+      "source": {
+        "test_id": "T068",
+        "title": "Lora相关",
+        "original_filename": "提示词库/模型工具/[仅参考·3分] Lora相关.md",
+        "sha256": "03222468e8852e81708e82efa2107369d6865be162dc29b09c1d18c5e49bd4a5",
+        "original_copy": "sources/T068/original.md",
+        "evidence_file": "sources/T068/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "缺失原正文，未生成图片，不可判生图实测通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T105",
+      "source": {
+        "test_id": "T105",
+        "title": "AI分镜",
+        "original_filename": "提示词库/视频分镜/[仅参考·3分] AI分镜.md",
+        "sha256": "c85bb16537bd15e200654d4832953b7f9e0e84d5d595dbe6f37e2a13804a1299",
+        "original_copy": "sources/T105/original.md",
+        "evidence_file": "sources/T105/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "目录缺少原提示词正文，未生成图片，不能判生图实测通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T108",
+      "source": {
+        "test_id": "T108",
+        "title": "如何将单张图片转化为具有100%角色一致性的电影级AI画面如何将单张图片转化为具有100%角色一致性的电影级AI画面",
+        "original_filename": "提示词库/人像摄影/[仅参考·2分] 如何将单张图片转化为具有100%角色一致性的电影级AI画面如何将单张图片转化为具有100%角色一致性的电影级AI画面.md",
+        "sha256": "0b1c646bc826bca4e88be3c887417b3b649794034ab9627e594c24fdc000b642",
+        "original_copy": "sources/T108/original.md",
+        "evidence_file": "sources/T108/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "缺少实际提示词，未生成图片，不能依据100%宣传语判通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T111",
+      "source": {
+        "test_id": "T111",
+        "title": "示例+sys prompt提示词（人像+Qwen image 中文字设计）",
+        "original_filename": "提示词库/人像摄影/[仅参考·3分] 示例+sys prompt提示词（人像+Qwen image 中文字设计）.md",
+        "sha256": "c75bbb7200e39d6feb291c74529a2cb690f53700c9c6118c87bd23e8a17edaab",
+        "original_copy": "sources/T111/original.md",
+        "evidence_file": "sources/T111/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "缺少原子页正文，未生成图片，不可判实测通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无生图调用",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    },
+    {
+      "id": "T125",
+      "source": {
+        "test_id": "T125",
+        "title": "Nano banana",
+        "original_filename": "提示词库/人像摄影/[已投产·4分] Nano banana.md",
+        "sha256": "d15207598bfe7bd574258f5e4cec6c4ec27e1099055095918d4e144c2a1d6e52",
+        "original_copy": "sources/T125/original.md",
+        "evidence_file": "sources/T125/test-evidence.json",
+        "source_test_status": "阻塞",
+        "source_conclusion": "缺少提示词，无图，不能判生图实测通过。",
+        "source_test_reference_material": [],
+        "source_images": [],
+        "preview_url": null,
+        "tool": "无（缺失未调用）",
+        "image_model": "未知"
+      },
+      "enabled_for_trial": false,
+      "image_prompt_template": null,
+      "reason": "原文/子页不完整，无可用原版预设，不自行补写。"
+    }
+  ]
+}

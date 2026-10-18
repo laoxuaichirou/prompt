@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T126",
+    "title": "【人像】3X3女子肖像照拼贴画",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use this synthetic reference of a fictional 32-year-old adult woman and dog. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/woman-dog-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "与T124近同文，但本文件单独新调用；复用相同合成参考以便对比。"
+    ],
+    "selected_source_prompt": "Create a full Instagram-style 3×3 grid feed composed of nine different portrait images, all featuring the person and the dog from the attached image. ensure that the middle photo is the same photo as the attached image, Ensure the person’s identity, facial structure, and style remain consistent across all nine posts. Each of the 9 images should present a unique concept, outfit, pose, and environment that fits a stylish, modern Instagram aesthetic.\n Include a mix of:\n – Lifestyle shots\n – Cinematic portraits\n– Fashion/streetwear scenes\n – Close-up beauty shots\n – Travel or outdoor vibes\n– Cozy indoor moments\n– Minimalist studio portraits\n\nMake every image hyperrealistic and shot as if with a professional camera:\n– Natural skin texture\n – Accurate lighting\n – Sharp details\n– Professional depth of field\n – High-quality color grading\n– Authentic expressions and posing Ensure all 9 images feel coherent as a feed:\n– Consistent character likeness\n– Similar visual tone and color palette\n– Aesthetic balance across the grid\n– Cinematic and modern photography style\n\n Final deliverable: a 3×3 Instagram grid layout of nine separate 3:4 ratio hyperrealistic portraits of the person from the attached photo.\n",
+    "final_prompt": [
+      "Use this synthetic reference of a fictional 32-year-old adult woman and dog. Create a full Instagram-style 3×3 grid feed composed of nine different portrait images, all featuring the person and the dog from the attached image. ensure that the middle photo is the same photo as the attached image, Ensure the person’s identity, facial structure, and style remain consistent across all nine posts. Each of the 9 images should present a unique concept, outfit, pose, and environment that fits a stylish, modern Instagram aesthetic.\n Include a mix of:\n – Lifestyle shots\n – Cinematic portraits\n– Fashion/streetwear scenes\n – Close-up beauty shots\n – Travel or outdoor vibes\n– Cozy indoor moments\n– Minimalist studio portraits\n\nMake every image hyperrealistic and shot as if with a professional camera:\n– Natural skin texture\n – Accurate lighting\n – Sharp details\n– Professional depth of field\n – High-quality color grading\n– Authentic expressions and posing Ensure all 9 images feel coherent as a feed:\n– Consistent character likeness\n– Similar visual tone and color palette\n– Aesthetic balance across the grid\n– Cinematic and modern photography style\n\n Final deliverable: a 3×3 Instagram grid layout of nine separate 3:4 ratio hyperrealistic portraits of the person from the attached photo.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use this synthetic reference of a fictional 32-year-old adult woman and dog. Create a full Instagram-style 3×3 grid feed composed of nine different portrait images, all featuring the person and the dog from the attached image. ensure that the middle photo is the same photo as the attached image, Ensure the person’s identity, facial structure, and style remain consistent across all nine posts. Each of the 9 images should present a unique concept, outfit, pose, and environment that fits a stylish, modern Instagram aesthetic.\n Include a mix of:\n – Lifestyle shots\n – Cinematic portraits\n– Fashion/streetwear scenes\n – Close-up beauty shots\n – Travel or outdoor vibes\n– Cozy indoor moments\n– Minimalist studio portraits\n\nMake every image hyperrealistic and shot as if with a professional camera:\n– Natural skin texture\n – Accurate lighting\n – Sharp details\n– Professional depth of field\n – High-quality color grading\n– Authentic expressions and posing Ensure all 9 images feel coherent as a feed:\n– Consistent character likeness\n– Similar visual tone and color palette\n– Aesthetic balance across the grid\n– Cinematic and modern photography style\n\n Final deliverable: a 3×3 Instagram grid layout of nine separate 3:4 ratio hyperrealistic portraits of the person from the attached photo.\n",
+        "reference_material_portable": [
+          "materials/woman-dog-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【人像】3X3女子肖像照拼贴画.md",
+    "original_sha256": "6e7714e79f85fb00b71a006f88c3dd397f16d601b2112335ae0d3806934d8917",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/woman-dog-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九种场景/同一素材对比",
+        "result": "基本符合",
+        "evidence": "新生成九格，与T124共用同一合成女性与狗；场景与服装多样。"
+      },
+      {
+        "requirement": "每格狗/中心同原图",
+        "result": "存在问题",
+        "evidence": "右下特写漏狗，中心人物与狗重新绘制，非相同原照片。"
+      }
+    ],
+    "conclusion": "独立运行仍出现漏狗与中心图重绘，不支持稳定保真宣称。"
+  },
+  "images": [
+    {
+      "file": "results/T126-person-dog-duplicate/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "031d34cd93a379ffeb2d3fea20cfc14325c5e1a70b1ab0149b90e30bff087924"
+    }
+  ]
+}

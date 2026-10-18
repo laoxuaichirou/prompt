@@ -1,0 +1,80 @@
+{
+  "test": {
+    "test_id": "T007",
+    "title": "商业广告25分镜",
+    "type": "填变量后直接双参考生图",
+    "test_input": "同一成年女性身份参考＋同一合成刷手服产品参考，医院休息室中的准备—细节展示—放松三幕。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非Nano Banana",
+    "changes": [
+      "仅提取bash模板并填Act1及三幕变量。",
+      "参考1只提供身份，参考2提供产品服装，明确衣服覆盖来源，避免两参考服装冲突。",
+      "原文pure vertical与5×5横版16:9格的几何比例相冲突；保留两项原要求，不偷偷改为一致；实际图幅验收时记录。",
+      "原文8k仅为提示词要求，不将工具输出宣称8K。"
+    ],
+    "final_prompt": "A pure vertical 5x5 image grid collage containing 25 horizontal 16:9 panels, edge-to-edge, no text, no borders, no watermarks, photorealistic cinematic commercial photography, high-end color grading, 8k resolution, sharp focus, shallow depth of field.\n\n--- VISUAL ANCHOR SETTING (USER DEFINED) ---\nKey reference frame position: Act 1\nAll panels strictly match: character's face, product's design, lighting tone, color style from references\n------------------------------------------\nReference image 1 supplies only the fictional 32-year-old adult woman's identity and black bob hairstyle. Reference image 2 supplies the unbranded pale blue medical scrub outfit, its exact V-neck, short sleeves, three top patch pockets with blank white chest tag, matching tapered drawstring pants with two front pockets and right thigh cargo pocket, and white shoes. Use this same blue outfit in all panels, replacing reference 1's white T-shirt and navy trousers.\n\n--- MANDATORY COMMERCIAL CONTINUITY ---\n1. Fixed character: face, hair, outfit, makeup 100% unchanged in all 25 panels\n2. Fixed product: shape, color, texture, details 100% consistent, no occlusion, always clear visual focus\n3. Unified light logic & color grade, no scene jump, no style inconsistency\n4. Complete 3-act narrative: Setup → Development → Closing\n---------------------------------------\nCore Character: Match reference image 1's face and hair\nCore Product: Match reference image 2's medical scrub outfit\nAct 1 (Rows 1-2): One quiet hospital staff lounge with gray walls, bench, locker and window; fixed soft daylight from left, cool neutral grading. Adult woman arrives, stands, turns and prepares for work, progressively showing the outfit.\nAct 2 (Row 3): Same lounge and daylight. Show V-neck, chest pocket and blank tab, lower patch pockets, elastic waist and drawstring, right thigh cargo pocket. Maintain visual identity and product shape.\nAct 3 (Rows 4-5): Same lounge and daylight. Woman comfortably sits, stretches, stands, takes a step and ends with a calm confident smile toward camera; fixed outfit, product clear.",
+    "original_filename": "提示词库/视频分镜/[待测试·3分] 商业广告25分镜.md",
+    "original_sha256": "c91e24de6b945bc88e19a4fe2dee4eac29cdac9714fd4297b535cd29c4e35ea0",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "5×5=25格",
+        "result": "符合要求",
+        "evidence": "实际打开为5行5列，共25格。"
+      },
+      {
+        "requirement": "横版16:9格与pure vertical整体",
+        "result": "原要求互相冲突，实际仅横版成立",
+        "evidence": "输出1672×941，整体约16:9，格约334×188，同为16:9；不可能同时满足竖向总图和正方5×5布局中每格16:9。"
+      },
+      {
+        "requirement": "无边框无文字无水印",
+        "result": "部分不符",
+        "evidence": "未见文字或水印，但格间有明显白色分隔条，未实现edge-to-edge无边框。"
+      },
+      {
+        "requirement": "人物一致性",
+        "result": "基本符合，部分无法核实",
+        "evidence": "短发淡蓝刷手服人物持续；背影与衣服特写没有可见面部，不能逐格确认脸。"
+      },
+      {
+        "requirement": "产品每格清晰且无遮挡",
+        "result": "不符合",
+        "evidence": "近景只见局部衣领/口袋，姿势、手和包产生遮挡；不能确认整套产品每格无遮挡。"
+      },
+      {
+        "requirement": "三幕叙事与光线",
+        "result": "基本符合",
+        "evidence": "统一休息室与左侧窗光，前两排准备、中间排细节、后两排休息与收尾。"
+      },
+      {
+        "requirement": "8K",
+        "result": "不符合",
+        "evidence": "实际1672×941，不是8K；未进行放大冒充原生8K。"
+      }
+    ],
+    "conclusion": "25格数量与大致三幕命中，边框、无遮挡和8K要求未满足；仅静态适配测试，不是视频生成通过。"
+  },
+  "images": [
+    {
+      "file": "results/T007-commercial25/grid25.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b5db444d5e96d96fed2473fdfc008af58f273838a6520ce120250720d44a7da6"
+    }
+  ]
+}

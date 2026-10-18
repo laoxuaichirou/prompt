@@ -1,0 +1,67 @@
+{
+  "test": {
+    "test_id": "T120",
+    "title": "姿势提示词合集（原无标题）",
+    "type": "合集中的完整九格镜头子例",
+    "test_input": "选择正文第三个完整3×3电影故事板网格，1:1，同一合成年人物同衣同光，九种镜头。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "本页有四组独立内容，本次只测完整九格镜头子例；16张姿势清单/8姿势冲突九格/医疗服广告均不冒充已测",
+      "ELS/LS/MLS/MS/MCU/CU/ECU/低角度/高角度按原顺序保留"
+    ],
+    "selected_source_prompt": "根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。\n一位固定的女模特，同样的服装，同样的灯光。\n镜头拍摄顺序：\n第一行：ELS、LS、MLS\n第 2 行：MS、MCU、CU\n第 3 行：ECU（细节）、低角度拍摄、高角度拍摄\n面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。\n高端时尚杂志风格，简洁的背景，奢华电商风格。",
+    "final_prompt": [
+      "根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。\n一位固定的女模特，同样的服装，同样的灯光。\n镜头拍摄顺序：\n第一行：ELS、LS、MLS\n第 2 行：MS、MCU、CU\n第 3 行：ECU（细节）、低角度拍摄、高角度拍摄\n面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。\n高端时尚杂志风格，简洁的背景，奢华电商风格。"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。\n一位固定的女模特，同样的服装，同样的灯光。\n镜头拍摄顺序：\n第一行：ELS、LS、MLS\n第 2 行：MS、MCU、CU\n第 3 行：ECU（细节）、低角度拍摄、高角度拍摄\n面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。\n高端时尚杂志风格，简洁的背景，奢华电商风格。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 姿势提示词合集（原无标题）.md",
+    "original_sha256": "0594c9885d48e852f02b399fa20d6321d268c6382813ea7c77395a37d02a9ea4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3x3九景别/同服同光/无文字",
+        "result": "符合要求",
+        "evidence": "前三格远到中远、第二排中景/中近/脸部特写，第三排眼部细节/仰拍/俯拍；白T深蓝裤与灰背景一致，无文字。"
+      },
+      {
+        "requirement": "边界与覆盖",
+        "result": "未执行",
+        "evidence": "仅执行完整九景别模板；同页16动作、8与9格冲突模板及医疗服广告未执行。仰拍腿部因透视放大，非精确相机参数验证。"
+      }
+    ],
+    "conclusion": "本次九景别最小完整用例符合视觉要求，其余独立模板未执行。"
+  },
+  "images": [
+    {
+      "file": "results/T120-pose-collection/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0779dfffc4a2829c34e3078b51e9c30792d03c15d0d2808ca69f2c2b2be1c2de"
+    }
+  ]
+}

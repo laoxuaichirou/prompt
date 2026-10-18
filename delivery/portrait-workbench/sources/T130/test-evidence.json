@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T130",
+    "title": "【人像】镜前比心的甜妹胶片肖像",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a wholly fictional 25-year-old adult woman, not a real idol. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构25岁成年人，房间风格与原文保留，不引用真实偶像。"
+    ],
+    "selected_source_prompt": "{\n  \"protocol_manifest\": {\n    \"version\": \"14.1_retro_dynamic_fingerheart\",\n    \"objective\": \"90s Lo-Fi Film Portrait with Panning Motion\",\n    \"aspect_ratio\": \"4:5\",\n    \"rendering_engine\": {\n      \"type\": \"Analog Film Simulation\",\n      \"fidelity_tier\": \"Raw Scan / Texture Rich\",\n      \"special_technique\": \"Slow Shutter Panning + Flash Freeze\"\n    }\n  },\n  \"subject_logic\": {\n    \"biometric_layer\": {\n      \"identity_target\": \"Young cute Korean K-pop idol\",\n      \"archetype\": \"Pure / Fresh face / Innocent charm\",\n      \"facial_configuration\": {\n        \"gaze\": \"Sweet, engaging eye contact with the mirror reflection\",\n        \"expression\": \"Gentle, warm smile / Making a small finger heart gesture (thumb and index finger crossed) near her cheek\",\n        \"makeup\": \"Light, youthful 'fruit juice' makeup style, glossy lips\"\n      }\n    },\n    \"hair_and_style\": {\n      \"style\": \"Soft, dark wavy hair with cute bangs\",\n      \"accessory\": \"Colorful retro hair clips or scrunchie visible\"\n    }\n  },\n  \"wardrobe_logic\": {\n    \"apparel_specs\": {\n      \"primary_garment\": {\n        \"type\": \"Oversized vintage colorful knit cardigan\",\n        \"layers\": \"Worn over a cute graphic baby tee\",\n        \"style\": \"Y2K / 90s cozy retro cute\"\n      }\n    }\n  },\n  \"prop_logic\": {\n    \"environment_props\": {\n      \"main_prop\": \"Large vintage wall mirror with an ornate, slightly worn frame\",\n      \"decorations\": \"Mirror covered with cute stickers, polaroids, and handwritten notes\",\n      \"foreground_elements\": \"Blurry retro items suggesting a messy teen room (plushies, colorful cups)\"\n    }\n  },\n  \"environment_logic\": {\n    \"scenography\": {\n      \"location\": \"Cozy, cluttered backstage dressing room or bedroom\",\n      \"vibe\": \"Nostalgic, intimate, warm, chaotic cute\"\n    },\n    \"illumination_architecture\": {\n      \"source\": \"On-camera Direct Flash (Point-and-shoot style)\",\n      \"characteristics\": {\n        \"shadows\": \"Harsh, defined flash shadows behind the subject\",\n        \"highlights\": \"Bright specular reflection of the flash bulb visible in the mirror\"\n      }\n    }\n  },\n  \"technical_logic\": {\n    \"optical_configuration\": {\n      \"shot_type\": \"Medium portrait capturing reflection (Photographer not visible)\",\n      \"lens_simulation\": \"35mm compact film camera lens\",\n      \"motion_effect\": \"Significant horizontal motion blur (panning streaks) on background and edges, subject relatively frozen by flash\"\n    },\n    \"film_simulation_directives\": {\n      \"film_stock\": \"Fuji Superia 800 / Kodak Portra 400 (Pushed)\",\n      \"noise_profile\": \"Heavy, visible film grain and color noise\",\n      \"color_grading\": \"Lo-fi, warm greenish tint typical of cheap film scans, vibrant reds and yellows\",\n      \"artifacts\": \"Light leaks, dust specks, vignetting from flash fall-off\"\n    }\n  }\n}\n",
+    "final_prompt": [
+      "The subject is a wholly fictional 25-year-old adult woman, not a real idol. {\n  \"protocol_manifest\": {\n    \"version\": \"14.1_retro_dynamic_fingerheart\",\n    \"objective\": \"90s Lo-Fi Film Portrait with Panning Motion\",\n    \"aspect_ratio\": \"4:5\",\n    \"rendering_engine\": {\n      \"type\": \"Analog Film Simulation\",\n      \"fidelity_tier\": \"Raw Scan / Texture Rich\",\n      \"special_technique\": \"Slow Shutter Panning + Flash Freeze\"\n    }\n  },\n  \"subject_logic\": {\n    \"biometric_layer\": {\n      \"identity_target\": \"Young cute Korean K-pop idol\",\n      \"archetype\": \"Pure / Fresh face / Innocent charm\",\n      \"facial_configuration\": {\n        \"gaze\": \"Sweet, engaging eye contact with the mirror reflection\",\n        \"expression\": \"Gentle, warm smile / Making a small finger heart gesture (thumb and index finger crossed) near her cheek\",\n        \"makeup\": \"Light, youthful 'fruit juice' makeup style, glossy lips\"\n      }\n    },\n    \"hair_and_style\": {\n      \"style\": \"Soft, dark wavy hair with cute bangs\",\n      \"accessory\": \"Colorful retro hair clips or scrunchie visible\"\n    }\n  },\n  \"wardrobe_logic\": {\n    \"apparel_specs\": {\n      \"primary_garment\": {\n        \"type\": \"Oversized vintage colorful knit cardigan\",\n        \"layers\": \"Worn over a cute graphic baby tee\",\n        \"style\": \"Y2K / 90s cozy retro cute\"\n      }\n    }\n  },\n  \"prop_logic\": {\n    \"environment_props\": {\n      \"main_prop\": \"Large vintage wall mirror with an ornate, slightly worn frame\",\n      \"decorations\": \"Mirror covered with cute stickers, polaroids, and handwritten notes\",\n      \"foreground_elements\": \"Blurry retro items suggesting a messy teen room (plushies, colorful cups)\"\n    }\n  },\n  \"environment_logic\": {\n    \"scenography\": {\n      \"location\": \"Cozy, cluttered backstage dressing room or bedroom\",\n      \"vibe\": \"Nostalgic, intimate, warm, chaotic cute\"\n    },\n    \"illumination_architecture\": {\n      \"source\": \"On-camera Direct Flash (Point-and-shoot style)\",\n      \"characteristics\": {\n        \"shadows\": \"Harsh, defined flash shadows behind the subject\",\n        \"highlights\": \"Bright specular reflection of the flash bulb visible in the mirror\"\n      }\n    }\n  },\n  \"technical_logic\": {\n    \"optical_configuration\": {\n      \"shot_type\": \"Medium portrait capturing reflection (Photographer not visible)\",\n      \"lens_simulation\": \"35mm compact film camera lens\",\n      \"motion_effect\": \"Significant horizontal motion blur (panning streaks) on background and edges, subject relatively frozen by flash\"\n    },\n    \"film_simulation_directives\": {\n      \"film_stock\": \"Fuji Superia 800 / Kodak Portra 400 (Pushed)\",\n      \"noise_profile\": \"Heavy, visible film grain and color noise\",\n      \"color_grading\": \"Lo-fi, warm greenish tint typical of cheap film scans, vibrant reds and yellows\",\n      \"artifacts\": \"Light leaks, dust specks, vignetting from flash fall-off\"\n    }\n  }\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a wholly fictional 25-year-old adult woman, not a real idol. {\n  \"protocol_manifest\": {\n    \"version\": \"14.1_retro_dynamic_fingerheart\",\n    \"objective\": \"90s Lo-Fi Film Portrait with Panning Motion\",\n    \"aspect_ratio\": \"4:5\",\n    \"rendering_engine\": {\n      \"type\": \"Analog Film Simulation\",\n      \"fidelity_tier\": \"Raw Scan / Texture Rich\",\n      \"special_technique\": \"Slow Shutter Panning + Flash Freeze\"\n    }\n  },\n  \"subject_logic\": {\n    \"biometric_layer\": {\n      \"identity_target\": \"Young cute Korean K-pop idol\",\n      \"archetype\": \"Pure / Fresh face / Innocent charm\",\n      \"facial_configuration\": {\n        \"gaze\": \"Sweet, engaging eye contact with the mirror reflection\",\n        \"expression\": \"Gentle, warm smile / Making a small finger heart gesture (thumb and index finger crossed) near her cheek\",\n        \"makeup\": \"Light, youthful 'fruit juice' makeup style, glossy lips\"\n      }\n    },\n    \"hair_and_style\": {\n      \"style\": \"Soft, dark wavy hair with cute bangs\",\n      \"accessory\": \"Colorful retro hair clips or scrunchie visible\"\n    }\n  },\n  \"wardrobe_logic\": {\n    \"apparel_specs\": {\n      \"primary_garment\": {\n        \"type\": \"Oversized vintage colorful knit cardigan\",\n        \"layers\": \"Worn over a cute graphic baby tee\",\n        \"style\": \"Y2K / 90s cozy retro cute\"\n      }\n    }\n  },\n  \"prop_logic\": {\n    \"environment_props\": {\n      \"main_prop\": \"Large vintage wall mirror with an ornate, slightly worn frame\",\n      \"decorations\": \"Mirror covered with cute stickers, polaroids, and handwritten notes\",\n      \"foreground_elements\": \"Blurry retro items suggesting a messy teen room (plushies, colorful cups)\"\n    }\n  },\n  \"environment_logic\": {\n    \"scenography\": {\n      \"location\": \"Cozy, cluttered backstage dressing room or bedroom\",\n      \"vibe\": \"Nostalgic, intimate, warm, chaotic cute\"\n    },\n    \"illumination_architecture\": {\n      \"source\": \"On-camera Direct Flash (Point-and-shoot style)\",\n      \"characteristics\": {\n        \"shadows\": \"Harsh, defined flash shadows behind the subject\",\n        \"highlights\": \"Bright specular reflection of the flash bulb visible in the mirror\"\n      }\n    }\n  },\n  \"technical_logic\": {\n    \"optical_configuration\": {\n      \"shot_type\": \"Medium portrait capturing reflection (Photographer not visible)\",\n      \"lens_simulation\": \"35mm compact film camera lens\",\n      \"motion_effect\": \"Significant horizontal motion blur (panning streaks) on background and edges, subject relatively frozen by flash\"\n    },\n    \"film_simulation_directives\": {\n      \"film_stock\": \"Fuji Superia 800 / Kodak Portra 400 (Pushed)\",\n      \"noise_profile\": \"Heavy, visible film grain and color noise\",\n      \"color_grading\": \"Lo-fi, warm greenish tint typical of cheap film scans, vibrant reds and yellows\",\n      \"artifacts\": \"Light leaks, dust specks, vignetting from flash fall-off\"\n    }\n  }\n}\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【人像】镜前比心的甜妹胶片肖像.md",
+    "original_sha256": "c6d3246838d2e8bab899df8031c7be76303ae064b5b17f13f557704c0e38e18c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "镜中比心/服饰/胶片动态",
+        "result": "符合要求",
+        "evidence": "成年虚构人物镜中微笑比指心，彩色针织开衫/图案T、发夹、旧镜贴纸照片便条、镜内闪光、水平背景拖影与明显胶片颗粒。"
+      },
+      {
+        "requirement": "验证边界",
+        "result": "模型初评",
+        "evidence": "4:5画面，摄影师不入镜；胶片品牌和真实快门镜头参数仅是视觉模拟，非相机实拍。"
+      }
+    ],
+    "conclusion": "本次镜中比心胶片风格用例符合视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T130-fingerheart-film/output.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "de02f3411ba0e1dc014e0faff1e5aaa69cfa7af45fbcfc5dfa65c534fb20af26"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T015",
+    "title": "【人像剧情】日系少女赶地铁",
+    "type": "直接生图提示词",
+    "test_input": "25岁虚构成年女性四格赶地铁故事。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原标签不作为本轮证据",
+    "changes": [
+      "去除元数据、外链示例图和中英重复版本，仅用首个完整正式提示词。",
+      "补充明确成年年龄，测试主体均虚构。"
+    ],
+    "final_prompt": "人物为25岁虚构成年女性；少女仅指穿搭氛围。Generate one image according to the full specification below; for JSON instructions render the described image, do not output JSON text.\nRole（角色设定）\n你是一位专精 日系青春电影 与 可爱少女日常写真 的顶级摄影导演。你擅长用电影分镜和细腻光影，捕捉女主从容又笨拙的小失误，营造出暖心、治愈、略带喜剧感的早晨通勤场景。\nTask（任务目标）\n根据以下描述，生成一张 4 格拼接构图（Four-panel composition，2x2 网格：上左、上右、下左、下右）。\n必须保持同一位日系少女形象在四格中 面孔与特征 100% 一致：黑色或深棕色齐肩直发、空气刘海、淡妆、身材偏纤细。\n她的穿着为 日系少女通勤风：浅色针织开衫、白衬衫、格纹半身裙、帆布鞋，背一只简洁的单肩包或双肩包。\n\nVisual Guidelines（视觉规范）\n画面质感：cinematic, Japanese movie still, 8K, soft light, shallow depth of field, subtle film grain, natural skin texture。\n色调：清晨暖色调，偏柔和的奶油色与浅蓝色，高光不过曝，整体偏 温柔、干净、可爱。\n背景：日本城市住宅区与地铁站环境，干净街道、路牌、自动贩卖机、站牌等细节。\n\n构图：2x2 网格布局（Upper-left, Upper-right, Lower-left, Lower-right），每一格都是一帧电影截图。\n\nPanel Breakdown（四格分镜拆解）\n\n上左（Upper-left）——【迟到的预感 / The Late Morning】\n\n视角（Camera Angle）：室内门口处的中近景，略微高机位，好像观众站在玄关看她匆忙出门。\n\n动作（Action）：她一边踩着鞋，一边抓起门边的包和手机，嘴里咬着一小块吐司或饭团，身体微微前倾准备冲出去。\n\n表情（Expression）：困倦中带点慌张，眼睛微睁，眉毛略上挑，带着“糟了要迟到”的可爱慌乱。\n重点（Focus）：清晨从门外洒进来的暖阳勾勒出她的轮廓，玄关处杂乱但温馨的小物（鞋架、雨伞、地垫）虚焦，突出少女的慌忙瞬间。\n\n上右（Upper-right）——【街角小跑 / Corner Dash】\n\n视角（Camera Angle）：略低机位的侧面全身景，仿佛跟拍镜头，背景是安静街区与十字路口。\n\n动作（Action）：她背着包小跑，裙摆和头发随风轻轻扬起，一只手按着包带防止晃动，另一只手看腕表或手机时间。\n\n表情（Expression）：有点紧张又带点好笑的无奈，嘴角微微撅起，眼神专注前方。\n\n重点（Focus）：路边的自动贩卖机、路牌、低饱和的街景在运动模糊中掠过，地面晨光与她的影子形成斜斜的引导线，强化“赶时间”的节奏感。\n\n左下（Lower-left）——【楼梯冲刺 / Stair Sprint】\n\n视角（Camera Angle）：从地铁站楼梯下方向上拍摄的低机位，仰视她奔上楼梯或往站台方向跑。\n\n动作（Action）：她扶着扶手快速上楼梯，步伐轻快，裙摆随着动作轻轻摆动，包斜跨在身侧。\n\n表情（Expression）：稍微喘气但坚持、认真的神情，眉头轻皱却不失可爱。\n\n重点（Focus）：楼梯上的光影分明，顶端可见写有站名的牌子与一点点天空。背景路人略虚化，突出少女努力赶车的剪影，整体仍保持干净、清爽的画面感。\n\n右下（Lower-right）——【刚好赶上 / Just in Time】\n\n视角（Camera Angle）：地铁车厢内的中近景，略高机位，好像站在她对面看着她。窗外有轻微运动模糊的隧道景色。\n\n动作（Action）：她站在车门附近，双手抓着包带或扶手，微微弯腰喘气，肩膀仍有一点起伏。\n\n表情（Expression）：松了口气的可爱微笑，脸颊略微泛红，眼睛里有轻松和自我调侃的感觉，像是在心里说“总算没迟到”。\n\n重点（Focus）：柔和的车厢灯光照在她的脸上，皮肤质感细腻自然。背景是朴素的车厢座位与几位乘客的模糊轮廓，营造温柔又日常的通勤氛围。\n\nTechnical Constraints（技术限制）\n\nConsistency：四格中少女的脸部特征、发型、身材比例、服饰风格必须完全一致，确保是同一角色。\n\nStyle：hyper-realistic yet soft, cinematic, Japanese slice-of-life movie still, natural color grading, soft focus, bokeh。\n\nAtmosphere：可爱、治愈、轻松、带一点小紧张但完全日常向，像青春爱情电影开头的通勤片头。\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 【人像剧情】日系少女赶地铁.md",
+    "original_sha256": "04d6f36d4d4a79ef618c2d9a8acc74f899157871e76088251ebfee1e2d067641",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "2×2四格与剧情顺序",
+        "result": "符合要求",
+        "evidence": "出门穿鞋咬吐司、街角跑步看表、低角度扶栏上楼梯、车内松口气按顺序出现。"
+      },
+      {
+        "requirement": "同人发型、服装与晨光电影感",
+        "result": "视觉基本符合",
+        "evidence": "深色齐肩发空气刘海、浅开衫白衬衣格纹裙和白鞋持续，暖晨光与浅景深明确。"
+      },
+      {
+        "requirement": "细微表情与包的连续性",
+        "result": "部分无法核实",
+        "evidence": "赶路的紧张与车内放松可读；各镜包的完整结构未全部可见，不能确认包型与肩带严格一致。"
+      },
+      {
+        "requirement": "地铁环境、8K",
+        "result": "部分不符",
+        "evidence": "站外出现JR新宿站标志，偏铁路通勤形象；实际1536×1024，不是8K。"
+      }
+    ],
+    "conclusion": "四格日常通勤故事基本成立，场景指向及原生分辨率与原文有偏差，未验证视频或跨调用稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T015-subway4/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d17911b939216cf42823333aeef406be3736e81d20288f99707846368f623814"
+    }
+  ]
+}

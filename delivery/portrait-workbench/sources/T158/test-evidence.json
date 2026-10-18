@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T158",
+    "title": "巨人指尖轻戳微缩世界超现实肖像",
+    "type": "直接生图/参考编辑",
+    "test_input": "The miniature man is a wholly fictional 35-year-old adult man, and the palm and finger belong to a fictional adult. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；不声称原示例人物或原模型实测。"
+    ],
+    "selected_source_prompt": "A hyper-realistic surreal portrait of a tiny miniature man sitting in a person’s open palm, oversized head with detailed curly hair and thick beard, wearing round blue-tinted glasses, denim jacket over a patterned shirt, slightly annoyed facial expression while a giant finger gently pokes his cheek, soft studio lighting, shallow depth of field, ultra-detailed skin texture, cinematic composition, 8k high-resolution, neutral blurred background.\n",
+    "final_prompt": [
+      "The miniature man is a wholly fictional 35-year-old adult man, and the palm and finger belong to a fictional adult. A hyper-realistic surreal portrait of a tiny miniature man sitting in a person’s open palm, oversized head with detailed curly hair and thick beard, wearing round blue-tinted glasses, denim jacket over a patterned shirt, slightly annoyed facial expression while a giant finger gently pokes his cheek, soft studio lighting, shallow depth of field, ultra-detailed skin texture, cinematic composition, 8k high-resolution, neutral blurred background.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The miniature man is a wholly fictional 35-year-old adult man, and the palm and finger belong to a fictional adult. A hyper-realistic surreal portrait of a tiny miniature man sitting in a person’s open palm, oversized head with detailed curly hair and thick beard, wearing round blue-tinted glasses, denim jacket over a patterned shirt, slightly annoyed facial expression while a giant finger gently pokes his cheek, soft studio lighting, shallow depth of field, ultra-detailed skin texture, cinematic composition, 8k high-resolution, neutral blurred background.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 巨人指尖轻戳微缩世界超现实肖像.md",
+    "original_sha256": "be008775fe562965d11ca4c3d851ef986c9476804dda0e0cd9c7103a8c28262e",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "掌心/触脸/造型",
+        "result": "符合要求",
+        "evidence": "卷发浓胡子蓝圆眼镜牛仔夹克花衬衫，大头微缩男子盘坐掌心，巨指轻触脸颊，表情皱眉略恼。"
+      },
+      {
+        "requirement": "8K",
+        "result": "未满足",
+        "evidence": "非8K输出；尺寸以图片元数据记录为准。"
+      }
+    ],
+    "conclusion": "掌心微缩构图实现，8K未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T158-palm-beard/output.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "1bc24862e5880150c014584fc6b55f08545a7118e1f41a99d31f73c7d75c60b9"
+    }
+  ]
+}

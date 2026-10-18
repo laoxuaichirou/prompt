@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T143",
+    "title": "女性一生电影拼贴",
+    "type": "直接生图/参考编辑",
+    "test_input": "Create a wholly fictional symbolic life journey, not a real person or real ultrasound medical record. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构人物/年龄；其他要求保留，非原示例人物实测。"
+    ],
+    "selected_source_prompt": "A powerful cinematic collage storytelling the complete life journey of a woman in one frame.\nThe story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams in her eyes, a confident young woman building her career, a mature woman filled with strength and wisdom.\nOn the far right, the story ends with an elderly lady sitting peacefully by a window, silver hair glowing in warm sunset light, symbolizing fulfillment and reflection.\nEach stage blends into the next using torn paper edges, light leaks, soft motion trails, floating memories, clock elements, and subtle timelines.\nColor grading evolves from cool monochrome (birth) to vibrant warm tones (youth) and finally to golden, soft hues (old age).\nUltra-emotional, poetic, cinematic storytelling, shallow depth of field, realistic human expressions, high-detail collage composition, symbolic life journey, timeless and inspirational\n",
+    "final_prompt": [
+      "Create a wholly fictional symbolic life journey, not a real person or real ultrasound medical record. A powerful cinematic collage storytelling the complete life journey of a woman in one frame.\nThe story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams in her eyes, a confident young woman building her career, a mature woman filled with strength and wisdom.\nOn the far right, the story ends with an elderly lady sitting peacefully by a window, silver hair glowing in warm sunset light, symbolizing fulfillment and reflection.\nEach stage blends into the next using torn paper edges, light leaks, soft motion trails, floating memories, clock elements, and subtle timelines.\nColor grading evolves from cool monochrome (birth) to vibrant warm tones (youth) and finally to golden, soft hues (old age).\nUltra-emotional, poetic, cinematic storytelling, shallow depth of field, realistic human expressions, high-detail collage composition, symbolic life journey, timeless and inspirational\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Create a wholly fictional symbolic life journey, not a real person or real ultrasound medical record. A powerful cinematic collage storytelling the complete life journey of a woman in one frame.\nThe story begins on the far left with a black-and-white USG ultrasound scan, softly glowing, showing the unborn baby. Flowing seamlessly into the center, the collage transitions through life stages: a newborn wrapped in hospital cloth, a toddler taking first steps, a schoolgirl with a backpack, a teenage girl with dreams in her eyes, a confident young woman building her career, a mature woman filled with strength and wisdom.\nOn the far right, the story ends with an elderly lady sitting peacefully by a window, silver hair glowing in warm sunset light, symbolizing fulfillment and reflection.\nEach stage blends into the next using torn paper edges, light leaks, soft motion trails, floating memories, clock elements, and subtle timelines.\nColor grading evolves from cool monochrome (birth) to vibrant warm tones (youth) and finally to golden, soft hues (old age).\nUltra-emotional, poetic, cinematic storytelling, shallow depth of field, realistic human expressions, high-detail collage composition, symbolic life journey, timeless and inspirational\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 女性一生电影拼贴.md",
+    "original_sha256": "23e0fa0073bdfd4bf9a50f4e5a108957a2976183b26b435b8324932613e71c4c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "八人生阶段/左右色彩/拼贴",
+        "result": "符合要求",
+        "evidence": "最左超声，新生儿、学步、书包学童、少女、职业青年、成熟女性，最右窗边银发老人；撕纸钟表记忆和冷到金暖色过渡清楚。"
+      },
+      {
+        "requirement": "边界",
+        "result": "模型初评",
+        "evidence": "虚构象征拼贴，超声非真实医疗记录；不代表真实同一人一生的可验证身份。"
+      }
+    ],
+    "conclusion": "本次完整生命旅程拼贴符合可见设计要求。"
+  },
+  "images": [
+    {
+      "file": "results/T143-life-collage/output.png",
+      "width": 1983,
+      "height": 793,
+      "sha256": "ca53d644f27f44b9118120236539c5a253e18c1b11ba5e90fa6faafbc3c142af"
+    }
+  ]
+}

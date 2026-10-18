@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T151",
+    "title": "都市静影·人流穿梭",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a wholly fictional 28-year-old adult woman. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；按照正文规定造型，不引用原示例身份。"
+    ],
+    "selected_source_prompt": "Ultra-realistic cinematic street portrait of a young woman standing still in a crowded city street, sharp focus on her face with calm, intense expression. Long-exposure effect with people moving around her creating strong directional motion blur, streaked crowd movement while the subject remains perfectly still. Natural soft daylight, shallow depth of field, creamy bokeh, realistic skin texture, subtle freckles, neutral makeup, dark winter coat and scarf. Emotional, introspective mood, urban storytelling photography, DSLR quality, 85mm lens look, f/1.8, high dynamic range, 8K, professional color grading.\n",
+    "final_prompt": [
+      "The subject is a wholly fictional 28-year-old adult woman. Ultra-realistic cinematic street portrait of a young woman standing still in a crowded city street, sharp focus on her face with calm, intense expression. Long-exposure effect with people moving around her creating strong directional motion blur, streaked crowd movement while the subject remains perfectly still. Natural soft daylight, shallow depth of field, creamy bokeh, realistic skin texture, subtle freckles, neutral makeup, dark winter coat and scarf. Emotional, introspective mood, urban storytelling photography, DSLR quality, 85mm lens look, f/1.8, high dynamic range, 8K, professional color grading.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a wholly fictional 28-year-old adult woman. Ultra-realistic cinematic street portrait of a young woman standing still in a crowded city street, sharp focus on her face with calm, intense expression. Long-exposure effect with people moving around her creating strong directional motion blur, streaked crowd movement while the subject remains perfectly still. Natural soft daylight, shallow depth of field, creamy bokeh, realistic skin texture, subtle freckles, neutral makeup, dark winter coat and scarf. Emotional, introspective mood, urban storytelling photography, DSLR quality, 85mm lens look, f/1.8, high dynamic range, 8K, professional color grading.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 都市静影·人流穿梭.md",
+    "original_sha256": "61cc8a2910ed2698492850d289749b9d8d37bceaab808ea8610b8cbb194712bb",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "静止主体/人流拖影",
+        "result": "符合要求",
+        "evidence": "静立女性面部清晰平静，深冬外套围巾、淡雀斑自然妆，周围人流有强烈方向拖影和城市散景。"
+      },
+      {
+        "requirement": "8K/真实参数",
+        "result": "未满足/未验证",
+        "evidence": "非8K，85mm/f1.8仅视觉模拟，不能证明真实长曝光摄影。"
+      }
+    ],
+    "conclusion": "核心长曝光视觉实现，8K未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T151-crowd-still/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d967cef49092a93dc7b9fed290b7a2c40582ed13181238c1dd62cbf79dd50107"
+    }
+  ]
+}

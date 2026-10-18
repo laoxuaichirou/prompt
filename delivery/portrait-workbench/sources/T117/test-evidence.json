@@ -1,0 +1,67 @@
+{
+  "test": {
+    "test_id": "T117",
+    "title": "你抱着幼年版自己的复古风自拍",
+    "type": "单句图像创意编辑",
+    "test_input": "you指合成32岁成年女性；baby version为同一虚构角色想象的婴儿版，一张复古自拍最小用例。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原文未指定数量，取单张自拍作为最小用例",
+      "婴儿为新生成的虚构角色版本，不是真实幼年照片，不声称还原童年真实长相"
+    ],
+    "selected_source_prompt": "retro selfies of you holding a baby version of you",
+    "final_prompt": [
+      "Create one retro selfie for this minimum test case. 'You' refers to the wholly fictional 32-year-old adult woman in the synthetic reference. The baby version is an imagined fictional infant version of the same invented character, fully clothed, not an actual childhood photograph. Original prompt: retro selfies of you holding a baby version of you"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "Create one retro selfie for this minimum test case. 'You' refers to the wholly fictional 32-year-old adult woman in the synthetic reference. The baby version is an imagined fictional infant version of the same invented character, fully clothed, not an actual childhood photograph. Original prompt: retro selfies of you holding a baby version of you",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 你抱着幼年版自己的复古风自拍.md",
+    "original_sha256": "4c5b966b024c0f7f25906d4542b0fc3d9f376f84e6f19ffb311c815ad44d6e0c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "复古自拍/抱幼年版自己",
+        "result": "符合要求",
+        "evidence": "虚构成年女性伸手自拍、怀抱穿白衣的婴儿，暖色颗粒、划痕和旧相纸边框清楚。"
+      },
+      {
+        "requirement": "幼年身份",
+        "result": "未验证",
+        "evidence": "仅是由合成成年参考想象的婴儿，不是实际童年照片；仅验收虚构视觉场景。"
+      }
+    ],
+    "conclusion": "符合本次虚构人物复古自拍用例；视觉初评，不代表真实幼年还原或稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T117-younger-self/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0fee8581a02a66e41040234e9d84a4369c5b0569d1de257855996f6c8b91f11e"
+    }
+  ]
+}

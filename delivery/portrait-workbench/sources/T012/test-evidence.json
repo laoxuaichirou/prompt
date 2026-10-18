@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T012",
+    "title": "【人像】九宫格少女情绪肖像",
+    "type": "直接生图提示词",
+    "test_input": "按正文固定浅金发蓝绿眼设定，生成26岁虚构成年女性的九表情图。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原标签不作为本轮证据",
+    "changes": [
+      "去除元数据、外链示例图和中英重复版本，仅用首个完整正式提示词。",
+      "补充明确成年年龄，测试主体均虚构。"
+    ],
+    "final_prompt": "Use an entirely fictional ADULT woman, age 26. Generate one image according to the full specification below; for JSON instructions render the described image, do not output JSON text.\nCreate a 3×3 grid collage of studio portrait photographs featuring the same young woman with identical facial features in every panel.\nSubject details (must remain consistent across all images):\n\n– Fair skin, soft natural makeup\n\n– Light blonde hair, center-parted with loose strands framing the face, tied back casually\n\n– Blue-green eyes, delicate nose, soft jawline\n\n– Natural, realistic skin texture\nEach panel shows a different facial expression and subtle pose:\n\nWarm genuine smile, looking directly at camera\nSurprised expression, slightly open mouth, hand touching chin\nCalm, introspective look, eyes looking downward\nBright cheerful smile, relaxed posture\nNeutral confident expression, direct eye contact\nGentle playful smile with slight head tilt\nPlayful wink with soft smile\nCurious, mildly surprised expression\nSerious, slightly concerned or thoughtful expression\nPhotography style:\n\n– High-end studio portrait photography\n\n– Soft diffused lighting, cinematic yet natural\n\n– Shallow depth of field, sharp focus on face\n\n– Muted solid-color studio backdrops (grey, beige, dark blue, olive, muted purple)\n\n– Realistic color grading, professional editorial look\nComposition & quality:\n\n– Perfect facial consistency across all 9 frames\n\n– Even spacing between panels\n\n– Ultra-realistic, high detail, DSLR quality\n\n– No distortion, no exaggerated features\nAspect ratio: square collage, clean borders\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 【人像】九宫格少女情绪肖像.md",
+    "original_sha256": "6a604bb9240aa86fb3080886f3438b49457b5ac4f4049338f82ef4c6dbb89a54",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3×3方形九格",
+        "result": "符合要求",
+        "evidence": "原生九宫格、均匀白边、方形图幅。"
+      },
+      {
+        "requirement": "同人浅金发蓝绿眼与真实皮肤",
+        "result": "视觉符合",
+        "evidence": "松束中分浅金发、蓝绿眼、白皙自然肤色和五官比例在九格内一致，发根偏深。"
+      },
+      {
+        "requirement": "九种情绪/姿态",
+        "result": "符合本次最小用例",
+        "evidence": "按行依次为真诚微笑、触下巴惊讶、低头内省、明亮笑容、中性自信、侧头柔笑、眨眼、好奇惊讶、严肃担忧。第一与第四格均笑但幅度有差别。"
+      },
+      {
+        "requirement": "柔光、纯色背景与清晰面部",
+        "result": "符合要求",
+        "evidence": "灰、米、蓝、橄榄与紫色背景，柔和影棚光，无明显扭曲。"
+      }
+    ],
+    "conclusion": "本次单张原生九宫格的核心要求符合模型初评；不是9次独立生成，不代表人物跨调用稳定性已验证。"
+  },
+  "images": [
+    {
+      "file": "results/T012-emotions9/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b4a6b4c8f14741736e863f11b2e4b53aa08454c9b1c4e17d02cbdfbcc060c9c9"
+    }
+  ]
+}

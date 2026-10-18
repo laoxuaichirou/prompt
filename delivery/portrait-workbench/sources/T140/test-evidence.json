@@ -1,0 +1,65 @@
+{
+  "test": {
+    "test_id": "T140",
+    "title": "复古拼贴时尚档案",
+    "type": "直接生图/变量模板",
+    "test_input": "Use the fictional 32-year-old adult woman in the reference for face identity. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；原文与最终输入分别保存。",
+      "全部变量逐项填入复古旅行测试用例：{\"Theme/Aesthetic keywords\": \"retro 1970s travel fashion\", \"Character Description\": \"a fictional 32-year-old adult East Asian woman with a short side-parted black bob and small left-cheek mole\", \"Pose & Action\": \"Standing relaxed with one hand on her hip\", \"Detailed Outfit\": \"rust-orange corduroy jacket, cream crew-neck shirt, high-waisted dark blue jeans and brown leather ankle boots\", \"Accessories\": \"a plain tan crossbody satchel\", \"Layout Metaphor: DIY zine / field dossier / moodboard\": \"DIY travel zine\", \"Thematic\": \"travel-fashion\", \"Face/Makeup Detail\": \"her face with natural makeup\", \"Fabric/Texture/Weapon Detail\": \"the rust-orange corduroy jacket weave\", \"Footwear/Accessory Detail\": \"brown leather ankle boots\", \"Style\": \"vintage travel\", \"Clip Type: Silver clips / Gold clips / Rusted clips\": \"silver clips\", \"Paper Stack Thickness\": \"thick stack\", \"Tape Type: Washi / Duct / Masking\": \"washi\", \"Doodle Type: arrows / stars / graffiti\": \"arrows and stars\", \"Ink Type\": \"dark blue ink\", \"Short Text 1\": \"ON THE ROAD\", \"Short Text 2\": \"AUTUMN NOTES\", \"Stickers/Stamps\": \"fictional postage stamp stickers\", \"Paper Type: white sheets / cardstock / maps / folders\": \"old maps and cream cardstock\", \"Surface Material & Color\": \"dark walnut desk\", \"Lighting Style\": \"soft warm window light\", \"Atmosphere\": \"nostalgic tactile editorial\"}",
+      "保留括号权重作为原文文本，本工具未提供同名权重参数；子页未导出，未补写。"
+    ],
+    "selected_source_prompt": "Masterpiece, best quality, high resolution, (FULL BODY SHOT:1.5), fashion scrapbook page layout, collage style, [Theme/Aesthetic keywords]\n\n[Subject]: A wide shot full body fashion photo of [Character Description]. [Pose & Action]. Wearing [Detailed Outfit], [Accessories], (shoes visible:1.3), complete figure from head to toe.\n\n[Composition]: The image is designed like a [Layout Metaphor: DIY zine / field dossier / moodboard], main character in center, surrounded by (3 distinct polaroid snapshots:1.3) showing DIFFERENT [Thematic] details: (one close-up of [Face/Makeup Detail]:1.2), (one macro shot of [Fabric/Texture/Weapon Detail]:1.2), and (one detail of [Footwear/Accessory Detail]:1.2), ensuring unique and non-repeating insert photos.\n\n[Decorations]: [Style] scrapbooking elements, [Clip Type: Silver clips / Gold clips / Rusted clips] holding a [Paper Stack Thickness] of papers together, pieces of [Tape Type: Washi / Duct / Masking] tape, hand-drawn [Doodle Type: arrows / stars / graffiti], handwritten text annotations in [Ink Type] (e.g., \"[Short Text 1]\", \"[Short Text 2]\"), [Stickers/Stamps], torn paper textures.\n\n[Background]: (A messy stack of [Paper Type: white sheets / cardstock / maps / folders]:1.4), visible layers of paper edges underneath the main sheet, realistic depth and shadows between paper layers, placed on a [Surface Material & Color].\n\n[Technical]: [Lighting Style], [Atmosphere], sharp focus, editorial photography, 8k, tactile texture, realistic material rendering.\n",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the reference for face identity. Masterpiece, best quality, high resolution, (FULL BODY SHOT:1.5), fashion scrapbook page layout, collage style, retro 1970s travel fashion\n\n[Subject]: A wide shot full body fashion photo of a fictional 32-year-old adult East Asian woman with a short side-parted black bob and small left-cheek mole. Standing relaxed with one hand on her hip. Wearing rust-orange corduroy jacket, cream crew-neck shirt, high-waisted dark blue jeans and brown leather ankle boots, a plain tan crossbody satchel, (shoes visible:1.3), complete figure from head to toe.\n\n[Composition]: The image is designed like a DIY travel zine, main character in center, surrounded by (3 distinct polaroid snapshots:1.3) showing DIFFERENT travel-fashion details: (one close-up of her face with natural makeup:1.2), (one macro shot of the rust-orange corduroy jacket weave:1.2), and (one detail of brown leather ankle boots:1.2), ensuring unique and non-repeating insert photos.\n\n[Decorations]: vintage travel scrapbooking elements, silver clips holding a thick stack of papers together, pieces of washi tape, hand-drawn arrows and stars, handwritten text annotations in dark blue ink (e.g., \"ON THE ROAD\", \"AUTUMN NOTES\"), fictional postage stamp stickers, torn paper textures.\n\n[Background]: (A messy stack of old maps and cream cardstock:1.4), visible layers of paper edges underneath the main sheet, realistic depth and shadows between paper layers, placed on a dark walnut desk.\n\n[Technical]: soft warm window light, nostalgic tactile editorial, sharp focus, editorial photography, 8k, tactile texture, realistic material rendering.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the reference for face identity. Masterpiece, best quality, high resolution, (FULL BODY SHOT:1.5), fashion scrapbook page layout, collage style, retro 1970s travel fashion\n\n[Subject]: A wide shot full body fashion photo of a fictional 32-year-old adult East Asian woman with a short side-parted black bob and small left-cheek mole. Standing relaxed with one hand on her hip. Wearing rust-orange corduroy jacket, cream crew-neck shirt, high-waisted dark blue jeans and brown leather ankle boots, a plain tan crossbody satchel, (shoes visible:1.3), complete figure from head to toe.\n\n[Composition]: The image is designed like a DIY travel zine, main character in center, surrounded by (3 distinct polaroid snapshots:1.3) showing DIFFERENT travel-fashion details: (one close-up of her face with natural makeup:1.2), (one macro shot of the rust-orange corduroy jacket weave:1.2), and (one detail of brown leather ankle boots:1.2), ensuring unique and non-repeating insert photos.\n\n[Decorations]: vintage travel scrapbooking elements, silver clips holding a thick stack of papers together, pieces of washi tape, hand-drawn arrows and stars, handwritten text annotations in dark blue ink (e.g., \"ON THE ROAD\", \"AUTUMN NOTES\"), fictional postage stamp stickers, torn paper textures.\n\n[Background]: (A messy stack of old maps and cream cardstock:1.4), visible layers of paper edges underneath the main sheet, realistic depth and shadows between paper layers, placed on a dark walnut desk.\n\n[Technical]: soft warm window light, nostalgic tactile editorial, sharp focus, editorial photography, 8k, tactile texture, realistic material rendering.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 复古拼贴时尚档案.md",
+    "original_sha256": "40bcc77202e3a3d4dab08e608ef206e41fc3b8c2d36bd80c243e90e23f6d3907",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "主全身/三细节/纸层",
+        "result": "符合要求",
+        "evidence": "主角头至靴完整，脸部、灯芯绒纹理、靴子三个独立插图，银夹胶带纸层地图与两段指定文字正确。"
+      },
+      {
+        "requirement": "8K/权重与子页",
+        "result": "未满足/未执行",
+        "evidence": "输出非8K；括号权重未作为本工具参数验证，缺失子页未补写。"
+      }
+    ],
+    "conclusion": "最小复古旅行拼贴完成，8K输出未满足。"
+  },
+  "images": [
+    {
+      "file": "results/T140-fashion-scrapbook/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "5eabd332eaf36e3028ddbf0b716a941ae816aa771c33ca3e8fa734b7fbc2f358"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "test": {
+    "test_id": "T068",
+    "title": "Lora相关",
+    "type": "仅目录链接，正文缺失",
+    "test_input": "核对两个子页是否导出；没有实际打标/训练提示词正文。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "不把自拟打标词当作原文，不对不存在的提示词生图"
+    ],
+    "selected_source_prompt": "<page url=\"https://app.notion.com/p/359079fdbc388053af24c73630dd4cce\">人像Lora打标元提示词</page>\n<page url=\"https://app.notion.com/p/359079fdbc3880a59d73e44097e5e116\">LoRA 训练入门避坑指南</page>",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "缺失，无法执行",
+    "missing": "人像Lora打标元提示词、LoRA训练入门避坑指南，均仅链接未导出",
+    "original_filename": "提示词库/模型工具/[仅参考·3分] Lora相关.md",
+    "original_sha256": "03222468e8852e81708e82efa2107369d6865be162dc29b09c1d18c5e49bd4a5",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "可执行正文",
+        "result": "缺失",
+        "evidence": "仅两个子页链接，未导出打标元提示词或训练指南。"
+      }
+    ],
+    "conclusion": "缺失原正文，未生成图片，不可判生图实测通过。"
+  },
+  "images": []
+}

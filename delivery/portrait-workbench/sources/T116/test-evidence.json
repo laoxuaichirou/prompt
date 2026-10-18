@@ -1,0 +1,55 @@
+{
+  "test": {
+    "test_id": "T116",
+    "title": "五彩缤纷的电影级照片",
+    "type": "完整英文JSON→参考人像",
+    "test_input": "同一合成32岁成年女性面部参考，按阁楼卧室/亮粉窗/紫粉蓝竖条纹与色彩列表生成。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只使用英文JSON；Dopa Mine Decor疑似错词保持原样，不自行宣称改成多巴胺版本",
+      "明确成人身份，脸部为唯一参考，不强制保持原服装场景"
+    ],
+    "selected_source_prompt": "{\n  \"prompt_id\": \"aor0093\",\n  \"description\": \"Ultra-realistic HDR cinematic photo using the uploaded face as the only reference, keeping the true facial identity — no transformation, no changes\",\n  \"scene\": {\n    \"location\": \"Attic bedroom\",\n    \"style\": \"Cute minimalist\",\n    \"colors\": [\n      \"orange\",\n      \"pink\",\n      \"blue\",\n      \"purple\",\n      \"green\",\n      \"yellow\",\n      \"white\",\n      \"gray\",\n      \"black\",\n      \"red\"\n    ],\n    \"features\": [\n      {\n        \"type\": \"window\",\n        \"color\": \"bright pink\"\n      },\n      {\n        \"type\": \"wallpaper\",\n        \"pattern\": \"vertical stripes\",\n        \"colors\": [\n          \"purple\",\n          \"pink\",\n          \"blue\"\n        ],\n        \"style\": \"Dopa Mine Decor\",\n        \"theme\": \"colorful\"\n      }\n    ]\n  }\n}\n",
+    "final_prompt": [
+      "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n{\n  \"prompt_id\": \"aor0093\",\n  \"description\": \"Ultra-realistic HDR cinematic photo using the uploaded face as the only reference, keeping the true facial identity — no transformation, no changes\",\n  \"scene\": {\n    \"location\": \"Attic bedroom\",\n    \"style\": \"Cute minimalist\",\n    \"colors\": [\n      \"orange\",\n      \"pink\",\n      \"blue\",\n      \"purple\",\n      \"green\",\n      \"yellow\",\n      \"white\",\n      \"gray\",\n      \"black\",\n      \"red\"\n    ],\n    \"features\": [\n      {\n        \"type\": \"window\",\n        \"color\": \"bright pink\"\n      },\n      {\n        \"type\": \"wallpaper\",\n        \"pattern\": \"vertical stripes\",\n        \"colors\": [\n          \"purple\",\n          \"pink\",\n          \"blue\"\n        ],\n        \"style\": \"Dopa Mine Decor\",\n        \"theme\": \"colorful\"\n      }\n    ]\n  }\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "The character is a fictional 32-year-old adult; use the synthetic reference for facial identity.\n{\n  \"prompt_id\": \"aor0093\",\n  \"description\": \"Ultra-realistic HDR cinematic photo using the uploaded face as the only reference, keeping the true facial identity — no transformation, no changes\",\n  \"scene\": {\n    \"location\": \"Attic bedroom\",\n    \"style\": \"Cute minimalist\",\n    \"colors\": [\n      \"orange\",\n      \"pink\",\n      \"blue\",\n      \"purple\",\n      \"green\",\n      \"yellow\",\n      \"white\",\n      \"gray\",\n      \"black\",\n      \"red\"\n    ],\n    \"features\": [\n      {\n        \"type\": \"window\",\n        \"color\": \"bright pink\"\n      },\n      {\n        \"type\": \"wallpaper\",\n        \"pattern\": \"vertical stripes\",\n        \"colors\": [\n          \"purple\",\n          \"pink\",\n          \"blue\"\n        ],\n        \"style\": \"Dopa Mine Decor\",\n        \"theme\": \"colorful\"\n      }\n    ]\n  }\n}\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 五彩缤纷的电影级照片.md",
+    "original_sha256": "3bb593526d4f8734f5f86480862cdc8da7e046bde2060605e8e6a9f1c4b86d75",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "工具结果",
+        "result": "阻塞",
+        "evidence": "output阶段sexual分类拒绝，无返回图片；不能推断未返回画面的内容，也不是额度耗尽。"
+      }
+    ],
+    "conclusion": "已实际调用，输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

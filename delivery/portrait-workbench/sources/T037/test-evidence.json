@@ -1,0 +1,132 @@
+{
+  "test": {
+    "test_id": "T037",
+    "title": "【九宫格】1图转电影分镜图提示词",
+    "type": "元提示词→分镜文本→静态图",
+    "test_input": "{\"scene_breakdown\":\"单一黑短发成年女子在花店中央，白衬衫绿围裙，双手抱粉白花束；后方花架与花桶，温暖窗光。无真实身份/地点推断。\",\"anchors\":[\"短黑发/左脸颊痣\",\"白衬衫绿围裙\",\"同一粉白花束\",\"相同花店与暖窗光\"],\"theme_story\":\"微风使人物留意花束，轻触玫瑰后平静微笑。四拍：建立—注意—触碰—安静。\",\"cinematic_approach\":\"由全景进入面部和手部，再回全景；宽景深到浅景深，保持轴线。建议总14.4秒仅作分镜参数，未生成视频。\",\"keyframes\":[{\"label\":\"KF1 | ELS | 1.6s\",\"composition\":\"wide establishing shot, same adult woman standing in flower shop holding bouquet\",\"action\":\"wide establishing shot, same adult woman standing in flower shop holding bouquet\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"35mm, deep\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF2 | LS | 1.6s\",\"composition\":\"full-body view, same white blouse green apron, same bouquet, same shelves\",\"action\":\"full-body view, same white blouse green apron, same bouquet, same shelves\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"35mm, deep\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF3 | MS | 1.6s\",\"composition\":\"medium shot, a breeze gently stirs leaves beside the bouquet\",\"action\":\"medium shot, a breeze gently stirs leaves beside the bouquet\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"50-85mm, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF4 | CU | 1.6s\",\"composition\":\"close-up, same woman's eyes noticing the moving leaves\",\"action\":\"close-up, same woman's eyes noticing the moving leaves\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"50-85mm, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF5 | MCU | 1.6s\",\"composition\":\"medium close-up, same woman slowly rotating bouquet in her hands\",\"action\":\"medium close-up, same woman slowly rotating bouquet in her hands\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"50-85mm, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF6 | ECU | 1.6s\",\"composition\":\"extreme close-up, fingertips lightly brushing pink rose petals\",\"action\":\"extreme close-up, fingertips lightly brushing pink rose petals\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"100mm macro, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF7 | OTS | 1.6s\",\"composition\":\"over-shoulder, bouquet tilted toward soft window light\",\"action\":\"over-shoulder, bouquet tilted toward soft window light\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"50-85mm, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF8 | Low | 1.6s\",\"composition\":\"low angle, same woman lifting bouquet slightly with a soft smile\",\"action\":\"low angle, same woman lifting bouquet slightly with a soft smile\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"50-85mm, shallow\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"},{\"label\":\"KF9 | ELS | 1.6s\",\"composition\":\"wide closing shot, same woman relaxed among unchanged flower displays\",\"action\":\"wide closing shot, same woman relaxed among unchanged flower displays\",\"camera\":\"静态画格；视频运镜仅建议，未执行\",\"lens_dof\":\"35mm, deep\",\"lighting_grade\":\"原参考暖窗光与绿色/粉白花束色调\"}]}",
+    "reference_material": [
+      "results/T001-fixed-person/04-florist.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只测试选定可见框架，不把原库5分当本轮证据。",
+      "执行第一个完整元提示词的A-D分析与9个KF，保存后生成E主图；标注建议时长但不测视频。"
+    ],
+    "selected_source_prompt": "Create ONE master native 3x3 contact sheet from the supplied synthetic flower-shop reference. Strictly retain the same adult woman, face, short bob, white blouse, green apron, bouquet, shelves and warm lighting; introduce no new characters or props. Nine consecutive moments, with realistic DoF changes. Put each exact safe-margin label beside its own panel; labels must not cover subject. Panels:\nKF1 | ELS | 1.6s: wide establishing shot, same adult woman standing in flower shop holding bouquet\nKF2 | LS | 1.6s: full-body view, same white blouse green apron, same bouquet, same shelves\nKF3 | MS | 1.6s: medium shot, a breeze gently stirs leaves beside the bouquet\nKF4 | CU | 1.6s: close-up, same woman's eyes noticing the moving leaves\nKF5 | MCU | 1.6s: medium close-up, same woman slowly rotating bouquet in her hands\nKF6 | ECU | 1.6s: extreme close-up, fingertips lightly brushing pink rose petals\nKF7 | OTS | 1.6s: over-shoulder, bouquet tilted toward soft window light\nKF8 | Low | 1.6s: low angle, same woman lifting bouquet slightly with a soft smile\nKF9 | ELS | 1.6s: wide closing shot, same woman relaxed among unchanged flower displays",
+    "final_prompt": "Create ONE master native 3x3 contact sheet from the supplied synthetic flower-shop reference. Strictly retain the same adult woman, face, short bob, white blouse, green apron, bouquet, shelves and warm lighting; introduce no new characters or props. Nine consecutive moments, with realistic DoF changes. Put each exact safe-margin label beside its own panel; labels must not cover subject. Panels:\nKF1 | ELS | 1.6s: wide establishing shot, same adult woman standing in flower shop holding bouquet\nKF2 | LS | 1.6s: full-body view, same white blouse green apron, same bouquet, same shelves\nKF3 | MS | 1.6s: medium shot, a breeze gently stirs leaves beside the bouquet\nKF4 | CU | 1.6s: close-up, same woman's eyes noticing the moving leaves\nKF5 | MCU | 1.6s: medium close-up, same woman slowly rotating bouquet in her hands\nKF6 | ECU | 1.6s: extreme close-up, fingertips lightly brushing pink rose petals\nKF7 | OTS | 1.6s: over-shoulder, bouquet tilted toward soft window light\nKF8 | Low | 1.6s: low angle, same woman lifting bouquet slightly with a soft smile\nKF9 | ELS | 1.6s: wide closing shot, same woman relaxed among unchanged flower displays",
+    "meta_output": {
+      "scene_breakdown": "单一黑短发成年女子在花店中央，白衬衫绿围裙，双手抱粉白花束；后方花架与花桶，温暖窗光。无真实身份/地点推断。",
+      "anchors": [
+        "短黑发/左脸颊痣",
+        "白衬衫绿围裙",
+        "同一粉白花束",
+        "相同花店与暖窗光"
+      ],
+      "theme_story": "微风使人物留意花束，轻触玫瑰后平静微笑。四拍：建立—注意—触碰—安静。",
+      "cinematic_approach": "由全景进入面部和手部，再回全景；宽景深到浅景深，保持轴线。建议总14.4秒仅作分镜参数，未生成视频。",
+      "keyframes": [
+        {
+          "label": "KF1 | ELS | 1.6s",
+          "composition": "wide establishing shot, same adult woman standing in flower shop holding bouquet",
+          "action": "wide establishing shot, same adult woman standing in flower shop holding bouquet",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "35mm, deep",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF2 | LS | 1.6s",
+          "composition": "full-body view, same white blouse green apron, same bouquet, same shelves",
+          "action": "full-body view, same white blouse green apron, same bouquet, same shelves",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "35mm, deep",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF3 | MS | 1.6s",
+          "composition": "medium shot, a breeze gently stirs leaves beside the bouquet",
+          "action": "medium shot, a breeze gently stirs leaves beside the bouquet",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "50-85mm, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF4 | CU | 1.6s",
+          "composition": "close-up, same woman's eyes noticing the moving leaves",
+          "action": "close-up, same woman's eyes noticing the moving leaves",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "50-85mm, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF5 | MCU | 1.6s",
+          "composition": "medium close-up, same woman slowly rotating bouquet in her hands",
+          "action": "medium close-up, same woman slowly rotating bouquet in her hands",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "50-85mm, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF6 | ECU | 1.6s",
+          "composition": "extreme close-up, fingertips lightly brushing pink rose petals",
+          "action": "extreme close-up, fingertips lightly brushing pink rose petals",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "100mm macro, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF7 | OTS | 1.6s",
+          "composition": "over-shoulder, bouquet tilted toward soft window light",
+          "action": "over-shoulder, bouquet tilted toward soft window light",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "50-85mm, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF8 | Low | 1.6s",
+          "composition": "low angle, same woman lifting bouquet slightly with a soft smile",
+          "action": "low angle, same woman lifting bouquet slightly with a soft smile",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "50-85mm, shallow",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        },
+        {
+          "label": "KF9 | ELS | 1.6s",
+          "composition": "wide closing shot, same woman relaxed among unchanged flower displays",
+          "action": "wide closing shot, same woman relaxed among unchanged flower displays",
+          "camera": "静态画格；视频运镜仅建议，未执行",
+          "lens_dof": "35mm, deep",
+          "lighting_grade": "原参考暖窗光与绿色/粉白花束色调"
+        }
+      ]
+    },
+    "original_filename": "提示词库/视频分镜/[已投产·5分] 【九宫格】1图转电影分镜图提示词.md",
+    "original_sha256": "9e3fedfe9c25bfc849a654cf7c270d6391bdc9bf19072e4dd7c34589a12a5128",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T001-fixed-person/04-florist.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "核心结构、视觉连续性与原文约束",
+        "result": "存在问题",
+        "evidence": "九个KF编号、景别标签与1.6s均可读，面部/花束/白衬衫绿围裙/暖花店延续；首尾ELS不够远且与LS近似，具体运镜幅度规划未完整覆盖，本轮不验证14.4秒动态视频。"
+      }
+    ],
+    "conclusion": "九个KF编号、景别标签与1.6s均可读，面部/花束/白衬衫绿围裙/暖花店延续；首尾ELS不够远且与LS近似，具体运镜幅度规划未完整覆盖，本轮不验证14.4秒动态视频。 模型单轮初评，未宣称视频通过。"
+  },
+  "images": [
+    {
+      "file": "results/T037-cinematic-contact9/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0a115ae6d00fc2a3e07510403be3b550a1e937596f65d6067d40e55eaf6745e0"
+    }
+  ]
+}

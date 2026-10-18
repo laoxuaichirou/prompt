@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T145",
+    "title": "摆放着一个与本人相似的Q版模型",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a wholly fictional 28-year-old adult man with short dark hair, a plain forest-green crew-neck sweater, dark trousers and no logos. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构人物/年龄；其他要求保留，非原示例人物实测。"
+    ],
+    "selected_source_prompt": "A young man sitting casually at a modern café counter, smiling while holding a glass of iced coffee. On the table in front of him stands a small 3D chibi character version of the same man. The chibi has super-deformed proportions, a large head, big expressive eyes, and simplified facial features. It has a smooth 3D plastic or clay-like texture, soft studio lighting, and a clear shadow on the table surface. The chibi is holding a tiny glass of coffee. Warm pendant lights, wooden café interior, cinematic realistic human combined with stylized 3D chibi, shallow depth of field, vertical 9:16.",
+    "final_prompt": [
+      "The subject is a wholly fictional 28-year-old adult man with short dark hair, a plain forest-green crew-neck sweater, dark trousers and no logos. A young man sitting casually at a modern café counter, smiling while holding a glass of iced coffee. On the table in front of him stands a small 3D chibi character version of the same man. The chibi has super-deformed proportions, a large head, big expressive eyes, and simplified facial features. It has a smooth 3D plastic or clay-like texture, soft studio lighting, and a clear shadow on the table surface. The chibi is holding a tiny glass of coffee. Warm pendant lights, wooden café interior, cinematic realistic human combined with stylized 3D chibi, shallow depth of field, vertical 9:16."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a wholly fictional 28-year-old adult man with short dark hair, a plain forest-green crew-neck sweater, dark trousers and no logos. A young man sitting casually at a modern café counter, smiling while holding a glass of iced coffee. On the table in front of him stands a small 3D chibi character version of the same man. The chibi has super-deformed proportions, a large head, big expressive eyes, and simplified facial features. It has a smooth 3D plastic or clay-like texture, soft studio lighting, and a clear shadow on the table surface. The chibi is holding a tiny glass of coffee. Warm pendant lights, wooden café interior, cinematic realistic human combined with stylized 3D chibi, shallow depth of field, vertical 9:16.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 摆放着一个与本人相似的Q版模型.md",
+    "original_sha256": "d7c63ab3a0d4171f46174951e6f115a20bb85044acf2783ca62d732c6a9844ef",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "真人与同款Q版/咖啡/环境",
+        "result": "符合要求",
+        "evidence": "成年男子绿毛衣手持冰咖啡，桌上同发型同服大头Q版亦持小咖啡，塑料质感与落桌阴影清楚；木质咖啡馆暖吊灯和9:16构图。"
+      },
+      {
+        "requirement": "边界",
+        "result": "模型初评",
+        "evidence": "虚构输入、单场景双尺度效果；不证明跨场景身份稳定性。"
+      }
+    ],
+    "conclusion": "本次咖啡馆真人与Q版模型用例符合可见要求。"
+  },
+  "images": [
+    {
+      "file": "results/T145-cafe-mini/output.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "1e4e9c604229bb2492df411dba38d5d4bebb30e59bc2028916c62bfd784b076b"
+    }
+  ]
+}

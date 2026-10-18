@@ -1,0 +1,47 @@
+{
+  "test": {
+    "test_id": "T048",
+    "title": "暖光工作室拉琴写真",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "29岁虚构成年女性，按原例拉琴，重点验收琴与弓及手部。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文正式提示词；明确成年人。"
+    ],
+    "selected_source_prompt": "Ultra-realistic portrait of a young woman playing a violin, seated on a rustic wooden block. She has naturally curly medium-length brown hair with soft volume, warm skin tones, and subtle professional makeup with defined eyes and natural lips. She wears a slightly unbuttoned white button-up shirt with rolled sleeves and fitted ripped blue jeans, creating a casual yet elegant look.\n\nThe violin is a rich polished amber-brown wood, held correctly under her chin, with the bow drawn gently across the strings. Her posture is relaxed and confident, eyes lowered in deep focus and emotion as she plays. Hands and fingers are anatomically accurate, positioned naturally on the fingerboard and bow.\n\nBackground features a textured painterly wall with soft pastel tones of beige, teal, and muted orange, resembling a fine-art studio backdrop. Lighting is soft, cinematic studio lighting from the upper left, creating gentle highlights on her face, violin, and fabric folds, with smooth shadows and depth.\n\nColor palette blends warm browns, creamy whites, denim blues, and muted earth tones. Shallow depth of field with sharp focus on the subject and violin, subtle background blur.\n\nStyle: fine-art photography, cinematic realism, editorial portrait, ultra-detailed, natural textures, photorealistic, 8K quality, professional studio composition.\n",
+    "final_prompt": "Use an entirely fictional adult woman aged29. Ultra-realistic portrait of a young woman playing a violin, seated on a rustic wooden block. She has naturally curly medium-length brown hair with soft volume, warm skin tones, and subtle professional makeup with defined eyes and natural lips. She wears a slightly unbuttoned white button-up shirt with rolled sleeves and fitted ripped blue jeans, creating a casual yet elegant look.\n\nThe violin is a rich polished amber-brown wood, held correctly under her chin, with the bow drawn gently across the strings. Her posture is relaxed and confident, eyes lowered in deep focus and emotion as she plays. Hands and fingers are anatomically accurate, positioned naturally on the fingerboard and bow.\n\nBackground features a textured painterly wall with soft pastel tones of beige, teal, and muted orange, resembling a fine-art studio backdrop. Lighting is soft, cinematic studio lighting from the upper left, creating gentle highlights on her face, violin, and fabric folds, with smooth shadows and depth.\n\nColor palette blends warm browns, creamy whites, denim blues, and muted earth tones. Shallow depth of field with sharp focus on the subject and violin, subtle background blur.\n\nStyle: fine-art photography, cinematic realism, editorial portrait, ultra-detailed, natural textures, photorealistic, 8K quality, professional studio composition.\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 暖光工作室拉琴写真.md",
+    "original_sha256": "1b872b3945de4fa4f50918115f6a56493cd4aa22160684415ce0300d9d39bbcb",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "人物、琴弓、手部与工作室",
+        "result": "视觉基本符合",
+        "evidence": "棕卷发成年女性坐木方台，白卷袖衬衫破洞牛仔裤、琥珀木琴、下巴托琴、左手琴颈与右手运弓基本可辨；指法和持弓专业正确性无法完全从静态图确认。"
+      },
+      {
+        "requirement": "8K",
+        "result": "不符合",
+        "evidence": "原生1024×1536；未后期放大冒充。"
+      }
+    ],
+    "conclusion": "拉琴摄影最小用例已出图，主要造型命中；专业指法未完全核实，8K未达。"
+  },
+  "images": [
+    {
+      "file": "results/T048-violin/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ec20fc8d6ce8ecd5af6e82be07fe6e5073fc54644caf1f7ad695080a6de90aa7"
+    }
+  ]
+}

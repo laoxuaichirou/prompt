@@ -1,0 +1,43 @@
+{
+  "test": {
+    "test_id": "T041",
+    "title": "黄金稻田独行青年",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "25岁虚构成年男子；原JSON列举的5个镜头均在同一原生五格分镜中呈现。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "取英文完整JSON；成年年龄固定25，车辆二选一固定摩托。",
+      "正文要求storyboard grid并列5镜，采用原生五格而非五个条目合图。"
+    ],
+    "selected_source_prompt": "{\n  \"subject\": {\n    \"type\": \"young man\",\n    \"age\": \"early to mid 20s\",\n    \"appearance\": {\n      \"hair\": \"short to medium length, naturally styled\",\n      \"expression\": \"calm, introspective, emotionally reserved\",\n      \"skin_tone\": \"natural warm olive, soft and realistic\",\n      \"features\": \"sharp thoughtful eyes, subtle stubble or clean-shaven, natural facial texture\"\n    },\n    \"clothing\": \"earth-tone minimalist outfit, long-sleeve shirt or lightweight jacket, contemporary and understated\"\n  },\n  \"scene\": {\n    \"environment\": \"quiet rural roadside near rice fields\",\n    \"location\": \"open rice paddies with distant trees and a soft horizon\",\n    \"props\": \"simple parked motorcycle or compact car on the roadside\",\n    \"time_of_day\": \"golden hour / late afternoon\",\n    \"weather\": \"clear sky, gentle breeze moving the grass\"\n  },\n  \"composition\": {\n    \"style\": \"cinematic storyboard grid\",\n    \"shots\": [\n      \"extreme close-up of eyes with natural light reflections\",\n      \"medium portrait facing camera with soft sunlight on the face\",\n      \"top-down shot from above showing the subject beside the road\",\n      \"side profile portrait with wind subtly moving hair or clothing\",\n      \"wide shot walking alone along the road between rice fields\"\n    ],\n    \"camera_angles\": \"mix of eye-level, overhead, and side angles\",\n    \"framing\": \"subject centered with strong negative space and expansive landscape\"\n  },\n  \"lighting\": {\n    \"type\": \"natural sunlight\",\n    \"quality\": \"soft, diffused golden-hour light\",\n    \"color_temperature\": \"neutral with warm highlights\",\n    \"shadows\": \"gentle, realistic falloff\"\n  },\n  \"visual_style\": {\n    \"mood\": \"quiet, reflective, contemplative\",\n    \"color_grading\": \"muted earthy tones with slight cool shadows\",\n    \"contrast\": \"low to medium\",\n    \"film_look\": \"cinematic indie film aesthetic\",\n    \"realism\": \"high, photorealistic\"\n  },\n  \"camera_settings\": {\n    \"lens\": \"35mm–50mm cinematic lens\",\n    \"depth_of_field\": \"shallow to medium\",\n    \"focus\": \"sharp focus on subject, softly blurred background\"\n  },\n  \"quality\": {\n    \"resolution\": \"4K\",\n    \"detail\": \"high detail, realistic fabric texture and skin rendering\",\n    \"noise\": \"minimal\",\n    \"artifacts\": \"none\"\n  }\n}\n",
+    "final_prompt": "Generate ONE native cinematic contact sheet with exactly FIVE panels for the five listed shots, same entirely fictional adult man aged25 and same outfit throughout. Do not add a sixth panel. Choose the parked motorcycle option and a brown long-sleeve shirt consistently. {\n  \"subject\": {\n    \"type\": \"young man\",\n    \"age\": \"early to mid 20s\",\n    \"appearance\": {\n      \"hair\": \"short to medium length, naturally styled\",\n      \"expression\": \"calm, introspective, emotionally reserved\",\n      \"skin_tone\": \"natural warm olive, soft and realistic\",\n      \"features\": \"sharp thoughtful eyes, subtle stubble or clean-shaven, natural facial texture\"\n    },\n    \"clothing\": \"earth-tone minimalist outfit, long-sleeve shirt or lightweight jacket, contemporary and understated\"\n  },\n  \"scene\": {\n    \"environment\": \"quiet rural roadside near rice fields\",\n    \"location\": \"open rice paddies with distant trees and a soft horizon\",\n    \"props\": \"simple parked motorcycle or compact car on the roadside\",\n    \"time_of_day\": \"golden hour / late afternoon\",\n    \"weather\": \"clear sky, gentle breeze moving the grass\"\n  },\n  \"composition\": {\n    \"style\": \"cinematic storyboard grid\",\n    \"shots\": [\n      \"extreme close-up of eyes with natural light reflections\",\n      \"medium portrait facing camera with soft sunlight on the face\",\n      \"top-down shot from above showing the subject beside the road\",\n      \"side profile portrait with wind subtly moving hair or clothing\",\n      \"wide shot walking alone along the road between rice fields\"\n    ],\n    \"camera_angles\": \"mix of eye-level, overhead, and side angles\",\n    \"framing\": \"subject centered with strong negative space and expansive landscape\"\n  },\n  \"lighting\": {\n    \"type\": \"natural sunlight\",\n    \"quality\": \"soft, diffused golden-hour light\",\n    \"color_temperature\": \"neutral with warm highlights\",\n    \"shadows\": \"gentle, realistic falloff\"\n  },\n  \"visual_style\": {\n    \"mood\": \"quiet, reflective, contemplative\",\n    \"color_grading\": \"muted earthy tones with slight cool shadows\",\n    \"contrast\": \"low to medium\",\n    \"film_look\": \"cinematic indie film aesthetic\",\n    \"realism\": \"high, photorealistic\"\n  },\n  \"camera_settings\": {\n    \"lens\": \"35mm–50mm cinematic lens\",\n    \"depth_of_field\": \"shallow to medium\",\n    \"focus\": \"sharp focus on subject, softly blurred background\"\n  },\n  \"quality\": {\n    \"resolution\": \"4K\",\n    \"detail\": \"high detail, realistic fabric texture and skin rendering\",\n    \"noise\": \"minimal\",\n    \"artifacts\": \"none\"\n  }\n}\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 黄金稻田独行青年.md",
+    "original_sha256": "fcca2a4705ea18e3feca0b6783662e374b1fcdf1b853fada0d4e1e3bb58f3600",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "原文关键视觉要求",
+        "result": "存在问题",
+        "evidence": "五格分别为眼部特写、正面中景、俯拍人车、侧面、稻田路上远景；人物与棕色衣服、摩托车及金色夕照基本一致，但输出1536×1024未达4K。"
+      }
+    ],
+    "conclusion": "五格分别为眼部特写、正面中景、俯拍人车、侧面、稻田路上远景；人物与棕色衣服、摩托车及金色夕照基本一致，但输出1536×1024未达4K。 单轮模型初评。"
+  },
+  "images": [
+    {
+      "file": "results/T041-rice5/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f1a03a6eb1e48ff2228d141df3b482afba7e5e2b9445b26764a4402bddae6675"
+    }
+  ]
+}

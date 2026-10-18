@@ -1,0 +1,47 @@
+{
+  "test": {
+    "test_id": "T031",
+    "title": "一张超现实的微距照片",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "角色=同一32岁合成成年女性；配件=微型陶瓷杯。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅取英文Original，去除中文重复与来源。",
+      "(CHARACTER)填入同一合成成年女性，(ACCESSORY)填微型陶瓷杯。"
+    ],
+    "selected_source_prompt": "Create a hyper-real macro photograph of a tiny fictional adult woman from reference about 10–12 cm tall, gently held between a real human thumb and index finger or sitting on the fingertip. The character naturally touches the thumb for scale and holds a tiny ceramic mug. Studio setting with a soft grey gradient background, subtle bokeh. Skin, fabric and hair show micro-texture; add accurate contact shadows where fingers meet the character. Lighting: softbox at 45°, faint rim light on the far side; no harsh glare. Camera look: 100mm macro • f/2.8 • ISO 100 • 1/160s (shallow depth of field; eyes perfectly in focus). Hands look clean, natural anatomy, 5 fingers, realistic nails and pores. The character’s outfit is simple textured knit (dark grey) unless the identity demands otherwise; proportions and perspective must read real, not toy. Treat fictional adult woman from reference respectfully and keep likeness faithful if based on a real person. Composition: subject centered, from mid-torso up, with the thumb and index framing the character;",
+    "final_prompt": "The character is the supplied fictional ADULT woman's face, age32, not a toy. Create a hyper-real macro photograph of a tiny fictional adult woman from reference about 10–12 cm tall, gently held between a real human thumb and index finger or sitting on the fingertip. The character naturally touches the thumb for scale and holds a tiny ceramic mug. Studio setting with a soft grey gradient background, subtle bokeh. Skin, fabric and hair show micro-texture; add accurate contact shadows where fingers meet the character. Lighting: softbox at 45°, faint rim light on the far side; no harsh glare. Camera look: 100mm macro • f/2.8 • ISO 100 • 1/160s (shallow depth of field; eyes perfectly in focus). Hands look clean, natural anatomy, 5 fingers, realistic nails and pores. The character’s outfit is simple textured knit (dark grey) unless the identity demands otherwise; proportions and perspective must read real, not toy. Treat fictional adult woman from reference respectfully and keep likeness faithful if based on a real person. Composition: subject centered, from mid-torso up, with the thumb and index framing the character;",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 一张超现实的微距照片.md",
+    "original_sha256": "52726b54c8afdbf104861eab181c3fc333d4dd45915e261e8729be00184f9a7a",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "逐项核心视觉与构图检查",
+        "result": "存在问题",
+        "evidence": "微型同人、灰色针织、杯子、指尖接触阴影与皮肤细节符合；但原文要求躯干中部以上构图，实际全身坐在指上，10—12cm也无尺度尺可确认。"
+      }
+    ],
+    "conclusion": "微型同人、灰色针织、杯子、指尖接触阴影与皮肤细节符合；但原文要求躯干中部以上构图，实际全身坐在指上，10—12cm也无尺度尺可确认。 单轮模型初评，不代表稳定性已验证。"
+  },
+  "images": [
+    {
+      "file": "results/T031-miniature/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "64a91c613d14ce08d186b08f3754f68036dd2d5ad664eef33f266c0f4277a67b"
+    }
+  ]
+}

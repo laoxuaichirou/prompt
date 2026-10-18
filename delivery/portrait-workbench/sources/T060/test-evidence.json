@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T060",
+    "title": "提示词增强",
+    "type": "编辑元提示词→优化指令→图像编辑",
+    "test_input": "只把背景改成淡蓝色，其他不变。参考adult合成成年人物。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择简易版编辑指令，长版文生图/设计推理未执行"
+    ],
+    "selected_source_prompt": "将用户请求解释为图像编辑指令。\n首先确定主要的编辑任务（风格改变、物体添加、物体移除、光照调整等）。\n保留原始图像中未明确要求改变的元素，包括主体身份、姿态、构图和空间布局。\n确保物理合理性：保持正确的透视、逼真的阴影、一致的光照方向。\n用一句话清晰地描述编辑后的结果。\n仅输出最终的优化提示词。\n",
+    "final_prompt": [
+      "将参考图的灰色影棚背景替换为均匀的淡蓝色无缝影棚背景，保留原成年人物的身份、短黑发、表情、站姿、白色T恤、海军蓝长裤、白鞋、画面裁切与原有柔和光照，并让地面接触阴影自然衔接。"
+    ],
+    "meta_output": "将参考图的灰色影棚背景替换为均匀的淡蓝色无缝影棚背景，保留原成年人物的身份、短黑发、表情、站姿、白色T恤、海军蓝长裤、白鞋、画面裁切与原有柔和光照，并让地面接触阴影自然衔接。",
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "将参考图的灰色影棚背景替换为均匀的淡蓝色无缝影棚背景，保留原成年人物的身份、短黑发、表情、站姿、白色T恤、海军蓝长裤、白鞋、画面裁切与原有柔和光照，并让地面接触阴影自然衔接。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词增强.md",
+    "original_sha256": "db4b11514fbb6b98aa46c03003a57b9052f23c21e125087e53dfcffa2a063c0a",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "灰底替换淡蓝底",
+        "result": "符合要求",
+        "evidence": "背景与地面呈浅蓝色，脚下接触阴影自然。"
+      },
+      {
+        "requirement": "未指定元素保持",
+        "result": "基本符合",
+        "evidence": "仍为同一成年短发人物、白T深蓝裤白鞋、正面站姿和全身裁切；未添加物件或文字。"
+      },
+      {
+        "requirement": "全部版本与稳定性",
+        "result": "未验证",
+        "evidence": "只测试简易版的一条背景替换，未测试长版和重复运行。"
+      }
+    ],
+    "conclusion": "简易版背景替换最小用例符合要求，仅为单次模型初评。"
+  },
+  "images": [
+    {
+      "file": "results/T060-enhance/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "408410b5a5fbbb5d9e32dfa3ffed82d23113ea0537da5800f6174ca53b1397cf"
+    }
+  ]
+}

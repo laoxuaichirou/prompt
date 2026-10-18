@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T153",
+    "title": "青春波普贴纸秀",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a wholly fictional 28-year-old adult man with short dark hair. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；按照正文规定造型，不引用原示例身份。"
+    ],
+    "selected_source_prompt": "A vibrant 2000s scrapbook-style collage featuring the same young man in multiple cutout poses. One portrait is centered and large, showing him wearing round glasses and a black hoodie, making a finger-heart gesture toward the camera. Other cutouts show him squatting with a vintage instant camera, and another blowing a pink bubblegum bubble.\n\nThe background looks like an open sketchbook with textured paper, filled with colorful paint strokes in rainbow tones, playful doodles, arrows, stars, hearts, butterflies, smiley faces, and pop-art stickers. Bold, bubbly typography stickers read phrases like “2000s Vibes,” “Dream Big,” “Be Yourself,” “Cool Dude,” “Say Cheese,” and “Pop!”\n\nThe overall aesthetic is nostalgic, cheerful, and youthful — inspired by early 2000s teen magazines and scrapbook journals. High saturation, soft lighting, clean white sticker outlines around each cutout, whimsical and fun mood, creative flat-lay composition, digital collage illustration style.\n",
+    "final_prompt": [
+      "The subject is a wholly fictional 28-year-old adult man with short dark hair. A vibrant 2000s scrapbook-style collage featuring the same young man in multiple cutout poses. One portrait is centered and large, showing him wearing round glasses and a black hoodie, making a finger-heart gesture toward the camera. Other cutouts show him squatting with a vintage instant camera, and another blowing a pink bubblegum bubble.\n\nThe background looks like an open sketchbook with textured paper, filled with colorful paint strokes in rainbow tones, playful doodles, arrows, stars, hearts, butterflies, smiley faces, and pop-art stickers. Bold, bubbly typography stickers read phrases like “2000s Vibes,” “Dream Big,” “Be Yourself,” “Cool Dude,” “Say Cheese,” and “Pop!”\n\nThe overall aesthetic is nostalgic, cheerful, and youthful — inspired by early 2000s teen magazines and scrapbook journals. High saturation, soft lighting, clean white sticker outlines around each cutout, whimsical and fun mood, creative flat-lay composition, digital collage illustration style.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a wholly fictional 28-year-old adult man with short dark hair. A vibrant 2000s scrapbook-style collage featuring the same young man in multiple cutout poses. One portrait is centered and large, showing him wearing round glasses and a black hoodie, making a finger-heart gesture toward the camera. Other cutouts show him squatting with a vintage instant camera, and another blowing a pink bubblegum bubble.\n\nThe background looks like an open sketchbook with textured paper, filled with colorful paint strokes in rainbow tones, playful doodles, arrows, stars, hearts, butterflies, smiley faces, and pop-art stickers. Bold, bubbly typography stickers read phrases like “2000s Vibes,” “Dream Big,” “Be Yourself,” “Cool Dude,” “Say Cheese,” and “Pop!”\n\nThe overall aesthetic is nostalgic, cheerful, and youthful — inspired by early 2000s teen magazines and scrapbook journals. High saturation, soft lighting, clean white sticker outlines around each cutout, whimsical and fun mood, creative flat-lay composition, digital collage illustration style.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 青春波普贴纸秀.md",
+    "original_sha256": "959310e1c9d9220201857aa21b794143a6c8fb26e080c661773dacce774f9408",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "多剪影/动作/六文字",
+        "result": "符合要求",
+        "evidence": "中心圆眼镜黑卫衣指心，左上蹲姿拍立得、右侧粉泡泡，六段指定英文文字均出现，白描边彩虹涂鸦纸本拼贴。"
+      },
+      {
+        "requirement": "边界",
+        "result": "模型初评",
+        "evidence": "中心与剪影有可辨相近脸部，不代表真实同一人或跨场景稳定性。"
+      }
+    ],
+    "conclusion": "本次波普剪贴簿用例符合可见要求。"
+  },
+  "images": [
+    {
+      "file": "results/T153-pop-stickers/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7f6815a7d56af674df84477168a6348a797a3b496fcc72a218e27883ec365a4f"
+    }
+  ]
+}

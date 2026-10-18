@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T115",
+    "title": "【示例】求婚场景（banana图生图）",
+    "type": "双人照片→Q版求婚场景",
+    "test_input": "使用新合成双人照片，虚构32岁女与43岁男；按原文改求婚/五彩花瓣拱门和写实环境，保持原照片比例。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/couple-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "普通双人照片为自制合成素材，不依赖未取得的原库双人图",
+      "人物Q版、环境写实，保持输入3:4比例要求"
+    ],
+    "selected_source_prompt": "保持画面比例，将照片里的两个人转换成Q版 3D软萌人物，场景换成求婚，背景换成淡雅五彩花瓣做的拱门，背景换成浪漫颜色，地上散落着玫瑰花瓣。除了人物采用Q版 3D人物风格，其他环境采用真实写实风格。",
+    "final_prompt": [
+      "保持画面比例，将照片里的两个人转换成Q版 3D软萌人物，场景换成求婚，背景换成淡雅五彩花瓣做的拱门，背景换成浪漫颜色，地上散落着玫瑰花瓣。除了人物采用Q版 3D人物风格，其他环境采用真实写实风格。"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/couple-synthetic.png"
+        ],
+        "prompt": "保持画面比例，将照片里的两个人转换成Q版 3D软萌人物，场景换成求婚，背景换成淡雅五彩花瓣做的拱门，背景换成浪漫颜色，地上散落着玫瑰花瓣。除了人物采用Q版 3D人物风格，其他环境采用真实写实风格。",
+        "reference_material_portable": [
+          "materials/couple-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 【示例】求婚场景（banana图生图）.md",
+    "original_sha256": "fa72bdc22c3954bca831877ae6ee43f8a9b43a028147c083b17eedacb789c4e5",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/couple-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "Q版人物/写实环境/比例",
+        "result": "基本符合",
+        "evidence": "两个人物变为Q版、男方单膝持戒指，花拱门/花瓣地面/夕阳环境较写实，保持3:4。"
+      },
+      {
+        "requirement": "参考人物与花瓣材质",
+        "result": "存在问题",
+        "evidence": "服装由日常T恤改礼服西装，男性头发比参考浓密；拱门主要为整朵花而非仅花瓣构成。"
+      },
+      {
+        "requirement": "覆盖范围",
+        "result": "模型初评",
+        "evidence": "使用合成双人照，仅一次场景转换，不能证明原库人物还原。"
+      }
+    ],
+    "conclusion": "求婚构图与风格混合完成，人物细节/衣着及拱门材质未严格保留或实现。"
+  },
+  "images": [
+    {
+      "file": "results/T115-proposal/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "f61fa4f88a0acbc6a7c9a47d0ae53bc2d81b6011b718ab5caadd057b0f74e603"
+    }
+  ]
+}

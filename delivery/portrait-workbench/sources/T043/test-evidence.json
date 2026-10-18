@@ -1,0 +1,40 @@
+{
+  "test": {
+    "test_id": "T043",
+    "title": "高级时装工作室照片拼贴画",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一32岁合成成年女性脸部，六个明确列出的姿势、黑裙造型。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文Original；6—8范围固定为6，对应原文列出的全部六姿势。",
+      "参考只锁脸；按原文变成长发盘发和黑色礼服造型。"
+    ],
+    "selected_source_prompt": "Create a realistic high-fashion studio photo collage featuring the same woman in six to eight different poses, using the uploaded face image as the exact facial reference (same facial structure, eyes, nose, lips, skin tone, and overall identity).\n\nThe woman has a slim and elegant body, natural proportions, pale to light skin tone, a delicate oval face, soft but sharp facial features, large expressive eyes, thin lips, and a calm, confident expression. Her hair is long, black, styled in a messy bun with loose strands falling naturally around the face.\n\nOutfit: a tight black strapless mini dress, paired with sheer black thigh-high stockings, pointed-toe black stiletto heels with thin heels, and a formal black blazer worn in different ways across poses (fully worn, draped over one shoulder, hanging off one arm, or resting loosely on the arms). Accessories include a thin black choker necklace.\n\nPoses included in the collage:\n\nStanding front-facing full body pose, neutral expression, blazer hanging off the arms.\n\nStanding back-facing pose with the head turned toward the camera, blazer worn on the shoulders, legs straight.\n\nSquatting or semi-crouching pose with one leg forward, sharp gaze toward the camera.\n\nSeated pose on a black chair with legs crossed, blazer off one shoulder, elegant and composed expression.\n\nSeated low pose with knees bent, body leaning slightly forward, blazer worn on one arm only.\n\nHalf-body portrait facing the camera, shoulders relaxed, clean editorial look.\n\nEnvironment: clean white seamless studio background with soft high-key lighting. Large softbox light placed in front and slightly to the side, creating soft shadows beneath the body. Even lighting that clearly shows fabric texture, skin detail, and shoe shine.\n\nPhotography style: high-end fashion editorial, professional studio photography, ultra high-definition, sharp focus, natural skin texture, realistic shadows, no lens distortion, accurate anatomy and proportions.\n\nComposition: vertical fashion collage layout with evenly spaced images.\n\nAspect ratio: 9:16.",
+    "final_prompt": "Use the supplied fictional 32-year-old ADULT woman's FACE only; hairstyle and outfit must change as explicitly described below. Choose exactly SIX poses, all six listed, in one native 2-column by 3-row fashion collage. Create a realistic high-fashion studio photo collage featuring the same woman in six to eight different poses, using the uploaded face image as the exact facial reference (same facial structure, eyes, nose, lips, skin tone, and overall identity).\n\nThe woman has a slim and elegant body, natural proportions, pale to light skin tone, a delicate oval face, soft but sharp facial features, large expressive eyes, thin lips, and a calm, confident expression. Her hair is long, black, styled in a messy bun with loose strands falling naturally around the face.\n\nOutfit: a tight black strapless mini dress, paired with sheer black thigh-high stockings, pointed-toe black stiletto heels with thin heels, and a formal black blazer worn in different ways across poses (fully worn, draped over one shoulder, hanging off one arm, or resting loosely on the arms). Accessories include a thin black choker necklace.\n\nPoses included in the collage:\n\nStanding front-facing full body pose, neutral expression, blazer hanging off the arms.\n\nStanding back-facing pose with the head turned toward the camera, blazer worn on the shoulders, legs straight.\n\nSquatting or semi-crouching pose with one leg forward, sharp gaze toward the camera.\n\nSeated pose on a black chair with legs crossed, blazer off one shoulder, elegant and composed expression.\n\nSeated low pose with knees bent, body leaning slightly forward, blazer worn on one arm only.\n\nHalf-body portrait facing the camera, shoulders relaxed, clean editorial look.\n\nEnvironment: clean white seamless studio background with soft high-key lighting. Large softbox light placed in front and slightly to the side, creating soft shadows beneath the body. Even lighting that clearly shows fabric texture, skin detail, and shoe shine.\n\nPhotography style: high-end fashion editorial, professional studio photography, ultra high-definition, sharp focus, natural skin texture, realistic shadows, no lens distortion, accurate anatomy and proportions.\n\nComposition: vertical fashion collage layout with evenly spaced images.\n\nAspect ratio: 9:16.",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 高级时装工作室照片拼贴画.md",
+    "original_sha256": "ab89596785d932c81ee8029f1d16f4ec260707ffd4e4dabf521d64a440583e11",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际生图",
+        "result": "阻塞",
+        "evidence": "工具HTTP400，moderation_blocked，审核阶段output，类别sexual；没有返回图像。未重写衣物或绕过审核冒充原版。"
+      }
+    ],
+    "conclusion": "原版适配请求被生图工具输出安全审核拦截，无图片，绝不记为生图通过。"
+  },
+  "images": []
+}

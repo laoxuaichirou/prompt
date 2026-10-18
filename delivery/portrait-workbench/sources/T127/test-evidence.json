@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T127",
+    "title": "【人像】3x3网格构图进行拍摄照片",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the face of the fictional 32-year-old adult woman in the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原构图参考未导出，仅按正文列出的九个镜头执行；人脸使用合成参考。"
+    ],
+    "selected_source_prompt": "Editorial 3x3 grid in soft golden-beige studio. Character (face characteristics 100% same as uploaded image) wearing a glossy silk saree with minimal jewelry. Lighting: warm soft key from right, reflector fill left. Shots match original structure: extreme lip/cheek macro with blurred silk, tight eye reflection crop, B&W chin-on-fist frame-fill, fabric-framed shoulder view, frontal close-up with hand-light pattern, angled portrait with loose strands, jawline-focused hand crop, half-body seated on cube, profile with rim slice. Same lens & aperture set. RAW, elegant tonal grade, smooth cinematic grain.\n",
+    "final_prompt": [
+      "Use the face of the fictional 32-year-old adult woman in the synthetic reference. Editorial 3x3 grid in soft golden-beige studio. Character (face characteristics 100% same as uploaded image) wearing a glossy silk saree with minimal jewelry. Lighting: warm soft key from right, reflector fill left. Shots match original structure: extreme lip/cheek macro with blurred silk, tight eye reflection crop, B&W chin-on-fist frame-fill, fabric-framed shoulder view, frontal close-up with hand-light pattern, angled portrait with loose strands, jawline-focused hand crop, half-body seated on cube, profile with rim slice. Same lens & aperture set. RAW, elegant tonal grade, smooth cinematic grain.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the face of the fictional 32-year-old adult woman in the synthetic reference. Editorial 3x3 grid in soft golden-beige studio. Character (face characteristics 100% same as uploaded image) wearing a glossy silk saree with minimal jewelry. Lighting: warm soft key from right, reflector fill left. Shots match original structure: extreme lip/cheek macro with blurred silk, tight eye reflection crop, B&W chin-on-fist frame-fill, fabric-framed shoulder view, frontal close-up with hand-light pattern, angled portrait with loose strands, jawline-focused hand crop, half-body seated on cube, profile with rim slice. Same lens & aperture set. RAW, elegant tonal grade, smooth cinematic grain.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【人像】3x3网格构图进行拍摄照片.md",
+    "original_sha256": "885e5f8934bf9e253f5bf28ef2d437fdbe614fb99c6147c0c8122f4cef168786",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九种构图/纱丽/金米色",
+        "result": "符合要求",
+        "evidence": "唇颊、眼部、黑白托拳、织物框肩、手影、斜角、下颌、坐方块、轮廓切光九构图均可辨。"
+      },
+      {
+        "requirement": "RAW/脸部100%/原构图",
+        "result": "未满足/未验证",
+        "evidence": "交付PNG不是RAW；脸部100%和同镜头光圈不可由图证明，原构图示例未导出。"
+      }
+    ],
+    "conclusion": "九构图主要视觉实现，RAW输出未满足，精确身份与相机参数未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T127-saree-grid/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "307646eff7d34bc8600d602a093727e5c3e936feea51a92d81e54315185a208d"
+    }
+  ]
+}

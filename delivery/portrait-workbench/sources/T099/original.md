@@ -1,0 +1,22 @@
+# 换姿势
+
+| 属性 | 值 |
+|---|---|
+| 状态 | 已投产 |
+| 评分 | 3 |
+| 模型 | Nano Banana |
+| 场景 | 图像编辑、人像摄影 |
+| Notion | [换姿势](https://app.notion.com/p/360079fdbc3880cebca9e2e7b7aca918) |
+
+**备注**：双图换姿势单条指令，有输入输出对比且作者确认效果
+
+---
+
+## 正文
+
+提示词：
+请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/d2c5bd6e-b140-43ae-be96-b7bd7ae41019/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662EJ5ZW7R%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091825Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJIMEYCIQDIQhD%2B6X%2BZkwXy0WpKpnWNhDKa8VqFG%2B75j2GxaWMqJAIhAPiiGeUDRFWoNyWvZ1D%2B366R4%2FuwXA0YIwpzUz7tIAQ0KogECPj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igyd1DYTSSe9XvAfCiEq3AMlIfR6ZhtnCsxyALJCtwav4OK%2BnbCNS%2F1GRPyaxxEOuZRlnDc5ArZ%2BH6Wfxlkt8XUELePQm3JXd6v32ZB0XJ8ypEYVSQX9jPMhY%2FpEDx%2FPOAOJpEE%2FB3qxu%2BDBqU6qZgP6PlofWPGnnlVWkFBp1XsPsqbGEORMPQY71z09Ta1KsV6%2FIY%2FuF7rcpmPgarra8gcuVOUDsYSGovQ8WeP1KBCaZWY%2BlYN8Q2RZVRodsDSHubiXI3BjF6EOogXtw0c9lKzcZfw3QCoKnNxWqyFnYrpiRQ91%2BO9ztU%2FENT8t92Mb07EWn1jZSmJ3HuaORuvsYuSyisbCFTcgklPkB0iHpHplP38k6Z5K7WLl9%2FYjUcz9J0fBKmdhpiw0iMrAnitU4i%2BQ8D1iDf6ueMUGU7NqqlF9qgGpZV1ljDIY%2B0U%2BWliWO9u3IzzBtHZ7i4i21x87f3on1sz4qykqduimwidD%2FJeY0OmqkUiGgFbkgkLknOabt75K6I9z1lZakXCU5sL1K0Qax8Vn7Eh8ArXJ8NX1k4oRjnCDuTwUUdmJ758%2BDrhOjlW6d9KeaXMZxM2aax4oHVPflk%2F%2B1Crk2xajy1KNvUn9fXzRt19kARHjRmPSFtmSF7cnwG1mBMFNk5hGTjDH08zWBjqkAbs1E9u4A8A6Ii5pYrPHkcGV6QlG3K5R5h173BzU9qrxquvVkY1Jao8eyjnCJ%2BgwzsDdJ8ojNFwPtGQXm1pWXKYxPC08YLcs2pCUshw5wauBLMoyrxNMpYyYoL1WEeMQ8QWswTPRxu9JDwyf4UPxNHo9pOfmvfnIoXL%2FUVVyGpURdcrA1hBt8SaJwRubGyaU%2FzLcvhCXX6P3l3cDzn2t67ONBMQs&X-Amz-Signature=ea65981b0f3269505493a53849ce77e08c84058d97032a8404396e645f2d046d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.360079fd-bc38-8096-941b-fd295bea3cc0.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+![](https://www.1ai.net/wp-content/uploads/2025/09/9263f4aej00t23l6g000yd000g100o6m.jpg)
+得到的效果还是很不错的，可以说还原得很完美。
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/278d7710-53fb-41cf-ae02-639c3c694d74/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662EJ5ZW7R%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091825Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJIMEYCIQDIQhD%2B6X%2BZkwXy0WpKpnWNhDKa8VqFG%2B75j2GxaWMqJAIhAPiiGeUDRFWoNyWvZ1D%2B366R4%2FuwXA0YIwpzUz7tIAQ0KogECPj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igyd1DYTSSe9XvAfCiEq3AMlIfR6ZhtnCsxyALJCtwav4OK%2BnbCNS%2F1GRPyaxxEOuZRlnDc5ArZ%2BH6Wfxlkt8XUELePQm3JXd6v32ZB0XJ8ypEYVSQX9jPMhY%2FpEDx%2FPOAOJpEE%2FB3qxu%2BDBqU6qZgP6PlofWPGnnlVWkFBp1XsPsqbGEORMPQY71z09Ta1KsV6%2FIY%2FuF7rcpmPgarra8gcuVOUDsYSGovQ8WeP1KBCaZWY%2BlYN8Q2RZVRodsDSHubiXI3BjF6EOogXtw0c9lKzcZfw3QCoKnNxWqyFnYrpiRQ91%2BO9ztU%2FENT8t92Mb07EWn1jZSmJ3HuaORuvsYuSyisbCFTcgklPkB0iHpHplP38k6Z5K7WLl9%2FYjUcz9J0fBKmdhpiw0iMrAnitU4i%2BQ8D1iDf6ueMUGU7NqqlF9qgGpZV1ljDIY%2B0U%2BWliWO9u3IzzBtHZ7i4i21x87f3on1sz4qykqduimwidD%2FJeY0OmqkUiGgFbkgkLknOabt75K6I9z1lZakXCU5sL1K0Qax8Vn7Eh8ArXJ8NX1k4oRjnCDuTwUUdmJ758%2BDrhOjlW6d9KeaXMZxM2aax4oHVPflk%2F%2B1Crk2xajy1KNvUn9fXzRt19kARHjRmPSFtmSF7cnwG1mBMFNk5hGTjDH08zWBjqkAbs1E9u4A8A6Ii5pYrPHkcGV6QlG3K5R5h173BzU9qrxquvVkY1Jao8eyjnCJ%2BgwzsDdJ8ojNFwPtGQXm1pWXKYxPC08YLcs2pCUshw5wauBLMoyrxNMpYyYoL1WEeMQ8QWswTPRxu9JDwyf4UPxNHo9pOfmvfnIoXL%2FUVVyGpURdcrA1hBt8SaJwRubGyaU%2FzLcvhCXX6P3l3cDzn2t67ONBMQs&X-Amz-Signature=ed9244ad0d06a7c4196d9028d88e553652e40f82889336148aa1981a291f19ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.360079fd-bc38-8028-9df5-e7a3db2892f2.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)

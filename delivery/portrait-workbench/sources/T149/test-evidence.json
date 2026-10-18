@@ -1,0 +1,45 @@
+{
+  "test": {
+    "test_id": "T149",
+    "title": "芭比粉巨人娃娃视差术",
+    "type": "直接生图/参考编辑",
+    "test_input": "Both different-scale figures portray the same wholly fictional 30-year-old adult woman. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入虚构成年人物，原文保留。"
+    ],
+    "selected_source_prompt": "{\n  \"aesthetic_theme\": \"Modern Pin-up / Giantess Surrealism / Doll-core\",\n  \"colors\": {\n    \"primary_palette\": [\n      {\n        \"color\": \"Barbie Pink / Fuchsia\",\n        \"usage\": \"Satin corset and platform heels\"\n      },\n      {\n        \"color\": \"Neutral Gray / Off-White\",\n        \"usage\": \"Studio background and flooring\"\n      },\n      {\n        \"color\": \"Pure White\",\n        \"usage\": \"Floral lace tights and ruffled skirt\"\n      }\n    ],\n    \"saturation\": \"High on subject, Low on environment\",\n    \"contrast\": \"Sharp contrast between vibrant clothing and muted background\"\n  },\n  \"composition\": {\n    \"framing\": \"Wide-angle studio shot\",\n    \"key_technique\": \"Forced perspective / Scale distortion\",\n    \"subject_placement\": \"A 'Giant' figure on the left leans over a 'Miniature' version of herself on the right\",\n    \"negative_space\": \"Significant gray space in the center and top-right to emphasize the interaction between scales\"\n  },\n  \"lighting\": {\n    \"style\": \"High-key studio lighting\",\n    \"source\": \"Large, soft overhead light source (likely a softbox)\",\n    \"shadows\": \"Soft, diffused contact shadows on the floor to ground the subjects\",\n    \"highlights\": \"Satin-like sheen on the pink corset and platform shoes\"\n  },\n  \"effects_and_post_processing\": {\n    \"compositional_effects\": \"Seamless digital compositing to merge two different scales into one physical space\",\n    \"texture\": \"High clarity on lace patterns and hair details\",\n    \"finish\": \"Clean, commercial look with no visible film grain\"\n  },\n  \"fashion_and_styling\": {\n    \"clothing\": [\n      \"Structured pink satin corset\",\n      \"White ruffled mini-skirt\",\n      \"Floral lace patterned hosiery\"\n    ],\n    \"footwear\": \"Chunky satin platform heels with ankle straps\",\n    \"hair_and_makeup\": \"Classic elegant updo; polished, 'doll-like' facial features\"\n  }\n}\n",
+    "final_prompt": [
+      "Both different-scale figures portray the same wholly fictional 30-year-old adult woman. {\n  \"aesthetic_theme\": \"Modern Pin-up / Giantess Surrealism / Doll-core\",\n  \"colors\": {\n    \"primary_palette\": [\n      {\n        \"color\": \"Barbie Pink / Fuchsia\",\n        \"usage\": \"Satin corset and platform heels\"\n      },\n      {\n        \"color\": \"Neutral Gray / Off-White\",\n        \"usage\": \"Studio background and flooring\"\n      },\n      {\n        \"color\": \"Pure White\",\n        \"usage\": \"Floral lace tights and ruffled skirt\"\n      }\n    ],\n    \"saturation\": \"High on subject, Low on environment\",\n    \"contrast\": \"Sharp contrast between vibrant clothing and muted background\"\n  },\n  \"composition\": {\n    \"framing\": \"Wide-angle studio shot\",\n    \"key_technique\": \"Forced perspective / Scale distortion\",\n    \"subject_placement\": \"A 'Giant' figure on the left leans over a 'Miniature' version of herself on the right\",\n    \"negative_space\": \"Significant gray space in the center and top-right to emphasize the interaction between scales\"\n  },\n  \"lighting\": {\n    \"style\": \"High-key studio lighting\",\n    \"source\": \"Large, soft overhead light source (likely a softbox)\",\n    \"shadows\": \"Soft, diffused contact shadows on the floor to ground the subjects\",\n    \"highlights\": \"Satin-like sheen on the pink corset and platform shoes\"\n  },\n  \"effects_and_post_processing\": {\n    \"compositional_effects\": \"Seamless digital compositing to merge two different scales into one physical space\",\n    \"texture\": \"High clarity on lace patterns and hair details\",\n    \"finish\": \"Clean, commercial look with no visible film grain\"\n  },\n  \"fashion_and_styling\": {\n    \"clothing\": [\n      \"Structured pink satin corset\",\n      \"White ruffled mini-skirt\",\n      \"Floral lace patterned hosiery\"\n    ],\n    \"footwear\": \"Chunky satin platform heels with ankle straps\",\n    \"hair_and_makeup\": \"Classic elegant updo; polished, 'doll-like' facial features\"\n  }\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Both different-scale figures portray the same wholly fictional 30-year-old adult woman. {\n  \"aesthetic_theme\": \"Modern Pin-up / Giantess Surrealism / Doll-core\",\n  \"colors\": {\n    \"primary_palette\": [\n      {\n        \"color\": \"Barbie Pink / Fuchsia\",\n        \"usage\": \"Satin corset and platform heels\"\n      },\n      {\n        \"color\": \"Neutral Gray / Off-White\",\n        \"usage\": \"Studio background and flooring\"\n      },\n      {\n        \"color\": \"Pure White\",\n        \"usage\": \"Floral lace tights and ruffled skirt\"\n      }\n    ],\n    \"saturation\": \"High on subject, Low on environment\",\n    \"contrast\": \"Sharp contrast between vibrant clothing and muted background\"\n  },\n  \"composition\": {\n    \"framing\": \"Wide-angle studio shot\",\n    \"key_technique\": \"Forced perspective / Scale distortion\",\n    \"subject_placement\": \"A 'Giant' figure on the left leans over a 'Miniature' version of herself on the right\",\n    \"negative_space\": \"Significant gray space in the center and top-right to emphasize the interaction between scales\"\n  },\n  \"lighting\": {\n    \"style\": \"High-key studio lighting\",\n    \"source\": \"Large, soft overhead light source (likely a softbox)\",\n    \"shadows\": \"Soft, diffused contact shadows on the floor to ground the subjects\",\n    \"highlights\": \"Satin-like sheen on the pink corset and platform shoes\"\n  },\n  \"effects_and_post_processing\": {\n    \"compositional_effects\": \"Seamless digital compositing to merge two different scales into one physical space\",\n    \"texture\": \"High clarity on lace patterns and hair details\",\n    \"finish\": \"Clean, commercial look with no visible film grain\"\n  },\n  \"fashion_and_styling\": {\n    \"clothing\": [\n      \"Structured pink satin corset\",\n      \"White ruffled mini-skirt\",\n      \"Floral lace patterned hosiery\"\n    ],\n    \"footwear\": \"Chunky satin platform heels with ankle straps\",\n    \"hair_and_makeup\": \"Classic elegant updo; polished, 'doll-like' facial features\"\n  }\n}\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 芭比粉巨人娃娃视差术.md",
+    "original_sha256": "625c679eef818546dac03d1cbf25d8bb00123ffc2248c0bf700fe32370481c79",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际工具结果",
+        "result": "阻塞",
+        "evidence": "HTTP400 moderation_blocked，output阶段sexual分类，无返回图片，原始错误及实际Prompt均保存。"
+      }
+    ],
+    "conclusion": "输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

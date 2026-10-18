@@ -1,0 +1,53 @@
+{
+  "cards": 84,
+  "single_photo_entry": 76,
+  "single_only": 74,
+  "single_optional_aux": 2,
+  "additional_required": 4,
+  "multiple_people": 4,
+  "engines": 20,
+  "inactive_filtered": 14,
+  "missing_sources": 7,
+  "distinct_card_source_entries": 88,
+  "relevant_source_entries": 129,
+  "deduplicated_aliases": [
+    [
+      "T078",
+      "T112"
+    ],
+    [
+      "T136",
+      "T137"
+    ],
+    [
+      "T138",
+      "T154"
+    ],
+    [
+      "T124",
+      "T126"
+    ]
+  ],
+  "categories": {
+    "scene": 21,
+    "expression": 10,
+    "story": 9,
+    "lighting": 2,
+    "creative": 12,
+    "poster": 8,
+    "illustration": 5,
+    "3d": 4,
+    "views": 5,
+    "multi": 8
+  },
+  "source_scope_counts": {
+    "excluded": 90,
+    "preset": 88,
+    "missing": 7,
+    "disabled": 14,
+    "engine": 20
+  },
+  "scene_variants": 40,
+  "color_variants": 22,
+  "normalized_presets_generated_or_passed": 0
+}

@@ -1,0 +1,58 @@
+{
+  "test": {
+    "test_id": "T177",
+    "title": "wan2.2文生图单个提示词",
+    "type": "直接生图",
+    "test_input": "虚构28岁女性和30岁男性，普通雨夜拥抱场景。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只选完整英文原文；将mojibake â还原为弯引号，另存原文。",
+      "填入虚构成年年龄，不声称真实东京实拍或上传Facebook；原WAN2.2未实测。"
+    ],
+    "selected_source_prompt": "Early 2010s snapshot photo captured with a phone and uploaded to Facebook, featuring dynamic natural lighting, and a neutral white color balance with washed out colors, picturing a young couple embracing under a clear umbrella in a narrow alleyway in Tokyo on a rainy night.<br>In a vertical 9:16 frame, the couple stands just off-center in the middle of a glowing, rain-slicked side street lined with ramen shops and vending machines. The woman wears a pale blue raincoat and leans her head into the manâs shoulder, smiling softly. Her hands grasp the front of his jacket, while he wraps one arm protectively around her back, the other holding the transparent umbrella above them. He wears a dark hoodie with the hood down, exposing his wet, slightly tousled hair. The puddles on the asphalt reflect neon signage in fractured pinks and cyans, creating an almost surreal color field beneath their feet. A soft mist floats midair, caught in the light spilling from hanging lanterns. Droplets bead across the umbrellaâs surface, with several catching the light like pinpoints of white. The background is a mosaic of glowing kanji, flickering TV screens inside shops, and passing shadows. The phone camera lens fogs slightly at the corners, softening the perimeter of the image and creating a vignette of warmth and shared solitude in the wet night.",
+    "final_prompt": [
+      "Both people are wholly fictional adults: the woman aged 28 and the man aged 30. Early 2010s snapshot photo captured with a phone and uploaded to Facebook, featuring dynamic natural lighting, and a neutral white color balance with washed out colors, picturing a young couple embracing under a clear umbrella in a narrow alleyway in Tokyo on a rainy night.<br>In a vertical 9:16 frame, the couple stands just off-center in the middle of a glowing, rain-slicked side street lined with ramen shops and vending machines. The woman wears a pale blue raincoat and leans her head into the man’s shoulder, smiling softly. Her hands grasp the front of his jacket, while he wraps one arm protectively around her back, the other holding the transparent umbrella above them. He wears a dark hoodie with the hood down, exposing his wet, slightly tousled hair. The puddles on the asphalt reflect neon signage in fractured pinks and cyans, creating an almost surreal color field beneath their feet. A soft mist floats midair, caught in the light spilling from hanging lanterns. Droplets bead across the umbrella’s surface, with several catching the light like pinpoints of white. The background is a mosaic of glowing kanji, flickering TV screens inside shops, and passing shadows. The phone camera lens fogs slightly at the corners, softening the perimeter of the image and creating a vignette of warmth and shared solitude in the wet night."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Both people are wholly fictional adults: the woman aged 28 and the man aged 30. Early 2010s snapshot photo captured with a phone and uploaded to Facebook, featuring dynamic natural lighting, and a neutral white color balance with washed out colors, picturing a young couple embracing under a clear umbrella in a narrow alleyway in Tokyo on a rainy night.<br>In a vertical 9:16 frame, the couple stands just off-center in the middle of a glowing, rain-slicked side street lined with ramen shops and vending machines. The woman wears a pale blue raincoat and leans her head into the man’s shoulder, smiling softly. Her hands grasp the front of his jacket, while he wraps one arm protectively around her back, the other holding the transparent umbrella above them. He wears a dark hoodie with the hood down, exposing his wet, slightly tousled hair. The puddles on the asphalt reflect neon signage in fractured pinks and cyans, creating an almost surreal color field beneath their feet. A soft mist floats midair, caught in the light spilling from hanging lanterns. Droplets bead across the umbrella’s surface, with several catching the light like pinpoints of white. The background is a mosaic of glowing kanji, flickering TV screens inside shops, and passing shadows. The phone camera lens fogs slightly at the corners, softening the perimeter of the image and creating a vignette of warmth and shared solitude in the wet night.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/视频生成/[仅参考·4分] wan2.2文生图单个提示词.md",
+    "original_sha256": "28f40b7637f921f849a99aad9a37f8a084efe37285e31b7f5d73c8019d46bf4b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "雨夜/服装/雨伞/手机质感",
+        "result": "基本符合",
+        "evidence": "浅蓝雨衣女性靠深色卫衣男性，两人透明伞下拥抱；雨滴、霓虹水洼、拉面店自动售货机、雾化角落与褪色手机快照感可辨，9:16。"
+      },
+      {
+        "requirement": "双手抓衣/背景电视",
+        "result": "存在问题",
+        "evidence": "女性仅一只抓衣手清楚可见，另一手不可验收；店内电视屏幕未明确出现。属于虚构东京氛围，不是实地或真实Facebook上传。"
+      }
+    ],
+    "conclusion": "主要情侣雨夜快照实现，手部与背景电视细节未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T177-rain-couple/output.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "950fa914ec42ee67317aca86abba73c51024b0a631af67c7607e7e787c63eaf3"
+    }
+  ]
+}

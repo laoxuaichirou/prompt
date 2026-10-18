@@ -1,0 +1,46 @@
+{
+  "test": {
+    "test_id": "T035",
+    "title": "女子海边电影风格肖像照",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一32岁合成人物，按原例更换为海边夕照与白吊带。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文Original；同一合成成年角色作为人物输入，原例服装及场景按正文执行。"
+    ],
+    "selected_source_prompt": "A young woman standing on the beach at dusk, captured in a soft emotional film-style portrait. \nHer dark hair is messy from the sea breeze, strands blowing across her face. \nShe has natural, slightly flushed skin with a subtle grainy texture. \nWearing a white spaghetti-strap top and denim bottoms. \nThe background shows dark ocean waves and a moody sky with soft sunset colors—dusty pink, blue-gray, and muted lavender. \nThe overall image features a low-saturation, cool-toned cinematic film filter with soft contrast, slight grain, and a hazy atmosphere. \nClose-up portrait, melancholic mood, natural lighting, realistic details, 8K.",
+    "final_prompt": "Use the supplied fictional 32-year-old ADULT woman's face and bob hairstyle as casting reference. A young woman standing on the beach at dusk, captured in a soft emotional film-style portrait. \nHer dark hair is messy from the sea breeze, strands blowing across her face. \nShe has natural, slightly flushed skin with a subtle grainy texture. \nWearing a white spaghetti-strap top and denim bottoms. \nThe background shows dark ocean waves and a moody sky with soft sunset colors—dusty pink, blue-gray, and muted lavender. \nThe overall image features a low-saturation, cool-toned cinematic film filter with soft contrast, slight grain, and a hazy atmosphere. \nClose-up portrait, melancholic mood, natural lighting, realistic details, 8K.",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 女子海边电影风格肖像照.md",
+    "original_sha256": "4ceb2cd81e66770435aac4fc594f3de09789eeb0e560c2a0f71216e3350fec2f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "逐项核心视觉与构图检查",
+        "result": "存在问题",
+        "evidence": "海风短发、自然泛红肤色、白吊带与牛仔裤、灰蓝粉紫黄昏海浪和低饱和颗粒符合；构图至腰部比close-up更宽，原生1024×1536未达8K。"
+      }
+    ],
+    "conclusion": "海风短发、自然泛红肤色、白吊带与牛仔裤、灰蓝粉紫黄昏海浪和低饱和颗粒符合；构图至腰部比close-up更宽，原生1024×1536未达8K。 单轮模型初评，不代表稳定性已验证。"
+  },
+  "images": [
+    {
+      "file": "results/T035-beach/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "88cefce62a5a0231f833a3916abfc093775ad5ab8d0307d7568e87036a2ba908"
+    }
+  ]
+}

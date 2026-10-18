@@ -1,0 +1,59 @@
+{
+  "test": {
+    "test_id": "T107",
+    "title": "夜间拖影快门曝光",
+    "type": "概括摄影文案→直接生图",
+    "test_input": "按原条目标题明确夜间街头长曝光方向；画面行人均为虚构成年人。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "标题的夜间/拖影作为测试输入补充给模糊正文；不添加不存在的快门数值",
+      "视觉爆炸按摄影艺术表达理解，不自行把原句补成具体摄影参数"
+    ],
+    "selected_source_prompt": "A visual explosion in the middle of a fast-moving street. Frozen faces, sweeping movements, and a palpable \"noir\" atmosphere. Everything is planned, yet the results are always wild and raw.",
+    "final_prompt": [
+      "Long-exposure night street portrait art direction with wholly fictional adult pedestrians: A visual explosion in the middle of a fast-moving street. Frozen faces, sweeping movements, and a palpable \"noir\" atmosphere. Everything is planned, yet the results are always wild and raw."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [],
+        "prompt": "Long-exposure night street portrait art direction with wholly fictional adult pedestrians: A visual explosion in the middle of a fast-moving street. Frozen faces, sweeping movements, and a palpable \"noir\" atmosphere. Everything is planned, yet the results are always wild and raw.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[仅参考·2分] 夜间拖影快门曝光.md",
+    "original_sha256": "95fc87f439b5b43dd7a0fff08016dc8e1c74570f759b5e9c2171f27726b80aac",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "夜间拖影/冻结主体",
+        "result": "符合要求",
+        "evidence": "夜街车灯与行人明显拖影，中央成年女性脸较清楚，低调高对比和狂野抓拍感符合文案。"
+      },
+      {
+        "requirement": "输入范围/曝光真实性",
+        "result": "未验证",
+        "evidence": "夜间长曝光方向由标题作为测试输入补入，原文没有可验证快门数值；不证明真实摄影曝光参数。"
+      }
+    ],
+    "conclusion": "标题明确目标后的夜间拖影最小用例符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T107-night-trails/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7e6063fef82e3b687287ccec77f4cfa144f6afea7b1e07ae9fdaa148d38db300"
+    }
+  ]
+}

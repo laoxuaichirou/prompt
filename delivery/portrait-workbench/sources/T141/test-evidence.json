@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T141",
+    "title": "复古时尚九宫格大片",
+    "type": "直接生图/参考编辑",
+    "test_input": "Portray the fictional adult character Steve Harrington as a 25-year-old man. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构人物/年龄；其他要求保留，非原示例人物实测。"
+    ],
+    "selected_source_prompt": "Editorial fashion contact sheet (3×3 grid) featuring Steve Harrington, styled in a high-fashion reinterpretation of his iconic look. Voluminous swept-back hair, confident expression, subtle retro 80s attitude. Wearing a navy-and-red sailor-inspired top with a tailored silhouette, minimal accessories, classic wristwatch. Shot in a minimalist studio with a neutral grey backdrop.\n\nPose sequence across the 3×3 grid:\n\nFront-facing portrait, hand raised toward the camera, palm open\n\nLow-angle three-quarter view, hand reaching forward, strong foreshortening\n\nTop-down full-body shot, arm extended toward the lens\n\nBack view, head slightly turned, hand lifted mid-air\n\nClean side profile, hand partially entering the frame from foreground\n\nTilted angle portrait, hand close to lens, playful perspective distortion\n\nExtreme close-up, face partially obscured by hand\n\nFull-body centered shot, arm fully extended toward camera\n\nHigh-angle shot, head tilted down, hands relaxed\n\nClean high-fashion editorial styling with subtle retro influence, bold yet controlled color contrast, soft diffused studio lighting, crisp focus, contemporary magazine aesthetic, 35mm–50mm lens look, ultra-sharp, high resolution, cinematic yet polished.\n",
+    "final_prompt": [
+      "Portray the fictional adult character Steve Harrington as a 25-year-old man. Editorial fashion contact sheet (3×3 grid) featuring Steve Harrington, styled in a high-fashion reinterpretation of his iconic look. Voluminous swept-back hair, confident expression, subtle retro 80s attitude. Wearing a navy-and-red sailor-inspired top with a tailored silhouette, minimal accessories, classic wristwatch. Shot in a minimalist studio with a neutral grey backdrop.\n\nPose sequence across the 3×3 grid:\n\nFront-facing portrait, hand raised toward the camera, palm open\n\nLow-angle three-quarter view, hand reaching forward, strong foreshortening\n\nTop-down full-body shot, arm extended toward the lens\n\nBack view, head slightly turned, hand lifted mid-air\n\nClean side profile, hand partially entering the frame from foreground\n\nTilted angle portrait, hand close to lens, playful perspective distortion\n\nExtreme close-up, face partially obscured by hand\n\nFull-body centered shot, arm fully extended toward camera\n\nHigh-angle shot, head tilted down, hands relaxed\n\nClean high-fashion editorial styling with subtle retro influence, bold yet controlled color contrast, soft diffused studio lighting, crisp focus, contemporary magazine aesthetic, 35mm–50mm lens look, ultra-sharp, high resolution, cinematic yet polished.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Portray the fictional adult character Steve Harrington as a 25-year-old man. Editorial fashion contact sheet (3×3 grid) featuring Steve Harrington, styled in a high-fashion reinterpretation of his iconic look. Voluminous swept-back hair, confident expression, subtle retro 80s attitude. Wearing a navy-and-red sailor-inspired top with a tailored silhouette, minimal accessories, classic wristwatch. Shot in a minimalist studio with a neutral grey backdrop.\n\nPose sequence across the 3×3 grid:\n\nFront-facing portrait, hand raised toward the camera, palm open\n\nLow-angle three-quarter view, hand reaching forward, strong foreshortening\n\nTop-down full-body shot, arm extended toward the lens\n\nBack view, head slightly turned, hand lifted mid-air\n\nClean side profile, hand partially entering the frame from foreground\n\nTilted angle portrait, hand close to lens, playful perspective distortion\n\nExtreme close-up, face partially obscured by hand\n\nFull-body centered shot, arm fully extended toward camera\n\nHigh-angle shot, head tilted down, hands relaxed\n\nClean high-fashion editorial styling with subtle retro influence, bold yet controlled color contrast, soft diffused studio lighting, crisp focus, contemporary magazine aesthetic, 35mm–50mm lens look, ultra-sharp, high resolution, cinematic yet polished.\n",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 复古时尚九宫格大片.md",
+    "original_sha256": "b54f8406534531fc063ecc9689d04bf63f1e81b18f8e3d1d15dc78363c4d2660",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格指定姿势/服饰",
+        "result": "基本符合",
+        "evidence": "水手蓝红上衣、蓬松后梳发、腕表、灰棚和九个手部透视姿势基本逐格对应；上下全身/背影/俯仰机位清楚。"
+      },
+      {
+        "requirement": "干净侧面",
+        "result": "存在问题",
+        "evidence": "第5格仍为三分之二侧面，可见远眼，不是clean side profile。角色识别为风格模拟，未核验演员本人身份。"
+      }
+    ],
+    "conclusion": "九动作主要完成，严格侧面镜头不满足。"
+  },
+  "images": [
+    {
+      "file": "results/T141-retro-sailor/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "5aa120ab82042ea755c43c2b32eb2ad52a9ec78f7af7de34ddcc0adcf6e0fee2"
+    }
+  ]
+}

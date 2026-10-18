@@ -1,0 +1,93 @@
+{
+  "test": {
+    "test_id": "T024",
+    "title": "换装提示词示例",
+    "type": "直接编辑提示词两版本比较",
+    "test_input": "同一成年人物＋同一合成蓝色刷手服；对照“换服装”主版和“豆包初版”。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试；后端模型未知，非原模型实测",
+    "changes": [
+      "完整原文另存，所选子模板及未覆盖范围分开记录。",
+      "提取换服装主版及豆包初版，去除重复翻译。",
+      "补充两参考的映射与“衣服＋鞋”范围；平铺听诊器不是衣物，不加入人物。",
+      "两版使用相同输入和补充映射，保证对照素材一致。"
+    ],
+    "final_prompts": [
+      {
+        "id": "T024-optimized",
+        "prompt": "Image 1 is a fictional 32-year-old adult woman in a white T-shirt and navy trousers. Image 2 is an unbranded pale-blue medical scrub set; use its top, trousers and white shoes, but do not add the loose stethoscope accessory. Exactly preserve the visible top's V-neck, short sleeves, three patch pockets and blank white tag, and pants' drawstring, hip openings and right thigh cargo pocket. Perform a clothing swap: replace all garments worn by the person in image 1 with the outfit from image 2.\n\nUse the outfit from image 2 as a complete and consistent set. Do not mix with any original clothing from image 1.\n\nStrictly preserve identity and structure: pose, body proportions, face, hairstyle, skin tone, lighting conditions, and camera composition must remain unchanged.\n\nThe new clothing must be physically plausible: properly fitted to the body, respecting anatomy, gravity, fabric behavior, and perspective. Generate realistic folds, tension, and contact with the body.\n\nEnsure correct occlusion handling: hair, arms, and body parts must naturally overlap or interact with the clothing without artifacts.\n\nCompletely remove original clothing. No remnants, layering errors, or visual artifacts are allowed.\n",
+        "refs": [
+          "materials/adult-woman-synthetic.png",
+          "materials/scrubs-synthetic.png"
+        ]
+      },
+      {
+        "id": "T024-initial",
+        "prompt": "Image 1 is a fictional 32-year-old adult woman in a white T-shirt and navy trousers. Image 2 is an unbranded pale-blue medical scrub set; use its top, trousers and white shoes, but do not add the loose stethoscope accessory. Exactly preserve the visible top's V-neck, short sleeves, three patch pockets and blank white tag, and pants' drawstring, hip openings and right thigh cargo pocket. Replace the clothing of the figure in Figure 1 with the complete outfit in Figure 2 (whether it is a two-piece suit, a dress, or a jumpsuit), while retaining the posture, face shape, hairstyle, body structure, original lighting, composition, and skin color of the figure in Figure 1. Ensure that the new clothing fits the body naturally, generates realistic folds, shadows, and perspective effects, and must not modify the style, details, or fit of the clothing in Figure 2.",
+        "refs": [
+          "materials/adult-woman-synthetic.png",
+          "materials/scrubs-synthetic.png"
+        ]
+      }
+    ],
+    "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
+    "original_sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "两版使用同一人物＋服装参考",
+        "result": "已执行",
+        "evidence": "主版与豆包初版均使用完全相同的合成人像、刷手服图及前缀映射；独立生成2张。"
+      },
+      {
+        "requirement": "完整换装无原衣残留",
+        "result": "两版视觉基本符合",
+        "evidence": "白T与藏蓝裤被蓝刷手服替换，无原白T领口残留，未添加听诊器。"
+      },
+      {
+        "requirement": "V领、短袖、3上衣袋、裤袋与抽绳",
+        "result": "主版较接近，初版细节有变化",
+        "evidence": "两版主要口袋数与位置基本保留；主版保留抽绳蝴蝶结，初版呈垂直长绳，结式不一致。"
+      },
+      {
+        "requirement": "身份、姿态、光照、构图",
+        "result": "视觉基本保留",
+        "evidence": "同一短发成年女性及痣、站姿和灰棚光线持续，无明显肢体异常。"
+      },
+      {
+        "requirement": "可靠版本择优",
+        "result": "尚不足",
+        "evidence": "本次可暂记主版在结式细节上更接近，单次对照不足以废弃另一版或证明稳定优劣。"
+      }
+    ],
+    "conclusion": "两版换装链路已实测，主版本次细节较好；初版抽绳变化，严格服装保真未全部满足。"
+  },
+  "images": [
+    {
+      "file": "results/T024-clothing-swap/T024-initial.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "e5d346ae399f5e30d30ce87e0049c83aa6731fc6cdae7ad17f7a40067a342328"
+    },
+    {
+      "file": "results/T024-clothing-swap/T024-optimized.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "554da70fe06f44ef50538fde0538229ec95535d4f70bf7b4334738701359bcdf"
+    }
+  ]
+}

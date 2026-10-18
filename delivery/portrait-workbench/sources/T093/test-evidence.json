@@ -1,0 +1,89 @@
+{
+  "test": {
+    "test_id": "T093",
+    "title": "动态光影超精细写真",
+    "type": "概括式系列风格编辑",
+    "test_input": "参考同一合成成年人物，最小系列2张：低角度冷青电影侧光；高角度暖橙电影侧逆光。原文没有指定系列数量或具体样式，作为测试变量补入。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "使用可见中文完整句，英文语病版本未修复冒充原版",
+      "系列数量2及冷暖/角度是测试输入；不将动态摄影角度当作视频生成"
+    ],
+    "selected_source_prompt": "将原始照片转变为戏剧性、照片级真实、超精细的系列风格，角色包含动态摄影角度与电影级光照、高对比度、清晰纹理和精确的色彩分级。\n",
+    "final_prompt": [
+      "将原始照片转变为戏剧性、照片级真实、超精细的系列风格，角色包含动态摄影角度与电影级光照、高对比度、清晰纹理和精确的色彩分级。本次只生成系列第一张：同一32岁成人，原身份、短发和白T深蓝长裤白鞋保持，低机位仰视全身，冷青侧光和暗灰影棚背景，人物自然站立，不加文字或物件。",
+      "将原始照片转变为戏剧性、照片级真实、超精细的系列风格，角色包含动态摄影角度与电影级光照、高对比度、清晰纹理和精确的色彩分级。本次只生成系列第二张：同一32岁成人，原身份、短发和白T深蓝长裤白鞋保持，高机位俯视全身，暖橙侧逆光和暗灰影棚背景，人物自然站立，不加文字或物件。"
+    ],
+    "cases": [
+      {
+        "name": "cool-low",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "将原始照片转变为戏剧性、照片级真实、超精细的系列风格，角色包含动态摄影角度与电影级光照、高对比度、清晰纹理和精确的色彩分级。本次只生成系列第一张：同一32岁成人，原身份、短发和白T深蓝长裤白鞋保持，低机位仰视全身，冷青侧光和暗灰影棚背景，人物自然站立，不加文字或物件。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "warm-high",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "将原始照片转变为戏剧性、照片级真实、超精细的系列风格，角色包含动态摄影角度与电影级光照、高对比度、清晰纹理和精确的色彩分级。本次只生成系列第二张：同一32岁成人，原身份、短发和白T深蓝长裤白鞋保持，高机位俯视全身，暖橙侧逆光和暗灰影棚背景，人物自然站立，不加文字或物件。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[仅参考·2分] 动态光影超精细写真.md",
+    "original_sha256": "2f4d2731d743d0abb0079ab52b2cff1fd2dbdf472c0caeab7ca83760e0a711c4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "系列数量/角度/光色",
+        "result": "符合要求",
+        "evidence": "冷青低机位和暖橙高机位两张独立图，仰俯角和冷暖明确不同，均为高对比电影棚光。"
+      },
+      {
+        "requirement": "人物/衣着与质感",
+        "result": "基本符合",
+        "evidence": "同一成年人物的短发、小痣、白T深蓝裤白鞋保持，皮肤衣料清楚；脸部有轻微视角差异。"
+      },
+      {
+        "requirement": "覆盖范围",
+        "result": "未验证",
+        "evidence": "具体两种样式由测试输入补入；未证明笼统原句能自动产出完整风格系列或稳定性。"
+      }
+    ],
+    "conclusion": "补入明确样式后，双图系列最小用例符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T093-dramatic-styles/cool-low.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "96af295e4a4ac74a16032d7c11606ffe4f28420985fc98ecf431e8495564e9df"
+    },
+    {
+      "file": "results/T093-dramatic-styles/warm-high.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0952fa2d655e1095678c81624cf5b49dec3e9d4eadaddb0234ca1bf1c64b74f7"
+    }
+  ]
+}

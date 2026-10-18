@@ -1,0 +1,62 @@
+{
+  "test": {
+    "test_id": "T014",
+    "title": "【人像】四格黑卷美人",
+    "type": "直接JSON图像提示词",
+    "test_input": "同一合成成年女性面部，按正文改变卷发、黑色裙装及金色配饰。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原标签不作为本轮证据",
+    "changes": [
+      "去除元数据、外链示例图和中英重复版本，仅用首个完整正式提示词。",
+      "补充明确成年年龄，测试主体均虚构。",
+      "原文只锁定脸，允许按明确要求改变短直发为黑色长卷发。"
+    ],
+    "final_prompt": "Use the supplied fictional 32-year-old ADULT woman's face only; change her hairstyle to the long voluminous black curls explicitly requested in the JSON. Generate one image according to the full specification below; for JSON instructions render the described image, do not output JSON text.\n{\n  \"prompt\": \"Create a portrait photo of a young woman with a multi-frame grid layout of 4 frames in a single image. The original face must not be altered, keeping identical facial features, facial structure, and natural proportions across all frames. She has voluminous black curly hair with big volume, visible baby hairs, and loose strands falling naturally around the face, creating a bold high-fashion editorial look. She is wearing a black strapless or off-shoulder dress with a leather-look material. Accessories include a gold statement necklace and large gold earrings. Makeup is consistent in all frames with a glam editorial beauty style: flawless glowing dewy skin with realistic skin texture, rosy pink blush visible on the cheeks and lightly across the nose, intense eye makeup with soft shimmer eyeshadow, and shimmer applied to the lower lash line. High-fashion editorial mood, clean composition, professional studio lighting, sharp focus, premium aesthetic.\",\n  \"style\": \"fashion editorial, glam beauty\",\n  \"layout\": \"4-frame grid, multi-frame\",\n  \"lighting\": \"professional studio lighting\",\n  \"camera\": \"portrait photography, sharp focus\",\n  \"quality\": \"high resolution, premium aesthetic\",\n  \"constraints\": [\n    \"do not change original face\",\n    \"consistent face across all frames\",\n    \"realistic skin texture\",\n    \"same makeup and styling in every frame\"\n  ]\n}\n",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 【人像】四格黑卷美人.md",
+    "original_sha256": "8d17ab831bc72c75d433fad5a02065a35491c912f68135812e2294659d5c146d",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "4格，同一原参考面部",
+        "result": "基本符合",
+        "evidence": "2×2四格，同一椭圆脸、眼鼻比例、左脸颊痣持续；换发型后身份大体可辨。"
+      },
+      {
+        "requirement": "大体积黑卷发、黑色皮革感露肩裙、金项链耳环",
+        "result": "符合要求",
+        "evidence": "长卷发、黑色抹胸裙和粗金链/金耳环均出现；侧身格项链被角度部分遮住。"
+      },
+      {
+        "requirement": "高强度珠光眼妆、下睫毛线珠光、玫瑰腮红",
+        "result": "部分命中",
+        "evidence": "皮肤有光泽和浅腮红，眼妆偏自然；强烈珠光及下睫毛线珠光不明显，不能按原文完整验收。"
+      },
+      {
+        "requirement": "每格妆造一致、专业柔光",
+        "result": "基本符合",
+        "evidence": "发型、服装、配饰与灰色影棚背景统一，未见明显画面破坏。"
+      }
+    ],
+    "conclusion": "四格造型及身份基本有效，浓妆细节偏弱，标存在问题；原库5分未改动。"
+  },
+  "images": [
+    {
+      "file": "results/T014-curly4/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f3a609bd291b97fb28ba90eb7360ae82c65d6b8de10d66e908483befcba97ccd"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T154",
+    "title": "风格化的3D人物漫画",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman in the synthetic reference. Choose a bold coral background. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；按照正文规定造型，不引用原示例身份。",
+      "背景色填珊瑚色。与近同文T138为不同文件独立新调用。"
+    ],
+    "selected_source_prompt": "A highly stylized 3D caricature of the person in the uploaded image, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence.",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the synthetic reference. Choose a bold coral background. A highly stylized 3D caricature of the person in the uploaded image, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the synthetic reference. Choose a bold coral background. A highly stylized 3D caricature of the person in the uploaded image, with expressive facial features, and playful exaggeration. Rendered in a smooth, polished style with clean materials and soft ambient lighting. Bold color background to emphasize the character’s charm and presence.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 风格化的3D人物漫画.md",
+    "original_sha256": "b91f3bebe40d26bb4631df8b101cbb4349011c03795afa1a10d05a6dbc8c2d4b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3D漫画/夸张/背景",
+        "result": "符合要求",
+        "evidence": "大眼略大头、短黑发小痣、白T深蓝裤与珊瑚背景，光滑材质与柔光。"
+      },
+      {
+        "requirement": "独立运行",
+        "result": "已执行",
+        "evidence": "与T138相似原文，仍新调用新文件；不是旧图片复用。"
+      }
+    ],
+    "conclusion": "本次风格化3D漫画用例符合可见要求。"
+  },
+  "images": [
+    {
+      "file": "results/T154-stylized3d/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1ac05740e9d1c634f8514797059b45ad97dcee1e1e4181d22bd8bf41118850f1"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "test": {
+    "test_id": "T080",
+    "title": "【图片】皮克斯九宫格",
+    "type": "结构化导演指令→九个静态分镜",
+    "test_input": "参考同一合成成年人物和花店图，selected_style=Pixar；九节拍为花店里风吹花瓣的温暖小插曲。只测静态3×3分镜。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选英文原版；原英文同样有多余右括号（selected_style行），单独修正后可解析JSON；损坏中文未使用",
+      "填入9个动作节拍，成图采用3D动画风；保留人物外观、花店场景及暖窗光而非强求照片媒介同时为Pixar",
+      "静态图不验证音乐视频、运镜时长或音频"
+    ],
+    "selected_source_prompt": "{\n\"project_name\": \"Auto_Creative_Music_Video_Storyboard_Generator\",\n\"version\": \"4.0 (Video Clip Focus - Multi-Input)\",\n\"ai_role\": \"You are a visionary Creative Director and Cinematographer for a high-end music video. Your goal is to create a cohesive, visually stunning 9-scene storyboard based on provided visual references.\",\n\"input_configuration\": {\n\"source_material\": \"Multiple Uploaded Images. The AI must synthesize all provided images to establish the definitive subject(s), color palette, lighting scheme, and overall aesthetic.\",\n\"video_clip_style_selector\": {\n\"description\": \"Select the overarching genre/mood for the music video clip behavior.\",\n\"options\": [\"Creative\", \"Surreal\", \"Absurd\", \"Dreamlike\", \"High-Fashion\", \"Cyberpunk\", \"Gothic\", \"Abstract\"],\n\"selected_style\": \"Pixar\"\n}\n},\n\"processing_rules\": {\n\"consistency_is_paramount\": \"Strictly maintain the visual identity established by the input images across all 9 scenes. The subject's features, the specific lighting mood (e.g., neon stripes, iridescence), and the environment style must never deviate.\",\n\"apply_selected_style\": \"Inject the mood and behaviors of the 'selected_style' into the movement, composition, and events of the scenes. (e.g., if 'Surreal', gravity might behave oddly; if 'Absurd', actions might be illogical).\",\n\"imply_motion\": \"These are not static photos. Each panel must look like a still frame taken from a moving video clip, implying action, camera movement, or atmospheric shifting.\",\n\"no_text_overlays\": true,\n\"output_aspect_ratio\": \"16:9 for all panels.\"\n},\n\"scene_progression_structure\": {\n\"note\": \"Design 9 distinct visual beats representing the flow of a music video.\",\n\"row_1_introduction\": {\n\"panel_1\": \"Opening Scene: Establishing the mood and environment. Subtle introduction of the subject.\",\n\"panel_2\": \"Focus on Detail: A close cinematic shot emphasizing a key textural element from the input (e.g., makeup, clothing material, light reflection).\",\n\"panel_3\": \"Building Atmosphere: The subject interacts with the environment in a way defined by the selected style.\"\n},\n\"row_2_escalation\": {\n\"panel_4\": \"Dynamic Action: The energy increases. Stronger movement or a shift in lighting intensity.\",\n\"panel_5\": \"The 'Surreal' Turn: A moment that heavily highlights the selected video style (e.g., an impossible angle, abstract background shift, unusual pose).\",\n\"panel_6\": \"Intense Emotion: A powerful, emotive shot focusing on the subject's connection to the (implied) song.\"\n},\n\"row_3_climax_and_resolution\": {\n\"panel_7\": \"Visual Climax: The most visually striking and complex shot. The peak of the video's energy.\",\n\"panel_8\": \"Pulling Back: A wider view showing the aftermath of the climax or a change in state.\",\n\"panel_9\": \"Closing Scene: A resolving shot that fades out or ends the visual journey, leaving a lasting impression.\"\n}\n},\n\"final_prompt_instruction\": \"Synthesize all uploaded input images into a single, cohesive visual identity. Acting as a Creative Director, generate a 3x3 grid storyboard composed of 9 high-quality video stills. You must strictly apply the requested 'selected_style' to the narrative flow defined in the 'scene_progression_structure'. Ensure every panel looks like a frame from the same high-budget music video, maintaining perfect consistency in subject and lighting. Do NOT include any text overlays on the final images.\"\n}\n",
+    "final_prompt": [
+      "Use reference 1 for the fictional 32-year-old adult character appearance, reference 2 for the florist shop, white shirt/green apron and warm window lighting. Make an animated Pixar-style 3D character adaptation, not a real video. One 3x3 grid, all panels widescreen 16:9, no text. Follow these rules and explicit story beats: {\"project_name\": \"Auto_Creative_Music_Video_Storyboard_Generator\", \"version\": \"4.0 (Video Clip Focus - Multi-Input)\", \"ai_role\": \"You are a visionary Creative Director and Cinematographer for a high-end music video. Your goal is to create a cohesive, visually stunning 9-scene storyboard based on provided visual references.\", \"input_configuration\": {\"source_material\": \"Multiple Uploaded Images. The AI must synthesize all provided images to establish the definitive subject(s), color palette, lighting scheme, and overall aesthetic.\", \"video_clip_style_selector\": {\"description\": \"Select the overarching genre/mood for the music video clip behavior.\", \"options\": [\"Creative\", \"Surreal\", \"Absurd\", \"Dreamlike\", \"High-Fashion\", \"Cyberpunk\", \"Gothic\", \"Abstract\"], \"selected_style\": \"Pixar\"}}, \"processing_rules\": {\"consistency_is_paramount\": \"Strictly maintain the visual identity established by the input images across all 9 scenes. The subject's features, the specific lighting mood (e.g., neon stripes, iridescence), and the environment style must never deviate.\", \"apply_selected_style\": \"Inject the mood and behaviors of the 'selected_style' into the movement, composition, and events of the scenes. (e.g., if 'Surreal', gravity might behave oddly; if 'Absurd', actions might be illogical).\", \"imply_motion\": \"These are not static photos. Each panel must look like a still frame taken from a moving video clip, implying action, camera movement, or atmospheric shifting.\", \"no_text_overlays\": true, \"output_aspect_ratio\": \"16:9 for all panels.\"}, \"scene_progression_structure\": {\"note\": \"Design 9 distinct visual beats representing the flow of a music video.\", \"row_1_introduction\": {\"panel_1\": \"Opening Scene: Establishing the mood and environment. Subtle introduction of the subject.\", \"panel_2\": \"Focus on Detail: A close cinematic shot emphasizing a key textural element from the input (e.g., makeup, clothing material, light reflection).\", \"panel_3\": \"Building Atmosphere: The subject interacts with the environment in a way defined by the selected style.\"}, \"row_2_escalation\": {\"panel_4\": \"Dynamic Action: The energy increases. Stronger movement or a shift in lighting intensity.\", \"panel_5\": \"The 'Surreal' Turn: A moment that heavily highlights the selected video style (e.g., an impossible angle, abstract background shift, unusual pose).\", \"panel_6\": \"Intense Emotion: A powerful, emotive shot focusing on the subject's connection to the (implied) song.\"}, \"row_3_climax_and_resolution\": {\"panel_7\": \"Visual Climax: The most visually striking and complex shot. The peak of the video's energy.\", \"panel_8\": \"Pulling Back: A wider view showing the aftermath of the climax or a change in state.\", \"panel_9\": \"Closing Scene: A resolving shot that fades out or ends the visual journey, leaving a lasting impression.\"}}, \"final_prompt_instruction\": \"Synthesize all uploaded input images into a single, cohesive visual identity. Acting as a Creative Director, generate a 3x3 grid storyboard composed of 9 high-quality video stills. You must strictly apply the requested 'selected_style' to the narrative flow defined in the 'scene_progression_structure'. Ensure every panel looks like a frame from the same high-budget music video, maintaining perfect consistency in subject and lighting. Do NOT include any text overlays on the final images.\", \"test_beats\": [\"wide establishing: the same adult florist steps into the warm shop beside the left window\", \"close detail: the same florist's fingers brush the pale pink rose petals in the kraft-wrapped bouquet\", \"medium: the florist waters a small pot on the wooden shelf, body turning gently\", \"dynamic medium-wide: a playful gust moves the florist's apron and lifts a few petals, one foot stepping back\", \"low tilted angle: a spiral of pastel petals rises around the florist, whimsical animated physics, still inside the same shop\", \"close face: the florist reacts with delighted surprise and warm smile, eye sparkle\", \"wide visual climax: the same florist reaches upward through a large luminous swirling ring of pink petals in the shop\", \"wide aftermath: petals settle softly onto the wooden counter as the florist lowers both arms\", \"resolving medium: the same florist calmly holds the bouquet at the waist, smiling toward the window\"]}"
+    ],
+    "meta_output": {
+      "beats": [
+        "wide establishing: the same adult florist steps into the warm shop beside the left window",
+        "close detail: the same florist's fingers brush the pale pink rose petals in the kraft-wrapped bouquet",
+        "medium: the florist waters a small pot on the wooden shelf, body turning gently",
+        "dynamic medium-wide: a playful gust moves the florist's apron and lifts a few petals, one foot stepping back",
+        "low tilted angle: a spiral of pastel petals rises around the florist, whimsical animated physics, still inside the same shop",
+        "close face: the florist reacts with delighted surprise and warm smile, eye sparkle",
+        "wide visual climax: the same florist reaches upward through a large luminous swirling ring of pink petals in the shop",
+        "wide aftermath: petals settle softly onto the wooden counter as the florist lowers both arms",
+        "resolving medium: the same florist calmly holds the bouquet at the waist, smiling toward the window"
+      ],
+      "scope": "仅九个静态故事板帧；不代表视频生成通过"
+    },
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "Use reference 1 for the fictional 32-year-old adult character appearance, reference 2 for the florist shop, white shirt/green apron and warm window lighting. Make an animated Pixar-style 3D character adaptation, not a real video. One 3x3 grid, all panels widescreen 16:9, no text. Follow these rules and explicit story beats: {\"project_name\": \"Auto_Creative_Music_Video_Storyboard_Generator\", \"version\": \"4.0 (Video Clip Focus - Multi-Input)\", \"ai_role\": \"You are a visionary Creative Director and Cinematographer for a high-end music video. Your goal is to create a cohesive, visually stunning 9-scene storyboard based on provided visual references.\", \"input_configuration\": {\"source_material\": \"Multiple Uploaded Images. The AI must synthesize all provided images to establish the definitive subject(s), color palette, lighting scheme, and overall aesthetic.\", \"video_clip_style_selector\": {\"description\": \"Select the overarching genre/mood for the music video clip behavior.\", \"options\": [\"Creative\", \"Surreal\", \"Absurd\", \"Dreamlike\", \"High-Fashion\", \"Cyberpunk\", \"Gothic\", \"Abstract\"], \"selected_style\": \"Pixar\"}}, \"processing_rules\": {\"consistency_is_paramount\": \"Strictly maintain the visual identity established by the input images across all 9 scenes. The subject's features, the specific lighting mood (e.g., neon stripes, iridescence), and the environment style must never deviate.\", \"apply_selected_style\": \"Inject the mood and behaviors of the 'selected_style' into the movement, composition, and events of the scenes. (e.g., if 'Surreal', gravity might behave oddly; if 'Absurd', actions might be illogical).\", \"imply_motion\": \"These are not static photos. Each panel must look like a still frame taken from a moving video clip, implying action, camera movement, or atmospheric shifting.\", \"no_text_overlays\": true, \"output_aspect_ratio\": \"16:9 for all panels.\"}, \"scene_progression_structure\": {\"note\": \"Design 9 distinct visual beats representing the flow of a music video.\", \"row_1_introduction\": {\"panel_1\": \"Opening Scene: Establishing the mood and environment. Subtle introduction of the subject.\", \"panel_2\": \"Focus on Detail: A close cinematic shot emphasizing a key textural element from the input (e.g., makeup, clothing material, light reflection).\", \"panel_3\": \"Building Atmosphere: The subject interacts with the environment in a way defined by the selected style.\"}, \"row_2_escalation\": {\"panel_4\": \"Dynamic Action: The energy increases. Stronger movement or a shift in lighting intensity.\", \"panel_5\": \"The 'Surreal' Turn: A moment that heavily highlights the selected video style (e.g., an impossible angle, abstract background shift, unusual pose).\", \"panel_6\": \"Intense Emotion: A powerful, emotive shot focusing on the subject's connection to the (implied) song.\"}, \"row_3_climax_and_resolution\": {\"panel_7\": \"Visual Climax: The most visually striking and complex shot. The peak of the video's energy.\", \"panel_8\": \"Pulling Back: A wider view showing the aftermath of the climax or a change in state.\", \"panel_9\": \"Closing Scene: A resolving shot that fades out or ends the visual journey, leaving a lasting impression.\"}}, \"final_prompt_instruction\": \"Synthesize all uploaded input images into a single, cohesive visual identity. Acting as a Creative Director, generate a 3x3 grid storyboard composed of 9 high-quality video stills. You must strictly apply the requested 'selected_style' to the narrative flow defined in the 'scene_progression_structure'. Ensure every panel looks like a frame from the same high-budget music video, maintaining perfect consistency in subject and lighting. Do NOT include any text overlays on the final images.\", \"test_beats\": [\"wide establishing: the same adult florist steps into the warm shop beside the left window\", \"close detail: the same florist's fingers brush the pale pink rose petals in the kraft-wrapped bouquet\", \"medium: the florist waters a small pot on the wooden shelf, body turning gently\", \"dynamic medium-wide: a playful gust moves the florist's apron and lifts a few petals, one foot stepping back\", \"low tilted angle: a spiral of pastel petals rises around the florist, whimsical animated physics, still inside the same shop\", \"close face: the florist reacts with delighted surprise and warm smile, eye sparkle\", \"wide visual climax: the same florist reaches upward through a large luminous swirling ring of pink petals in the shop\", \"wide aftermath: petals settle softly onto the wooden counter as the florist lowers both arms\", \"resolving medium: the same florist calmly holds the bouquet at the waist, smiling toward the window\"]}",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      }
+    ],
+    "meta_execution": "结构化导演指令填入九个静态节拍；非单独提示词生成模型API",
+    "original_filename": "提示词库/海报封面/[已投产·4分] 【图片】皮克斯九宫格.md",
+    "original_sha256": "c89186d36423da70c3517eb30e1073b37f9137c16c96f48be28158fbaca96085",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "results/T001-fixed-person/04-florist.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格/无叠字/宽屏",
+        "result": "符合要求",
+        "evidence": "3×3九格，各格约16:9，无字幕或编号。"
+      },
+      {
+        "requirement": "分镜动作与环境",
+        "result": "基本符合",
+        "evidence": "花瓣触摸、浇水、起风、花瓣旋环、情绪特写、高潮和落定等节拍清晰，白衬衫绿围裙和暖花店一致。"
+      },
+      {
+        "requirement": "第8格拉远",
+        "result": "存在问题",
+        "evidence": "高潮第7格为较宽低角度，第8格却回到半身柜台前，没有按要求拉远。"
+      },
+      {
+        "requirement": "完美身份一致及视频",
+        "result": "未验证",
+        "evidence": "动画风适配有细微脸部漂移；未生成/播放视频或音频。"
+      }
+    ],
+    "conclusion": "静态故事板主要节拍完成，第8格拉远未落实；不代表音乐视频生成通过。"
+  },
+  "images": [
+    {
+      "file": "results/T080-pixar-storyboard/output.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "254fe25b60ba6af2dbbf0a2c650cb71768d5c551c04c8a6b8f9b79a1db1e9507"
+    }
+  ]
+}

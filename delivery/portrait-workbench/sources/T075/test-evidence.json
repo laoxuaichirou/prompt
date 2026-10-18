@@ -1,0 +1,82 @@
+{
+  "test": {
+    "test_id": "T075",
+    "title": "【创意人像】9宫格裸感3D拼贴海报",
+    "type": "时尚杂志拼贴元提示词→生图",
+    "test_input": "目标人物：同一合成32岁成年女性；服装：白T、海军蓝西装长裤套装和白鞋；风格：米白海军蓝极简杂志大片；九背景封面+一前景全身叠加。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只填模板目标人物与风格变量；标题含裸感但正文要求时装，本例按完整服装执行",
+      "MJ/Flux参数转为本工具自然语言比例；8K保留为要求",
+      "模板要求同时输出英文Prompt和中文描述；两者均保存，生图只传英文Prompt"
+    ],
+    "selected_source_prompt": "# Role: 时尚视觉艺术总监 & AI绘图指令大师 (Fashion Art Director & Prompt Engineer)\n\n## 1. 任务目标\n你现在的任务是根据用户提供的[目标物体/人物]，设计一组用于生成“多封面时尚杂志拼贴海报”的高级AI绘图提示词（Prompt）。你需要复刻一种特定的视觉结构：背景由多个杂志封面风格的网格组成，前景有一个核心人物打破边框，形成“破格”的立体视觉效果。\n\n## 2. 图像结构框架 (Structure & Layout Analysis)\n请在生成的Prompt中严格执行以下视觉框架：\n* **构图模式**：Magazine Grid Collage (杂志拼贴网格) / Bento Box Style (便当盒布局)。\n* **背景层**：将画面分割为 7-9 个矩形区域。每个区域模仿一本顶级时尚杂志的封面（Vogue, Bazaar, Elle, i-D, Dazed, GQ, Marie Claire 等）。\n* **前景层（重点）**：生成一个Full Body Shot（全身照）或 Dynamic Walking Pose（动态行走姿势）的主体，该主体必须作为Overlay（顶层图层）叠加在背景网格之上，打破格子界限，创造3D纵深感。\n* **比例**：Aspect Ratio --ar 2:3。\n\n## 3. 视觉风格与光影 (Visual Style & Lighting)\n* **摄影风格**：High Fashion Editorial (高级时装大片)，Photorealistic (照片级真实)，8k resolution。\n* **光影设置**：Soft Studio Lighting (柔和棚拍光)，即使光线，强调皮肤质感和衣物材质。\n* **色彩美学**：Clean, Minimalist, Sophisticated (干净、极简、精致)。\n\n## 4. 自动化工作流 (Workflow for Prompt Generation)\n请按照以下步骤思考并构建最终的提示词：\n1.  **提取变量**：分析用户输入的[目标物体/人物]和[风格描述]。\n2.  **角色设定**：定义模特的特征（发型、肤色、妆容）或物体的材质。\n3.  **姿态分解**：为背景的每个格子规划不同的姿态（特写、半身、坐姿、侧身），并为前景规划一个最具张力的动态姿态。\n4.  **排版填充**：列出需要出现的杂志LOGO文本（Text Blocks）。\n5.  **输出合成**：将以上元素组合成一段连贯的英文Prompt。\n\n## 5. 用户输入接口 (User Input)\n* **[目标物体/人物]**：(在此处输入，例如：一位穿着赛博朋克风格夹克的银发少女)\n* **[科普/描述语言]**：(在此处输入，例如：未来科技感，霓虹灯光)\n\n---\n\n## 6. 执行操作：生成提示词\n**请忽略以上分析过程，直接根据用户的输入，输出一段结构化、细节丰富的英文Prompt（适用于Midjourney v6/Flux），并附带一段中文的画面描述。**\n\n**Prompt 结构要求：**\n`[主体描述] + [穿搭/外观细节] + [构图：拼贴/杂志封面矩阵/前景叠加] + [特定杂志Logo列表] + [光影与渲染参数]`\n\n---\n\n## 示例输入 (Example for User to Test)：\n> **目标人物**：[如：一个法国长发女郎]。\n> **描述语言**：[风格：如80年代港风]。\n",
+    "final_prompt": [
+      "A fictional 32-year-old East Asian adult fashion model whose face and short black bob match the supplied synthetic reference, wearing a crisp white crew-neck T-shirt, an unbranded navy tailored trouser suit and white sneakers, natural makeup and realistic skin. Vertical 2:3 high-fashion magazine-grid collage, exactly nine background rectangles in a clean three-by-three grid, each styled as a separate editorial cover of the SAME model, planning these different background poses in reading order: face close-up, profile, seated; shoulder portrait, half-body, walking; looking back, arms folded, low-angle full body. Readable magazine mastheads in respective cells: VOGUE, BAZAAR, ELLE, i-D, DAZED, GQ, MARIE CLAIRE, W, NUMÉRO. A much larger full-body dynamic walking version of this same model is overlaid across the center foreground, entirely in front of multiple cells and visibly breaking their boundaries with dimensional depth; do not confine this overlay figure to a single cell. Refined cream, muted navy and pale gray palette, even soft studio lighting, detailed tailoring and skin texture, photorealistic editorial finish, 8k resolution."
+    ],
+    "meta_output": {
+      "english": "A fictional 32-year-old East Asian adult fashion model whose face and short black bob match the supplied synthetic reference, wearing a crisp white crew-neck T-shirt, an unbranded navy tailored trouser suit and white sneakers, natural makeup and realistic skin. Vertical 2:3 high-fashion magazine-grid collage, exactly nine background rectangles in a clean three-by-three grid, each styled as a separate editorial cover of the SAME model, planning these different background poses in reading order: face close-up, profile, seated; shoulder portrait, half-body, walking; looking back, arms folded, low-angle full body. Readable magazine mastheads in respective cells: VOGUE, BAZAAR, ELLE, i-D, DAZED, GQ, MARIE CLAIRE, W, NUMÉRO. A much larger full-body dynamic walking version of this same model is overlaid across the center foreground, entirely in front of multiple cells and visibly breaking their boundaries with dimensional depth; do not confine this overlay figure to a single cell. Refined cream, muted navy and pale gray palette, even soft studio lighting, detailed tailoring and skin texture, photorealistic editorial finish, 8k resolution.",
+      "chinese": "九个同一成年人物的杂志封面组成三乘三背景，格内分别使用特写、侧脸、坐姿、半身等不同姿势。穿白T和深蓝西装套装的大幅全身行走人物叠加在前景，跨越多个格子边界。整体米白海军蓝极简棚拍风格。"
+    },
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "A fictional 32-year-old East Asian adult fashion model whose face and short black bob match the supplied synthetic reference, wearing a crisp white crew-neck T-shirt, an unbranded navy tailored trouser suit and white sneakers, natural makeup and realistic skin. Vertical 2:3 high-fashion magazine-grid collage, exactly nine background rectangles in a clean three-by-three grid, each styled as a separate editorial cover of the SAME model, planning these different background poses in reading order: face close-up, profile, seated; shoulder portrait, half-body, walking; looking back, arms folded, low-angle full body. Readable magazine mastheads in respective cells: VOGUE, BAZAAR, ELLE, i-D, DAZED, GQ, MARIE CLAIRE, W, NUMÉRO. A much larger full-body dynamic walking version of this same model is overlaid across the center foreground, entirely in front of multiple cells and visibly breaking their boundaries with dimensional depth; do not confine this overlay figure to a single cell. Refined cream, muted navy and pale gray palette, even soft studio lighting, detailed tailoring and skin texture, photorealistic editorial finish, 8k resolution.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/海报封面/[已投产·3分] 【创意人像】9宫格裸感3D拼贴海报.md",
+    "original_sha256": "9bb0d98a4a6cbedee868deb375420ef92a5a2e40da3b8a8bae3e97d85fe016e0",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九背景封面+前景叠加",
+        "result": "符合要求",
+        "evidence": "3×3杂志背景与独立全身行走人物跨格叠加，纵深清晰。"
+      },
+      {
+        "requirement": "杂志名/姿态与一致性",
+        "result": "基本符合",
+        "evidence": "VOGUE/BAZAAR/ELLE/i-D/DAZED/GQ/marie claire/W/NUMÉRO出现；部分字样及格内动作被前景遮挡，无法完整核对九姿态。人物面部有轻微漂移。"
+      },
+      {
+        "requirement": "2:3与8K",
+        "result": "部分符合",
+        "evidence": "画面2:3；原生非8K。"
+      },
+      {
+        "requirement": "原指定MJ/Flux",
+        "result": "未验证",
+        "evidence": "仅使用本会话工具，非原模型实测。"
+      }
+    ],
+    "conclusion": "杂志拼贴与跨格人物的主要视觉结构完成；8K、完美一致性及全部被遮挡姿态未通过完整验收。"
+  },
+  "images": [
+    {
+      "file": "results/T075-magazine-overlay/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "921d8eedcadb073106f5be8e2975cd6a1abbf119cf9e904c834c9b35ede6229c"
+    }
+  ]
+}

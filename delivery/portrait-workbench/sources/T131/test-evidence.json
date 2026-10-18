@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T131",
+    "title": "【创意人像】橱窗里出现了一个小小的动画版的自己",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman in the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充32岁虚构成年女性，使用同一合成参考；原示例图不当作已取得素材。"
+    ],
+    "selected_source_prompt": "{\n  \"PROMPT\": \"Create a bright, high-end street-fashion photograph of the woman from the reference image, keeping her face, hair, body & outfit exactly the same. She stands outside a luxury toy-shop window, gently touching the glass. Inside the window display, place a full-height cartoon-style doll designed to resemble her—same features, hair, and outfit—transformed into a cute, big-eyed, stylized animated character. Crisp lighting, premium street-fashion look, realistic reflections, face unchanged.\",\n  \"settings\": {\n    \"style\": \"high-end street fashion\",\n    \"lighting\": \"crisp and bright\",\n    \"environment\": \"outside luxury toy-shop window\",\n    \"subject\": \"woman from reference image\",\n    \"focus\": [\n      \"face\",\n      \"hair\",\n      \"body\",\n      \"outfit\"\n    ],\n    \"additional_elements\": [\n      {\n        \"type\": \"doll\",\n        \"style\": \"cartoon-style, big-eyed, stylized\",\n        \"location\": \"inside window display\",\n        \"resemblance\": \"exact features, hair, outfit of woman\"\n      }\n    ],\n    \"reflections\": \"realistic\",\n    \"photorealism\": true\n  }\n}\n",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the synthetic reference. {\n  \"PROMPT\": \"Create a bright, high-end street-fashion photograph of the woman from the reference image, keeping her face, hair, body & outfit exactly the same. She stands outside a luxury toy-shop window, gently touching the glass. Inside the window display, place a full-height cartoon-style doll designed to resemble her—same features, hair, and outfit—transformed into a cute, big-eyed, stylized animated character. Crisp lighting, premium street-fashion look, realistic reflections, face unchanged.\",\n  \"settings\": {\n    \"style\": \"high-end street fashion\",\n    \"lighting\": \"crisp and bright\",\n    \"environment\": \"outside luxury toy-shop window\",\n    \"subject\": \"woman from reference image\",\n    \"focus\": [\n      \"face\",\n      \"hair\",\n      \"body\",\n      \"outfit\"\n    ],\n    \"additional_elements\": [\n      {\n        \"type\": \"doll\",\n        \"style\": \"cartoon-style, big-eyed, stylized\",\n        \"location\": \"inside window display\",\n        \"resemblance\": \"exact features, hair, outfit of woman\"\n      }\n    ],\n    \"reflections\": \"realistic\",\n    \"photorealism\": true\n  }\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the synthetic reference. {\n  \"PROMPT\": \"Create a bright, high-end street-fashion photograph of the woman from the reference image, keeping her face, hair, body & outfit exactly the same. She stands outside a luxury toy-shop window, gently touching the glass. Inside the window display, place a full-height cartoon-style doll designed to resemble her—same features, hair, and outfit—transformed into a cute, big-eyed, stylized animated character. Crisp lighting, premium street-fashion look, realistic reflections, face unchanged.\",\n  \"settings\": {\n    \"style\": \"high-end street fashion\",\n    \"lighting\": \"crisp and bright\",\n    \"environment\": \"outside luxury toy-shop window\",\n    \"subject\": \"woman from reference image\",\n    \"focus\": [\n      \"face\",\n      \"hair\",\n      \"body\",\n      \"outfit\"\n    ],\n    \"additional_elements\": [\n      {\n        \"type\": \"doll\",\n        \"style\": \"cartoon-style, big-eyed, stylized\",\n        \"location\": \"inside window display\",\n        \"resemblance\": \"exact features, hair, outfit of woman\"\n      }\n    ],\n    \"reflections\": \"realistic\",\n    \"photorealism\": true\n  }\n}\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【创意人像】橱窗里出现了一个小小的动画版的自己.md",
+    "original_sha256": "d1f736159211fca20cd8fb09f7aad656414fce04234aa7adf7023d906c7ae748",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "真人/动画人偶/橱窗触玻璃",
+        "result": "符合要求",
+        "evidence": "真人白T深蓝裤短黑发/小痣保留，大眼卡通同服人偶在橱窗内，玻璃倒影与两侧手部互动清楚。"
+      },
+      {
+        "requirement": "相貌完全不变",
+        "result": "未验证",
+        "evidence": "可辨认相近脸部线索；不是像素或生物特征精确一致的证明。"
+      }
+    ],
+    "conclusion": "本次橱窗真人与卡通人偶用例符合主要视觉要求，精确保真未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T131-window-doll/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6ba1e676a4a5765c704318dc5da601ba9da20946481b75ef1b8987fce2b113f5"
+    }
+  ]
+}

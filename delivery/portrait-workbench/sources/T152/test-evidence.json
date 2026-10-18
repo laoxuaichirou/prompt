@@ -1,0 +1,51 @@
+{
+  "test": {
+    "test_id": "T152",
+    "title": "金棕草地黑西装六格时尚大片",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman from the synthetic reference for the face, with brown wavy hair and bangs as instructed. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；按照正文规定造型，不引用原示例身份。"
+    ],
+    "selected_source_prompt": "This collage consists of 6 selected photos arranged in a neat grid, featuring a young woman posing with chairs in an open meadow during the \"golden hour\" (sunrise/sunset).\n\n👩 Model and Attire\n\nThe model is a woman with slightly wavy brown hair and bangs. She wears an all-black outfit consisting of a loose-fitting long-sleeved blazer and black shorts, creating a dramatic contrast with the natural background.\n\n🖼️ Background and Lighting\n\nSetting: A meadow with stretches of golden brown hay and dry grass. The sky background is highly dramatic, colored blue with white and gray clouds that add depth.\nLighting: Soft yet directional natural side light, characteristic of the \"golden hour,\" highlighting silhouettes and textures.\n\n🪑 Six Selected Shots:\n\n1. Close-up (Top Left): Half-body close-up. The woman leans against a chair backrest, looking directly at the camera with a calm expression.\n2. Erect Sitting Pose (Top Middle): The woman sits upright on the chair, body facing sideways while turning her head toward the camera. Her gaze is intense and full of confidence.\n3. Dynamic Lying Pose (Top Right): The woman lies on her back in the meadow with her legs raised in the air, supported by an overturned chair behind her. This pose is full of movement and interesting angles.\n4. Interaction with Chairs (Bottom Left): The woman stands between two chairs lying on the meadow, holding onto one of their backrests. This is a full-body shot showing the dynamic relationship between the model, props, and environment.\n5. Contemplation in the Meadow (Bottom Middle): The woman sits casually on the chair, leaning with one hand on her knee, her gaze drifting into the distance. Her expression is more contemplative and calm.\n6. Leaning on the Slope (Bottom Right): The woman lies on the meadow slope in a relaxed yet structured pose, holding onto a chair beside her. This composition emphasizes landscape lines and organic interaction.\n\n🎨 Style and Aesthetics\n\nThe aesthetic leans toward fashion/editorial photography with a strong dark and dramatic tone. The color palette is dominated by golden brown from the ground, blue-gray from the sky, and black accents from the model’s outfit. The six shots were selected for their visual strength, varied poses, and ability to convey an elegant, expressive mood. Do not alter the face.\n",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman from the synthetic reference for the face, with brown wavy hair and bangs as instructed. This collage consists of 6 selected photos arranged in a neat grid, featuring a young woman posing with chairs in an open meadow during the \"golden hour\" (sunrise/sunset).\n\n👩 Model and Attire\n\nThe model is a woman with slightly wavy brown hair and bangs. She wears an all-black outfit consisting of a loose-fitting long-sleeved blazer and black shorts, creating a dramatic contrast with the natural background.\n\n🖼️ Background and Lighting\n\nSetting: A meadow with stretches of golden brown hay and dry grass. The sky background is highly dramatic, colored blue with white and gray clouds that add depth.\nLighting: Soft yet directional natural side light, characteristic of the \"golden hour,\" highlighting silhouettes and textures.\n\n🪑 Six Selected Shots:\n\n1. Close-up (Top Left): Half-body close-up. The woman leans against a chair backrest, looking directly at the camera with a calm expression.\n2. Erect Sitting Pose (Top Middle): The woman sits upright on the chair, body facing sideways while turning her head toward the camera. Her gaze is intense and full of confidence.\n3. Dynamic Lying Pose (Top Right): The woman lies on her back in the meadow with her legs raised in the air, supported by an overturned chair behind her. This pose is full of movement and interesting angles.\n4. Interaction with Chairs (Bottom Left): The woman stands between two chairs lying on the meadow, holding onto one of their backrests. This is a full-body shot showing the dynamic relationship between the model, props, and environment.\n5. Contemplation in the Meadow (Bottom Middle): The woman sits casually on the chair, leaning with one hand on her knee, her gaze drifting into the distance. Her expression is more contemplative and calm.\n6. Leaning on the Slope (Bottom Right): The woman lies on the meadow slope in a relaxed yet structured pose, holding onto a chair beside her. This composition emphasizes landscape lines and organic interaction.\n\n🎨 Style and Aesthetics\n\nThe aesthetic leans toward fashion/editorial photography with a strong dark and dramatic tone. The color palette is dominated by golden brown from the ground, blue-gray from the sky, and black accents from the model’s outfit. The six shots were selected for their visual strength, varied poses, and ability to convey an elegant, expressive mood. Do not alter the face.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman from the synthetic reference for the face, with brown wavy hair and bangs as instructed. This collage consists of 6 selected photos arranged in a neat grid, featuring a young woman posing with chairs in an open meadow during the \"golden hour\" (sunrise/sunset).\n\n👩 Model and Attire\n\nThe model is a woman with slightly wavy brown hair and bangs. She wears an all-black outfit consisting of a loose-fitting long-sleeved blazer and black shorts, creating a dramatic contrast with the natural background.\n\n🖼️ Background and Lighting\n\nSetting: A meadow with stretches of golden brown hay and dry grass. The sky background is highly dramatic, colored blue with white and gray clouds that add depth.\nLighting: Soft yet directional natural side light, characteristic of the \"golden hour,\" highlighting silhouettes and textures.\n\n🪑 Six Selected Shots:\n\n1. Close-up (Top Left): Half-body close-up. The woman leans against a chair backrest, looking directly at the camera with a calm expression.\n2. Erect Sitting Pose (Top Middle): The woman sits upright on the chair, body facing sideways while turning her head toward the camera. Her gaze is intense and full of confidence.\n3. Dynamic Lying Pose (Top Right): The woman lies on her back in the meadow with her legs raised in the air, supported by an overturned chair behind her. This pose is full of movement and interesting angles.\n4. Interaction with Chairs (Bottom Left): The woman stands between two chairs lying on the meadow, holding onto one of their backrests. This is a full-body shot showing the dynamic relationship between the model, props, and environment.\n5. Contemplation in the Meadow (Bottom Middle): The woman sits casually on the chair, leaning with one hand on her knee, her gaze drifting into the distance. Her expression is more contemplative and calm.\n6. Leaning on the Slope (Bottom Right): The woman lies on the meadow slope in a relaxed yet structured pose, holding onto a chair beside her. This composition emphasizes landscape lines and organic interaction.\n\n🎨 Style and Aesthetics\n\nThe aesthetic leans toward fashion/editorial photography with a strong dark and dramatic tone. The color palette is dominated by golden brown from the ground, blue-gray from the sky, and black accents from the model’s outfit. The six shots were selected for their visual strength, varied poses, and ability to convey an elegant, expressive mood. Do not alter the face.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 金棕草地黑西装六格时尚大片.md",
+    "original_sha256": "731f43faf1de922c84d11717134e565c6386bac35cb31cb830b228242fd797b1",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际工具结果",
+        "result": "阻塞",
+        "evidence": "HTTP400 moderation_blocked，output阶段sexual分类，无返回图片；未换词重试绕过。"
+      }
+    ],
+    "conclusion": "输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

@@ -1,0 +1,46 @@
+{
+  "test": {
+    "test_id": "T155",
+    "title": "鱼眼镜头下的日本女子比心",
+    "type": "直接生图/参考编辑",
+    "test_input": "The model is a wholly fictional 28-year-old adult woman, choose Gyaru styling and a Tokyo subway setting. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；按照正文规定造型，不引用原示例身份。",
+      "清理HTML换行与导出括号反斜杠；选择Gyaru与地铁场景分支。"
+    ],
+    "selected_source_prompt": "\\{\n  \"image_specifications\": \\{\n    \"format\": \"photograph\",\n    \"style\": \"highly detailed, Y2K-inspired, gritty\",\n    \"lens\": \"fisheye\",\n    \"angle\": \"low-angle\",\n    \"shot\": \"close-up\",\n    \"lighting\": \"harsh, high contrast\",\n    \"colors\": \"saturated\",\n    \"background\": \\{\n      \"setting\": \"urban, dark, street or subway in Tokyo\",\n      \"effects\": \"subtle bokeh\"\n    \\}\n  \\},\n  \"subject\": \\{\n    \"type\": \"model\",\n    \"style\": \"Japanese Ganguro or Gyaru\",\n    \"appearance\": \\{\n      \"hair\": \"platinum blonde with dark roots\",\n      \"makeup\": \\{\n        \"eyes\": \"heavy eye makeup\",\n        \"lips\": \"light lipstick\"\n      \\},\n      \"clothing\": [\n        \"faux fur vest\",\n        \"distressed black denim top\"\n      \\],\n      \"accessories\": [\n        \"large gold cross pendant on a chain\",\n        \"leopard-print choker\"\n      \\],\n      \"hands\": \\{\n        \"position\": \"foreground, forming a heart shape around face\",\n        \"nails\": \"long, heavily jeweled and decorated (deconails)\"\n      \\}\n    \\},\n    \"pose\": \"looking directly at the camera\"\n  \\}\n\\}",
+    "final_prompt": [
+      "The model is a wholly fictional 28-year-old adult woman, choose Gyaru styling and a Tokyo subway setting. {\n  \"image_specifications\": {\n    \"format\": \"photograph\",\n    \"style\": \"highly detailed, Y2K-inspired, gritty\",\n    \"lens\": \"fisheye\",\n    \"angle\": \"low-angle\",\n    \"shot\": \"close-up\",\n    \"lighting\": \"harsh, high contrast\",\n    \"colors\": \"saturated\",\n    \"background\": {\n      \"setting\": \"urban, dark, street or subway in Tokyo\",\n      \"effects\": \"subtle bokeh\"\n    }\n  },\n  \"subject\": {\n    \"type\": \"model\",\n    \"style\": \"Japanese Ganguro or Gyaru\",\n    \"appearance\": {\n      \"hair\": \"platinum blonde with dark roots\",\n      \"makeup\": {\n        \"eyes\": \"heavy eye makeup\",\n        \"lips\": \"light lipstick\"\n      },\n      \"clothing\": [\n        \"faux fur vest\",\n        \"distressed black denim top\"\n      ],\n      \"accessories\": [\n        \"large gold cross pendant on a chain\",\n        \"leopard-print choker\"\n      ],\n      \"hands\": {\n        \"position\": \"foreground, forming a heart shape around face\",\n        \"nails\": \"long, heavily jeweled and decorated (deconails)\"\n      }\n    },\n    \"pose\": \"looking directly at the camera\"\n  }\n}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The model is a wholly fictional 28-year-old adult woman, choose Gyaru styling and a Tokyo subway setting. {\n  \"image_specifications\": {\n    \"format\": \"photograph\",\n    \"style\": \"highly detailed, Y2K-inspired, gritty\",\n    \"lens\": \"fisheye\",\n    \"angle\": \"low-angle\",\n    \"shot\": \"close-up\",\n    \"lighting\": \"harsh, high contrast\",\n    \"colors\": \"saturated\",\n    \"background\": {\n      \"setting\": \"urban, dark, street or subway in Tokyo\",\n      \"effects\": \"subtle bokeh\"\n    }\n  },\n  \"subject\": {\n    \"type\": \"model\",\n    \"style\": \"Japanese Ganguro or Gyaru\",\n    \"appearance\": {\n      \"hair\": \"platinum blonde with dark roots\",\n      \"makeup\": {\n        \"eyes\": \"heavy eye makeup\",\n        \"lips\": \"light lipstick\"\n      },\n      \"clothing\": [\n        \"faux fur vest\",\n        \"distressed black denim top\"\n      ],\n      \"accessories\": [\n        \"large gold cross pendant on a chain\",\n        \"leopard-print choker\"\n      ],\n      \"hands\": {\n        \"position\": \"foreground, forming a heart shape around face\",\n        \"nails\": \"long, heavily jeweled and decorated (deconails)\"\n      }\n    },\n    \"pose\": \"looking directly at the camera\"\n  }\n}",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 鱼眼镜头下的日本女子比心.md",
+    "original_sha256": "05a4eab1397845aa5df561dcf3b330cd5e4c00662ccc1f2782469990966d8092",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际工具结果",
+        "result": "阻塞",
+        "evidence": "HTTP400 moderation_blocked，output阶段sexual分类，无返回图片；未换词重试绕过。"
+      }
+    ],
+    "conclusion": "输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

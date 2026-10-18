@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T129",
+    "title": "【人像】女子赤脚盘腿坐在简朴的木椅上",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the facial identity of the fictional 32-year-old adult woman in the reference, with long hair and clothing as instructed. Choose sunglasses. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入成年合成人脸；按原文改长发与服装，眼镜二选一选太阳镜；保留向左看但画在右侧的原文矛盾。",
+      "保留原文签名字符串，仅图案文字不是创作者身份认证。"
+    ],
+    "selected_source_prompt": "[Prompt]\nMain_Subject = A woman with long dark hair sits on a simple wooden chair, legs crossed, bare feet. She wears an off-the-shoulder white top and beige/sand-colored jogger pants. Her posture is relaxed as she looks to the left, gazing intently at the artwork. She holds a pair of sunglasses/reading glasses in her right hand.\n\nArtwork = A large black-and-white pencil/charcoal drawing hangs on the right wall. It is a dramatic, high-contrast portrait of the same woman wearing the same outfit.\n\nBackground = Smooth white minimalist wall that creates a clean, modern aesthetic.\n\nAdditional_Elements = Two empty wooden frames stacked on the floor (one large natural wood, one smaller white). A small decorative object resembling a rustic windmill or tiny house is placed near the frames.\n\nAtmosphere = Artistic, contemplative, neutral-toned. Strong visual dialogue between the woman and her own portrait. Calm, modern, gallery-like mood.\n\nSignature = Shreya Yadav\nImage_Ratio = 3:4\n\n[Style]\nRendering = Ultra realistic, soft natural lighting, gentle shadows, high clarity.\nColor_Palette = White, beige, wood tones, black-and-white artwork contrast.\nComposition = Balanced; woman on left, artwork on right, décor elements below.\n\n[Output]\nFormat = Photographic image\nQuality = High detail, professional art-scene aesthetic\n",
+    "final_prompt": [
+      "Use the facial identity of the fictional 32-year-old adult woman in the reference, with long hair and clothing as instructed. Choose sunglasses. [Prompt]\nMain_Subject = A woman with long dark hair sits on a simple wooden chair, legs crossed, bare feet. She wears an off-the-shoulder white top and beige/sand-colored jogger pants. Her posture is relaxed as she looks to the left, gazing intently at the artwork. She holds a pair of sunglasses/reading glasses in her right hand.\n\nArtwork = A large black-and-white pencil/charcoal drawing hangs on the right wall. It is a dramatic, high-contrast portrait of the same woman wearing the same outfit.\n\nBackground = Smooth white minimalist wall that creates a clean, modern aesthetic.\n\nAdditional_Elements = Two empty wooden frames stacked on the floor (one large natural wood, one smaller white). A small decorative object resembling a rustic windmill or tiny house is placed near the frames.\n\nAtmosphere = Artistic, contemplative, neutral-toned. Strong visual dialogue between the woman and her own portrait. Calm, modern, gallery-like mood.\n\nSignature = Shreya Yadav\nImage_Ratio = 3:4\n\n[Style]\nRendering = Ultra realistic, soft natural lighting, gentle shadows, high clarity.\nColor_Palette = White, beige, wood tones, black-and-white artwork contrast.\nComposition = Balanced; woman on left, artwork on right, décor elements below.\n\n[Output]\nFormat = Photographic image\nQuality = High detail, professional art-scene aesthetic\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the facial identity of the fictional 32-year-old adult woman in the reference, with long hair and clothing as instructed. Choose sunglasses. [Prompt]\nMain_Subject = A woman with long dark hair sits on a simple wooden chair, legs crossed, bare feet. She wears an off-the-shoulder white top and beige/sand-colored jogger pants. Her posture is relaxed as she looks to the left, gazing intently at the artwork. She holds a pair of sunglasses/reading glasses in her right hand.\n\nArtwork = A large black-and-white pencil/charcoal drawing hangs on the right wall. It is a dramatic, high-contrast portrait of the same woman wearing the same outfit.\n\nBackground = Smooth white minimalist wall that creates a clean, modern aesthetic.\n\nAdditional_Elements = Two empty wooden frames stacked on the floor (one large natural wood, one smaller white). A small decorative object resembling a rustic windmill or tiny house is placed near the frames.\n\nAtmosphere = Artistic, contemplative, neutral-toned. Strong visual dialogue between the woman and her own portrait. Calm, modern, gallery-like mood.\n\nSignature = Shreya Yadav\nImage_Ratio = 3:4\n\n[Style]\nRendering = Ultra realistic, soft natural lighting, gentle shadows, high clarity.\nColor_Palette = White, beige, wood tones, black-and-white artwork contrast.\nComposition = Balanced; woman on left, artwork on right, décor elements below.\n\n[Output]\nFormat = Photographic image\nQuality = High detail, professional art-scene aesthetic\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【人像】女子赤脚盘腿坐在简朴的木椅上.md",
+    "original_sha256": "d6ac25eb9ef555be8ff769a217ded7e4cc7f19c224264c47bd4933a0a5db7636",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "人物/画作/装饰",
+        "result": "基本符合",
+        "evidence": "裸足交叉腿坐木椅、白露肩上衣米裤、右手太阳镜、右侧同服炭笔肖像、两空框/风车及指定签名文字。"
+      },
+      {
+        "requirement": "看向左侧同时看右画",
+        "result": "存在问题",
+        "evidence": "输出朝画面右侧看画，未满足向左侧看；原文左右要求互相冲突，未私自消除矛盾。"
+      }
+    ],
+    "conclusion": "大部分画廊细节实现，原文左右视线冲突导致一项不满足。"
+  },
+  "images": [
+    {
+      "file": "results/T129-gallery-chair/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "b65c5b22ba6e2f2b3ac99c940235d5fe369b418f30bfbb7f215a9d96e6628cd1"
+    }
+  ]
+}

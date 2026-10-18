@@ -1,0 +1,73 @@
+{
+  "test": {
+    "test_id": "T100",
+    "title": "铅笔风格的大头漫画",
+    "type": "不合法JSON中的可读图像编辑指令",
+    "test_input": "参考T070已生成的同一成年人物铅笔全身图，测试极度夸张大头/眼鼻唇并保留炭笔笔触、纹理纸和纯黑无文字。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T070-portrait-sketch/sketch.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只选择英文Original段，移除HTML换行与花括号的导出转义；不把损坏结构修成伪称原版的合法JSON",
+      "最终把原损坏JSON当可读提示词传给图像工具；不声称通过JSON解析工作流",
+      "position near shoulder/no right_bottom含义不清，保留不补写"
+    ],
+    "selected_source_prompt": "{\n\"image_edit\": {\n\n\"subject\": \"uploaded_image\",\n\n\"Goal\":\"proportional composition of The whole body bottom to head is a caricature with the face and head exaggerated in the extremely shape of the eyes, nose, lips.\",\n\n\"style\": \"textured paper\", \"refine details, retain original charcoal structure and strong brushes pencil, aesthetic composition and expression, pure black, brushes stroke\"\n\n{\"style\": \"pencil brush stroke\", \"no types text\", \"position\":\" stylized near shoulder, aesthetic replacement, no right_bottom\"\n\n},\n\n{\n\n\"output\":\n\n\"a big head caricature.\" Ensure to create an image with a noticeably exaggerated head size for the caricature effect you desire, while retaining the charcoal and brush stroke style\"\n\n}\n\n}",
+    "final_prompt": [
+      "根据下面原提示词中的可读编辑要求生成图像。这段文本本身不是可解析JSON，不将其视为代码执行。\n{\n\"image_edit\": {\n\n\"subject\": \"uploaded_image\",\n\n\"Goal\":\"proportional composition of The whole body bottom to head is a caricature with the face and head exaggerated in the extremely shape of the eyes, nose, lips.\",\n\n\"style\": \"textured paper\", \"refine details, retain original charcoal structure and strong brushes pencil, aesthetic composition and expression, pure black, brushes stroke\"\n\n{\"style\": \"pencil brush stroke\", \"no types text\", \"position\":\" stylized near shoulder, aesthetic replacement, no right_bottom\"\n\n},\n\n{\n\n\"output\":\n\n\"a big head caricature.\" Ensure to create an image with a noticeably exaggerated head size for the caricature effect you desire, while retaining the charcoal and brush stroke style\"\n\n}\n\n}"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/results/T070-portrait-sketch/sketch.png"
+        ],
+        "prompt": "根据下面原提示词中的可读编辑要求生成图像。这段文本本身不是可解析JSON，不将其视为代码执行。\n{\n\"image_edit\": {\n\n\"subject\": \"uploaded_image\",\n\n\"Goal\":\"proportional composition of The whole body bottom to head is a caricature with the face and head exaggerated in the extremely shape of the eyes, nose, lips.\",\n\n\"style\": \"textured paper\", \"refine details, retain original charcoal structure and strong brushes pencil, aesthetic composition and expression, pure black, brushes stroke\"\n\n{\"style\": \"pencil brush stroke\", \"no types text\", \"position\":\" stylized near shoulder, aesthetic replacement, no right_bottom\"\n\n},\n\n{\n\n\"output\":\n\n\"a big head caricature.\" Ensure to create an image with a noticeably exaggerated head size for the caricature effect you desire, while retaining the charcoal and brush stroke style\"\n\n}\n\n}",
+        "reference_material_portable": [
+          "results/T070-portrait-sketch/sketch.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[已投产·3分] 铅笔风格的大头漫画.md",
+    "original_sha256": "ed4ec1e7f1e9fe0ce44eb634f90b4b7db7b16a6a06f9c585fb2fe31bd7cebe42",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T070-portrait-sketch/sketch.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "大头全身/五官夸张",
+        "result": "符合要求",
+        "evidence": "头部明显放大，眼鼻唇风格化，头脚全身完整。"
+      },
+      {
+        "requirement": "原画媒介/文字",
+        "result": "符合要求",
+        "evidence": "保留黑白铅笔排线、炭笔笔触和纸纹，未出现额外文字。"
+      },
+      {
+        "requirement": "JSON与歧义字段",
+        "result": "未验证/原缺陷保留",
+        "evidence": "只验证损坏JSON中可读视觉指令；原JSON不可解析，near shoulder/no right_bottom语义未明确，不宣称格式工作流通过。"
+      }
+    ],
+    "conclusion": "作为可读文本的铅笔大头漫画最小用例符合视觉要求；原JSON格式缺陷仍在。"
+  },
+  "images": [
+    {
+      "file": "results/T100-pencil-caricature/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "8972fb800e5ec2930042a960915dd9289148318ec00b809504fe3dc7a4e7959a"
+    }
+  ]
+}

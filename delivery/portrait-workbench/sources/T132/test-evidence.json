@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T132",
+    "title": "【剧情人像】金色时光里的咖啡女孩",
+    "type": "直接生图/参考编辑",
+    "test_input": "Use the fictional 32-year-old adult woman in the synthetic reference. Use one eight-frame storytelling contact sheet, preserving the same short black bob, white T-shirt and navy trousers throughout. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充32岁虚构成年女性，使用同一合成参考；原示例图不当作已取得素材。",
+      "填充统一服装发型和原生8帧拼图布局，不增加故事步骤。"
+    ],
+    "selected_source_prompt": "cinematic 8-photo storytelling collage featuring the same girl throughout the journey.\nFrame 1: Bedroom desk — laptop bag packed, morning light.\nFrame 2: Leaving home — headphones on, confident walk.\nFrame 3: City sidewalk — coffee aroma vibes, motion blur.\nFrame 4: Entering café — warm interiors, soft smiles.\nFrame 5: Laptop open — deep focus, typing.\nFrame 6: Coffee sip — thoughtful pause.\nFrame 7: Closing laptop — productive satisfaction.\nFrame 8: Walking back home — golden hour calm.\nEditorial lifestyle mood, natural tones, cinematic depth, ultra-realistic.\n",
+    "final_prompt": [
+      "Use the fictional 32-year-old adult woman in the synthetic reference. Use one eight-frame storytelling contact sheet, preserving the same short black bob, white T-shirt and navy trousers throughout. cinematic 8-photo storytelling collage featuring the same girl throughout the journey.\nFrame 1: Bedroom desk — laptop bag packed, morning light.\nFrame 2: Leaving home — headphones on, confident walk.\nFrame 3: City sidewalk — coffee aroma vibes, motion blur.\nFrame 4: Entering café — warm interiors, soft smiles.\nFrame 5: Laptop open — deep focus, typing.\nFrame 6: Coffee sip — thoughtful pause.\nFrame 7: Closing laptop — productive satisfaction.\nFrame 8: Walking back home — golden hour calm.\nEditorial lifestyle mood, natural tones, cinematic depth, ultra-realistic.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the fictional 32-year-old adult woman in the synthetic reference. Use one eight-frame storytelling contact sheet, preserving the same short black bob, white T-shirt and navy trousers throughout. cinematic 8-photo storytelling collage featuring the same girl throughout the journey.\nFrame 1: Bedroom desk — laptop bag packed, morning light.\nFrame 2: Leaving home — headphones on, confident walk.\nFrame 3: City sidewalk — coffee aroma vibes, motion blur.\nFrame 4: Entering café — warm interiors, soft smiles.\nFrame 5: Laptop open — deep focus, typing.\nFrame 6: Coffee sip — thoughtful pause.\nFrame 7: Closing laptop — productive satisfaction.\nFrame 8: Walking back home — golden hour calm.\nEditorial lifestyle mood, natural tones, cinematic depth, ultra-realistic.\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 【剧情人像】金色时光里的咖啡女孩.md",
+    "original_sha256": "b3bfab8d56454f2bc9117601b6fd94c8d1082712419b287319ee7c55ab8be534",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "八帧故事/同一人物",
+        "result": "基本符合",
+        "evidence": "八格完成卧室、出门耳机、街道、咖啡馆、打字、饮咖啡、合电脑、金色回家，白T深蓝裤与短发连续。"
+      },
+      {
+        "requirement": "首帧已打包",
+        "result": "存在问题",
+        "evidence": "首帧仍在把电脑放入敞开包内，非要求的包已打包状态；包形由首格提包变肩包，耳机离馆后消失，不能判物件完整连续。"
+      }
+    ],
+    "conclusion": "主要八帧故事实现，首帧状态及物件连续性有偏差；未生成视频。"
+  },
+  "images": [
+    {
+      "file": "results/T132-coffee-story/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cfe856e5bac01ea627a6a7f95d4aae914afd2037bb1c1387ce81e550d23bf4f4"
+    }
+  ]
+}

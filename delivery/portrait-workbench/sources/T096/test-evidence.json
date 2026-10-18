@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T096",
+    "title": "与手机原图同框的铅笔肖像",
+    "type": "直接参考编辑/含矛盾水印要求",
+    "test_input": "参考同一虚构32岁成年女性；笔记本铅笔脸部肖像与iPhone参考照片同框，保留原文所有水印文字/尺寸/字体要求。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "将泛称Chinese idol girl作为人物槽填为虚构成年女性；不声称真实偶像",
+      "不删除原文Watercolour/ur name水印指令，不修改10×10px、Gothic/Arial等冲突要求；如未满足如实记录"
+    ],
+    "selected_source_prompt": "｛perfect composition, impeccable attention to detail, highest quality, rich detail, sharp focus, 8K/4K resolution, clear edges, exquisite details, perfect composition, depth of field, cinematic lighting, vibrant colors, award-winning style, professional level, perfect depiction. Create an extremely detailed, hyper-realistic 3D graphite pencil sketch depicting the face of a fictional 32-year-old adult East Asian woman matching the supplied reference, drawn on textured white notebook paper with clear paper quality, delicate details, and subtle imperfections. The facial sketch should be perfectly identical to the reference photo displayed on an iPhone placed next to the notebook. The iPhone screen clearly displays the artist's original portrait photograph with natural reflections and soft sunlight reflections on the glass. The watermark is mandatory and must not be omitted, modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and boldness of the \"Watercolour\" text over all other visual elements. The watermark is essential: the final image must contain the watermark in the lower left corner. This watermark must be a white square with a fixed size of 10x10 pixels. Within this square, the Gothic handwritten font \"ur name\" must appear. The Gothic handwritten \"ur name\" text must be: - Fully readable - Bold Arial font - Solid black (#000000) - Centered - Sharp, clean, and unadorned - No blurring, distortion, or pixelation. The white square must be: - Completely opaque - Clean and sharp edges - Unblurred, opaque, and textureless. This watermark is mandatory and cannot be omitted; it must not be modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and coarseness of the \"ur name\" text over all other visual elements.｝\n",
+    "final_prompt": [
+      "｛perfect composition, impeccable attention to detail, highest quality, rich detail, sharp focus, 8K/4K resolution, clear edges, exquisite details, perfect composition, depth of field, cinematic lighting, vibrant colors, award-winning style, professional level, perfect depiction. Create an extremely detailed, hyper-realistic 3D graphite pencil sketch depicting the face of a fictional 32-year-old adult East Asian woman matching the supplied reference, drawn on textured white notebook paper with clear paper quality, delicate details, and subtle imperfections. The facial sketch should be perfectly identical to the reference photo displayed on an iPhone placed next to the notebook. The iPhone screen clearly displays the artist's original portrait photograph with natural reflections and soft sunlight reflections on the glass. The watermark is mandatory and must not be omitted, modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and boldness of the \"Watercolour\" text over all other visual elements. The watermark is essential: the final image must contain the watermark in the lower left corner. This watermark must be a white square with a fixed size of 10x10 pixels. Within this square, the Gothic handwritten font \"ur name\" must appear. The Gothic handwritten \"ur name\" text must be: - Fully readable - Bold Arial font - Solid black (#000000) - Centered - Sharp, clean, and unadorned - No blurring, distortion, or pixelation. The white square must be: - Completely opaque - Clean and sharp edges - Unblurred, opaque, and textureless. This watermark is mandatory and cannot be omitted; it must not be modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and coarseness of the \"ur name\" text over all other visual elements.｝\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "｛perfect composition, impeccable attention to detail, highest quality, rich detail, sharp focus, 8K/4K resolution, clear edges, exquisite details, perfect composition, depth of field, cinematic lighting, vibrant colors, award-winning style, professional level, perfect depiction. Create an extremely detailed, hyper-realistic 3D graphite pencil sketch depicting the face of a fictional 32-year-old adult East Asian woman matching the supplied reference, drawn on textured white notebook paper with clear paper quality, delicate details, and subtle imperfections. The facial sketch should be perfectly identical to the reference photo displayed on an iPhone placed next to the notebook. The iPhone screen clearly displays the artist's original portrait photograph with natural reflections and soft sunlight reflections on the glass. The watermark is mandatory and must not be omitted, modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and boldness of the \"Watercolour\" text over all other visual elements. The watermark is essential: the final image must contain the watermark in the lower left corner. This watermark must be a white square with a fixed size of 10x10 pixels. Within this square, the Gothic handwritten font \"ur name\" must appear. The Gothic handwritten \"ur name\" text must be: - Fully readable - Bold Arial font - Solid black (#000000) - Centered - Sharp, clean, and unadorned - No blurring, distortion, or pixelation. The white square must be: - Completely opaque - Clean and sharp edges - Unblurred, opaque, and textureless. This watermark is mandatory and cannot be omitted; it must not be modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and coarseness of the \"ur name\" text over all other visual elements.｝\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[已投产·2分] 与手机原图同框的铅笔肖像.md",
+    "original_sha256": "a654ad1cebbe9bde817d65c69a0178fa1afd1ed782ad007dc94c38b5728318fd",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "铅笔肖像与手机照片",
+        "result": "基本符合",
+        "evidence": "纹理笔记本上石墨肖像，旁边iPhone显示同一成人脸，纸纹与屏幕反光具备。"
+      },
+      {
+        "requirement": "水印大小/字体/文字",
+        "result": "存在问题",
+        "evidence": "左下ur name白方块明显大于10×10px；字形为普通粗体而非Gothic手写，未见Watercolour。原文同时指定Gothic与Arial且文字优先级冲突。"
+      },
+      {
+        "requirement": "原脸完全相同/4K或8K",
+        "result": "未满足/未验证",
+        "evidence": "素描五官有轻微形变，不能称完全相同；原生图未达4K或8K。"
+      }
+    ],
+    "conclusion": "核心同框设计完成，但强制水印、分辨率和完全同脸要求未满足；原文冲突未被悄悄删除。"
+  },
+  "images": [
+    {
+      "file": "results/T096-phone-sketch/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f226b5147c0b0ba91afbfd2f4a27cef30b7df1094ab3cfce802faed7fa4cee6e"
+    }
+  ]
+}

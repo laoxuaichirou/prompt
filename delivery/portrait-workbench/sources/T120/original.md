@@ -1,0 +1,66 @@
+# 姿势提示词合集（原无标题）
+
+| 属性 | 值 |
+|---|---|
+| 状态 | 已投产 |
+| 评分 | 3 |
+| 模型 | Nano Banana |
+| 场景 | 人像摄影、图像编辑 |
+| Notion | [姿势提示词合集（原无标题）](https://app.notion.com/p/35c079fdbc3880158700f3f99daaf6cf) |
+
+**备注**：4条提示词混杂堆放，16姿势清单完整；已补标题
+
+---
+
+## 正文
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/41fa8c5b-64f6-4618-ae09-f17b8af9b952/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WGUSTVDC%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQD6RSzMALirv9DW3qVbFvGOu%2BRYieyzTu%2BcoSYXU1kyvQIgMJurQj00woSIOY%2F%2Fr4MbgN2NDMD9yk1%2F9STgAki4SrgqiAQI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDEV8%2B6HolkUIMvknNCrcA17okCIoVANyozLsh34qbUPXMjw%2BCZR%2Bx8PmNIbfFG%2B9ofsKnKw2J8lIXWlcXya47csmoRidipHbNCODw9FBPJ0%2FyYtt3O7P9KCtABAQaYBfEdHPZsu%2FhcOKhVpQLDLA2%2FfWe34tDCML4bD9dY0CM%2B2M9JUBwrJSgy7SncUquoezGxBsbo%2BHhjHYs9HCjG%2FG3lfgYLvdeiHrxTZF1A1VyocOvmudJtxYNhBbIIBdJ3rL3anjMWTPzn68am3lICAu27%2F5AjBsxJezq5ByJahogw5p50wZ8hRYvoMtbpagrNNbPUUqIdS%2Bnmw5vZUV%2F5aGOaCu4BpXuC5p815xTt7cxzuoYjjfk5SdDfaY3h0mWHPUy8OzZQCJbpnI%2FKyATEP4YQZID4fxyDrBy34hPE03PIVeDPOwMYhZpShR3FKTB4R%2FqBRTeZBNaaF8X2SBMK49aDXr6Dqk3fNkkUaz7oowGAKYjHGDVrZchl%2BX9CVZ3%2BBvL807wOG2mMVUB7Gfg27zurjtpeg3Xf6%2FKNEvkILwWXxjIcLM%2FP9mFm50iyg%2Bce0EQUPl%2FZNqzPJIp5f5Utt%2BIPsqwX%2FBo0xSC0OwFSxn%2BHTr0jBwRskABPfq5sJe4l7U%2FPlIwGf6EpvaQf4aMLPTzNYGOqUBV1QZAWV9oNQxWXub4jJyxTC3TzMTz2ZF1hwROenocqg7lwYGWyEbqq%2BWykd%2FFVbrK%2B614EPY36kAplnmbLA5qzPVSw6hETjOvt%2FZPaBzMJJKhJZVMFowJ8XRXriKOAntG2beNNrPsoRRP4uNJ9SwcRIaGwaGYPfjUEGlUGT7RXzvPV46bAECMOOuTJpzy%2FuVOkdfRpZoLeXfyxqY1SZxsTQ5gOdv&X-Amz-Signature=663ac0a50821a12056d639f67e982fd2d2652b565006f1281113a6b8e4a4d5f9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.35c079fd-bc38-8009-82e5-c16868ba9ab3.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+用这张图生成16张写真姿势图片：
+改变动作姿势，跪地姿势
+改变动作姿势，人物双手做出互动姿态
+改变动作姿势，手臂向前伸展，手指比出v字手势
+改变动作姿势，变成俯视拍摄，握拳的手向前伸展
+改变动作姿势，变成俯视拍摄，带上黑色墨镜，双手抬起
+改变动作姿势，变成俯视拍摄，跪地姿势
+改变动作姿势，变成俯视拍摄，人物面部呈现单眼眨眼
+改变动作姿势，侧躺坐姿
+改变动作姿势，变成仰视拍摄，手掌朝镜头伸展
+改变动作姿势，俯身姿态
+改变动作姿势，坐在地上双腿交叉伸展
+改变动作姿势，单膝跪地姿态
+改变动作姿势，坐在高脚凳上，双腿优雅交叠
+改变动作姿势，一只手向前撑地
+改变动作姿势，站立姿态，双臂交叉抱于胸前
+改变动作姿势，变成俯视拍摄，双手在镜头前巧妙组合
+<empty-block/>
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/11d4de0a-4551-42c2-857d-70869e8589df/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WGUSTVDC%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQD6RSzMALirv9DW3qVbFvGOu%2BRYieyzTu%2BcoSYXU1kyvQIgMJurQj00woSIOY%2F%2Fr4MbgN2NDMD9yk1%2F9STgAki4SrgqiAQI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDEV8%2B6HolkUIMvknNCrcA17okCIoVANyozLsh34qbUPXMjw%2BCZR%2Bx8PmNIbfFG%2B9ofsKnKw2J8lIXWlcXya47csmoRidipHbNCODw9FBPJ0%2FyYtt3O7P9KCtABAQaYBfEdHPZsu%2FhcOKhVpQLDLA2%2FfWe34tDCML4bD9dY0CM%2B2M9JUBwrJSgy7SncUquoezGxBsbo%2BHhjHYs9HCjG%2FG3lfgYLvdeiHrxTZF1A1VyocOvmudJtxYNhBbIIBdJ3rL3anjMWTPzn68am3lICAu27%2F5AjBsxJezq5ByJahogw5p50wZ8hRYvoMtbpagrNNbPUUqIdS%2Bnmw5vZUV%2F5aGOaCu4BpXuC5p815xTt7cxzuoYjjfk5SdDfaY3h0mWHPUy8OzZQCJbpnI%2FKyATEP4YQZID4fxyDrBy34hPE03PIVeDPOwMYhZpShR3FKTB4R%2FqBRTeZBNaaF8X2SBMK49aDXr6Dqk3fNkkUaz7oowGAKYjHGDVrZchl%2BX9CVZ3%2BBvL807wOG2mMVUB7Gfg27zurjtpeg3Xf6%2FKNEvkILwWXxjIcLM%2FP9mFm50iyg%2Bce0EQUPl%2FZNqzPJIp5f5Utt%2BIPsqwX%2FBo0xSC0OwFSxn%2BHTr0jBwRskABPfq5sJe4l7U%2FPlIwGf6EpvaQf4aMLPTzNYGOqUBV1QZAWV9oNQxWXub4jJyxTC3TzMTz2ZF1hwROenocqg7lwYGWyEbqq%2BWykd%2FFVbrK%2B614EPY36kAplnmbLA5qzPVSw6hETjOvt%2FZPaBzMJJKhJZVMFowJ8XRXriKOAntG2beNNrPsoRRP4uNJ9SwcRIaGwaGYPfjUEGlUGT7RXzvPV46bAECMOOuTJpzy%2FuVOkdfRpZoLeXfyxqY1SZxsTQ5gOdv&X-Amz-Signature=bc864397a14ccb8c7859d191a4fcf27062996c73a134d1670856d29aa22e0c49&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.35c079fd-bc38-804e-ac22-d1e0c15bb4dc.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+超现实创意拼贴风格，背景是一个清晰锐利的3x3网格，共包含8种不同的生活姿势
+<empty-block/>
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/ae0b4826-8394-4744-99fe-3a73b2abfa22/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WGUSTVDC%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQD6RSzMALirv9DW3qVbFvGOu%2BRYieyzTu%2BcoSYXU1kyvQIgMJurQj00woSIOY%2F%2Fr4MbgN2NDMD9yk1%2F9STgAki4SrgqiAQI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDEV8%2B6HolkUIMvknNCrcA17okCIoVANyozLsh34qbUPXMjw%2BCZR%2Bx8PmNIbfFG%2B9ofsKnKw2J8lIXWlcXya47csmoRidipHbNCODw9FBPJ0%2FyYtt3O7P9KCtABAQaYBfEdHPZsu%2FhcOKhVpQLDLA2%2FfWe34tDCML4bD9dY0CM%2B2M9JUBwrJSgy7SncUquoezGxBsbo%2BHhjHYs9HCjG%2FG3lfgYLvdeiHrxTZF1A1VyocOvmudJtxYNhBbIIBdJ3rL3anjMWTPzn68am3lICAu27%2F5AjBsxJezq5ByJahogw5p50wZ8hRYvoMtbpagrNNbPUUqIdS%2Bnmw5vZUV%2F5aGOaCu4BpXuC5p815xTt7cxzuoYjjfk5SdDfaY3h0mWHPUy8OzZQCJbpnI%2FKyATEP4YQZID4fxyDrBy34hPE03PIVeDPOwMYhZpShR3FKTB4R%2FqBRTeZBNaaF8X2SBMK49aDXr6Dqk3fNkkUaz7oowGAKYjHGDVrZchl%2BX9CVZ3%2BBvL807wOG2mMVUB7Gfg27zurjtpeg3Xf6%2FKNEvkILwWXxjIcLM%2FP9mFm50iyg%2Bce0EQUPl%2FZNqzPJIp5f5Utt%2BIPsqwX%2FBo0xSC0OwFSxn%2BHTr0jBwRskABPfq5sJe4l7U%2FPlIwGf6EpvaQf4aMLPTzNYGOqUBV1QZAWV9oNQxWXub4jJyxTC3TzMTz2ZF1hwROenocqg7lwYGWyEbqq%2BWykd%2FFVbrK%2B614EPY36kAplnmbLA5qzPVSw6hETjOvt%2FZPaBzMJJKhJZVMFowJ8XRXriKOAntG2beNNrPsoRRP4uNJ9SwcRIaGwaGYPfjUEGlUGT7RXzvPV46bAECMOOuTJpzy%2FuVOkdfRpZoLeXfyxqY1SZxsTQ5gOdv&X-Amz-Signature=ac8b732e558ac93ee457baee4f0177945dd42de0bddd8b1956ed4fafdd7f95a1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.35c079fd-bc38-8013-9a10-c0b2185ec648.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+<empty-block/>
+根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。
+一位固定的女模特，同样的服装，同样的灯光。
+镜头拍摄顺序：
+第一行：ELS、LS、MLS
+第 2 行：MS、MCU、CU
+第 3 行：ECU（细节）、低角度拍摄、高角度拍摄
+面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。
+高端时尚杂志风格，简洁的背景，奢华电商风格。
+<empty-block/>
+<empty-block/>
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/c1dcb511-f60c-400c-83e3-54c27cf96422/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WGUSTVDC%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQD6RSzMALirv9DW3qVbFvGOu%2BRYieyzTu%2BcoSYXU1kyvQIgMJurQj00woSIOY%2F%2Fr4MbgN2NDMD9yk1%2F9STgAki4SrgqiAQI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDEV8%2B6HolkUIMvknNCrcA17okCIoVANyozLsh34qbUPXMjw%2BCZR%2Bx8PmNIbfFG%2B9ofsKnKw2J8lIXWlcXya47csmoRidipHbNCODw9FBPJ0%2FyYtt3O7P9KCtABAQaYBfEdHPZsu%2FhcOKhVpQLDLA2%2FfWe34tDCML4bD9dY0CM%2B2M9JUBwrJSgy7SncUquoezGxBsbo%2BHhjHYs9HCjG%2FG3lfgYLvdeiHrxTZF1A1VyocOvmudJtxYNhBbIIBdJ3rL3anjMWTPzn68am3lICAu27%2F5AjBsxJezq5ByJahogw5p50wZ8hRYvoMtbpagrNNbPUUqIdS%2Bnmw5vZUV%2F5aGOaCu4BpXuC5p815xTt7cxzuoYjjfk5SdDfaY3h0mWHPUy8OzZQCJbpnI%2FKyATEP4YQZID4fxyDrBy34hPE03PIVeDPOwMYhZpShR3FKTB4R%2FqBRTeZBNaaF8X2SBMK49aDXr6Dqk3fNkkUaz7oowGAKYjHGDVrZchl%2BX9CVZ3%2BBvL807wOG2mMVUB7Gfg27zurjtpeg3Xf6%2FKNEvkILwWXxjIcLM%2FP9mFm50iyg%2Bce0EQUPl%2FZNqzPJIp5f5Utt%2BIPsqwX%2FBo0xSC0OwFSxn%2BHTr0jBwRskABPfq5sJe4l7U%2FPlIwGf6EpvaQf4aMLPTzNYGOqUBV1QZAWV9oNQxWXub4jJyxTC3TzMTz2ZF1hwROenocqg7lwYGWyEbqq%2BWykd%2FFVbrK%2B614EPY36kAplnmbLA5qzPVSw6hETjOvt%2FZPaBzMJJKhJZVMFowJ8XRXriKOAntG2beNNrPsoRRP4uNJ9SwcRIaGwaGYPfjUEGlUGT7RXzvPV46bAECMOOuTJpzy%2FuVOkdfRpZoLeXfyxqY1SZxsTQ5gOdv&X-Amz-Signature=62975df29b0817ee71ce6e2098d257afea56b964dc5d961ed4912dbb09493f78&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.35c079fd-bc38-809b-a653-cd1c5f64cbe5.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+```bash
+制作一张精致的医疗服饰品牌商业广告大片，采用自由比例和分屏排版设计。
+
+顶部横幅：在全宽区域使用厚重的白色无衬线字体标注醒目标题：BOUGHT FOR THE WARD. USED FOR THE NAP.
+
+构图：画面垂直平分为左右两个面板。
+
+左侧面板：高端产品展示。在平滑的浅灰色摄影棚背景下，精致平铺展示一套医疗刷手服：1件莫兰迪淡蓝色V领上衣（胸前带有精致的品牌小标志）、1条同色系多口袋运动剪裁长裤、1个简约的银色听诊器、以及1双洁白的专业医疗运动鞋。光影柔和，突出面料的抗皱质感和透气孔细节，具备极强的电商广告视觉吸引力。
+
+右侧面板：真实生活场景。一名年轻的女性医护人员穿着同样的淡蓝色医疗服，神情极其疲惫但放松地瘫坐在光线昏暗、温馨舒适的卧室大床上。她侧身陷入厚重的白色羽绒枕头中，身上盖着半截毛绒毯子，床头柜上凌乱地摆放着：1个外卖咖啡杯、1个正在充电的智能手机、几本医学书籍和一副黑框眼镜。画面充满生活气息与共鸣，展现高强度工作后的彻底放松。
+
+底部中心：叠加一行较小的白色说明文字，使用简洁字体：Still the best choice.
+
+视觉要求：高端摄影美学，清晰的织物纹理渲染，品牌感十足的调色。通过左侧的专业严谨与右侧的居家松弛，形成强烈的视觉对比，体现服装在不同场景下的极致舒适度。
+```

@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T121",
+    "title": "电影级手办创作瞬间",
+    "type": "直接生图/参考图编辑",
+    "test_input": "The uploaded reference is a wholly fictional 43-year-old adult man; use his face, change his outfit according to the prompt. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-man-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "抽取第一段完整英文prompt，移除损坏的嵌套JSON/伪工具调用包装；未执行第二个近似版本。",
+      "使用虚构43岁男参考，服装按原文绿色T恤黑工装裤填充。"
+    ],
+    "selected_source_prompt": "A hyper-realistic, cinematic scene of the man from the uploaded image sitting at a creative workshop desk, making direct eye contact with the camera. He is carefully painting a large miniature figurine of himself using a fine brush. The figurine is about half his height, standing on a clear acrylic base, and is an exact replica of him, wearing the same green t-shirt, black cargo pants, sunglasses, and silver watch. The figurine has lifelike human skin tones and a premium texture. The desk is cluttered with realistic miniature-painting tools, paint pots, and brushes. Cinematic studio lighting, sharp focus, high-quality detail, realistic indoor hobby room background.",
+    "final_prompt": [
+      "The uploaded reference is a wholly fictional 43-year-old adult man; use his face, change his outfit according to the prompt. A hyper-realistic, cinematic scene of the man from the uploaded image sitting at a creative workshop desk, making direct eye contact with the camera. He is carefully painting a large miniature figurine of himself using a fine brush. The figurine is about half his height, standing on a clear acrylic base, and is an exact replica of him, wearing the same green t-shirt, black cargo pants, sunglasses, and silver watch. The figurine has lifelike human skin tones and a premium texture. The desk is cluttered with realistic miniature-painting tools, paint pots, and brushes. Cinematic studio lighting, sharp focus, high-quality detail, realistic indoor hobby room background."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The uploaded reference is a wholly fictional 43-year-old adult man; use his face, change his outfit according to the prompt. A hyper-realistic, cinematic scene of the man from the uploaded image sitting at a creative workshop desk, making direct eye contact with the camera. He is carefully painting a large miniature figurine of himself using a fine brush. The figurine is about half his height, standing on a clear acrylic base, and is an exact replica of him, wearing the same green t-shirt, black cargo pants, sunglasses, and silver watch. The figurine has lifelike human skin tones and a premium texture. The desk is cluttered with realistic miniature-painting tools, paint pots, and brushes. Cinematic studio lighting, sharp focus, high-quality detail, realistic indoor hobby room background.",
+        "reference_material_portable": [
+          "materials/adult-man-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 电影级手办创作瞬间.md",
+    "original_sha256": "6da2d69249a2e08c7349a23bca1dd1d7df4072fdfed4202926dc1dfd031203a4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-man-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "涂装自己手办/工坊",
+        "result": "基本符合",
+        "evidence": "本人直视镜头持细笔，绿色T恤/黑裤手办、透明底座、颜料与工具清楚。"
+      },
+      {
+        "requirement": "完全同款/半身高",
+        "result": "存在问题",
+        "evidence": "真人未戴要求的墨镜，真人手表不可见；人物下身被裁，无法验收手办为站立身高一半。"
+      }
+    ],
+    "conclusion": "核心工坊构图实现，穿戴一致与尺寸比例未完整满足。"
+  },
+  "images": [
+    {
+      "file": "results/T121-workshop-figure/output.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "2ae36f9f2c796988e70e42e2e13450b7840a4c91c1f84e1d05cd6a7aed300ac5"
+    }
+  ]
+}

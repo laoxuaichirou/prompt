@@ -1,0 +1,71 @@
+{
+  "test": {
+    "test_id": "T102",
+    "title": "怪诞又梦幻的超现实插画",
+    "type": "要点式图像风格转换",
+    "test_input": "使用同一合成32岁女性全身参考，按英文Original所有要点转超现实插画。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文原版，HTML换行转为实际换行；不额外编写新超现实主体"
+    ],
+    "selected_source_prompt": "Transform the uploaded image into a surreal illustration with a whimsical, dream‑like vibe.\n• Color palette: muted tones (soft greens, browns, greys) with occasional gentle pops of green.\n• Lighting: soft, diffused, almost ethereal light that blends gradients and subtle highlights.\n• Texture & medium feel: oil‑painting‑like brushstrokes, faint watercolor washes, or loose hand‑drawn linework, with a slight grainy texture.\n• Mood & composition: exaggerated, expressive features (e.g., elongated faces or emotive eyes) characteristic of cartoonish or Muppet‑style illustrations, but applied in a surreal, slightly fantastical context.\n• Overall aesthetic: blend realistic attention to detail with a touch of surreal whimsy—think serene, slightly uncanny atmosphere.",
+    "final_prompt": [
+      "Transform the uploaded image into a surreal illustration with a whimsical, dream‑like vibe.\n• Color palette: muted tones (soft greens, browns, greys) with occasional gentle pops of green.\n• Lighting: soft, diffused, almost ethereal light that blends gradients and subtle highlights.\n• Texture & medium feel: oil‑painting‑like brushstrokes, faint watercolor washes, or loose hand‑drawn linework, with a slight grainy texture.\n• Mood & composition: exaggerated, expressive features (e.g., elongated faces or emotive eyes) characteristic of cartoonish or Muppet‑style illustrations, but applied in a surreal, slightly fantastical context.\n• Overall aesthetic: blend realistic attention to detail with a touch of surreal whimsy—think serene, slightly uncanny atmosphere."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "Transform the uploaded image into a surreal illustration with a whimsical, dream‑like vibe.\n• Color palette: muted tones (soft greens, browns, greys) with occasional gentle pops of green.\n• Lighting: soft, diffused, almost ethereal light that blends gradients and subtle highlights.\n• Texture & medium feel: oil‑painting‑like brushstrokes, faint watercolor washes, or loose hand‑drawn linework, with a slight grainy texture.\n• Mood & composition: exaggerated, expressive features (e.g., elongated faces or emotive eyes) characteristic of cartoonish or Muppet‑style illustrations, but applied in a surreal, slightly fantastical context.\n• Overall aesthetic: blend realistic attention to detail with a touch of surreal whimsy—think serene, slightly uncanny atmosphere.",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[已投产·4分] 怪诞又梦幻的超现实插画.md",
+    "original_sha256": "7f584f2f48778819b125cb2187cc4c7a0f658a4441f08f1cd960bddc2d46201f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "媒介/色彩/光照",
+        "result": "符合要求",
+        "evidence": "绿棕灰柔和色、空灵漫射光、油画/水彩笔触和细颗粒明显。"
+      },
+      {
+        "requirement": "超现实与人物",
+        "result": "符合要求",
+        "evidence": "大眼与拉长比例、漂浮建筑等梦幻环境；短黑发、白T深蓝裤白鞋能辨，宁静略怪诞气氛符合。"
+      },
+      {
+        "requirement": "范围",
+        "result": "单次模型初评",
+        "evidence": "本例只测该合成人物一次风格转换，未做稳定性验证。"
+      }
+    ],
+    "conclusion": "超现实插画转换最小用例符合主要视觉要求。"
+  },
+  "images": [
+    {
+      "file": "results/T102-surreal-style/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "50b16f2f316d37923f0287cf385cc7c7f52459c4c8a24a5b35c9708378d37dda"
+    }
+  ]
+}

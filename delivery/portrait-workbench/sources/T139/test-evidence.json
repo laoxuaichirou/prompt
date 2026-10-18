@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T139",
+    "title": "墨影狂魂侧写",
+    "type": "直接生图/变量模板",
+    "test_input": "Use the face of the fictional 43-year-old adult man from the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-man-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；原文与最终输入分别保存。"
+    ],
+    "selected_source_prompt": "A dramatic, high-impact portrait rendered in an expressive ink sketch and mixed-media illustration style, using the uploaded image for exact facial likeness and proportions. The man is shown in side profile, his presence intense and chaotic. His face and upper body are layered with cryptic handwritten text, symbols, and abstract glyphs, partially wrapping around facial contours, suggesting inner turmoil and hidden meaning.\nHe wears a dark, abstract jacket, heavily textured with rough ink strokes, sharp angular linework, and vibrant ink splatters, creating a raw, rebellious visual energy. The illustration style is bold and experimental, blending fine pen detailing with aggressive brush marks, splashes, and controlled distortion.\nThe background is a pale, aged parchment tone, featuring subtle grain, faded paper texture, delicate linework, ink drips, and light stains—evoking an old manuscript or forgotten sketchbook.\nHigh contrast, expressive composition, artistic chaos balanced with precision, editorial art meets conceptual illustration, moody, intense, and emotionally charged.\n",
+    "final_prompt": [
+      "Use the face of the fictional 43-year-old adult man from the synthetic reference. A dramatic, high-impact portrait rendered in an expressive ink sketch and mixed-media illustration style, using the uploaded image for exact facial likeness and proportions. The man is shown in side profile, his presence intense and chaotic. His face and upper body are layered with cryptic handwritten text, symbols, and abstract glyphs, partially wrapping around facial contours, suggesting inner turmoil and hidden meaning.\nHe wears a dark, abstract jacket, heavily textured with rough ink strokes, sharp angular linework, and vibrant ink splatters, creating a raw, rebellious visual energy. The illustration style is bold and experimental, blending fine pen detailing with aggressive brush marks, splashes, and controlled distortion.\nThe background is a pale, aged parchment tone, featuring subtle grain, faded paper texture, delicate linework, ink drips, and light stains—evoking an old manuscript or forgotten sketchbook.\nHigh contrast, expressive composition, artistic chaos balanced with precision, editorial art meets conceptual illustration, moody, intense, and emotionally charged.\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Use the face of the fictional 43-year-old adult man from the synthetic reference. A dramatic, high-impact portrait rendered in an expressive ink sketch and mixed-media illustration style, using the uploaded image for exact facial likeness and proportions. The man is shown in side profile, his presence intense and chaotic. His face and upper body are layered with cryptic handwritten text, symbols, and abstract glyphs, partially wrapping around facial contours, suggesting inner turmoil and hidden meaning.\nHe wears a dark, abstract jacket, heavily textured with rough ink strokes, sharp angular linework, and vibrant ink splatters, creating a raw, rebellious visual energy. The illustration style is bold and experimental, blending fine pen detailing with aggressive brush marks, splashes, and controlled distortion.\nThe background is a pale, aged parchment tone, featuring subtle grain, faded paper texture, delicate linework, ink drips, and light stains—evoking an old manuscript or forgotten sketchbook.\nHigh contrast, expressive composition, artistic chaos balanced with precision, editorial art meets conceptual illustration, moody, intense, and emotionally charged.\n",
+        "reference_material_portable": [
+          "materials/adult-man-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 墨影狂魂侧写.md",
+    "original_sha256": "b5ef036fb499ecc747ca8e0ce72eb5ecf53e2488ff840bad025cb8e80890530f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-man-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "墨绘/文字符号/纸张",
+        "result": "符合要求",
+        "evidence": "羊皮纸纹理、黑红墨溅、符号手写叠脸与深色粗笔外套清楚。"
+      },
+      {
+        "requirement": "严格侧脸与相貌",
+        "result": "存在问题",
+        "evidence": "输出为三分之二侧脸，能看见两眼，非严格side profile；眉骨及脸部较参考年轻锐利，精确比例未保留。"
+      }
+    ],
+    "conclusion": "风格实现，侧脸角度与严格相貌保留有偏差。"
+  },
+  "images": [
+    {
+      "file": "results/T139-ink-profile/output.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "fe71000584cc8502ac9787eef16e299ddc3129eb7d2688247666bb6ebbab293a"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "test": {
+    "test_id": "T059",
+    "title": "【LLM】元提示词模板",
+    "type": "动作表情元提示词→两组全身图",
+    "test_input": "参考adult合成32岁女性；镜头远景；生成组数2；姿态与原站立有明显差异、表情自然。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅执行场景专用AI绘图动作表情模板，不测试通用规划/数据分析等7项",
+      "动作差异≤30%没有原文计算口径，仅作视觉定性比较不报数值"
+    ],
+    "selected_source_prompt": "（结合你之前的分镜 / 动作场景，摘要 3 / 文档视频验证）\n**plaintext**\n`【身份】AI绘图动作表情设计专家，专注“自然不夸张+镜头适配”的提示词生成。<br>【核心规则】<br>1. 镜头适配：<br>   - 特写：仅含面部微细节（如“眼角浅淡笑纹”）+ 头部/手部极微动作（如“头部微侧”）；<br>   - 近景：胸以上动作（如“单手扶发”）+ 面部细节（如“嘴角露2颗牙”）；<br>   - 中景：腰以上动作（如“半蹲整理衣摆”）+ 简化情绪词（如“略带开心”）；<br>   - 远景：全身姿态（如“双手自然张开”）+ 笼统情绪（如“显活力”）；<br>2. 情绪控制：用“小词”限定强度（如“莞尔一笑”“略显不悦”），杜绝“极度/非常”等夸张词；<br>3. 动作差异：新动作与原图相似度≤30%（如“站立”→“蹲坐”），避免微调。<br>【输入变量】<br>- 参考图：{{图片}}<br>- 镜头类型：{{特写/近景/中景/远景}}（未填则反推适配镜头）<br>- 生成组数：{{数字}}（未填默认3组）<br>【输出格式】每行1组，格式：[动作描述（适配镜头）], [情绪描述（含面部细节）]，无序号/符号。`\n",
+    "final_prompt": [
+      "编辑参考图，保持同一32岁成年人物身份、短黑发、白T恤、海军蓝长裤和白鞋。写实全身远景，灰色无缝影棚，脚和头完整入镜，不加文字。蹲坐于画面中央，双脚完整入镜，双手轻搭膝盖，抬头看镜头，嘴角微扬，神态放松",
+      "编辑参考图，保持同一32岁成年人物身份、短黑发、白T恤、海军蓝长裤和白鞋。写实全身远景，灰色无缝影棚，脚和头完整入镜，不加文字。坐在低矮无靠背木凳上，躯干微前倾，双脚自然落地，一手扶凳沿，一手轻放大腿，略带平静的笑意"
+    ],
+    "meta_output": [
+      "蹲坐于画面中央，双脚完整入镜，双手轻搭膝盖，抬头看镜头，嘴角微扬，神态放松",
+      "坐在低矮无靠背木凳上，躯干微前倾，双脚自然落地，一手扶凳沿，一手轻放大腿，略带平静的笑意"
+    ],
+    "cases": [
+      {
+        "name": "pose1",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "编辑参考图，保持同一32岁成年人物身份、短黑发、白T恤、海军蓝长裤和白鞋。写实全身远景，灰色无缝影棚，脚和头完整入镜，不加文字。蹲坐于画面中央，双脚完整入镜，双手轻搭膝盖，抬头看镜头，嘴角微扬，神态放松",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "pose2",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "编辑参考图，保持同一32岁成年人物身份、短黑发、白T恤、海军蓝长裤和白鞋。写实全身远景，灰色无缝影棚，脚和头完整入镜，不加文字。坐在低矮无靠背木凳上，躯干微前倾，双脚自然落地，一手扶凳沿，一手轻放大腿，略带平静的笑意",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/提示词工程/[已投产·4分] 【LLM】元提示词模板.md",
+    "original_sha256": "a2c5266096c81af94fe9e504bde4336eba66e8064d44d49b2752bccef5cadd71",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "先执行元提示词",
+        "result": "已执行",
+        "evidence": "保存2行无编号动作输出，再分别编辑同一成年素材。"
+      },
+      {
+        "requirement": "远景动作和完整身体",
+        "result": "符合要求",
+        "evidence": "一张蹲坐、一张坐凳，头脚完整可见；与原站立有明显变化。"
+      },
+      {
+        "requirement": "身份/服装及自然表情",
+        "result": "基本符合",
+        "evidence": "黑短发、左颊小痣、白T深蓝裤白鞋大体一致，表情克制；两图面部轮廓有细微漂移。"
+      },
+      {
+        "requirement": "坐凳动作",
+        "result": "存在问题",
+        "evidence": "第二图前倾动作不明显；符合扶凳沿与单手放大腿。"
+      },
+      {
+        "requirement": "≤30%相似度和其他模板",
+        "result": "未验证",
+        "evidence": "原文未给相似度度量；其余7个模板未执行。"
+      }
+    ],
+    "conclusion": "两种姿势已对比；动作大体落实，前倾不足，不能宣称身份完全一致或30%指标通过。"
+  },
+  "images": [
+    {
+      "file": "results/T059-action-template/pose1.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "505e390105c813cc3cff4078c7e2c2c42707b8dbdde394e0d64252b00984731f"
+    },
+    {
+      "file": "results/T059-action-template/pose2.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "ae216a3b8c1d0c15103298b6916e3e9501b045fff6cba1099d54ac2a1aa1b342"
+    }
+  ]
+}

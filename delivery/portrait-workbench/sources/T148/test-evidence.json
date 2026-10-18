@@ -1,0 +1,52 @@
+{
+  "test": {
+    "test_id": "T148",
+    "title": "缎面睡衣甜心眨眼萌拍",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a fictional 32-year-old adult woman, use her face from the synthetic reference. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入虚构成年人物，原文保留。",
+      "填充肖像槽与服装槽；--ar/--v/--no保留文本，不冒充Midjourney参数执行。"
+    ],
+    "selected_source_prompt": "{\n  \"parameters\": {\n    \"subject_description\": \"A relaxed young woman with a playful, winking expression. Her hair is worn loose and down, styled in a natural, slightly messy 'bed-head' look, completely free of any hair accessories, ribbons, or clips. The vibe is effortless and authentically casual. [User Portrait Slot]\",\n    \"apparel_details\": \"Wearing a comfortable white satin pajama set (shirt and shorts) that catches the light softly, paired with simple white socks. [Apparel/Outfit Slot]\",\n    \"environment\": \"A warm, cluttered-cute bedroom full of comfort. She is lounging on a soft fabric sofa. The surrounding area (sofa and floor) is populated with adorable teddy bears and plush toys, creating a soft, 'kawaii' yet lived-in atmosphere. Background implies a cozy domestic night.\",\n    \"photographic_style\": {\n      \"aesthetic\": \"Cozy Home Snapshot, Soft Flash Aesthetics, Authentic Lifestyle\",\n      \"camera_angle\": \"High-angle shot with a wide lens (28mm) to accentuate the playful leg-up pose and capture the surrounding plushies.\",\n      \"lighting\": \"Soft direct flash mixed with warm bedroom ambient light (lamp light), creating a creamy, inviting tone without harshness.\",\n      \"color_grading\": \"Fujifilm Classic Negative (NC) style; slightly desaturated greens, warm skin tones, and soft highlights to emphasize the satin texture.\",\n      \"film_grain\": \"Subtle grain for a natural, unpolished look.\"\n    },\n    \"pose_reference\": \"Reclining on the sofa, kicking one leg up towards the camera (foreshortening), hand reaching forward or framing the face playfully. Spontaneous and energetic but relaxed.\",\n    \"negative_prompt\": \"hair accessories, hair clips, ribbons, ponytail, twin tails, stiff hair, perfect hair, jewelry, cold lighting, empty room, leather sofa, painting, illustration, 3d render, deformed, extra fingers, bad anatomy, harsh contrast, messy composition, distorted face.\"\n  },\n  \"generation_prompt\": \"portrait of a girl [User Portrait Slot] with loose slightly messy natural hair, no hair accessories, winking at camera, wearing white satin pajamas [Apparel/Outfit Slot] and white socks, lying on a soft sofa in a cute bedroom, surrounded by teddy bears and plush toys, leg kicked up high towards camera, foreshortening, dynamic perspective, soft flash photography, cozy atmosphere, warm ambient light, fujifilm classic negative, realistic texture, 28mm lens, --ar 3:4 --v 6.0 --no hair accessories\"\n}\n",
+    "final_prompt": [
+      "The subject is a fictional 32-year-old adult woman, use her face from the synthetic reference. {\n  \"parameters\": {\n    \"subject_description\": \"A relaxed young woman with a playful, winking expression. Her hair is worn loose and down, styled in a natural, slightly messy 'bed-head' look, completely free of any hair accessories, ribbons, or clips. The vibe is effortless and authentically casual. a fictional 32-year-old adult woman with a short side-parted black bob and small left-cheek mole\",\n    \"apparel_details\": \"Wearing a comfortable white satin pajama set (shirt and shorts) that catches the light softly, paired with simple white socks. white satin button-up shirt and shorts, white socks\",\n    \"environment\": \"A warm, cluttered-cute bedroom full of comfort. She is lounging on a soft fabric sofa. The surrounding area (sofa and floor) is populated with adorable teddy bears and plush toys, creating a soft, 'kawaii' yet lived-in atmosphere. Background implies a cozy domestic night.\",\n    \"photographic_style\": {\n      \"aesthetic\": \"Cozy Home Snapshot, Soft Flash Aesthetics, Authentic Lifestyle\",\n      \"camera_angle\": \"High-angle shot with a wide lens (28mm) to accentuate the playful leg-up pose and capture the surrounding plushies.\",\n      \"lighting\": \"Soft direct flash mixed with warm bedroom ambient light (lamp light), creating a creamy, inviting tone without harshness.\",\n      \"color_grading\": \"Fujifilm Classic Negative (NC) style; slightly desaturated greens, warm skin tones, and soft highlights to emphasize the satin texture.\",\n      \"film_grain\": \"Subtle grain for a natural, unpolished look.\"\n    },\n    \"pose_reference\": \"Reclining on the sofa, kicking one leg up towards the camera (foreshortening), hand reaching forward or framing the face playfully. Spontaneous and energetic but relaxed.\",\n    \"negative_prompt\": \"hair accessories, hair clips, ribbons, ponytail, twin tails, stiff hair, perfect hair, jewelry, cold lighting, empty room, leather sofa, painting, illustration, 3d render, deformed, extra fingers, bad anatomy, harsh contrast, messy composition, distorted face.\"\n  },\n  \"generation_prompt\": \"portrait of a girl a fictional 32-year-old adult woman with a short side-parted black bob and small left-cheek mole with loose slightly messy natural hair, no hair accessories, winking at camera, wearing white satin pajamas white satin button-up shirt and shorts, white socks and white socks, lying on a soft sofa in a cute bedroom, surrounded by teddy bears and plush toys, leg kicked up high towards camera, foreshortening, dynamic perspective, soft flash photography, cozy atmosphere, warm ambient light, fujifilm classic negative, realistic texture, 28mm lens, --ar 3:4 --v 6.0 --no hair accessories\"\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a fictional 32-year-old adult woman, use her face from the synthetic reference. {\n  \"parameters\": {\n    \"subject_description\": \"A relaxed young woman with a playful, winking expression. Her hair is worn loose and down, styled in a natural, slightly messy 'bed-head' look, completely free of any hair accessories, ribbons, or clips. The vibe is effortless and authentically casual. a fictional 32-year-old adult woman with a short side-parted black bob and small left-cheek mole\",\n    \"apparel_details\": \"Wearing a comfortable white satin pajama set (shirt and shorts) that catches the light softly, paired with simple white socks. white satin button-up shirt and shorts, white socks\",\n    \"environment\": \"A warm, cluttered-cute bedroom full of comfort. She is lounging on a soft fabric sofa. The surrounding area (sofa and floor) is populated with adorable teddy bears and plush toys, creating a soft, 'kawaii' yet lived-in atmosphere. Background implies a cozy domestic night.\",\n    \"photographic_style\": {\n      \"aesthetic\": \"Cozy Home Snapshot, Soft Flash Aesthetics, Authentic Lifestyle\",\n      \"camera_angle\": \"High-angle shot with a wide lens (28mm) to accentuate the playful leg-up pose and capture the surrounding plushies.\",\n      \"lighting\": \"Soft direct flash mixed with warm bedroom ambient light (lamp light), creating a creamy, inviting tone without harshness.\",\n      \"color_grading\": \"Fujifilm Classic Negative (NC) style; slightly desaturated greens, warm skin tones, and soft highlights to emphasize the satin texture.\",\n      \"film_grain\": \"Subtle grain for a natural, unpolished look.\"\n    },\n    \"pose_reference\": \"Reclining on the sofa, kicking one leg up towards the camera (foreshortening), hand reaching forward or framing the face playfully. Spontaneous and energetic but relaxed.\",\n    \"negative_prompt\": \"hair accessories, hair clips, ribbons, ponytail, twin tails, stiff hair, perfect hair, jewelry, cold lighting, empty room, leather sofa, painting, illustration, 3d render, deformed, extra fingers, bad anatomy, harsh contrast, messy composition, distorted face.\"\n  },\n  \"generation_prompt\": \"portrait of a girl a fictional 32-year-old adult woman with a short side-parted black bob and small left-cheek mole with loose slightly messy natural hair, no hair accessories, winking at camera, wearing white satin pajamas white satin button-up shirt and shorts, white socks and white socks, lying on a soft sofa in a cute bedroom, surrounded by teddy bears and plush toys, leg kicked up high towards camera, foreshortening, dynamic perspective, soft flash photography, cozy atmosphere, warm ambient light, fujifilm classic negative, realistic texture, 28mm lens, --ar 3:4 --v 6.0 --no hair accessories\"\n}\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 缎面睡衣甜心眨眼萌拍.md",
+    "original_sha256": "fc6b53e3d8813720860ca8f8bf0d20a38a41dffbe3f838442802977101d5703f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "阻塞",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "实际工具结果",
+        "result": "阻塞",
+        "evidence": "HTTP400 moderation_blocked，output阶段sexual分类，无返回图片，原始错误及实际Prompt均保存。"
+      }
+    ],
+    "conclusion": "输出过滤阻塞，无图不可验收。"
+  },
+  "images": []
+}

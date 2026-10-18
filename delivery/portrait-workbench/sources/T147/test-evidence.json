@@ -1,0 +1,57 @@
+{
+  "test": {
+    "test_id": "T147",
+    "title": "电影感十足的肖像摄影作品",
+    "type": "直接生图/参考编辑",
+    "test_input": "The subject is a wholly fictional 28-year-old adult woman. ",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填入虚构成年人物，原文保留。"
+    ],
+    "selected_source_prompt": "cinematic portrait photography of a young woman sitting in a field at golden hour, soft natural light, silver-blonde short hair, minimal fashion with a black t-shirt and light bandana, fine art portrait style. emotional realism with calm expression, modern editorial mood, subject leaning against a mirror creating symmetrical reflection, high fashion editorial look, moody color grading, shallow depth of field, subject-isolation technique, viral visual composition, cinematic framing, contemporary visual storytelling. subtle texture in background, clean tones, artistic photography, urban stillness aesthetic blended with nature, soft contrast and gentle highlights.",
+    "final_prompt": [
+      "The subject is a wholly fictional 28-year-old adult woman. cinematic portrait photography of a young woman sitting in a field at golden hour, soft natural light, silver-blonde short hair, minimal fashion with a black t-shirt and light bandana, fine art portrait style. emotional realism with calm expression, modern editorial mood, subject leaning against a mirror creating symmetrical reflection, high fashion editorial look, moody color grading, shallow depth of field, subject-isolation technique, viral visual composition, cinematic framing, contemporary visual storytelling. subtle texture in background, clean tones, artistic photography, urban stillness aesthetic blended with nature, soft contrast and gentle highlights."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a wholly fictional 28-year-old adult woman. cinematic portrait photography of a young woman sitting in a field at golden hour, soft natural light, silver-blonde short hair, minimal fashion with a black t-shirt and light bandana, fine art portrait style. emotional realism with calm expression, modern editorial mood, subject leaning against a mirror creating symmetrical reflection, high fashion editorial look, moody color grading, shallow depth of field, subject-isolation technique, viral visual composition, cinematic framing, contemporary visual storytelling. subtle texture in background, clean tones, artistic photography, urban stillness aesthetic blended with nature, soft contrast and gentle highlights.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 电影感十足的肖像摄影作品.md",
+    "original_sha256": "25ca2bf3753a6f71d4d66e390c1df9592a4bdd40287ad3767db6b846f96976de",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "田野/镜面/人物造型",
+        "result": "符合要求",
+        "evidence": "金色时刻田野，短银金发成年女性黑T浅头巾，坐姿靠镜有相应对称反射，背景虚化，暖光柔对比。"
+      },
+      {
+        "requirement": "边界",
+        "result": "模型初评",
+        "evidence": "镜面为合成视觉效果，不代表真实摄影或参数。"
+      }
+    ],
+    "conclusion": "本次田野镜面肖像符合可见要求。"
+  },
+  "images": [
+    {
+      "file": "results/T147-mirror-field/output.png",
+      "width": 1374,
+      "height": 1145,
+      "sha256": "c7215710370f520e48f6083cb92d2bf32f1cd2331fd1e588008a2238a03482d3"
+    }
+  ]
+}

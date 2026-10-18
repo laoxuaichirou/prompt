@@ -1,0 +1,43 @@
+{
+  "test": {
+    "test_id": "T034",
+    "title": "四幅女子时尚生活场景拼贴画",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "23岁虚构成年女性，高马尾，无品牌街头卫衣与骑行短裤。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择英文Original，清理JSON转义。",
+      "年龄固定23；发型二选一固定高马尾；可定制品牌填无品牌几何图案。"
+    ],
+    "selected_source_prompt": "{\n  \"scene_description\": \"A cohesive 4-panel fashion lifestyle collage featuring the same young woman in a trendy streetwear outfit, showcasing different dynamic poses and angles.\",\n  \"subject\": {\n    \"type\": \"Young Woman (Consistent character)\",\n    \"age\": \"early 20s\",\n    \"features\": {\n      \"hair\": \"high ponytail or messy bun\",\n      \"makeup\": \"fresh urban look\"\n    },\n    \"attire\": \"oversized graphic hoodie, biker shorts, high socks, chunky sneakers\",\n    \"accessories\": \"cross-body bag, sunglasses on head\"\n  },\n  \"collage_layout\": {\n    \"structure\": \"2x2 Grid Layout (4 frames of equal size)\",\n    \"panel_1_top_left\": \"Front Full Body: Walking confidently towards the camera on a city crosswalk, hair moving in the wind, looking slightly to the side.\",\n    \"panel_2_top_right\": \"Side Profile Sitting: Sitting on concrete steps with knees pulled up, resting chin on knees, looking peacefully at the street view.\",\n    \"panel_3_bottom_left\": \"Back View Full Body: Standing and looking away at a city billboard or view, hands in hoodie pockets, highlighting the back graphic of the hoodie.\",\n    \"panel_4_bottom_right\": \"Mid-Shot Angle: Leaning casually against a brick wall, one leg up on the wall, looking directly at the camera with a cool expression.\"\n  },\n  \"environment\": {\n    \"setting\": \"City Streets / Urban Alley\",\n    \"background_elements\": [\n      \"Brick textures\",\n      \"Street signs\",\n      \"City depth\"\n    ]\n  },\n  \"lighting\": {\n    \"style\": \"Overcast Soft Light\",\n    \"key_light\": {\n      \"type\": \"Natural Sky\",\n      \"color\": \"Cool White\",\n      \"effect\": \"Even lighting ideal for street fashion\"\n    }\n  },\n  \"style\": {\n    \"medium\": \"Digital Street Photography\",\n    \"aesthetic\": \"Hypebeast, Urban, Gen Z, Candid\",\n    \"quality\": \"8k resolution, sharp focus on subject\"\n  },\n  \"attire_customization\": {\n    \"current_clothing\": \"Hoodie and biker shorts\",\n    \"customizable_clothing\": \"User can swap for denim jacket and cargo pants\"\n  },\n  \"brand_product_customization\": {\n    \"current_brand_product\": \"Streetwear\",\n    \"customizable_brand\": \"User: Insert Brand Name\",\n    \"customizable_product\": \"User: Specific sneakers or bag\",\n    \"product_placement_area\": \"Hoodie chest or sneakers\"\n  }\n}",
+    "final_prompt": "Generate one native four-panel image described below, using a fictional ADULT woman aged23. Choose a high ponytail consistently. Brand customization fields=unbranded geometric graphic, no real brand required. {\n  \"scene_description\": \"A cohesive 4-panel fashion lifestyle collage featuring the same young woman in a trendy streetwear outfit, showcasing different dynamic poses and angles.\",\n  \"subject\": {\n    \"type\": \"Young Woman (Consistent character)\",\n    \"age\": \"early 20s\",\n    \"features\": {\n      \"hair\": \"high ponytail or messy bun\",\n      \"makeup\": \"fresh urban look\"\n    },\n    \"attire\": \"oversized graphic hoodie, biker shorts, high socks, chunky sneakers\",\n    \"accessories\": \"cross-body bag, sunglasses on head\"\n  },\n  \"collage_layout\": {\n    \"structure\": \"2x2 Grid Layout (4 frames of equal size)\",\n    \"panel_1_top_left\": \"Front Full Body: Walking confidently towards the camera on a city crosswalk, hair moving in the wind, looking slightly to the side.\",\n    \"panel_2_top_right\": \"Side Profile Sitting: Sitting on concrete steps with knees pulled up, resting chin on knees, looking peacefully at the street view.\",\n    \"panel_3_bottom_left\": \"Back View Full Body: Standing and looking away at a city billboard or view, hands in hoodie pockets, highlighting the back graphic of the hoodie.\",\n    \"panel_4_bottom_right\": \"Mid-Shot Angle: Leaning casually against a brick wall, one leg up on the wall, looking directly at the camera with a cool expression.\"\n  },\n  \"environment\": {\n    \"setting\": \"City Streets / Urban Alley\",\n    \"background_elements\": [\n      \"Brick textures\",\n      \"Street signs\",\n      \"City depth\"\n    ]\n  },\n  \"lighting\": {\n    \"style\": \"Overcast Soft Light\",\n    \"key_light\": {\n      \"type\": \"Natural Sky\",\n      \"color\": \"Cool White\",\n      \"effect\": \"Even lighting ideal for street fashion\"\n    }\n  },\n  \"style\": {\n    \"medium\": \"Digital Street Photography\",\n    \"aesthetic\": \"Hypebeast, Urban, Gen Z, Candid\",\n    \"quality\": \"8k resolution, sharp focus on subject\"\n  },\n  \"attire_customization\": {\n    \"current_clothing\": \"Hoodie and biker shorts\",\n    \"customizable_clothing\": \"User can swap for denim jacket and cargo pants\"\n  },\n  \"brand_product_customization\": {\n    \"current_brand_product\": \"Streetwear\",\n    \"customizable_brand\": \"User: Insert Brand Name\",\n    \"customizable_product\": \"User: Specific sneakers or bag\",\n    \"product_placement_area\": \"Hoodie chest or sneakers\"\n  }\n}",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 四幅女子时尚生活场景拼贴画.md",
+    "original_sha256": "a27c7397c2ab7ed969f3eb885919827d23eb106976cef94c2418ba7f630d2b21",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "逐项核心视觉与构图检查",
+        "result": "存在问题",
+        "evidence": "4格分别为过街、蜷坐台阶、背面看城市、靠砖墙抬腿，服装图案和高马尾大体一致；背影不能核实脸，指定8K未达到（原生约1.6MP）。"
+      }
+    ],
+    "conclusion": "4格分别为过街、蜷坐台阶、背面看城市、靠砖墙抬腿，服装图案和高马尾大体一致；背影不能核实脸，指定8K未达到（原生约1.6MP）。 单轮模型初评，不代表稳定性已验证。"
+  },
+  "images": [
+    {
+      "file": "results/T034-street4/output.png",
+      "width": 1222,
+      "height": 1287,
+      "sha256": "1194b0e06e02a6a1de47547b90c2ed3e40cc12ea98143dfc83f8486bd2abcf37"
+    }
+  ]
+}

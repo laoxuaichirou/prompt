@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "presets": 84,
+  "original_source_copies_hash_verified": 129,
+  "scope_entries": 219,
+  "scope_filenames_unique": true,
+  "source_statuses_preserved": true,
+  "default_variables_render_checked": 104,
+  "local_catalog_links_checked": 377,
+  "broken_catalog_links": [],
+  "preview_files_exist": true,
+  "normalized_image_generation_performed": false,
+  "normalized_presets_passed": 0,
+  "note": "本审计校验文件、元数据及变量完整性，不是生图测试或身份效果验收。"
+}

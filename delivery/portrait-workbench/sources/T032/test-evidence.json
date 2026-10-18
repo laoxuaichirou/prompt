@@ -1,0 +1,42 @@
+{
+  "test": {
+    "test_id": "T032",
+    "title": "专业影棚人像摄影圣诞冬季主题",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "22岁虚构成年女性，原例圣诞红帽红围巾黑大衣。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅取英文Original；20—23岁范围内固定22岁。"
+    ],
+    "selected_source_prompt": "Professional studio portrait photography, Christmas winter theme, white studio background.  Young Asian woman, age 20-23, beautiful delicate features: - Large expressive eyes with double eyelids - Elegant facial features, high cheekbones - Natural makeup: soft pink blush, natural lip color - Shoulder-length dark brown hair - Fair porcelain skin with realistic texture (visible pores)  Outfit: - Bright red cable knit beanie - Bright red chunky wool scarf - Black wool coat  Studio setup: Pure white seamless background, professional soft lighting, snowflakes falling on hair/beanie/scarf  Technical: 85mm lens, f/1.8-2.8, natural soft studio lighting, realistic skin texture, high-end fashion portrait quality  Mood: Natural, warm, gentle expression, serene and contemplative",
+    "final_prompt": "Use an entirely fictional adult woman aged22. Professional studio portrait photography, Christmas winter theme, white studio background.  Young Asian woman, age 20-23, beautiful delicate features: - Large expressive eyes with double eyelids - Elegant facial features, high cheekbones - Natural makeup: soft pink blush, natural lip color - Shoulder-length dark brown hair - Fair porcelain skin with realistic texture (visible pores)  Outfit: - Bright red cable knit beanie - Bright red chunky wool scarf - Black wool coat  Studio setup: Pure white seamless background, professional soft lighting, snowflakes falling on hair/beanie/scarf  Technical: 85mm lens, f/1.8-2.8, natural soft studio lighting, realistic skin texture, high-end fashion portrait quality  Mood: Natural, warm, gentle expression, serene and contemplative",
+    "original_filename": "提示词库/人像摄影/[已投产·5分] 专业影棚人像摄影圣诞冬季主题.md",
+    "original_sha256": "760bb82c2f48701e35aa1f8571ce4c6381e40e88ef41710c23c55fd8482ff1ca",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "逐项核心视觉与构图检查",
+        "result": "符合要求",
+        "evidence": "白色影棚、深棕及肩发、自然妆、红麻花帽和粗围巾、黑大衣、发帽围巾上的雪花均命中，柔光与温柔神情符合本次视觉初评。"
+      }
+    ],
+    "conclusion": "白色影棚、深棕及肩发、自然妆、红麻花帽和粗围巾、黑大衣、发帽围巾上的雪花均命中，柔光与温柔神情符合本次视觉初评。 单轮模型初评，不代表稳定性已验证。"
+  },
+  "images": [
+    {
+      "file": "results/T032-christmas/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "8fd67813f8c9bcda244dd297ee6b6fe8217cf283425ce659ba7b25a633ee2914"
+    }
+  ]
+}

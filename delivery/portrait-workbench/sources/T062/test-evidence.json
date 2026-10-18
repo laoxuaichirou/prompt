@@ -1,0 +1,83 @@
+{
+  "test": {
+    "test_id": "T062",
+    "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+    "type": "光影约束元提示词→图像编辑",
+    "test_input": "选择场景2光影描绘，用T001花店图，改为冷色侧逆光、青蓝阴影，保留成年人物、白衬衫绿围裙、花束、构图与店铺。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "执行可见场景2，未执行场景1及链接缺失的子模板",
+      "原SD权重(1.2)/(1.3)改为自然语言强调，并单独保留未适配元输出；当前工具不支持可核实的SD数值权重",
+      "8k原文字样保留为要求，是否达到按实际图片尺寸判断"
+    ],
+    "selected_source_prompt": "：光影描绘（洗图 / 重绘的光影约束）\n### System Prompt（身份 + 规则）：\n**plaintext**\n`你是专业的光影设计师，擅长为AI绘图模型编写“光影+色彩约束提示词”，用于图片重绘/洗图。<br><br>## 光影规则：<br>1. 输出的提示词需包含：光影类型（如“侧逆光”）、明暗对比（如“高对比度，暗部细节保留”）、色彩氛围（如“冷色调，青蓝色阴影”）；<br>2. 必须保留原图的主体内容（如“原图是女孩→提示词中必须包含‘女孩’”），仅修改光影/色彩；<br>3. 用英文提示词，添加权重标记（核心光影元素加(1.3)）；<br>4. 不输出任何解释，仅输出提示词。<br><br>## 输出格式：<br>原图主体内容, 光影类型, 明暗对比, 色彩氛围, 辅助细节（逗号分隔）<br><br>## 示例：<br>### 输入图片：（森林中的女孩，原图是平光）<br>### 输出提示词：<br>A girl in the forest (1.2), side backlight (1.3), high contrast, preserved shadow details, cool color palette, cyan shadows, dappled sunlight through leaves, 8k`\n### Prompt 模板（输入输出）：\n**plaintext**\n`基于这张图片的主体，生成光影重绘的提示词：<br>{{图片}}`\n",
+    "final_prompt": [
+      "Edit the reference photo: preserve the same adult florist identity, short black hair, white collared shirt, dark green apron, single pastel rose-and-daisy bouquet, both hands around the stems, frontal three-quarter portrait composition and all shop objects. Change ONLY lighting and color to strong side backlight, high contrast with preserved shadow detail, cool color palette with cyan shadows and cool window highlights through foliage. Photorealistic portrait, 8k."
+    ],
+    "meta_output": {
+      "original_syntax": "An adult florist holding a pastel bouquet in a flower shop (1.2), side backlight (1.3), high contrast, preserved shadow details, cool color palette, cyan shadows, soft window light through green foliage, photorealistic portrait, 8k",
+      "adapted": "Edit the reference photo: preserve the same adult florist identity, short black hair, white collared shirt, dark green apron, single pastel rose-and-daisy bouquet, both hands around the stems, frontal three-quarter portrait composition and all shop objects. Change ONLY lighting and color to strong side backlight, high contrast with preserved shadow detail, cool color palette with cyan shadows and cool window highlights through foliage. Photorealistic portrait, 8k."
+    },
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/results/T001-fixed-person/04-florist.png"
+        ],
+        "prompt": "Edit the reference photo: preserve the same adult florist identity, short black hair, white collared shirt, dark green apron, single pastel rose-and-daisy bouquet, both hands around the stems, frontal three-quarter portrait composition and all shop objects. Change ONLY lighting and color to strong side backlight, high contrast with preserved shadow detail, cool color palette with cyan shadows and cool window highlights through foliage. Photorealistic portrait, 8k.",
+        "reference_material_portable": [
+          "results/T001-fixed-person/04-florist.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "missing": "链接子页“可直接复制的提示词模板片段丨System Prompt”未导出；可见场景2完整，已执行该部分",
+    "original_filename": "提示词库/提示词工程/[仅参考·3分] 【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路.md",
+    "original_sha256": "a1e6849d478c4f04a826aa23dd3a987f4bdfdd58816469d6320ab4a2dbace0b9",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T001-fixed-person/04-florist.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "只改光影保主体",
+        "result": "基本符合",
+        "evidence": "同一花店成人、白衬衫、绿围裙、花束与构图保留；青蓝阴影和侧逆光明显。"
+      },
+      {
+        "requirement": "阴影细节",
+        "result": "符合要求",
+        "evidence": "围裙褶皱和右侧背景仍可辨，未大片死黑。"
+      },
+      {
+        "requirement": "8k与SD权重",
+        "result": "未满足/未验证",
+        "evidence": "输出非8K；自然语言适配不能验证原SD权重效果。"
+      },
+      {
+        "requirement": "其他框架及子页",
+        "result": "未执行/缺失",
+        "evidence": "场景1反推未执行，链接子页未导出。"
+      }
+    ],
+    "conclusion": "光影编辑主体保留良好；分辨率及原SD权重未验证，不能算原模型完整通过。"
+  },
+  "images": [
+    {
+      "file": "results/T062-lighting-meta/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "61c2b2e23a0d3f272553405227c2bd402d82cd00fae9c341bf6b04f030a956a3"
+    }
+  ]
+}

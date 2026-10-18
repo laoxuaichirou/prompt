@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T137",
+    "title": "冬季森林中年轻女子的3x3网格拼贴画（同题2）",
+    "type": "直接生图/变量模板",
+    "test_input": "The subject is a fictional 32-year-old adult woman, use the reference face but change hair and clothing as instructed. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "填充虚构成年人；原文与最终输入分别保存。",
+      "两份同题独立文件使用完全相同提示词与同一参考，各自新调用，允许直接比较；不是跨模型测试。"
+    ],
+    "selected_source_prompt": "{\n  \"subject\": \"3x3 grid collage of young woman in winter forest\",\n  \"clothing\": \"Brown teddy coat, white crop top, grey sweatpants, beige boots, brown beanie\",\n  \"hair\": \"Long wavy brown, wearing beanie\",\n  \"face\": \"Happy, laughing, smiling, candid expressions\",\n  \"accessories\": \"Black SUV car in background\",\n  \"environment\": \"Snowy forest road, pine trees, winter day\",\n  \"lighting\": \"Soft overcast daylight\",\n  \"camera\": \"Collage of full body, close-up, high angle, and rear view shots\",\n  \"style\": \"Lifestyle collage, social media photo dump, energetic, winter travel, photorealistic\"\n}\n",
+    "final_prompt": [
+      "The subject is a fictional 32-year-old adult woman, use the reference face but change hair and clothing as instructed. {\n  \"subject\": \"3x3 grid collage of young woman in winter forest\",\n  \"clothing\": \"Brown teddy coat, white crop top, grey sweatpants, beige boots, brown beanie\",\n  \"hair\": \"Long wavy brown, wearing beanie\",\n  \"face\": \"Happy, laughing, smiling, candid expressions\",\n  \"accessories\": \"Black SUV car in background\",\n  \"environment\": \"Snowy forest road, pine trees, winter day\",\n  \"lighting\": \"Soft overcast daylight\",\n  \"camera\": \"Collage of full body, close-up, high angle, and rear view shots\",\n  \"style\": \"Lifestyle collage, social media photo dump, energetic, winter travel, photorealistic\"\n}\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "The subject is a fictional 32-year-old adult woman, use the reference face but change hair and clothing as instructed. {\n  \"subject\": \"3x3 grid collage of young woman in winter forest\",\n  \"clothing\": \"Brown teddy coat, white crop top, grey sweatpants, beige boots, brown beanie\",\n  \"hair\": \"Long wavy brown, wearing beanie\",\n  \"face\": \"Happy, laughing, smiling, candid expressions\",\n  \"accessories\": \"Black SUV car in background\",\n  \"environment\": \"Snowy forest road, pine trees, winter day\",\n  \"lighting\": \"Soft overcast daylight\",\n  \"camera\": \"Collage of full body, close-up, high angle, and rear view shots\",\n  \"style\": \"Lifestyle collage, social media photo dump, energetic, winter travel, photorealistic\"\n}\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 冬季森林中年轻女子的3x3网格拼贴画（同题2）.md",
+    "original_sha256": "79664709317f8be3c97730bbd6b947c32702c5fb219a577f248de504b6953e6c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "九格/衣着/背景",
+        "result": "符合要求",
+        "evidence": "同一参考独立新调用，九格服装、雪林、SUV、背影与大笑等落实。"
+      },
+      {
+        "requirement": "高角度",
+        "result": "存在问题",
+        "evidence": "各格主要平视或自拍，未见与T136第8格相当的明确俯拍；相同输入仍有要求覆盖差异。"
+      }
+    ],
+    "conclusion": "九格已出图，明确高角度镜头不足。"
+  },
+  "images": [
+    {
+      "file": "results/T137-winter-forest2/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "7ba1fbb4e90cc076095b7bc5501bf017e9a48255750fe88d45fbb107df38b5e6"
+    }
+  ]
+}

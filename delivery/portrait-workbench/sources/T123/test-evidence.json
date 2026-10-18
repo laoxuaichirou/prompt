@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T123",
+    "title": "雪景下的精灵",
+    "type": "直接生图/参考图编辑",
+    "test_input": "Test input: use the face of the fictional 32-year-old adult woman in the synthetic reference. Choose coffee and the song title Last Christmas from the alternatives. Interpret the following readable instructions; its malformed JSON is not an API call. ",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅清除导出的大括号/方括号反斜杠，保留中英文混合与缺逗号等原格式问题，不声称有效JSON。",
+      "填充成年合成人脸，饮品选咖啡、歌名选Last Christmas；不因标题添加精灵。"
+    ],
+    "selected_source_prompt": "{ \"image_generation_request\": { \"meta_protocols\": { \"reference_adherence\": { “说明”：“请严格按照提供的照片进行面部参照。” “公差”: “零偏差” “参数”：“以100%的准确度保留面部比例、皮肤纹理、表情和身份特征。” \"stylization_constraint\": \"不要对脸部特征进行风格化或改变。\"       }, \"format_style\": \"编辑冬季海报风格的多面板拼贴画\", \"aesthetic_quality\": \"自发的 iPhone 摄影（抓拍、温馨、写实）\", \"global_textures\": \"柔和的雪花，细腻的模拟颗粒感，轻微的手持拍摄瑕疵\"     }, \"consistent_elements\": { \"subject_wardrobe\": { “外套”： “短款人造毛皮外套” 腿部服饰：黑色紧身裤， “鞋类”：“经典 UGG 靴子”， \"style_notes\": \"简约、舒适、极具冬日气息\"       }, \"primary_device\": { “型号”：“iPhone 17 Pro Max”， “颜色”： “银色”， “用法”：“由主体在相关框架中持有”       }, \"color_palette\": [ “温暖的琥珀色”， “柔和的红色”， “松树绿” “柔和的冬日灰色”       ]     }, \"layout_configuration\": { \"panel_1_top_left\": { \"scene_type\": \"黄昏时分的商店橱窗反光照片\", \"lighting_and_atmosphere\": \"淡淡的圣诞彩灯、花环、磨砂玻璃边缘、毛皮上的暖色调高光\", “subject_action”: “拿着手机部分遮住脸部” \"optical_effects\": \"掠过的轮廓、层叠的反射、柔和的重影、自然的玻璃曲率扭曲\"       }, \"panel_2_top_right\": { \"scene_type\": \"超广角街景人像（雪中的人行道/圣诞市场）\", \"camera_angle\": \"近距离，向下倾斜\", “subject_pose”: “随意地向前倾，双手插在外套口袋里” \"可见性检查\": \"黑色紧身裤和 UGG 靴子清晰可见\", \"motion_dynamics\": \"带有轻微运动模糊的飘雪\", 镜头特性： “微妙的透视变形，以增强手持拍摄的真实感”       }, \"panel_3_bottom_right\": { \"scene_type\": \"亲密俯视自拍\", “照明”：“温暖的街道或咖啡馆照明”， \"props\": { \"held_item\": \"外带节日饮品（咖啡或热红酒）\", “配件”：“可见的有线耳机”         }, \"texture_focus\": \"清晰细腻的毛皮纹理和冬季面料\", “氛围”：“柔和的颗粒感增强了怀旧的假日氛围”       }     }, \"graphic_overlay\": { \"element\": \"极简 Apple Music 风格的迷你播放器\", \"content\": \"流行圣诞歌曲（例如，'Last Christmas' 或 'All I Want for Christmas Is You'）\", “风格”：“渲染效果平整干净，没有阴影”， “位置”：“漂浮在拼贴画的中心”     }   } }",
+    "final_prompt": [
+      "Test input: use the face of the fictional 32-year-old adult woman in the synthetic reference. Choose coffee and the song title Last Christmas from the alternatives. Interpret the following readable instructions; its malformed JSON is not an API call. { \"image_generation_request\": { \"meta_protocols\": { \"reference_adherence\": { “说明”：“请严格按照提供的照片进行面部参照。” “公差”: “零偏差” “参数”：“以100%的准确度保留面部比例、皮肤纹理、表情和身份特征。” \"stylization_constraint\": \"不要对脸部特征进行风格化或改变。\"       }, \"format_style\": \"编辑冬季海报风格的多面板拼贴画\", \"aesthetic_quality\": \"自发的 iPhone 摄影（抓拍、温馨、写实）\", \"global_textures\": \"柔和的雪花，细腻的模拟颗粒感，轻微的手持拍摄瑕疵\"     }, \"consistent_elements\": { \"subject_wardrobe\": { “外套”： “短款人造毛皮外套” 腿部服饰：黑色紧身裤， “鞋类”：“经典 UGG 靴子”， \"style_notes\": \"简约、舒适、极具冬日气息\"       }, \"primary_device\": { “型号”：“iPhone 17 Pro Max”， “颜色”： “银色”， “用法”：“由主体在相关框架中持有”       }, \"color_palette\": [ “温暖的琥珀色”， “柔和的红色”， “松树绿” “柔和的冬日灰色”       ]     }, \"layout_configuration\": { \"panel_1_top_left\": { \"scene_type\": \"黄昏时分的商店橱窗反光照片\", \"lighting_and_atmosphere\": \"淡淡的圣诞彩灯、花环、磨砂玻璃边缘、毛皮上的暖色调高光\", “subject_action”: “拿着手机部分遮住脸部” \"optical_effects\": \"掠过的轮廓、层叠的反射、柔和的重影、自然的玻璃曲率扭曲\"       }, \"panel_2_top_right\": { \"scene_type\": \"超广角街景人像（雪中的人行道/圣诞市场）\", \"camera_angle\": \"近距离，向下倾斜\", “subject_pose”: “随意地向前倾，双手插在外套口袋里” \"可见性检查\": \"黑色紧身裤和 UGG 靴子清晰可见\", \"motion_dynamics\": \"带有轻微运动模糊的飘雪\", 镜头特性： “微妙的透视变形，以增强手持拍摄的真实感”       }, \"panel_3_bottom_right\": { \"scene_type\": \"亲密俯视自拍\", “照明”：“温暖的街道或咖啡馆照明”， \"props\": { \"held_item\": \"外带节日饮品（咖啡或热红酒）\", “配件”：“可见的有线耳机”         }, \"texture_focus\": \"清晰细腻的毛皮纹理和冬季面料\", “氛围”：“柔和的颗粒感增强了怀旧的假日氛围”       }     }, \"graphic_overlay\": { \"element\": \"极简 Apple Music 风格的迷你播放器\", \"content\": \"流行圣诞歌曲（例如，'Last Christmas' 或 'All I Want for Christmas Is You'）\", “风格”：“渲染效果平整干净，没有阴影”， “位置”：“漂浮在拼贴画的中心”     }   } }"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Test input: use the face of the fictional 32-year-old adult woman in the synthetic reference. Choose coffee and the song title Last Christmas from the alternatives. Interpret the following readable instructions; its malformed JSON is not an API call. { \"image_generation_request\": { \"meta_protocols\": { \"reference_adherence\": { “说明”：“请严格按照提供的照片进行面部参照。” “公差”: “零偏差” “参数”：“以100%的准确度保留面部比例、皮肤纹理、表情和身份特征。” \"stylization_constraint\": \"不要对脸部特征进行风格化或改变。\"       }, \"format_style\": \"编辑冬季海报风格的多面板拼贴画\", \"aesthetic_quality\": \"自发的 iPhone 摄影（抓拍、温馨、写实）\", \"global_textures\": \"柔和的雪花，细腻的模拟颗粒感，轻微的手持拍摄瑕疵\"     }, \"consistent_elements\": { \"subject_wardrobe\": { “外套”： “短款人造毛皮外套” 腿部服饰：黑色紧身裤， “鞋类”：“经典 UGG 靴子”， \"style_notes\": \"简约、舒适、极具冬日气息\"       }, \"primary_device\": { “型号”：“iPhone 17 Pro Max”， “颜色”： “银色”， “用法”：“由主体在相关框架中持有”       }, \"color_palette\": [ “温暖的琥珀色”， “柔和的红色”， “松树绿” “柔和的冬日灰色”       ]     }, \"layout_configuration\": { \"panel_1_top_left\": { \"scene_type\": \"黄昏时分的商店橱窗反光照片\", \"lighting_and_atmosphere\": \"淡淡的圣诞彩灯、花环、磨砂玻璃边缘、毛皮上的暖色调高光\", “subject_action”: “拿着手机部分遮住脸部” \"optical_effects\": \"掠过的轮廓、层叠的反射、柔和的重影、自然的玻璃曲率扭曲\"       }, \"panel_2_top_right\": { \"scene_type\": \"超广角街景人像（雪中的人行道/圣诞市场）\", \"camera_angle\": \"近距离，向下倾斜\", “subject_pose”: “随意地向前倾，双手插在外套口袋里” \"可见性检查\": \"黑色紧身裤和 UGG 靴子清晰可见\", \"motion_dynamics\": \"带有轻微运动模糊的飘雪\", 镜头特性： “微妙的透视变形，以增强手持拍摄的真实感”       }, \"panel_3_bottom_right\": { \"scene_type\": \"亲密俯视自拍\", “照明”：“温暖的街道或咖啡馆照明”， \"props\": { \"held_item\": \"外带节日饮品（咖啡或热红酒）\", “配件”：“可见的有线耳机”         }, \"texture_focus\": \"清晰细腻的毛皮纹理和冬季面料\", “氛围”：“柔和的颗粒感增强了怀旧的假日氛围”       }     }, \"graphic_overlay\": { \"element\": \"极简 Apple Music 风格的迷你播放器\", \"content\": \"流行圣诞歌曲（例如，'Last Christmas' 或 'All I Want for Christmas Is You'）\", “风格”：“渲染效果平整干净，没有阴影”， “位置”：“漂浮在拼贴画的中心”     }   } }",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·3分] 雪景下的精灵.md",
+    "original_sha256": "4e76bfda49fdecc08fb909b97f25296b7fcceec6056085549d0ea3804ae839b4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "三面板/服饰/道具",
+        "result": "基本符合",
+        "evidence": "左橱窗反射，右上雪地俯拍，右下咖啡自拍；毛皮短外套、黑裤、靴子、银手机、有线耳机、中央Last Christmas播放器出现。"
+      },
+      {
+        "requirement": "严格零偏差与细节",
+        "result": "存在问题",
+        "evidence": "人脸表情/角度与参考改变，无法实现100%不变；右上双手藏在身后，未清楚表现双手插外套口袋。具体手机/靴子型号及真实镜头参数未验证。"
+      }
+    ],
+    "conclusion": "主要冬日三场景实现，零偏差与插兜姿势未严格满足。"
+  },
+  "images": [
+    {
+      "file": "results/T123-winter-panels/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "6a29af536b7bd0002f63701211cca366194ff1ee40a1a22e88c4d2c60da48cd6"
+    }
+  ]
+}
