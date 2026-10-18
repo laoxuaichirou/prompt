@@ -5273,8 +5273,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W046/look-01-noir.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "3903bcf563da8c549383bc54f60cb37f777dfdc54d3c22d220f005de00b5c5a2",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2b772562-3f72-4a3c-b386-b719cf291ee3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:43:50+08:00"
         },
         {
           "case_id": "look-17-teal-orange",
@@ -5282,13 +5295,49 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W046/look-17-teal-orange.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "f79ee6a5a22d487185b35988ce1f7ad0dd099332777b4f1b2a77427d1e1db30a",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-8f2db534-0cab-4c97-b36c-5ef818572c7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:42:47+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:40:14+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W046/look-01-noir.png",
+        "results/W046/look-17-teal-orange.png"
+      ],
+      "checks": [
+        {
+          "requirement": "同参考两种调色",
+          "result": "符合",
+          "evidence": "高反差黑白与青蓝暗部琥珀高光版可明确区分"
+        },
+        {
+          "requirement": "内容与构图保留",
+          "result": "基本符合",
+          "evidence": "相同人物、交叉腿、手扶沙发、电视花朵和客厅框架持续"
+        }
+      ],
+      "conclusion": "两种所选调色视觉初评符合；其余20预设未测试，细微像素位置不保证完全相同。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:46:58+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·4分] 22种AI调色提示词22种AI调色提示词.md",
       "original_sha256": "4918c7af452d97b5f8945915cf4722b2bfc56862f962b01d058e0300d8029602",
@@ -5340,8 +5389,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W047/cool-low.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "a76a893a36d6c19aa85ee3d023a00addcb3d68f4e78ea0594f310fd6e7312329",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a5da2576-f46e-4465-8f1e-a664c928dc58.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:43:50+08:00"
         },
         {
           "case_id": "warm-high",
@@ -5349,13 +5411,49 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W047/warm-high.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "5ab16a685a0893d661d395e1ab727320de3df23bf28ea5573bd5f14c13af4795",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c1326dbd-dfb6-4578-9f2f-1f6d8366d8da.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:43:57+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:40:14+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W047/cool-low.png",
+        "results/W047/warm-high.png"
+      ],
+      "checks": [
+        {
+          "requirement": "两种动态机位",
+          "result": "符合",
+          "evidence": "冷蓝侧光低机位近身与暖金高机位俯视明确不同"
+        },
+        {
+          "requirement": "人物及摄影质感",
+          "result": "基本符合",
+          "evidence": "稀疏后退头发、胡茬蓝衣一致，皮肤纹理清晰且高对比光可见"
+        }
+      ],
+      "conclusion": "添加具体测试变量后，两图系列可运行；原文本仅一句笼统语病，不意味着本轮填充已成为原版预设。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:46:58+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[仅参考·2分] 动态光影超精细写真.md",
       "original_sha256": "2f4d2731d743d0abb0079ab52b2cff1fd2dbdf472c0caeab7ca83760e0a711c4",
@@ -5409,8 +5507,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W048/add-mug.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "98f1d94e012d13ba83133ac865953f88f2a0e4b4587f7f2a61203483259cffbc",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3a077574-3273-439e-8d72-9c8c0449ea92.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:43:14+08:00"
         },
         {
           "case_id": "remove-tv",
@@ -5418,8 +5529,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W048/remove-tv.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "f456e41f6d61fcbd9aa9fb30ce0876c3952f011b72f8f4a3f8cc0501369bfbe4",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-0520d268-b432-42e6-b91c-1f1d8f8fc4ed.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:43:57+08:00"
         },
         {
           "case_id": "replace-cushion",
@@ -5427,13 +5551,50 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W048/replace-cushion.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "906dfe669daed035c9c306f05f3c104039f0136fec1f676b5465c7c088b0e70d",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-0449ef5f-cab1-4542-9394-ee1f90408e96.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:44:35+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:40:14+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W048/add-mug.png",
+        "results/W048/remove-tv.png",
+        "results/W048/replace-cushion.png"
+      ],
+      "checks": [
+        {
+          "requirement": "三操作独立执行",
+          "result": "符合",
+          "evidence": "同基底分别加一只白杯、完整删除电视与脚、橙垫换深绿"
+        },
+        {
+          "requirement": "原图其他主体保留",
+          "result": "基本符合",
+          "evidence": "三图中人物姿势、主要空间物件与暖光基本保留，删除电视墙面补齐自然"
+        }
+      ],
+      "conclusion": "先重写再真实生成添加/删除/替换三图，主要局部编辑要求符合；不代表像素级无变化。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:46:58+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[仅参考·4分] 【图片提示词】添加、删除、替换提示词增强.md",
       "original_sha256": "1d79cef19197d235bafe4ca6c47cf7de319f014b59e7c51a649d7256d531d663",
@@ -5477,13 +5638,53 @@
             "results/W014/fashion-01.png",
             "materials/seated-adult-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W049/pose-transfer.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "ff8614f9bc7927dccaa47bd09e6557ee5fa3a22c01cfb3eeb21ccd343c823898",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d346f889-ce9b-4d3e-a232-dfb559f831e2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:44:53+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:40:14+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W049/pose-transfer.png"
+      ],
+      "checks": [
+        {
+          "requirement": "身份和蓝衣保留",
+          "result": "基本符合",
+          "evidence": "男性稀疏发际胡茬蓝套装白鞋，没有融合女性脸"
+        },
+        {
+          "requirement": "采用参考2姿态",
+          "result": "基本符合",
+          "evidence": "坐姿抬起一膝双手抱住，另一腿弯曲，动作可辨"
+        },
+        {
+          "requirement": "阶梯空间及服装设计",
+          "result": "存在问题",
+          "evidence": "灰色阶梯被简化为近白色方块坐台，蓝裤口袋和裁片局部变化"
+        }
+      ],
+      "conclusion": "核心身份与抱膝姿态迁移基本实现，但空间与服装细节不完全保留。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:46:58+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·3分] 换姿势.md",
       "original_sha256": "1c1e8d0ae36d8d33b89ba498195296e937984d8d09131fcbf0da11394a219e8d",
@@ -5528,18 +5729,347 @@
             "results/W014/fashion-01.png",
             "materials/adult-woman-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W050/replace-person.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "f557d08ed38288a8cb8d8a8c40b69d330fa222eb6a95e1488d8042a50ecf22d9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-81c14295-08df-4e2a-9771-e4db2d0a7adb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:44:35+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:40:14+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W050/replace-person.png"
+      ],
+      "checks": [
+        {
+          "requirement": "仅替换身份、不混脸",
+          "result": "基本符合",
+          "evidence": "目标成年女性黑短发和左脸小痣可辨，无原男性发际线胡茬"
+        },
+        {
+          "requirement": "保留图1服装姿势场景",
+          "result": "符合",
+          "evidence": "蓝套装白鞋、交叉腿扶沙发、花朵电视与金色湖景延续"
+        }
+      ],
+      "conclusion": "选定换人用例主要符合；10角度独立模板不在此例，未量化身份几何一致率。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:46:58+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
       "original_sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
       "original_test_status": "符合要求",
       "original_test_conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W051",
+      "source_id": "T056",
+      "title": "图像 Prompt 改写专家丨三合一（喂给LLM）",
+      "categories": [
+        "prompt"
+      ],
+      "type": "三合一改写元提示词→通用静物分流→真实生图",
+      "test_input": {
+        "original_input": "参考图中的无品牌琥珀玻璃瓶，米色石台，暖窗光，写实静物，无字。",
+        "分类": "通用图像"
+      },
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "执行通用图像分支；人像及含文字分支本例未测试。",
+        "填测试素材的可见商品结构，无品牌变量；元输出为连续中文段落无标题列表。",
+        "无8K等新增硬参数。"
+      ],
+      "selected_source_prompt": "图像Prompt改写专家…子任务三通用图像",
+      "meta_output": "写实商业静物摄影，一只无品牌琥珀色玻璃瓶立在浅米色石台中央，黑色细齿瓶盖、窄瓶颈、圆肩与厚玻璃底清晰，左后方窗光穿过瓶身，在台面投下柔和的琥珀色透射光，前景石面细腻，后方米白墙面留出呼吸感，整体暖色克制，无额外物件，图像中未出现任何可识别文字。",
+      "cases": [
+        {
+          "case_id": "rewritten-still-life",
+          "final_prompt": "写实商业静物摄影，一只无品牌琥珀色玻璃瓶立在浅米色石台中央，黑色细齿瓶盖、窄瓶颈、圆肩与厚玻璃底清晰，左后方窗光穿过瓶身，在台面投下柔和的琥珀色透射光，前景石面细腻，后方米白墙面留出呼吸感，整体暖色克制，无额外物件，图像中未出现任何可识别文字。",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:46:03+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[已投产·5分] 图像 Prompt 改写专家丨三合一（喂给LLM）.md",
+      "original_sha256": "8da9e5c1b25a396a573c3d5b6d659243345415a2736bc3e359f19d443af1cf75",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "含文字图最小用例符合要求；不代表三个分流或稳定性已验证。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W052",
+      "source_id": "T057",
+      "title": "逆向提示词反推",
+      "categories": [
+        "prompt"
+      ],
+      "type": "图片反推元提示词→去身份JSON→两种角色同模板生图",
+      "test_input": {
+        "style_ref": "W014照片，抽象世界观不固化男性外貌",
+        "角色": [
+          "原合成男性",
+          "合成成年短发女性"
+        ],
+        "语言判断": "英文仅推测，不声称可从图片证明原语言"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/adult-woman-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "先执行反推并存去身份JSON，再用完整引导词的角色/场景分工生成控制与替换两图。",
+        "与角色相关描述从外部素材解析，JSON不包含独特发型五官。",
+        "原语言不可由像素确定，字段明确标推测；不把反推描述当成找回真实原提示词。"
+      ],
+      "selected_source_prompt": "逆向提示词+引导词",
+      "meta_output": {
+        "language_system": "English (inferred only; exact original language cannot be established from pixels)",
+        "subject": "one adult person whose identity is defined by the external character reference",
+        "pose": "standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera",
+        "composition": "wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective",
+        "background_type": "photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion",
+        "background_style": "warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills",
+        "space": "sofa left foreground, coffee table right foreground, person midground, screen and windows behind",
+        "screen": "large purple and yellow flower image on a thin dark television",
+        "style": "photorealistic cinematic interior portrait",
+        "lighting_color": "warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast",
+        "materials": "natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density",
+        "ratio": "3:2 horizontal; preserve the supplied source crop"
+      },
+      "cases": [
+        {
+          "case_id": "template-control",
+          "final_prompt": "{\n  \"language_system\": \"English (inferred only; exact original language cannot be established from pixels)\",\n  \"subject\": \"one adult person whose identity is defined by the external character reference\",\n  \"pose\": \"standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera\",\n  \"composition\": \"wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective\",\n  \"background_type\": \"photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion\",\n  \"background_style\": \"warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills\",\n  \"space\": \"sofa left foreground, coffee table right foreground, person midground, screen and windows behind\",\n  \"screen\": \"large purple and yellow flower image on a thin dark television\",\n  \"style\": \"photorealistic cinematic interior portrait\",\n  \"lighting_color\": \"warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast\",\n  \"materials\": \"natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density\",\n  \"ratio\": \"3:2 horizontal; preserve the supplied source crop\"\n}\nReference image 1 defines scene/style/composition and also the adult man identity for this control. Recreate the same visual template with that man. Reference image 2 is unused for this case. Keep all visible scene elements and original pose. No text.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "template-new-person",
+          "final_prompt": "{\n  \"language_system\": \"English (inferred only; exact original language cannot be established from pixels)\",\n  \"subject\": \"one adult person whose identity is defined by the external character reference\",\n  \"pose\": \"standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera\",\n  \"composition\": \"wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective\",\n  \"background_type\": \"photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion\",\n  \"background_style\": \"warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills\",\n  \"space\": \"sofa left foreground, coffee table right foreground, person midground, screen and windows behind\",\n  \"screen\": \"large purple and yellow flower image on a thin dark television\",\n  \"style\": \"photorealistic cinematic interior portrait\",\n  \"lighting_color\": \"warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast\",\n  \"materials\": \"natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density\",\n  \"ratio\": \"3:2 horizontal; preserve the supplied source crop\"\n}\nReference image 1 defines only scene/style/composition/pose. Reference image 2 defines the sole person identity: use the adult woman from image 2, including her hair and visible facial features, but retain image 1 blue scrub outfit. Do not blend identities. Same exact pose, crop, scene and light as image 1. No text.",
+          "reference_material": [
+            "results/W014/fashion-01.png",
+            "materials/adult-woman-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:46:03+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
+      "original_sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "已完成两角色对比，保留了主要风格和背景；严格姿态锁定失败，语言识别不可验证。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W053",
+      "source_id": "T059",
+      "title": "【LLM】元提示词模板",
+      "categories": [
+        "prompt"
+      ],
+      "type": "动作表情元提示词→三组中景动作→三张独立图",
+      "test_input": {
+        "模板": "AI绘图动作表情生成",
+        "镜头": "中景腰以上",
+        "生成组数": 3
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择8模板中与图像直接相关的动作表情模板，显式填中景和3组。",
+        "30%动作相似度没有定义度量，本轮只检视动作是否明显变化，不伪造数值验证。",
+        "从靠沙发站立改为三种腰以上手臂姿态；约束保持轻情绪。"
+      ],
+      "selected_source_prompt": "AI绘图-动作表情生成模板",
+      "meta_output": [
+        "双手在胸前轻轻合掌，肩膀放松，嘴角微微上扬，眼角浅淡笑纹",
+        "单手扶向另一侧肩部，另一手自然放下，头部微侧，神情略显思索",
+        "双臂自然向两侧打开至腰胸之间，手掌向上，面带克制的莞尔微笑"
+      ],
+      "cases": [
+        {
+          "case_id": "action-mid-01",
+          "final_prompt": "编辑同一参考成年男性的动作。人物稀疏后退黑灰短发、浅胡茬、灰蓝V领衣服保留，同一金色日落客厅背景。严格腰以上中景，不显示大腿膝盖鞋。双手在胸前轻轻合掌，肩膀放松，嘴角微微上扬，眼角浅淡笑纹。三种版本中的这一张只展示本动作，双手自然解剖，不夸张表情，横图16:9，不要文字或多格。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "action-mid-02",
+          "final_prompt": "编辑同一参考成年男性的动作。人物稀疏后退黑灰短发、浅胡茬、灰蓝V领衣服保留，同一金色日落客厅背景。严格腰以上中景，不显示大腿膝盖鞋。单手扶向另一侧肩部，另一手自然放下，头部微侧，神情略显思索。三种版本中的这一张只展示本动作，双手自然解剖，不夸张表情，横图16:9，不要文字或多格。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "action-mid-03",
+          "final_prompt": "编辑同一参考成年男性的动作。人物稀疏后退黑灰短发、浅胡茬、灰蓝V领衣服保留，同一金色日落客厅背景。严格腰以上中景，不显示大腿膝盖鞋。双臂自然向两侧打开至腰胸之间，手掌向上，面带克制的莞尔微笑。三种版本中的这一张只展示本动作，双手自然解剖，不夸张表情，横图16:9，不要文字或多格。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:46:03+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[已投产·4分] 【LLM】元提示词模板.md",
+      "original_sha256": "a2c5266096c81af94fe9e504bde4336eba66e8064d44d49b2752bccef5cadd71",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "两种姿势已对比；动作大体落实，前倾不足，不能宣称身份完全一致或30%指标通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W054",
+      "source_id": "T060",
+      "title": "提示词增强",
+      "categories": [
+        "prompt"
+      ],
+      "type": "完整提示词增强元提示词→含中文设计→真实海报",
+      "test_input": {
+        "original_input": "设计米白色阅读活动海报，标题午后有光，副标题慢下来，读一页，桌上一本无字书和一只白杯，暖窗光，3:4。"
+      },
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择完整中英文同义描述增强器，非前面独立简易编辑版。",
+        "英文双引号包裹全部可见文字，保留标点；无8K/masterpiece元标签，无隐喻。",
+        "新增仅为空间光材质澄清，不引入其他叙事元素。"
+      ],
+      "selected_source_prompt": "You are an imaginative visual artist…/中文完整版",
+      "meta_output": "一张竖向米白纸质活动海报，上方居中以深棕色印刷衬线汉字写出\"午后有光\"，下方仅有较小的\"慢下来，读一页\"，字形端正清晰。画面下半部，一本封面没有字的米色书摊放在浅木桌上，旁边只有一只无图案白色陶瓷杯，杯口有很轻的热气。左侧窗光在木桌和纸页上投下斜向柔和阴影，背景为无装饰米白墙面，纸面细微纤维、木纹与陶瓷反光自然可见，棕白暖色写实静物摄影，画幅3:4。",
+      "cases": [
+        {
+          "case_id": "enhanced-reading-poster",
+          "final_prompt": "一张竖向米白纸质活动海报，上方居中以深棕色印刷衬线汉字写出\"午后有光\"，下方仅有较小的\"慢下来，读一页\"，字形端正清晰。画面下半部，一本封面没有字的米色书摊放在浅木桌上，旁边只有一只无图案白色陶瓷杯，杯口有很轻的热气。左侧窗光在木桌和纸页上投下斜向柔和阴影，背景为无装饰米白墙面，纸面细微纤维、木纹与陶瓷反光自然可见，棕白暖色写实静物摄影，画幅3:4。",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:46:03+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词增强.md",
+      "original_sha256": "db4b11514fbb6b98aa46c03003a57b9052f23c21e125087e53dfcffa2a063c0a",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "简易版背景替换最小用例符合要求，仅为单次模型初评。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W055",
+      "source_id": "T062",
+      "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+      "categories": [
+        "prompt"
+      ],
+      "type": "光影描绘元提示词→带权重原输出→适配重照明",
+      "test_input": {
+        "选择": "场景2光影描绘",
+        "target": "冷色侧逆光与青蓝阴影，保持主体及空间"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "元输出保留原要求(1.2)/(1.3)，工具最终提示词用自然语言表达权重，不声称执行SD权重。",
+        "原8K示例不是必填，未增加虚假尺寸声明。",
+        "这是图片光影模板，不执行外部Agent任务。"
+      ],
+      "selected_source_prompt": "场景2光影描绘System Prompt",
+      "meta_output": {
+        "source_format_output": "A person in a blue-gray V-neck outfit in the lakeside living room (1.2), cool side backlight from the left window (1.3), high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders",
+        "adapted_final_prompt": "A person in a blue-gray V-neck outfit in the lakeside living room, cool side backlight from the left window as the dominant lighting feature, high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders. Retain the reference adult man identity, pose, clothing design and entire room composition, only change light and color. One 3:2 horizontal photograph, no text."
+      },
+      "cases": [
+        {
+          "case_id": "cool-relighting",
+          "final_prompt": "A person in a blue-gray V-neck outfit in the lakeside living room, cool side backlight from the left window as the dominant lighting feature, high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders. Retain the reference adult man identity, pose, clothing design and entire room composition, only change light and color. One 3:2 horizontal photograph, no text.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:46:03+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/提示词工程/[仅参考·3分] 【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路.md",
+      "original_sha256": "a1e6849d478c4f04a826aa23dd3a987f4bdfdd58816469d6320ab4a2dbace0b9",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "光影编辑主体保留良好；分辨率及原SD权重未验证，不能算原模型完整通过。",
       "original_evidence_is_new_test": false
     }
   }

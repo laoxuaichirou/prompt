@@ -1,0 +1,42 @@
+{
+  "test_id": "W055",
+  "source_id": "T062",
+  "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+  "categories": [
+    "prompt"
+  ],
+  "type": "光影描绘元提示词→带权重原输出→适配重照明",
+  "test_input": {
+    "选择": "场景2光影描绘",
+    "target": "冷色侧逆光与青蓝阴影，保持主体及空间"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "元输出保留原要求(1.2)/(1.3)，工具最终提示词用自然语言表达权重，不声称执行SD权重。",
+    "原8K示例不是必填，未增加虚假尺寸声明。",
+    "这是图片光影模板，不执行外部Agent任务。"
+  ],
+  "selected_source_prompt": "场景2光影描绘System Prompt",
+  "meta_output": {
+    "source_format_output": "A person in a blue-gray V-neck outfit in the lakeside living room (1.2), cool side backlight from the left window (1.3), high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders",
+    "adapted_final_prompt": "A person in a blue-gray V-neck outfit in the lakeside living room, cool side backlight from the left window as the dominant lighting feature, high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders. Retain the reference adult man identity, pose, clothing design and entire room composition, only change light and color. One 3:2 horizontal photograph, no text."
+  },
+  "cases": [
+    {
+      "case_id": "cool-relighting",
+      "final_prompt": "A person in a blue-gray V-neck outfit in the lakeside living room, cool side backlight from the left window as the dominant lighting feature, high contrast, preserved shadow details, cool color palette, cyan shadows, natural skin texture, soft rim light along the head and shoulders. Retain the reference adult man identity, pose, clothing design and entire room composition, only change light and color. One 3:2 horizontal photograph, no text.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:46:03+08:00"
+}

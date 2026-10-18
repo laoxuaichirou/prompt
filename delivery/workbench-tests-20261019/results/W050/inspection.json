@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W050/replace-person.png"
+  ],
+  "checks": [
+    {
+      "requirement": "仅替换身份、不混脸",
+      "result": "基本符合",
+      "evidence": "目标成年女性黑短发和左脸小痣可辨，无原男性发际线胡茬"
+    },
+    {
+      "requirement": "保留图1服装姿势场景",
+      "result": "符合",
+      "evidence": "蓝套装白鞋、交叉腿扶沙发、花朵电视与金色湖景延续"
+    }
+  ],
+  "conclusion": "选定换人用例主要符合；10角度独立模板不在此例，未量化身份几何一致率。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:46:58+08:00",
+  "stability_verified": false
+}

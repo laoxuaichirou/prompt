@@ -1,71 +1,6 @@
 {
-  "next_test_id": "W046",
+  "next_test_id": "W051",
   "unfinished": [
-    {
-      "id": "W046",
-      "source_id": "T025",
-      "title": "22种AI调色提示词22种AI调色提示词",
-      "categories": [
-        "edit"
-      ],
-      "batch": 10,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W046"
-    },
-    {
-      "id": "W047",
-      "source_id": "T093",
-      "title": "动态光影超精细写真",
-      "categories": [
-        "edit"
-      ],
-      "batch": 10,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W047"
-    },
-    {
-      "id": "W048",
-      "source_id": "T095",
-      "title": "【图片提示词】添加、删除、替换提示词增强",
-      "categories": [
-        "edit"
-      ],
-      "batch": 10,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W048"
-    },
-    {
-      "id": "W049",
-      "source_id": "T099",
-      "title": "换姿势",
-      "categories": [
-        "edit"
-      ],
-      "batch": 10,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W049"
-    },
-    {
-      "id": "W050",
-      "source_id": "T134",
-      "title": "人物一致性",
-      "categories": [
-        "edit"
-      ],
-      "batch": 10,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W050"
-    },
     {
       "id": "W051",
       "source_id": "T056",
@@ -74,7 +9,7 @@
         "prompt"
       ],
       "batch": 11,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W051"
@@ -87,7 +22,7 @@
         "prompt"
       ],
       "batch": 11,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W052"
@@ -100,7 +35,7 @@
         "prompt"
       ],
       "batch": 11,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W053"
@@ -113,7 +48,7 @@
         "prompt"
       ],
       "batch": 11,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W054"
@@ -126,7 +61,7 @@
         "prompt"
       ],
       "batch": 11,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W055"
@@ -158,5 +93,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T02:41:19+08:00"
+  "updated_at": "2026-10-19T02:46:58+08:00"
 }

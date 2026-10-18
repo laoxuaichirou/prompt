@@ -1,0 +1,24 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W046/look-01-noir.png",
+    "results/W046/look-17-teal-orange.png"
+  ],
+  "checks": [
+    {
+      "requirement": "同参考两种调色",
+      "result": "符合",
+      "evidence": "高反差黑白与青蓝暗部琥珀高光版可明确区分"
+    },
+    {
+      "requirement": "内容与构图保留",
+      "result": "基本符合",
+      "evidence": "相同人物、交叉腿、手扶沙发、电视花朵和客厅框架持续"
+    }
+  ],
+  "conclusion": "两种所选调色视觉初评符合；其余20预设未测试，细微像素位置不保证完全相同。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:46:58+08:00",
+  "stability_verified": false
+}

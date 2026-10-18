@@ -1,0 +1,25 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W048/add-mug.png",
+    "results/W048/remove-tv.png",
+    "results/W048/replace-cushion.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三操作独立执行",
+      "result": "符合",
+      "evidence": "同基底分别加一只白杯、完整删除电视与脚、橙垫换深绿"
+    },
+    {
+      "requirement": "原图其他主体保留",
+      "result": "基本符合",
+      "evidence": "三图中人物姿势、主要空间物件与暖光基本保留，删除电视墙面补齐自然"
+    }
+  ],
+  "conclusion": "先重写再真实生成添加/删除/替换三图，主要局部编辑要求符合；不代表像素级无变化。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:46:58+08:00",
+  "stability_verified": false
+}

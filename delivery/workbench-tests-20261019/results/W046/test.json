@@ -34,8 +34,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W046/look-01-noir.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "3903bcf563da8c549383bc54f60cb37f777dfdc54d3c22d220f005de00b5c5a2",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2b772562-3f72-4a3c-b386-b719cf291ee3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:43:50+08:00"
     },
     {
       "case_id": "look-17-teal-orange",
@@ -43,8 +56,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W046/look-17-teal-orange.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "f79ee6a5a22d487185b35988ce1f7ad0dd099332777b4f1b2a77427d1e1db30a",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-8f2db534-0cab-4c97-b36c-5ef818572c7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:42:47+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:40:14+08:00"

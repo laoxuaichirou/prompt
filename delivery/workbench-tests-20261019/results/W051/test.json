@@ -1,0 +1,39 @@
+{
+  "test_id": "W051",
+  "source_id": "T056",
+  "title": "图像 Prompt 改写专家丨三合一（喂给LLM）",
+  "categories": [
+    "prompt"
+  ],
+  "type": "三合一改写元提示词→通用静物分流→真实生图",
+  "test_input": {
+    "original_input": "参考图中的无品牌琥珀玻璃瓶，米色石台，暖窗光，写实静物，无字。",
+    "分类": "通用图像"
+  },
+  "reference_material": [
+    "materials/bottle-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "执行通用图像分支；人像及含文字分支本例未测试。",
+    "填测试素材的可见商品结构，无品牌变量；元输出为连续中文段落无标题列表。",
+    "无8K等新增硬参数。"
+  ],
+  "selected_source_prompt": "图像Prompt改写专家…子任务三通用图像",
+  "meta_output": "写实商业静物摄影，一只无品牌琥珀色玻璃瓶立在浅米色石台中央，黑色细齿瓶盖、窄瓶颈、圆肩与厚玻璃底清晰，左后方窗光穿过瓶身，在台面投下柔和的琥珀色透射光，前景石面细腻，后方米白墙面留出呼吸感，整体暖色克制，无额外物件，图像中未出现任何可识别文字。",
+  "cases": [
+    {
+      "case_id": "rewritten-still-life",
+      "final_prompt": "写实商业静物摄影，一只无品牌琥珀色玻璃瓶立在浅米色石台中央，黑色细齿瓶盖、窄瓶颈、圆肩与厚玻璃底清晰，左后方窗光穿过瓶身，在台面投下柔和的琥珀色透射光，前景石面细腻，后方米白墙面留出呼吸感，整体暖色克制，无额外物件，图像中未出现任何可识别文字。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:46:03+08:00"
+}

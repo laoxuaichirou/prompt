@@ -1,0 +1,67 @@
+{
+  "test_id": "W052",
+  "source_id": "T057",
+  "title": "逆向提示词反推",
+  "categories": [
+    "prompt"
+  ],
+  "type": "图片反推元提示词→去身份JSON→两种角色同模板生图",
+  "test_input": {
+    "style_ref": "W014照片，抽象世界观不固化男性外貌",
+    "角色": [
+      "原合成男性",
+      "合成成年短发女性"
+    ],
+    "语言判断": "英文仅推测，不声称可从图片证明原语言"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png",
+    "materials/adult-woman-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "先执行反推并存去身份JSON，再用完整引导词的角色/场景分工生成控制与替换两图。",
+    "与角色相关描述从外部素材解析，JSON不包含独特发型五官。",
+    "原语言不可由像素确定，字段明确标推测；不把反推描述当成找回真实原提示词。"
+  ],
+  "selected_source_prompt": "逆向提示词+引导词",
+  "meta_output": {
+    "language_system": "English (inferred only; exact original language cannot be established from pixels)",
+    "subject": "one adult person whose identity is defined by the external character reference",
+    "pose": "standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera",
+    "composition": "wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective",
+    "background_type": "photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion",
+    "background_style": "warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills",
+    "space": "sofa left foreground, coffee table right foreground, person midground, screen and windows behind",
+    "screen": "large purple and yellow flower image on a thin dark television",
+    "style": "photorealistic cinematic interior portrait",
+    "lighting_color": "warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast",
+    "materials": "natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density",
+    "ratio": "3:2 horizontal; preserve the supplied source crop"
+  },
+  "cases": [
+    {
+      "case_id": "template-control",
+      "final_prompt": "{\n  \"language_system\": \"English (inferred only; exact original language cannot be established from pixels)\",\n  \"subject\": \"one adult person whose identity is defined by the external character reference\",\n  \"pose\": \"standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera\",\n  \"composition\": \"wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective\",\n  \"background_type\": \"photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion\",\n  \"background_style\": \"warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills\",\n  \"space\": \"sofa left foreground, coffee table right foreground, person midground, screen and windows behind\",\n  \"screen\": \"large purple and yellow flower image on a thin dark television\",\n  \"style\": \"photorealistic cinematic interior portrait\",\n  \"lighting_color\": \"warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast\",\n  \"materials\": \"natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density\",\n  \"ratio\": \"3:2 horizontal; preserve the supplied source crop\"\n}\nReference image 1 defines scene/style/composition and also the adult man identity for this control. Recreate the same visual template with that man. Reference image 2 is unused for this case. Keep all visible scene elements and original pose. No text.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "template-new-person",
+      "final_prompt": "{\n  \"language_system\": \"English (inferred only; exact original language cannot be established from pixels)\",\n  \"subject\": \"one adult person whose identity is defined by the external character reference\",\n  \"pose\": \"standing beside a sofa, one hand resting on its back, legs gently crossed, facing the camera\",\n  \"composition\": \"wide horizontal photograph, full body on left third, large television on right half, eye-level natural perspective\",\n  \"background_type\": \"photorealistic contemporary lakeside living room, medium to rich detail, environment supports restful emotion\",\n  \"background_style\": \"warm wooden cabinet and floor, neutral sofa, large left windows and layered distant lake hills\",\n  \"space\": \"sofa left foreground, coffee table right foreground, person midground, screen and windows behind\",\n  \"screen\": \"large purple and yellow flower image on a thin dark television\",\n  \"style\": \"photorealistic cinematic interior portrait\",\n  \"lighting_color\": \"warm sunset enters left window, golden lake reflection, soft amber shadows and gentle contrast\",\n  \"materials\": \"natural skin and fabric, woven throw, realistic wood grain and clear glass, restrained fine detail density\",\n  \"ratio\": \"3:2 horizontal; preserve the supplied source crop\"\n}\nReference image 1 defines only scene/style/composition/pose. Reference image 2 defines the sole person identity: use the adult woman from image 2, including her hair and visible facial features, but retain image 1 blue scrub outfit. Do not blend identities. Same exact pose, crop, scene and light as image 1. No text.",
+      "reference_material": [
+        "results/W014/fashion-01.png",
+        "materials/adult-woman-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:46:03+08:00"
+}

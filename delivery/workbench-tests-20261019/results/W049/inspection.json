@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W049/pose-transfer.png"
+  ],
+  "checks": [
+    {
+      "requirement": "身份和蓝衣保留",
+      "result": "基本符合",
+      "evidence": "男性稀疏发际胡茬蓝套装白鞋，没有融合女性脸"
+    },
+    {
+      "requirement": "采用参考2姿态",
+      "result": "基本符合",
+      "evidence": "坐姿抬起一膝双手抱住，另一腿弯曲，动作可辨"
+    },
+    {
+      "requirement": "阶梯空间及服装设计",
+      "result": "存在问题",
+      "evidence": "灰色阶梯被简化为近白色方块坐台，蓝裤口袋和裁片局部变化"
+    }
+  ],
+  "conclusion": "核心身份与抱膝姿态迁移基本实现，但空间与服装细节不完全保留。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:46:58+08:00",
+  "stability_verified": false
+}
