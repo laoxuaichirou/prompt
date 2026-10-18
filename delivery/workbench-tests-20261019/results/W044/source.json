@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/图像编辑/[已投产·5分] 编辑模型思考.md",
+  "original_sha256": "ca1dbd73e411f7c12e9f878faa8be1c6e36fe3b92ecc2177e3517982e0ca934f",
+  "original_test_status": "符合要求",
+  "original_test_conclusion": "移除本会话自加标记的最小用例符合初评；整页其余工作流未验证，原5分标签不作为证据。",
+  "original_evidence_is_new_test": false
+}

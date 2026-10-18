@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
+  "original_sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "两次编辑已实测；主体保留较好，衬衫款式未命中。独立LLM确定性测试未完成，不能宣称原模板完全通过。",
+  "original_evidence_is_new_test": false
+}

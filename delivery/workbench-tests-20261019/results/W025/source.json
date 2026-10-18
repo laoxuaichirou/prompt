@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
+  "original_sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。",
+  "original_evidence_is_new_test": false
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "scope": "六个优先方向，57个去重原条目",
+  "batch_size": 5,
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不是原文指定模型实测",
+  "original_scores_modified": false,
+  "synthetic_reference_note": "本轮materials均为合成测试素材，复用上一轮；不是用户真实商品或真实人物。",
+  "visual_review": "模型初评，单次成功不代表稳定性验证",
+  "created_at": "2026-10-19T01:28:06+08:00"
+}

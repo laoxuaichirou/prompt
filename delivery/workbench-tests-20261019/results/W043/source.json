@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/图像编辑/[已投产·5分] GPT2画质修复元提示词.md",
+  "original_sha256": "c62773b764bd1e9cf0c2dc61fa50f4befc94b8fd13ac5960ca2996ba1bb4f7ab",
+  "original_test_status": "符合要求",
+  "original_test_conclusion": "本次合成降质人像A型污染清除符合视觉初评；只证明该子用例可用，不证明真实信息恢复或全类型稳定性。",
+  "original_evidence_is_new_test": false
+}

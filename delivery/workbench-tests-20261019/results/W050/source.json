@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
+  "original_sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
+  "original_test_status": "符合要求",
+  "original_test_conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。",
+  "original_evidence_is_new_test": false
+}

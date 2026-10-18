@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[已投产·5分] 视觉连续性导演.md",
+  "original_sha256": "cc14b1a3e27d03e3d60d188a247d065bff687c4ac3549179fb45d7b0a19d343a",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "元输出9行连续文本、无空行、无代词；实图9格从花店人物转到叶/花瓣/手指再回全景，身份大体保留；第二格已触碰而第三格才给诱因，触碰发生的因果时序不严格，静态格不能验证真实回弹运动。 模型单轮初评，未宣称视频通过。",
+  "original_evidence_is_new_test": false
+}

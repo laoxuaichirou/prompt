@@ -1,0 +1,686 @@
+{
+  "next_test_id": "W006",
+  "unfinished": [
+    {
+      "id": "W006",
+      "source_id": "T016",
+      "title": "【商品】9宫格奢华悬浮运动鞋",
+      "categories": [
+        "product"
+      ],
+      "batch": 2,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W006"
+    },
+    {
+      "id": "W007",
+      "source_id": "T052",
+      "title": "多视角亚麻椅材质分解图",
+      "categories": [
+        "product"
+      ],
+      "batch": 2,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W007"
+    },
+    {
+      "id": "W008",
+      "source_id": "T053",
+      "title": "奢华8K国家美食广告",
+      "categories": [
+        "product",
+        "graphic"
+      ],
+      "batch": 2,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W008"
+    },
+    {
+      "id": "W009",
+      "source_id": "T082",
+      "title": "kontext大家电场景图（示例）",
+      "categories": [
+        "product"
+      ],
+      "batch": 2,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W009"
+    },
+    {
+      "id": "W010",
+      "source_id": "T086",
+      "title": "无标题",
+      "categories": [
+        "product"
+      ],
+      "batch": 2,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W010"
+    },
+    {
+      "id": "W011",
+      "source_id": "T092",
+      "title": "96组角度提示词",
+      "categories": [
+        "product"
+      ],
+      "batch": 3,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W011"
+    },
+    {
+      "id": "W012",
+      "source_id": "T004",
+      "title": "广告创意",
+      "categories": [
+        "fashion",
+        "graphic"
+      ],
+      "batch": 3,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W012"
+    },
+    {
+      "id": "W013",
+      "source_id": "T007",
+      "title": "商业广告25分镜",
+      "categories": [
+        "fashion",
+        "story"
+      ],
+      "batch": 3,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W013"
+    },
+    {
+      "id": "W014",
+      "source_id": "T011",
+      "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 3,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W014"
+    },
+    {
+      "id": "W015",
+      "source_id": "T017",
+      "title": "【服装展示】冬季时尚系列落地页设计，雪景",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 3,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W015"
+    },
+    {
+      "id": "W016",
+      "source_id": "T019",
+      "title": "电商模特组图生成-根据需要修改",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 4,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W016"
+    },
+    {
+      "id": "W017",
+      "source_id": "T020",
+      "title": "【元提示词】商业摄影",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 4,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W017"
+    },
+    {
+      "id": "W018",
+      "source_id": "T024",
+      "title": "换装提示词示例",
+      "categories": [
+        "fashion",
+        "edit"
+      ],
+      "batch": 4,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W018"
+    },
+    {
+      "id": "W019",
+      "source_id": "T051",
+      "title": "【元提示词】服装立体化lora：3Dghostmannequin",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 4,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W019"
+    },
+    {
+      "id": "W020",
+      "source_id": "T055",
+      "title": "衣服悬浮在空中",
+      "categories": [
+        "fashion"
+      ],
+      "batch": 4,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W020"
+    },
+    {
+      "id": "W021",
+      "source_id": "T030",
+      "title": "image-2水彩拼贴旅行海报提示词！",
+      "categories": [
+        "graphic"
+      ],
+      "batch": 5,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W021"
+    },
+    {
+      "id": "W022",
+      "source_id": "T074",
+      "title": "封面常用提示词",
+      "categories": [
+        "graphic"
+      ],
+      "batch": 5,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W022"
+    },
+    {
+      "id": "W023",
+      "source_id": "T081",
+      "title": "封面大师",
+      "categories": [
+        "graphic"
+      ],
+      "batch": 5,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W023"
+    },
+    {
+      "id": "W024",
+      "source_id": "T084",
+      "title": "电商海报生成元提示词",
+      "categories": [
+        "graphic"
+      ],
+      "batch": 5,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W024"
+    },
+    {
+      "id": "W025",
+      "source_id": "T002",
+      "title": "NanoBananaPro 分镜拆解助手（未测试）",
+      "categories": [
+        "story"
+      ],
+      "batch": 5,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W025"
+    },
+    {
+      "id": "W026",
+      "source_id": "T003",
+      "title": "LLM动作引擎（各类提示词示例）",
+      "categories": [
+        "story"
+      ],
+      "batch": 6,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W026"
+    },
+    {
+      "id": "W027",
+      "source_id": "T005",
+      "title": "四宫格分镜",
+      "categories": [
+        "story"
+      ],
+      "batch": 6,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W027"
+    },
+    {
+      "id": "W028",
+      "source_id": "T036",
+      "title": "【9宫格分镜】人物一致性分镜提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 6,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W028"
+    },
+    {
+      "id": "W029",
+      "source_id": "T037",
+      "title": "【九宫格】1图转电影分镜图提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 6,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W029"
+    },
+    {
+      "id": "W030",
+      "source_id": "T039",
+      "title": "分镜导演与动作编排专家",
+      "categories": [
+        "story"
+      ],
+      "batch": 6,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W030"
+    },
+    {
+      "id": "W031",
+      "source_id": "T040",
+      "title": "视觉连续性导演",
+      "categories": [
+        "story"
+      ],
+      "batch": 7,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W031"
+    },
+    {
+      "id": "W032",
+      "source_id": "T161",
+      "title": "工业级影视生成流程",
+      "categories": [
+        "story"
+      ],
+      "batch": 7,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W032"
+    },
+    {
+      "id": "W033",
+      "source_id": "T162",
+      "title": "故事版提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 7,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W033"
+    },
+    {
+      "id": "W034",
+      "source_id": "T164",
+      "title": "QWEN3分镜元提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 7,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W034"
+    },
+    {
+      "id": "W035",
+      "source_id": "T165",
+      "title": "未整理整套分镜提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 7,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W035"
+    },
+    {
+      "id": "W036",
+      "source_id": "T166",
+      "title": "AI脚本分镜",
+      "categories": [
+        "story"
+      ],
+      "batch": 8,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W036"
+    },
+    {
+      "id": "W037",
+      "source_id": "T169",
+      "title": "2509+WAN2.2，LLM",
+      "categories": [
+        "story"
+      ],
+      "batch": 8,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W037"
+    },
+    {
+      "id": "W038",
+      "source_id": "T170",
+      "title": "AI漫剧提示词",
+      "categories": [
+        "story"
+      ],
+      "batch": 8,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W038"
+    },
+    {
+      "id": "W039",
+      "source_id": "T171",
+      "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
+      "categories": [
+        "story"
+      ],
+      "batch": 8,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W039"
+    },
+    {
+      "id": "W040",
+      "source_id": "T172",
+      "title": "小说转影视流程（初版）",
+      "categories": [
+        "story"
+      ],
+      "batch": 8,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W040"
+    },
+    {
+      "id": "W041",
+      "source_id": "T173",
+      "title": "镜头角度与提示词：6 - Camera Angles & Movements",
+      "categories": [
+        "story"
+      ],
+      "batch": 9,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W041"
+    },
+    {
+      "id": "W042",
+      "source_id": "T006",
+      "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+      "categories": [
+        "edit"
+      ],
+      "batch": 9,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W042"
+    },
+    {
+      "id": "W043",
+      "source_id": "T021",
+      "title": "GPT2画质修复元提示词",
+      "categories": [
+        "edit"
+      ],
+      "batch": 9,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W043"
+    },
+    {
+      "id": "W044",
+      "source_id": "T022",
+      "title": "编辑模型思考",
+      "categories": [
+        "edit"
+      ],
+      "batch": 9,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W044"
+    },
+    {
+      "id": "W045",
+      "source_id": "T023",
+      "title": "高清修复提示词模板",
+      "categories": [
+        "edit"
+      ],
+      "batch": 9,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W045"
+    },
+    {
+      "id": "W046",
+      "source_id": "T025",
+      "title": "22种AI调色提示词22种AI调色提示词",
+      "categories": [
+        "edit"
+      ],
+      "batch": 10,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W046"
+    },
+    {
+      "id": "W047",
+      "source_id": "T093",
+      "title": "动态光影超精细写真",
+      "categories": [
+        "edit"
+      ],
+      "batch": 10,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W047"
+    },
+    {
+      "id": "W048",
+      "source_id": "T095",
+      "title": "【图片提示词】添加、删除、替换提示词增强",
+      "categories": [
+        "edit"
+      ],
+      "batch": 10,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W048"
+    },
+    {
+      "id": "W049",
+      "source_id": "T099",
+      "title": "换姿势",
+      "categories": [
+        "edit"
+      ],
+      "batch": 10,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W049"
+    },
+    {
+      "id": "W050",
+      "source_id": "T134",
+      "title": "人物一致性",
+      "categories": [
+        "edit"
+      ],
+      "batch": 10,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W050"
+    },
+    {
+      "id": "W051",
+      "source_id": "T056",
+      "title": "图像 Prompt 改写专家丨三合一（喂给LLM）",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 11,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W051"
+    },
+    {
+      "id": "W052",
+      "source_id": "T057",
+      "title": "逆向提示词反推",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 11,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W052"
+    },
+    {
+      "id": "W053",
+      "source_id": "T059",
+      "title": "【LLM】元提示词模板",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 11,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W053"
+    },
+    {
+      "id": "W054",
+      "source_id": "T060",
+      "title": "提示词增强",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 11,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W054"
+    },
+    {
+      "id": "W055",
+      "source_id": "T062",
+      "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 11,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W055"
+    },
+    {
+      "id": "W056",
+      "source_id": "T065",
+      "title": "提示词设计（教学用-反推部分修改）",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 12,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W056"
+    },
+    {
+      "id": "W057",
+      "source_id": "T069",
+      "title": "MJ提示词生成器system prompt（原Z image页，标题错配）",
+      "categories": [
+        "prompt"
+      ],
+      "batch": 12,
+      "status": "未执行",
+      "generated_images": 0,
+      "opened_images": 0,
+      "result_dir": "results/W057"
+    }
+  ],
+  "updated_at": "2026-10-19T01:36:30+08:00"
+}

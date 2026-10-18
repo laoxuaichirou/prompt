@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[待测试·4分] LLM动作引擎（各类提示词示例）.md",
+  "original_sha256": "2acfaeabac65c959ec823cb7c42ff04af7aef57a4d12d1e27431c9be048233ed",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "可见主框架五动作链路完成，动作多样性和景别基本成立；细微表情偏弱，A/B比较阻塞，不自动转正。",
+  "original_evidence_is_new_test": false
+}

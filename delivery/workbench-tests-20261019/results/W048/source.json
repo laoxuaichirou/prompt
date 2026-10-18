@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/图像编辑/[仅参考·4分] 【图片提示词】添加、删除、替换提示词增强.md",
+  "original_sha256": "1d79cef19197d235bafe4ca6c47cf7de319f014b59e7c51a649d7256d531d663",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "三子例均实际出图，删除和换字表现良好；添加有局部背景改动，原格式合同存在冲突。",
+  "original_evidence_is_new_test": false
+}

@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[已投产·5分] 【九宫格】1图转电影分镜图提示词.md",
+  "original_sha256": "9e3fedfe9c25bfc849a654cf7c270d6391bdc9bf19072e4dd7c34589a12a5128",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "九个KF编号、景别标签与1.6s均可读，面部/花束/白衬衫绿围裙/暖花店延续；首尾ELS不够远且与LS近似，具体运镜幅度规划未完整覆盖，本轮不验证14.4秒动态视频。 模型单轮初评，未宣称视频通过。",
+  "original_evidence_is_new_test": false
+}

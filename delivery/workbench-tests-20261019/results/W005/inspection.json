@@ -1,0 +1,31 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W005/detail-01.png",
+    "results/W005/detail-02.png",
+    "results/W005/detail-03.png",
+    "results/W005/detail-04.png"
+  ],
+  "checks": [
+    {
+      "requirement": "默认四图与独立输出",
+      "result": "符合要求",
+      "evidence": "主图、细节、场景、创意四张独立1024×1536图片全部生成并打开。"
+    },
+    {
+      "requirement": "自动中文文案",
+      "result": "符合要求",
+      "evidence": "日常，也有光／细节成章／留一刻从容／光影成景及各自副标题可读，未添加品牌或成分功效。"
+    },
+    {
+      "requirement": "同一商品保留",
+      "result": "符合要求",
+      "evidence": "各图黑色细纹旋盖、细颈圆肩和琥珀玻璃保留，细节图按要求裁为近景。"
+    }
+  ],
+  "conclusion": "四段新元提示词及四图最小完整用例符合可见要求；未验证其他商品与多次稳定性。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:35:16+08:00",
+  "stability_verified": false
+}

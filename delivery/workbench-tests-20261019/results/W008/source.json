@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[已投产·4分] 奢华8K国家美食广告.md",
+  "original_sha256": "f819e9ae9db6e524a86fef3517b49037803756d94c991c2b748741f7cdf17359",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。 视觉评分为模型初评，单次不证明稳定性。",
+  "original_evidence_is_new_test": false
+}

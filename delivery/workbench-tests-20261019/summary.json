@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-10-19T01:36:30+08:00",
+  "scope_entries": 57,
+  "prepared_entries": 5,
+  "entries_with_new_images": 5,
+  "output_images": 10,
+  "opened_images": 10,
+  "synthetic_materials": 3,
+  "status_counts": {
+    "符合要求": 3,
+    "存在问题": 2,
+    "未执行": 52
+  },
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不是原指定模型实测",
+  "visual_review": "模型初评，不等于稳定性验证",
+  "new_run_not_old_images": true
+}

@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/海报封面/[待测试·4分] 广告创意.md",
+  "original_sha256": "05fce292ec1f330cf3104c43b4cfa199c4d9708ba720636e0366ed8abaea8043",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "三次适配文字子项均命中，但服装细节在穿着侧受遮挡和裤脚变化影响；整体存在问题。三次成功不代表稳定性已验证，不冒充原模型实测。",
+  "original_evidence_is_new_test": false
+}

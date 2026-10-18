@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[仅参考·2分] 衣服悬浮在空中.md",
+  "original_sha256": "47409a2014d70965d62179eff307f2982f5fd3b0658e50eb2fbf4a08d5e4932c",
+  "original_test_status": "符合要求",
+  "original_test_conclusion": "空心人形由蓝色刷手服上衣和长裤形成，服装悬空有投影，无实际人体或模特，鞋和听诊器已移除；三上衣口袋与裤腿贴袋基本保留。原始单句很简略，本用例增加了明确的服装/形状输入，不代表裸句独立稳定性通过。 视觉评分为模型初评，单次不证明稳定性。",
+  "original_evidence_is_new_test": false
+}

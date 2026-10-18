@@ -1,0 +1,112 @@
+{
+  "test_id": "W005",
+  "source_id": "T089",
+  "title": "电商详情页 元提示词",
+  "categories": [
+    "product",
+    "graphic"
+  ],
+  "type": "元提示词→四张独立商品图",
+  "test_input": "输入无品牌琥珀玻璃瓶；不提供文案，不指定数量，检验默认主图/细节/场景/创意四图及自动中文文案。",
+  "reference_material": [
+    "materials/bottle-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+    "本轮执行元提示词产生4段新中文提示词，不复用旧图或旧测试结论。",
+    "依原默认数量输出四张独立图，同一商品参考；原文示例不是输入商品事实。"
+  ],
+  "selected_source_prompt": "\n\n```bash\n# Role\n你是一位精通中国电商视觉营销的设计总监。\n\n# Goals\n根据用户输入的产品信息，输出**中文**的AI绘画提示词。提示词必须包含画面描述和**营销文案**的设计指令。\n\n# Rules\n1.  **文案生成策略**：\n    -   如果用户提供了文案，直接使用。\n    -   如果用户**未提供**文案，你必须根据产品特性自动撰写简短有力的**中文营销短语**（如：主标题、卖点词）。\n2.  **输出语言**：必须输出**中文**提示词（适合DALL-E 3、Midjourney V6或国产AI绘画模型）。\n3.  **格式规范**：\n    -   **纯净模式**：只输出提示词段落，不要输出“图片1”、“好的”、“以下是...”等任何多余文字。\n    -   **段落结构**：每张图的提示词写成**一段话**。多张图之间用空行分隔。\n    -   **内容结构**：[产品视觉描述] + [背景场景] + [中文文案指令] + [光影与画质修饰词]。\n4.  **数量策略**：用户未指定数量时，默认生成 **4张**（主图/细节/场景/创意）。\n\n# Output Template (Strict)\n(每一段话包含：主体+场景+文案+风格)\n\n# Example Interaction\n**User:** \"帮我生成橙汁的图，没说文案\"\n**Assistant:**\n一张极具食欲的电商海报，画面中心是一杯飞溅的鲜榨橙汁和切开的新鲜橙子，背景是阳光下的果园，画面正中央包含醒目的中文标题“鲜活维C”，字体设计圆润可爱，橙色主色调，水珠细节清晰，8k分辨率，商业摄影，微距质感。\n\n一张清爽的详情页插图，橙汁瓶身特写，周围环绕着冰块和薄荷叶，画面上方有精致的中文小字写着“0添加 纯天然”，高调摄影，明亮通透，极简主义风格，C4D渲染质感。\n\n（...以此类推）\n```\n",
+  "meta_output": "一张竖版电商主图，使用参考图中唯一的无品牌琥珀玻璃瓶，保持黑色细纹旋盖、细长瓶颈、圆肩、直筒瓶身和厚底，不添加标签。瓶子完整直立于浅米白圆台，暖白与淡琥珀渐变背景，左上方柔光，在顶部准确排版深棕中文主标题“日常，也有光”，下方小字“一只瓶子的简单美感”。克制留白、清楚玻璃边缘与自然接触阴影，不添加其他文字或产品功效。\n\n一张竖版电商细节图，同一参考琥珀玻璃瓶，仅近景展示黑色细纹旋盖、瓶颈与圆肩，保持盖和螺纹原结构，不改变产品。暖灰无缝背景、清晰侧光与真实玻璃高光，顶部准确排版中文“细节成章”，下方小字“盖纹 · 瓶颈 · 玻璃光影”。细节锐利，不增加商标、说明性参数或隐藏结构。\n\n一张竖版电商场景图，同一无标签琥珀玻璃瓶完整放在安静居家窗边的米色石台上，旁边是一只无标识陶杯，后方亚麻窗帘和柔焦绿植，瓶身形状、黑色细纹旋盖和厚底保持。自然午后窗光与可信透视，顶部留白准确排中文“留一刻从容”，下方小字“把日常放慢一点”。无人物、无其他文字、无功效或成分承诺。\n\n一张竖版电商创意图，同一无标签琥珀玻璃瓶完整直立于浅米色平台，后方为两条半透明琥珀色弧形雕塑，与瓶子清楚分离，不穿过玻璃。黑色细纹旋盖、瓶身比例和厚底不变。顶部准确排中文“光影成景”，下方小字“简单，也能有层次”。写实产品与抽象空间组合，柔和轮廓光和落地阴影，无其他文字或品牌。",
+  "cases": [
+    {
+      "case_id": "detail-01",
+      "final_prompt": "一张竖版电商主图，使用参考图中唯一的无品牌琥珀玻璃瓶，保持黑色细纹旋盖、细长瓶颈、圆肩、直筒瓶身和厚底，不添加标签。瓶子完整直立于浅米白圆台，暖白与淡琥珀渐变背景，左上方柔光，在顶部准确排版深棕中文主标题“日常，也有光”，下方小字“一只瓶子的简单美感”。克制留白、清楚玻璃边缘与自然接触阴影，不添加其他文字或产品功效。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W005/detail-01.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "d96788ad5f2f1b93bf27a24775bbbfef450382d2ab3504d137aad93c829ef6b6",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6a6a49a8-a7fb-4830-ab45-885bbf1ebf8b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:32:53+08:00"
+    },
+    {
+      "case_id": "detail-02",
+      "final_prompt": "一张竖版电商细节图，同一参考琥珀玻璃瓶，仅近景展示黑色细纹旋盖、瓶颈与圆肩，保持盖和螺纹原结构，不改变产品。暖灰无缝背景、清晰侧光与真实玻璃高光，顶部准确排版中文“细节成章”，下方小字“盖纹 · 瓶颈 · 玻璃光影”。细节锐利，不增加商标、说明性参数或隐藏结构。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W005/detail-02.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "710c0c6883a78a9b2576fffe6e6f54a4e623e859224dd8b3894db37b9815c834",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-61b91f51-48d8-40c6-b19f-281787bf899b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:34:39+08:00"
+    },
+    {
+      "case_id": "detail-03",
+      "final_prompt": "一张竖版电商场景图，同一无标签琥珀玻璃瓶完整放在安静居家窗边的米色石台上，旁边是一只无标识陶杯，后方亚麻窗帘和柔焦绿植，瓶身形状、黑色细纹旋盖和厚底保持。自然午后窗光与可信透视，顶部留白准确排中文“留一刻从容”，下方小字“把日常放慢一点”。无人物、无其他文字、无功效或成分承诺。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W005/detail-03.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "545486629a0c73afe4e60cb65d105e2f9cedeb8049dd5f264dbd35ca2e7c5c13",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-aab48b63-b2bb-4bd3-a6c4-c8ce98d6b24e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:34:39+08:00"
+    },
+    {
+      "case_id": "detail-04",
+      "final_prompt": "一张竖版电商创意图，同一无标签琥珀玻璃瓶完整直立于浅米色平台，后方为两条半透明琥珀色弧形雕塑，与瓶子清楚分离，不穿过玻璃。黑色细纹旋盖、瓶身比例和厚底不变。顶部准确排中文“光影成景”，下方小字“简单，也能有层次”。写实产品与抽象空间组合，柔和轮廓光和落地阴影，无其他文字或品牌。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W005/detail-04.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "89ba94447fbf7c50c127b29732fbd36b48609a322726223edd93937331092e8c",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-62703253-cd43-4ecc-8437-10d9cfbbd11e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:34:11+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:28:49+08:00"
+}

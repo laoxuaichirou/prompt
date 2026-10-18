@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W002/handheld.png"
+  ],
+  "checks": [
+    {
+      "requirement": "单手自然握持",
+      "result": "符合要求",
+      "evidence": "一只手握持瓶身下部，四指与拇指位置可辨，未残留另一只戳指手。"
+    },
+    {
+      "requirement": "产品结构与完整性",
+      "result": "符合要求",
+      "evidence": "盖、肩、瓶底完整可见，颜色和轮廓与参考基本一致，未添加瓶贴。"
+    },
+    {
+      "requirement": "素材角色绑定",
+      "result": "符合要求",
+      "evidence": "商品来自图1，浅蓝背景及成人手提供图2构图，接触遮挡自然。"
+    }
+  ],
+  "conclusion": "双参考握瓶最小用例符合可见要求，不代表Kontext原模型实测。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:34:25+08:00",
+  "stability_verified": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W003/bottle-atlas.png"
+  ],
+  "checks": [
+    {
+      "requirement": "版式和文字",
+      "result": "符合要求",
+      "evidence": "UNBRANDED，左侧四视图，右侧大主图；白底和细线标注清楚。"
+    },
+    {
+      "requirement": "组件指向",
+      "result": "符合要求",
+      "evidence": "Screw cap、Neck、Glass body、Base的线端点落在相应可见区域，没有新增内部结构或性能。"
+    },
+    {
+      "requirement": "视图与几何真实性",
+      "result": "未验证",
+      "evidence": "轴对称瓶子的侧/背视图与正面高度相似，没有独立视角证据，未见部位为模型推断；不能据此确认真实三维结构。"
+    }
+  ],
+  "conclusion": "换成瓶子后，图鉴版式和组件标注可用；严格多视图几何保真尚未验证，不能作为真实工业资料直接使用。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:34:25+08:00",
+  "stability_verified": false
+}

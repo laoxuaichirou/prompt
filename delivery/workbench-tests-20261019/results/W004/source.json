@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[已投产·4分] 戒指.md",
+  "original_sha256": "05253dc98285ea1e21a1973f67c9d923906dc36e1a71b21b97aeb9fd71dc4452",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "双手交叠佩戴与绿绒八角盒两版均生成，包镶椭圆绿石和黄金融面戒圈大体延续；双手版无法可靠确认戒指位于要求的第四指，需人工复核。圆顶绿石未见原词要求的明显棱镜火彩，4K也未达到；中间单手子例未执行。 视觉评分为模型初评，单次不证明稳定性。",
+  "original_evidence_is_new_test": false
+}

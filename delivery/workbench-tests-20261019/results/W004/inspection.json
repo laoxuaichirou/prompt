@@ -1,0 +1,40 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W004/ring-hands.png",
+    "results/W004/ring-single.png",
+    "results/W004/ring-box.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三个子例覆盖",
+      "result": "已出图并打开",
+      "evidence": "双手佩戴、单手、珠宝盒共三图，全部已打开。"
+    },
+    {
+      "requirement": "戒指外观",
+      "result": "基本符合",
+      "evidence": "三图保留金色光滑包镶、椭圆绿石，无新增爪镶；不同图石头长宽观感略变。"
+    },
+    {
+      "requirement": "单手版约束",
+      "result": "不符合",
+      "evidence": "ring-single画面右下出现另一只手的手指，未满足single elegant hand。"
+    },
+    {
+      "requirement": "珠宝盒",
+      "result": "符合要求",
+      "evidence": "深绿绒面八角盒、黑背景、侧光与合成戒指存在。"
+    },
+    {
+      "requirement": "4K与宝石火彩",
+      "result": "不符合/未满足",
+      "evidence": "三图均1312×1199，非4K；主要是绿色光泽而非明显棱镜色散。"
+    }
+  ],
+  "conclusion": "三版本完整比较已执行；单手版多手、非4K及火彩要求未满足，不能标记原全部要求通过。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:34:25+08:00",
+  "stability_verified": false
+}

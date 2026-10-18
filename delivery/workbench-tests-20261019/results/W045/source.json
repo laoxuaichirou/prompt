@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/图像编辑/[已投产·4分] 高清修复提示词模板.md",
+  "original_sha256": "fdc9a8e2771a84e1aa8f27da46da7be77a35189a2b25ced1b0c43a4e43d51b24",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "合成降质人像视觉清理成功，但4K要求未满足；生成式纹理不是被证实的真实信息恢复。",
+  "original_evidence_is_new_test": false
+}

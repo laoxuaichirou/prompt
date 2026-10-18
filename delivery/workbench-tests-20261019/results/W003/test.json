@@ -1,0 +1,51 @@
+{
+  "test_id": "W003",
+  "source_id": "T018",
+  "title": "极简白底高端产品工业图鉴",
+  "categories": [
+    "product"
+  ],
+  "type": "JSON直接生图/参考编辑",
+  "test_input": "更换为琥珀玻璃瓶，测试模板不预设产品类别的泛化；单张包含多视图与标注。",
+  "reference_material": [
+    "materials/bottle-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+    "取原完整英文JSON，去除元数据、外链示例图与重复中文版本。",
+    "无品牌输入用UNBRANDED，不虚构品牌；新增产品身份绑定。",
+    "换商品后的多视图结构、标注指向与不可见信息需重新验收。"
+  ],
+  "selected_source_prompt": "{\n  \"reference\": {\n    \"type\": \"image\",\n    \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\"\n  },\n  \"scene\": {\n    \"description\": \"Minimal, premium product presentation layout inspired by high-end industrial design and product documentation.\",\n    \"background\": \"Pure white, clean, distraction-free\"\n  },\n  \"layout\": {\n    \"top_left\": {\n      \"content\": \"Brand name\",\n      \"style\": \"Modern sans-serif typography, subtle, elegant\"\n    },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\n        \"Primary front or main view\",\n        \"Secondary side view\",\n        \"Alternate angle or rear view\",\n        \"Detail or top view if applicable\"\n      ],\n      \"arrangement\": \"Vertically stacked, evenly spaced, aligned\"\n    },\n    \"right_section\": {\n      \"content\": \"Main hero product render\",\n      \"style\": \"Large, dominant, photorealistic\",\n      \"lighting\": \"Soft studio lighting\",\n      \"materials\": \"Visually accurate to the uploaded product\"\n    }\n  },\n  \"annotations\": {\n    \"analysis_phase\": [\n      \"Visually analyze the product to identify distinct physical components\",\n      \"Determine visible materials, surfaces, interfaces, and structures\",\n      \"Ignore assumed internal mechanisms or hidden features\"\n    ],\n    \"binding_rules\": [\n      \"Each annotation line must point to one clearly visible component\",\n      \"Each label must describe exactly what that component is and does, based only on visual evidence\",\n      \"No label may rely on the product category for meaning\",\n      \"One line equals one component equals one explanation\"\n    ],\n    \"line_style\": {\n      \"type\": \"Hairline-thin vector lines\",\n      \"color\": \"Neutral light gray\",\n      \"termination\": \"Exact contact point on the referenced component\"\n    },\n    \"labels\": {\n      \"content_rules\": [\n        \"Use neutral, descriptive nouns (e.g. outer shell, surface panel, joint, opening, interface, edge, enclosure)\",\n        \"Mention material only if visually identifiable\",\n        \"Mention function only if structurally implied\",\n        \"Avoid category-specific terminology unless clearly visible\"\n      ],\n      \"placement_rules\": [\n        \"Place text outside the product silhouette\",\n        \"Maintain consistent spacing\",\n        \"Avoid overlaps\",\n        \"Align labels for technical clarity\"\n      ],\n      \"tone\": \"Factual, precise, non-marketing\",\n      \"typography\": \"Minimal technical sans-serif\"\n    }\n  },\n  \"visual_style\": {\n    \"aesthetic\": \"Scandinavian, modern, industrial documentation\",\n    \"mood\": \"Calm, precise, professional\",\n    \"color_palette\": \"Neutral and restrained\"\n  },\n  \"rendering\": {\n    \"quality\": \"Ultra-high resolution\",\n    \"shadows\": \"Soft and realistic\",\n    \"accuracy\": \"Exact proportions and geometry fidelity\"\n  },\n  \"rules\": {\n    \"do_not\": [\n      \"Assume product category\",\n      \"Hallucinate features\",\n      \"Use generic marketing language\",\n      \"Mismatch labels and components\",\n      \"Decorate annotation lines\"\n    ],\n    \"focus_on\": [\n      \"Visual truth\",\n      \"Semantic correctness\",\n      \"Component-level understanding\",\n      \"Professional design documentation\"\n    ]\n  }\n}\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "bottle-atlas",
+      "final_prompt": "Create one product documentation image from the following JSON, using the attached amber bottle reference as the sole product truth. This tests a different product category from the prior sneaker example. The reference is unbranded, so the top-left factual label is UNBRANDED. Label only visible components; do not add dimensions, performance, material certifications or hidden mechanisms. The black screw cap, amber body and base must remain geometrically consistent across views. Unseen views are synthetic inference and cannot establish real hidden details. Render the image, not a JSON text response.\n{\n  \"reference\": {\n    \"type\": \"image\",\n    \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\"\n  },\n  \"scene\": {\n    \"description\": \"Minimal, premium product presentation layout inspired by high-end industrial design and product documentation.\",\n    \"background\": \"Pure white, clean, distraction-free\"\n  },\n  \"layout\": {\n    \"top_left\": {\n      \"content\": \"Brand name\",\n      \"style\": \"Modern sans-serif typography, subtle, elegant\"\n    },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\n        \"Primary front or main view\",\n        \"Secondary side view\",\n        \"Alternate angle or rear view\",\n        \"Detail or top view if applicable\"\n      ],\n      \"arrangement\": \"Vertically stacked, evenly spaced, aligned\"\n    },\n    \"right_section\": {\n      \"content\": \"Main hero product render\",\n      \"style\": \"Large, dominant, photorealistic\",\n      \"lighting\": \"Soft studio lighting\",\n      \"materials\": \"Visually accurate to the uploaded product\"\n    }\n  },\n  \"annotations\": {\n    \"analysis_phase\": [\n      \"Visually analyze the product to identify distinct physical components\",\n      \"Determine visible materials, surfaces, interfaces, and structures\",\n      \"Ignore assumed internal mechanisms or hidden features\"\n    ],\n    \"binding_rules\": [\n      \"Each annotation line must point to one clearly visible component\",\n      \"Each label must describe exactly what that component is and does, based only on visual evidence\",\n      \"No label may rely on the product category for meaning\",\n      \"One line equals one component equals one explanation\"\n    ],\n    \"line_style\": {\n      \"type\": \"Hairline-thin vector lines\",\n      \"color\": \"Neutral light gray\",\n      \"termination\": \"Exact contact point on the referenced component\"\n    },\n    \"labels\": {\n      \"content_rules\": [\n        \"Use neutral, descriptive nouns (e.g. outer shell, surface panel, joint, opening, interface, edge, enclosure)\",\n        \"Mention material only if visually identifiable\",\n        \"Mention function only if structurally implied\",\n        \"Avoid category-specific terminology unless clearly visible\"\n      ],\n      \"placement_rules\": [\n        \"Place text outside the product silhouette\",\n        \"Maintain consistent spacing\",\n        \"Avoid overlaps\",\n        \"Align labels for technical clarity\"\n      ],\n      \"tone\": \"Factual, precise, non-marketing\",\n      \"typography\": \"Minimal technical sans-serif\"\n    }\n  },\n  \"visual_style\": {\n    \"aesthetic\": \"Scandinavian, modern, industrial documentation\",\n    \"mood\": \"Calm, precise, professional\",\n    \"color_palette\": \"Neutral and restrained\"\n  },\n  \"rendering\": {\n    \"quality\": \"Ultra-high resolution\",\n    \"shadows\": \"Soft and realistic\",\n    \"accuracy\": \"Exact proportions and geometry fidelity\"\n  },\n  \"rules\": {\n    \"do_not\": [\n      \"Assume product category\",\n      \"Hallucinate features\",\n      \"Use generic marketing language\",\n      \"Mismatch labels and components\",\n      \"Decorate annotation lines\"\n    ],\n    \"focus_on\": [\n      \"Visual truth\",\n      \"Semantic correctness\",\n      \"Component-level understanding\",\n      \"Professional design documentation\"\n    ]\n  }\n}\n",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W003/bottle-atlas.png",
+          "width": 1222,
+          "height": 1287,
+          "sha256": "2ceba4f7e73c58dcbe94787ae8cf76bc9d1c2a977163c40951115763d7b4fef6",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-43643aaf-891f-4b66-9d4b-1ce8b68a057f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "generated_at": "2026-10-19T01:30:24+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:28:49+08:00"
+}

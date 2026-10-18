@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】服装立体化lora：3Dghostmannequin.md",
+  "original_sha256": "649dfe5d3bb13af23a67f17cf478c0a6a77bcae1725452dbcaa89d420d3a08f2",
+  "original_test_status": "符合要求",
+  "original_test_conclusion": "元输出按固定3Dghostmannequin开头与英文画质词结尾；实图仅保留蓝色V领短袖上衣，胸1下摆2贴袋、白色空白织标与侧开衩均在，无人体/模特/裤鞋/听诊器，立体中空质感基本符合本用例。未运行原ComfyUI/LoRA。 视觉评分为模型初评，单次不证明稳定性。",
+  "original_evidence_is_new_test": false
+}

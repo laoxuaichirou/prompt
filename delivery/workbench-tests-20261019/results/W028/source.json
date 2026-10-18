@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[已投产·5分] 【9宫格分镜】人物一致性分镜提示词.md",
+  "original_sha256": "37fbea188ff46a0f44a9d8303f29ed8c816b3421b4970f8891ddebb140e0f7bb",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "9格与大部分景别命中，人物/白衬衫黑裤/臂搭外套/黑包/右侧列车基本一致；首格ELS仍是近距离全身，与第二格重复，MLS也裁得偏近，不能给出9镜全命中。 模型单轮初评，未宣称视频通过。",
+  "original_evidence_is_new_test": false
+}

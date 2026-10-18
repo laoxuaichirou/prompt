@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
+  "original_sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "已完成两角色对比，保留了主要风格和背景；严格姿态锁定失败，语言识别不可验证。",
+  "original_evidence_is_new_test": false
+}

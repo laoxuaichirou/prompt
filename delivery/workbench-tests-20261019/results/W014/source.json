@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/人像摄影/[已投产·5分] AI时尚丨JSON人物场景动作丨LLM提示词优化.md",
+  "original_sha256": "86ff0fcbfd9f644a18a837f5f928054cf516790b35f3ecd61912d593ce78ee4c",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "三图融合4图已实测，场景与服装大体有效；动态姿势指令失效，景别多样性较有限。",
+  "original_evidence_is_new_test": false
+}

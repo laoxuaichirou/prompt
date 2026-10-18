@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[待测试·3分] 商业广告25分镜.md",
+  "original_sha256": "c91e24de6b945bc88e19a4fe2dee4eac29cdac9714fd4297b535cd29c4e35ea0",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "25格数量与大致三幕命中，边框、无遮挡和8K要求未满足；仅静态适配测试，不是视频生成通过。",
+  "original_evidence_is_new_test": false
+}

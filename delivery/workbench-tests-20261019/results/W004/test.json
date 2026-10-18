@@ -1,0 +1,93 @@
+{
+  "test_id": "W004",
+  "source_id": "T054",
+  "title": "戒指",
+  "categories": [
+    "product"
+  ],
+  "type": "直接图像编辑，三个完整子例",
+  "test_input": "同一合成包镶绿石戒指，分别测试双手佩戴、单手、珠宝盒三个原文版本。",
+  "reference_material": [
+    "materials/ring-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+    "清理外链图与编号残留，保留三个英文子例完整措辞。",
+    "明确使用同一戒指；新增身份绑定，不把外观当实际材质鉴定。",
+    "原文4K与prismatic fire保留，按实际像素和画面验收，不悄悄删掉要求。"
+  ],
+  "selected_source_prompt": "\n\n\n1：\nTransform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.\n1.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of a single elegant hand both holding and wearing the user-provided piece. The skin is flawless yet naturally textured, with refined anatomical detail that underscores quiet luxury. Set against a deep, pure black background, the composition isolates the jewelry with dramatic intensity. A strong cinematic spotlight strikes the gemstones at a precise angle, igniting vivid brilliance and prismatic fire, while soft light gradients sculpt the contours of the hand without distraction. The atmosphere is bold, editorial, and unmistakably premium—evoking the visual language of a high-end jewelry campaign. Ultra-detailed, 4K resolution, minimalistic framing, with razor-sharp focus locked exclusively on the provided jewelry.\n1.\nAn ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.\nStrong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "ring-hands",
+      "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.",
+      "reference_material": [
+        "materials/ring-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W004/ring-hands.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "52d149d958bcd2e43168258f6215a768be3e419999fb91ff8b46c532f995dfab",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2ee29519-e081-4ad7-9d01-0278683b124e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "tool": "image_gen.imagegen",
+        "image_model": "未知"
+      },
+      "generated_at": "2026-10-19T01:30:24+08:00"
+    },
+    {
+      "case_id": "ring-single",
+      "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of a single elegant hand both holding and wearing the user-provided piece. The skin is flawless yet naturally textured, with refined anatomical detail that underscores quiet luxury. Set against a deep, pure black background, the composition isolates the jewelry with dramatic intensity. A strong cinematic spotlight strikes the gemstones at a precise angle, igniting vivid brilliance and prismatic fire, while soft light gradients sculpt the contours of the hand without distraction. The atmosphere is bold, editorial, and unmistakably premium—evoking the visual language of a high-end jewelry campaign. Ultra-detailed, 4K resolution, minimalistic framing, with razor-sharp focus locked exclusively on the provided jewelry.",
+      "reference_material": [
+        "materials/ring-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W004/ring-single.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "9d0dc7e701768305caecfa89c71bf66dcd223b5000dab1d9c59e08ff72c7d32a",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-436698dc-0f77-4c61-9ed6-93c1a9f5cb47.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:32:53+08:00"
+    },
+    {
+      "case_id": "ring-box",
+      "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nAn ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.\nStrong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.",
+      "reference_material": [
+        "materials/ring-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W004/ring-box.png",
+          "width": 1312,
+          "height": 1199,
+          "sha256": "fc1642a02832ef3cbd6d36feebde023b5bf12adc799e4177a5f146808f7fec98",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ca25d1b6-c551-46eb-b56a-df36376c7e68.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:32:53+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:28:49+08:00"
+}

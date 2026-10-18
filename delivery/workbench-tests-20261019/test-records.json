@@ -1,0 +1,561 @@
+[
+  {
+    "test": {
+      "test_id": "W001",
+      "source_id": "T097",
+      "title": "【电商】产品背景更换场景丨提示词优化",
+      "categories": [
+        "product",
+        "edit"
+      ],
+      "type": "元提示词→图像编辑",
+      "test_input": "同一无品牌琥珀瓶；输入：极简，大理石，暖光。检验背景替换与产品保留。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+        "执行原元提示词，得到少于100字符的Background change to指令，不另加产品描述。",
+        "选择此前未测试的大理石分支；不是三分支全部覆盖或稳定性检验。"
+      ],
+      "selected_source_prompt": "\n\nPrefix: Background change to Rules:Focus: Lighting, atmosphere, textures, and depth.Strictly No Subject: Never mention the product itself.Limit: Under 100 characters total.输入： 森林，丁达尔光输出： Background change to misty forest, ethereal Tyndall effect, soft sunlight, cinematic bokeh.输入： 极简，大理石，暖光输出： Background change to minimalist marble, warm sunset glow, soft shadows, clean studio vibe.输入： 雪地，清晨，冷色调输出： Background change to serene snow field, crisp morning air, cool blue tones, hazy horizon.\n<empty-block/>\n<empty-block/>\n",
+      "meta_output": "Background change to minimalist marble, warm sunset glow, soft shadows, clean studio vibe.",
+      "cases": [
+        {
+          "case_id": "marble",
+          "final_prompt": "Background change to minimalist marble, warm sunset glow, soft shadows, clean studio vibe.",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W001/marble.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "52a2187919ceea0392110c97b81c3ecd643f2b03afbb86133bb84ca6bc60ba79",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c063ef85-c084-420e-b512-0e6a6cd50a22.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "tool": "image_gen.imagegen",
+            "image_model": "未知"
+          },
+          "generated_at": "2026-10-19T01:28:49+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:28:49+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W001/marble.png"
+      ],
+      "checks": [
+        {
+          "requirement": "背景与光影",
+          "result": "符合要求",
+          "evidence": "原浅灰背景替换为米色大理石墙/台面与暖夕阳投影，出现自然接触与透光。"
+        },
+        {
+          "requirement": "产品保留",
+          "result": "符合要求",
+          "evidence": "黑色细纹旋盖、细颈圆肩、琥珀瓶身与厚底保留；没有增添标识。"
+        },
+        {
+          "requirement": "元提示词契约",
+          "result": "符合要求",
+          "evidence": "Background change to开头，90字符，小于100；未提及产品。"
+        }
+      ],
+      "conclusion": "大理石背景分支最小用例符合可见要求；本次没有验证其余分支或多次稳定性。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:34:25+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·3分] 【电商】产品背景更换场景丨提示词优化.md",
+      "original_sha256": "2cbefe180d6f4577db4a2911b3fbf2312ef76b5b4f555c2b80d97adb446342a4",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "短句背景优化的森林最小用例符合主要要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W002",
+      "source_id": "T085",
+      "title": "kontext电商手持商品",
+      "categories": [
+        "product"
+      ],
+      "type": "双参考图像编辑",
+      "test_input": "图1商品，图2合成成人手；从张开手掌改为握持同一商品。",
+      "reference_material": [
+        "materials/bottle-synthetic.png",
+        "materials/palm-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+        "原文酒瓶泛化为无品牌玻璃饮品瓶，保留握持目标。",
+        "原流程拼图改为两张独立参考，明确各图提供什么。"
+      ],
+      "selected_source_prompt": "\n\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/4c8639df-221c-43fb-9707-1c2d24ba4ac4/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663AM4DRLU%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T092025Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQClBN3VREf45I%2Fj8SSRzDhvFglLmtxzBt4qT8f5iZJPzwIgRlN3GCF3sdOxDx9lRNf6PdskiDPB5spZyiJJSeCXpccqiAQI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDL9D3fYyb8iLe84XAyrcA9Eb%2B12kpTL2BvqHKFjO%2Fk7YWW5X811QfFofmjt4yyFLobZFPaxjhWTce7TIDEYdIZyQ4fxI4ThluG3NrzdDn6JHZ09tyuRM26OMaDM7OxoWBuCWsjYYBIpzBTmJZlsjseSvRDonMAdM0jL4qXaLesslGAd%2B7UxzHNAlunWjPKr0rEKMyMYZGkJJ27CVQbcYnYvlDTonpYSJRDXzyod2SNicZYrjpJxSv5k51%2F6UJErGG1LZeK5MJmaG%2FZBRW8YIfwrlmaqjEOv4fLtFbISr4t%2BI%2BjVOh6GGPFJ8HFTMAsrUGhitvdj8ThSfGTWLtDO4kwpNMeovO6ELVswa%2BXyldHCoHJyte8ioerTNEws0fCAPGbQph5%2FHhIsL1oy%2F66XYGl9GL7sF0aKJ4Z8y4kR%2BBmn7UtP17vhMgHK3ehWDU2DZMka2nWoKJLEpHrYxMlm5PYho2HPlhtlin9xAvEG9Sn2hIhBNYFlTovrYk8rIjyL3f0GBRApOqAhv7zEZn5X31iujR%2BGW5WAZhio%2Bp30GxCCu3JNQxCXmhMZ34OdmXxEzkVoInrAtv%2F8PBUXlsFXPicsLT2TCkdp05q6S4idb5sjp6wTe7cO3S6O76e6jcj8NzPijVh3OZni%2BAbv0MK3RzNYGOqUBuEBMP%2F3rE5R%2Bssw6JMKeiEE8rFWroye2OX46p17ahp1bpy%2FuIBcXWgwdUz5Pz7Xj8iXp8S%2FmHRJnkG2fO%2BqwwnJwbZIGXyaXNpUFhm2k3meRis0cZ%2BQKYy8Pjpfcx2spFoH8nWiUN3HjsUXl2Y50YiPoxxEbjC%2FDxAmeXq%2B2bVZyAgaomyV504Ln4IelMW8osz73Y9E0ow5lHqEqn%2BherzzBQm6x&X-Amz-Signature=e6f2362cd90913fde23953e19e43d19fbf9bb4be22c69e33065b7df057b07094&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.2dd079fd-bc38-80e9-979e-cdf3b34bdf9c.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\n拼图加提示词：\nplace it in hand. 改变手势，手紧紧拿着握住酒瓶\n<empty-block/>\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "handheld",
+          "final_prompt": "Reference image 1 supplies the exact unbranded amber glass bottle, including the black ribbed screw cap, neck, rounded shoulders and thick transparent base. Reference image 2 supplies fictional adult hand anatomy and the light blue background. place it in hand. 改变手势，手紧紧拿着握住瓶子。Make one fictional adult hand naturally grip the lower bottle body, preserving the single bottle, its proportions and original cap. The complete bottle, cap and base remain visible. Five anatomically plausible fingers, convincing grip and contact shadows. Photorealistic commercial product shot. No added label, logo or text.",
+          "reference_material": [
+            "materials/bottle-synthetic.png",
+            "materials/palm-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W002/handheld.png",
+              "width": 941,
+              "height": 1672,
+              "sha256": "9bbb543ad95e0d0fce8663a17a63502f87180ef5f8aca36b810c658a6d7c94b5",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-dfc6e4e3-1c55-4452-b53a-d0e38660868d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "tool": "image_gen.imagegen",
+            "image_model": "未知"
+          },
+          "generated_at": "2026-10-19T01:30:24+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:28:49+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W002/handheld.png"
+      ],
+      "checks": [
+        {
+          "requirement": "单手自然握持",
+          "result": "符合要求",
+          "evidence": "一只手握持瓶身下部，四指与拇指位置可辨，未残留另一只戳指手。"
+        },
+        {
+          "requirement": "产品结构与完整性",
+          "result": "符合要求",
+          "evidence": "盖、肩、瓶底完整可见，颜色和轮廓与参考基本一致，未添加瓶贴。"
+        },
+        {
+          "requirement": "素材角色绑定",
+          "result": "符合要求",
+          "evidence": "商品来自图1，浅蓝背景及成人手提供图2构图，接触遮挡自然。"
+        }
+      ],
+      "conclusion": "双参考握瓶最小用例符合可见要求，不代表Kontext原模型实测。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:34:25+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·3分] kontext电商手持商品.md",
+      "original_sha256": "d4a4536335a11611f3450e13092ef81e55acab04cd4e3a3b4698f9f6e3b6445c",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "合成成年手握持无品牌瓶子最小用例符合主要要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W003",
+      "source_id": "T018",
+      "title": "极简白底高端产品工业图鉴",
+      "categories": [
+        "product"
+      ],
+      "type": "JSON直接生图/参考编辑",
+      "test_input": "更换为琥珀玻璃瓶，测试模板不预设产品类别的泛化；单张包含多视图与标注。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+        "取原完整英文JSON，去除元数据、外链示例图与重复中文版本。",
+        "无品牌输入用UNBRANDED，不虚构品牌；新增产品身份绑定。",
+        "换商品后的多视图结构、标注指向与不可见信息需重新验收。"
+      ],
+      "selected_source_prompt": "{\n  \"reference\": {\n    \"type\": \"image\",\n    \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\"\n  },\n  \"scene\": {\n    \"description\": \"Minimal, premium product presentation layout inspired by high-end industrial design and product documentation.\",\n    \"background\": \"Pure white, clean, distraction-free\"\n  },\n  \"layout\": {\n    \"top_left\": {\n      \"content\": \"Brand name\",\n      \"style\": \"Modern sans-serif typography, subtle, elegant\"\n    },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\n        \"Primary front or main view\",\n        \"Secondary side view\",\n        \"Alternate angle or rear view\",\n        \"Detail or top view if applicable\"\n      ],\n      \"arrangement\": \"Vertically stacked, evenly spaced, aligned\"\n    },\n    \"right_section\": {\n      \"content\": \"Main hero product render\",\n      \"style\": \"Large, dominant, photorealistic\",\n      \"lighting\": \"Soft studio lighting\",\n      \"materials\": \"Visually accurate to the uploaded product\"\n    }\n  },\n  \"annotations\": {\n    \"analysis_phase\": [\n      \"Visually analyze the product to identify distinct physical components\",\n      \"Determine visible materials, surfaces, interfaces, and structures\",\n      \"Ignore assumed internal mechanisms or hidden features\"\n    ],\n    \"binding_rules\": [\n      \"Each annotation line must point to one clearly visible component\",\n      \"Each label must describe exactly what that component is and does, based only on visual evidence\",\n      \"No label may rely on the product category for meaning\",\n      \"One line equals one component equals one explanation\"\n    ],\n    \"line_style\": {\n      \"type\": \"Hairline-thin vector lines\",\n      \"color\": \"Neutral light gray\",\n      \"termination\": \"Exact contact point on the referenced component\"\n    },\n    \"labels\": {\n      \"content_rules\": [\n        \"Use neutral, descriptive nouns (e.g. outer shell, surface panel, joint, opening, interface, edge, enclosure)\",\n        \"Mention material only if visually identifiable\",\n        \"Mention function only if structurally implied\",\n        \"Avoid category-specific terminology unless clearly visible\"\n      ],\n      \"placement_rules\": [\n        \"Place text outside the product silhouette\",\n        \"Maintain consistent spacing\",\n        \"Avoid overlaps\",\n        \"Align labels for technical clarity\"\n      ],\n      \"tone\": \"Factual, precise, non-marketing\",\n      \"typography\": \"Minimal technical sans-serif\"\n    }\n  },\n  \"visual_style\": {\n    \"aesthetic\": \"Scandinavian, modern, industrial documentation\",\n    \"mood\": \"Calm, precise, professional\",\n    \"color_palette\": \"Neutral and restrained\"\n  },\n  \"rendering\": {\n    \"quality\": \"Ultra-high resolution\",\n    \"shadows\": \"Soft and realistic\",\n    \"accuracy\": \"Exact proportions and geometry fidelity\"\n  },\n  \"rules\": {\n    \"do_not\": [\n      \"Assume product category\",\n      \"Hallucinate features\",\n      \"Use generic marketing language\",\n      \"Mismatch labels and components\",\n      \"Decorate annotation lines\"\n    ],\n    \"focus_on\": [\n      \"Visual truth\",\n      \"Semantic correctness\",\n      \"Component-level understanding\",\n      \"Professional design documentation\"\n    ]\n  }\n}\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "bottle-atlas",
+          "final_prompt": "Create one product documentation image from the following JSON, using the attached amber bottle reference as the sole product truth. This tests a different product category from the prior sneaker example. The reference is unbranded, so the top-left factual label is UNBRANDED. Label only visible components; do not add dimensions, performance, material certifications or hidden mechanisms. The black screw cap, amber body and base must remain geometrically consistent across views. Unseen views are synthetic inference and cannot establish real hidden details. Render the image, not a JSON text response.\n{\n  \"reference\": {\n    \"type\": \"image\",\n    \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\"\n  },\n  \"scene\": {\n    \"description\": \"Minimal, premium product presentation layout inspired by high-end industrial design and product documentation.\",\n    \"background\": \"Pure white, clean, distraction-free\"\n  },\n  \"layout\": {\n    \"top_left\": {\n      \"content\": \"Brand name\",\n      \"style\": \"Modern sans-serif typography, subtle, elegant\"\n    },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\n        \"Primary front or main view\",\n        \"Secondary side view\",\n        \"Alternate angle or rear view\",\n        \"Detail or top view if applicable\"\n      ],\n      \"arrangement\": \"Vertically stacked, evenly spaced, aligned\"\n    },\n    \"right_section\": {\n      \"content\": \"Main hero product render\",\n      \"style\": \"Large, dominant, photorealistic\",\n      \"lighting\": \"Soft studio lighting\",\n      \"materials\": \"Visually accurate to the uploaded product\"\n    }\n  },\n  \"annotations\": {\n    \"analysis_phase\": [\n      \"Visually analyze the product to identify distinct physical components\",\n      \"Determine visible materials, surfaces, interfaces, and structures\",\n      \"Ignore assumed internal mechanisms or hidden features\"\n    ],\n    \"binding_rules\": [\n      \"Each annotation line must point to one clearly visible component\",\n      \"Each label must describe exactly what that component is and does, based only on visual evidence\",\n      \"No label may rely on the product category for meaning\",\n      \"One line equals one component equals one explanation\"\n    ],\n    \"line_style\": {\n      \"type\": \"Hairline-thin vector lines\",\n      \"color\": \"Neutral light gray\",\n      \"termination\": \"Exact contact point on the referenced component\"\n    },\n    \"labels\": {\n      \"content_rules\": [\n        \"Use neutral, descriptive nouns (e.g. outer shell, surface panel, joint, opening, interface, edge, enclosure)\",\n        \"Mention material only if visually identifiable\",\n        \"Mention function only if structurally implied\",\n        \"Avoid category-specific terminology unless clearly visible\"\n      ],\n      \"placement_rules\": [\n        \"Place text outside the product silhouette\",\n        \"Maintain consistent spacing\",\n        \"Avoid overlaps\",\n        \"Align labels for technical clarity\"\n      ],\n      \"tone\": \"Factual, precise, non-marketing\",\n      \"typography\": \"Minimal technical sans-serif\"\n    }\n  },\n  \"visual_style\": {\n    \"aesthetic\": \"Scandinavian, modern, industrial documentation\",\n    \"mood\": \"Calm, precise, professional\",\n    \"color_palette\": \"Neutral and restrained\"\n  },\n  \"rendering\": {\n    \"quality\": \"Ultra-high resolution\",\n    \"shadows\": \"Soft and realistic\",\n    \"accuracy\": \"Exact proportions and geometry fidelity\"\n  },\n  \"rules\": {\n    \"do_not\": [\n      \"Assume product category\",\n      \"Hallucinate features\",\n      \"Use generic marketing language\",\n      \"Mismatch labels and components\",\n      \"Decorate annotation lines\"\n    ],\n    \"focus_on\": [\n      \"Visual truth\",\n      \"Semantic correctness\",\n      \"Component-level understanding\",\n      \"Professional design documentation\"\n    ]\n  }\n}\n",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W003/bottle-atlas.png",
+              "width": 1222,
+              "height": 1287,
+              "sha256": "2ceba4f7e73c58dcbe94787ae8cf76bc9d1c2a977163c40951115763d7b4fef6",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-43643aaf-891f-4b66-9d4b-1ce8b68a057f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "tool": "image_gen.imagegen",
+            "image_model": "未知"
+          },
+          "generated_at": "2026-10-19T01:30:24+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:28:49+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W003/bottle-atlas.png"
+      ],
+      "checks": [
+        {
+          "requirement": "版式和文字",
+          "result": "符合要求",
+          "evidence": "UNBRANDED，左侧四视图，右侧大主图；白底和细线标注清楚。"
+        },
+        {
+          "requirement": "组件指向",
+          "result": "符合要求",
+          "evidence": "Screw cap、Neck、Glass body、Base的线端点落在相应可见区域，没有新增内部结构或性能。"
+        },
+        {
+          "requirement": "视图与几何真实性",
+          "result": "未验证",
+          "evidence": "轴对称瓶子的侧/背视图与正面高度相似，没有独立视角证据，未见部位为模型推断；不能据此确认真实三维结构。"
+        }
+      ],
+      "conclusion": "换成瓶子后，图鉴版式和组件标注可用；严格多视图几何保真尚未验证，不能作为真实工业资料直接使用。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:34:25+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·5分] 极简白底高端产品工业图鉴.md",
+      "original_sha256": "0ff6afd5a80955fdef8f80d7765e182ea94947542ef8a04345bcac6483f4d80e",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "版式有用，但视觉真实性约束不足，存在不可证实的新视图与结构用语；不能按真实工业资料直接验收。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W004",
+      "source_id": "T054",
+      "title": "戒指",
+      "categories": [
+        "product"
+      ],
+      "type": "直接图像编辑，三个完整子例",
+      "test_input": "同一合成包镶绿石戒指，分别测试双手佩戴、单手、珠宝盒三个原文版本。",
+      "reference_material": [
+        "materials/ring-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+        "清理外链图与编号残留，保留三个英文子例完整措辞。",
+        "明确使用同一戒指；新增身份绑定，不把外观当实际材质鉴定。",
+        "原文4K与prismatic fire保留，按实际像素和画面验收，不悄悄删掉要求。"
+      ],
+      "selected_source_prompt": "\n\n\n1：\nTransform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.\n1.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of a single elegant hand both holding and wearing the user-provided piece. The skin is flawless yet naturally textured, with refined anatomical detail that underscores quiet luxury. Set against a deep, pure black background, the composition isolates the jewelry with dramatic intensity. A strong cinematic spotlight strikes the gemstones at a precise angle, igniting vivid brilliance and prismatic fire, while soft light gradients sculpt the contours of the hand without distraction. The atmosphere is bold, editorial, and unmistakably premium—evoking the visual language of a high-end jewelry campaign. Ultra-detailed, 4K resolution, minimalistic framing, with razor-sharp focus locked exclusively on the provided jewelry.\n1.\nAn ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.\nStrong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "ring-hands",
+          "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.",
+          "reference_material": [
+            "materials/ring-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W004/ring-hands.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "52d149d958bcd2e43168258f6215a768be3e419999fb91ff8b46c532f995dfab",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2ee29519-e081-4ad7-9d01-0278683b124e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "tool": "image_gen.imagegen",
+            "image_model": "未知"
+          },
+          "generated_at": "2026-10-19T01:30:24+08:00"
+        },
+        {
+          "case_id": "ring-single",
+          "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nTransform the jewelry into a highly stylized, ultra-realistic close-up of a single elegant hand both holding and wearing the user-provided piece. The skin is flawless yet naturally textured, with refined anatomical detail that underscores quiet luxury. Set against a deep, pure black background, the composition isolates the jewelry with dramatic intensity. A strong cinematic spotlight strikes the gemstones at a precise angle, igniting vivid brilliance and prismatic fire, while soft light gradients sculpt the contours of the hand without distraction. The atmosphere is bold, editorial, and unmistakably premium—evoking the visual language of a high-end jewelry campaign. Ultra-detailed, 4K resolution, minimalistic framing, with razor-sharp focus locked exclusively on the provided jewelry.",
+          "reference_material": [
+            "materials/ring-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W004/ring-single.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "9d0dc7e701768305caecfa89c71bf66dcd223b5000dab1d9c59e08ff72c7d32a",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-436698dc-0f77-4c61-9ed6-93c1a9f5cb47.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:32:53+08:00"
+        },
+        {
+          "case_id": "ring-box",
+          "final_prompt": "Use the exact single synthetic ring in the attached reference: gold-colored smooth band, oval dark-green domed stone with a continuous bezel setting, no prongs, no additional jewelry. All hands are fictional adult hands. Preserve this ring design.\nAn ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.\nStrong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.",
+          "reference_material": [
+            "materials/ring-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W004/ring-box.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "fc1642a02832ef3cbd6d36feebde023b5bf12adc799e4177a5f146808f7fec98",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ca25d1b6-c551-46eb-b56a-df36376c7e68.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:32:53+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:28:49+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W004/ring-hands.png",
+        "results/W004/ring-single.png",
+        "results/W004/ring-box.png"
+      ],
+      "checks": [
+        {
+          "requirement": "三个子例覆盖",
+          "result": "已出图并打开",
+          "evidence": "双手佩戴、单手、珠宝盒共三图，全部已打开。"
+        },
+        {
+          "requirement": "戒指外观",
+          "result": "基本符合",
+          "evidence": "三图保留金色光滑包镶、椭圆绿石，无新增爪镶；不同图石头长宽观感略变。"
+        },
+        {
+          "requirement": "单手版约束",
+          "result": "不符合",
+          "evidence": "ring-single画面右下出现另一只手的手指，未满足single elegant hand。"
+        },
+        {
+          "requirement": "珠宝盒",
+          "result": "符合要求",
+          "evidence": "深绿绒面八角盒、黑背景、侧光与合成戒指存在。"
+        },
+        {
+          "requirement": "4K与宝石火彩",
+          "result": "不符合/未满足",
+          "evidence": "三图均1312×1199，非4K；主要是绿色光泽而非明显棱镜色散。"
+        }
+      ],
+      "conclusion": "三版本完整比较已执行；单手版多手、非4K及火彩要求未满足，不能标记原全部要求通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:34:25+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 戒指.md",
+      "original_sha256": "05253dc98285ea1e21a1973f67c9d923906dc36e1a71b21b97aeb9fd71dc4452",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "双手交叠佩戴与绿绒八角盒两版均生成，包镶椭圆绿石和黄金融面戒圈大体延续；双手版无法可靠确认戒指位于要求的第四指，需人工复核。圆顶绿石未见原词要求的明显棱镜火彩，4K也未达到；中间单手子例未执行。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W005",
+      "source_id": "T089",
+      "title": "电商详情页 元提示词",
+      "categories": [
+        "product",
+        "graphic"
+      ],
+      "type": "元提示词→四张独立商品图",
+      "test_input": "输入无品牌琥珀玻璃瓶；不提供文案，不指定数量，检验默认主图/细节/场景/创意四图及自动中文文案。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "本轮为工作台适配提示词，原文独立保留；生图工具适配不等于原指定模型实测。",
+        "本轮执行元提示词产生4段新中文提示词，不复用旧图或旧测试结论。",
+        "依原默认数量输出四张独立图，同一商品参考；原文示例不是输入商品事实。"
+      ],
+      "selected_source_prompt": "\n\n```bash\n# Role\n你是一位精通中国电商视觉营销的设计总监。\n\n# Goals\n根据用户输入的产品信息，输出**中文**的AI绘画提示词。提示词必须包含画面描述和**营销文案**的设计指令。\n\n# Rules\n1.  **文案生成策略**：\n    -   如果用户提供了文案，直接使用。\n    -   如果用户**未提供**文案，你必须根据产品特性自动撰写简短有力的**中文营销短语**（如：主标题、卖点词）。\n2.  **输出语言**：必须输出**中文**提示词（适合DALL-E 3、Midjourney V6或国产AI绘画模型）。\n3.  **格式规范**：\n    -   **纯净模式**：只输出提示词段落，不要输出“图片1”、“好的”、“以下是...”等任何多余文字。\n    -   **段落结构**：每张图的提示词写成**一段话**。多张图之间用空行分隔。\n    -   **内容结构**：[产品视觉描述] + [背景场景] + [中文文案指令] + [光影与画质修饰词]。\n4.  **数量策略**：用户未指定数量时，默认生成 **4张**（主图/细节/场景/创意）。\n\n# Output Template (Strict)\n(每一段话包含：主体+场景+文案+风格)\n\n# Example Interaction\n**User:** \"帮我生成橙汁的图，没说文案\"\n**Assistant:**\n一张极具食欲的电商海报，画面中心是一杯飞溅的鲜榨橙汁和切开的新鲜橙子，背景是阳光下的果园，画面正中央包含醒目的中文标题“鲜活维C”，字体设计圆润可爱，橙色主色调，水珠细节清晰，8k分辨率，商业摄影，微距质感。\n\n一张清爽的详情页插图，橙汁瓶身特写，周围环绕着冰块和薄荷叶，画面上方有精致的中文小字写着“0添加 纯天然”，高调摄影，明亮通透，极简主义风格，C4D渲染质感。\n\n（...以此类推）\n```\n",
+      "meta_output": "一张竖版电商主图，使用参考图中唯一的无品牌琥珀玻璃瓶，保持黑色细纹旋盖、细长瓶颈、圆肩、直筒瓶身和厚底，不添加标签。瓶子完整直立于浅米白圆台，暖白与淡琥珀渐变背景，左上方柔光，在顶部准确排版深棕中文主标题“日常，也有光”，下方小字“一只瓶子的简单美感”。克制留白、清楚玻璃边缘与自然接触阴影，不添加其他文字或产品功效。\n\n一张竖版电商细节图，同一参考琥珀玻璃瓶，仅近景展示黑色细纹旋盖、瓶颈与圆肩，保持盖和螺纹原结构，不改变产品。暖灰无缝背景、清晰侧光与真实玻璃高光，顶部准确排版中文“细节成章”，下方小字“盖纹 · 瓶颈 · 玻璃光影”。细节锐利，不增加商标、说明性参数或隐藏结构。\n\n一张竖版电商场景图，同一无标签琥珀玻璃瓶完整放在安静居家窗边的米色石台上，旁边是一只无标识陶杯，后方亚麻窗帘和柔焦绿植，瓶身形状、黑色细纹旋盖和厚底保持。自然午后窗光与可信透视，顶部留白准确排中文“留一刻从容”，下方小字“把日常放慢一点”。无人物、无其他文字、无功效或成分承诺。\n\n一张竖版电商创意图，同一无标签琥珀玻璃瓶完整直立于浅米色平台，后方为两条半透明琥珀色弧形雕塑，与瓶子清楚分离，不穿过玻璃。黑色细纹旋盖、瓶身比例和厚底不变。顶部准确排中文“光影成景”，下方小字“简单，也能有层次”。写实产品与抽象空间组合，柔和轮廓光和落地阴影，无其他文字或品牌。",
+      "cases": [
+        {
+          "case_id": "detail-01",
+          "final_prompt": "一张竖版电商主图，使用参考图中唯一的无品牌琥珀玻璃瓶，保持黑色细纹旋盖、细长瓶颈、圆肩、直筒瓶身和厚底，不添加标签。瓶子完整直立于浅米白圆台，暖白与淡琥珀渐变背景，左上方柔光，在顶部准确排版深棕中文主标题“日常，也有光”，下方小字“一只瓶子的简单美感”。克制留白、清楚玻璃边缘与自然接触阴影，不添加其他文字或产品功效。",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W005/detail-01.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "d96788ad5f2f1b93bf27a24775bbbfef450382d2ab3504d137aad93c829ef6b6",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6a6a49a8-a7fb-4830-ab45-885bbf1ebf8b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:32:53+08:00"
+        },
+        {
+          "case_id": "detail-02",
+          "final_prompt": "一张竖版电商细节图，同一参考琥珀玻璃瓶，仅近景展示黑色细纹旋盖、瓶颈与圆肩，保持盖和螺纹原结构，不改变产品。暖灰无缝背景、清晰侧光与真实玻璃高光，顶部准确排版中文“细节成章”，下方小字“盖纹 · 瓶颈 · 玻璃光影”。细节锐利，不增加商标、说明性参数或隐藏结构。",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W005/detail-02.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "710c0c6883a78a9b2576fffe6e6f54a4e623e859224dd8b3894db37b9815c834",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-61b91f51-48d8-40c6-b19f-281787bf899b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:34:39+08:00"
+        },
+        {
+          "case_id": "detail-03",
+          "final_prompt": "一张竖版电商场景图，同一无标签琥珀玻璃瓶完整放在安静居家窗边的米色石台上，旁边是一只无标识陶杯，后方亚麻窗帘和柔焦绿植，瓶身形状、黑色细纹旋盖和厚底保持。自然午后窗光与可信透视，顶部留白准确排中文“留一刻从容”，下方小字“把日常放慢一点”。无人物、无其他文字、无功效或成分承诺。",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W005/detail-03.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "545486629a0c73afe4e60cb65d105e2f9cedeb8049dd5f264dbd35ca2e7c5c13",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-aab48b63-b2bb-4bd3-a6c4-c8ce98d6b24e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:34:39+08:00"
+        },
+        {
+          "case_id": "detail-04",
+          "final_prompt": "一张竖版电商创意图，同一无标签琥珀玻璃瓶完整直立于浅米色平台，后方为两条半透明琥珀色弧形雕塑，与瓶子清楚分离，不穿过玻璃。黑色细纹旋盖、瓶身比例和厚底不变。顶部准确排中文“光影成景”，下方小字“简单，也能有层次”。写实产品与抽象空间组合，柔和轮廓光和落地阴影，无其他文字或品牌。",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W005/detail-04.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "89ba94447fbf7c50c127b29732fbd36b48609a322726223edd93937331092e8c",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-62703253-cd43-4ecc-8437-10d9cfbbd11e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:34:11+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:28:49+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W005/detail-01.png",
+        "results/W005/detail-02.png",
+        "results/W005/detail-03.png",
+        "results/W005/detail-04.png"
+      ],
+      "checks": [
+        {
+          "requirement": "默认四图与独立输出",
+          "result": "符合要求",
+          "evidence": "主图、细节、场景、创意四张独立1024×1536图片全部生成并打开。"
+        },
+        {
+          "requirement": "自动中文文案",
+          "result": "符合要求",
+          "evidence": "日常，也有光／细节成章／留一刻从容／光影成景及各自副标题可读，未添加品牌或成分功效。"
+        },
+        {
+          "requirement": "同一商品保留",
+          "result": "符合要求",
+          "evidence": "各图黑色细纹旋盖、细颈圆肩和琥珀玻璃保留，细节图按要求裁为近景。"
+        }
+      ],
+      "conclusion": "四段新元提示词及四图最小完整用例符合可见要求；未验证其他商品与多次稳定性。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:35:16+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 电商详情页 元提示词.md",
+      "original_sha256": "55b7284f50e51d3ad8f4aef6cd80013701bfaf73aad7b946917fc59dc3878c58",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "默认四图及中文文案最小用例符合主要要求，已实际比较四张输出。",
+      "original_evidence_is_new_test": false
+    }
+  }
+]

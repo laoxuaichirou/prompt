@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W001/marble.png"
+  ],
+  "checks": [
+    {
+      "requirement": "背景与光影",
+      "result": "符合要求",
+      "evidence": "原浅灰背景替换为米色大理石墙/台面与暖夕阳投影，出现自然接触与透光。"
+    },
+    {
+      "requirement": "产品保留",
+      "result": "符合要求",
+      "evidence": "黑色细纹旋盖、细颈圆肩、琥珀瓶身与厚底保留；没有增添标识。"
+    },
+    {
+      "requirement": "元提示词契约",
+      "result": "符合要求",
+      "evidence": "Background change to开头，90字符，小于100；未提及产品。"
+    }
+  ],
+  "conclusion": "大理石背景分支最小用例符合可见要求；本次没有验证其余分支或多次稳定性。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:34:25+08:00",
+  "stability_verified": false
+}

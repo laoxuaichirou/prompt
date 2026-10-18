@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/视频分镜/[仅参考·3分] QWEN3分镜元提示词.md",
+  "original_sha256": "5c9916c0a61f0b99d4db47cd6c62599ae57fe0c29eb9cb29d5174d9b1e88dc43",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "三张静态连续用例已生成并逐张检查，机位与杯位置一致性有偏差。",
+  "original_evidence_is_new_test": false
+}

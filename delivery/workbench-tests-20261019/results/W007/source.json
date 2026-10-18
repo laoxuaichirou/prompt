@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[已投产·4分] 多视角亚麻椅材质分解图.md",
+  "original_sha256": "f4b8843f6efd25eb3bf41bcfcd8a8b388eef483c30a924e8d10709aa98dbf905",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "三视图与材质分栏、亚麻/橡木/黑钢样本及文字可读，3:2成立；Frame标注线端点却落在座垫布面，未准确指向黑钢框架。多视图几何大体类似，不能当实物测量或真实材料鉴定。 视觉评分为模型初评，单次不证明稳定性。",
+  "original_evidence_is_new_test": false
+}

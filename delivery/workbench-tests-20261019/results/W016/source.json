@@ -1,0 +1,7 @@
+{
+  "original_filename": "提示词库/电商产品/[已投产·5分] 电商模特组图生成-根据需要修改.md",
+  "original_sha256": "408808cea0e8b5c778945a3c4ed27984e92116c4cfcae71f28b4e82cb36af21b",
+  "original_test_status": "存在问题",
+  "original_test_conclusion": "九景别最小用例已实测，大部分层级有效，MLS偏近；单张宫格不证明跨调用一致性。",
+  "original_evidence_is_new_test": false
+}
