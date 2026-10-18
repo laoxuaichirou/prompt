@@ -1,0 +1,30 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W026/action-01.png",
+    "results/W026/action-02.png",
+    "results/W026/action-03.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三个独立动作与表情",
+      "result": "基本符合",
+      "evidence": "抱臂坐姿、叉腰仰头笑、蹲下挥手明显不同；蹲姿的惊讶较弱"
+    },
+    {
+      "requirement": "身份服装场景保留",
+      "result": "基本符合",
+      "evidence": "同一稀疏发型男性与蓝服日落客厅，局部衣袋和陈设改变"
+    },
+    {
+      "requirement": "坐姿中景",
+      "result": "存在问题",
+      "evidence": "第一图保留整个人体至鞋，未按要求中景"
+    }
+  ],
+  "conclusion": "动作元提示词已执行并生成三图，景别控制和微表情存在偏差。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:19:10+08:00",
+  "stability_verified": false
+}

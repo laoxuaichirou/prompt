@@ -27,8 +27,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W026/action-01.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "9aa6a34e5eed03ef657a14901ef3b3f4bbdad9195e6b36c4c9b189508072bd3a",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-dcfa10ef-f1a8-43b5-8c98-f29d7878c2cb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:15:46+08:00"
     },
     {
       "case_id": "action-02",
@@ -36,8 +49,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W026/action-02.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "ce9f8a396cf46ae3b8df436dd14452ee7bb4e04118373c3e873b5e2815d57820",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-56b10b88-e81f-497b-85be-d99d0edaafd3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:17:24+08:00"
     },
     {
       "case_id": "action-03",
@@ -45,8 +71,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W026/action-03.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "cde23476f9e289b02a32e2f257712352d567c21a7d06002cdb76d1cd90c842aa",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a86d6151-c64d-4be0-aed2-987917c3d124.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:16:22+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:10:43+08:00"

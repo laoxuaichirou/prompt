@@ -1,0 +1,23 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W030/action-previs-eight.png"
+  ],
+  "checks": [
+    {
+      "requirement": "八节点4×2动作预演",
+      "result": "符合",
+      "evidence": "跑跳、下落、软垫落地、掩体、观察、蓄力、投掷命中八格清晰"
+    },
+    {
+      "requirement": "严格单线火柴人，禁止精修与阴影",
+      "result": "存在问题",
+      "evidence": "躯干与部分肢体使用双线/关节，背景有排线与细致材质，超过极简草图约束"
+    }
+  ],
+  "conclusion": "动作内容覆盖完整，但严格极简火柴人风格未满足；只是预演图。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:19:10+08:00",
+  "stability_verified": false
+}

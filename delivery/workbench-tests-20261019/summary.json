@@ -1,15 +1,14 @@
 {
-  "updated_at": "2026-10-19T02:14:52+08:00",
+  "updated_at": "2026-10-19T02:19:10+08:00",
   "scope_entries": 57,
   "prepared_entries": 30,
-  "entries_with_new_images": 25,
-  "output_images": 45,
-  "opened_images": 45,
+  "entries_with_new_images": 30,
+  "output_images": 52,
+  "opened_images": 52,
   "synthetic_materials": 10,
   "status_counts": {
-    "符合要求": 14,
-    "存在问题": 11,
-    "已准备，未执行生图": 5,
+    "符合要求": 15,
+    "存在问题": 15,
     "未执行": 27
   },
   "tool": "image_gen.imagegen",

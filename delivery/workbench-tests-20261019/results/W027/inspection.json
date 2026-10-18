@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W027/anime-four.png"
+  ],
+  "checks": [
+    {
+      "requirement": "四格双人正反打",
+      "result": "符合",
+      "evidence": "全景、越女肩看男、越男肩看女、两人走近笑"
+    },
+    {
+      "requirement": "人物服装风格连续",
+      "result": "符合",
+      "evidence": "黑短发橙外套女性与银灰发深蓝大衣男性贯穿四格"
+    },
+    {
+      "requirement": "16:9且无黑框英文",
+      "result": "符合",
+      "evidence": "原生2×2宽屏四格，无黑色分隔线与字幕"
+    }
+  ],
+  "conclusion": "最小四格用例主要符合，静态图不能证明视频通过。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:19:10+08:00",
+  "stability_verified": false
+}

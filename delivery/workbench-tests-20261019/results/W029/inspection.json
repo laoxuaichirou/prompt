@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W029/labeled-story-grid.png"
+  ],
+  "checks": [
+    {
+      "requirement": "九个标签与安全边距",
+      "result": "基本符合",
+      "evidence": "KF1–KF9及景别时长清楚，但额外生成整段中文说明，超出只要短标签的最终提示词"
+    },
+    {
+      "requirement": "镜头连续性",
+      "result": "存在问题",
+      "evidence": "KF7手触沙发后KF8又站立，连续动作存在回退"
+    },
+    {
+      "requirement": "无新增人物物件",
+      "result": "基本符合",
+      "evidence": "同一男性和参考客厅，未引入新人物"
+    }
+  ],
+  "conclusion": "规划与九格图均完成，标签冗余及镜头衔接存在问题；2s只是计划时长，未生成视频。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:19:10+08:00",
+  "stability_verified": false
+}

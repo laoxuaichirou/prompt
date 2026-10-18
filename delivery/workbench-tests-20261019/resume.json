@@ -1,71 +1,6 @@
 {
-  "next_test_id": "W026",
+  "next_test_id": "W031",
   "unfinished": [
-    {
-      "id": "W026",
-      "source_id": "T003",
-      "title": "LLM动作引擎（各类提示词示例）",
-      "categories": [
-        "story"
-      ],
-      "batch": 6,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W026"
-    },
-    {
-      "id": "W027",
-      "source_id": "T005",
-      "title": "四宫格分镜",
-      "categories": [
-        "story"
-      ],
-      "batch": 6,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W027"
-    },
-    {
-      "id": "W028",
-      "source_id": "T036",
-      "title": "【9宫格分镜】人物一致性分镜提示词",
-      "categories": [
-        "story"
-      ],
-      "batch": 6,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W028"
-    },
-    {
-      "id": "W029",
-      "source_id": "T037",
-      "title": "【九宫格】1图转电影分镜图提示词",
-      "categories": [
-        "story"
-      ],
-      "batch": 6,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W029"
-    },
-    {
-      "id": "W030",
-      "source_id": "T039",
-      "title": "分镜导演与动作编排专家",
-      "categories": [
-        "story"
-      ],
-      "batch": 6,
-      "status": "已准备，未执行生图",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W030"
-    },
     {
       "id": "W031",
       "source_id": "T040",
@@ -418,5 +353,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T02:14:52+08:00"
+  "updated_at": "2026-10-19T02:19:10+08:00"
 }

@@ -1,0 +1,23 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W028/continuity-nine.png"
+  ],
+  "checks": [
+    {
+      "requirement": "九景别包括微距仰俯",
+      "result": "符合",
+      "evidence": "九格含手部微距、低机位及明显俯视；脸服场景基本一致"
+    },
+    {
+      "requirement": "叙事顺序连续",
+      "result": "存在问题",
+      "evidence": "第7格已手扶沙发，第8格又站立未扶，动作有回退；三四格转身逻辑较弱"
+    }
+  ],
+  "conclusion": "九格已实际生成，景别覆盖好，动作因果连续性不完整。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:19:10+08:00",
+  "stability_verified": false
+}
