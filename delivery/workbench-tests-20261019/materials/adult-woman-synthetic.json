@@ -1,0 +1,8 @@
+{
+  "type": "合成测试素材",
+  "prompt": "Create a single photorealistic studio reference photograph of one entirely fictional adult East Asian woman, age 32, full body including feet, facing the camera, arms resting naturally at her sides, neutral relaxed expression. Clearly visible oval face, straight black chin-length bob with a side part, dark brown almond-shaped eyes, a small dark beauty mark on her LEFT cheek below the eye. Plain white crewneck T-shirt, navy straight-leg trousers, white flat sneakers, no jewelry, no brand logos, no text. Even soft frontal studio light, plain light gray seamless background. Sharp natural skin texture, realistic proportions and hands. This is synthetic test material for character-consistency image editing, not a real person. Vertical portrait, high resolution, face sufficiently clear.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "file": "adult-woman-synthetic.png",
+  "inspection": "已打开：32岁设定的虚构成年女性，黑色短发、白T恤、藏蓝长裤、正面全身；人物左脸颊痣可见。"
+}

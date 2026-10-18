@@ -1,7 +1,17 @@
 {
-  "output_images": 98,
-  "opened": 98,
+  "output_images": 100,
+  "opened": 100,
   "source_hashes_verified": 57,
   "zip_crc_verified": true,
-  "original_scores_modified": false
+  "original_scores_modified": false,
+  "total_source_entries": 57,
+  "unfinished_entries": 0,
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "review_type": "模型视觉初评，稳定性未验证",
+  "png_sha256_dimensions_verified": 100,
+  "nonblank_png_verified": 100,
+  "html_images_verified": 162,
+  "preview_images": 100,
+  "original_png_archived_count": 100
 }

@@ -1,0 +1,9 @@
+{
+  "type": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "prompt": "Edit the supplied synthetic adult photograph only by adding test labels: put small black text TEST in each of the four corners, and a semi-transparent gray word DEMO diagonally across the empty gray area and part of the lower T-shirt. Keep the fictional adult woman, identity, face, hair, clothing, shoes, pose, lighting and entire framing exactly unchanged. The labels are ours and are being added solely to create synthetic material for testing removal of self-generated labels; they are not third-party watermarks.",
+  "reference": "adult-woman-synthetic.png",
+  "file": "marked-adult-synthetic.png",
+  "inspection": "已实际打开：四角TEST和中间斜向DEMO，均为本会话自加测试标签。"
+}

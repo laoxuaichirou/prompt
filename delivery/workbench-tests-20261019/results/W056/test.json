@@ -33,8 +33,21 @@
         "materials/bottle-synthetic.png",
         "results/W009/tv-room.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W056/bottle-in-room.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "07383beec89df3cdfe98bd39c7c41538c379f6a57186b05bc062ce8f5fabdd77",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-faa6d01b-09e7-406b-9ae0-840db368deac.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:53:33+08:00"
     }
   ],
   "prepared_at": "2026-10-19T02:49:07+08:00"

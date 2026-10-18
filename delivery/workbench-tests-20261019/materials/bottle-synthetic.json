@@ -1,0 +1,10 @@
+{
+  "file": "materials/bottle-synthetic.png",
+  "type": "合成测试素材",
+  "source": "/workspace/generated_images/exec-98c0f26e-9459-44c7-861f-82c9c00f2f99.png",
+  "prompt": "Synthetic test product material: one unbranded amber glass beverage bottle, about 300 ml in ordinary proportions, straight cylindrical body with a short gently rounded shoulder, narrow neck and plain matte black screw cap. No paper label, no printing, no embossing, no logo, no lettering, no barcode. Bottle contains transparent amber-colored liquid. Front three-quarter product photograph, bottle upright, entire cap and base in frame, pale gray seamless studio background and subtle contact shadow, large softbox light from upper left, realistic reflective glass. One bottle only, no hands or extra objects.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "opened": true,
+  "observation": "单只琥珀玻璃瓶、黑色旋盖、无任何标签/文字/商标；300ml是设定不是实测容量。"
+}

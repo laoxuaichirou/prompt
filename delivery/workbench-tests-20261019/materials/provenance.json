@@ -1,0 +1,100 @@
+[
+  {
+    "file": "materials/adult-man-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "7919b3137edd274b8c78191f051b03f553ce0ec55a1773d05dcbf33ddbc5b832",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/adult-woman-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "f384bd03a3277570677dc673d8e3734a8c02c76694e975298111ee99ec4eb91d",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/anime-adults-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "ac68fac540e3ceccb1e28bd8bd355dfb83fc1185cc9889243ba309ebe889e1ba",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/bottle-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "17e569f5d83f09789e14fb3e923b4b2d45a47a9f27b8f049fd7bdb2a4bee50a2",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/cartoon-dog-box-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "2bd57ead77dc69221bf31709acc652ddf53e4af6ea99d2809d8dd5b9d8c5a562",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/chair-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "9adcd3f0e8cf6239c280ed5726622f832b0bd3f88e1ed3b6e9cdecd9b25bebdc",
+    "origin": "本轮新生图",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/damaged-adult-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "e41853e4e4db06000af7205b4514ac6caa6631610038858f61a5ae2fd5b38805",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/marked-adult-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "c27ae55f9744256b8b9a1ca686b6028912784122e0b5ecc08437bfb1a739c901",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/palm-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "10ad0cbf702d609eebcd8dc7d79ea960d545a2c7f34f918506e98d808c2592ae",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/ring-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "ed5c2da2b4a0b792464df1c09f28cad02e1d756fa85032492eec6a4991b45de8",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/scrubs-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "eeffb98a53bc71db63061a8313d800d5a756e8eb0a93d8b3993b25b4a31d88e4",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/seated-adult-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "12ecc3c97e4a044cfa42c36f74fb4b88763aff097c537097034882a62634da77",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/sneaker-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "90c044490c8b744b131da031f6e2a76def82cebb5069ccb3fa5d254a93d8166b",
+    "origin": "上一轮合成素材复用",
+    "actual_image_model": "未知"
+  },
+  {
+    "file": "materials/television-synthetic.png",
+    "kind": "合成测试素材",
+    "sha256": "cc7aa411516da0cfc3feaf46b2a80ec8bcbea192682919389c3857d561018e3c",
+    "origin": "本轮新生图",
+    "actual_image_model": "未知"
+  }
+]

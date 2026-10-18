@@ -1,0 +1,10 @@
+{
+  "file": "materials/adult-man-synthetic.png",
+  "type": "合成测试素材",
+  "source": "/workspace/generated_images/exec-8ad0a91a-1686-4363-81f7-f928bbe16f6f.png",
+  "prompt": "Synthetic adult portrait test material: a wholly fictional 43-year-old East Asian man, natural average build, softly square oval face, dark brown eyes, straight nose, gently closed thin lips, short black hair with mild gray at the temples, clearly receding temples and sparse thinning hair across the front and crown. Very faint natural stubble, no glasses or hat, no tattoos, no scars. Plain light-gray crewneck shirt. Neutral clinical light-gray background, soft even frontal illumination, no beauty retouching, natural pores. Head and shoulders portrait with the entire scalp and hairline visible, slightly elevated camera looking down just enough to see the thinning top of the head. Calm neutral expression, no text or marks. This is not a real patient.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "opened": true,
+  "observation": "虚构43岁成年男子，前额/头顶稀疏黑发、灰T、浅灰底、略俯视头肩；不是临床患者或医疗记录。"
+}

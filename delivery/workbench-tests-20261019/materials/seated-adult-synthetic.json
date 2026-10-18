@@ -1,0 +1,9 @@
+{
+  "type": "合成测试素材",
+  "prompt": "Create one clean photorealistic reference photo of the SAME fictional 32-year-old adult woman from the supplied image in a SEATED POSE for a later poster test. Both legs are bent together and angled toward the viewer's right, one knee raised closer to her chest. Arms gently wrap around the raised knee with relaxed hands and fingers. Torso leans slightly back against a plain white low plinth. Calm thoughtful self-assured expression, looking slightly upward and to her left, not at camera. Preserve her oval face, side-parted black bob and left cheek beauty mark. Wear an unbranded ivory short-sleeve T-shirt, deep navy knee-length athletic pants and plain white sneakers; no logos or text. Full body including both feet inside frame, neutral gray seamless studio, soft even illumination. Synthetic adult test reference, not a real person.",
+  "reference": "adult-woman-synthetic.png",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "file": "seated-adult-synthetic.png",
+  "inspection": "已打开：同一虚构成年人、双腿弯曲，一膝抬高双手环绕，白上衣藏蓝中裤白鞋，灰棚坐姿。"
+}

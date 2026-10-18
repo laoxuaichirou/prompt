@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W057/botanical-observatory.png"
+  ],
+  "checks": [
+    {
+      "requirement": "先生成目标格式字符串",
+      "result": "符合",
+      "evidence": "已存单行MJ格式英文提示词，含双横线比例版本风格排除参数"
+    },
+    {
+      "requirement": "真实适配图主要视觉",
+      "result": "符合",
+      "evidence": "透明球内一棵树及黄铜走道，悬浮雾山，写实玻璃凝露与柔和日出光，无人无文字"
+    },
+    {
+      "requirement": "原模型及参数",
+      "result": "未测试",
+      "evidence": "实际为image_gen，后端未知；没有调用MJ或Z-image"
+    }
+  ],
+  "conclusion": "ChatGPT适配最小用例主要符合视觉要求；只验证生成图片，不验证MJ运行或版本参数。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:55:03+08:00",
+  "stability_verified": false
+}

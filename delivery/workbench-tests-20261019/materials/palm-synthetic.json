@@ -1,0 +1,10 @@
+{
+  "file": "materials/palm-synthetic.png",
+  "type": "合成测试素材",
+  "source": "/workspace/generated_images/exec-978d44b0-3994-4a31-9d7e-7b31832997e0.png",
+  "prompt": "Synthetic test material only: photorealistic close view of two adult hands on a solid pale-blue studio background, overhead oblique top-down camera. One open adult palm faces upward across the lower center, fingers relaxed and fully visible. A second adult hand enters gently from the right with only the index finger extended toward a point about 7 centimeters above the center of the palm, as if about to gently touch a tiny object's cheek; the other fingers are naturally curled. Nothing is in the palm, no miniature person, no toy, no text or marks. Soft even warm studio lighting, clean natural hands with believable anatomy. Vertical 9:16 framing.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "opened": true,
+  "observation": "单只向上张开的成人掌心与另一手的伸出食指，浅蓝背景；7cm并无标尺不能量化验证。非原库图2。"
+}

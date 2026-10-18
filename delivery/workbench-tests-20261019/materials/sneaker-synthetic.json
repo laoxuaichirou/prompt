@@ -1,0 +1,8 @@
+{
+  "type": "合成测试素材",
+  "prompt": "Generate a single photorealistic studio product reference image of ONE entirely fictional unbranded men's luxury-style low-top sneaker, three-quarter front-side view, pointing toward left, entire shoe visible on plain light-gray background. Smooth matte white leather upper, exactly seven pairs of white metal-free eyelets with flat white laces, rounded toe, exaggerated thick sculptural white rubber sole with a subtle tread edge, black suede heel tab with NO logos, NO words, NO symbols. Clean fine white stitching, soft even light, sharp texture and realistic proportions. This is a synthetic unbranded test product, not an existing real brand or exact existing model. No people, no labels, no text, no watermark.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "file": "sneaker-synthetic.png",
+  "inspection": "已打开：单只白色低帮厚底鞋、黑后跟片、无品牌字样。近侧可见约6个鞋带孔，不能把生成指令中的7对当作实际素材事实；另一侧和背面不可见。"
+}

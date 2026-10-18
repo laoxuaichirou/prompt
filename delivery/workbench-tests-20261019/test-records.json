@@ -6346,13 +6346,53 @@
             "materials/bottle-synthetic.png",
             "results/W009/tv-room.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W056/bottle-in-room.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "07383beec89df3cdfe98bd39c7c41538c379f6a57186b05bc062ce8f5fabdd77",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-faa6d01b-09e7-406b-9ae0-840db368deac.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:53:33+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:49:07+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W056/bottle-in-room.png"
+      ],
+      "checks": [
+        {
+          "requirement": "v4单段中文元输出",
+          "result": "符合",
+          "evidence": "只含最终生产提示词，不含解析、负向字段或开场白"
+        },
+        {
+          "requirement": "多图商品与环境融合",
+          "result": "基本符合",
+          "evidence": "琥珀瓶黑盖、厚底稳坐木茶几，有暖色透射和接触阴影，房间花朵电视保留"
+        },
+        {
+          "requirement": "指定物体尺度",
+          "result": "存在问题",
+          "evidence": "提示词要求瓶高约烛台两倍，实际视觉高度明显大于两倍，约五倍；构图也重新拉近"
+        }
+      ],
+      "conclusion": "商品入场景真实出图且融合自然，但明确尺度及原场景构图不完全保持，不能判完整通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:55:03+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词设计（教学用-反推部分修改）.md",
       "original_sha256": "49116938c3aa95107c8e1431fd9ce8c3929db81dab4eafb1d6e17760d6ccfd95",
@@ -6397,13 +6437,53 @@
           "case_id": "botanical-observatory",
           "final_prompt": "A suspended miniature botanical observatory inside a transparent glass sphere, delicate unbranded brass walkways surrounding a single small tree, hovering above a mist-filled mountain valley, intricate architectural concept art with realistic glass and weathered brass textures, wide establishing shot from a slightly elevated viewpoint, sphere centered in the upper third with mountains receding through layered fog, soft sunrise rim light and gentle volumetric rays, muted moss green and warm brass against cool slate blue, fine condensation beads on glass, quiet exploratory mood. Horizontal 16:9. No text, logos or humans.",
           "reference_material": [],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W057/botanical-observatory.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "280d1a6199bf421b1b175e0234e25b2dbf9f74174235714b4b3551fe1cf5062c",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2a84f28c-ff87-4de6-9d18-2c2cfba25d02.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:53:33+08:00"
         }
       ],
       "prepared_at": "2026-10-19T02:49:07+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W057/botanical-observatory.png"
+      ],
+      "checks": [
+        {
+          "requirement": "先生成目标格式字符串",
+          "result": "符合",
+          "evidence": "已存单行MJ格式英文提示词，含双横线比例版本风格排除参数"
+        },
+        {
+          "requirement": "真实适配图主要视觉",
+          "result": "符合",
+          "evidence": "透明球内一棵树及黄铜走道，悬浮雾山，写实玻璃凝露与柔和日出光，无人无文字"
+        },
+        {
+          "requirement": "原模型及参数",
+          "result": "未测试",
+          "evidence": "实际为image_gen，后端未知；没有调用MJ或Z-image"
+        }
+      ],
+      "conclusion": "ChatGPT适配最小用例主要符合视觉要求；只验证生成图片，不验证MJ运行或版本参数。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:55:03+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/模型工具/[仅参考·3分] MJ提示词生成器system prompt（原Z image页，标题错配）.md",
       "original_sha256": "b124838bdcb8809a2b1a81b283ad5d8f5c8438f08493608a08b50e784e62e92f",

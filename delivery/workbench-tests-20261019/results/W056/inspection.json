@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W056/bottle-in-room.png"
+  ],
+  "checks": [
+    {
+      "requirement": "v4单段中文元输出",
+      "result": "符合",
+      "evidence": "只含最终生产提示词，不含解析、负向字段或开场白"
+    },
+    {
+      "requirement": "多图商品与环境融合",
+      "result": "基本符合",
+      "evidence": "琥珀瓶黑盖、厚底稳坐木茶几，有暖色透射和接触阴影，房间花朵电视保留"
+    },
+    {
+      "requirement": "指定物体尺度",
+      "result": "存在问题",
+      "evidence": "提示词要求瓶高约烛台两倍，实际视觉高度明显大于两倍，约五倍；构图也重新拉近"
+    }
+  ],
+  "conclusion": "商品入场景真实出图且融合自然，但明确尺度及原场景构图不完全保持，不能判完整通过。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:55:03+08:00",
+  "stability_verified": false
+}

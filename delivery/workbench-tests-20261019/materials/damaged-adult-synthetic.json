@@ -1,0 +1,9 @@
+{
+  "type": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "prompt": "Edit this synthetic adult reference photograph into intentionally degraded synthetic TEST MATERIAL for a restoration benchmark. Keep the same 32-year-old adult woman, exact full-body framing, face shape, hairstyle, white T-shirt, navy trousers, white sneakers, neutral standing pose, plain gray background and original lighting. Add clearly visible low-quality JPEG-like block artifacts, mild blur, smudged/plastic skin texture and random gray/color grain across the background. Do not add objects, text, watermarks, scars, injuries or new accessories. It should visibly need cleanup while the identity and pose remain recognizable. This is a synthetic degradation effect, not an original damaged historical photograph.",
+  "reference": "adult-woman-synthetic.png",
+  "file": "damaged-adult-synthetic.png",
+  "inspection": "已实际打开：明显彩色噪点、块状伪影、模糊；人物与姿态可辨。"
+}

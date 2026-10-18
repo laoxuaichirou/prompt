@@ -1,0 +1,10 @@
+{
+  "file": "materials/cartoon-dog-box-synthetic.png",
+  "type": "合成测试素材",
+  "source": "/workspace/generated_images/exec-3b5bd79d-e880-407b-9d3d-50326487a77b.png",
+  "prompt": "Synthetic test material, one whimsical polished 3D cartoon animation still, landscape 16:9. A small adult tricolor corgi dog with broad white face blaze, tan eyebrows and cheeks, black saddle, white paws, short legs and fluffy tail sits inside a plain open brown cardboard box on a garden stone path. No collar, clothes or logos. Dog is alert and cheerful, front paws resting inside the box, all four box flaps unfolded. Warm soft morning sunlight from upper left, green lawn and a low white picket fence behind, red and yellow flowers by the path, no frog yet. One continuous cozy garden setting. No people, writing or overlays. This is an invented animal and garden reference.",
+  "tool": "image_gen.imagegen",
+  "model": "未知",
+  "opened": true,
+  "observation": "虚构三色柯基坐敞口纸箱，暖光花园石径/白篱笆/红黄花。卡通渲染但毛发偏写实，前爪搭箱内沿；无文字、无青蛙。"
+}
