@@ -1,0 +1,31 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W017/pose-01.png",
+    "results/W017/pose-02.png",
+    "results/W017/pose-03.png",
+    "results/W017/pose-04.png"
+  ],
+  "checks": [
+    {
+      "requirement": "元提示词与四图完整性",
+      "result": "符合要求",
+      "evidence": "保存四行姿势方案，生成四张独立图并打开；站立/低位弓步伸臂/行走/窗边凝望均区分。"
+    },
+    {
+      "requirement": "身份服装与场景",
+      "result": "基本符合",
+      "evidence": "同一男子、V领三前袋刷手服、电视花朵和湖景色调延续。"
+    },
+    {
+      "requirement": "指定景别与展示",
+      "result": "部分符合",
+      "evidence": "第4张设定中近景，实际为含腰部和大腿的中景；第1张三前袋可见，但抽绳被上衣覆盖，未实现方案中的所有服装展示细节。"
+    }
+  ],
+  "conclusion": "四动作功能已实际比较，仍有第4张景别和服装展示完整性问题。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:05:27+08:00",
+  "stability_verified": false
+}

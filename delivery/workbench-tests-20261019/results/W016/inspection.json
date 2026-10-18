@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W016/model-grid.png"
+  ],
+  "checks": [
+    {
+      "requirement": "九景别与1:1网格",
+      "result": "符合要求",
+      "evidence": "1254×1254原生3×3，前三格由环境到全身/中远，中排中景到脸部特写，末排袋位微距和低/高角度明显。"
+    },
+    {
+      "requirement": "人物/衣服/光影连续",
+      "result": "基本符合",
+      "evidence": "同一稀疏发际线男子、灰蓝三前袋刷手服与湖景暖光基本保留；远景脸细节和被遮部位不作完整保真保证。"
+    },
+    {
+      "requirement": "无文字",
+      "result": "符合要求",
+      "evidence": "九格无标题或景别字样。"
+    }
+  ],
+  "conclusion": "九景别模特组图新用例符合主要可见要求，不代表像素级身份或服装保真。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:05:27+08:00",
+  "stability_verified": false
+}

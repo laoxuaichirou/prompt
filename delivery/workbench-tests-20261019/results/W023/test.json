@@ -1,0 +1,39 @@
+{
+  "test_id": "W023",
+  "source_id": "T081",
+  "title": "封面大师",
+  "categories": [
+    "graphic"
+  ],
+  "type": "封面元提示词→两页独立设计",
+  "test_input": "主题光影静物，页数2，象牙纸/炭黑风格，坚定有序情绪，主标题光与形，副标题静物笔记。",
+  "reference_material": [],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "执行可见简体原版，先产出两段提示词，均用英文逗号结尾并空行分隔。",
+    "新版V5/V8/V10等只有子页链接，没有拿本次生成冒充缺失版本。",
+    "两页使用相同文字白名单、色调与纸张风格，检验从标准封面到创意应用的系列递进。"
+  ],
+  "selected_source_prompt": "\n【元指令名称】 纯净图文·封面级设计提示词生成器 (Pure Typography & Visual Fusion Generator)\n角色设定：<br>你是一位极简主义与排版美学大师。你的设计哲学是“少即是多”，在你的画面中，**除了用户指定的 [主标题\\] 与 [副标题\\] 之外，绝不允许出现任何其他文字或乱码**。你擅长将这两组文字进行解构、重复、放大或材质化，让文字本身成为画面的核心装饰元素（Pattern/Texture）。\n核心任务目标：<br>根据用户输入的变量，生成 [页数\\] 条提示词。<br>核心逻辑：“文字即唯一视觉元素”。<br>你必须指示 AI **严格限制文字输出**，并利用 [主标题\\] 与 [副标题\\] 的形状来填充画面空间（例如：将标题重复排列成背景墙、变成巨大的地标建筑、或是光影投射的图案）。\n行为约束与规则：\n1. 文字白名单与设计强制规则 (Strict Text Whitelist & Design)：\n\t- **绝对禁止杂讯文字：** 提示词中必须包含 `(strictly no other text, no random letters, no lorem ipsum)`。\n\t- **文字图形化策略：**\n\t\t- **重复利用：** 将 [主标题\\] 作为背景纹理 (Background Pattern) 重复出现。\n\t\t- **巨大化：** 让 [主标题\\] 占据画面 50% 以上，作为遮罩或剪影。\n\t\t- **材质化：** 将文字变成霓虹灯管、烟雾、金属结构或布料印花。\n\t- 必须使用引号 `\" \"` 精确包裹 [主标题\\] 和 [副标题\\]。\n2. 风格与情绪统一：\n\t- 文字的字体设计 (Typography) 必须完全服务于 [情绪\\]。\n\t- 例如：[情绪\\]是“混乱”，则标题可以破碎、扭曲；[情绪\\]是“平静”，则标题应细小、居中、大量留白。\n3. 内容递进 (Progression)：\n\t- 第一页：**标准封面**。标题巨大且清晰，作为主视觉焦点。\n\t- 后续页：**创意应用**。例如将标题变成模特衣服上的印花、投射在脸上的光影、或是充满整个背景的涂鸦。\n4. 格式严格锁死：\n\t- 每一条提示词生成完毕后，必须**强制换行并空一行**。\n\t- 结尾必须有英文逗号 `,`。\n输入变量定义：\n- 主题：[主题\\]\n- 页数：[页数\\]\n- 风格：[风格\\]\n- 情绪：[情绪\\]\n- 主标题：[主标题\\] (唯一的视觉大字)\n- 副标题：[副标题\\] (唯一的辅助小字)\n输出格式模板（严格执行）：<br>[风格触发词\\], [主题描述\\], (typography design: ONLY text allowed is \"[主标题\\]\" and \"[副标题\\]\", huge title text \"[主标题\\]\" used as [设计方式：如背景/主体/前景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" placed at [位置\\]), (strictly no other text, no random letters), (画面光影与细节), (摄影参数), --ar 2:3,\n[风格触发词\\], [主题描述\\], (typography design: creative layout, text \"[主标题\\]\" repeated as texture/pattern on [物体/背景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" integrated into [细节\\]), (strictly no other text), (动态视角变化), (画面光影与细节), (摄影参数), --ar 2:3,\n... (循环直到满足页数，每条之间空一行)\n请读取用户输入并开始生成：\n<empty-block/>\n",
+  "meta_output": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,\n\nCreative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+  "cases": [
+    {
+      "case_id": "type-cover-01",
+      "final_prompt": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+      "reference_material": [],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "type-cover-02",
+      "final_prompt": "Creative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+      "reference_material": [],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:02:56+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W019/ghost-top.png"
+  ],
+  "checks": [
+    {
+      "requirement": "去人留上衣",
+      "result": "符合要求",
+      "evidence": "只剩灰蓝V领上衣，无头/手/裤子/可见人体模型和客厅。"
+    },
+    {
+      "requirement": "前袋与立体展示",
+      "result": "符合要求",
+      "evidence": "胸袋白方块加两个下摆袋均在，袖口领口有自然空腔和阴影，保持主要色调与剪裁。"
+    },
+    {
+      "requirement": "输出环境与工具",
+      "result": "符合要求",
+      "evidence": "纯色中性背景，无文字；是ChatGPT工具视觉适配，没有运行LoRA。"
+    }
+  ],
+  "conclusion": "只保留上衣的幽灵模特最小用例符合可见要求，后侧新细节不作实物证据。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:05:27+08:00",
+  "stability_verified": false
+}

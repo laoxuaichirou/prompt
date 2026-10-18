@@ -1,0 +1,32 @@
+{
+  "test_id": "W021",
+  "source_id": "T030",
+  "title": "image-2水彩拼贴旅行海报提示词！",
+  "categories": [
+    "graphic"
+  ],
+  "type": "旅行海报直接模板，城市变量适配",
+  "test_input": "将广州示例泛化为杭州西湖，填入城市、地标及全部文案字段。",
+  "reference_material": [],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "只选原第一子例旅行海报，不把同页其他水彩肖像算覆盖。",
+    "替换城市与对应地标/文案，删除image-2聊天前缀；左下原空缺文字填写本轮测试句子，明确不是原版文案。",
+    "本轮为文生城市海报，不验证真实地理位置或用户照片迁移。"
+  ],
+  "selected_source_prompt": "\n\n# **image-2水彩拼贴旅行海报提示词！赶紧收藏**\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/0b49c9d9-495c-4dec-8460-000dcc1be24a/640_%2816%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466R6VBXL7S%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091821Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQDjtKt8ViankKEJJCZ3usVut6xaFOuP7u%2BasfgLCQlhRAIgXlWOV6VFKG5cLhgJyh09CgrT2Q3zKLgSTQN25DQAL7YqiAQI%2BP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDAAnOJGNFVlIuVgt%2BCrcAyo1HeevYdWZeG3TWHFgjuOqh8Jv9d7IYBN7gZ6ip3ZcK0oK4jVCbwGuc2xB%2F6nEPMj4aCMGaAavisEP2wFr6G%2FS29jLhiBnqP6UN19zsFMfZN3OFs84yMTmQOvdRXxi%2BRdkRbJ%2FJ%2Fvp9RdeHvcDYKbf31ld6MIWZBA0msp794d%2BI%2FIpSp44IieRBowx69G1exbfTt0c2ggTrpT6JpKzMIbbSlkxdUuA%2BZ5Jfy3lnP9u0GRGWBelXR36dsUsIphGuMj3yl3YHwsZ6yjdOfdTAlg6WoSbKvoSp8TQoxGTrfiFHlU%2BgSGYBM6tI9e7GmgjbkwJ1HzxguqK%2F6jBkSE%2FNJCvNQXPONbuXz636R9UxjDEwCcx0JqX4SQceBzUKjFCWo52gKjHiAZbiCTW9y1uBy6YtDrGo6pfeR68YnaUB6d7WUtKtBflarOQ9S6BqvL6HgR6%2FcKUQPzMz925Z1ENJFPLL%2BCEZJUs8gFtUb2JsuZD%2F%2BxTBxOPy09kjT6dpgxUUgFxfFtt4NlUCzGB%2BKUk7vChRc3MNlNHRC8hCTixazzGOuw7XBU%2BkUg0MaGQf1j9ZmsoP%2BGvS5x2ZhdVuROpccBeNcAeKWoHk1cJ4ZdnGpZi036udd5gvVdhbyKYMNbRzNYGOqUB%2FMEzzIPIxBFSjFcyHg95N%2BWv742AmxZIl1gj%2FpEU%2Fwaa8i9ccSsD2aweFqzuU2ffMvdPW9VhmIKNM9VLjvpJNTYfPPvUHh6bJJceM795kXUpAKiw4apj0v113VIYtEXpXZnQhVgWfmOTNWSez2DdTD81hME19WfwKxP4wWxaLc90JMi%2B1g0sRICpAJMzc2rEWxDsH3i3Dbc0S8wTttqdW3%2Fytkmg&X-Amz-Signature=ca2208d553beb4966cf49a7ba0fef9240aff072d646c607ef90850ac39c59133&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.395079fd-bc38-8039-9ec7-ff62a0e1e81d.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\nimage-2提示词： 创作一张以广州为主题的水彩拼贴风旅行海报，竖版构图。整体采用柔和粉彩色调与温暖的黄昏金色光影，画面轻盈通透，具有现代旅行海报与水彩绘画融合的艺术气质，结合插画感与照片拼贴感，氛围温暖、安静、富有诗意，细节丰富。 画面主体场景： 夕阳下的珠江人行道，右侧有一辆现代感轻轨列车，左侧是一位推着自行车缓步前行的人，步道上有一些悠闲散步的人群。步道两旁种有树木，整体呈现轻松惬意的城市岸边生活感。前方水面平静，倒映着傍晚柔和的金色光线。 背景内容： 远处是广州城市天际线，包含醒目的广州小蛮腰以及其他现代高楼建筑；珠江上观光游轮，岸边出现具有岭南风情的骑楼建筑群，建筑外墙带有壁画元素。 版式与文字设计： 左上角放置大标题：“GUANGZHOU 2026” 大标题下方放置小字副标题：“花城广州，浪漫美食” 右上角加入一组竖排中文文字，下方以小型大写字母写：“GUANGZHOU GUANGDONG” 左下角加入文字：，并搭配一个简洁的海浪图标 底部中间加入手写体文字：“Guangzhou” 右下角加入竖排列文字：“Harbor Art Light Rail People Slow Life”，并搭配一组竖排中文文字 视觉叠加效果： 在海报中加入半透明几何图形、水彩泼洒痕迹、青绿色与米色纹理叠层，使画面更具拼贴设计感与艺术海报气质。整体要有轻微纸张纹理、水彩晕染边缘、层次丰富但不杂乱。 风格要求： 现代旅行海报 × 水彩画 × 拼贴艺术，空气感强，柔和宁静，兼具设计感与观赏性，像高品质文艺城市旅行宣传海报，精致、高级、富有南方珠江城市的慢生活气息。\n",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "hangzhou-watercolor",
+      "final_prompt": "创作一张以杭州西湖为主题的水彩拼贴旅行海报，竖版3:4。柔和粉彩色调与黄昏金色光影，照片拼贴与水彩手绘融合，纸张纹理与晕染边缘清楚。主场景是夕阳下苏堤湖畔步道，一名虚构成年游客在左侧推着自行车缓行，岸边树木轻盈、水面平静倒映暖金色天光。背景远处为雷峰塔、石拱桥、湖上小船与江南屋檐，青绿和米色半透明几何片、水彩泼洒叠层有层次而不杂乱。左上大标题准确写“HANGZHOU 2026”，下方中文“湖山入画，慢游杭州”；右上竖排中文“西湖慢行”，下方小型大写“HANGZHOU ZHEJIANG”；左下短句“在湖边，等一场日落”配简洁水波图标；底部居中手写“Hangzhou”；右下竖排英文“Lake Art Boats People Slow Life”。无广州塔、轻轨或珠江游轮。温暖宁静、空气感强，现代文艺旅行宣传设计，不添加品牌与作者签名。",
+      "reference_material": [],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:02:56+08:00"
+}

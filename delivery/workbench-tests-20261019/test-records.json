@@ -1747,13 +1747,53 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W016/model-grid.png",
+              "width": 1254,
+              "height": 1254,
+              "sha256": "f1cb5a35afe84fc487b18d939e912ab5a852389939493bddc7a7fe30e5dad49d",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-aa45c6b8-b802-434b-99c6-98f89a503b1e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:01:06+08:00"
         }
       ],
       "prepared_at": "2026-10-19T01:55:44+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W016/model-grid.png"
+      ],
+      "checks": [
+        {
+          "requirement": "九景别与1:1网格",
+          "result": "符合要求",
+          "evidence": "1254×1254原生3×3，前三格由环境到全身/中远，中排中景到脸部特写，末排袋位微距和低/高角度明显。"
+        },
+        {
+          "requirement": "人物/衣服/光影连续",
+          "result": "基本符合",
+          "evidence": "同一稀疏发际线男子、灰蓝三前袋刷手服与湖景暖光基本保留；远景脸细节和被遮部位不作完整保真保证。"
+        },
+        {
+          "requirement": "无文字",
+          "result": "符合要求",
+          "evidence": "九格无标题或景别字样。"
+        }
+      ],
+      "conclusion": "九景别模特组图新用例符合主要可见要求，不代表像素级身份或服装保真。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:05:27+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/电商产品/[已投产·5分] 电商模特组图生成-根据需要修改.md",
       "original_sha256": "408808cea0e8b5c778945a3c4ed27984e92116c4cfcae71f28b4e82cb36af21b",
@@ -1792,8 +1832,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W017/pose-01.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "54c2540988e1615df13a0097d7b3614b0575b081c564eb84662fbf4e06e115dc",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-078eeda1-efd7-4d81-8867-2be184a9c379.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:02:22+08:00"
         },
         {
           "case_id": "pose-02",
@@ -1801,8 +1854,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W017/pose-02.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "e5dd59f6fa3bb8f816ada1225f4fea084d0d60292e875272fd3084b68fa4ab4e",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c97b72f7-7997-41de-b824-c81e14779730.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:03:24+08:00"
         },
         {
           "case_id": "pose-03",
@@ -1810,8 +1876,21 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W017/pose-03.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "9806403f027944ca432b80a637c16925590a63b1022b204c1361472c28dfad43",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3a8e8c80-a260-44f8-a7cd-8f3dd5231737.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:03:05+08:00"
         },
         {
           "case_id": "pose-04",
@@ -1819,13 +1898,56 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W017/pose-04.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "3220f9316cadad96ec7f954c860749d9727b2b1d876d7e3873fd17ac264d6a99",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ec8c7bc8-0362-4741-add9-0db794aea453.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:01:45+08:00"
         }
       ],
       "prepared_at": "2026-10-19T01:55:44+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W017/pose-01.png",
+        "results/W017/pose-02.png",
+        "results/W017/pose-03.png",
+        "results/W017/pose-04.png"
+      ],
+      "checks": [
+        {
+          "requirement": "元提示词与四图完整性",
+          "result": "符合要求",
+          "evidence": "保存四行姿势方案，生成四张独立图并打开；站立/低位弓步伸臂/行走/窗边凝望均区分。"
+        },
+        {
+          "requirement": "身份服装与场景",
+          "result": "基本符合",
+          "evidence": "同一男子、V领三前袋刷手服、电视花朵和湖景色调延续。"
+        },
+        {
+          "requirement": "指定景别与展示",
+          "result": "部分符合",
+          "evidence": "第4张设定中近景，实际为含腰部和大腿的中景；第1张三前袋可见，但抽绳被上衣覆盖，未实现方案中的所有服装展示细节。"
+        }
+      ],
+      "conclusion": "四动作功能已实际比较，仍有第4张景别和服装展示完整性问题。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:05:27+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】商业摄影.md",
       "original_sha256": "76d52004205b244daaf519d95e3b8c62f76c9a20e6351d60474669c8389a24cd",
@@ -1868,13 +1990,53 @@
             "materials/seated-adult-synthetic.png",
             "materials/scrubs-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W018/clothes-swap.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "bc620042a48f3dc35796b62f542a3823e7d9938c3043d0449c96579ea78891bb",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7359ebda-fcda-4b73-b6da-08ced2accdc0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:02:23+08:00"
         }
       ],
       "prepared_at": "2026-10-19T01:55:44+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W018/clothes-swap.png"
+      ],
+      "checks": [
+        {
+          "requirement": "换装与旧衣移除",
+          "result": "符合要求",
+          "evidence": "白T恤及深裤替换为灰蓝V领短袖与全长抽绳裤，白鞋保留，无听诊器。"
+        },
+        {
+          "requirement": "原身份姿态背景",
+          "result": "符合要求",
+          "evidence": "短波波头、脸颊痣、视线、双手抱膝及灰色阶梯构图基本保留，原裸露小腿由新裤覆盖。"
+        },
+        {
+          "requirement": "服装保真边界",
+          "result": "未完全验证",
+          "evidence": "胸前方块与大腿袋可见，下摆口袋/抽绳因坐姿和手臂遮挡未逐一核实；不作真实试衣尺码预测。"
+        }
+      ],
+      "conclusion": "精准换装最小用例符合主要可见要求，完整服装结构仍受遮挡限制。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:05:27+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
       "original_sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
@@ -1914,13 +2076,53 @@
           "reference_material": [
             "results/W014/fashion-01.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W019/ghost-top.png",
+              "width": 1312,
+              "height": 1199,
+              "sha256": "30038582c4004d22214876ef62e5bc56cbaab19ae4003d0a9b33f93c4f4ab725",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3c64ab12-3e40-4c08-bf00-dea265fc0129.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:02:56+08:00"
         }
       ],
       "prepared_at": "2026-10-19T01:55:44+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W019/ghost-top.png"
+      ],
+      "checks": [
+        {
+          "requirement": "去人留上衣",
+          "result": "符合要求",
+          "evidence": "只剩灰蓝V领上衣，无头/手/裤子/可见人体模型和客厅。"
+        },
+        {
+          "requirement": "前袋与立体展示",
+          "result": "符合要求",
+          "evidence": "胸袋白方块加两个下摆袋均在，袖口领口有自然空腔和阴影，保持主要色调与剪裁。"
+        },
+        {
+          "requirement": "输出环境与工具",
+          "result": "符合要求",
+          "evidence": "纯色中性背景，无文字；是ChatGPT工具视觉适配，没有运行LoRA。"
+        }
+      ],
+      "conclusion": "只保留上衣的幽灵模特最小用例符合可见要求，后侧新细节不作实物证据。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:05:27+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】服装立体化lora：3Dghostmannequin.md",
       "original_sha256": "649dfe5d3bb13af23a67f17cf478c0a6a77bcae1725452dbcaa89d420d3a08f2",
@@ -1959,18 +2161,330 @@
           "reference_material": [
             "materials/scrubs-synthetic.png"
           ],
-          "status": "未执行",
-          "images": []
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W020/floating-clothes.png",
+              "width": 1159,
+              "height": 1358,
+              "sha256": "b7daf69e32c0322eec67a77a74d894cf862168e3706a88952eea79e48f763dcf",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f0d75bc4-7138-4d83-8777-1ccd92c2dbce.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:03:24+08:00"
         }
       ],
       "prepared_at": "2026-10-19T01:55:44+08:00"
     },
-    "inspection": null,
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W020/floating-clothes.png"
+      ],
+      "checks": [
+        {
+          "requirement": "悬浮和无人体",
+          "result": "符合要求",
+          "evidence": "灰蓝上衣和裤子形成悬浮穿搭，下摆与地面有明显空隙及软影，无人物或衣架。"
+        },
+        {
+          "requirement": "服装主要细节",
+          "result": "基本符合",
+          "evidence": "V领短袖、胸袋白方块、两个下摆袋、抽绳与大腿袋保持；布料受隐形体积影响有褶皱和收腰观感，不证明精确版型。"
+        },
+        {
+          "requirement": "新增适配边界",
+          "result": "已记录",
+          "evidence": "原文只有一句概念，参考商品和细节控制为本轮新加，不冒充原版完整模板。"
+        }
+      ],
+      "conclusion": "悬浮服装概念的本轮参考适配符合主要视觉要求，不能视为原一句提示词独立效果或实物版型验证。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:05:27+08:00",
+      "stability_verified": false
+    },
     "source": {
       "original_filename": "提示词库/电商产品/[仅参考·2分] 衣服悬浮在空中.md",
       "original_sha256": "47409a2014d70965d62179eff307f2982f5fd3b0658e50eb2fbf4a08d5e4932c",
       "original_test_status": "符合要求",
       "original_test_conclusion": "空心人形由蓝色刷手服上衣和长裤形成，服装悬空有投影，无实际人体或模特，鞋和听诊器已移除；三上衣口袋与裤腿贴袋基本保留。原始单句很简略，本用例增加了明确的服装/形状输入，不代表裸句独立稳定性通过。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W021",
+      "source_id": "T030",
+      "title": "image-2水彩拼贴旅行海报提示词！",
+      "categories": [
+        "graphic"
+      ],
+      "type": "旅行海报直接模板，城市变量适配",
+      "test_input": "将广州示例泛化为杭州西湖，填入城市、地标及全部文案字段。",
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "只选原第一子例旅行海报，不把同页其他水彩肖像算覆盖。",
+        "替换城市与对应地标/文案，删除image-2聊天前缀；左下原空缺文字填写本轮测试句子，明确不是原版文案。",
+        "本轮为文生城市海报，不验证真实地理位置或用户照片迁移。"
+      ],
+      "selected_source_prompt": "\n\n# **image-2水彩拼贴旅行海报提示词！赶紧收藏**\n![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/0b49c9d9-495c-4dec-8460-000dcc1be24a/640_%2816%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466R6VBXL7S%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091821Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIQDjtKt8ViankKEJJCZ3usVut6xaFOuP7u%2BasfgLCQlhRAIgXlWOV6VFKG5cLhgJyh09CgrT2Q3zKLgSTQN25DQAL7YqiAQI%2BP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDAAnOJGNFVlIuVgt%2BCrcAyo1HeevYdWZeG3TWHFgjuOqh8Jv9d7IYBN7gZ6ip3ZcK0oK4jVCbwGuc2xB%2F6nEPMj4aCMGaAavisEP2wFr6G%2FS29jLhiBnqP6UN19zsFMfZN3OFs84yMTmQOvdRXxi%2BRdkRbJ%2FJ%2Fvp9RdeHvcDYKbf31ld6MIWZBA0msp794d%2BI%2FIpSp44IieRBowx69G1exbfTt0c2ggTrpT6JpKzMIbbSlkxdUuA%2BZ5Jfy3lnP9u0GRGWBelXR36dsUsIphGuMj3yl3YHwsZ6yjdOfdTAlg6WoSbKvoSp8TQoxGTrfiFHlU%2BgSGYBM6tI9e7GmgjbkwJ1HzxguqK%2F6jBkSE%2FNJCvNQXPONbuXz636R9UxjDEwCcx0JqX4SQceBzUKjFCWo52gKjHiAZbiCTW9y1uBy6YtDrGo6pfeR68YnaUB6d7WUtKtBflarOQ9S6BqvL6HgR6%2FcKUQPzMz925Z1ENJFPLL%2BCEZJUs8gFtUb2JsuZD%2F%2BxTBxOPy09kjT6dpgxUUgFxfFtt4NlUCzGB%2BKUk7vChRc3MNlNHRC8hCTixazzGOuw7XBU%2BkUg0MaGQf1j9ZmsoP%2BGvS5x2ZhdVuROpccBeNcAeKWoHk1cJ4ZdnGpZi036udd5gvVdhbyKYMNbRzNYGOqUB%2FMEzzIPIxBFSjFcyHg95N%2BWv742AmxZIl1gj%2FpEU%2Fwaa8i9ccSsD2aweFqzuU2ffMvdPW9VhmIKNM9VLjvpJNTYfPPvUHh6bJJceM795kXUpAKiw4apj0v113VIYtEXpXZnQhVgWfmOTNWSez2DdTD81hME19WfwKxP4wWxaLc90JMi%2B1g0sRICpAJMzc2rEWxDsH3i3Dbc0S8wTttqdW3%2Fytkmg&X-Amz-Signature=ca2208d553beb4966cf49a7ba0fef9240aff072d646c607ef90850ac39c59133&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.395079fd-bc38-8039-9ec7-ff62a0e1e81d.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)\nimage-2提示词： 创作一张以广州为主题的水彩拼贴风旅行海报，竖版构图。整体采用柔和粉彩色调与温暖的黄昏金色光影，画面轻盈通透，具有现代旅行海报与水彩绘画融合的艺术气质，结合插画感与照片拼贴感，氛围温暖、安静、富有诗意，细节丰富。 画面主体场景： 夕阳下的珠江人行道，右侧有一辆现代感轻轨列车，左侧是一位推着自行车缓步前行的人，步道上有一些悠闲散步的人群。步道两旁种有树木，整体呈现轻松惬意的城市岸边生活感。前方水面平静，倒映着傍晚柔和的金色光线。 背景内容： 远处是广州城市天际线，包含醒目的广州小蛮腰以及其他现代高楼建筑；珠江上观光游轮，岸边出现具有岭南风情的骑楼建筑群，建筑外墙带有壁画元素。 版式与文字设计： 左上角放置大标题：“GUANGZHOU 2026” 大标题下方放置小字副标题：“花城广州，浪漫美食” 右上角加入一组竖排中文文字，下方以小型大写字母写：“GUANGZHOU GUANGDONG” 左下角加入文字：，并搭配一个简洁的海浪图标 底部中间加入手写体文字：“Guangzhou” 右下角加入竖排列文字：“Harbor Art Light Rail People Slow Life”，并搭配一组竖排中文文字 视觉叠加效果： 在海报中加入半透明几何图形、水彩泼洒痕迹、青绿色与米色纹理叠层，使画面更具拼贴设计感与艺术海报气质。整体要有轻微纸张纹理、水彩晕染边缘、层次丰富但不杂乱。 风格要求： 现代旅行海报 × 水彩画 × 拼贴艺术，空气感强，柔和宁静，兼具设计感与观赏性，像高品质文艺城市旅行宣传海报，精致、高级、富有南方珠江城市的慢生活气息。\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "hangzhou-watercolor",
+          "final_prompt": "创作一张以杭州西湖为主题的水彩拼贴旅行海报，竖版3:4。柔和粉彩色调与黄昏金色光影，照片拼贴与水彩手绘融合，纸张纹理与晕染边缘清楚。主场景是夕阳下苏堤湖畔步道，一名虚构成年游客在左侧推着自行车缓行，岸边树木轻盈、水面平静倒映暖金色天光。背景远处为雷峰塔、石拱桥、湖上小船与江南屋檐，青绿和米色半透明几何片、水彩泼洒叠层有层次而不杂乱。左上大标题准确写“HANGZHOU 2026”，下方中文“湖山入画，慢游杭州”；右上竖排中文“西湖慢行”，下方小型大写“HANGZHOU ZHEJIANG”；左下短句“在湖边，等一场日落”配简洁水波图标；底部居中手写“Hangzhou”；右下竖排英文“Lake Art Boats People Slow Life”。无广州塔、轻轨或珠江游轮。温暖宁静、空气感强，现代文艺旅行宣传设计，不添加品牌与作者签名。",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:02:56+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/海报封面/[已投产·3分] image-2水彩拼贴旅行海报提示词！.md",
+      "original_sha256": "08c48b4413f86586e95a527d1f9d8935d80a098e1b84f89181f45b55cfa4ddbc",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "广州海报主要场景与标题命中，竖排及空缺文案处理有偏差；仅测第一子例。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W022",
+      "source_id": "T074",
+      "title": "封面常用提示词",
+      "categories": [
+        "graphic"
+      ],
+      "type": "人物封面底图参考编辑",
+      "test_input": "上传合成成年男子照片，测试右人左留白的封面背景布局。",
+      "reference_material": [
+        "materials/adult-man-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择可填人物描述的第二版，人物变量填入照片身份；不引入第一版固定美女描述。",
+        "严格保留原无文字要求；与此前人像目录的带标题适配分开。",
+        "8K未获工具保证，本版改成高细节目标并保存真实尺寸。"
+      ],
+      "selected_source_prompt": "<br>人物位于画面右侧约1/3至1/2区域，左侧大面积留白，整体构图严格遵循黄金分割比例。人物不居中、不贴边，与左侧留白形成清晰的视觉平衡。\n**人物描述：**<br>[这里放你具体的人物描述，比如：年轻女性，短发，侧身站立，面向左侧，表情自信，穿着简约白色T恤，自然光\\]\n**背景与氛围：**<br>背景极简，左侧为纯色或微弱渐变，右侧与人物融合处有轻微环境光过渡，无多余装饰元素，无文字，无水印，无图标。画面干净，层次清晰，高级感，摄影级质感，柔和光影，8K高清。\n<empty-block/>\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "cover-negative-space",
+          "final_prompt": "根据上传参考照片制作一张极简人物封面底图，横向3:2。使用同一虚构成年男子，保留稀疏后退发际线、短黑灰发、淡胡须、脸型、眼睛和灰色T恤，不换成年轻长发女性。人物为半身肖像，位于画面右侧约40%区域，头部完整、人物不贴边；左侧约60%是干净浅灰到米白的微弱渐变留白，人物不居中，构图视觉平衡。右侧轻微自然侧光过渡，背景没有任何物件。真实皮肤纹理与柔和摄影质感，无文字、无水印、无图标。输出高细节图片，实际像素以工具文件记录为准。",
+          "reference_material": [
+            "materials/adult-man-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:02:56+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/海报封面/[仅参考·3分] 封面常用提示词.md",
+      "original_sha256": "d23f22c6d8f53372faa2f7b60b2253723464adb93e4583aaa81324c2b55c79ce",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "封面核心布局符合要求；8K未达到，精确黄金分割未验证。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W023",
+      "source_id": "T081",
+      "title": "封面大师",
+      "categories": [
+        "graphic"
+      ],
+      "type": "封面元提示词→两页独立设计",
+      "test_input": "主题光影静物，页数2，象牙纸/炭黑风格，坚定有序情绪，主标题光与形，副标题静物笔记。",
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "执行可见简体原版，先产出两段提示词，均用英文逗号结尾并空行分隔。",
+        "新版V5/V8/V10等只有子页链接，没有拿本次生成冒充缺失版本。",
+        "两页使用相同文字白名单、色调与纸张风格，检验从标准封面到创意应用的系列递进。"
+      ],
+      "selected_source_prompt": "\n【元指令名称】 纯净图文·封面级设计提示词生成器 (Pure Typography & Visual Fusion Generator)\n角色设定：<br>你是一位极简主义与排版美学大师。你的设计哲学是“少即是多”，在你的画面中，**除了用户指定的 [主标题\\] 与 [副标题\\] 之外，绝不允许出现任何其他文字或乱码**。你擅长将这两组文字进行解构、重复、放大或材质化，让文字本身成为画面的核心装饰元素（Pattern/Texture）。\n核心任务目标：<br>根据用户输入的变量，生成 [页数\\] 条提示词。<br>核心逻辑：“文字即唯一视觉元素”。<br>你必须指示 AI **严格限制文字输出**，并利用 [主标题\\] 与 [副标题\\] 的形状来填充画面空间（例如：将标题重复排列成背景墙、变成巨大的地标建筑、或是光影投射的图案）。\n行为约束与规则：\n1. 文字白名单与设计强制规则 (Strict Text Whitelist & Design)：\n\t- **绝对禁止杂讯文字：** 提示词中必须包含 `(strictly no other text, no random letters, no lorem ipsum)`。\n\t- **文字图形化策略：**\n\t\t- **重复利用：** 将 [主标题\\] 作为背景纹理 (Background Pattern) 重复出现。\n\t\t- **巨大化：** 让 [主标题\\] 占据画面 50% 以上，作为遮罩或剪影。\n\t\t- **材质化：** 将文字变成霓虹灯管、烟雾、金属结构或布料印花。\n\t- 必须使用引号 `\" \"` 精确包裹 [主标题\\] 和 [副标题\\]。\n2. 风格与情绪统一：\n\t- 文字的字体设计 (Typography) 必须完全服务于 [情绪\\]。\n\t- 例如：[情绪\\]是“混乱”，则标题可以破碎、扭曲；[情绪\\]是“平静”，则标题应细小、居中、大量留白。\n3. 内容递进 (Progression)：\n\t- 第一页：**标准封面**。标题巨大且清晰，作为主视觉焦点。\n\t- 后续页：**创意应用**。例如将标题变成模特衣服上的印花、投射在脸上的光影、或是充满整个背景的涂鸦。\n4. 格式严格锁死：\n\t- 每一条提示词生成完毕后，必须**强制换行并空一行**。\n\t- 结尾必须有英文逗号 `,`。\n输入变量定义：\n- 主题：[主题\\]\n- 页数：[页数\\]\n- 风格：[风格\\]\n- 情绪：[情绪\\]\n- 主标题：[主标题\\] (唯一的视觉大字)\n- 副标题：[副标题\\] (唯一的辅助小字)\n输出格式模板（严格执行）：<br>[风格触发词\\], [主题描述\\], (typography design: ONLY text allowed is \"[主标题\\]\" and \"[副标题\\]\", huge title text \"[主标题\\]\" used as [设计方式：如背景/主体/前景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" placed at [位置\\]), (strictly no other text, no random letters), (画面光影与细节), (摄影参数), --ar 2:3,\n[风格触发词\\], [主题描述\\], (typography design: creative layout, text \"[主标题\\]\" repeated as texture/pattern on [物体/背景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" integrated into [细节\\]), (strictly no other text), (动态视角变化), (画面光影与细节), (摄影参数), --ar 2:3,\n... (循环直到满足页数，每条之间空一行)\n请读取用户输入并开始生成：\n<empty-block/>\n",
+      "meta_output": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,\n\nCreative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+      "cases": [
+        {
+          "case_id": "type-cover-01",
+          "final_prompt": "Minimalist editorial typography cover, ivory paper with charcoal ink, ordered and confident mood, only the title \"光与形\" and subtitle \"静物笔记\" are allowed. Huge clear Chinese title \"光与形\" occupies fifty to sixty percent of the cover as the sole visual centerpiece, precise bold modern glyphs, generous margins, small subtitle \"静物笔记\" below, restrained warm side illumination and subtle paper grain. Text itself is the visual artwork, no photographs, no objects, no people, no extra marks. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "type-cover-02",
+          "final_prompt": "Creative continuation of the same ivory and charcoal typography series, ordered and confident mood. The same large Chinese title \"光与形\" is sculpted from folded ivory paper, and its letter-shaped charcoal shadows form the background pattern; letters remain readable as that exact title, no invented glyphs. Small subtitle \"静物笔记\" is printed clearly near the bottom. Only these two quoted strings may appear. Directional warm side light, realistic paper relief, restrained depth and clean margins. Text is the sole visual form, no product or person. (strictly no other text, no random letters, no lorem ipsum). Portrait 2:3,",
+          "reference_material": [],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:02:56+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/海报封面/[已投产·4分] 封面大师.md",
+      "original_sha256": "4d2e365c6499f91f7abd22f227c64a2c530a2daac15948bc24d39b11601cff17",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "可见简体原版的两页最小用例符合要求；不代表缺失的发布版本或稳定性通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W024",
+      "source_id": "T084",
+      "title": "电商海报生成元提示词",
+      "categories": [
+        "graphic"
+      ],
+      "type": "电商海报元提示词→英文扩写→实际生图",
+      "test_input": "简单输入：琥珀瓶秋日光影海报，竖版3:4，标题光影日常，副标题在片刻里，发现简单。",
+      "reference_material": [
+        "materials/bottle-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "依原六段结构扩写为英文，段落用单换行连接，无空行。",
+        "本助手实际执行得到853个英文词，满足800-1500词契约；中文仅为需显示的指定文案。",
+        "原元提示词保留；所加参考商品绑定和无功效文案为本次具体输入，未复用旧测试图。"
+      ],
+      "selected_source_prompt": "\n\n你是一个专业的海报设计提示词扩写专家。当用户输入简单的海报描述时，你需要将其扩写成详细、专业、完整的图像生成提示词。<br>扩写原则<br>保持核心意图：所有扩写内容必须与用户原始描述紧密相关，不得偏离主题<br>逻辑层次清晰：按照\"整体风格→主体元素→背景环境→文字设计→光影效果→氛围情绪\"的顺序展开<br>细节丰富具体：添加颜色、材质、光影、构图、质感等可视化细节<br>无空行格式：生成的提示词必须连续成段，段落之间不要有空行<br>扩写结构框架<br>第一段-整体风格与构图：定义海报类型（促销/节日/产品/文化等）、视觉风格（3D/扁平/写实/插画等）、色彩基调（主色+辅色+强调色）、构图方式（中心/对角/三分法等）<br>第二段-主体元素描述：详细描述核心视觉主体（人物/产品/吉祥物/场景等），包括形态、质感、颜色、位置、动作姿态、细节特征<br>第三段-背景与环境：描述背景层次、空间深度、装饰元素、抽象图形、氛围道具，营造场景感<br>第四段-文字信息设计：说明标题文字的内容、字体风格、颜色、位置、大小比例、特效处理（渐变/描边/立体等）<br>第五段-光影与渲染效果：描述光源类型、光照方向、阴影处理、特殊效果（光晕/粒子/镜头光斑/体积光等）、材质表现<br>第六段-整体氛围总结：概括情绪基调（活力/宁静/奢华/温馨等）、视觉冲击力、目标感受<br>关键细节要素库<br>色彩描述：电光紫、洋红、青色、翡翠绿、深酒红、琥珀色、渐变、饱和度高、冷暖对比<br>材质质感：光泽、磨砂、金属、半透明、丝绒、水晶、液态、磨砂玻璃、拉丝<br>光影效果：体积光、环境光、定向光、柔光、硬光、光晕、镜头光斑、星芒、反射、漫射<br>构图术语：中心构图、对角线、三分法、对称、留白、层次感、景深、透视<br>风格关键词：3D立体、波普艺术、极简主义、赛博朋克、中国风、写实、插画风、扁平化<br>氛围情绪：活力四射、宁静致远、奢华高端、温馨治愈、神秘梦幻、热烈欢庆<br>输出要求<br>生成的提示词必须是英文（图像生成工具通用语言）<br>总长度控制在800-1500词之间<br>段落之间用换行连接，不要有空行<br>使用具体可视觉化的描述，避免抽象概念<br>保持语句流畅，适合直接用于图像生成<br>示例转换逻辑<br>用户输入：\"双12促销海报，天猫黑猫，热闹\"<br>你需扩写包含：节日主题定位、黑猫形象细节、舞台场景、色彩方案、文字排版、促销信息区域、光影特效、整体氛围等完整元素<br>现在请根据用户的简单描述，生成专业详细的海报提示词。\n",
+      "meta_output": "Create a refined vertical three by four commercial poster for a fictional unbranded amber glass bottle, using the uploaded product photograph as the single product reference. The user requests a quiet autumn light study rather than a discount promotion, so establish an elegant editorial arrangement with a warm cream background, amber highlights, and restrained dark brown typography. Place the complete bottle slightly below the visual center, with generous breathing room above its cap and comfortable margins beside its widest shoulder. Organize the composition around one dominant upright silhouette, a low circular platform, and two broad background shadows. The principal visual hierarchy is title, product, subtitle. Avoid framing the bottle with a busy border or filling empty space with decorative badges. Aim for an intentional premium still life whose material relationships, scale, and shadows are immediately understandable, with enough negative space for legible Chinese lettering.\nThe bottle must preserve the reference design: one black ribbed screw cap, a narrow neck, rounded shoulders, a cylindrical amber body, and a thick transparent glass base. Retain the original proportions and the clear separation between cap, neck, shoulder, and main body. Reproduce the visible amber transparency and liquid boundary without adding another vessel, a paper label, a brand logo, embossing, or a dispenser. The cap should remain a modest black component rather than becoming gold, silver, or transparent. Keep the neck straight, the cap attached, and the base resting level on the platform. Reflections may change to match the new studio environment, but they must follow the curved glass surfaces naturally. The product should be fully visible, sharply focused, and readily comparable with the input photograph. Do not infer nutritional properties, ingredients, medical uses, bottle volume, commercial value, or any hidden internal construction.\nBuild a restrained spatial environment from a matte cream circular platform on a seamless studio floor, a softly curved ivory backdrop, and one out of focus translucent amber panel positioned well behind the bottle. Separate the panel from the glass silhouette with visible negative space so that it never appears to pass through or become part of the product. Let a broad window shaped shadow cross the background diagonally without obscuring the title area. Use the floor and curved backdrop to establish continuous perspective rather than a flat cutout collage. The palette should remain predominantly cream and amber, with charcoal accents contributed by the cap and lettering. Avoid leaves, fruit, flowers, utensils, drinking glasses, or furniture because those additions could change the product story or imply ingredients not supplied by the user. Keep all background surfaces simple enough to support the hero object.\nRender the exact Chinese main title \"光影日常\" across the upper third in a clean, confident dark brown modern typeface, with balanced spacing and no missing, substituted, mirrored, or duplicated characters. Place the exact subtitle \"在片刻里，发现简单\" directly beneath the main title in a smaller size and lighter weight. Treat the comma as part of that supplied subtitle. These are the only permitted words in the image. Do not translate the Chinese, invent an English brand, add a price, include a sale percentage, introduce an ingredient list, or place tiny pseudo legal text along the bottom edge. Preserve a clear hierarchy between the large title and modest subtitle, and ensure both remain distinct from the cap and reflections. The lettering should look professionally printed within the composition, not floating as random fragments or distorted by the background panel.\nIlluminate the scene with a large warm key source from the upper left, a subtle neutral fill on the opposite side, and a narrow controlled edge highlight along the right shoulder. Keep the key light soft enough for believable gradients on the amber body while retaining a defined yet gentle contact shadow beneath the base. The translucent background panel can cast a pale amber reflection onto the floor, but it should not introduce a second bottle silhouette. Preserve natural dark transitions around the cap ribs and glass thickness. Avoid excessive bloom, clipped white reflections, neon outlines, artificial sparkles, floating dust, lens flare, and dramatic smoke. The product is the focus plane; the panel may be softly defocused while the title remains crisp and readable. Use realistic photographic surface response with subtle matte paper texture in the setting, rather than a toy like plastic finish.\nThe finished poster should communicate patient observation of ordinary light, using polished commercial still life photography with a restrained contemporary graphic sensibility. Maintain one bottle, one platform, two exact Chinese text strings, and a coherent warm neutral studio environment. The bottle is a fictional synthetic test product, so visual elegance must not be presented as proof of real material quality, beverage composition, or brand authenticity. Keep the reference silhouette recognizable even when the surrounding light changes. The bottom of the bottle should remain inside the frame, with no cropping of its cap or glass base. Deliver a single complete poster image with fine visible detail and the requested vertical composition. Do not return a mood board, several unrelated designs, a collage, a text explanation, or a JSON object. Actual output pixel dimensions will be recorded after generation rather than promised by decorative resolution keywords.",
+      "cases": [
+        {
+          "case_id": "expanded-poster",
+          "final_prompt": "Create a refined vertical three by four commercial poster for a fictional unbranded amber glass bottle, using the uploaded product photograph as the single product reference. The user requests a quiet autumn light study rather than a discount promotion, so establish an elegant editorial arrangement with a warm cream background, amber highlights, and restrained dark brown typography. Place the complete bottle slightly below the visual center, with generous breathing room above its cap and comfortable margins beside its widest shoulder. Organize the composition around one dominant upright silhouette, a low circular platform, and two broad background shadows. The principal visual hierarchy is title, product, subtitle. Avoid framing the bottle with a busy border or filling empty space with decorative badges. Aim for an intentional premium still life whose material relationships, scale, and shadows are immediately understandable, with enough negative space for legible Chinese lettering.\nThe bottle must preserve the reference design: one black ribbed screw cap, a narrow neck, rounded shoulders, a cylindrical amber body, and a thick transparent glass base. Retain the original proportions and the clear separation between cap, neck, shoulder, and main body. Reproduce the visible amber transparency and liquid boundary without adding another vessel, a paper label, a brand logo, embossing, or a dispenser. The cap should remain a modest black component rather than becoming gold, silver, or transparent. Keep the neck straight, the cap attached, and the base resting level on the platform. Reflections may change to match the new studio environment, but they must follow the curved glass surfaces naturally. The product should be fully visible, sharply focused, and readily comparable with the input photograph. Do not infer nutritional properties, ingredients, medical uses, bottle volume, commercial value, or any hidden internal construction.\nBuild a restrained spatial environment from a matte cream circular platform on a seamless studio floor, a softly curved ivory backdrop, and one out of focus translucent amber panel positioned well behind the bottle. Separate the panel from the glass silhouette with visible negative space so that it never appears to pass through or become part of the product. Let a broad window shaped shadow cross the background diagonally without obscuring the title area. Use the floor and curved backdrop to establish continuous perspective rather than a flat cutout collage. The palette should remain predominantly cream and amber, with charcoal accents contributed by the cap and lettering. Avoid leaves, fruit, flowers, utensils, drinking glasses, or furniture because those additions could change the product story or imply ingredients not supplied by the user. Keep all background surfaces simple enough to support the hero object.\nRender the exact Chinese main title \"光影日常\" across the upper third in a clean, confident dark brown modern typeface, with balanced spacing and no missing, substituted, mirrored, or duplicated characters. Place the exact subtitle \"在片刻里，发现简单\" directly beneath the main title in a smaller size and lighter weight. Treat the comma as part of that supplied subtitle. These are the only permitted words in the image. Do not translate the Chinese, invent an English brand, add a price, include a sale percentage, introduce an ingredient list, or place tiny pseudo legal text along the bottom edge. Preserve a clear hierarchy between the large title and modest subtitle, and ensure both remain distinct from the cap and reflections. The lettering should look professionally printed within the composition, not floating as random fragments or distorted by the background panel.\nIlluminate the scene with a large warm key source from the upper left, a subtle neutral fill on the opposite side, and a narrow controlled edge highlight along the right shoulder. Keep the key light soft enough for believable gradients on the amber body while retaining a defined yet gentle contact shadow beneath the base. The translucent background panel can cast a pale amber reflection onto the floor, but it should not introduce a second bottle silhouette. Preserve natural dark transitions around the cap ribs and glass thickness. Avoid excessive bloom, clipped white reflections, neon outlines, artificial sparkles, floating dust, lens flare, and dramatic smoke. The product is the focus plane; the panel may be softly defocused while the title remains crisp and readable. Use realistic photographic surface response with subtle matte paper texture in the setting, rather than a toy like plastic finish.\nThe finished poster should communicate patient observation of ordinary light, using polished commercial still life photography with a restrained contemporary graphic sensibility. Maintain one bottle, one platform, two exact Chinese text strings, and a coherent warm neutral studio environment. The bottle is a fictional synthetic test product, so visual elegance must not be presented as proof of real material quality, beverage composition, or brand authenticity. Keep the reference silhouette recognizable even when the surrounding light changes. The bottom of the bottle should remain inside the frame, with no cropping of its cap or glass base. Deliver a single complete poster image with fine visible detail and the requested vertical composition. Do not return a mood board, several unrelated designs, a collage, a text explanation, or a JSON object. Actual output pixel dimensions will be recorded after generation rather than promised by decorative resolution keywords.",
+          "reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:02:56+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/电商产品/[仅参考·4分] 电商海报生成元提示词.md",
+      "original_sha256": "bc67851d3df2947fc633d0e454e6fee4cc358e27e24fcc8a5b3621aaa04ab728",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "877词元提示词已执行并出图，主要内容符合，最终图片比例与扩写要求不符。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W025",
+      "source_id": "T002",
+      "title": "NanoBananaPro 分镜拆解助手（未测试）",
+      "categories": [
+        "story"
+      ],
+      "type": "剧本分镜元提示词→九镜JSON→原生九宫格",
+      "test_input": "成年男子在湖景客厅翻开旧书发现干叶，取出看向夕阳，夹回并合书微笑；参考本轮男子客厅图。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "执行可见优化版元提示词，得到仅JSON、九镜、每镜20-35英文词及强制排除标签；没有使用镜头运动词。",
+        "JSON的model字段保留原目标格式名，不代表实际调用该模型；实际工具和模型另记。",
+        "原Shot Composition Formula缺字段，未编造原缺失公式；按其他可见规则执行并记录此缺口。",
+        "参考身份与场景绑定属于本次适配，原生九格不代表视频通过。"
+      ],
+      "selected_source_prompt": "# Role\nYou are a \"Storyboard Deconstructor\" specialized for NanoBananaPro image generation. Your job: convert a Chinese script into a 3×3 grid of 9 distinct visual shots, output as clean JSON.\n\n# Core Principles\n1. **Tag-based syntax only** — never use full sentences. Format: `keyword, keyword, keyword`\n2. **Spatial precision** — every shot must specify where subjects are in frame\n3. **Visual continuity** — shots should feel like a sequence, not 9 random images\n4. **Brevity with clarity** — 20-35 English words per prompt. If a scene needs more, prioritize accuracy over word count\n\n# Shot Composition Formula\n +  +  +  +  + \n\n# Spatial Vocabulary (use at least one per shot)\n- Horizontal: left of frame, right of frame, center frame, crossing frame\n- Depth: foreground, midground, background, deep background\n- Relative: beside , facing camera, back to camera, over shoulder\n- Dynamic: entering frame, exiting frame, approaching, receding\n\n# Exclusion Tags (mandatory for every shot)\nno watermark, no timecode, no subtitles, no text overlay\n\n# Output Format\nReturn ONLY a JSON object. No markdown code blocks, no explanations before or after.\n\n{\n  \"model\": \"NanoBananaPro\",\n  \"aspect_ratio\": \"16:9\",\n  \"total_shots\": 9,\n  \"shots\": [\n    {\n      \"shot_number\": 1,\n      \"prompt\": \"wide shot, woman center frame, kneeling beside bed, moonlight through window, dark bedroom, cinematic noir, melancholic, no watermark, no timecode, no subtitles, no text overlay\"\n    },\n    {\n      \"shot_number\": 2,\n      \"prompt\": \"medium shot, man entering frame left, holding envelope, hallway shadows, suspenseful, film grain, no watermark, no timecode, no subtitles, no text overlay\"\n    }\n  ]\n}\n\n# Example: Good vs Bad\nBAD:  \"A woman is sitting on the bed and she looks sad because she received bad news\"\n      → Full sentence, no spatial data, vague emotion, no style tags\n\nGOOD: \"close-up, woman center frame, slumped on bed edge, tear on cheek, dim lamp light, desaturated tones, intimate drama, no watermark, no timecode, no subtitles, no text overlay\"\n      → Tag-based, spatial (center frame), specific pose, lighting defined, style tagged\n\n# Workflow\n1. Read the Chinese script, identify 9 key dramatic beats (not 9 equal time slices — pick the moments that MATTER)\n2. For each beat, determine: What is the visual hook? Where is the subject? What is the light doing?\n3. Write the prompt using the formula above\n4. Verify: every prompt has spatial data? exclusion tags? 20-35 words?\n5. Output JSON only\n\n# Critical Reminders\n- Shot 1 should establish the scene (wide/establishing)\n- Shot 9 should deliver the emotional climax or resolution\n- Middle shots (4-6) are for escalation — increase tension visually\n- If the script has dialogue, shots 3, 5, 7 are good for reaction close-ups\n- NEVER describe camera movement (e.g., \"panning\", \"tracking\") — NanoBananaPro generates still images, not frames from motion\n",
+      "meta_output": {
+        "model": "NanoBananaPro",
+        "aspect_ratio": "16:9",
+        "total_shots": 9,
+        "shots": [
+          {
+            "shot_number": 1,
+            "prompt": "wide establishing shot, reference man center frame, blue scrubs, closed book foreground table, sunset window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 2,
+            "prompt": "medium shot, reference man entering frame left, blue scrubs, hand approaching closed book, wooden table foreground, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 3,
+            "prompt": "close shot, reference man right of frame, blue scrubs, hands opening blank book, wooden table foreground, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 4,
+            "prompt": "insert close-up, dried leaf center frame, open blank book foreground, reference man blue sleeve beside book, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 5,
+            "prompt": "medium shot, reference man center frame, dried leaf held above open book, blue scrubs, sunset window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 6,
+            "prompt": "close-up, reference man right of frame, face turned toward sunset window, leaf foreground hand, blue collar, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 7,
+            "prompt": "medium close-up, reference man center frame, soft smile, leaf held beside chest, blue scrubs, lake window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 8,
+            "prompt": "insert close-up, reference man hands center frame, dried leaf returning between blank pages, blue sleeves, wooden table, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          },
+          {
+            "shot_number": 9,
+            "prompt": "wide shot, reference man right of frame, relaxed smile, closed book foreground table, sunset window background, blue scrubs, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "case_id": "leaf-story-grid",
+          "final_prompt": "Create one native 3 by 3 storyboard sheet, landscape 16:9 overall, nine equal panels, no captions or text. Match the same fictional adult man, gray-blue scrub outfit and lakeside room in the reference; keep his thinning hairline, short dark hair and facial stubble. The story is finding a dried leaf inside a book, looking at sunset, returning it and closing the book. Follow the following nine tag-only prompts in row-major order. The model field belongs to the source output format only; this request is an adaptation for the actual image tool.\n1: wide establishing shot, reference man center frame, blue scrubs, closed book foreground table, sunset window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n2: medium shot, reference man entering frame left, blue scrubs, hand approaching closed book, wooden table foreground, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n3: close shot, reference man right of frame, blue scrubs, hands opening blank book, wooden table foreground, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n4: insert close-up, dried leaf center frame, open blank book foreground, reference man blue sleeve beside book, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n5: medium shot, reference man center frame, dried leaf held above open book, blue scrubs, sunset window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n6: close-up, reference man right of frame, face turned toward sunset window, leaf foreground hand, blue collar, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n7: medium close-up, reference man center frame, soft smile, leaf held beside chest, blue scrubs, lake window background, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n8: insert close-up, reference man hands center frame, dried leaf returning between blank pages, blue sleeves, wooden table, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay\n9: wide shot, reference man right of frame, relaxed smile, closed book foreground table, sunset window background, blue scrubs, warm cinematic realism, no watermark, no timecode, no subtitles, no text overlay",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:02:56+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
+      "original_sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。",
       "original_evidence_is_new_test": false
     }
   }

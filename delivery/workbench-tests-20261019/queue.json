@@ -207,9 +207,9 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W016"
   },
   {
@@ -220,9 +220,9 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 4,
+    "opened_images": 4,
     "result_dir": "results/W017"
   },
   {
@@ -234,9 +234,9 @@
       "edit"
     ],
     "batch": 4,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W018"
   },
   {
@@ -247,9 +247,9 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W019"
   },
   {
@@ -260,9 +260,9 @@
       "fashion"
     ],
     "batch": 4,
-    "status": "已准备，未执行生图",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W020"
   },
   {
@@ -273,7 +273,7 @@
       "graphic"
     ],
     "batch": 5,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W021"
@@ -286,7 +286,7 @@
       "graphic"
     ],
     "batch": 5,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W022"
@@ -299,7 +299,7 @@
       "graphic"
     ],
     "batch": 5,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W023"
@@ -312,7 +312,7 @@
       "graphic"
     ],
     "batch": 5,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W024"
@@ -325,7 +325,7 @@
       "story"
     ],
     "batch": 5,
-    "status": "未执行",
+    "status": "已准备，未执行生图",
     "generated_images": 0,
     "opened_images": 0,
     "result_dir": "results/W025"

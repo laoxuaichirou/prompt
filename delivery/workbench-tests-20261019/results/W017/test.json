@@ -27,8 +27,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W017/pose-01.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "54c2540988e1615df13a0097d7b3614b0575b081c564eb84662fbf4e06e115dc",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-078eeda1-efd7-4d81-8867-2be184a9c379.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:02:22+08:00"
     },
     {
       "case_id": "pose-02",
@@ -36,8 +49,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W017/pose-02.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "e5dd59f6fa3bb8f816ada1225f4fea084d0d60292e875272fd3084b68fa4ab4e",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c97b72f7-7997-41de-b824-c81e14779730.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:03:24+08:00"
     },
     {
       "case_id": "pose-03",
@@ -45,8 +71,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W017/pose-03.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "9806403f027944ca432b80a637c16925590a63b1022b204c1361472c28dfad43",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3a8e8c80-a260-44f8-a7cd-8f3dd5231737.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:03:05+08:00"
     },
     {
       "case_id": "pose-04",
@@ -54,8 +93,21 @@
       "reference_material": [
         "results/W014/fashion-01.png"
       ],
-      "status": "未执行",
-      "images": []
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W017/pose-04.png",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "3220f9316cadad96ec7f954c860749d9727b2b1d876d7e3873fd17ac264d6a99",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ec8c7bc8-0362-4741-add9-0db794aea453.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:01:45+08:00"
     }
   ],
   "prepared_at": "2026-10-19T01:55:44+08:00"

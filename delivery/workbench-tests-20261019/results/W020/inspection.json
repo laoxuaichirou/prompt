@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W020/floating-clothes.png"
+  ],
+  "checks": [
+    {
+      "requirement": "悬浮和无人体",
+      "result": "符合要求",
+      "evidence": "灰蓝上衣和裤子形成悬浮穿搭，下摆与地面有明显空隙及软影，无人物或衣架。"
+    },
+    {
+      "requirement": "服装主要细节",
+      "result": "基本符合",
+      "evidence": "V领短袖、胸袋白方块、两个下摆袋、抽绳与大腿袋保持；布料受隐形体积影响有褶皱和收腰观感，不证明精确版型。"
+    },
+    {
+      "requirement": "新增适配边界",
+      "result": "已记录",
+      "evidence": "原文只有一句概念，参考商品和细节控制为本轮新加，不冒充原版完整模板。"
+    }
+  ],
+  "conclusion": "悬浮服装概念的本轮参考适配符合主要视觉要求，不能视为原一句提示词独立效果或实物版型验证。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:05:27+08:00",
+  "stability_verified": false
+}

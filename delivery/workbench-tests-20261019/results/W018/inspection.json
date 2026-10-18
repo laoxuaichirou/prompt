@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W018/clothes-swap.png"
+  ],
+  "checks": [
+    {
+      "requirement": "换装与旧衣移除",
+      "result": "符合要求",
+      "evidence": "白T恤及深裤替换为灰蓝V领短袖与全长抽绳裤，白鞋保留，无听诊器。"
+    },
+    {
+      "requirement": "原身份姿态背景",
+      "result": "符合要求",
+      "evidence": "短波波头、脸颊痣、视线、双手抱膝及灰色阶梯构图基本保留，原裸露小腿由新裤覆盖。"
+    },
+    {
+      "requirement": "服装保真边界",
+      "result": "未完全验证",
+      "evidence": "胸前方块与大腿袋可见，下摆口袋/抽绳因坐姿和手臂遮挡未逐一核实；不作真实试衣尺码预测。"
+    }
+  ],
+  "conclusion": "精准换装最小用例符合主要可见要求，完整服装结构仍受遮挡限制。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:05:27+08:00",
+  "stability_verified": false
+}
