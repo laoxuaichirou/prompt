@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W007/chair-sheet.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三视图与单一椅子",
+      "result": "基本符合",
+      "evidence": "左侧俯、侧、正三图及右侧主图均为米色软垫/木腿/黑支架同款椅；未见背部仍属推演。"
+    },
+    {
+      "requirement": "材质连接与对应部位",
+      "result": "存在问题",
+      "evidence": "布料连线指向靠背，黑钢连线指向框架；原JSON把Polished oak wood配置为Legs，但图中木材线端落在扶手而非椅腿。"
+    },
+    {
+      "requirement": "材料描述边界",
+      "result": "符合要求",
+      "evidence": "三种材料是本轮合成素材设计设定，不是实际材质鉴定；1536×1024为3:2。"
+    }
+  ],
+  "conclusion": "新参考椅子路径已出图，但木腿材质标注线落在扶手，未完全符合原JSON部位绑定。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:42:32+08:00",
+  "stability_verified": false
+}

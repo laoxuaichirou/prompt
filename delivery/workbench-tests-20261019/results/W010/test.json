@@ -1,0 +1,50 @@
+{
+  "test_id": "W010",
+  "source_id": "T086",
+  "title": "无标题",
+  "categories": [
+    "product"
+  ],
+  "type": "双参考版式风格迁移",
+  "test_input": "图1本轮新生成瓶子图鉴提供版式，图2白鞋提供商品；跨品类版式迁移。",
+  "reference_material": [
+    "results/W003/bottle-atlas.png",
+    "materials/sneaker-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "去掉columns和重复中译版本，保留原英文指令。",
+    "明确图1仅版式来源、图2仅商品来源；使用本轮不同品类的版式参考，不复用旧成图。",
+    "不把外观特征标注改成未经提供的真实性能卖点。"
+  ],
+  "selected_source_prompt": "Analyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "shoe-infographic",
+      "final_prompt": "Reference 1 is layout/style only: the white product atlas of an amber bottle. Reference 2 is the exact unbranded white sneaker product. Transfer the page structure, restrained grayscale typography, left column of auxiliary views, large right-side hero object and thin component callouts from image 1 to a sneaker infographic. The product must be the shoe in image 2, never the bottle. Use UNBRANDED and only visually grounded labels, such as Laces, Heel patch, Upper panel, Sole edge; invent no performance claims, real materials or internal mechanisms. Keep label endpoints on visible shoe components.\nAnalyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+      "reference_material": [
+        "results/W003/bottle-atlas.png",
+        "materials/sneaker-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W010/shoe-infographic.png",
+          "width": 1222,
+          "height": 1287,
+          "sha256": "7e15249412f01d2c4e60649265df1253f99d61236951d2cf6128f148063a4b70",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d3f36f2b-d2d9-4ba0-bd00-6798d0e83593.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "generated_at": "2026-10-19T01:42:40+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T01:38:51+08:00"
+}

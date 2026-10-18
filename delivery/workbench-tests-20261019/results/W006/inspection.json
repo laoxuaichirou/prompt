@@ -1,0 +1,28 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W006/sneaker-grid.png"
+  ],
+  "checks": [
+    {
+      "requirement": "九种商业概念",
+      "result": "符合要求",
+      "evidence": "3×3恰好九格，主图、微距、踏水、几何、悬浮、纹理、黑背景、材质、云景均可见。"
+    },
+    {
+      "requirement": "鞋型一致性",
+      "result": "存在问题",
+      "evidence": "各格白鞋黑跟总体一致，但中间悬浮鞋的鞋底层线和鞋头轮廓与原参考有所重绘，无法支持100%几何一致。"
+    },
+    {
+      "requirement": "画幅/分辨率",
+      "result": "部分符合",
+      "evidence": "1086×1448为3:4，未达到原文8K。"
+    }
+  ],
+  "conclusion": "九格功能已生成，但严格商品几何一致性及8K要求未满足。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:42:32+08:00",
+  "stability_verified": false
+}

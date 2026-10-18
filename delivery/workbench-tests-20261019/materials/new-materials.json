@@ -1,0 +1,24 @@
+[
+  {
+    "key": "chair",
+    "file": "chair-synthetic.png",
+    "prompt": "Create a synthetic test reference photo of a single fictional unbranded Nordic lounge chair, full object on a seamless light-gray studio background, three-quarter front view. Beige linen-blend upholstered rectangular seat and simple padded backrest, four tapered polished light-oak legs, a clearly visible slim matte-black steel support frame under the seat and along the sides, low open wooden armrests. Straight believable geometry, no logos, no words, no dimension labels, no other objects. Photorealistic studio product photo, soft neutral light. This is fictional synthetic test material, not documentation of a real commercial chair.",
+    "source_path": "/workspace/generated_images/exec-46d4b027-1047-4a9b-803f-e58880781769.png",
+    "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-46d4b027-1047-4a9b-803f-e58880781769.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "kind": "合成测试素材",
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "opened_for_visual_review": true
+  },
+  {
+    "key": "tv",
+    "file": "television-synthetic.png",
+    "prompt": "Create a synthetic product reference photo of one fictional unbranded 55-inch-style flat screen television with a thin uniform matte charcoal bezel and two short black V-shaped feet. The screen is solid dark gray, no image, words, logo or UI. Full product isolated against a seamless light-gray studio backdrop, mild three-quarter front view, entire screen and both feet in view. Believable proportions, soft controlled studio lighting, clean product photography. No other objects. This is a fictional synthetic product test reference.",
+    "source_path": "/workspace/generated_images/exec-631e56c2-48eb-456e-ad77-b323e03af1c3.png",
+    "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-631e56c2-48eb-456e-ad77-b323e03af1c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "kind": "合成测试素材",
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "opened_for_visual_review": true
+  }
+]

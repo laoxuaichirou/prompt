@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-19T01:36:30+08:00",
+  "updated_at": "2026-10-19T01:43:23+08:00",
   "scope_entries": 57,
-  "prepared_entries": 5,
-  "entries_with_new_images": 5,
-  "output_images": 10,
-  "opened_images": 10,
-  "synthetic_materials": 3,
+  "prepared_entries": 10,
+  "entries_with_new_images": 10,
+  "output_images": 16,
+  "opened_images": 16,
+  "synthetic_materials": 6,
   "status_counts": {
-    "符合要求": 3,
-    "存在问题": 2,
-    "未执行": 52
+    "符合要求": 4,
+    "存在问题": 6,
+    "未执行": 47
   },
   "tool": "image_gen.imagegen",
   "image_model": "未知",

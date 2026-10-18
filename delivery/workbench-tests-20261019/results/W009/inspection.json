@@ -1,0 +1,28 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W009/tv-room.png"
+  ],
+  "checks": [
+    {
+      "requirement": "家电输入保留",
+      "result": "符合要求",
+      "evidence": "细黑边框和两只V形脚架保持，机身完整放在木电视柜上，无品牌。"
+    },
+    {
+      "requirement": "指定客厅与屏幕",
+      "result": "符合要求",
+      "evidence": "紫黄花朵占满屏幕，湖面夕阳落地窗、米色沙发和木柜均出现。"
+    },
+    {
+      "requirement": "空间与产品落地",
+      "result": "符合要求",
+      "evidence": "两脚与台面接触合理，没有改成壁挂。"
+    }
+  ],
+  "conclusion": "上传电视图到客厅场景的新适配最小用例符合可见要求；不是Kontext/LoRA实测，也未验证其他电视。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:42:32+08:00",
+  "stability_verified": false
+}

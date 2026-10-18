@@ -74,9 +74,9 @@
       "product"
     ],
     "batch": 2,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W006"
   },
   {
@@ -87,9 +87,9 @@
       "product"
     ],
     "batch": 2,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W007"
   },
   {
@@ -101,9 +101,9 @@
       "graphic"
     ],
     "batch": 2,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 2,
+    "opened_images": 2,
     "result_dir": "results/W008"
   },
   {
@@ -114,9 +114,9 @@
       "product"
     ],
     "batch": 2,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W009"
   },
   {
@@ -127,9 +127,9 @@
       "product"
     ],
     "batch": 2,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W010"
   },
   {

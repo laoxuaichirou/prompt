@@ -1,0 +1,29 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W008/food-hero.png",
+    "results/W008/food-detail.png"
+  ],
+  "checks": [
+    {
+      "requirement": "两种美食视觉版本",
+      "result": "符合要求",
+      "evidence": "整只加半切主图、剖面微距两张独立4:3图，红豆与松饼层次清晰，暗红背景与悬浮碎屑均呈现。"
+    },
+    {
+      "requirement": "负面约束",
+      "result": "符合要求",
+      "evidence": "未出现盘子、手、桌、文字、商标或餐具。"
+    },
+    {
+      "requirement": "分辨率",
+      "result": "不符合",
+      "evidence": "实际均1448×1086，未达到原文8K。"
+    }
+  ],
+  "conclusion": "两种铜锣烧广告视觉完成，属于文生美食非上传实物保真；8K未满足。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T01:43:22+08:00",
+  "stability_verified": false
+}

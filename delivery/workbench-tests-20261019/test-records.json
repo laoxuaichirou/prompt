@@ -557,5 +557,449 @@
       "original_test_conclusion": "默认四图及中文文案最小用例符合主要要求，已实际比较四张输出。",
       "original_evidence_is_new_test": false
     }
+  },
+  {
+    "test": {
+      "test_id": "W006",
+      "source_id": "T016",
+      "title": "【商品】9宫格奢华悬浮运动鞋",
+      "categories": [
+        "product"
+      ],
+      "type": "直接图像编辑，原生九宫格",
+      "test_input": "上传无品牌白鞋黑后跟参考，测试九种商业场景的一致性。",
+      "reference_material": [
+        "materials/sneaker-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "取原文完整英文九格模板。",
+        "按原文允许的specific model provided替换固定品牌鞋为合成无品牌鞋，移除品牌压印要求并记录；原品牌版本不算通过。",
+        "保留九种概念和8K措辞，按实际图片验收。"
+      ],
+      "selected_source_prompt": "Create a 3×3 grid in 3:4 aspect ratio for a high-end commercial marketing campaign using the Alexander McQueen men's luxury sneaker as the central subject.\n\nEach frame must present a distinct visual concept while maintaining perfect product consistency across all nine images.\n\nGrid Concepts (one per cell):\n\n1.  **Iconic Hero Shot:** Eye-level profile view of the shoe on a dark, sleek pedestal, emphasizing the signature oversized sole.\n2.  **Extreme Macro Detail:** Close-up on the heel counter or stitching details, highlighting the premium leather grain and \"Alexander McQueen\" logo embossing.\n3.  **Dynamic Interaction:** The shoe stepping onto a surface causing a subtle, elegant splash of dark liquid or marble dust (impact visual).\n4.  **Minimal Sculptural:** The shoe balanced artistically on geometric concrete or marble blocks, emphasizing architectural design.\n5.  **Levitation & Lightness:** The shoe floating in mid-air with laces suspended dynamically, suggesting premium comfort and airiness.\n6.  **Sensory Texture:** A mood shot focusing on the tactile quality of the velvet or smooth leather upper against a contrasting rough stone texture.\n7.  **Monochrome Luxury:** A color-blocked scene where the background perfectly matches the shoe's accent color (e.g., black or navy), creating a bold editorial look.\n8.  **Deconstructed Craftsmanship:** An abstract arrangement of raw materials (leather swatches, rubber textures) surrounding the shoe, symbolizing high-quality construction.\n9.  **Surreal Fusion:** The shoe integrated into a surreal, dreamlike landscape (e.g., a cloudscape or mirrored infinity room) blending realism with high fashion.\n\nVisual Rules:\n* **Subject:** Alexander McQueen Men's Oversized Sneaker (or specific model provided).\n* **Consistency:** The shoe must remain 100% accurate in shape, proportions, sole thickness, logo placement, and typography.\n* **No Distortion:** No deformation of the signature sole or branding.\n* **Separation:** Clean separation between the footwear and the background.\n\nLighting & Style:\n* Soft, controlled studio lighting with dramatic rim lights to accentuate the shoe's silhouette.\n* Subtle highlights on leather, deep realistic shadows under the sole.\n* High dynamic range, 8k resolution, ultra-sharp focus.\n* Editorial luxury fashion advertising aesthetic (Vogue/GQ style).\n* Palette: Minimalist, monochrome, metallic, and deep matte tones.\n\nOverall Feel:\n* Modern, refined, visually cohesive.\n* High-end commercial campaign for a luxury fashion house.\n* Hyperreal, cinematic, polished, and aspirational.\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "sneaker-grid",
+          "final_prompt": "Use the single synthetic reference sneaker as the same product in all nine panels. It has white upper, white laces, black heel patch and thick white sole, without any brand or lettering. Add no logo. Create one native 3 by 3 image, not nine unrelated outputs.\nCreate a 3×3 grid in 3:4 aspect ratio for a high-end commercial marketing campaign using the the exact unbranded white sneaker in the supplied reference as the central subject.\n\nEach frame must present a distinct visual concept while maintaining perfect product consistency across all nine images.\n\nGrid Concepts (one per cell):\n\n1.  **Iconic Hero Shot:** Eye-level profile view of the shoe on a dark, sleek pedestal, emphasizing the signature oversized sole.\n2.  **Extreme Macro Detail:** Close-up on the heel counter or stitching details, highlighting the premium leather grain and visible stitching without adding a logo.\n3.  **Dynamic Interaction:** The shoe stepping onto a surface causing a subtle, elegant splash of dark liquid or marble dust (impact visual).\n4.  **Minimal Sculptural:** The shoe balanced artistically on geometric concrete or marble blocks, emphasizing architectural design.\n5.  **Levitation & Lightness:** The shoe floating in mid-air with laces suspended dynamically, suggesting premium comfort and airiness.\n6.  **Sensory Texture:** A mood shot focusing on the tactile quality of the velvet or smooth leather upper against a contrasting rough stone texture.\n7.  **Monochrome Luxury:** A color-blocked scene where the background perfectly matches the shoe's accent color (e.g., black or navy), creating a bold editorial look.\n8.  **Deconstructed Craftsmanship:** An abstract arrangement of raw materials (leather swatches, rubber textures) surrounding the shoe, symbolizing high-quality construction.\n9.  **Surreal Fusion:** The shoe integrated into a surreal, dreamlike landscape (e.g., a cloudscape or mirrored infinity room) blending realism with high fashion.\n\nVisual Rules:\n* **Subject:** the supplied unbranded white sneaker with its black heel patch.\n* **Consistency:** The shoe must remain 100% accurate in shape, proportions, sole thickness, black heel patch and panel seams.\n* **No Distortion:** No deformation of the sole or panel shapes.\n* **Separation:** Clean separation between the footwear and the background.\n\nLighting & Style:\n* Soft, controlled studio lighting with dramatic rim lights to accentuate the shoe's silhouette.\n* Subtle highlights on leather, deep realistic shadows under the sole.\n* High dynamic range, 8k resolution, ultra-sharp focus.\n* Editorial luxury fashion advertising aesthetic (Vogue/GQ style).\n* Palette: Minimalist, monochrome, metallic, and deep matte tones.\n\nOverall Feel:\n* Modern, refined, visually cohesive.\n* High-end commercial campaign for a luxury fashion house.\n* Hyperreal, cinematic, polished, and aspirational.\n",
+          "reference_material": [
+            "materials/sneaker-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W006/sneaker-grid.png",
+              "width": 1086,
+              "height": 1448,
+              "sha256": "2413368c5115b549ca008db8165600ab2c5b99f637582b40c4b489937854fb1d",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a9ebfead-6229-441e-be64-81c1f04496b8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:40:49+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:38:51+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W006/sneaker-grid.png"
+      ],
+      "checks": [
+        {
+          "requirement": "九种商业概念",
+          "result": "符合要求",
+          "evidence": "3×3恰好九格，主图、微距、踏水、几何、悬浮、纹理、黑背景、材质、云景均可见。"
+        },
+        {
+          "requirement": "鞋型一致性",
+          "result": "存在问题",
+          "evidence": "各格白鞋黑跟总体一致，但中间悬浮鞋的鞋底层线和鞋头轮廓与原参考有所重绘，无法支持100%几何一致。"
+        },
+        {
+          "requirement": "画幅/分辨率",
+          "result": "部分符合",
+          "evidence": "1086×1448为3:4，未达到原文8K。"
+        }
+      ],
+      "conclusion": "九格功能已生成，但严格商品几何一致性及8K要求未满足。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:42:32+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·5分] 【商品】9宫格奢华悬浮运动鞋.md",
+      "original_sha256": "fc7235c2e1852d33efea9e1d2a52f9ad76b89fa9b0ccc4714c8f338cac223667",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "九概念和3:4布局本次有效；产品细节严格一致性仍有问题，真实品牌与字标未验证。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W007",
+      "source_id": "T052",
+      "title": "多视角亚麻椅材质分解图",
+      "categories": [
+        "product"
+      ],
+      "type": "JSON参考图像编辑",
+      "test_input": "本轮新合成椅子照片→同椅三视图与三种设定材质分解。",
+      "reference_material": [
+        "materials/chair-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "保留原英文JSON；新增上传椅子身份绑定，原文仅文字设计不是实物鉴定。",
+        "材质为生成参考素材时的虚构设计设定；不可当作从照片鉴定材质的证据。",
+        "原测为文生椅子，本轮增加参考图输入路线，严格检查连接线。"
+      ],
+      "selected_source_prompt": "{\n  \"objective\": \"Create a detailed product showcase image of a chair design with multiple perspectives and material information\",\n  \"image_specifications\": {\n    \"style\": \"Realistic 3D render or high-quality product illustration\",\n    \"layout\": \"Split view\",\n    \"aspect_ratio\": \"3:2 or 4:3\",\n    \"background\": \"Neutral (light gray or white) to enhance clarity and contrast\"\n  },\n  \"left_side\": {\n    \"section_title\": \"Chair Perspectives\",\n    \"views\": [\n      {\n        \"view\": \"Top-down\",\n        \"description\": \"Display the full chair from above, showing seat shape and armrest layout\"\n      },\n      {\n        \"view\": \"Side view\",\n        \"description\": \"Profile of the chair to show leg design, seat height, and backrest angle\"\n      },\n      {\n        \"view\": \"Front view\",\n        \"description\": \"Straight-on view to show width, symmetry, and front structure\"\n      }\n    ],\n    \"visual_style\": \"Consistent lighting and shadows for realism, subtle shadows to define form\"\n  },\n  \"right_side\": {\n    \"section_title\": \"Material Breakdown\",\n    \"content\": [\n      {\n        \"material\": \"Seat Fabric\",\n        \"material_type\": \"Linen blend\",\n        \"swatch_image\": \"Small fabric texture sample shown\",\n        \"label_style\": \"Clean sans-serif text with arrows pointing to chair sections\"\n      },\n      {\n        \"material\": \"Legs\",\n        \"material_type\": \"Polished oak wood\",\n        \"swatch_image\": \"Close-up wood grain sample\",\n        \"label_style\": \"Consistent labeling with visual connection to perspective images\"\n      },\n      {\n        \"material\": \"Frame\",\n        \"material_type\": \"Matte black steel\",\n        \"swatch_image\": \"Small metallic texture sample\",\n        \"label_style\": \"Minimalist annotations\"\n      }\n    ]\n  },\n  \"visual_elements\": {\n    \"separation\": \"Vertical dividing line or subtle split background\",\n    \"color_palette\": \"Natural tones for materials, grayscale for background and lines\",\n    \"typography\": \"Modern, readable font for labels and section titles\"\n  },\n  \"output_format\": {\n    \"type\": \"Image\",\n    \"high_resolution\": true,\n    \"use_case\": [\n      \"Product sheet\",\n      \"Interior design catalog\",\n      \"Furniture showcase\"\n    ]\n  }\n}\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "chair-sheet",
+          "final_prompt": "Generate a single landscape 3:2 product sheet for the exact chair in the reference, following the JSON. Left side: clearly distinct top, strict side and front views of the same chair. Right side: three samples and labels for the declared fictional design materials: Linen blend, Polished oak wood, Matte black steel. These materials are synthetic design settings, not a real material identification. Every connector should terminate precisely on its corresponding part. Do not add dimensions or hidden mechanisms. New views are synthetic inference.\n{\n  \"objective\": \"Create a detailed product showcase image of a chair design with multiple perspectives and material information\",\n  \"image_specifications\": {\n    \"style\": \"Realistic 3D render or high-quality product illustration\",\n    \"layout\": \"Split view\",\n    \"aspect_ratio\": \"3:2 or 4:3\",\n    \"background\": \"Neutral (light gray or white) to enhance clarity and contrast\"\n  },\n  \"left_side\": {\n    \"section_title\": \"Chair Perspectives\",\n    \"views\": [\n      {\n        \"view\": \"Top-down\",\n        \"description\": \"Display the full chair from above, showing seat shape and armrest layout\"\n      },\n      {\n        \"view\": \"Side view\",\n        \"description\": \"Profile of the chair to show leg design, seat height, and backrest angle\"\n      },\n      {\n        \"view\": \"Front view\",\n        \"description\": \"Straight-on view to show width, symmetry, and front structure\"\n      }\n    ],\n    \"visual_style\": \"Consistent lighting and shadows for realism, subtle shadows to define form\"\n  },\n  \"right_side\": {\n    \"section_title\": \"Material Breakdown\",\n    \"content\": [\n      {\n        \"material\": \"Seat Fabric\",\n        \"material_type\": \"Linen blend\",\n        \"swatch_image\": \"Small fabric texture sample shown\",\n        \"label_style\": \"Clean sans-serif text with arrows pointing to chair sections\"\n      },\n      {\n        \"material\": \"Legs\",\n        \"material_type\": \"Polished oak wood\",\n        \"swatch_image\": \"Close-up wood grain sample\",\n        \"label_style\": \"Consistent labeling with visual connection to perspective images\"\n      },\n      {\n        \"material\": \"Frame\",\n        \"material_type\": \"Matte black steel\",\n        \"swatch_image\": \"Small metallic texture sample\",\n        \"label_style\": \"Minimalist annotations\"\n      }\n    ]\n  },\n  \"visual_elements\": {\n    \"separation\": \"Vertical dividing line or subtle split background\",\n    \"color_palette\": \"Natural tones for materials, grayscale for background and lines\",\n    \"typography\": \"Modern, readable font for labels and section titles\"\n  },\n  \"output_format\": {\n    \"type\": \"Image\",\n    \"high_resolution\": true,\n    \"use_case\": [\n      \"Product sheet\",\n      \"Interior design catalog\",\n      \"Furniture showcase\"\n    ]\n  }\n}\n",
+          "reference_material": [
+            "materials/chair-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W007/chair-sheet.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "98d0c73c008e32d06796fd15d422e65620ff87b18ee265d026288c1464f9d2d1",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7b779689-88e7-4b8d-9e19-cd843131a42c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:40:23+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:38:51+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W007/chair-sheet.png"
+      ],
+      "checks": [
+        {
+          "requirement": "三视图与单一椅子",
+          "result": "基本符合",
+          "evidence": "左侧俯、侧、正三图及右侧主图均为米色软垫/木腿/黑支架同款椅；未见背部仍属推演。"
+        },
+        {
+          "requirement": "材质连接与对应部位",
+          "result": "存在问题",
+          "evidence": "布料连线指向靠背，黑钢连线指向框架；原JSON把Polished oak wood配置为Legs，但图中木材线端落在扶手而非椅腿。"
+        },
+        {
+          "requirement": "材料描述边界",
+          "result": "符合要求",
+          "evidence": "三种材料是本轮合成素材设计设定，不是实际材质鉴定；1536×1024为3:2。"
+        }
+      ],
+      "conclusion": "新参考椅子路径已出图，但木腿材质标注线落在扶手，未完全符合原JSON部位绑定。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:42:32+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 多视角亚麻椅材质分解图.md",
+      "original_sha256": "f4b8843f6efd25eb3bf41bcfcd8a8b388eef483c30a924e8d10709aa98dbf905",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三视图与材质分栏、亚麻/橡木/黑钢样本及文字可读，3:2成立；Frame标注线端点却落在座垫布面，未准确指向黑钢框架。多视图几何大体类似，不能当实物测量或真实材料鉴定。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W008",
+      "source_id": "T053",
+      "title": "奢华8K国家美食广告",
+      "categories": [
+        "product",
+        "graphic"
+      ],
+      "type": "直接文生图，两种视觉版本",
+      "test_input": "填入日本铜锣烧、红豆馅与暗红背景，主图与剖面微距两张独立图。",
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "填充原文国家、美食、食物结构与背景变量；新题材不同于上一轮包子。",
+        "没有上传真实食品，结论只针对合成美食图，不验证实物保真。",
+        "原文multiple variations最小覆盖两版；8K按真实输出像素验收。"
+      ],
+      "selected_source_prompt": "Ultra-high-quality, hyper-realistic commercial food photography of [COUNTRY FOOD NAME], rendered in 8K detail with a (4:3 or 3:4) aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic [COUNTRY] cuisine presentation\n– Clearly visible layers, fillings, or structure specific to [FOOD TYPE]\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in [BACKGROUND COLOR]\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "food-hero",
+          "final_prompt": "Create one landscape 4:3 hero photograph, a whole dorayaki and a clean half-cut dorayaki with visible red-bean filling, suspended without plates, tables or hands.\nUltra-high-quality, hyper-realistic commercial food photography of Japanese dorayaki with sweet red-bean filling, rendered in 8K detail with a (4:3 or 3:4) aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Japanese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to dorayaki pancakes and dark red-bean paste filling\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in warm muted burgundy\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n",
+          "reference_material": [],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W008/food-hero.png",
+              "width": 1448,
+              "height": 1086,
+              "sha256": "08d4ac1d9ef12091613e220ee5a418f2d1827a7dd9d705509b450452949bb468",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-61eb55c7-0d0a-44b8-a8b0-db36d0e8c139.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:42:40+08:00"
+        },
+        {
+          "case_id": "food-detail",
+          "final_prompt": "Create one separate landscape 4:3 macro detail photograph of the same fictional dorayaki type: close cut-edge pancake layers and dense red-bean filling with a few suspended fine crumbs. No plate, table, utensils or hands.\nUltra-high-quality, hyper-realistic commercial food photography of Japanese dorayaki with sweet red-bean filling, rendered in 8K detail with a (4:3 or 3:4) aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Japanese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to dorayaki pancakes and dark red-bean paste filling\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in warm muted burgundy\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n",
+          "reference_material": [],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W008/food-detail.png",
+              "width": 1448,
+              "height": 1086,
+              "sha256": "ff4cb7fc209b60e37964ecd0d56a02940b5e662018e6a211690211046a74403a",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7ae6e1c1-f2d2-4cd2-98f1-179b8e54b673.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:42:03+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:38:51+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W008/food-hero.png",
+        "results/W008/food-detail.png"
+      ],
+      "checks": [
+        {
+          "requirement": "两种美食视觉版本",
+          "result": "符合要求",
+          "evidence": "整只加半切主图、剖面微距两张独立4:3图，红豆与松饼层次清晰，暗红背景与悬浮碎屑均呈现。"
+        },
+        {
+          "requirement": "负面约束",
+          "result": "符合要求",
+          "evidence": "未出现盘子、手、桌、文字、商标或餐具。"
+        },
+        {
+          "requirement": "分辨率",
+          "result": "不符合",
+          "evidence": "实际均1448×1086，未达到原文8K。"
+        }
+      ],
+      "conclusion": "两种铜锣烧广告视觉完成，属于文生美食非上传实物保真；8K未满足。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:43:22+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·4分] 奢华8K国家美食广告.md",
+      "original_sha256": "f819e9ae9db6e524a86fef3517b49037803756d94c991c2b748741f7cdf17359",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。 视觉评分为模型初评，单次不证明稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W009",
+      "source_id": "T082",
+      "title": "kontext大家电场景图（示例）",
+      "categories": [
+        "product"
+      ],
+      "type": "直接图像编辑，新商品输入适配",
+      "test_input": "新合成无品牌电视图→现代湖景客厅的家电场景。",
+      "reference_material": [
+        "materials/television-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "移除01编号与LoRA标签残留，保留原完整场景描述。",
+        "原文为固定文生场景，本轮新增电视参考图约束；不冒充Kontext或LoRA运行。",
+        "允许屏幕内容按原文改变，但机身、脚架与比例应保留。"
+      ],
+      "selected_source_prompt": "\n\n01, A photograph of a modern living room with a large, flat-screen TV displaying a vibrant, fiery explosion of a purple and yellow flower. The room features floor-to-ceiling windows showing a serene sunset over a calm lake. The decor includes a sleek, minimalist wooden TV stand and a plush beige sofa.\nkontext大家电场景图（lora）\n<empty-block/>\n",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "tv-room",
+          "final_prompt": "Place the exact fictional television from the attached product reference into the following room scene. Preserve its thin matte-charcoal bezel, rectangular proportions and two black V-shaped feet. The TV is on the wooden stand, not wall-mounted; fill its screen with the specified flower image only. No brand or words. Keep the entire television visible and physically supported.\nA photograph of a modern living room with a large, flat-screen TV displaying a vibrant, fiery explosion of a purple and yellow flower. The room features floor-to-ceiling windows showing a serene sunset over a calm lake. The decor includes a sleek, minimalist wooden TV stand and a plush beige sofa.",
+          "reference_material": [
+            "materials/television-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W009/tv-room.png",
+              "width": 1536,
+              "height": 1024,
+              "sha256": "8d5fe8653ad5c62f4bbff2a509b22284a3b26570312d995e9717bd1deeab64fc",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-231bf6eb-bf92-4e3f-a737-074970691788.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:40:49+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:38:51+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W009/tv-room.png"
+      ],
+      "checks": [
+        {
+          "requirement": "家电输入保留",
+          "result": "符合要求",
+          "evidence": "细黑边框和两只V形脚架保持，机身完整放在木电视柜上，无品牌。"
+        },
+        {
+          "requirement": "指定客厅与屏幕",
+          "result": "符合要求",
+          "evidence": "紫黄花朵占满屏幕，湖面夕阳落地窗、米色沙发和木柜均出现。"
+        },
+        {
+          "requirement": "空间与产品落地",
+          "result": "符合要求",
+          "evidence": "两脚与台面接触合理，没有改成壁挂。"
+        }
+      ],
+      "conclusion": "上传电视图到客厅场景的新适配最小用例符合可见要求；不是Kontext/LoRA实测，也未验证其他电视。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:42:32+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[仅参考·2分] kontext大家电场景图（示例）.md",
+      "original_sha256": "37029ca19669e74c0dc0c6c4cd8f94a28576294741fdc2ecd02887747fc56529",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "可见客厅文生图示例符合主要视觉要求，仅ChatGPT适配单次初评。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W010",
+      "source_id": "T086",
+      "title": "无标题",
+      "categories": [
+        "product"
+      ],
+      "type": "双参考版式风格迁移",
+      "test_input": "图1本轮新生成瓶子图鉴提供版式，图2白鞋提供商品；跨品类版式迁移。",
+      "reference_material": [
+        "results/W003/bottle-atlas.png",
+        "materials/sneaker-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "去掉columns和重复中译版本，保留原英文指令。",
+        "明确图1仅版式来源、图2仅商品来源；使用本轮不同品类的版式参考，不复用旧成图。",
+        "不把外观特征标注改成未经提供的真实性能卖点。"
+      ],
+      "selected_source_prompt": "Analyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "shoe-infographic",
+          "final_prompt": "Reference 1 is layout/style only: the white product atlas of an amber bottle. Reference 2 is the exact unbranded white sneaker product. Transfer the page structure, restrained grayscale typography, left column of auxiliary views, large right-side hero object and thin component callouts from image 1 to a sneaker infographic. The product must be the shoe in image 2, never the bottle. Use UNBRANDED and only visually grounded labels, such as Laces, Heel patch, Upper panel, Sole edge; invent no performance claims, real materials or internal mechanisms. Keep label endpoints on visible shoe components.\nAnalyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+          "reference_material": [
+            "results/W003/bottle-atlas.png",
+            "materials/sneaker-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W010/shoe-infographic.png",
+              "width": 1222,
+              "height": 1287,
+              "sha256": "7e15249412f01d2c4e60649265df1253f99d61236951d2cf6128f148063a4b70",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-d3f36f2b-d2d9-4ba0-bd00-6798d0e83593.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+          },
+          "generated_at": "2026-10-19T01:42:40+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T01:38:51+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W010/shoe-infographic.png"
+      ],
+      "checks": [
+        {
+          "requirement": "版式跨商品迁移",
+          "result": "符合要求",
+          "evidence": "瓶子图鉴的白底、左侧四辅助图、大主图、细线标签和UNBRANDED转移到白鞋，未混入瓶子。"
+        },
+        {
+          "requirement": "标注指向",
+          "result": "符合要求",
+          "evidence": "Laces/Heel patch/Upper panel/Sole edge连接相应可见部位，没有真实性能参数。"
+        },
+        {
+          "requirement": "真实产品保留",
+          "result": "存在问题",
+          "evidence": "左列新增鞋底Bottom View及人字纹，原商品参考未展示鞋底，属于未验证的合成结构。"
+        }
+      ],
+      "conclusion": "跨品类版式迁移已生成并检查，但新增未见鞋底结构，严格商品保真版本仍需限制视图或补充鞋底参考。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T01:43:22+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/电商产品/[已投产·3分] 无标题.md",
+      "original_sha256": "7af208dab75246766ac8399feec380dfb805592379fceab19bf10bd921a92163",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "指定自制参考的图鉴布局复现符合主要要求，结论仅限该最小用例。",
+      "original_evidence_is_new_test": false
+    }
   }
 ]
