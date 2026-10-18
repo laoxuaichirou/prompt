@@ -1,0 +1,100 @@
+{
+  "test_id": "W036",
+  "source_id": "T166",
+  "title": "AI脚本分镜",
+  "categories": [
+    "story"
+  ],
+  "type": "分镜续写元提示词→三张独立宠物关键帧",
+  "test_input": {
+    "数量": 3,
+    "剧情": "柯基出箱→发现青蛙→跟随至相邻人行道"
+  },
+  "reference_material": [
+    "materials/cartoon-dog-box-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "原图链接不依赖具体人物，使用已标记合成柯基参考。",
+    "示例数量9张改填模板允许的3张；剧情缩成完整三步，不声称复现九镜示例。",
+    "约100字为近似长度；镜头运动只有规划，无视频。"
+  ],
+  "selected_source_prompt": "【输入方式】参考图+文本描述…Next Scene",
+  "meta_output": [
+    "Next Scene:三色柯基从纸箱跨出，前爪落在花园石径，身后纸箱仍在原处，中景低机位，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。",
+    "Next Scene:同一柯基在花园石径停下，前方草地冒出一只绿色青蛙，柯基歪头看青蛙，近景平视，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。",
+    "Next Scene:同一柯基跟随青蛙来到花园出口相邻的无车人行道，青蛙跃向路边井盖，柯基在后看着，全景侧面，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。"
+  ],
+  "cases": [
+    {
+      "case_id": "dog-01",
+      "final_prompt": "Next Scene:三色柯基从纸箱跨出，前爪落在花园石径，身后纸箱仍在原处，中景低机位，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+      "reference_material": [
+        "materials/cartoon-dog-box-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W036/dog-01.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e78dfafad1210791e71aa02c40f697921c34d7989216bdf819999fc6cf0819a9",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ac855135-4a2d-4f4c-807c-44d5ea1c3092.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:30:06+08:00"
+    },
+    {
+      "case_id": "dog-02",
+      "final_prompt": "Next Scene:同一柯基在花园石径停下，前方草地冒出一只绿色青蛙，柯基歪头看青蛙，近景平视，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+      "reference_material": [
+        "materials/cartoon-dog-box-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W036/dog-02.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "944ac50e9bd7bda271722a65e4489ced423fda181caeebac9539f6fd9f240a4b",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-609e00fe-2a7d-4797-a8ef-8714f97fc00c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:30:54+08:00"
+    },
+    {
+      "case_id": "dog-03",
+      "final_prompt": "Next Scene:同一柯基跟随青蛙来到花园出口相邻的无车人行道，青蛙跃向路边井盖，柯基在后看着，全景侧面，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+      "reference_material": [
+        "materials/cartoon-dog-box-synthetic.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W036/dog-03.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "b2f8238a69eae36910098da20ce6038b44e8f8d094996a4a96d8984d0796fe86",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9b30c75f-8318-4d3a-9c83-79953bdb2b28.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:31:28+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:28:37+08:00"
+}

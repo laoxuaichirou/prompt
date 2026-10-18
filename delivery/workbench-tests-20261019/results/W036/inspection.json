@@ -1,0 +1,25 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W036/dog-01.png",
+    "results/W036/dog-02.png",
+    "results/W036/dog-03.png"
+  ],
+  "checks": [
+    {
+      "requirement": "三张独立关键帧",
+      "result": "符合",
+      "evidence": "出箱、花园遇蛙、跟随至井盖三张分别生图"
+    },
+    {
+      "requirement": "角色风格环境递进",
+      "result": "基本符合",
+      "evidence": "三色柯基大耳白鼻梁和金色3D花园持续，第三张自然延至无车人行道"
+    }
+  ],
+  "conclusion": "填入3镜的最小宠物冒险用例主要符合；不是原九镜示例全覆盖，也不是视频。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:37:41+08:00",
+  "stability_verified": false
+}

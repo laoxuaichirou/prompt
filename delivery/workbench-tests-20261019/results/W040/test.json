@@ -1,0 +1,55 @@
+{
+  "test_id": "W040",
+  "source_id": "T172",
+  "title": "小说转影视流程（初版）",
+  "categories": [
+    "story"
+  ],
+  "type": "选择角色三视图生成器→七视图角色资产",
+  "test_input": {
+    "阶段": "1.1角色三视图生成器",
+    "角色": "同一合成成年男性"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "仅测试完整角色资产模块：3全身+3上半身+1证件特写，后续小说视频流程未验证。",
+    "填入人物服装特征，删除MJ专属--ar/--style/--v，将16:9语义化；8K不支持不冒充。",
+    "链接子页与嵌图非本例必需，原文存在但不可据此声称整套指南通过。"
+  ],
+  "selected_source_prompt": "1.1人物三视图生成…FULL BODY+UPPER BODY+PASSPORT",
+  "meta_output": {
+    "prompt": "Character design sheet of the exact adult man in reference, matching receding thinning dark gray hair, light stubble, blue-gray V-neck short sleeve scrub top with three front pockets and matching drawstring trousers, white sneakers. CG ultra-realistic 3D render style. Native seven-view character asset sheet on neutral gray background, soft studio lighting, no background shadows. Top row FULL BODY three views at same scale: exact front, strict left profile looking left, strict back with no face visible. Middle row UPPER BODY three close-ups: front, left three-quarter, right three-quarter. Bottom center one large PASSPORT face close-up, front facing neutral expression, clear natural facial details. Exactly seven distinct depictions, same person costume proportions and colors, balanced tidy technical layout, overall 16:9, no text, watermark or labels. Highly detailed fabric but no promise of 8K.",
+    "required_views": 7
+  },
+  "cases": [
+    {
+      "case_id": "seven-view-sheet",
+      "final_prompt": "Character design sheet of the exact adult man in reference, matching receding thinning dark gray hair, light stubble, blue-gray V-neck short sleeve scrub top with three front pockets and matching drawstring trousers, white sneakers. CG ultra-realistic 3D render style. Native seven-view character asset sheet on neutral gray background, soft studio lighting, no background shadows. Top row FULL BODY three views at same scale: exact front, strict left profile looking left, strict back with no face visible. Middle row UPPER BODY three close-ups: front, left three-quarter, right three-quarter. Bottom center one large PASSPORT face close-up, front facing neutral expression, clear natural facial details. Exactly seven distinct depictions, same person costume proportions and colors, balanced tidy technical layout, overall 16:9, no text, watermark or labels. Highly detailed fabric but no promise of 8K.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W040/seven-view-sheet.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e8e65a84c440558d16dd7a160c1669adcb1708134d46b5a4d295f28ad2605dde",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-1f51d620-fa49-4f58-9d5f-33f55ee5dece.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:34:28+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:28:37+08:00"
+}

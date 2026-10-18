@@ -1,0 +1,76 @@
+{
+  "test_id": "W037",
+  "source_id": "T169",
+  "title": "2509+WAN2.2，LLM",
+  "categories": [
+    "story"
+  ],
+  "type": "文本分镜元提示词→保留引用与中文画面文字→两张图",
+  "test_input": {
+    "剧情": "图一中的男性举起写着“慢一点”的纸卡，随后低头微笑。2026年现代客厅。"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "输入中的图一引用、年代和引号文字保留在元输出，映射为本工具参考图路径。",
+    "纸卡是新输入的普通道具。",
+    "Qwen-Image与WAN2.2未运行；只检查静态分镜，不检查实际运动。"
+  ],
+  "selected_source_prompt": "【输入方式】文本描述…图一引用和引号文字不可省略",
+  "meta_output": [
+    "Next Scene:图一中的蓝衣成年男性在2026年现代客厅，正面中景，稀疏黑灰短发和浅胡茬不变，手举一块米白纸卡，卡上清晰印着“慢一点”，右侧电视花朵和左侧湖景日落保留，金色柔光照脸，人物温和微笑，只展示举起纸卡的瞬间，电影写实。",
+    "Next Scene:图一中的同一蓝衣成年男性在2026年同一现代客厅，正面近景，举在胸前的同一张米白纸卡上“慢一点”三个字保持原样，男性低头看纸卡露出轻微微笑，稀疏黑灰短发和浅胡茬不变，背景电视花朵略虚化，湖景日落的金色侧光连续。"
+  ],
+  "cases": [
+    {
+      "case_id": "text-shot-01",
+      "final_prompt": "Next Scene:图一中的蓝衣成年男性在2026年现代客厅，正面中景，稀疏黑灰短发和浅胡茬不变，手举一块米白纸卡，卡上清晰印着“慢一点”，右侧电视花朵和左侧湖景日落保留，金色柔光照脸，人物温和微笑，只展示举起纸卡的瞬间，电影写实。一张独立16:9画面，只可出现纸卡上慢一点，不要把Next Scene或引号画出来。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W037/text-shot-01.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "70195d3afbb93eef01f0df7c0f09fdb106a541405bd4d6a124c7fa1e72cac86a",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-119201d9-c3a2-4d45-b7fa-db81f37b5dc3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:31:28+08:00"
+    },
+    {
+      "case_id": "text-shot-02",
+      "final_prompt": "Next Scene:图一中的同一蓝衣成年男性在2026年同一现代客厅，正面近景，举在胸前的同一张米白纸卡上“慢一点”三个字保持原样，男性低头看纸卡露出轻微微笑，稀疏黑灰短发和浅胡茬不变，背景电视花朵略虚化，湖景日落的金色侧光连续。一张独立16:9画面，只可出现纸卡上慢一点，不要把Next Scene或引号画出来。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W037/text-shot-02.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "9400ea7623e9185f035f622401455651ce56de759f13290fa73dd9fdb9548919",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-24bf670b-74aa-4c03-a662-6bd05f2fa7f4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:30:54+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:28:37+08:00"
+}

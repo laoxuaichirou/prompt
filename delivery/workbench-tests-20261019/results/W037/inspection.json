@@ -1,0 +1,24 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W037/text-shot-01.png",
+    "results/W037/text-shot-02.png"
+  ],
+  "checks": [
+    {
+      "requirement": "引用与年代文字保留",
+      "result": "符合",
+      "evidence": "元输出保留图一、2026年及引号；两图均清晰写慢一点"
+    },
+    {
+      "requirement": "同一角色道具连续",
+      "result": "存在问题",
+      "evidence": "脸服房间基本一致，但纸卡文字从印刷黑体变成手写风，未完全延续同一张卡"
+    }
+  ],
+  "conclusion": "两图实测文字正确，但卡片字体一致性漂移。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:37:41+08:00",
+  "stability_verified": false
+}

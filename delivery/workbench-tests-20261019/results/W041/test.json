@@ -1,0 +1,49 @@
+{
+  "test_id": "W041",
+  "source_id": "T173",
+  "title": "镜头角度与提示词：6 - Camera Angles & Movements",
+  "categories": [
+    "story"
+  ],
+  "type": "镜头词典→俯拍/仰拍双图",
+  "test_input": {
+    "角度": [
+      "High Angle Shot",
+      "Low Angle Shot"
+    ]
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "从约30种镜头词典选择可用静态高低机位比较，填同一人物变量。",
+    "增加明确机位说明及16:9无字作为测试输入；不验证运镜词条。"
+  ],
+  "selected_source_prompt": "High Angle Shot / Low Angle Shot",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "high-angle",
+      "final_prompt": "High angle shot of the same fictional adult man from the reference in the same lake sunset living room, thinning receding dark gray hair, light stubble, blue-gray scrub outfit and white shoes seen from above, looking up, cinematic lighting. Show camera clearly above head looking steeply down at him and surrounding sofa and coffee table, his face turned upward. Wide 16:9, no text.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    },
+    {
+      "case_id": "low-angle",
+      "final_prompt": "Low angle shot of the same fictional adult man from the reference in the same lake sunset living room, thinning receding dark gray hair, light stubble, blue-gray scrub outfit and white shoes seen from below, looking down, cinematic lighting, powerful stance. Show camera clearly below waist looking upward, his face turned down toward camera. Wide 16:9, no text.",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:34:28+08:00"
+}

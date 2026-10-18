@@ -1,71 +1,6 @@
 {
-  "next_test_id": "W036",
+  "next_test_id": "W041",
   "unfinished": [
-    {
-      "id": "W036",
-      "source_id": "T166",
-      "title": "AI脚本分镜",
-      "categories": [
-        "story"
-      ],
-      "batch": 8,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W036"
-    },
-    {
-      "id": "W037",
-      "source_id": "T169",
-      "title": "2509+WAN2.2，LLM",
-      "categories": [
-        "story"
-      ],
-      "batch": 8,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W037"
-    },
-    {
-      "id": "W038",
-      "source_id": "T170",
-      "title": "AI漫剧提示词",
-      "categories": [
-        "story"
-      ],
-      "batch": 8,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W038"
-    },
-    {
-      "id": "W039",
-      "source_id": "T171",
-      "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
-      "categories": [
-        "story"
-      ],
-      "batch": 8,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W039"
-    },
-    {
-      "id": "W040",
-      "source_id": "T172",
-      "title": "小说转影视流程（初版）",
-      "categories": [
-        "story"
-      ],
-      "batch": 8,
-      "status": "未执行",
-      "generated_images": 0,
-      "opened_images": 0,
-      "result_dir": "results/W040"
-    },
     {
       "id": "W041",
       "source_id": "T173",
@@ -74,7 +9,7 @@
         "story"
       ],
       "batch": 9,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W041"
@@ -87,7 +22,7 @@
         "edit"
       ],
       "batch": 9,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W042"
@@ -100,7 +35,7 @@
         "edit"
       ],
       "batch": 9,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W043"
@@ -113,7 +48,7 @@
         "edit"
       ],
       "batch": 9,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W044"
@@ -126,7 +61,7 @@
         "edit"
       ],
       "batch": 9,
-      "status": "未执行",
+      "status": "已准备，未执行生图",
       "generated_images": 0,
       "opened_images": 0,
       "result_dir": "results/W045"
@@ -288,5 +223,5 @@
       "result_dir": "results/W057"
     }
   ],
-  "updated_at": "2026-10-19T02:27:25+08:00"
+  "updated_at": "2026-10-19T02:37:41+08:00"
 }

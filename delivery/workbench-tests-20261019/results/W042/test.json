@@ -1,0 +1,225 @@
+{
+  "test_id": "W042",
+  "source_id": "T006",
+  "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+  "categories": [
+    "edit"
+  ],
+  "type": "JsonPromptMaker元提示词→来源锁定JSON→换上衣",
+  "test_input": {
+    "request": "只把上衣换成深绿色无图案长袖针织衫；原图身份、发型、表情、姿势、裤鞋、背景、光影与构图全部锁定参考图。完整全身平视，亮度与方向沿用原图。"
+  },
+  "reference_material": [
+    "materials/adult-woman-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "只执行第一段英文引擎，后续翻译与分析聊天残留不进入生图。",
+    "原Schema固定默认值与image优先规则冲突，依核心规则解析来源；全部图像属性都显式source/image_locked，无null。",
+    "用户测试输入明确相机/光源沿用原图，未让引擎虚构人物描述。",
+    "单次未验证确定性；Nano Banana未运行。"
+  ],
+  "selected_source_prompt": "ROLE & OBJECTIVE…JsonPromptMaker",
+  "meta_output": {
+    "task": "build_image_prompt_json",
+    "reference_image_policy": {
+      "used": true,
+      "represents": "full character identity unless explicitly overridden by text",
+      "instructions": [
+        "If an attribute allows image as a source and no text value is provided, the attribute must be copied exactly from the reference image",
+        "Inference or stylistic guessing is forbidden when image source is available",
+        "Never infer or optimize identity attributes"
+      ]
+    },
+    "subject": {
+      "type": "human",
+      "identity_lock": {
+        "face": {
+          "source": "image",
+          "image_locked": true
+        },
+        "age": {
+          "source": "image",
+          "image_locked": true
+        },
+        "skin_tone": {
+          "source": "image",
+          "image_locked": true
+        },
+        "facial_features": {
+          "source": "image",
+          "image_locked": true
+        },
+        "body_proportions": {
+          "source": "image",
+          "image_locked": true
+        },
+        "hair_style": {
+          "source": "image",
+          "image_locked": true
+        },
+        "hair_color": {
+          "source": "image",
+          "image_locked": true
+        },
+        "eye_color": {
+          "source": "image",
+          "image_locked": true
+        }
+      },
+      "pose": {
+        "source": "image",
+        "image_locked": true,
+        "allowed_sources": [
+          "text",
+          "image"
+        ]
+      },
+      "expression": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      },
+      "gaze": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      }
+    },
+    "appearance": {
+      "clothing": {
+        "value": "深绿色无图案长袖针织衫与原图深色长裤、白鞋",
+        "allowed_sources": [
+          "text",
+          "image"
+        ]
+      },
+      "colors": {
+        "primary_palette": {
+          "allowed_sources": [
+            "text",
+            "image"
+          ],
+          "source": "image",
+          "image_locked": true
+        }
+      }
+    },
+    "environment": {
+      "location": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      },
+      "details": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      },
+      "time_of_day": {
+        "value": "原参考图影棚时段",
+        "allowed_sources": [
+          "text"
+        ]
+      },
+      "weather": {
+        "value": "indoor environment, weather not applicable",
+        "allowed_sources": [
+          "text"
+        ],
+        "default_source": "schema"
+      }
+    },
+    "camera": {
+      "framing": {
+        "value": "原参考图完整全身构图",
+        "allowed_sources": [
+          "text"
+        ]
+      },
+      "angle": {
+        "value": "原参考图平视机位",
+        "allowed_sources": [
+          "text"
+        ]
+      },
+      "lens_feel": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      }
+    },
+    "lighting": {
+      "type": {
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "source": "image",
+        "image_locked": true
+      },
+      "direction": {
+        "value": "原参考图左上柔光方向",
+        "allowed_sources": [
+          "text"
+        ]
+      },
+      "intensity": {
+        "value": "原图亮度",
+        "allowed_sources": [
+          "text"
+        ]
+      }
+    },
+    "style": {
+      "render_type": {
+        "source_policy": "text_overrides_image",
+        "allowed_sources": [
+          "text",
+          "image"
+        ],
+        "forbid_value_generation": true,
+        "source": "image",
+        "image_locked": true
+      }
+    },
+    "quality_controls": {
+      "forbidden_changes": [
+        "modifying identity attributes sourced from image",
+        "implicit face or hair alteration",
+        "beautification or aging",
+        "conflicting multiple values for a single attribute"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "identity-locked-edit",
+      "final_prompt": "{\n  \"task\": \"build_image_prompt_json\",\n  \"reference_image_policy\": {\n    \"used\": true,\n    \"represents\": \"full character identity unless explicitly overridden by text\",\n    \"instructions\": [\n      \"If an attribute allows image as a source and no text value is provided, the attribute must be copied exactly from the reference image\",\n      \"Inference or stylistic guessing is forbidden when image source is available\",\n      \"Never infer or optimize identity attributes\"\n    ]\n  },\n  \"subject\": {\n    \"type\": \"human\",\n    \"identity_lock\": {\n      \"face\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"age\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"skin_tone\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"facial_features\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"body_proportions\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_style\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"eye_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      }\n    },\n    \"pose\": {\n      \"source\": \"image\",\n      \"image_locked\": true,\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ]\n    },\n    \"expression\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"gaze\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"appearance\": {\n    \"clothing\": {\n      \"value\": \"深绿色无图案长袖针织衫与原图深色长裤、白鞋\",\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ]\n    },\n    \"colors\": {\n      \"primary_palette\": {\n        \"allowed_sources\": [\n          \"text\",\n          \"image\"\n        ],\n        \"source\": \"image\",\n        \"image_locked\": true\n      }\n    }\n  },\n  \"environment\": {\n    \"location\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"details\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"time_of_day\": {\n      \"value\": \"原参考图影棚时段\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"weather\": {\n      \"value\": \"indoor environment, weather not applicable\",\n      \"allowed_sources\": [\n        \"text\"\n      ],\n      \"default_source\": \"schema\"\n    }\n  },\n  \"camera\": {\n    \"framing\": {\n      \"value\": \"原参考图完整全身构图\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"angle\": {\n      \"value\": \"原参考图平视机位\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"lens_feel\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"lighting\": {\n    \"type\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"direction\": {\n      \"value\": \"原参考图左上柔光方向\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"intensity\": {\n      \"value\": \"原图亮度\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    }\n  },\n  \"style\": {\n    \"render_type\": {\n      \"source_policy\": \"text_overrides_image\",\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"forbid_value_generation\": true,\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"quality_controls\": {\n    \"forbidden_changes\": [\n      \"modifying identity attributes sourced from image\",\n      \"implicit face or hair alteration\",\n      \"beautification or aging\",\n      \"conflicting multiple values for a single attribute\"\n    ]\n  }\n}",
+      "reference_material": [
+        "materials/adult-woman-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:34:28+08:00"
+}

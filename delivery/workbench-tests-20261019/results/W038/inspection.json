@@ -1,0 +1,37 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W038/character.png",
+    "results/W038/segment-01.png",
+    "results/W038/segment-02.png",
+    "results/W038/segment-03.png",
+    "results/W038/segment-04.png"
+  ],
+  "checks": [
+    {
+      "requirement": "五部分元输出与四组三帧",
+      "result": "符合",
+      "evidence": "剧本、角色、场景、12关键帧和4转视频规划已存；实际角色图1+三联画4"
+    },
+    {
+      "requirement": "动作与服装场景",
+      "result": "基本符合",
+      "evidence": "发现信封、打开、写信、收好四步可辨，人物和金色客厅连续"
+    },
+    {
+      "requirement": "道具出现时机",
+      "result": "存在问题",
+      "evidence": "黑笔在第一、第二段已出现，违反最终提示词仅第三段出现；第四段仍在桌上"
+    },
+    {
+      "requirement": "视频参数",
+      "result": "未执行",
+      "evidence": "4×15秒、24fps、1080P仅规划，未调用Seedance"
+    }
+  ],
+  "conclusion": "完整文本规划已执行，静态12关键帧已出图检查；道具连续约束存在问题，不宣称60秒视频通过。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:37:41+08:00",
+  "stability_verified": false
+}

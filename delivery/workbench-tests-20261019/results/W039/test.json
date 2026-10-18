@@ -1,0 +1,76 @@
+{
+  "test_id": "W039",
+  "source_id": "T171",
+  "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
+  "categories": [
+    "story"
+  ],
+  "type": "单帧续写元提示词→两张实际递归参考图",
+  "test_input": {
+    "剧情": "男性离开沙发走到窗边，触窗框看湖面微笑"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选择可见优化版100–200字Next Scene模板，不补写缺失25分镜子页。",
+    "第二图必须在第一图生成并打开后以第一图作为唯一连续参考。",
+    "运镜节奏只规划；第二图需观察实际窗框手部接触及位置连续。"
+  ],
+  "selected_source_prompt": "优化版…核心目标下一分镜…100–200字",
+  "meta_output": [
+    "Next Scene:中景，侧面平视固定镜头，参考图中的蓝衣成年男性轻轻转身离开沙发，向左侧窗边迈出第一步，前额稀疏黑灰头发、浅胡茬和灰蓝V领套装保持不变，白鞋完整可见，手从沙发扶手自然滑下，夕阳从左侧窗户照亮肩线，米色沙发仍在左前方，木柜花朵电视在右侧，茶几留在前景，湖面与远山延续同一时刻的金色光线，暖色真实电影质感，动作克制，不添加新人物和道具。",
+    "Next Scene:近景，侧面略过肩构图，镜头规划缓慢推进，承接上一张中蓝衣成年男性走到窗边的动作，男性停下脚步，右手轻触窗框，转头望向金色湖面，稀疏黑灰短发、后退发际线、浅胡茬和灰蓝V领服装完全延续，窗框在画面左侧形成框景，远山湖面与夕阳方向保持，右侧电视花朵在背景中自然虚化，面部从思索转为轻微微笑，温柔金色侧光与真实皮肤布料统一，不引入新人物。"
+  ],
+  "cases": [
+    {
+      "case_id": "chain-01",
+      "final_prompt": "Next Scene:中景，侧面平视固定镜头，参考图中的蓝衣成年男性轻轻转身离开沙发，向左侧窗边迈出第一步，前额稀疏黑灰头发、浅胡茬和灰蓝V领套装保持不变，白鞋完整可见，手从沙发扶手自然滑下，夕阳从左侧窗户照亮肩线，米色沙发仍在左前方，木柜花朵电视在右侧，茶几留在前景，湖面与远山延续同一时刻的金色光线，暖色真实电影质感，动作克制，不添加新人物和道具。只生成一个瞬间的16:9独立画面，无字幕水印。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W039/chain-01.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e7e6880859b75145dfd1dd6f95d49fed3df86d6801654000887e24fa72c2d312",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4a3ff838-c5d3-45a2-abb4-25adfe1835f7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:33:54+08:00"
+    },
+    {
+      "case_id": "chain-02",
+      "final_prompt": "Next Scene:近景，侧面略过肩构图，镜头规划缓慢推进，承接上一张中蓝衣成年男性走到窗边的动作，男性停下脚步，右手轻触窗框，转头望向金色湖面，稀疏黑灰短发、后退发际线、浅胡茬和灰蓝V领服装完全延续，窗框在画面左侧形成框景，远山湖面与夕阳方向保持，右侧电视花朵在背景中自然虚化，面部从思索转为轻微微笑，温柔金色侧光与真实皮肤布料统一，不引入新人物。只生成一个瞬间的16:9独立画面，无字幕水印。",
+      "reference_material": [
+        "results/W039/chain-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W039/chain-02.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "2b4e84e76489ace10c996ad06528be7ffa74dc0d571d59bde3f96a38e4f2f29b",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-73d0f774-99b4-4b71-85a3-81b0d2fb0cac.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:36:13+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:28:37+08:00"
+}

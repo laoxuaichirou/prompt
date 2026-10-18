@@ -1,0 +1,238 @@
+{
+  "test_id": "W038",
+  "source_id": "T170",
+  "title": "AI漫剧提示词",
+  "categories": [
+    "story"
+  ],
+  "type": "完整创作元提示词→五部分规划→角色图及四组三关键帧",
+  "test_input": {
+    "主题": "一封未寄出的信",
+    "风格": "CG超写实3D",
+    "情感": "温暖治愈",
+    "亮点": "纸张动作和微表情",
+    "计划": "4×15s，视频未执行"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "填充原创短故事并生成原要求五部分完整规划；四组三关键帧以同条目的原生三联画保存，每格静态。",
+    "每组3关键帧以同条目的纵向三联画展示，每小格16:9，总体16:27；实际比例按生成尺寸验收。",
+    "未运行Seedance、音频、动捕与60秒视频；任何帧率时长都只属规划。"
+  ],
+  "selected_source_prompt": "直接复制此模板…4个15秒…全部五部分",
+  "meta_output": {
+    "完整故事剧本": [
+      {
+        "片段": 1,
+        "时间节点": "0–15s",
+        "剧情内容": "拾到空白信封",
+        "人物动作": [
+          "蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景",
+          "男性伸手拿起同一信封，中景",
+          "男性低头看无字信封，面部近景"
+        ],
+        "镜头核心表达": "从行动到细节再到情绪的小闭环"
+      },
+      {
+        "片段": 2,
+        "时间节点": "15–30s",
+        "剧情内容": "打开信封",
+        "人物动作": [
+          "男性坐在米色沙发，双手捧信封，中景",
+          "双手打开信封封口，手部特写",
+          "男性抽出一张无字米白纸，侧面中近景"
+        ],
+        "镜头核心表达": "从行动到细节再到情绪的小闭环"
+      },
+      {
+        "片段": 3,
+        "时间节点": "30–45s",
+        "剧情内容": "写下心意",
+        "人物动作": [
+          "男性在茶几前俯身，将无字纸铺平，中景",
+          "男性右手持黑笔轻触纸面，纸上不显示文字，手部特写",
+          "男性写完抬头微笑，面部近景"
+        ],
+        "镜头核心表达": "从行动到细节再到情绪的小闭环"
+      },
+      {
+        "片段": 4,
+        "时间节点": "45–60s",
+        "剧情内容": "收好信封",
+        "人物动作": [
+          "男性将纸重新放进原信封，手部近景",
+          "男性把信封放在茶几上，坐在沙发，中景",
+          "男性放松看向金色湖景，全景收束"
+        ],
+        "镜头核心表达": "从行动到细节再到情绪的小闭环"
+      }
+    ],
+    "全角色AI生图提示词": {
+      "男性": "蓝衣成年男性，稀疏后退黑灰短发浅胡茬，中等身形，灰蓝V领短袖长裤白鞋，温和内敛，CG超写实3D，柔暖侧光，16:9；避免脸部漂移畸形水印。"
+    },
+    "统一场景设定与风格细则": {
+      "场景": "湖景客厅，茶几、米色沙发、左窗日落与右侧花朵电视",
+      "风格": "CG超写实3D，暖金/灰蓝，柔和侧逆光，真实布料木材，16:9，无文字"
+    },
+    "分镜图AI生图提示词": [
+      {
+        "片段": 1,
+        "关键分镜": [
+          "片段1分镜1：男性，蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段1分镜2：男性，男性伸手拿起同一信封，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段1分镜3：男性，男性低头看无字信封，面部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+        ]
+      },
+      {
+        "片段": 2,
+        "关键分镜": [
+          "片段2分镜1：男性，男性坐在米色沙发，双手捧信封，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段2分镜2：男性，双手打开信封封口，手部特写，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段2分镜3：男性，男性抽出一张无字米白纸，侧面中近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+        ]
+      },
+      {
+        "片段": 3,
+        "关键分镜": [
+          "片段3分镜1：男性，男性在茶几前俯身，将无字纸铺平，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段3分镜2：男性，男性右手持黑笔轻触纸面，纸上不显示文字，手部特写，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段3分镜3：男性，男性写完抬头微笑，面部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+        ]
+      },
+      {
+        "片段": 4,
+        "关键分镜": [
+          "片段4分镜1：男性，男性将纸重新放进原信封，手部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段4分镜2：男性，男性把信封放在茶几上，坐在沙发，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+          "片段4分镜3：男性，男性放松看向金色湖景，全景收束，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+        ]
+      }
+    ],
+    "分镜图转视频AI提示词": [
+      "片段1 0–15s转视频提示词：同一男性与客厅，拾到空白信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+      "片段2 15–30s转视频提示词：同一男性与客厅，打开信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+      "片段3 30–45s转视频提示词：同一男性与客厅，写下心意，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+      "片段4 45–60s转视频提示词：同一男性与客厅，收好信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。"
+    ],
+    "未实测视频参数声明": "下列时长/24fps/1080P仅原格式规划，Seedance及动捕参数未调用或验证"
+  },
+  "cases": [
+    {
+      "case_id": "character",
+      "final_prompt": "蓝衣成年男性，稀疏后退黑灰短发浅胡茬，中等身形，灰蓝V领短袖长裤白鞋，温和内敛，CG超写实3D，柔暖侧光，16:9；避免脸部漂移畸形水印。依据参考照片生成该人物一张独立全身角色图，浅灰背景，不画分镜。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W038/character.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e77cd2bb9aa047143752606171c7968a9974974a92366d51d5564a03c8afe490",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bd6fc418-d952-45b3-9d8c-5df24ccfdd5e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:32:17+08:00"
+    },
+    {
+      "case_id": "segment-01",
+      "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景；男性伸手拿起同一信封，中景；男性低头看无字信封，面部近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W038/segment-01.png",
+          "width": 966,
+          "height": 1629,
+          "sha256": "55ca3ec0a444efa76c14cecdba61afd638369a015a664a917077c429b003dcf7",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a624f5e0-154c-46de-a1e0-b90fed85ca93.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:32:18+08:00"
+    },
+    {
+      "case_id": "segment-02",
+      "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性坐在米色沙发，双手捧信封，中景；双手打开信封封口，手部特写；男性抽出一张无字米白纸，侧面中近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W038/segment-02.png",
+          "width": 965,
+          "height": 1629,
+          "sha256": "5b70eec938c9cbe5053b9ae7abfc30da6378b82d9b522f03c2f1ea4d4db06f09",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2dc2187d-c6b7-4784-8fc7-bde338b3471e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:32:18+08:00"
+    },
+    {
+      "case_id": "segment-03",
+      "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性在茶几前俯身，将无字纸铺平，中景；男性右手持黑笔轻触纸面，纸上不显示文字，手部特写；男性写完抬头微笑，面部近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W038/segment-03.png",
+          "width": 966,
+          "height": 1629,
+          "sha256": "857c659af646a4b86457a9b0bf2e880f480431d6d64a25834202a91b1ac62ae3",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-eb121d7d-eaa9-4790-a7de-ecb3e55e1279.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:33:06+08:00"
+    },
+    {
+      "case_id": "segment-04",
+      "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性将纸重新放进原信封，手部近景；男性把信封放在茶几上，坐在沙发，中景；男性放松看向金色湖景，全景收束。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W038/segment-04.png",
+          "width": 965,
+          "height": 1629,
+          "sha256": "a04ea426b70f5e0813a3dc30e6752b4cce9217cdcfd41627bf52f3253c6ae02f",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6ee9164d-d249-4b8a-a297-fcc3eed00a12.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:34:28+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:28:37+08:00"
+}

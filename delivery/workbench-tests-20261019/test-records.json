@@ -3869,5 +3869,1177 @@
       "original_test_conclusion": "首个人物分析元任务及三视角最小用例符合主要视觉要求，不覆盖整套工作流。",
       "original_evidence_is_new_test": false
     }
+  },
+  {
+    "test": {
+      "test_id": "W036",
+      "source_id": "T166",
+      "title": "AI脚本分镜",
+      "categories": [
+        "story"
+      ],
+      "type": "分镜续写元提示词→三张独立宠物关键帧",
+      "test_input": {
+        "数量": 3,
+        "剧情": "柯基出箱→发现青蛙→跟随至相邻人行道"
+      },
+      "reference_material": [
+        "materials/cartoon-dog-box-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原图链接不依赖具体人物，使用已标记合成柯基参考。",
+        "示例数量9张改填模板允许的3张；剧情缩成完整三步，不声称复现九镜示例。",
+        "约100字为近似长度；镜头运动只有规划，无视频。"
+      ],
+      "selected_source_prompt": "【输入方式】参考图+文本描述…Next Scene",
+      "meta_output": [
+        "Next Scene:三色柯基从纸箱跨出，前爪落在花园石径，身后纸箱仍在原处，中景低机位，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。",
+        "Next Scene:同一柯基在花园石径停下，前方草地冒出一只绿色青蛙，柯基歪头看青蛙，近景平视，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。",
+        "Next Scene:同一柯基跟随青蛙来到花园出口相邻的无车人行道，青蛙跃向路边井盖，柯基在后看着，全景侧面，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。"
+      ],
+      "cases": [
+        {
+          "case_id": "dog-01",
+          "final_prompt": "Next Scene:三色柯基从纸箱跨出，前爪落在花园石径，身后纸箱仍在原处，中景低机位，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+          "reference_material": [
+            "materials/cartoon-dog-box-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W036/dog-01.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e78dfafad1210791e71aa02c40f697921c34d7989216bdf819999fc6cf0819a9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ac855135-4a2d-4f4c-807c-44d5ea1c3092.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:30:06+08:00"
+        },
+        {
+          "case_id": "dog-02",
+          "final_prompt": "Next Scene:同一柯基在花园石径停下，前方草地冒出一只绿色青蛙，柯基歪头看青蛙，近景平视，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+          "reference_material": [
+            "materials/cartoon-dog-box-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W036/dog-02.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "944ac50e9bd7bda271722a65e4489ced423fda181caeebac9539f6fd9f240a4b",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-609e00fe-2a7d-4797-a8ef-8714f97fc00c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:30:54+08:00"
+        },
+        {
+          "case_id": "dog-03",
+          "final_prompt": "Next Scene:同一柯基跟随青蛙来到花园出口相邻的无车人行道，青蛙跃向路边井盖，柯基在后看着，全景侧面，保持参考图黑棕白三色毛发、巨大立耳和白色鼻梁，暖色傍晚柔光，圆润3D卡通电影材质，白色篱笆和红黄花朵由花园渐进到出口，童趣好奇情绪，无车无人，无文字水印。一张独立16:9横图，不画多格。",
+          "reference_material": [
+            "materials/cartoon-dog-box-synthetic.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W036/dog-03.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "b2f8238a69eae36910098da20ce6038b44e8f8d094996a4a96d8984d0796fe86",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9b30c75f-8318-4d3a-9c83-79953bdb2b28.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:31:28+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:28:37+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W036/dog-01.png",
+        "results/W036/dog-02.png",
+        "results/W036/dog-03.png"
+      ],
+      "checks": [
+        {
+          "requirement": "三张独立关键帧",
+          "result": "符合",
+          "evidence": "出箱、花园遇蛙、跟随至井盖三张分别生图"
+        },
+        {
+          "requirement": "角色风格环境递进",
+          "result": "基本符合",
+          "evidence": "三色柯基大耳白鼻梁和金色3D花园持续，第三张自然延至无车人行道"
+        }
+      ],
+      "conclusion": "填入3镜的最小宠物冒险用例主要符合；不是原九镜示例全覆盖，也不是视频。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:37:41+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·3分] AI脚本分镜.md",
+      "original_sha256": "1bb728cf985a1632a21bc3bc0c7cd3782bf065fba08ea572843dc1f3ec40e72f",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三镜故事推进实现，狗的眼部/体型一致性有偏差。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W037",
+      "source_id": "T169",
+      "title": "2509+WAN2.2，LLM",
+      "categories": [
+        "story"
+      ],
+      "type": "文本分镜元提示词→保留引用与中文画面文字→两张图",
+      "test_input": {
+        "剧情": "图一中的男性举起写着“慢一点”的纸卡，随后低头微笑。2026年现代客厅。"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "输入中的图一引用、年代和引号文字保留在元输出，映射为本工具参考图路径。",
+        "纸卡是新输入的普通道具。",
+        "Qwen-Image与WAN2.2未运行；只检查静态分镜，不检查实际运动。"
+      ],
+      "selected_source_prompt": "【输入方式】文本描述…图一引用和引号文字不可省略",
+      "meta_output": [
+        "Next Scene:图一中的蓝衣成年男性在2026年现代客厅，正面中景，稀疏黑灰短发和浅胡茬不变，手举一块米白纸卡，卡上清晰印着“慢一点”，右侧电视花朵和左侧湖景日落保留，金色柔光照脸，人物温和微笑，只展示举起纸卡的瞬间，电影写实。",
+        "Next Scene:图一中的同一蓝衣成年男性在2026年同一现代客厅，正面近景，举在胸前的同一张米白纸卡上“慢一点”三个字保持原样，男性低头看纸卡露出轻微微笑，稀疏黑灰短发和浅胡茬不变，背景电视花朵略虚化，湖景日落的金色侧光连续。"
+      ],
+      "cases": [
+        {
+          "case_id": "text-shot-01",
+          "final_prompt": "Next Scene:图一中的蓝衣成年男性在2026年现代客厅，正面中景，稀疏黑灰短发和浅胡茬不变，手举一块米白纸卡，卡上清晰印着“慢一点”，右侧电视花朵和左侧湖景日落保留，金色柔光照脸，人物温和微笑，只展示举起纸卡的瞬间，电影写实。一张独立16:9画面，只可出现纸卡上慢一点，不要把Next Scene或引号画出来。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W037/text-shot-01.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "70195d3afbb93eef01f0df7c0f09fdb106a541405bd4d6a124c7fa1e72cac86a",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-119201d9-c3a2-4d45-b7fa-db81f37b5dc3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:31:28+08:00"
+        },
+        {
+          "case_id": "text-shot-02",
+          "final_prompt": "Next Scene:图一中的同一蓝衣成年男性在2026年同一现代客厅，正面近景，举在胸前的同一张米白纸卡上“慢一点”三个字保持原样，男性低头看纸卡露出轻微微笑，稀疏黑灰短发和浅胡茬不变，背景电视花朵略虚化，湖景日落的金色侧光连续。一张独立16:9画面，只可出现纸卡上慢一点，不要把Next Scene或引号画出来。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W037/text-shot-02.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "9400ea7623e9185f035f622401455651ce56de759f13290fa73dd9fdb9548919",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-24bf670b-74aa-4c03-a662-6bd05f2fa7f4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:30:54+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:28:37+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W037/text-shot-01.png",
+        "results/W037/text-shot-02.png"
+      ],
+      "checks": [
+        {
+          "requirement": "引用与年代文字保留",
+          "result": "符合",
+          "evidence": "元输出保留图一、2026年及引号；两图均清晰写慢一点"
+        },
+        {
+          "requirement": "同一角色道具连续",
+          "result": "存在问题",
+          "evidence": "脸服房间基本一致，但纸卡文字从印刷黑体变成手写风，未完全延续同一张卡"
+        }
+      ],
+      "conclusion": "两图实测文字正确，但卡片字体一致性漂移。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:37:41+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·4分] 2509+WAN2.2，LLM.md",
+      "original_sha256": "dc90f3234f0630761b57d5c4de3601038ae82a38712026861995821e900a849a",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "元任务已执行两图，关键文字正确但木牌与门结构明显漂移。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W038",
+      "source_id": "T170",
+      "title": "AI漫剧提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "完整创作元提示词→五部分规划→角色图及四组三关键帧",
+      "test_input": {
+        "主题": "一封未寄出的信",
+        "风格": "CG超写实3D",
+        "情感": "温暖治愈",
+        "亮点": "纸张动作和微表情",
+        "计划": "4×15s，视频未执行"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "填充原创短故事并生成原要求五部分完整规划；四组三关键帧以同条目的原生三联画保存，每格静态。",
+        "每组3关键帧以同条目的纵向三联画展示，每小格16:9，总体16:27；实际比例按生成尺寸验收。",
+        "未运行Seedance、音频、动捕与60秒视频；任何帧率时长都只属规划。"
+      ],
+      "selected_source_prompt": "直接复制此模板…4个15秒…全部五部分",
+      "meta_output": {
+        "完整故事剧本": [
+          {
+            "片段": 1,
+            "时间节点": "0–15s",
+            "剧情内容": "拾到空白信封",
+            "人物动作": [
+              "蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景",
+              "男性伸手拿起同一信封，中景",
+              "男性低头看无字信封，面部近景"
+            ],
+            "镜头核心表达": "从行动到细节再到情绪的小闭环"
+          },
+          {
+            "片段": 2,
+            "时间节点": "15–30s",
+            "剧情内容": "打开信封",
+            "人物动作": [
+              "男性坐在米色沙发，双手捧信封，中景",
+              "双手打开信封封口，手部特写",
+              "男性抽出一张无字米白纸，侧面中近景"
+            ],
+            "镜头核心表达": "从行动到细节再到情绪的小闭环"
+          },
+          {
+            "片段": 3,
+            "时间节点": "30–45s",
+            "剧情内容": "写下心意",
+            "人物动作": [
+              "男性在茶几前俯身，将无字纸铺平，中景",
+              "男性右手持黑笔轻触纸面，纸上不显示文字，手部特写",
+              "男性写完抬头微笑，面部近景"
+            ],
+            "镜头核心表达": "从行动到细节再到情绪的小闭环"
+          },
+          {
+            "片段": 4,
+            "时间节点": "45–60s",
+            "剧情内容": "收好信封",
+            "人物动作": [
+              "男性将纸重新放进原信封，手部近景",
+              "男性把信封放在茶几上，坐在沙发，中景",
+              "男性放松看向金色湖景，全景收束"
+            ],
+            "镜头核心表达": "从行动到细节再到情绪的小闭环"
+          }
+        ],
+        "全角色AI生图提示词": {
+          "男性": "蓝衣成年男性，稀疏后退黑灰短发浅胡茬，中等身形，灰蓝V领短袖长裤白鞋，温和内敛，CG超写实3D，柔暖侧光，16:9；避免脸部漂移畸形水印。"
+        },
+        "统一场景设定与风格细则": {
+          "场景": "湖景客厅，茶几、米色沙发、左窗日落与右侧花朵电视",
+          "风格": "CG超写实3D，暖金/灰蓝，柔和侧逆光，真实布料木材，16:9，无文字"
+        },
+        "分镜图AI生图提示词": [
+          {
+            "片段": 1,
+            "关键分镜": [
+              "片段1分镜1：男性，蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段1分镜2：男性，男性伸手拿起同一信封，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段1分镜3：男性，男性低头看无字信封，面部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+            ]
+          },
+          {
+            "片段": 2,
+            "关键分镜": [
+              "片段2分镜1：男性，男性坐在米色沙发，双手捧信封，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段2分镜2：男性，双手打开信封封口，手部特写，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段2分镜3：男性，男性抽出一张无字米白纸，侧面中近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+            ]
+          },
+          {
+            "片段": 3,
+            "关键分镜": [
+              "片段3分镜1：男性，男性在茶几前俯身，将无字纸铺平，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段3分镜2：男性，男性右手持黑笔轻触纸面，纸上不显示文字，手部特写，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段3分镜3：男性，男性写完抬头微笑，面部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+            ]
+          },
+          {
+            "片段": 4,
+            "关键分镜": [
+              "片段4分镜1：男性，男性将纸重新放进原信封，手部近景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段4分镜2：男性，男性把信封放在茶几上，坐在沙发，中景，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。",
+              "片段4分镜3：男性，男性放松看向金色湖景，全景收束，CG超写实3D，暖金日落柔光，灰蓝衣服，16:9；负面：畸形、脸漂移、水印、文字。"
+            ]
+          }
+        ],
+        "分镜图转视频AI提示词": [
+          "片段1 0–15s转视频提示词：同一男性与客厅，拾到空白信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+          "片段2 15–30s转视频提示词：同一男性与客厅，打开信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+          "片段3 30–45s转视频提示词：同一男性与客厅，写下心意，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。",
+          "片段4 45–60s转视频提示词：同一男性与客厅，收好信封，动作缓慢自然，镜头从中景平稳推进细节，暖光保持，无特效，轻钢琴与纸张摩擦声；规划24fps1080P，避免卡顿肢体变形穿模；专属参数名仅原文建议，未核验实际API支持。"
+        ],
+        "未实测视频参数声明": "下列时长/24fps/1080P仅原格式规划，Seedance及动捕参数未调用或验证"
+      },
+      "cases": [
+        {
+          "case_id": "character",
+          "final_prompt": "蓝衣成年男性，稀疏后退黑灰短发浅胡茬，中等身形，灰蓝V领短袖长裤白鞋，温和内敛，CG超写实3D，柔暖侧光，16:9；避免脸部漂移畸形水印。依据参考照片生成该人物一张独立全身角色图，浅灰背景，不画分镜。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W038/character.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e77cd2bb9aa047143752606171c7968a9974974a92366d51d5564a03c8afe490",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-bd6fc418-d952-45b3-9d8c-5df24ccfdd5e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:32:17+08:00"
+        },
+        {
+          "case_id": "segment-01",
+          "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：蓝衣男性在湖景客厅茶几旁发现米白无字信封，站立全景；男性伸手拿起同一信封，中景；男性低头看无字信封，面部近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W038/segment-01.png",
+              "width": 966,
+              "height": 1629,
+              "sha256": "55ca3ec0a444efa76c14cecdba61afd638369a015a664a917077c429b003dcf7",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a624f5e0-154c-46de-a1e0-b90fed85ca93.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:32:18+08:00"
+        },
+        {
+          "case_id": "segment-02",
+          "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性坐在米色沙发，双手捧信封，中景；双手打开信封封口，手部特写；男性抽出一张无字米白纸，侧面中近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W038/segment-02.png",
+              "width": 965,
+              "height": 1629,
+              "sha256": "5b70eec938c9cbe5053b9ae7abfc30da6378b82d9b522f03c2f1ea4d4db06f09",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2dc2187d-c6b7-4784-8fc7-bde338b3471e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:32:18+08:00"
+        },
+        {
+          "case_id": "segment-03",
+          "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性在茶几前俯身，将无字纸铺平，中景；男性右手持黑笔轻触纸面，纸上不显示文字，手部特写；男性写完抬头微笑，面部近景。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W038/segment-03.png",
+              "width": 966,
+              "height": 1629,
+              "sha256": "857c659af646a4b86457a9b0bf2e880f480431d6d64a25834202a91b1ac62ae3",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-eb121d7d-eaa9-4790-a7de-ecb3e55e1279.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:33:06+08:00"
+        },
+        {
+          "case_id": "segment-04",
+          "final_prompt": "生成一幅同一条目三个静态关键帧的纵向三联画，总体16:27，每小图横向16:9。同一参考的虚构中年成年男性，前额后退稀疏黑灰短发、浅胡茬、蓝色V领短袖套装、白鞋；日落湖景客厅、米色沙发、窗左、木柜和花朵电视右，统一暖金色电影光影。把照片转CG超写实3D，保持身份服装。三格从上到下：男性将纸重新放进原信封，手部近景；男性把信封放在茶几上，坐在沙发，中景；男性放松看向金色湖景，全景收束。米白信封与纸全程无字，黑笔仅第三段出现。不要文字/字幕/时间码。无重复格，剧情只画指定瞬间。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W038/segment-04.png",
+              "width": 965,
+              "height": 1629,
+              "sha256": "a04ea426b70f5e0813a3dc30e6752b4cce9217cdcfd41627bf52f3253c6ae02f",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-6ee9164d-d249-4b8a-a297-fcc3eed00a12.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:34:28+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:28:37+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W038/character.png",
+        "results/W038/segment-01.png",
+        "results/W038/segment-02.png",
+        "results/W038/segment-03.png",
+        "results/W038/segment-04.png"
+      ],
+      "checks": [
+        {
+          "requirement": "五部分元输出与四组三帧",
+          "result": "符合",
+          "evidence": "剧本、角色、场景、12关键帧和4转视频规划已存；实际角色图1+三联画4"
+        },
+        {
+          "requirement": "动作与服装场景",
+          "result": "基本符合",
+          "evidence": "发现信封、打开、写信、收好四步可辨，人物和金色客厅连续"
+        },
+        {
+          "requirement": "道具出现时机",
+          "result": "存在问题",
+          "evidence": "黑笔在第一、第二段已出现，违反最终提示词仅第三段出现；第四段仍在桌上"
+        },
+        {
+          "requirement": "视频参数",
+          "result": "未执行",
+          "evidence": "4×15秒、24fps、1080P仅规划，未调用Seedance"
+        }
+      ],
+      "conclusion": "完整文本规划已执行，静态12关键帧已出图检查；道具连续约束存在问题，不宣称60秒视频通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:37:41+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·4分] AI漫剧提示词.md",
+      "original_sha256": "9e19fbcb8f73b653d8b8223cb3aef18baa5d1c69a73158ab775683a8ea1f20ae",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "单角色资产已出图，8K未满足，不代表全漫剧流程通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W039",
+      "source_id": "T171",
+      "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
+      "categories": [
+        "story"
+      ],
+      "type": "单帧续写元提示词→两张实际递归参考图",
+      "test_input": {
+        "剧情": "男性离开沙发走到窗边，触窗框看湖面微笑"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择可见优化版100–200字Next Scene模板，不补写缺失25分镜子页。",
+        "第二图必须在第一图生成并打开后以第一图作为唯一连续参考。",
+        "运镜节奏只规划；第二图需观察实际窗框手部接触及位置连续。"
+      ],
+      "selected_source_prompt": "优化版…核心目标下一分镜…100–200字",
+      "meta_output": [
+        "Next Scene:中景，侧面平视固定镜头，参考图中的蓝衣成年男性轻轻转身离开沙发，向左侧窗边迈出第一步，前额稀疏黑灰头发、浅胡茬和灰蓝V领套装保持不变，白鞋完整可见，手从沙发扶手自然滑下，夕阳从左侧窗户照亮肩线，米色沙发仍在左前方，木柜花朵电视在右侧，茶几留在前景，湖面与远山延续同一时刻的金色光线，暖色真实电影质感，动作克制，不添加新人物和道具。",
+        "Next Scene:近景，侧面略过肩构图，镜头规划缓慢推进，承接上一张中蓝衣成年男性走到窗边的动作，男性停下脚步，右手轻触窗框，转头望向金色湖面，稀疏黑灰短发、后退发际线、浅胡茬和灰蓝V领服装完全延续，窗框在画面左侧形成框景，远山湖面与夕阳方向保持，右侧电视花朵在背景中自然虚化，面部从思索转为轻微微笑，温柔金色侧光与真实皮肤布料统一，不引入新人物。"
+      ],
+      "cases": [
+        {
+          "case_id": "chain-01",
+          "final_prompt": "Next Scene:中景，侧面平视固定镜头，参考图中的蓝衣成年男性轻轻转身离开沙发，向左侧窗边迈出第一步，前额稀疏黑灰头发、浅胡茬和灰蓝V领套装保持不变，白鞋完整可见，手从沙发扶手自然滑下，夕阳从左侧窗户照亮肩线，米色沙发仍在左前方，木柜花朵电视在右侧，茶几留在前景，湖面与远山延续同一时刻的金色光线，暖色真实电影质感，动作克制，不添加新人物和道具。只生成一个瞬间的16:9独立画面，无字幕水印。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W039/chain-01.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e7e6880859b75145dfd1dd6f95d49fed3df86d6801654000887e24fa72c2d312",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4a3ff838-c5d3-45a2-abb4-25adfe1835f7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:33:54+08:00"
+        },
+        {
+          "case_id": "chain-02",
+          "final_prompt": "Next Scene:近景，侧面略过肩构图，镜头规划缓慢推进，承接上一张中蓝衣成年男性走到窗边的动作，男性停下脚步，右手轻触窗框，转头望向金色湖面，稀疏黑灰短发、后退发际线、浅胡茬和灰蓝V领服装完全延续，窗框在画面左侧形成框景，远山湖面与夕阳方向保持，右侧电视花朵在背景中自然虚化，面部从思索转为轻微微笑，温柔金色侧光与真实皮肤布料统一，不引入新人物。只生成一个瞬间的16:9独立画面，无字幕水印。",
+          "reference_material": [
+            "results/W039/chain-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W039/chain-02.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "2b4e84e76489ace10c996ad06528be7ffa74dc0d571d59bde3f96a38e4f2f29b",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-73d0f774-99b4-4b71-85a3-81b0d2fb0cac.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:36:13+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:28:37+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W039/chain-01.png",
+        "results/W039/chain-02.png"
+      ],
+      "checks": [
+        {
+          "requirement": "递归参考流程",
+          "result": "符合",
+          "evidence": "第二张在第一张生成并打开后，以第一张为参考实际生成"
+        },
+        {
+          "requirement": "角色场景动作自然衔接",
+          "result": "基本符合",
+          "evidence": "离开沙发向窗移动→触窗框看湖；发型衣服日落与电视连续"
+        },
+        {
+          "requirement": "第一镜指定中景",
+          "result": "存在问题",
+          "evidence": "第一镜实际完整全身，而非中景"
+        }
+      ],
+      "conclusion": "递归单帧续写已验证两步，身份场景基本延续，但景别有偏差；缺失25镜子页未测试。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:37:41+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·4分] 【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）.md",
+      "original_sha256": "78a20b281f69ba0b8f85e056171e2a037d74b4c04777f81b2478fe11f4b16d5d",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "原版元任务的两个连续静态用例符合主要可见要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W040",
+      "source_id": "T172",
+      "title": "小说转影视流程（初版）",
+      "categories": [
+        "story"
+      ],
+      "type": "选择角色三视图生成器→七视图角色资产",
+      "test_input": {
+        "阶段": "1.1角色三视图生成器",
+        "角色": "同一合成成年男性"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "仅测试完整角色资产模块：3全身+3上半身+1证件特写，后续小说视频流程未验证。",
+        "填入人物服装特征，删除MJ专属--ar/--style/--v，将16:9语义化；8K不支持不冒充。",
+        "链接子页与嵌图非本例必需，原文存在但不可据此声称整套指南通过。"
+      ],
+      "selected_source_prompt": "1.1人物三视图生成…FULL BODY+UPPER BODY+PASSPORT",
+      "meta_output": {
+        "prompt": "Character design sheet of the exact adult man in reference, matching receding thinning dark gray hair, light stubble, blue-gray V-neck short sleeve scrub top with three front pockets and matching drawstring trousers, white sneakers. CG ultra-realistic 3D render style. Native seven-view character asset sheet on neutral gray background, soft studio lighting, no background shadows. Top row FULL BODY three views at same scale: exact front, strict left profile looking left, strict back with no face visible. Middle row UPPER BODY three close-ups: front, left three-quarter, right three-quarter. Bottom center one large PASSPORT face close-up, front facing neutral expression, clear natural facial details. Exactly seven distinct depictions, same person costume proportions and colors, balanced tidy technical layout, overall 16:9, no text, watermark or labels. Highly detailed fabric but no promise of 8K.",
+        "required_views": 7
+      },
+      "cases": [
+        {
+          "case_id": "seven-view-sheet",
+          "final_prompt": "Character design sheet of the exact adult man in reference, matching receding thinning dark gray hair, light stubble, blue-gray V-neck short sleeve scrub top with three front pockets and matching drawstring trousers, white sneakers. CG ultra-realistic 3D render style. Native seven-view character asset sheet on neutral gray background, soft studio lighting, no background shadows. Top row FULL BODY three views at same scale: exact front, strict left profile looking left, strict back with no face visible. Middle row UPPER BODY three close-ups: front, left three-quarter, right three-quarter. Bottom center one large PASSPORT face close-up, front facing neutral expression, clear natural facial details. Exactly seven distinct depictions, same person costume proportions and colors, balanced tidy technical layout, overall 16:9, no text, watermark or labels. Highly detailed fabric but no promise of 8K.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W040/seven-view-sheet.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e8e65a84c440558d16dd7a160c1669adcb1708134d46b5a4d295f28ad2605dde",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-1f51d620-fa49-4f58-9d5f-33f55ee5dece.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:34:28+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:28:37+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W040/seven-view-sheet.png"
+      ],
+      "checks": [
+        {
+          "requirement": "七种视图数量与朝向",
+          "result": "符合",
+          "evidence": "三全身正侧背、三上半身及一正面脸部特写，共7个"
+        },
+        {
+          "requirement": "布局与细节",
+          "result": "存在问题",
+          "evidence": "底部特写的头顶覆盖中间上半身视图下方，版式有重叠；细衣袋简化，背景仍有渐变与软阴影"
+        }
+      ],
+      "conclusion": "七视图最小资产确实出图，数量朝向基本正确；排版、细节与无背景阴影要求未完全满足，未测试整套小说视频流程。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:37:41+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·4分] 小说转影视流程（初版）.md",
+      "original_sha256": "8ec40ee6a331c206deb4ece24a22d1ea84b19724d8b6f7a05c75cab956191b1b",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "七视图最小资产用例已出图，8K与完全无阴影未满足，不代表全影视流程通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W041",
+      "source_id": "T173",
+      "title": "镜头角度与提示词：6 - Camera Angles & Movements",
+      "categories": [
+        "story"
+      ],
+      "type": "镜头词典→俯拍/仰拍双图",
+      "test_input": {
+        "角度": [
+          "High Angle Shot",
+          "Low Angle Shot"
+        ]
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "从约30种镜头词典选择可用静态高低机位比较，填同一人物变量。",
+        "增加明确机位说明及16:9无字作为测试输入；不验证运镜词条。"
+      ],
+      "selected_source_prompt": "High Angle Shot / Low Angle Shot",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "high-angle",
+          "final_prompt": "High angle shot of the same fictional adult man from the reference in the same lake sunset living room, thinning receding dark gray hair, light stubble, blue-gray scrub outfit and white shoes seen from above, looking up, cinematic lighting. Show camera clearly above head looking steeply down at him and surrounding sofa and coffee table, his face turned upward. Wide 16:9, no text.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        },
+        {
+          "case_id": "low-angle",
+          "final_prompt": "Low angle shot of the same fictional adult man from the reference in the same lake sunset living room, thinning receding dark gray hair, light stubble, blue-gray scrub outfit and white shoes seen from below, looking down, cinematic lighting, powerful stance. Show camera clearly below waist looking upward, his face turned down toward camera. Wide 16:9, no text.",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:34:28+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·4分] 镜头角度与提示词：6 - Camera Angles & Movements.md",
+      "original_sha256": "0e96a453a8e6fecb54065c206fa37527629658f74f66e58643aba3c735fe795a",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "所选高低机位两图对比符合主要视觉要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W042",
+      "source_id": "T006",
+      "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+      "categories": [
+        "edit"
+      ],
+      "type": "JsonPromptMaker元提示词→来源锁定JSON→换上衣",
+      "test_input": {
+        "request": "只把上衣换成深绿色无图案长袖针织衫；原图身份、发型、表情、姿势、裤鞋、背景、光影与构图全部锁定参考图。完整全身平视，亮度与方向沿用原图。"
+      },
+      "reference_material": [
+        "materials/adult-woman-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "只执行第一段英文引擎，后续翻译与分析聊天残留不进入生图。",
+        "原Schema固定默认值与image优先规则冲突，依核心规则解析来源；全部图像属性都显式source/image_locked，无null。",
+        "用户测试输入明确相机/光源沿用原图，未让引擎虚构人物描述。",
+        "单次未验证确定性；Nano Banana未运行。"
+      ],
+      "selected_source_prompt": "ROLE & OBJECTIVE…JsonPromptMaker",
+      "meta_output": {
+        "task": "build_image_prompt_json",
+        "reference_image_policy": {
+          "used": true,
+          "represents": "full character identity unless explicitly overridden by text",
+          "instructions": [
+            "If an attribute allows image as a source and no text value is provided, the attribute must be copied exactly from the reference image",
+            "Inference or stylistic guessing is forbidden when image source is available",
+            "Never infer or optimize identity attributes"
+          ]
+        },
+        "subject": {
+          "type": "human",
+          "identity_lock": {
+            "face": {
+              "source": "image",
+              "image_locked": true
+            },
+            "age": {
+              "source": "image",
+              "image_locked": true
+            },
+            "skin_tone": {
+              "source": "image",
+              "image_locked": true
+            },
+            "facial_features": {
+              "source": "image",
+              "image_locked": true
+            },
+            "body_proportions": {
+              "source": "image",
+              "image_locked": true
+            },
+            "hair_style": {
+              "source": "image",
+              "image_locked": true
+            },
+            "hair_color": {
+              "source": "image",
+              "image_locked": true
+            },
+            "eye_color": {
+              "source": "image",
+              "image_locked": true
+            }
+          },
+          "pose": {
+            "source": "image",
+            "image_locked": true,
+            "allowed_sources": [
+              "text",
+              "image"
+            ]
+          },
+          "expression": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          },
+          "gaze": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          }
+        },
+        "appearance": {
+          "clothing": {
+            "value": "深绿色无图案长袖针织衫与原图深色长裤、白鞋",
+            "allowed_sources": [
+              "text",
+              "image"
+            ]
+          },
+          "colors": {
+            "primary_palette": {
+              "allowed_sources": [
+                "text",
+                "image"
+              ],
+              "source": "image",
+              "image_locked": true
+            }
+          }
+        },
+        "environment": {
+          "location": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          },
+          "details": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          },
+          "time_of_day": {
+            "value": "原参考图影棚时段",
+            "allowed_sources": [
+              "text"
+            ]
+          },
+          "weather": {
+            "value": "indoor environment, weather not applicable",
+            "allowed_sources": [
+              "text"
+            ],
+            "default_source": "schema"
+          }
+        },
+        "camera": {
+          "framing": {
+            "value": "原参考图完整全身构图",
+            "allowed_sources": [
+              "text"
+            ]
+          },
+          "angle": {
+            "value": "原参考图平视机位",
+            "allowed_sources": [
+              "text"
+            ]
+          },
+          "lens_feel": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          }
+        },
+        "lighting": {
+          "type": {
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "source": "image",
+            "image_locked": true
+          },
+          "direction": {
+            "value": "原参考图左上柔光方向",
+            "allowed_sources": [
+              "text"
+            ]
+          },
+          "intensity": {
+            "value": "原图亮度",
+            "allowed_sources": [
+              "text"
+            ]
+          }
+        },
+        "style": {
+          "render_type": {
+            "source_policy": "text_overrides_image",
+            "allowed_sources": [
+              "text",
+              "image"
+            ],
+            "forbid_value_generation": true,
+            "source": "image",
+            "image_locked": true
+          }
+        },
+        "quality_controls": {
+          "forbidden_changes": [
+            "modifying identity attributes sourced from image",
+            "implicit face or hair alteration",
+            "beautification or aging",
+            "conflicting multiple values for a single attribute"
+          ]
+        }
+      },
+      "cases": [
+        {
+          "case_id": "identity-locked-edit",
+          "final_prompt": "{\n  \"task\": \"build_image_prompt_json\",\n  \"reference_image_policy\": {\n    \"used\": true,\n    \"represents\": \"full character identity unless explicitly overridden by text\",\n    \"instructions\": [\n      \"If an attribute allows image as a source and no text value is provided, the attribute must be copied exactly from the reference image\",\n      \"Inference or stylistic guessing is forbidden when image source is available\",\n      \"Never infer or optimize identity attributes\"\n    ]\n  },\n  \"subject\": {\n    \"type\": \"human\",\n    \"identity_lock\": {\n      \"face\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"age\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"skin_tone\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"facial_features\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"body_proportions\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_style\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"hair_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      },\n      \"eye_color\": {\n        \"source\": \"image\",\n        \"image_locked\": true\n      }\n    },\n    \"pose\": {\n      \"source\": \"image\",\n      \"image_locked\": true,\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ]\n    },\n    \"expression\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"gaze\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"appearance\": {\n    \"clothing\": {\n      \"value\": \"深绿色无图案长袖针织衫与原图深色长裤、白鞋\",\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ]\n    },\n    \"colors\": {\n      \"primary_palette\": {\n        \"allowed_sources\": [\n          \"text\",\n          \"image\"\n        ],\n        \"source\": \"image\",\n        \"image_locked\": true\n      }\n    }\n  },\n  \"environment\": {\n    \"location\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"details\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"time_of_day\": {\n      \"value\": \"原参考图影棚时段\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"weather\": {\n      \"value\": \"indoor environment, weather not applicable\",\n      \"allowed_sources\": [\n        \"text\"\n      ],\n      \"default_source\": \"schema\"\n    }\n  },\n  \"camera\": {\n    \"framing\": {\n      \"value\": \"原参考图完整全身构图\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"angle\": {\n      \"value\": \"原参考图平视机位\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"lens_feel\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"lighting\": {\n    \"type\": {\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"source\": \"image\",\n      \"image_locked\": true\n    },\n    \"direction\": {\n      \"value\": \"原参考图左上柔光方向\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    },\n    \"intensity\": {\n      \"value\": \"原图亮度\",\n      \"allowed_sources\": [\n        \"text\"\n      ]\n    }\n  },\n  \"style\": {\n    \"render_type\": {\n      \"source_policy\": \"text_overrides_image\",\n      \"allowed_sources\": [\n        \"text\",\n        \"image\"\n      ],\n      \"forbid_value_generation\": true,\n      \"source\": \"image\",\n      \"image_locked\": true\n    }\n  },\n  \"quality_controls\": {\n    \"forbidden_changes\": [\n      \"modifying identity attributes sourced from image\",\n      \"implicit face or hair alteration\",\n      \"beautification or aging\",\n      \"conflicting multiple values for a single attribute\"\n    ]\n  }\n}",
+          "reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:34:28+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
+      "original_sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "两次编辑已实测；主体保留较好，衬衫款式未命中。独立LLM确定性测试未完成，不能宣称原模板完全通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W043",
+      "source_id": "T021",
+      "title": "GPT2画质修复元提示词",
+      "categories": [
+        "edit"
+      ],
+      "type": "V3修复元提示词→A型诊断→实际重绘修复",
+      "test_input": {
+        "图像": "带合成彩噪/模糊/块状损坏的成年女性全身照片"
+      },
+      "reference_material": [
+        "materials/damaged-adult-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选取可见V3完整版；主要问题A污染清除型，照片无武器/产品/战场，条件模块不适用。",
+        "保留原局部强制指令；无清晰真值图片输入生图，因此恢复细节只能初评，不能证明真实信息恢复。"
+      ],
+      "selected_source_prompt": "V3版（去除杂乱感）",
+      "meta_output": {
+        "问题类型": "A 污染清除型",
+        "设计性细节": "发型/左脸小痣/白T/深蓝长裤白鞋/灰背景全身姿势",
+        "污染性细节": "彩色噪点和块状压缩模糊",
+        "中文重绘提示词": "[核心主体描述]：参考图中虚构成年女性，黑色齐下巴短发、左脸颊小痣、白色短袖T恤、深蓝直筒长裤、白色鞋，正面站立双臂垂下，保持身份、姿势、全身构图及所有设计细节，[极致物理肌理]：清除彩色杂噪、块状压缩与AI涂抹感，重建自然皮肤细纹与毛孔、真实黑色发丝、棉质T恤织物纤维与裤面缝线，不塑料不过度磨皮，[环境与背景]：保留灰色摄影棚地面墙面和空间透视，clean, pure smooth background, completely noise-free，不添加任何物件，[光影与氛围]：原图左上单一柔和中性主光，自然软阴影、肤色与白平衡沿用原图，不重新布光，[摄影设备与调性]：自然平视全身写实摄影，保持原画幅2:3，不用极简覆盖设计，不加全局颗粒。",
+        "局部重新生成强制指令": "局部重新生成强制指令： 不考虑参考图的主体原有的劣质涂抹纹理、碎冰晶污染或塑料伪影，严格按照提示词重新生成具有真实物理质感的肌理，但生成的内容必须与原图的风格、色调、构图、人物姿态、设计细节完全一致，且保证光影、透视无缝融合。",
+        "产品精修": "不适用"
+      },
+      "cases": [
+        {
+          "case_id": "repair-v3",
+          "final_prompt": "[核心主体描述]：参考图中虚构成年女性，黑色齐下巴短发、左脸颊小痣、白色短袖T恤、深蓝直筒长裤、白色鞋，正面站立双臂垂下，保持身份、姿势、全身构图及所有设计细节，[极致物理肌理]：清除彩色杂噪、块状压缩与AI涂抹感，重建自然皮肤细纹与毛孔、真实黑色发丝、棉质T恤织物纤维与裤面缝线，不塑料不过度磨皮，[环境与背景]：保留灰色摄影棚地面墙面和空间透视，clean, pure smooth background, completely noise-free，不添加任何物件，[光影与氛围]：原图左上单一柔和中性主光，自然软阴影、肤色与白平衡沿用原图，不重新布光，[摄影设备与调性]：自然平视全身写实摄影，保持原画幅2:3，不用极简覆盖设计，不加全局颗粒。\n局部重新生成强制指令： 不考虑参考图的主体原有的劣质涂抹纹理、碎冰晶污染或塑料伪影，严格按照提示词重新生成具有真实物理质感的肌理，但生成的内容必须与原图的风格、色调、构图、人物姿态、设计细节完全一致，且保证光影、透视无缝融合。",
+          "reference_material": [
+            "materials/damaged-adult-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:34:28+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·5分] GPT2画质修复元提示词.md",
+      "original_sha256": "c62773b764bd1e9cf0c2dc61fa50f4befc94b8fd13ac5960ca2996ba1bb4f7ab",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "本次合成降质人像A型污染清除符合视觉初评；只证明该子用例可用，不证明真实信息恢复或全类型稳定性。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W044",
+      "source_id": "T022",
+      "title": "编辑模型思考",
+      "categories": [
+        "edit"
+      ],
+      "type": "教程中可见直接编辑指令→移除自制合成标注",
+      "test_input": {
+        "操作": "只移除合成素材四角TEST及对角DEMO测试标记",
+        "素材归属": "旧轮已生成的虚构成年女性合成自制素材"
+      },
+      "reference_material": [
+        "materials/marked-adult-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选择开头可直接运行的移除标注指令；不用ComfyUI/FireRed，不据此评判其模型对比表或80场景全部。",
+        "本例标记为自制合成测试文字，非他人版权归属；其他人物内容应保持。"
+      ],
+      "selected_source_prompt": "移除水印提示词",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "remove-test-marks",
+          "final_prompt": "去除图像中的水印、文字和标志，包括四个角内的所有标志或文字。确保移除元素后的背景无缝且自然。图像应看起来未改动，没有任何可见的先前标志或文字痕迹。清晰对焦，高品质，照片级真实感",
+          "reference_material": [
+            "materials/marked-adult-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:34:28+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·5分] 编辑模型思考.md",
+      "original_sha256": "ca1dbd73e411f7c12e9f878faa8be1c6e36fe3b92ecc2177e3517982e0ca934f",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "移除本会话自加标记的最小用例符合初评；整页其余工作流未验证，原5分标签不作为证据。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W045",
+      "source_id": "T023",
+      "title": "高清修复提示词模板",
+      "categories": [
+        "edit"
+      ],
+      "type": "原文高保真修复直接指令",
+      "test_input": {
+        "图像": "同W043的合成受损女性，复用相同参考可比较不同修复模板"
+      },
+      "reference_material": [
+        "materials/damaged-adult-synthetic.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "完全保留第一完整修复提示词，包括4K要求，输出按实际尺寸判定，不以提示词中的4K当实测。",
+        "关联九个子页缺失，仅测试可见主模板；不补写原版。",
+        "与W043复用同一合成参考，但各一张不等于稳定性验证。"
+      ],
+      "selected_source_prompt": "第一完整高保真超分辨率修复与4K增强模板",
+      "meta_output": null,
+      "cases": [
+        {
+          "case_id": "strict-restore",
+          "final_prompt": "基于提供的参考图像进行严格的高保真超分辨率修复与4K增强。必须绝对忠实于原始图像中的人物身份特征、面部结构、比例关系和整体构图。保持人物的表情、视线方向、姿态、相机角度、画面构图以及透视关系完全一致，不得产生任何结构性偏差。\n\n在修复过程中严格保持服装、头发、皮肤以及背景元素的结构、位置、设计和空间关系与原始图像一致。不得改变发型轮廓、服装样式、背景布局或任何道具位置，只允许进行真实细节恢复与图像质量增强。\n\n恢复并增强细微层级细节，使画面呈现自然真实的摄影质感。重点增强真实皮肤毛孔、自然细纹、细小皮肤纹理、真实发丝层次、随机细发、睫毛与眉毛结构、织物纹理、纤维结构、缝线细节以及材质表面微反射。细节增强必须符合真实摄影表现，避免生成虚假的AI纹理或不自然的细节。\n\n针对低质量图像进行专业级图像修复，包括去除压缩噪点、JPEG压缩痕迹、模糊边缘和细节损失，恢复真实锐度与清晰度，修复色彩断层、色带与噪点问题，同时保持自然的镜头成像特征。避免过度锐化和过度平滑，保持真实的摄影质感。\n\n颜色科学必须严格遵循原始图像。保持原始白平衡、整体色调关系和真实肤色。光线方向、光照强度、对比度关系和阴影结构必须与原始图像完全一致，不允许重新设计光照或改变光影逻辑。\n\n背景环境必须保持原始布局、元素结构与透视关系，同时恢复背景细节和清晰度。保持原始景深效果与虚化层级，不得改变背景结构或添加新的元素。\n\n禁止改变人物身份特征、面部结构、体型比例、姿势、构图或相机视角。禁止重新布光、重新设计背景或生成新的内容。整个处理过程仅允许进行真实细节修复、信息恢复与高分辨率增强，使最终结果看起来像高质量相机拍摄的自然照片。\n\n优先恢复真实摄影细节，避免AI过度生成或人工感纹理，保持自然镜头质感与真实成像效果。",
+          "reference_material": [
+            "materials/damaged-adult-synthetic.png"
+          ],
+          "status": "未执行",
+          "images": []
+        }
+      ],
+      "prepared_at": "2026-10-19T02:34:28+08:00"
+    },
+    "inspection": null,
+    "source": {
+      "original_filename": "提示词库/图像编辑/[已投产·4分] 高清修复提示词模板.md",
+      "original_sha256": "fdc9a8e2771a84e1aa8f27da46da7be77a35189a2b25ced1b0c43a4e43d51b24",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "合成降质人像视觉清理成功，但4K要求未满足；生成式纹理不是被证实的真实信息恢复。",
+      "original_evidence_is_new_test": false
+    }
   }
 ]

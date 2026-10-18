@@ -1,0 +1,23 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W040/seven-view-sheet.png"
+  ],
+  "checks": [
+    {
+      "requirement": "七种视图数量与朝向",
+      "result": "符合",
+      "evidence": "三全身正侧背、三上半身及一正面脸部特写，共7个"
+    },
+    {
+      "requirement": "布局与细节",
+      "result": "存在问题",
+      "evidence": "底部特写的头顶覆盖中间上半身视图下方，版式有重叠；细衣袋简化，背景仍有渐变与软阴影"
+    }
+  ],
+  "conclusion": "七视图最小资产确实出图，数量朝向基本正确；排版、细节与无背景阴影要求未完全满足，未测试整套小说视频流程。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:37:41+08:00",
+  "stability_verified": false
+}

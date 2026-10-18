@@ -1,0 +1,38 @@
+{
+  "test_id": "W044",
+  "source_id": "T022",
+  "title": "编辑模型思考",
+  "categories": [
+    "edit"
+  ],
+  "type": "教程中可见直接编辑指令→移除自制合成标注",
+  "test_input": {
+    "操作": "只移除合成素材四角TEST及对角DEMO测试标记",
+    "素材归属": "旧轮已生成的虚构成年女性合成自制素材"
+  },
+  "reference_material": [
+    "materials/marked-adult-synthetic.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选择开头可直接运行的移除标注指令；不用ComfyUI/FireRed，不据此评判其模型对比表或80场景全部。",
+    "本例标记为自制合成测试文字，非他人版权归属；其他人物内容应保持。"
+  ],
+  "selected_source_prompt": "移除水印提示词",
+  "meta_output": null,
+  "cases": [
+    {
+      "case_id": "remove-test-marks",
+      "final_prompt": "去除图像中的水印、文字和标志，包括四个角内的所有标志或文字。确保移除元素后的背景无缝且自然。图像应看起来未改动，没有任何可见的先前标志或文字痕迹。清晰对焦，高品质，照片级真实感",
+      "reference_material": [
+        "materials/marked-adult-synthetic.png"
+      ],
+      "status": "未执行",
+      "images": []
+    }
+  ],
+  "prepared_at": "2026-10-19T02:34:28+08:00"
+}
