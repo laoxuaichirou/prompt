@@ -1,0 +1,25 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W035/char-01.png",
+    "results/W035/char-02.png",
+    "results/W035/char-03.png"
+  ],
+  "checks": [
+    {
+      "requirement": "先分析人物JSON",
+      "result": "符合",
+      "evidence": "记录characters及features，未声称运行Qwen或LoRA"
+    },
+    {
+      "requirement": "三个真实角度身份服装",
+      "result": "基本符合",
+      "evidence": "正面、严格左侧及背面三个全身图；发际线、胡茬、蓝衣白鞋一致，背部为推断"
+    }
+  ],
+  "conclusion": "选定人物档案→三角度资产最小用例主要符合；20镜后续流水线未测试，100%几何身份不能保证。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:27:24+08:00",
+  "stability_verified": false
+}

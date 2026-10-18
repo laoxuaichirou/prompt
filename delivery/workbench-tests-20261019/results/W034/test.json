@@ -1,0 +1,100 @@
+{
+  "test_id": "W034",
+  "source_id": "T164",
+  "title": "QWEN3分镜元提示词",
+  "categories": [
+    "story"
+  ],
+  "type": "去重分镜元提示词→三个独立连续画面",
+  "test_input": {
+    "剧情": "望窗→近窗→返回坐下",
+    "数量": 3
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "模板三次重复粘贴归并一份；填充3镜小故事。",
+    "保留Next Scene及角色/光影连续要求；相机运动只记录不验证。",
+    "每行约100字属于近似目标；本例为了可辨识锚点较长，不冒充严格格式通过。"
+  ],
+  "selected_source_prompt": "你是专业文案顶级创作者…Next Scene: 约100字",
+  "meta_output": [
+    "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第1镜，中景，男性从沙发边转头望向金色窗外，双肩松弛，手仍轻扶沙发靠背。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。",
+    "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第2镜，中景，男性迈出一步靠近窗边，侧身望向湖面，右手自然垂下。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。",
+    "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第3镜，中景，男性转回沙发，坐下并轻轻微笑，双手放在膝上。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。"
+  ],
+  "cases": [
+    {
+      "case_id": "next-01",
+      "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第1镜，中景，男性从沙发边转头望向金色窗外，双肩松弛，手仍轻扶沙发靠背。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W034/next-01.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "ff6a9ce4622658b7e843c9ce95ff36d6f456f898e1a6385754b5db0e302d57ab",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7d700c0b-dc23-49f7-9216-d3f8cb2d0e85.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:50+08:00"
+    },
+    {
+      "case_id": "next-02",
+      "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第2镜，中景，男性迈出一步靠近窗边，侧身望向湖面，右手自然垂下。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W034/next-02.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "8d311dbc8c523d5a913b26fa538cccd75026f906e0ab40c8291fcb333f8bedc9",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c8d64a92-6b1c-43ee-9d11-9bc617cc3f9f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:23:51+08:00"
+    },
+    {
+      "case_id": "next-03",
+      "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第3镜，中景，男性转回沙发，坐下并轻轻微笑，双手放在膝上。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W034/next-03.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "4e75816535d5336259240215cd04809146ddfc67f74e6f23535d434b561ab460",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-5bc89abc-5001-443e-8adc-fdcc3560d6da.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:13+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:20:10+08:00"
+}

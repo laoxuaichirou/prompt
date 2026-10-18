@@ -1,0 +1,23 @@
+{
+  "status": "符合要求",
+  "generated": true,
+  "opened_files": [
+    "results/W031/focus-relay-nine.png"
+  ],
+  "checks": [
+    {
+      "requirement": "九行无空行焦点接力",
+      "result": "符合",
+      "evidence": "规划9行Next Scene，环境→手指→毛毯→压平→织物→坐下"
+    },
+    {
+      "requirement": "九格动作与风格",
+      "result": "符合",
+      "evidence": "实际9格，抓起、铺展、压平、手离开、坐下均有对应，金色客厅连续"
+    }
+  ],
+  "conclusion": "本次静谧整理毛毯静态九格最小用例符合主要要求；风吹及运镜无法用静帧证明。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:27:24+08:00",
+  "stability_verified": false
+}

@@ -1,0 +1,108 @@
+{
+  "test_id": "W035",
+  "source_id": "T165",
+  "title": "未整理整套分镜提示词",
+  "categories": [
+    "story"
+  ],
+  "type": "人物分析元提示词→角色档案→三角度图",
+  "test_input": {
+    "阶段": "仅选首段完整人物特征分析",
+    "角度": [
+      "正面",
+      "左侧90度",
+      "背面"
+    ]
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "首段人物JSON去除HTML与转义破损后执行；不使用Qwen/Lightning/LoRA，只有ChatGPT适配。",
+    "20镜规划与分镜、后帧连续性属于独立后续阶段，本最小人物资产用例未验证。",
+    "加入三角度实际出图来检查人物一致性，不能仅凭分析JSON宣称通过。"
+  ],
+  "selected_source_prompt": "你是专业的电影级分镜人物细节描述师…characters JSON",
+  "meta_output": {
+    "characters": [
+      {
+        "id": "A",
+        "description": "虚构成年男性，中年，黑灰短发且前额发际线后退头顶稀疏，浅胡茬，中等体型，灰蓝色哑光V领短袖上衣、三前袋含左胸白色无字小标签、同色直筒抽绳长裤、白鞋。",
+        "features": "稀疏后退黑灰发、浅胡茬、蓝色V领套装、白鞋"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "char-01",
+      "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，正面看镜头，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W035/char-01.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "cd9636fc314620499d86001bea965e1c9a7e13754655978708fdf839d8b7d234",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-99057ce0-b512-48c4-8f40-2cc5f838285d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:37+08:00"
+    },
+    {
+      "case_id": "char-02",
+      "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，严格左侧90度，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。侧脸鼻尖朝画面左边。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W035/char-02.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "07ada8c278c1d7cbe4a0e76ba28a5684163a2d14e769b0accb6f954340118168",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a2d081ab-18cd-4a8c-bba9-e8123f21233b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:58+08:00"
+    },
+    {
+      "case_id": "char-03",
+      "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，严格背面看不到脸，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W035/char-03.png",
+          "width": 1024,
+          "height": 1536,
+          "sha256": "0185d7f9d10a064d78483d09f8145940fd105adc7d9c857a4313a2fb47148141",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-577d6ff5-50c0-43a7-9992-dc4618b59fa6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:56+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:20:10+08:00"
+}

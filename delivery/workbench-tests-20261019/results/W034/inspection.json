@@ -1,0 +1,25 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W034/next-01.png",
+    "results/W034/next-02.png",
+    "results/W034/next-03.png"
+  ],
+  "checks": [
+    {
+      "requirement": "连续三图身份和光影",
+      "result": "基本符合",
+      "evidence": "同一男性蓝衣及客厅金光，转头→近窗→坐下推进"
+    },
+    {
+      "requirement": "中景及约100字格式",
+      "result": "存在问题",
+      "evidence": "三图均偏全身，未遵循指定中景；规划为保留锚点较长"
+    }
+  ],
+  "conclusion": "已执行去重元提示词并生成三张独立图，主体连续，但景别和文本长度控制有偏差。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:27:24+08:00",
+  "stability_verified": false
+}

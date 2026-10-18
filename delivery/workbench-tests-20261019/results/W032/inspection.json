@@ -1,0 +1,29 @@
+{
+  "status": "存在问题",
+  "generated": true,
+  "opened_files": [
+    "results/W032/scene-initial.png",
+    "results/W032/scene-after.png"
+  ],
+  "checks": [
+    {
+      "requirement": "双变体保留场景",
+      "result": "符合",
+      "evidence": "同一古松、云海、剑痕石及黄昏镜位；战后增加落枝和划痕"
+    },
+    {
+      "requirement": "资产尺寸",
+      "result": "存在问题",
+      "evidence": "剑痕石视觉高度远大于半米，5米等物理参数无标尺不可核验"
+    },
+    {
+      "requirement": "全文影视流程",
+      "result": "未执行",
+      "evidence": "仅测试可见场景资产模块，链接子页和后续指南缺失，音视频未执行"
+    }
+  ],
+  "conclusion": "双变体真实出图并比对，主要场景保持；精准尺寸未满足，不能宣称整套工业流程通过。",
+  "review_type": "模型视觉初评",
+  "reviewed_at": "2026-10-19T02:27:24+08:00",
+  "stability_verified": false
+}

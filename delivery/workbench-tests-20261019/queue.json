@@ -403,9 +403,9 @@
       "story"
     ],
     "batch": 7,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W031"
   },
   {
@@ -416,9 +416,9 @@
       "story"
     ],
     "batch": 7,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 2,
+    "opened_images": 2,
     "result_dir": "results/W032"
   },
   {
@@ -429,9 +429,9 @@
       "story"
     ],
     "batch": 7,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 1,
+    "opened_images": 1,
     "result_dir": "results/W033"
   },
   {
@@ -442,9 +442,9 @@
       "story"
     ],
     "batch": 7,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "存在问题",
+    "generated_images": 3,
+    "opened_images": 3,
     "result_dir": "results/W034"
   },
   {
@@ -455,9 +455,9 @@
       "story"
     ],
     "batch": 7,
-    "status": "未执行",
-    "generated_images": 0,
-    "opened_images": 0,
+    "status": "符合要求",
+    "generated_images": 3,
+    "opened_images": 3,
     "result_dir": "results/W035"
   },
   {

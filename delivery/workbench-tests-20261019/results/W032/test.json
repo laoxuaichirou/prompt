@@ -1,0 +1,80 @@
+{
+  "test_id": "W032",
+  "source_id": "T161",
+  "title": "工业级影视生成流程",
+  "categories": [
+    "story"
+  ],
+  "type": "可见流程中的场景资产直接提示词",
+  "test_input": {
+    "场景": "青云崖",
+    "变体": [
+      "初始版",
+      "战斗后版"
+    ]
+  },
+  "reference_material": [],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "正文为多轮聊天；仅执行可见Step 2场景资产的初始/战后双变体，未执行整套影视流程。",
+    "关联Notion子页及docx/V4指南正文不在附件，标记缺失，不自行重建。",
+    "第二图将先生成的初始场景作为参考；无音频视频实测。"
+  ],
+  "selected_source_prompt": "（二）场景资产制作：青云崖及初始版、战斗后版",
+  "meta_output": {
+    "missing": [
+      "链接Notion子页",
+      "AI视频元提示词终极指南_完整版.docx",
+      "仅列标题的V2/V3/V4完整指南"
+    ],
+    "dependency": "scene-after必须在scene-initial生成并打开后单独调用"
+  },
+  "cases": [
+    {
+      "case_id": "scene-initial",
+      "final_prompt": "青云崖场景，前景：岩石地面与高半米的剑痕石，剑痕石位于古松左侧；中景：千年古松，粗大树干和宽阔松冠；远景：悬崖下方的云海与远山；古松旁有可站立的空地。黄昏右侧逆光，冷青色岩石与暖金轮廓，电影写实。无人、无文字。初始版，松枝完整，地面除剑痕石外没有新鲜破坏。横构图16:9。",
+      "reference_material": [],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W032/scene-initial.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "72374ddd062acc559f690fae6f698d5c01f92999781ef835660b7404d929db18",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7c8d21c1-8061-46c6-86f8-1c4c3db8a35b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:58+08:00"
+    },
+    {
+      "case_id": "scene-after",
+      "final_prompt": "青云崖场景，前景：岩石地面与高半米的剑痕石，剑痕石位于古松左侧；中景：千年古松，粗大树干和宽阔松冠；远景：悬崖下方的云海与远山；古松旁有可站立的空地。黄昏右侧逆光，冷青色岩石与暖金轮廓，电影写实。无人、无文字。战斗后版，原有古松及云海保留；地面新增数道剑痕、少量断落松枝，氛围苍凉，完全无人无血迹。镜位构图与初始版保持一致，横构图16:9。",
+      "reference_material": [
+        "results/W032/scene-initial.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W032/scene-after.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "e213023e9172c79fae6bdd87a8cf4a2e969145b23a965a33a87e0c916899acaa",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-01ebe0c1-af91-405f-96b6-52da906e07a9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:26:56+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:20:10+08:00"
+}

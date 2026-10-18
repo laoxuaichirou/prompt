@@ -3309,5 +3309,565 @@
       "original_test_conclusion": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。 模型单轮初评，未宣称视频通过。",
       "original_evidence_is_new_test": false
     }
+  },
+  {
+    "test": {
+      "test_id": "W031",
+      "source_id": "T040",
+      "title": "视觉连续性导演",
+      "categories": [
+        "story"
+      ],
+      "type": "元提示词→9行焦点接力→原生九格静态分镜",
+      "test_input": {
+        "故事": "男性发现毛毯被微风吹起，整理毛毯后坐下看日落。",
+        "调性": "静谧/情感",
+        "Visual Anchor": "蓝衣成年男性的手与沙发毛毯"
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "选取完整“视觉连续性导演”九镜头元提示词；首个独立九键JSON元提示词未纳入本最小用例。",
+        "填充新故事；将镜头运动转化为静态关键瞬间，不验证视频。"
+      ],
+      "selected_source_prompt": "Role: 视觉连续性导演 (Visual Continuity Director)",
+      "meta_output": {
+        "tone": "静谧/情感",
+        "anchor": "蓝衣男性及整理毛毯的手",
+        "output": "Next Scene：1) 全景/固定 :: 男性站在日落客厅沙发边，窗外金色湖面映照蓝衣轮廓 :: 环境至人物\nNext Scene：2) 近景/手部 :: 男性的手停在沙发靠背上方，指尖朝向粗织毛毯 :: 人物至手指\nNext Scene：3) 特写/触发 :: 窗边微风掀起毛毯一角，男性手指轻动注意褶皱 :: 毛毯至手指\nNext Scene：4) 中景/反应 :: 男性低头看向翘起的毛毯，右手伸向毛毯边缘 :: 视线至目标\nNext Scene：5) 近景/进行 :: 男性右手抓住毛毯边缘，缓缓向沙发靠背铺展 :: 抓住至铺开\nNext Scene：6) 极近特写/关键 :: 男性指尖压平最后一道毛毯褶皱，金光勾勒手背 :: 手指至褶皱\nNext Scene：7) 特写/后果 :: 沙发靠背上的毛毯已铺平，男性右手仍停在毛毯上 :: 动作至结果\nNext Scene：8) 局部/余韵 :: 纤维表面承接暖光，手指刚离开毛毯，阴影柔软 :: 结果至纹理\nNext Scene：9) 远景/结束 :: 男性坐在整理好的同一沙发上看向湖面，平整毛毯留在身旁 :: 拉远与宁静"
+      },
+      "cases": [
+        {
+          "case_id": "focus-relay-nine",
+          "final_prompt": "依据参考图生成电影质感原生3×3九格静态分镜，每格16:9，总体16:9。同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。严格按从左到右从上到下九个瞬间：\nNext Scene：1) 全景/固定 :: 男性站在日落客厅沙发边，窗外金色湖面映照蓝衣轮廓 :: 环境至人物\nNext Scene：2) 近景/手部 :: 男性的手停在沙发靠背上方，指尖朝向粗织毛毯 :: 人物至手指\nNext Scene：3) 特写/触发 :: 窗边微风掀起毛毯一角，男性手指轻动注意褶皱 :: 毛毯至手指\nNext Scene：4) 中景/反应 :: 男性低头看向翘起的毛毯，右手伸向毛毯边缘 :: 视线至目标\nNext Scene：5) 近景/进行 :: 男性右手抓住毛毯边缘，缓缓向沙发靠背铺展 :: 抓住至铺开\nNext Scene：6) 极近特写/关键 :: 男性指尖压平最后一道毛毯褶皱，金光勾勒手背 :: 手指至褶皱\nNext Scene：7) 特写/后果 :: 沙发靠背上的毛毯已铺平，男性右手仍停在毛毯上 :: 动作至结果\nNext Scene：8) 局部/余韵 :: 纤维表面承接暖光，手指刚离开毛毯，阴影柔软 :: 结果至纹理\nNext Scene：9) 远景/结束 :: 男性坐在整理好的同一沙发上看向湖面，平整毛毯留在身旁 :: 拉远与宁静\n无字幕、文字、镜头标签或水印。焦点从人物到手、毛毯、手指压平、平整织物，再回到人物，动作不可倒退。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W031/focus-relay-nine.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "4da7a7708bdcd6b73c935375b44a3ad139581d9ea2be20cddd276ce81e966a24",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f2422c85-7308-4848-8812-ecbc0c592f7c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:23:00+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:20:10+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W031/focus-relay-nine.png"
+      ],
+      "checks": [
+        {
+          "requirement": "九行无空行焦点接力",
+          "result": "符合",
+          "evidence": "规划9行Next Scene，环境→手指→毛毯→压平→织物→坐下"
+        },
+        {
+          "requirement": "九格动作与风格",
+          "result": "符合",
+          "evidence": "实际9格，抓起、铺展、压平、手离开、坐下均有对应，金色客厅连续"
+        }
+      ],
+      "conclusion": "本次静谧整理毛毯静态九格最小用例符合主要要求；风吹及运镜无法用静帧证明。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:27:24+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[已投产·5分] 视觉连续性导演.md",
+      "original_sha256": "cc14b1a3e27d03e3d60d188a247d065bff687c4ac3549179fb45d7b0a19d343a",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "元输出9行连续文本、无空行、无代词；实图9格从花店人物转到叶/花瓣/手指再回全景，身份大体保留；第二格已触碰而第三格才给诱因，触碰发生的因果时序不严格，静态格不能验证真实回弹运动。 模型单轮初评，未宣称视频通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W032",
+      "source_id": "T161",
+      "title": "工业级影视生成流程",
+      "categories": [
+        "story"
+      ],
+      "type": "可见流程中的场景资产直接提示词",
+      "test_input": {
+        "场景": "青云崖",
+        "变体": [
+          "初始版",
+          "战斗后版"
+        ]
+      },
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "正文为多轮聊天；仅执行可见Step 2场景资产的初始/战后双变体，未执行整套影视流程。",
+        "关联Notion子页及docx/V4指南正文不在附件，标记缺失，不自行重建。",
+        "第二图将先生成的初始场景作为参考；无音频视频实测。"
+      ],
+      "selected_source_prompt": "（二）场景资产制作：青云崖及初始版、战斗后版",
+      "meta_output": {
+        "missing": [
+          "链接Notion子页",
+          "AI视频元提示词终极指南_完整版.docx",
+          "仅列标题的V2/V3/V4完整指南"
+        ],
+        "dependency": "scene-after必须在scene-initial生成并打开后单独调用"
+      },
+      "cases": [
+        {
+          "case_id": "scene-initial",
+          "final_prompt": "青云崖场景，前景：岩石地面与高半米的剑痕石，剑痕石位于古松左侧；中景：千年古松，粗大树干和宽阔松冠；远景：悬崖下方的云海与远山；古松旁有可站立的空地。黄昏右侧逆光，冷青色岩石与暖金轮廓，电影写实。无人、无文字。初始版，松枝完整，地面除剑痕石外没有新鲜破坏。横构图16:9。",
+          "reference_material": [],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W032/scene-initial.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "72374ddd062acc559f690fae6f698d5c01f92999781ef835660b7404d929db18",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7c8d21c1-8061-46c6-86f8-1c4c3db8a35b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:58+08:00"
+        },
+        {
+          "case_id": "scene-after",
+          "final_prompt": "青云崖场景，前景：岩石地面与高半米的剑痕石，剑痕石位于古松左侧；中景：千年古松，粗大树干和宽阔松冠；远景：悬崖下方的云海与远山；古松旁有可站立的空地。黄昏右侧逆光，冷青色岩石与暖金轮廓，电影写实。无人、无文字。战斗后版，原有古松及云海保留；地面新增数道剑痕、少量断落松枝，氛围苍凉，完全无人无血迹。镜位构图与初始版保持一致，横构图16:9。",
+          "reference_material": [
+            "results/W032/scene-initial.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W032/scene-after.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "e213023e9172c79fae6bdd87a8cf4a2e969145b23a965a33a87e0c916899acaa",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-01ebe0c1-af91-405f-96b6-52da906e07a9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:26:56+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:20:10+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W032/scene-initial.png",
+        "results/W032/scene-after.png"
+      ],
+      "checks": [
+        {
+          "requirement": "双变体保留场景",
+          "result": "符合",
+          "evidence": "同一古松、云海、剑痕石及黄昏镜位；战后增加落枝和划痕"
+        },
+        {
+          "requirement": "资产尺寸",
+          "result": "存在问题",
+          "evidence": "剑痕石视觉高度远大于半米，5米等物理参数无标尺不可核验"
+        },
+        {
+          "requirement": "全文影视流程",
+          "result": "未执行",
+          "evidence": "仅测试可见场景资产模块，链接子页和后续指南缺失，音视频未执行"
+        }
+      ],
+      "conclusion": "双变体真实出图并比对，主要场景保持；精准尺寸未满足，不能宣称整套工业流程通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:27:24+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[仅参考·2分] 工业级影视生成流程.md",
+      "original_sha256": "ff80722b5b32b4d9b7122aa3a341609d8fcd57959fa37397b625ec9282fed15e",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "场景两变体成图，精确空间未满足；不代表工业影视全流程或视频通过。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W033",
+      "source_id": "T162",
+      "title": "故事版提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "有矛盾元提示词→美术设定板",
+      "test_input": {
+        "剧情": "沿用原文黑色外星环体荒原剧情"
+      },
+      "reference_material": [],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "原文同时要求“不是分镜/不要STORYBOARD”和“要写12格分镜。不!”；本例选择明确主体任务美术设计表，不把冲突算作原版可直接用。",
+        "删除聊天式“不!”歧义，不补写缺失结构；加入可执行版式和仅标题文字白名单，属ChatGPT适配。"
+      ],
+      "selected_source_prompt": "专业AI影视前期美术指导…中文DESIGN CONCEPT SHEET PROMPT",
+      "meta_output": "设计概念表提示词—《退后看见》：制作一张高端电影前期美术设定板，横向16:9。不要分镜，不表现按时间推进的连续格。中心大幅荒原全景：巨大垂直黑色外星环体降临远处，草地、蜿蜒河流及小型白色军方帐篷构成几何信息；左侧两名虚构成年科学家全身服装设定，物理学家穿灰色野外夹克，语言学家穿橄榄绿防风衣，胸前无文字品牌；右侧关键道具研究平板与黑色环体表面材质，底部三张环境研究小图呈现草地河流营地的空间关系，并有冷灰、草绿、米白、琥珀五个色块。整体低饱和冷灰电影写实，阴天柔光，营地少量暖灯，神秘探索情绪。大幅俯视研究图清楚展示环体与草地河流营地组成的信息，不用可读字母。标题仅“退后看见”，无额外说明文本，无水印。",
+      "cases": [
+        {
+          "case_id": "production-design",
+          "final_prompt": "设计概念表提示词—《退后看见》：制作一张高端电影前期美术设定板，横向16:9。不要分镜，不表现按时间推进的连续格。中心大幅荒原全景：巨大垂直黑色外星环体降临远处，草地、蜿蜒河流及小型白色军方帐篷构成几何信息；左侧两名虚构成年科学家全身服装设定，物理学家穿灰色野外夹克，语言学家穿橄榄绿防风衣，胸前无文字品牌；右侧关键道具研究平板与黑色环体表面材质，底部三张环境研究小图呈现草地河流营地的空间关系，并有冷灰、草绿、米白、琥珀五个色块。整体低饱和冷灰电影写实，阴天柔光，营地少量暖灯，神秘探索情绪。大幅俯视研究图清楚展示环体与草地河流营地组成的信息，不用可读字母。标题仅“退后看见”，无额外说明文本，无水印。",
+          "reference_material": [],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W033/production-design.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "7b8d35205904c6f72e0fd4ffec28d5fe4688132cdde597fd9a5125fbbe3c6150",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f112440e-44c5-487e-86da-ff99db59785f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:13+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:20:10+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W033/production-design.png"
+      ],
+      "checks": [
+        {
+          "requirement": "改编后美术设计板",
+          "result": "符合",
+          "evidence": "主场景、科学家双角色、环体材质、平板、环境研究及五色块齐全"
+        },
+        {
+          "requirement": "原稿约束一致",
+          "result": "存在问题",
+          "evidence": "原稿同时禁止分镜又要求12格，按设计表主任务适配；本图不是12格分镜"
+        }
+      ],
+      "conclusion": "适配后美术设定板可用，但原稿矛盾仍成立，不能列为原版直接通过。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:27:24+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[仅参考·2分] 故事版提示词.md",
+      "original_sha256": "9b09734f8bfc4e7f3c90b07348bc4a092acccee90e430dab7e3ba26f84e89883",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "本次解释后的电影前期设计概念表用例符合可见要求。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W034",
+      "source_id": "T164",
+      "title": "QWEN3分镜元提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "去重分镜元提示词→三个独立连续画面",
+      "test_input": {
+        "剧情": "望窗→近窗→返回坐下",
+        "数量": 3
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "模板三次重复粘贴归并一份；填充3镜小故事。",
+        "保留Next Scene及角色/光影连续要求；相机运动只记录不验证。",
+        "每行约100字属于近似目标；本例为了可辨识锚点较长，不冒充严格格式通过。"
+      ],
+      "selected_source_prompt": "你是专业文案顶级创作者…Next Scene: 约100字",
+      "meta_output": [
+        "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第1镜，中景，男性从沙发边转头望向金色窗外，双肩松弛，手仍轻扶沙发靠背。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。",
+        "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第2镜，中景，男性迈出一步靠近窗边，侧身望向湖面，右手自然垂下。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。",
+        "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第3镜，中景，男性转回沙发，坐下并轻轻微笑，双手放在膝上。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。"
+      ],
+      "cases": [
+        {
+          "case_id": "next-01",
+          "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第1镜，中景，男性从沙发边转头望向金色窗外，双肩松弛，手仍轻扶沙发靠背。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W034/next-01.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "ff6a9ce4622658b7e843c9ce95ff36d6f456f898e1a6385754b5db0e302d57ab",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-7d700c0b-dc23-49f7-9216-d3f8cb2d0e85.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:50+08:00"
+        },
+        {
+          "case_id": "next-02",
+          "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第2镜，中景，男性迈出一步靠近窗边，侧身望向湖面，右手自然垂下。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W034/next-02.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "8d311dbc8c523d5a913b26fa538cccd75026f906e0ab40c8291fcb333f8bedc9",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-c8d64a92-6b1c-43ee-9d11-9bc617cc3f9f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:23:51+08:00"
+        },
+        {
+          "case_id": "next-03",
+          "final_prompt": "Next Scene: 同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。第3镜，中景，男性转回沙发，坐下并轻轻微笑，双手放在膝上。背景由沙发边到窗边再返回，空间自然连续，保留相同暮色和右侧电视花朵，电影真实材质。只生成此刻的一张独立横向16:9电影画面，无文字，不画拼图。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W034/next-03.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "4e75816535d5336259240215cd04809146ddfc67f74e6f23535d434b561ab460",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-5bc89abc-5001-443e-8adc-fdcc3560d6da.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:13+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:20:10+08:00"
+    },
+    "inspection": {
+      "status": "存在问题",
+      "generated": true,
+      "opened_files": [
+        "results/W034/next-01.png",
+        "results/W034/next-02.png",
+        "results/W034/next-03.png"
+      ],
+      "checks": [
+        {
+          "requirement": "连续三图身份和光影",
+          "result": "基本符合",
+          "evidence": "同一男性蓝衣及客厅金光，转头→近窗→坐下推进"
+        },
+        {
+          "requirement": "中景及约100字格式",
+          "result": "存在问题",
+          "evidence": "三图均偏全身，未遵循指定中景；规划为保留锚点较长"
+        }
+      ],
+      "conclusion": "已执行去重元提示词并生成三张独立图，主体连续，但景别和文本长度控制有偏差。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:27:24+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[仅参考·3分] QWEN3分镜元提示词.md",
+      "original_sha256": "5c9916c0a61f0b99d4db47cd6c62599ae57fe0c29eb9cb29d5174d9b1e88dc43",
+      "original_test_status": "存在问题",
+      "original_test_conclusion": "三张静态连续用例已生成并逐张检查，机位与杯位置一致性有偏差。",
+      "original_evidence_is_new_test": false
+    }
+  },
+  {
+    "test": {
+      "test_id": "W035",
+      "source_id": "T165",
+      "title": "未整理整套分镜提示词",
+      "categories": [
+        "story"
+      ],
+      "type": "人物分析元提示词→角色档案→三角度图",
+      "test_input": {
+        "阶段": "仅选首段完整人物特征分析",
+        "角度": [
+          "正面",
+          "左侧90度",
+          "背面"
+        ]
+      },
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "reference_material_kind": "合成测试素材",
+      "tool": "image_gen.imagegen",
+      "image_model": "未知",
+      "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+      "changes": [
+        "首段人物JSON去除HTML与转义破损后执行；不使用Qwen/Lightning/LoRA，只有ChatGPT适配。",
+        "20镜规划与分镜、后帧连续性属于独立后续阶段，本最小人物资产用例未验证。",
+        "加入三角度实际出图来检查人物一致性，不能仅凭分析JSON宣称通过。"
+      ],
+      "selected_source_prompt": "你是专业的电影级分镜人物细节描述师…characters JSON",
+      "meta_output": {
+        "characters": [
+          {
+            "id": "A",
+            "description": "虚构成年男性，中年，黑灰短发且前额发际线后退头顶稀疏，浅胡茬，中等体型，灰蓝色哑光V领短袖上衣、三前袋含左胸白色无字小标签、同色直筒抽绳长裤、白鞋。",
+            "features": "稀疏后退黑灰发、浅胡茬、蓝色V领套装、白鞋"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "case_id": "char-01",
+          "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，正面看镜头，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W035/char-01.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "cd9636fc314620499d86001bea965e1c9a7e13754655978708fdf839d8b7d234",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-99057ce0-b512-48c4-8f40-2cc5f838285d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:37+08:00"
+        },
+        {
+          "case_id": "char-02",
+          "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，严格左侧90度，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。侧脸鼻尖朝画面左边。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W035/char-02.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "07ada8c278c1d7cbe4a0e76ba28a5684163a2d14e769b0accb6f954340118168",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a2d081ab-18cd-4a8c-bba9-e8123f21233b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:58+08:00"
+        },
+        {
+          "case_id": "char-03",
+          "final_prompt": "同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。角色资产测试，只画这位同一成年男性全身，严格背面看不到脸，站立放松双臂垂下，保持头顶稀疏和蓝衣白鞋，浅灰中性摄影背景，柔和左上光，无文字标签，单图2:3。",
+          "reference_material": [
+            "results/W014/fashion-01.png"
+          ],
+          "status": "已出图，待打开检查",
+          "images": [
+            {
+              "file": "results/W035/char-03.png",
+              "width": 1024,
+              "height": 1536,
+              "sha256": "0185d7f9d10a064d78483d09f8145940fd105adc7d9c857a4313a2fb47148141",
+              "opened_for_visual_review": true
+            }
+          ],
+          "tool_metadata": {
+            "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-577d6ff5-50c0-43a7-9992-dc4618b59fa6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+            "save_method": "tool output path"
+          },
+          "generated_at": "2026-10-19T02:24:56+08:00"
+        }
+      ],
+      "prepared_at": "2026-10-19T02:20:10+08:00"
+    },
+    "inspection": {
+      "status": "符合要求",
+      "generated": true,
+      "opened_files": [
+        "results/W035/char-01.png",
+        "results/W035/char-02.png",
+        "results/W035/char-03.png"
+      ],
+      "checks": [
+        {
+          "requirement": "先分析人物JSON",
+          "result": "符合",
+          "evidence": "记录characters及features，未声称运行Qwen或LoRA"
+        },
+        {
+          "requirement": "三个真实角度身份服装",
+          "result": "基本符合",
+          "evidence": "正面、严格左侧及背面三个全身图；发际线、胡茬、蓝衣白鞋一致，背部为推断"
+        }
+      ],
+      "conclusion": "选定人物档案→三角度资产最小用例主要符合；20镜后续流水线未测试，100%几何身份不能保证。",
+      "review_type": "模型视觉初评",
+      "reviewed_at": "2026-10-19T02:27:24+08:00",
+      "stability_verified": false
+    },
+    "source": {
+      "original_filename": "提示词库/视频分镜/[仅参考·3分] 未整理整套分镜提示词.md",
+      "original_sha256": "fe58921cdfe4c5a77913534518e7b6dce15cb8656b16fdc103a170a3573c7264",
+      "original_test_status": "符合要求",
+      "original_test_conclusion": "首个人物分析元任务及三视角最小用例符合主要视觉要求，不覆盖整套工作流。",
+      "original_evidence_is_new_test": false
+    }
   }
 ]

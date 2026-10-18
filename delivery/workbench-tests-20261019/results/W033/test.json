@@ -1,0 +1,46 @@
+{
+  "test_id": "W033",
+  "source_id": "T162",
+  "title": "故事版提示词",
+  "categories": [
+    "story"
+  ],
+  "type": "有矛盾元提示词→美术设定板",
+  "test_input": {
+    "剧情": "沿用原文黑色外星环体荒原剧情"
+  },
+  "reference_material": [],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "原文同时要求“不是分镜/不要STORYBOARD”和“要写12格分镜。不!”；本例选择明确主体任务美术设计表，不把冲突算作原版可直接用。",
+    "删除聊天式“不!”歧义，不补写缺失结构；加入可执行版式和仅标题文字白名单，属ChatGPT适配。"
+  ],
+  "selected_source_prompt": "专业AI影视前期美术指导…中文DESIGN CONCEPT SHEET PROMPT",
+  "meta_output": "设计概念表提示词—《退后看见》：制作一张高端电影前期美术设定板，横向16:9。不要分镜，不表现按时间推进的连续格。中心大幅荒原全景：巨大垂直黑色外星环体降临远处，草地、蜿蜒河流及小型白色军方帐篷构成几何信息；左侧两名虚构成年科学家全身服装设定，物理学家穿灰色野外夹克，语言学家穿橄榄绿防风衣，胸前无文字品牌；右侧关键道具研究平板与黑色环体表面材质，底部三张环境研究小图呈现草地河流营地的空间关系，并有冷灰、草绿、米白、琥珀五个色块。整体低饱和冷灰电影写实，阴天柔光，营地少量暖灯，神秘探索情绪。大幅俯视研究图清楚展示环体与草地河流营地组成的信息，不用可读字母。标题仅“退后看见”，无额外说明文本，无水印。",
+  "cases": [
+    {
+      "case_id": "production-design",
+      "final_prompt": "设计概念表提示词—《退后看见》：制作一张高端电影前期美术设定板，横向16:9。不要分镜，不表现按时间推进的连续格。中心大幅荒原全景：巨大垂直黑色外星环体降临远处，草地、蜿蜒河流及小型白色军方帐篷构成几何信息；左侧两名虚构成年科学家全身服装设定，物理学家穿灰色野外夹克，语言学家穿橄榄绿防风衣，胸前无文字品牌；右侧关键道具研究平板与黑色环体表面材质，底部三张环境研究小图呈现草地河流营地的空间关系，并有冷灰、草绿、米白、琥珀五个色块。整体低饱和冷灰电影写实，阴天柔光，营地少量暖灯，神秘探索情绪。大幅俯视研究图清楚展示环体与草地河流营地组成的信息，不用可读字母。标题仅“退后看见”，无额外说明文本，无水印。",
+      "reference_material": [],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W033/production-design.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "7b8d35205904c6f72e0fd4ffec28d5fe4688132cdde597fd9a5125fbbe3c6150",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f112440e-44c5-487e-86da-ff99db59785f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:24:13+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:20:10+08:00"
+}

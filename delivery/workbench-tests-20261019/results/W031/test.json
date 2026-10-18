@@ -1,0 +1,56 @@
+{
+  "test_id": "W031",
+  "source_id": "T040",
+  "title": "视觉连续性导演",
+  "categories": [
+    "story"
+  ],
+  "type": "元提示词→9行焦点接力→原生九格静态分镜",
+  "test_input": {
+    "故事": "男性发现毛毯被微风吹起，整理毛毯后坐下看日落。",
+    "调性": "静谧/情感",
+    "Visual Anchor": "蓝衣成年男性的手与沙发毛毯"
+  },
+  "reference_material": [
+    "results/W014/fashion-01.png"
+  ],
+  "reference_material_kind": "合成测试素材",
+  "tool": "image_gen.imagegen",
+  "image_model": "未知",
+  "adaptation": "ChatGPT适配测试，不冒充原指定模型实测",
+  "changes": [
+    "选取完整“视觉连续性导演”九镜头元提示词；首个独立九键JSON元提示词未纳入本最小用例。",
+    "填充新故事；将镜头运动转化为静态关键瞬间，不验证视频。"
+  ],
+  "selected_source_prompt": "Role: 视觉连续性导演 (Visual Continuity Director)",
+  "meta_output": {
+    "tone": "静谧/情感",
+    "anchor": "蓝衣男性及整理毛毯的手",
+    "output": "Next Scene：1) 全景/固定 :: 男性站在日落客厅沙发边，窗外金色湖面映照蓝衣轮廓 :: 环境至人物\nNext Scene：2) 近景/手部 :: 男性的手停在沙发靠背上方，指尖朝向粗织毛毯 :: 人物至手指\nNext Scene：3) 特写/触发 :: 窗边微风掀起毛毯一角，男性手指轻动注意褶皱 :: 毛毯至手指\nNext Scene：4) 中景/反应 :: 男性低头看向翘起的毛毯，右手伸向毛毯边缘 :: 视线至目标\nNext Scene：5) 近景/进行 :: 男性右手抓住毛毯边缘，缓缓向沙发靠背铺展 :: 抓住至铺开\nNext Scene：6) 极近特写/关键 :: 男性指尖压平最后一道毛毯褶皱，金光勾勒手背 :: 手指至褶皱\nNext Scene：7) 特写/后果 :: 沙发靠背上的毛毯已铺平，男性右手仍停在毛毯上 :: 动作至结果\nNext Scene：8) 局部/余韵 :: 纤维表面承接暖光，手指刚离开毛毯，阴影柔软 :: 结果至纹理\nNext Scene：9) 远景/结束 :: 男性坐在整理好的同一沙发上看向湖面，平整毛毯留在身旁 :: 拉远与宁静"
+  },
+  "cases": [
+    {
+      "case_id": "focus-relay-nine",
+      "final_prompt": "依据参考图生成电影质感原生3×3九格静态分镜，每格16:9，总体16:9。同一参考图的虚构成年男性：后退且稀疏的黑灰短发、浅胡茬、灰蓝V领短袖套装与白鞋。保留日落湖景客厅的窗左、米色沙发、右侧木柜花朵电视，暖金光。严格按从左到右从上到下九个瞬间：\nNext Scene：1) 全景/固定 :: 男性站在日落客厅沙发边，窗外金色湖面映照蓝衣轮廓 :: 环境至人物\nNext Scene：2) 近景/手部 :: 男性的手停在沙发靠背上方，指尖朝向粗织毛毯 :: 人物至手指\nNext Scene：3) 特写/触发 :: 窗边微风掀起毛毯一角，男性手指轻动注意褶皱 :: 毛毯至手指\nNext Scene：4) 中景/反应 :: 男性低头看向翘起的毛毯，右手伸向毛毯边缘 :: 视线至目标\nNext Scene：5) 近景/进行 :: 男性右手抓住毛毯边缘，缓缓向沙发靠背铺展 :: 抓住至铺开\nNext Scene：6) 极近特写/关键 :: 男性指尖压平最后一道毛毯褶皱，金光勾勒手背 :: 手指至褶皱\nNext Scene：7) 特写/后果 :: 沙发靠背上的毛毯已铺平，男性右手仍停在毛毯上 :: 动作至结果\nNext Scene：8) 局部/余韵 :: 纤维表面承接暖光，手指刚离开毛毯，阴影柔软 :: 结果至纹理\nNext Scene：9) 远景/结束 :: 男性坐在整理好的同一沙发上看向湖面，平整毛毯留在身旁 :: 拉远与宁静\n无字幕、文字、镜头标签或水印。焦点从人物到手、毛毯、手指压平、平整织物，再回到人物，动作不可倒退。",
+      "reference_material": [
+        "results/W014/fashion-01.png"
+      ],
+      "status": "已出图，待打开检查",
+      "images": [
+        {
+          "file": "results/W031/focus-relay-nine.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "4da7a7708bdcd6b73c935375b44a3ad139581d9ea2be20cddd276ce81e966a24",
+          "opened_for_visual_review": true
+        }
+      ],
+      "tool_metadata": {
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-f2422c85-7308-4848-8812-ecbc0c592f7c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "save_method": "tool output path"
+      },
+      "generated_at": "2026-10-19T02:23:00+08:00"
+    }
+  ],
+  "prepared_at": "2026-10-19T02:20:10+08:00"
+}
