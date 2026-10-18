@@ -1,0 +1,241 @@
+{
+  "test": {
+    "test_id": "T092",
+    "title": "96组角度提示词",
+    "type": "角度元提示词→第一组8张独立图",
+    "test_input": "只测第1组eye-level+wide shot的8角度；参考为本轮生成的普通无品牌米色高腰内裤产品，不带人物。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "先按可见第一个完整元提示词提取参考产品特征，再为第1组输出8行，各自生成独立图",
+      "合成参考有可见腿口包边，不能以图像确认真实无缝制造工艺；其余88角度和3个专属元提示词未执行",
+      "<sks>为模板占位标签，替换为具体商品描述；未当作真实LoRA触发词加载"
+    ],
+    "selected_source_prompt": "\n### **plain**复制\n`你是一位专业的电商产品摄影提示词工程师。<br><br>任务：将输入的角度模板与参考图结合，生成8段独立的、可直接用于AI图像生成的具体提示词。<br><br>## 输入格式<br>- 角度模板：8行<sks>标签定义的角度（如\"front view eye-level shot wide shot\"等）<br>- 参考图：一张产品图（本次为米色高腰无痕内裤）<br><br>## 输出要求<br><br>1. **每段提示词必须独立成行**，用换行符分隔，共8行<br>2. **每段结构**：<br>   [角度描述], [产品主体描述], [材质细节], [光影环境], [技术参数]<br><br>3. **产品主体描述**（根据参考图提取）：<br>   - 品类：high-waisted seamless underwear / briefs<br>   - 颜色：beige / nude / skin-tone<br>   - 特征：seamless construction, wide waistband, full coverage, smooth fabric<br><br>4. **固定技术参数**：<br>   - 背景：pure white background, studio lighting<br>   - 风格：e-commerce product photography, clean, minimal<br>   - 质量：8k, highly detailed, photorealistic<br><br>5. **角度关键词映射**：<br>   - front view → 正面展示，对称构图<br>   - back view → 背面展示，后腰细节<br>   - side view → 侧面轮廓，厚度表现<br>   - quarter view → 45度角，立体感和深度<br>   - eye-level → 平视，自然视角<br>   - elevated → 略仰拍，底部细节<br>   - high-angle → 俯拍，顶部轮廓<br>   - low-angle → 低角度，气势感<br>   - wide shot → 完整产品，带留白<br>   - medium shot → 主体填充画面70%<br>   - close-up → 特写，纹理细节<br><br>## 输出格式示例<br><br>high-waisted seamless underwear in beige color, front view eye-level wide shot, symmetrical composition showing waistband and leg openings, seamless fabric texture, soft studio lighting on pure white background, e-commerce product photography, 8k, photorealistic, clean minimal style<br>[换行]<br>high-waisted seamless underwear in beige color, front-right quarter view eye-level wide shot, 45-degree angle showing depth and side curve, seamless edges visible, soft studio lighting on pure white background, e-commerce product photography, 8k, photorealistic, clean minimal style<br>[换行]<br>...（共8行）<br><br>## 执行指令<br><br>现在请处理以下8个角度模板，为每个角度生成一段完整提示词，每段一行，直接输出8行结果，不要编号，不要解释，不要markdown代码块：<br><br>[此处粘贴8行<sks>角度模板]`\n---\n",
+    "final_prompt": [
+      "front view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical front panel with both leg openings visible, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "front-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree view from the front-right showing front and right side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "right side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure right profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "back-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-right showing the back panel and right-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "back view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical rear view of the back panel and full rear coverage, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "back-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-left showing the back panel and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "left side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure left profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+      "front-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the front-left showing front and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo."
+    ],
+    "meta_output": "front view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical front panel with both leg openings visible, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nfront-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree view from the front-right showing front and right side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nright side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure right profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nback-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-right showing the back panel and right-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nback view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical rear view of the back panel and full rear coverage, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nback-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-left showing the back panel and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nleft side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure left profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.\nfront-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the front-left showing front and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+    "cases": [
+      {
+        "name": "01",
+        "angle": "front view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "front view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical front panel with both leg openings visible, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "02",
+        "angle": "front-right quarter view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "front-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree view from the front-right showing front and right side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "03",
+        "angle": "right side view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "right side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure right profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "04",
+        "angle": "back-right quarter view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "back-right quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-right showing the back panel and right-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "05",
+        "angle": "back view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "back view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, symmetrical rear view of the back panel and full rear coverage, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "06",
+        "angle": "back-left quarter view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "back-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the rear-left showing the back panel and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "07",
+        "angle": "left side view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "left side view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, pure left profile, not a three-quarter view, showing the side silhouette, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      },
+      {
+        "name": "08",
+        "angle": "front-left quarter view",
+        "refs": [
+          "/workspace/image-test-20261018/materials/briefs-synthetic.png"
+        ],
+        "prompt": "front-left quarter view eye-level shot wide shot, the same single high-waisted full-coverage beige seamless briefs from the reference, wide waistband and smooth matte fabric, 45-degree from the front-left showing front and left-side depth, full product with generous margin, pure white background and soft even studio lighting, clean minimal e-commerce product photography, 8k, highly detailed, photorealistic, no person or mannequin, no text or logo.",
+        "reference_material_portable": [
+          "materials/briefs-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/电商产品/[已投产·5分] 96组角度提示词.md",
+    "original_sha256": "14f0685c721c51ce283f46fb2633e04f4013c3a2dd5a29a87a3aae9c43f858e1",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/briefs-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 8,
+    "opened": 8,
+    "checks": [
+      {
+        "requirement": "8行元输出和独立图",
+        "result": "已执行",
+        "evidence": "按第一组生成8行完整Prompt，8次独立调用，均复用同一普通无品牌产品参考。"
+      },
+      {
+        "requirement": "01 正面",
+        "result": "符合要求",
+        "evidence": "正面两腿口对称，全品可见。"
+      },
+      {
+        "requirement": "02 前右45°",
+        "result": "部分符合",
+        "evidence": "能看到右侧深度，但接近较小转角，未测确切45°。"
+      },
+      {
+        "requirement": "03 右侧纯侧面",
+        "result": "存在问题",
+        "evidence": "仍可见部分前片和后片，接近斜侧而非严格90°轮廓。"
+      },
+      {
+        "requirement": "04 后右45°",
+        "result": "基本符合",
+        "evidence": "后片与右侧轮廓分开可辨。"
+      },
+      {
+        "requirement": "05 背面",
+        "result": "符合要求",
+        "evidence": "大幅对称后片，前腿口不再正对镜头。"
+      },
+      {
+        "requirement": "06 后左45°",
+        "result": "基本符合",
+        "evidence": "与后右方向相反，后片与左侧开口可辨。"
+      },
+      {
+        "requirement": "07 左侧纯侧面",
+        "result": "存在问题",
+        "evidence": "仍有斜视和后片透视，非严格纯侧面。"
+      },
+      {
+        "requirement": "08 前左45°",
+        "result": "部分符合",
+        "evidence": "与前右呈反向，精确45°不可测；腰口开度和腿口形状有漂移。"
+      },
+      {
+        "requirement": "产品工艺与未见侧面",
+        "result": "未验证",
+        "evidence": "输入只提供正面，背面和侧缝由模型推演；不能确认真实无缝工艺或三维产品还原。"
+      },
+      {
+        "requirement": "8K和全库覆盖",
+        "result": "未满足/未执行",
+        "evidence": "均非8K；其余88角度及3套专属元提示词未执行，不能称96角度通过。"
+      }
+    ],
+    "conclusion": "第一组八角度已实际对比；纯侧面不严格、产品几何有漂移，8K未达到。"
+  },
+  "images": [
+    {
+      "file": "results/T092-angle8/01.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "90f0368e55f319880edd0347e7ade7866b824186823b5089da97ac34a02f3001"
+    },
+    {
+      "file": "results/T092-angle8/02.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "1f3d230022ae77f16a1d00c5feed250f8b4d72903707ebd452625c6bf4877f1a"
+    },
+    {
+      "file": "results/T092-angle8/03.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "8319617ea4bf8627f8d4338ea3232b66b0daaf941743db85d664240693482048"
+    },
+    {
+      "file": "results/T092-angle8/04.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "138ef6c0bf89fee36781f41668fb924c85f064bc799111dcd21047445dcd3304"
+    },
+    {
+      "file": "results/T092-angle8/05.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "26e3333edc9e0d40e326ffeb0c2b6583d2e3cd646c36a3cd0217f3590e3905e5"
+    },
+    {
+      "file": "results/T092-angle8/06.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "8aceb024aee1df8502137a0a8899d51e910524cead6dce4805afad38f585f2cc"
+    },
+    {
+      "file": "results/T092-angle8/07.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "aacffc4ac3b6793631aea4daeb439cb3f94b6b8a7ecc87cad9a11bb8a1c27c9a"
+    },
+    {
+      "file": "results/T092-angle8/08.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "9e9c5ae3ff247c772f49e88162ad8ae0e65889e6717aa06dd05f8223e0ae34ae"
+    }
+  ]
+}

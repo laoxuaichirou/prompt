@@ -1,0 +1,117 @@
+{
+  "test": {
+    "test_id": "T011",
+    "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+    "type": "三图融合元提示词→4条提示词→4张独立图片",
+    "test_input": "图1同一合成成年女性；图2同一合成刷手服；图3复用T001冬季客厅合成照片，只提取环境。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png",
+      "results/T001-fixed-person/06-winter.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原标签不作为本轮证据",
+    "changes": [
+      "选择优化版英文原版代码块，排除中译与分析对话。",
+      "人物/服装/场景均用已打开的合成图，冬季客厅来源于T001输出，不是外部实拍。",
+      "源码中的变量公式有多处空白逗号；按其完整文字规则与三图实测输入填槽，不把新增内容当原文。",
+      "Mina为模板赋予的测试名；合成人物设定来自素材创建记录，未对真人推断族裔。"
+    ],
+    "meta_prompt": "# Role: AI Visual Fashion Compiler (Context-Aware Edition)\n\n## 🎯 OBJECTIVE\nAnalyze 3 input images to generate 4 diverse, photorealistic prompts.\nThe AI must intelligently adapt the **Model's Pose** to fit the **Scene (Image 3)** naturally.\n**CRITICAL: OUTPUT MUST BE A SINGLE JSON OBJECT IN ENGLISH. NO EXTRA CONTENT.**\n\n## 📥 INPUT MAPPING\n*   **Image 1**: The Face (Person Reference) - Use <image> placeholder for image input\n*   **Image 2**: The Outfit (Clothing Reference) - Use <image> placeholder for image input\n*   **Image 3**: The Scene (Environment Reference) - Use <image> placeholder for image input\n\n## 🧠 ANALYSIS & CREATIVE LOGIC\n1.  **Analyze Image 1 (Face)**:\n    *   Extract race, facial features (e.g., almond eyes, soft lips, sharp jawline), hairstyle (length, texture, color), makeup style (natural, smoky, matte). Assign name \"Mina\".\n    *   *Logic*: `VAR_MODEL` = \"A photorealistic portrait of 'Mina', , , , , realistic skin texture, 8k detail\"\n\n2.  **Analyze Image 2 (Outfit)**:\n    *   Extract clothing items (top, bottom, outerwear), color palette, fabric texture (e.g., cotton, silk, leather), accessories (e.g., necklace, belt, gloves, bag, shoes). Ignore background completely.\n    *   *Logic*: `VAR_OUTFIT` = \"wearing  in  with , paired with  and matching , well-fitted silhouette\"\n\n3.  **Analyze Image 3 (Scene)**:\n    *   Extract location (e.g., urban street, park bench, café interior), lighting type (e.g., golden hour, neon backlight, soft indoor light), atmosphere (e.g., cozy, vibrant, minimalist), foreground/midground elements (e.g., flower bed, wooden table, street lamp).\n    *   *Logic*: `VAR_ENV` = \"[Location], , , \"\n    *   *Style Tag*: One concise English keyword (e.g., \"Autumn\", \"Urban\", \"Elegant\", \"Casual\").\n\n4.  **✨ DYNAMIC POSE GENERATION (The Upgrade)**:\n    *   Generate 4 *distinct, non-repeating* poses that logically fit `VAR_ENV` AND match the outfit's style (e.g., formal dress → no intense sports poses; casual wear → flexible dynamic poses).\n    *   **Pose 1 (Full Body)**: A pose interacting with the scene's elements (e.g., leaning on a street lamp, touching flower petals, sitting on a café chair).\n    *   **Pose 2 (Dynamic/Motion)**: A natural movement pose suitable for the scene (e.g., walking along the path, flipping hair in the breeze, turning around gently).\n    *   **Pose 3 (Relaxed/Vibe)**: A casual relaxed pose (e.g., leaning against a wall with hands in pockets, lounging on a bench, holding a scene-relevant prop like a book or coffee cup).\n    *   **Pose 4 (Cinematic)**: An artistic angle or emotional pose matching the lighting (e.g., looking into the sunset, side profile against neon light, soft smile with backlit hair).\n\n## 📝 PROMPT ASSEMBLY\n*   **P1**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 1 fitting the Scene], full body shot, sharp focus, background is [VAR_ENV]`\n*   **P2**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 2 with Motion], side angle shot, slight natural motion blur, background is [VAR_ENV]`\n*   **P3**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 3 Relaxed], medium shot, depth of field, soft bokeh, background is [VAR_ENV]`\n*   **P4**: `(Masterpiece, 8k, ultra-detailed, photorealistic), [VAR_MODEL], [VAR_OUTFIT], [Creative Pose 4 Cinematic], emotional expression, dramatic lighting enhancement, close-up to medium shot, background is [VAR_ENV]`\n\n## 📤 FINAL OUTPUT FORMAT\n**STRICT RULE**: Output ONLY the raw JSON string. No markdown, no code blocks, no explanations, no extra text.\nNote: \"ModelsLogic\" and \"OutfitLogic\" are analysis summaries (not part of the final Prompts).\n\n{\n  \"style\": \"Style Keyword from Image 3 (One English Word)\",\n  \"ModelsLogic\": \"Full text of VAR_MODEL (English)\",\n  \"OutfitLogic\": \"Full text of VAR_OUTFIT (English)\",\n  \"Prompt1\": \"Full text of P1 (English)\",\n  \"Prompt2\": \"Full text of P2 (English)\",\n  \"Prompt3\": \"Full text of P3 (English)\",\n  \"Prompt4\": \"Full text of P4 (English)\"\n}\n\n",
+    "meta_output": {
+      "style": "Winter",
+      "ModelsLogic": "A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail",
+      "OutfitLogic": "wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette",
+      "Prompt1": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, one hand resting on the sofa armrest, standing beside the sofa, full body shot, sharp focus, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere.",
+      "Prompt2": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, walking gently beside the snowy window, side angle shot, slight natural motion blur, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere.",
+      "Prompt3": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, sitting comfortably on the sofa holding a plain ceramic mug in both hands, medium shot, depth of field, soft bokeh, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere.",
+      "Prompt4": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, three-quarter face toward the window, peaceful thoughtful expression, close-up to medium shot, dramatic warm rim-light enhancement, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere."
+    },
+    "final_prompts": [
+      {
+        "id": "T011-01",
+        "prompt": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, one hand resting on the sofa armrest, standing beside the sofa, full body shot, sharp focus, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere."
+      },
+      {
+        "id": "T011-02",
+        "prompt": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, walking gently beside the snowy window, side angle shot, slight natural motion blur, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere."
+      },
+      {
+        "id": "T011-03",
+        "prompt": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, sitting comfortably on the sofa holding a plain ceramic mug in both hands, medium shot, depth of field, soft bokeh, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere."
+      },
+      {
+        "id": "T011-04",
+        "prompt": "Reference image 1: preserve exact facial features, identity, eye shape, nose, lips and hairstyle. Reference image 2: preserve exact outfit structure, textures, details and color. Reference image 3 supplies environment only; ignore its person and clothing. Do not combine images into a collage. Generate one independent photo.\n(Masterpiece, 8k, ultra-detailed, photorealistic), A photorealistic portrait of Mina, the same fictional 32-year-old adult woman from reference image 1, oval face, black side-parted chin-length bob, dark brown almond eyes, small beauty mark below her left eye, natural makeup, realistic skin texture, 8k detail, wearing the exact unbranded muted pale-blue V-neck short-sleeve scrub top with three patch pockets and blank white chest tab, matching tapered drawstring scrub pants with two front hip pockets and right thigh cargo pocket, and white sneakers from reference image 2, woven fabric, well-fitted silhouette, three-quarter face toward the window, peaceful thoughtful expression, close-up to medium shot, dramatic warm rim-light enhancement, background is the warm winter living room from reference image 3, textured sofa in foreground, lit fireplace at right, large window with snowy outdoors at left, warm firelight and soft window light, cozy atmosphere."
+      }
+    ],
+    "original_filename": "提示词库/人像摄影/[已投产·5分] AI时尚丨JSON人物场景动作丨LLM提示词优化.md",
+    "original_sha256": "86ff0fcbfd9f644a18a837f5f928054cf516790b35f3ecd61912d593ce78ee4c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "materials/scrubs-synthetic.png",
+      "results/T001-fixed-person/06-winter.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 4,
+    "opened": 4,
+    "checks": [
+      {
+        "requirement": "三图融合及4个不同姿势",
+        "result": "部分符合",
+        "evidence": "4张独立生成并打开：扶沙发站姿、持杯站姿、坐姿持杯、坐姿托腮。人物、蓝刷手服及冬季壁炉客厅均被融合。"
+      },
+      {
+        "requirement": "动态/侧面姿势",
+        "result": "不符合",
+        "evidence": "第2张要求侧面行走和轻微运动模糊，实际为面向镜头持杯站姿，缺少明确动作与侧面机位。"
+      },
+      {
+        "requirement": "身份及服装不变",
+        "result": "基本符合，部分细节无法核实",
+        "evidence": "短黑发与左脸颊痣持续；3上衣口袋在全身图可见，近景或手部遮挡时无法逐个核实。"
+      },
+      {
+        "requirement": "场景与姿态匹配",
+        "result": "基本符合",
+        "evidence": "扶沙发、窗边、坐姿持杯均合理，没有剧烈运动；客厅结构有重构，不是背景像素级锁定。"
+      },
+      {
+        "requirement": "8K",
+        "result": "不符合原生分辨率",
+        "evidence": "各图1024×1536，不是8K，未人工放大冒充。"
+      }
+    ],
+    "conclusion": "三图融合4图已实测，场景与服装大体有效；动态姿势指令失效，景别多样性较有限。"
+  },
+  "images": [
+    {
+      "file": "results/T011-fashion-compiler/pose01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f798c9a60be1655b56d28dfa73469f568a8e72cded0278b34103b6650f01ceca"
+    },
+    {
+      "file": "results/T011-fashion-compiler/pose02.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c5df793a38be830986cfe21419c7f31d6fd98085a9af3161704b39eb20846512"
+    },
+    {
+      "file": "results/T011-fashion-compiler/pose03.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a880d09a7ff62aebffe60bc6c44093b60dbdeaf117998e610c3ce58a3cb4053d"
+    },
+    {
+      "file": "results/T011-fashion-compiler/pose04.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "3229e77a390a81f010a5896377344ef19127df9a97f28a37a9d38ccf217dcbf2"
+    }
+  ]
+}

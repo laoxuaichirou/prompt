@@ -1,0 +1,63 @@
+{
+  "test": {
+    "test_id": "T082",
+    "title": "kontext大家电场景图（示例）",
+    "type": "直接文生图示例",
+    "test_input": "使用完整可见客厅/电视/湖景/夕阳示例。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅清理编号01和末尾LoRA笔记；不加载未知LoRA，不称Kontext实测"
+    ],
+    "selected_source_prompt": "A photograph of a modern living room with a large, flat-screen TV displaying a vibrant, fiery explosion of a purple and yellow flower. The room features floor-to-ceiling windows showing a serene sunset over a calm lake. The decor includes a sleek, minimalist wooden TV stand and a plush beige sofa.",
+    "final_prompt": [
+      "A photograph of a modern living room with a large, flat-screen TV displaying a vibrant, fiery explosion of a purple and yellow flower. The room features floor-to-ceiling windows showing a serene sunset over a calm lake. The decor includes a sleek, minimalist wooden TV stand and a plush beige sofa."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [],
+        "prompt": "A photograph of a modern living room with a large, flat-screen TV displaying a vibrant, fiery explosion of a purple and yellow flower. The room features floor-to-ceiling windows showing a serene sunset over a calm lake. The decor includes a sleek, minimalist wooden TV stand and a plush beige sofa.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[仅参考·2分] kontext大家电场景图（示例）.md",
+    "original_sha256": "37029ca19669e74c0dc0c6c4cd8f94a28576294741fdc2ecd02887747fc56529",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "客厅与窗外",
+        "result": "符合要求",
+        "evidence": "现代极简客厅、木质电视柜、米色蓬松沙发与落地窗，窗外湖面夕阳。"
+      },
+      {
+        "requirement": "电视内容",
+        "result": "符合要求",
+        "evidence": "紫黄花瓣呈爆裂般绽放，无额外字幕。"
+      },
+      {
+        "requirement": "LoRA/Kontext",
+        "result": "未验证",
+        "evidence": "LoRA名称权重缺失；本轮没有加载LoRA或调用Kontext。"
+      }
+    ],
+    "conclusion": "可见客厅文生图示例符合主要视觉要求，仅ChatGPT适配单次初评。"
+  },
+  "images": [
+    {
+      "file": "results/T082-appliance/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f47e67ab012cbac2aae0622fc246da1ef147fe7570a77da10152c794d89a98c3"
+    }
+  ]
+}

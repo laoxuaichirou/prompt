@@ -1,0 +1,49 @@
+{
+  "test": {
+    "test_id": "T051",
+    "title": "【元提示词】服装立体化lora：3Dghostmannequin",
+    "type": "元提示词→英文图像编辑指令",
+    "test_input": "只保留合成刷手服参考中的上衣；背景默认干净中性。",
+    "reference_material": [
+      "materials/scrubs-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "执行只保留上衣分支，从已打开参考提取颜色、V领、短袖、3贴袋和白织标。",
+      "英文元输出固定3Dghostmannequin开头与指定画质结尾；无LoRA权重或参数。",
+      "本轮测试工具对该风格的适配，不冒充ComfyUI/LoRA实测。"
+    ],
+    "selected_source_prompt": "3Dghostmannequin, only the short-sleeve V-neck scrub top from the reference, muted pale blue woven fabric, one left chest patch pocket with blank white tab and two lower patch pockets, original side slits, realistic hollow volumetric garment with no person or mannequin visible, clean neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+    "final_prompt": "3Dghostmannequin, only the short-sleeve V-neck scrub top from the reference, muted pale blue woven fabric, one left chest patch pocket with blank white tab and two lower patch pockets, original side slits, realistic hollow volumetric garment with no person or mannequin visible, clean neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+    "meta_output": "3Dghostmannequin, only the short-sleeve V-neck scrub top from the reference, muted pale blue woven fabric, one left chest patch pocket with blank white tab and two lower patch pockets, original side slits, realistic hollow volumetric garment with no person or mannequin visible, clean neutral background, soft studio lighting, clear fabric texture, sharp edges, commercial product photography, high resolution",
+    "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】服装立体化lora：3Dghostmannequin.md",
+    "original_sha256": "649dfe5d3bb13af23a67f17cf478c0a6a77bcae1725452dbcaa89d420d3a08f2",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/scrubs-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "原文关键要求与本次输入",
+        "result": "符合要求",
+        "evidence": "元输出按固定3Dghostmannequin开头与英文画质词结尾；实图仅保留蓝色V领短袖上衣，胸1下摆2贴袋、白色空白织标与侧开衩均在，无人体/模特/裤鞋/听诊器，立体中空质感基本符合本用例。未运行原ComfyUI/LoRA。"
+      }
+    ],
+    "conclusion": "元输出按固定3Dghostmannequin开头与英文画质词结尾；实图仅保留蓝色V领短袖上衣，胸1下摆2贴袋、白色空白织标与侧开衩均在，无人体/模特/裤鞋/听诊器，立体中空质感基本符合本用例。未运行原ComfyUI/LoRA。 视觉评分为模型初评，单次不证明稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T051-ghost-top/T051.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "ba8ce1d5562ac5a97b0e6fa63fd33584aad592c86f1d94baff792cfc41ad079a"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "test": {
+    "test_id": "T022",
+    "title": "编辑模型思考",
+    "type": "直接图像编辑指令",
+    "test_input": "仅测试本页可见“移除水印提示词”，清除本会话自加的TEST/DEMO合成标记。",
+    "reference_material": [
+      "materials/marked-adult-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试；后端模型未知，非原模型实测",
+    "changes": [
+      "完整原文另存，所选子模板及未覆盖范围分开记录。",
+      "只清除自生成标签，不涉及第三方作品署名。",
+      "LanPaint/ComfyUI参数、4模型比较和80场景教程未运行，不能凭本例标整页体系通过。"
+    ],
+    "final_prompts": [
+      {
+        "id": "T022",
+        "prompt": "去除图像中的水印、文字和标志，包括四个角内的所有标志或文字。确保移除元素后的背景无缝且自然。图像应看起来未改动，没有任何可见的先前标志或文字痕迹。清晰对焦，高品质，照片级真实感",
+        "refs": [
+          "materials/marked-adult-synthetic.png"
+        ]
+      }
+    ],
+    "original_filename": "提示词库/图像编辑/[已投产·5分] 编辑模型思考.md",
+    "original_sha256": "ca1dbd73e411f7c12e9f878faa8be1c6e36fe3b92ecc2177e3517982e0ca934f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/marked-adult-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "清除四角与中间自加测试标记",
+        "result": "符合要求",
+        "evidence": "四角TEST及斜向DEMO均消失，原位置未见明显字形残留。"
+      },
+      {
+        "requirement": "自然补全及保留人物/构图",
+        "result": "视觉基本符合",
+        "evidence": "灰棚、白T和裤子上原标记位置衔接自然，仍为同一短发成年人正面站姿，无新增道具。"
+      },
+      {
+        "requirement": "整页模型/Mask/80场景教程体系",
+        "result": "未执行",
+        "evidence": "仅测试可见移除标记示例；未安装LanPaint、ComfyUI或其他编辑模型，不能凭本例验证整页。"
+      }
+    ],
+    "conclusion": "移除本会话自加标记的最小用例符合初评；整页其余工作流未验证，原5分标签不作为证据。"
+  },
+  "images": [
+    {
+      "file": "results/T022-edit-thinking/T022.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1774b42de79cb53964c508dfc710ac331f6c8cdb1881257f334355258c45a64f"
+    }
+  ]
+}

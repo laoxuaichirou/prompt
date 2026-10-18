@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T074",
+    "title": "封面常用提示词",
+    "type": "填充人物变量的直接生图模板",
+    "test_input": "选择第二版布局模板；人物变量填：虚构32岁东亚女性，短黑发，白色T恤深蓝长裤白鞋，侧身站立面向左，自信自然。参考adult合成素材。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择第二版清晰布局模板，未测试首版混合风格长关键词段",
+      "仅填人物占位槽；黄金分割视作构图要求，8K按输出实际尺寸验收"
+    ],
+    "selected_source_prompt": "画面布局：<br>人物位于画面右侧约1/3至1/2区域，左侧大面积留白，整体构图严格遵循黄金分割比例。人物不居中、不贴边，与左侧留白形成清晰的视觉平衡。\n**人物描述：**<br>[这里放你具体的人物描述，比如：年轻女性，短发，侧身站立，面向左侧，表情自信，穿着简约白色T恤，自然光\\]\n**背景与氛围：**<br>背景极简，左侧为纯色或微弱渐变，右侧与人物融合处有轻微环境光过渡，无多余装饰元素，无文字，无水印，无图标。画面干净，层次清晰，高级感，摄影级质感，柔和光影，8K高清。\n",
+    "final_prompt": [
+      "画面布局：\n人物位于画面右侧约1/3至1/2区域，左侧大面积留白，整体构图严格遵循黄金分割比例。人物不居中、不贴边，与左侧留白形成清晰的视觉平衡。\n**人物描述：**\n虚构32岁东亚女性，身份/短黑发参考输入合成素材，白色T恤、深蓝长裤和白鞋，侧身站立面向左侧，表情自然自信。\n**背景与氛围：**\n背景极简，左侧为纯色或微弱渐变，右侧与人物融合处有轻微环境光过渡，无多余装饰元素，无文字，无水印，无图标。画面干净，层次清晰，高级感，摄影级质感，柔和光影，8K高清。\n"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "画面布局：\n人物位于画面右侧约1/3至1/2区域，左侧大面积留白，整体构图严格遵循黄金分割比例。人物不居中、不贴边，与左侧留白形成清晰的视觉平衡。\n**人物描述：**\n虚构32岁东亚女性，身份/短黑发参考输入合成素材，白色T恤、深蓝长裤和白鞋，侧身站立面向左侧，表情自然自信。\n**背景与氛围：**\n背景极简，左侧为纯色或微弱渐变，右侧与人物融合处有轻微环境光过渡，无多余装饰元素，无文字，无水印，无图标。画面干净，层次清晰，高级感，摄影级质感，柔和光影，8K高清。\n",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/海报封面/[仅参考·3分] 封面常用提示词.md",
+    "original_sha256": "d23f22c6d8f53372faa2f7b60b2253723464adb93e4583aaa81324c2b55c79ce",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "右侧人物/左侧留白",
+        "result": "符合要求",
+        "evidence": "人物位于画面右侧，左侧大幅干净灰底留白，身体侧向左、身份和衣物大体保留，无文字图标。"
+      },
+      {
+        "requirement": "黄金分割/8K",
+        "result": "未验证/未满足",
+        "evidence": "视觉平衡良好但未测精确黄金分割；输出非8K。"
+      },
+      {
+        "requirement": "首版关键词段",
+        "result": "未执行",
+        "evidence": "只测试第二版变量模板。"
+      }
+    ],
+    "conclusion": "封面核心布局符合要求；8K未达到，精确黄金分割未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T074-cover-layout/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4e2c8a505bfba8381bef4858598156a333bc53ccbd388e58504162580d663cb3"
+    }
+  ]
+}

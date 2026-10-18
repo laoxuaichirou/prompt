@@ -1,0 +1,97 @@
+{
+  "test": {
+    "test_id": "T134",
+    "title": "人物一致性",
+    "type": "图像编辑",
+    "test_input": "跨两个合成源场景应用相同女性目标身份，保留各自服装/姿态。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T077-full-caricature/output.png",
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/results/T101-middle-man/output.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择第一个完整替换模板，在两个不同源场景复用同一目标脸执行；后续10角度模板未执行。",
+      "风格选择写实，不更改源衣服。"
+    ],
+    "selected_source_prompt": "请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。",
+    "final_prompt": [
+      "图1为此前生成的虚构成年场景人物；图2为32岁虚构成年女性身份参考。按下文执行写实身份替换，保留图1服装和动作。\n请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。",
+      "图1为此前生成的虚构成年场景人物；图2为32岁虚构成年女性身份参考。按下文执行写实身份替换，保留图1服装和动作。\n请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。"
+    ],
+    "cases": [
+      {
+        "name": "garden",
+        "refs": [
+          "/workspace/image-test-20261018/results/T077-full-caricature/output.png",
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "图1为此前生成的虚构成年场景人物；图2为32岁虚构成年女性身份参考。按下文执行写实身份替换，保留图1服装和动作。\n请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。",
+        "reference_material_portable": [
+          "results/T077-full-caricature/output.png",
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "street",
+        "refs": [
+          "/workspace/image-test-20261018/results/T101-middle-man/output.png",
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+        ],
+        "prompt": "图1为此前生成的虚构成年场景人物；图2为32岁虚构成年女性身份参考。按下文执行写实身份替换，保留图1服装和动作。\n请将图1中的人物完全替换为第二张图片中的人物：\n脸型、五官比例、面部轮廓、气质必须与目标人物一致\n不允许保留原人物的任何面部特征\n不允许混合或融合两个人的外观\n服装、姿态、身体动作、构图、镜头语言保持与第一张图片一致。\n风格：写实 / 电影感（按需替换）\n背景与光影保持自然统一。",
+        "reference_material_portable": [
+          "results/T101-middle-man/output.png",
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
+    "original_sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T077-full-caricature/output.png",
+      "materials/adult-woman-synthetic.png",
+      "results/T101-middle-man/output.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "园艺场景替换",
+        "result": "符合要求",
+        "evidence": "保留弯腰持绿色浇水壶、围裙米衬衫裤、温室植物背景，脸换为目标短发女性。"
+      },
+      {
+        "requirement": "街头场景替换",
+        "result": "符合要求",
+        "evidence": "保留棕帽眼镜、橄榄夹克格纹内搭、卡其工装裤及扶眼镜动作，目标女性识别线索清楚。"
+      },
+      {
+        "requirement": "精度和覆盖范围",
+        "result": "未执行/未验证",
+        "evidence": "两独立输出与共同目标参考进行了视觉对比，未证明零残留/精确比例或稳定性；同页十角度角色设定模板未执行。"
+      }
+    ],
+    "conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。"
+  },
+  "images": [
+    {
+      "file": "results/T134-person-swap/garden.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "87f5e7d8bafbaf2d7a0fd999fd09a9e8f9e66da63358d299d83b7f28043a59b4"
+    },
+    {
+      "file": "results/T134-person-swap/street.png",
+      "width": 1100,
+      "height": 1430,
+      "sha256": "77c86f278fdc718a263b9a4e16229d6fe41bfc3deb91e1d1c9ad71938251aee1"
+    }
+  ]
+}

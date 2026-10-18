@@ -1,0 +1,90 @@
+{
+  "test": {
+    "test_id": "T081",
+    "title": "封面大师",
+    "type": "封面元提示词→两页连续测试",
+    "test_input": "主题=慢生活文字封面；页数=2；风格=极简米白材质化排版；情绪=平静；主标题=慢下来；副标题=给自己一点时间。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "执行可见简体原版，不使用子页缺失的V5/V8/V9/V10或发布版",
+      "按原要求保留两段英文Prompt、空行和结尾英文逗号；MJ比例改为自然语言；指定中文标题作为白名单原样保留"
+    ],
+    "selected_source_prompt": "\n【元指令名称】 纯净图文·封面级设计提示词生成器 (Pure Typography & Visual Fusion Generator)\n角色设定：<br>你是一位极简主义与排版美学大师。你的设计哲学是“少即是多”，在你的画面中，**除了用户指定的 [主标题\\] 与 [副标题\\] 之外，绝不允许出现任何其他文字或乱码**。你擅长将这两组文字进行解构、重复、放大或材质化，让文字本身成为画面的核心装饰元素（Pattern/Texture）。\n核心任务目标：<br>根据用户输入的变量，生成 [页数\\] 条提示词。<br>核心逻辑：“文字即唯一视觉元素”。<br>你必须指示 AI **严格限制文字输出**，并利用 [主标题\\] 与 [副标题\\] 的形状来填充画面空间（例如：将标题重复排列成背景墙、变成巨大的地标建筑、或是光影投射的图案）。\n行为约束与规则：\n1. 文字白名单与设计强制规则 (Strict Text Whitelist & Design)：\n\t- **绝对禁止杂讯文字：** 提示词中必须包含 `(strictly no other text, no random letters, no lorem ipsum)`。\n\t- **文字图形化策略：**\n\t\t- **重复利用：** 将 [主标题\\] 作为背景纹理 (Background Pattern) 重复出现。\n\t\t- **巨大化：** 让 [主标题\\] 占据画面 50% 以上，作为遮罩或剪影。\n\t\t- **材质化：** 将文字变成霓虹灯管、烟雾、金属结构或布料印花。\n\t- 必须使用引号 `\" \"` 精确包裹 [主标题\\] 和 [副标题\\]。\n2. 风格与情绪统一：\n\t- 文字的字体设计 (Typography) 必须完全服务于 [情绪\\]。\n\t- 例如：[情绪\\]是“混乱”，则标题可以破碎、扭曲；[情绪\\]是“平静”，则标题应细小、居中、大量留白。\n3. 内容递进 (Progression)：\n\t- 第一页：**标准封面**。标题巨大且清晰，作为主视觉焦点。\n\t- 后续页：**创意应用**。例如将标题变成模特衣服上的印花、投射在脸上的光影、或是充满整个背景的涂鸦。\n4. 格式严格锁死：\n\t- 每一条提示词生成完毕后，必须**强制换行并空一行**。\n\t- 结尾必须有英文逗号 `,`。\n输入变量定义：\n- 主题：[主题\\]\n- 页数：[页数\\]\n- 风格：[风格\\]\n- 情绪：[情绪\\]\n- 主标题：[主标题\\] (唯一的视觉大字)\n- 副标题：[副标题\\] (唯一的辅助小字)\n输出格式模板（严格执行）：<br>[风格触发词\\], [主题描述\\], (typography design: ONLY text allowed is \"[主标题\\]\" and \"[副标题\\]\", huge title text \"[主标题\\]\" used as [设计方式：如背景/主体/前景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" placed at [位置\\]), (strictly no other text, no random letters), (画面光影与细节), (摄影参数), --ar 2:3,\n[风格触发词\\], [主题描述\\], (typography design: creative layout, text \"[主标题\\]\" repeated as texture/pattern on [物体/背景\\], font style: [字体风格\\]), (subtitle \"[副标题\\]\" integrated into [细节\\]), (strictly no other text), (动态视角变化), (画面光影与细节), (摄影参数), --ar 2:3,\n... (循环直到满足页数，每条之间空一行)\n请读取用户输入并开始生成：\n<empty-block/>\n",
+    "final_prompt": [
+      "Minimalist calm typography-only cover, typography design: ONLY text allowed is \"慢下来\" and \"给自己一点时间\", huge title text \"慢下来\" used as the central sculptural image occupying more than half the poster, font style: broad clean Chinese sans-serif made from pale matte glass with very soft edge shadows, subtitle \"给自己一点时间\" placed at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, warm cream background, restrained studio lighting, quiet balanced spacing, vertical aspect ratio 2:3,",
+      "Minimalist calm typography-only second page, typography design: creative layout, text \"慢下来\" repeated as a low-contrast architectural wall pattern, font style: broad Chinese sans-serif lightly embossed in warm cream paper, a large foreground instance of \"慢下来\" cuts across the repeated background rhythm, subtitle \"给自己一点时间\" integrated at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, gentle oblique view with soft left studio shadows, quiet cream and gray tones, vertical aspect ratio 2:3,"
+    ],
+    "meta_output": {
+      "prompts": [
+        "Minimalist calm typography-only cover, typography design: ONLY text allowed is \"慢下来\" and \"给自己一点时间\", huge title text \"慢下来\" used as the central sculptural image occupying more than half the poster, font style: broad clean Chinese sans-serif made from pale matte glass with very soft edge shadows, subtitle \"给自己一点时间\" placed at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, warm cream background, restrained studio lighting, quiet balanced spacing, vertical aspect ratio 2:3,",
+        "Minimalist calm typography-only second page, typography design: creative layout, text \"慢下来\" repeated as a low-contrast architectural wall pattern, font style: broad Chinese sans-serif lightly embossed in warm cream paper, a large foreground instance of \"慢下来\" cuts across the repeated background rhythm, subtitle \"给自己一点时间\" integrated at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, gentle oblique view with soft left studio shadows, quiet cream and gray tones, vertical aspect ratio 2:3,"
+      ],
+      "formatted": "Minimalist calm typography-only cover, typography design: ONLY text allowed is \"慢下来\" and \"给自己一点时间\", huge title text \"慢下来\" used as the central sculptural image occupying more than half the poster, font style: broad clean Chinese sans-serif made from pale matte glass with very soft edge shadows, subtitle \"给自己一点时间\" placed at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, warm cream background, restrained studio lighting, quiet balanced spacing, vertical aspect ratio 2:3,\n\nMinimalist calm typography-only second page, typography design: creative layout, text \"慢下来\" repeated as a low-contrast architectural wall pattern, font style: broad Chinese sans-serif lightly embossed in warm cream paper, a large foreground instance of \"慢下来\" cuts across the repeated background rhythm, subtitle \"给自己一点时间\" integrated at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, gentle oblique view with soft left studio shadows, quiet cream and gray tones, vertical aspect ratio 2:3,"
+    },
+    "cases": [
+      {
+        "name": "page1",
+        "refs": [],
+        "prompt": "Minimalist calm typography-only cover, typography design: ONLY text allowed is \"慢下来\" and \"给自己一点时间\", huge title text \"慢下来\" used as the central sculptural image occupying more than half the poster, font style: broad clean Chinese sans-serif made from pale matte glass with very soft edge shadows, subtitle \"给自己一点时间\" placed at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, warm cream background, restrained studio lighting, quiet balanced spacing, vertical aspect ratio 2:3,",
+        "reference_material_portable": []
+      },
+      {
+        "name": "page2",
+        "refs": [],
+        "prompt": "Minimalist calm typography-only second page, typography design: creative layout, text \"慢下来\" repeated as a low-contrast architectural wall pattern, font style: broad Chinese sans-serif lightly embossed in warm cream paper, a large foreground instance of \"慢下来\" cuts across the repeated background rhythm, subtitle \"给自己一点时间\" integrated at bottom center in small dark gray type, strictly no other text, no random letters, no lorem ipsum, no objects or people, gentle oblique view with soft left studio shadows, quiet cream and gray tones, vertical aspect ratio 2:3,",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "missing": "所有发布版/V5/V8/V9/V10等子页仅链接，未导出",
+    "original_filename": "提示词库/海报封面/[已投产·4分] 封面大师.md",
+    "original_sha256": "4d2e365c6499f91f7abd22f227c64a2c530a2daac15948bc24d39b11601cff17",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "两页递进",
+        "result": "符合要求",
+        "evidence": "第一页巨大玻璃质感标题，第二页纸面重复标题墙与前景立体大字；两张独立图片。"
+      },
+      {
+        "requirement": "文字白名单",
+        "result": "符合要求",
+        "evidence": "可见文字仅慢下来/给自己一点时间；标题重复和边缘裁切符合模板允许的纹理策略。"
+      },
+      {
+        "requirement": "格式与比例",
+        "result": "符合要求",
+        "evidence": "元输出两段间空行、结尾英文逗号，图片均1024×1536即2:3。"
+      },
+      {
+        "requirement": "发布版及其他子页",
+        "result": "缺失/未执行",
+        "evidence": "只有链接，未把自拟输出冒充缺失发布版。"
+      }
+    ],
+    "conclusion": "可见简体原版的两页最小用例符合要求；不代表缺失的发布版本或稳定性通过。"
+  },
+  "images": [
+    {
+      "file": "results/T081-cover-master/page1.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "945013db9c4d6d4e6bfc2945502de0f8858d0a2070879c606be25088bf4399a9"
+    },
+    {
+      "file": "results/T081-cover-master/page2.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1bee1adf806c77b2a805fc4a24c0b452ffdd8f5c0d099512198a3cd71591b0b9"
+    }
+  ]
+}

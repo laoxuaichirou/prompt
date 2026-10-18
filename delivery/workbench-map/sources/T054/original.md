@@ -1,0 +1,23 @@
+# 戒指
+
+| 属性 | 值 |
+|---|---|
+| 状态 | 已投产 |
+| 评分 | 4 |
+| 模型 | 通用 |
+| 场景 | 电商产品 |
+| Notion | [戒指](https://app.notion.com/p/323079fdbc38809dafbfdd160d22a6c2) |
+
+**备注**：3条珠宝特写成品提示词，有示例图；第2条笔误已修正
+
+---
+
+## 正文
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b/5a72f4c2-8749-4359-872a-9e46b779c90f/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664RN5GIBL%2F20261017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261017T091837Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJHMEUCIFMfQ2ym6rEIvTPhHRM%2BAJtNwvU0qnb8a7F41ka7T6HVAiEAgEz2TFBDpCpuZxV%2Fz88TE8qahSSoS7NglvGu2EbckpYqiAQI%2BP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDLLKe%2FGBwC%2FdIHmiJyrcA%2FtdfEOm%2FtwLt0VT%2F1RwF39puJ3at54qdQ1QRASr2tp7M8TwZDU0R2zF7nOzy6YLk9%2BnZihaOFo%2B5vfuiw7K1ZPz%2F4%2FqlSdaxH2%2FqeoGjmlF3yspwdN%2Bu6eJvbJo1585prSHKPawxO7kzmdOdUZhA6rD8jmM5sXu6Br0G0y5S8Lz4dAVG3XWyb%2BN2mr%2FXecCujK%2FyaQ%2BrCuVAaQNAa8TdcRYD4gn8Nsy7aEzeOMpfDPLQl6zyPrv46R3wUuclLraJts9VgoSDlizPhxiK1OUO9J1E5PtNVMZ4RkRqyoYbw41pxqRZcHAZYXlXMBvrSaJo7CCBe4hysgNrsGtnnqRfbkyvtoG9fLOnKQCkQvsrmUCxgbCiQxWFDDfzhYduXA5hNxW2gLZfg360dXcOd%2BkY48UOPaSCjs31Wr%2BHv9uoOb8Ed6NRZ8wcnU8MBrMYG6iMv37NrnE2%2F%2FvOjPxwbnFdAre%2BSjiWoslrO00MmmxEpRIRXYO2OvB0niJLMewM2CHnwtrcfdXyjujA%2BfNA7TzE9BEsONihMzbPWCDL0WFzYnQuRONXushWQ24LMQr5D%2B5kBxHoUsSJIF7Ge34V7U7PN4JWr4sGbzF1XSMUdAq4RkHAGoN4F9uHA%2Bf%2FavCMNjRzNYGOqUBx%2F93ahqhLUB6ZN1Dblrxy230d%2BKBoKNRkJz%2Bmxi9DhGF8rBu0wwtv%2FMBvKluo1o6h9mTTipsOxZyYdOpjwsQyMKB74FYIqhX1jTQ21qB6iR9n1qrYIw8e8OhZ77323fyoXqXuzPXhey2VwQiq34GdrtmwasQbUqFdooBNCU%2FVo%2FT8RSi0NY4n5nH70bxrYxqK73%2F%2BvlCf1RU4EAIjtdB2qUZEymZ&X-Amz-Signature=42a0367fbfc39ae4e5ff3d0280612da5378621c735923397b93ad13a7b0c3377&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject#notion_record=block.323079fd-bc38-80b3-ba49-eb053eb62469.bbcfb07b-b0c8-41fd-b8ac-003bd9bb920b)
+1：
+Transform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.
+1.
+Transform the jewelry into a highly stylized, ultra-realistic close-up of a single elegant hand both holding and wearing the user-provided piece. The skin is flawless yet naturally textured, with refined anatomical detail that underscores quiet luxury. Set against a deep, pure black background, the composition isolates the jewelry with dramatic intensity. A strong cinematic spotlight strikes the gemstones at a precise angle, igniting vivid brilliance and prismatic fire, while soft light gradients sculpt the contours of the hand without distraction. The atmosphere is bold, editorial, and unmistakably premium—evoking the visual language of a high-end jewelry campaign. Ultra-detailed, 4K resolution, minimalistic framing, with razor-sharp focus locked exclusively on the provided jewelry.
+1.
+An ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.<br>Strong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.

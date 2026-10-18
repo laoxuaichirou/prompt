@@ -1,0 +1,110 @@
+{
+  "test": {
+    "test_id": "T002",
+    "title": "NanoBananaPro 分镜拆解助手（未测试）",
+    "type": "元提示词→JSON→原生九宫格生图",
+    "test_input": "雨夜，三十二岁的女外卖员穿着黄色雨衣，拎着黑色餐袋停在老公寓门口。她始终位于画面左侧，门在右侧。她抬手敲门，听见屋内拐杖落地的声音，便把餐袋轻放在门边，退后一步。门缓缓打开，一位白发老人扶着门框出现。她蹲下把餐袋递到老人手中，确认老人站稳后微笑道别，转身走回雨中。门内暖光留在老人脸上。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非NanoBananaPro原模型实测",
+    "changes": [
+      "提取优化版Role至Critical Reminders的代码块；删除前后复盘对话与营销内容。",
+      "Shot Composition Formula原文仅剩加号、缺公式内容，保留缺失记录，不补写原版公式。",
+      "模型字段NanoBananaPro来自源模板输出结构，仅是目标字段，不是实际工具模型声明。",
+      "按照原文3×3目标生成单张原生九宫格，9条tag提示词均保留；不是9次独立生成。"
+    ],
+    "meta_output": {
+      "model": "NanoBananaPro",
+      "aspect_ratio": "16:9",
+      "total_shots": 9,
+      "shots": [
+        {
+          "shot_number": 1,
+          "prompt": "wide shot, courier left foreground, apartment door right, raincoat yellow, black meal bag, rainy night, warm doorway, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 2,
+          "prompt": "medium shot, courier left frame, hand raised, door right background, yellow raincoat, black meal bag, rain droplets, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 3,
+          "prompt": "close-up, courier left frame, attentive eyes, yellow hood, closed door right background, warm rim light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 4,
+          "prompt": "medium shot, courier left foreground, kneeling, black meal bag beside right door, yellow raincoat, wet pavement, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 5,
+          "prompt": "wide shot, courier left midground, stepping backward, door opening right, white-haired elder inside, warm light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 6,
+          "prompt": "medium shot, courier left frame, crouching, black meal bag extended, elder right frame, cane, warm doorway, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 7,
+          "prompt": "close-up, courier left frame, relieved smile, elder right background, yellow hood, warm reflected light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 8,
+          "prompt": "medium shot, courier left frame, waving goodbye, elder right doorway, black meal bag, yellow raincoat, wet pavement, cinematic realism, no watermark, no timecode, no subtitles, no text overlay"
+        },
+        {
+          "shot_number": 9,
+          "prompt": "wide shot, courier receding left background, elder right foreground, warm doorway, black meal bag, rainy blue night, emotional resolution, no watermark, no timecode, no subtitles, no text overlay"
+        }
+      ]
+    },
+    "final_prompt": "Generate ONE cinematic storyboard contact sheet, a native seamless 3 by 3 grid of exactly 9 distinct horizontal 16:9 shots, reading left to right then top to bottom, no captions, no numbers, no borders. Overall canvas 16:9. This tests a storyboard template that explicitly requests a 3×3 grid. Maintain the same 32-year-old fictional adult East Asian female courier, yellow hooded raincoat, black meal bag and same elderly man with white hair and cane throughout; apartment door consistently right, courier left. Rainy night, blue outside and warm amber doorway, photorealistic cinematic stills. Each cell must follow its corresponding tag prompt:\nShot 1: wide shot, courier left foreground, apartment door right, raincoat yellow, black meal bag, rainy night, warm doorway, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 2: medium shot, courier left frame, hand raised, door right background, yellow raincoat, black meal bag, rain droplets, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 3: close-up, courier left frame, attentive eyes, yellow hood, closed door right background, warm rim light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 4: medium shot, courier left foreground, kneeling, black meal bag beside right door, yellow raincoat, wet pavement, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 5: wide shot, courier left midground, stepping backward, door opening right, white-haired elder inside, warm light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 6: medium shot, courier left frame, crouching, black meal bag extended, elder right frame, cane, warm doorway, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 7: close-up, courier left frame, relieved smile, elder right background, yellow hood, warm reflected light, rainy night, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 8: medium shot, courier left frame, waving goodbye, elder right doorway, black meal bag, yellow raincoat, wet pavement, cinematic realism, no watermark, no timecode, no subtitles, no text overlay\nShot 9: wide shot, courier receding left background, elder right foreground, warm doorway, black meal bag, rainy blue night, emotional resolution, no watermark, no timecode, no subtitles, no text overlay",
+    "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
+    "original_sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "images": [
+      "storyboard9.png"
+    ],
+    "checks": [
+      {
+        "requirement": "合法JSON，9镜，20—35词，tag语法，空间与排除词",
+        "result": "符合要求",
+        "evidence": "输出JSON可解析，9条分别28/28/28/27/28/27/27/28/28词，均带空间词与4项排除标签。"
+      },
+      {
+        "requirement": "9个静态分镜构成3×3",
+        "result": "符合要求",
+        "evidence": "已打开原图，3行3列，9格按雨夜敲门—放袋—开门—递袋—告别—离去排列。"
+      },
+      {
+        "requirement": "空间连续",
+        "result": "基本符合",
+        "evidence": "门在右侧、送餐员在左侧，老人从右侧门内出现；冷蓝雨夜与暖色门光持续。"
+      },
+      {
+        "requirement": "道具状态连续",
+        "result": "存在问题",
+        "evidence": "第一镜、第五镜、第八镜、第九镜出现背负餐袋；第四镜袋在地面，第六镜又手持递袋。递交后仍背负同型袋，未建立空袋/另一袋区别，不能宣称严格连续。"
+      },
+      {
+        "requirement": "禁止文字覆盖",
+        "result": "符合要求",
+        "evidence": "未见字幕、时码、水印或可读叠字。"
+      }
+    ],
+    "conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。"
+  },
+  "images": [
+    {
+      "file": "results/T002-storyboard9/storyboard9.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3a480691b5d1d0cc8de3542176ff12bd2df99f4d26a20faf7199f5e468163154"
+    }
+  ]
+}

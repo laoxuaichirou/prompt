@@ -1,0 +1,115 @@
+{
+  "test": {
+    "test_id": "T166",
+    "title": "AI脚本分镜",
+    "type": "元提示词→三张连续静态分镜",
+    "test_input": "N=3，自定义完整小故事：狗出纸箱、发现青蛙、靠近观察。原文9镜追蛙上街是可替换举例，本轮不执行该例。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/cartoon-dog-box-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "按原文允许自定数量/剧情填N3；不是将原9镜例少做6镜后宣称通过。",
+      "先生成并打开普通3D小狗花园合成参考，再逐镜参考上一张及初始图，记录所有实际参考。"
+    ],
+    "selected_source_prompt": "【输入方式】：参考图 + 文本描述  \n【延展目标】：基于上一张图的画面风格、人物外形、光影氛围、镜头语言，生成下一张分镜图，使得剧情延续\n\n保持人物外观一致  \n色调光影与参考图统一  \n背景元素延续，不突变  \n构图具备电影感（景别 / 光影 / 空间层次）\n\n镜头类型（特写 / 中景 / 远景 / 俯拍 / 跟拍 / 环绕 / 侧移 / 拉远）  \n镜头运动节奏（慢推 / 快切 / 手持感）  \n\n人物发色、身形不变  \n服饰延续衔接，不跳变  \n动作表情是上一个镜头的自然推进  \n背景环境连续递进\n\n高清画面  \n电影级光影  \n真实材质  \n无噪点无畸变  \n可作为下一张分镜生成基础\n\n输出时以Next Scene:开头，后面马上接文字。每一段文字是连续的，没有特殊符号，没有多余的解释，每一段文字100字左右，直接输出内容\n",
+    "final_prompt": [
+      "Next Scene: 花园石径，低位中景，三色短腿柯基从原来的敞口纸箱跃出，前爪伸向箱前石板，尾巴扬起，眼睛好奇；白脸线、棕眉黑背与白爪不变，纸箱留在身后，白篱笆和红黄花沿石径延续，左上方暖晨光与原图一致，柔和3D卡通材质，横向16比9，无文字。",
+      "Next Scene: 承接上一张落地动作，花园石径中景稍俯拍，同一三色柯基四爪落在纸箱前，转头看向右侧草坪；一只小绿蛙刚从草中跳到石径边缘，狗竖耳惊讶但友好，后方敞口纸箱、白篱笆和红黄花位置延续，左上暖晨光，3D卡通质感，横向16比9。",
+      "Next Scene: 同一花园，贴近地面的侧向近景，三色柯基朝小绿蛙靠近一步、低下头好奇闻看，绿蛙静坐石径边，两者保持友好距离；狗的白脸线棕眉黑背白爪与前镜相同，敞口纸箱仍在后方虚化，白篱笆红黄花和暖晨光连续，3D卡通横向16比9，不添加文字。"
+    ],
+    "meta_output": [
+      "Next Scene: 花园石径，低位中景，三色短腿柯基从原来的敞口纸箱跃出，前爪伸向箱前石板，尾巴扬起，眼睛好奇；白脸线、棕眉黑背与白爪不变，纸箱留在身后，白篱笆和红黄花沿石径延续，左上方暖晨光与原图一致，柔和3D卡通材质，横向16比9，无文字。",
+      "Next Scene: 承接上一张落地动作，花园石径中景稍俯拍，同一三色柯基四爪落在纸箱前，转头看向右侧草坪；一只小绿蛙刚从草中跳到石径边缘，狗竖耳惊讶但友好，后方敞口纸箱、白篱笆和红黄花位置延续，左上暖晨光，3D卡通质感，横向16比9。",
+      "Next Scene: 同一花园，贴近地面的侧向近景，三色柯基朝小绿蛙靠近一步、低下头好奇闻看，绿蛙静坐石径边，两者保持友好距离；狗的白脸线棕眉黑背白爪与前镜相同，敞口纸箱仍在后方虚化，白篱笆红黄花和暖晨光连续，3D卡通横向16比9，不添加文字。"
+    ],
+    "cases": [
+      {
+        "name": "scene1",
+        "prompt": "Next Scene: 花园石径，低位中景，三色短腿柯基从原来的敞口纸箱跃出，前爪伸向箱前石板，尾巴扬起，眼睛好奇；白脸线、棕眉黑背与白爪不变，纸箱留在身后，白篱笆和红黄花沿石径延续，左上方暖晨光与原图一致，柔和3D卡通材质，横向16比9，无文字。",
+        "refs": [
+          "/workspace/image-test-20261018/materials/cartoon-dog-box-synthetic.png"
+        ],
+        "reference_material_portable": [
+          "materials/cartoon-dog-box-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene2",
+        "prompt": "Next Scene: 承接上一张落地动作，花园石径中景稍俯拍，同一三色柯基四爪落在纸箱前，转头看向右侧草坪；一只小绿蛙刚从草中跳到石径边缘，狗竖耳惊讶但友好，后方敞口纸箱、白篱笆和红黄花位置延续，左上暖晨光，3D卡通质感，横向16比9。",
+        "refs": [
+          "/workspace/image-test-20261018/results/T166-dog-story/scene1.png",
+          "/workspace/image-test-20261018/materials/cartoon-dog-box-synthetic.png"
+        ],
+        "reference_material_portable": [
+          "results/T166-dog-story/scene1.png",
+          "materials/cartoon-dog-box-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene3",
+        "prompt": "Next Scene: 同一花园，贴近地面的侧向近景，三色柯基朝小绿蛙靠近一步、低下头好奇闻看，绿蛙静坐石径边，两者保持友好距离；狗的白脸线棕眉黑背白爪与前镜相同，敞口纸箱仍在后方虚化，白篱笆红黄花和暖晨光连续，3D卡通横向16比9，不添加文字。",
+        "refs": [
+          "/workspace/image-test-20261018/results/T166-dog-story/scene2.png",
+          "/workspace/image-test-20261018/materials/cartoon-dog-box-synthetic.png"
+        ],
+        "reference_material_portable": [
+          "results/T166-dog-story/scene2.png",
+          "materials/cartoon-dog-box-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/视频分镜/[已投产·3分] AI脚本分镜.md",
+    "original_sha256": "1bb728cf985a1632a21bc3bc0c7cd3782bf065fba08ea572843dc1f3ec40e72f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/cartoon-dog-box-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 3,
+    "opened": 3,
+    "checks": [
+      {
+        "requirement": "逐镜过程/花园连续",
+        "result": "基本符合",
+        "evidence": "三张独立输出：出箱、四爪落地发现青蛙、低头靠近；共同初始参考与上一张引用真实保存，箱子篱笆红黄花及暖光延续。"
+      },
+      {
+        "requirement": "外形不变",
+        "result": "存在问题",
+        "evidence": "后两张狗眼白与眼球比例扩大，前腿较长，未严格保持首图体型/脸部；第三张青蛙旁残留白色动作装饰线。"
+      },
+      {
+        "requirement": "范围",
+        "result": "未执行",
+        "evidence": "自定义N3完整小故事已执行，原九镜上街例及真实运动视频未执行。"
+      }
+    ],
+    "conclusion": "三镜故事推进实现，狗的眼部/体型一致性有偏差。"
+  },
+  "images": [
+    {
+      "file": "results/T166-dog-story/scene1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "33de13d86bd00de30251192773512ed5402c833aaa0194bccc397b498c57ff5e"
+    },
+    {
+      "file": "results/T166-dog-story/scene2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1eb6f5e298ed482a3bf1978804ca363a41efbad138e0387e897edb6f0c2e3553"
+    },
+    {
+      "file": "results/T166-dog-story/scene3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4fab195af0cca5fd9cfc02699b33f9b29262c8c9e1e49222030b71264aa69f13"
+    }
+  ]
+}

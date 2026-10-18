@@ -1,0 +1,58 @@
+{
+  "test": {
+    "test_id": "T170",
+    "title": "AI漫剧提示词",
+    "type": "完整角色生图示例（混合元提示词文档）",
+    "test_input": "华山剑仙，虚构28岁成年人；只测原文已给出的第一条完整角色资产示例。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择已存在完整角色资产示例，不将示例省略号补成原版；上文一分钟4x15秒全流程元任务和其余角色未执行。",
+      "填充成年28岁，原8K/16:9保留供检验。"
+    ],
+    "selected_source_prompt": "华山剑仙（男）\n核心特征：俊朗清冷，仙侠气，江湖侠客；五官立体剑眉星目，身形挺拔修长，身着月白剑仙长袍配流云纹，手持玄铁长剑，剑穗垂落；CG 超写实 3D 渲染，8K，16:9，侧光逆光结合，光影层次丰富；",
+    "final_prompt": [
+      "虚构28岁成年男性华山剑仙，独立全身角色资产图，无文字。\n核心特征：俊朗清冷，仙侠气，江湖侠客；五官立体剑眉星目，身形挺拔修长，身着月白剑仙长袍配流云纹，手持玄铁长剑，剑穗垂落；CG 超写实 3D 渲染，8K，16:9，侧光逆光结合，光影层次丰富；"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "虚构28岁成年男性华山剑仙，独立全身角色资产图，无文字。\n核心特征：俊朗清冷，仙侠气，江湖侠客；五官立体剑眉星目，身形挺拔修长，身着月白剑仙长袍配流云纹，手持玄铁长剑，剑穗垂落；CG 超写实 3D 渲染，8K，16:9，侧光逆光结合，光影层次丰富；",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/视频分镜/[已投产·4分] AI漫剧提示词.md",
+    "original_sha256": "9e19fbcb8f73b653d8b8223cb3aef18baa5d1c69a73158ab775683a8ea1f20ae",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "角色/衣服/剑/风格",
+        "result": "基本符合",
+        "evidence": "成年剑仙月白流云长袍、长剑剑穗、修长身形，CG电影侧逆光与16:9基本完成。"
+      },
+      {
+        "requirement": "8K/其余流程",
+        "result": "未满足/未执行",
+        "evidence": "非8K；仅原文完整华山角色资产示例，上文一分钟四段元任务、其余三角色和视频未执行。"
+      }
+    ],
+    "conclusion": "单角色资产已出图，8K未满足，不代表全漫剧流程通过。"
+  },
+  "images": [
+    {
+      "file": "results/T170-swordsman-asset/output.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "885dbe93c5b3eaaf7b6e3fc768232dfb0edb63e0bfcc96c86e9176b78c067f82"
+    }
+  ]
+}

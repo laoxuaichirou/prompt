@@ -1,0 +1,292 @@
+{
+  "test": {
+    "test_id": "T058",
+    "title": "JSON提示词",
+    "type": "元提示词→UI Agent→JSON→两主题图片",
+    "test_input": "自行填入测试偏好：App；中文学习首页；简约绿白；顶部摘要卡→课程列表→底栏；主题迁移只改变颜色。画布390×844。所有学习数据均为虚构测试数据。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "先执行Step1生成简化UI Agent，测试员提供偏好选项后再执行Agent生成可解析JSON，不需要向真实用户提问",
+      "不复用原文含多余逗号的few-shot；保存的UI JSON均可解析",
+      "最小完整用例测亮/暗主题，不声称测试跨平台、商品详情/购物车或缺失红包封面子页",
+      "像素坐标作为生图布局要求，后续检查不能当成真实可交互UI"
+    ],
+    "selected_source_prompt": "请为我设计一个 AI Agent 的提示词，请遵循提示词工程规范，包含：角色、任务、few-shot 等工程技巧 。\n\nAI Agent 将用于生成 JSON 格式 UI设计语言，基本要求如下：\n- 完全使用JSON格式编写\n- 支持跨平台。既能制作web也能制作app（并不是指同一份json可以用来生成web和app）\n- 组件化设计。将每一个UI元素视为一个组件来对待，复杂组件使用嵌套式表示\n- 设计一致。所有组件视觉设计风格保持一致\n- 样式精确。包含但不限于：位置、大小、字体、内容、颜色等属性描述\n- 风格迁移。需要方便整体迁移风格，比如暗系，亮系，等\n- 真实。使用有意义的数据展示界面\n- 语言。若无要求，界面元素默认使用中文\n- 完整。JSON需要描述一张完整的UI设计图，而不是渲染图或者demo\n- 其他要求，你觉得有助于生成UI图的要求\n\n在开始制作 JSON 之前，我希望AI主动询问我一些信息（给我做选择题而不是开放式问答），以确保最终制作的UI图符合用户的要求。\n",
+    "final_prompt": [
+      "Render one full flat mobile UI design image, no phone mockup or perspective. Follow the supplied JSON coordinates, content and colors; readable exact Chinese labels. This is a static UI design, not source code. JSON: {\"platform\":\"app\",\"screen\":{\"width\":390,\"height\":844},\"theme\":{\"name\":\"light\",\"background\":\"#F5F7FA\",\"surface\":\"#FFFFFF\",\"text\":\"#152331\",\"primary\":\"#167A66\",\"radius\":16,\"font\":\"Chinese sans-serif\"},\"components\":[{\"id\":\"header\",\"type\":\"text\",\"x\":24,\"y\":56,\"w\":342,\"h\":38,\"text\":\"今日学习\",\"font_size\":28,\"weight\":700},{\"id\":\"summary\",\"type\":\"card\",\"x\":24,\"y\":112,\"w\":342,\"h\":144,\"title\":\"每日口语\",\"title_size\":22,\"subtitle\":\"已学习 45 分钟\",\"progress\":65,\"progress_label\":\"总进度 65%\",\"button\":{\"text\":\"继续学习\",\"x\":242,\"y\":197,\"w\":104,\"h\":36}},{\"id\":\"section\",\"type\":\"text\",\"x\":24,\"y\":290,\"w\":342,\"h\":30,\"text\":\"推荐课程\",\"font_size\":22,\"weight\":700},{\"id\":\"course1\",\"type\":\"card\",\"x\":24,\"y\":338,\"w\":342,\"h\":136,\"title\":\"商务英语入门\",\"subtitle\":\"初级 · 30分钟\",\"tag\":\"评分 4.8\",\"button\":\"开始学习\"},{\"id\":\"course2\",\"type\":\"card\",\"x\":24,\"y\":494,\"w\":342,\"h\":136,\"title\":\"旅行情景对话\",\"subtitle\":\"中级 · 25分钟\",\"tag\":\"评分 4.7\",\"button\":\"立即体验\"},{\"id\":\"nav\",\"type\":\"navigation\",\"x\":0,\"y\":752,\"w\":390,\"h\":92,\"items\":[\"首页\",\"课程\",\"我的\"],\"active\":\"首页\"}]}",
+      "Render one full flat mobile UI design image, no phone mockup or perspective. Follow the supplied JSON coordinates, content and colors; readable exact Chinese labels. Keep the component layout identical to the light theme; only theme colors change. JSON: {\"platform\":\"app\",\"screen\":{\"width\":390,\"height\":844},\"theme\":{\"name\":\"dark\",\"background\":\"#10191F\",\"surface\":\"#1D2A33\",\"text\":\"#F0F4F5\",\"primary\":\"#65D6B3\",\"radius\":16,\"font\":\"Chinese sans-serif\"},\"components\":[{\"id\":\"header\",\"type\":\"text\",\"x\":24,\"y\":56,\"w\":342,\"h\":38,\"text\":\"今日学习\",\"font_size\":28,\"weight\":700},{\"id\":\"summary\",\"type\":\"card\",\"x\":24,\"y\":112,\"w\":342,\"h\":144,\"title\":\"每日口语\",\"title_size\":22,\"subtitle\":\"已学习 45 分钟\",\"progress\":65,\"progress_label\":\"总进度 65%\",\"button\":{\"text\":\"继续学习\",\"x\":242,\"y\":197,\"w\":104,\"h\":36}},{\"id\":\"section\",\"type\":\"text\",\"x\":24,\"y\":290,\"w\":342,\"h\":30,\"text\":\"推荐课程\",\"font_size\":22,\"weight\":700},{\"id\":\"course1\",\"type\":\"card\",\"x\":24,\"y\":338,\"w\":342,\"h\":136,\"title\":\"商务英语入门\",\"subtitle\":\"初级 · 30分钟\",\"tag\":\"评分 4.8\",\"button\":\"开始学习\"},{\"id\":\"course2\",\"type\":\"card\",\"x\":24,\"y\":494,\"w\":342,\"h\":136,\"title\":\"旅行情景对话\",\"subtitle\":\"中级 · 25分钟\",\"tag\":\"评分 4.7\",\"button\":\"立即体验\"},{\"id\":\"nav\",\"type\":\"navigation\",\"x\":0,\"y\":752,\"w\":390,\"h\":92,\"items\":[\"首页\",\"课程\",\"我的\"],\"active\":\"首页\"}]}"
+    ],
+    "meta_output": {
+      "agent_prompt": "你是UI JSON设计工程师。先用选择题确认平台App/Web、主题绿白/暗色、页面首页/详情、布局摘要卡/网格。测试者确认全部选项后，仅输出可解析JSON，含屏幕尺寸、全局主题token、组件ID、绝对坐标尺寸、中文真实感测试数据、文字字号、按钮和导航。复杂组件嵌套表达，不使用占位网址。所有组件共享theme。Few-shot：{\"type\":\"text\",\"x\":24,\"y\":56,\"w\":342,\"h\":38,\"text\":\"今日学习\",\"font_size\":28}。校验组件不超屏且不重叠。",
+      "answers": {
+        "platform": "App",
+        "theme": "绿白",
+        "page": "首页",
+        "layout": "摘要卡+课程列表+底栏"
+      },
+      "light": {
+        "platform": "app",
+        "screen": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": {
+          "name": "light",
+          "background": "#F5F7FA",
+          "surface": "#FFFFFF",
+          "text": "#152331",
+          "primary": "#167A66",
+          "radius": 16,
+          "font": "Chinese sans-serif"
+        },
+        "components": [
+          {
+            "id": "header",
+            "type": "text",
+            "x": 24,
+            "y": 56,
+            "w": 342,
+            "h": 38,
+            "text": "今日学习",
+            "font_size": 28,
+            "weight": 700
+          },
+          {
+            "id": "summary",
+            "type": "card",
+            "x": 24,
+            "y": 112,
+            "w": 342,
+            "h": 144,
+            "title": "每日口语",
+            "title_size": 22,
+            "subtitle": "已学习 45 分钟",
+            "progress": 65,
+            "progress_label": "总进度 65%",
+            "button": {
+              "text": "继续学习",
+              "x": 242,
+              "y": 197,
+              "w": 104,
+              "h": 36
+            }
+          },
+          {
+            "id": "section",
+            "type": "text",
+            "x": 24,
+            "y": 290,
+            "w": 342,
+            "h": 30,
+            "text": "推荐课程",
+            "font_size": 22,
+            "weight": 700
+          },
+          {
+            "id": "course1",
+            "type": "card",
+            "x": 24,
+            "y": 338,
+            "w": 342,
+            "h": 136,
+            "title": "商务英语入门",
+            "subtitle": "初级 · 30分钟",
+            "tag": "评分 4.8",
+            "button": "开始学习"
+          },
+          {
+            "id": "course2",
+            "type": "card",
+            "x": 24,
+            "y": 494,
+            "w": 342,
+            "h": 136,
+            "title": "旅行情景对话",
+            "subtitle": "中级 · 25分钟",
+            "tag": "评分 4.7",
+            "button": "立即体验"
+          },
+          {
+            "id": "nav",
+            "type": "navigation",
+            "x": 0,
+            "y": 752,
+            "w": 390,
+            "h": 92,
+            "items": [
+              "首页",
+              "课程",
+              "我的"
+            ],
+            "active": "首页"
+          }
+        ]
+      },
+      "dark": {
+        "platform": "app",
+        "screen": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": {
+          "name": "dark",
+          "background": "#10191F",
+          "surface": "#1D2A33",
+          "text": "#F0F4F5",
+          "primary": "#65D6B3",
+          "radius": 16,
+          "font": "Chinese sans-serif"
+        },
+        "components": [
+          {
+            "id": "header",
+            "type": "text",
+            "x": 24,
+            "y": 56,
+            "w": 342,
+            "h": 38,
+            "text": "今日学习",
+            "font_size": 28,
+            "weight": 700
+          },
+          {
+            "id": "summary",
+            "type": "card",
+            "x": 24,
+            "y": 112,
+            "w": 342,
+            "h": 144,
+            "title": "每日口语",
+            "title_size": 22,
+            "subtitle": "已学习 45 分钟",
+            "progress": 65,
+            "progress_label": "总进度 65%",
+            "button": {
+              "text": "继续学习",
+              "x": 242,
+              "y": 197,
+              "w": 104,
+              "h": 36
+            }
+          },
+          {
+            "id": "section",
+            "type": "text",
+            "x": 24,
+            "y": 290,
+            "w": 342,
+            "h": 30,
+            "text": "推荐课程",
+            "font_size": 22,
+            "weight": 700
+          },
+          {
+            "id": "course1",
+            "type": "card",
+            "x": 24,
+            "y": 338,
+            "w": 342,
+            "h": 136,
+            "title": "商务英语入门",
+            "subtitle": "初级 · 30分钟",
+            "tag": "评分 4.8",
+            "button": "开始学习"
+          },
+          {
+            "id": "course2",
+            "type": "card",
+            "x": 24,
+            "y": 494,
+            "w": 342,
+            "h": 136,
+            "title": "旅行情景对话",
+            "subtitle": "中级 · 25分钟",
+            "tag": "评分 4.7",
+            "button": "立即体验"
+          },
+          {
+            "id": "nav",
+            "type": "navigation",
+            "x": 0,
+            "y": 752,
+            "w": 390,
+            "h": 92,
+            "items": [
+              "首页",
+              "课程",
+              "我的"
+            ],
+            "active": "首页"
+          }
+        ]
+      }
+    },
+    "cases": [
+      {
+        "name": "light",
+        "prompt": "Render one full flat mobile UI design image, no phone mockup or perspective. Follow the supplied JSON coordinates, content and colors; readable exact Chinese labels. This is a static UI design, not source code. JSON: {\"platform\":\"app\",\"screen\":{\"width\":390,\"height\":844},\"theme\":{\"name\":\"light\",\"background\":\"#F5F7FA\",\"surface\":\"#FFFFFF\",\"text\":\"#152331\",\"primary\":\"#167A66\",\"radius\":16,\"font\":\"Chinese sans-serif\"},\"components\":[{\"id\":\"header\",\"type\":\"text\",\"x\":24,\"y\":56,\"w\":342,\"h\":38,\"text\":\"今日学习\",\"font_size\":28,\"weight\":700},{\"id\":\"summary\",\"type\":\"card\",\"x\":24,\"y\":112,\"w\":342,\"h\":144,\"title\":\"每日口语\",\"title_size\":22,\"subtitle\":\"已学习 45 分钟\",\"progress\":65,\"progress_label\":\"总进度 65%\",\"button\":{\"text\":\"继续学习\",\"x\":242,\"y\":197,\"w\":104,\"h\":36}},{\"id\":\"section\",\"type\":\"text\",\"x\":24,\"y\":290,\"w\":342,\"h\":30,\"text\":\"推荐课程\",\"font_size\":22,\"weight\":700},{\"id\":\"course1\",\"type\":\"card\",\"x\":24,\"y\":338,\"w\":342,\"h\":136,\"title\":\"商务英语入门\",\"subtitle\":\"初级 · 30分钟\",\"tag\":\"评分 4.8\",\"button\":\"开始学习\"},{\"id\":\"course2\",\"type\":\"card\",\"x\":24,\"y\":494,\"w\":342,\"h\":136,\"title\":\"旅行情景对话\",\"subtitle\":\"中级 · 25分钟\",\"tag\":\"评分 4.7\",\"button\":\"立即体验\"},{\"id\":\"nav\",\"type\":\"navigation\",\"x\":0,\"y\":752,\"w\":390,\"h\":92,\"items\":[\"首页\",\"课程\",\"我的\"],\"active\":\"首页\"}]}",
+        "reference_material_portable": []
+      },
+      {
+        "name": "dark",
+        "prompt": "Render one full flat mobile UI design image, no phone mockup or perspective. Follow the supplied JSON coordinates, content and colors; readable exact Chinese labels. Keep the component layout identical to the light theme; only theme colors change. JSON: {\"platform\":\"app\",\"screen\":{\"width\":390,\"height\":844},\"theme\":{\"name\":\"dark\",\"background\":\"#10191F\",\"surface\":\"#1D2A33\",\"text\":\"#F0F4F5\",\"primary\":\"#65D6B3\",\"radius\":16,\"font\":\"Chinese sans-serif\"},\"components\":[{\"id\":\"header\",\"type\":\"text\",\"x\":24,\"y\":56,\"w\":342,\"h\":38,\"text\":\"今日学习\",\"font_size\":28,\"weight\":700},{\"id\":\"summary\",\"type\":\"card\",\"x\":24,\"y\":112,\"w\":342,\"h\":144,\"title\":\"每日口语\",\"title_size\":22,\"subtitle\":\"已学习 45 分钟\",\"progress\":65,\"progress_label\":\"总进度 65%\",\"button\":{\"text\":\"继续学习\",\"x\":242,\"y\":197,\"w\":104,\"h\":36}},{\"id\":\"section\",\"type\":\"text\",\"x\":24,\"y\":290,\"w\":342,\"h\":30,\"text\":\"推荐课程\",\"font_size\":22,\"weight\":700},{\"id\":\"course1\",\"type\":\"card\",\"x\":24,\"y\":338,\"w\":342,\"h\":136,\"title\":\"商务英语入门\",\"subtitle\":\"初级 · 30分钟\",\"tag\":\"评分 4.8\",\"button\":\"开始学习\"},{\"id\":\"course2\",\"type\":\"card\",\"x\":24,\"y\":494,\"w\":342,\"h\":136,\"title\":\"旅行情景对话\",\"subtitle\":\"中级 · 25分钟\",\"tag\":\"评分 4.7\",\"button\":\"立即体验\"},{\"id\":\"nav\",\"type\":\"navigation\",\"x\":0,\"y\":752,\"w\":390,\"h\":92,\"items\":[\"首页\",\"课程\",\"我的\"],\"active\":\"首页\"}]}",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/提示词工程/[已投产·4分] JSON提示词.md",
+    "original_sha256": "e7f835d0e62ebca9cdf7887091277626ffb5d79e8f2730cf5bfba9d693c18390",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "元提示词→Agent→JSON→生图",
+        "result": "已执行",
+        "evidence": "测试偏好与Agent、亮暗两份合法JSON及两次生图均已记录。"
+      },
+      {
+        "requirement": "中文和数据",
+        "result": "基本符合",
+        "evidence": "课程名、45分钟、65%、4.8/4.7及按钮/导航均可读。"
+      },
+      {
+        "requirement": "只改变主题保持内容布局",
+        "result": "存在问题",
+        "evidence": "亮版课程图片在右，暗版在左；课程插图题材不同、星号图标不同，未仅改变配色。"
+      },
+      {
+        "requirement": "精确坐标和画布",
+        "result": "存在问题",
+        "evidence": "输出并非原生390×844；可视组件位置与JSON的精确像素要求不能视为落实。"
+      },
+      {
+        "requirement": "交互/跨平台/缺失子页",
+        "result": "未执行",
+        "evidence": "静态设计图；未验证可交互渲染、跨平台、商品流程或未导出的红包封面页。"
+      }
+    ],
+    "conclusion": "两主题都已生成，但迁移时布局和插图一起改变，未满足仅改主题。"
+  },
+  "images": [
+    {
+      "file": "results/T058-json-ui/dark.png",
+      "width": 853,
+      "height": 1844,
+      "sha256": "c4e2ea1fd846cd773bea283963ebba2bf346118979d61ad9164d7bb74022a88d"
+    },
+    {
+      "file": "results/T058-json-ui/light.png",
+      "width": 853,
+      "height": 1844,
+      "sha256": "50c611837d40e19d831968bbab8c964a17ca24a1e2ac9039971202c460f88202"
+    }
+  ]
+}

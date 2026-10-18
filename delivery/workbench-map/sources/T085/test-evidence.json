@@ -1,0 +1,77 @@
+{
+  "test": {
+    "test_id": "T085",
+    "title": "kontext电商手持商品",
+    "type": "图像合成编辑",
+    "test_input": "图1为本轮合成无品牌瓶子，图2为合成人手；改变手势为握住瓶子。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/bottle-synthetic.png",
+      "/workspace/image-test-20261018/materials/palm-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原文称酒瓶，使用普通无品牌玻璃饮品瓶作为合成产品测试素材，不做酒品牌复现",
+      "原流程称拼图；本工具改为两张独立参考并明确角色，不改变测试目标",
+      "不调用Kontext"
+    ],
+    "selected_source_prompt": "place it in hand. 改变手势，手紧紧拿着握住酒瓶",
+    "final_prompt": [
+      "Reference 1 is the unbranded amber bottle product. Reference 2 supplies adult hand anatomy and the pale blue background. Use one adult hand to firmly grip and support this exact bottle around its lower cylindrical body, changing the original open-palm gesture naturally; the bottle must remain a single whole object with its black cap and full base visible. No extra hand is needed. Keep realistic fingers and contact shadows, no text or logos. Original instruction: place it in hand. 改变手势，手紧紧拿着握住酒瓶"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png",
+          "/workspace/image-test-20261018/materials/palm-synthetic.png"
+        ],
+        "prompt": "Reference 1 is the unbranded amber bottle product. Reference 2 supplies adult hand anatomy and the pale blue background. Use one adult hand to firmly grip and support this exact bottle around its lower cylindrical body, changing the original open-palm gesture naturally; the bottle must remain a single whole object with its black cap and full base visible. No extra hand is needed. Keep realistic fingers and contact shadows, no text or logos. Original instruction: place it in hand. 改变手势，手紧紧拿着握住酒瓶",
+        "reference_material_portable": [
+          "materials/bottle-synthetic.png",
+          "materials/palm-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[已投产·3分] kontext电商手持商品.md",
+    "original_sha256": "d4a4536335a11611f3450e13092ef81e55acab04cd4e3a3b4698f9f6e3b6445c",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/bottle-synthetic.png",
+      "materials/palm-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "握持动作",
+        "result": "符合要求",
+        "evidence": "一只成人手四指从一侧环握、拇指相对，瓶子真实接触掌心且完整可见。"
+      },
+      {
+        "requirement": "商品和背景",
+        "result": "基本符合",
+        "evidence": "琥珀玻璃、无标签、黑盖及浅蓝背景保留，未多出文字或第二瓶。"
+      },
+      {
+        "requirement": "原指定模型",
+        "result": "未验证",
+        "evidence": "双参考适配测试，未调用Kontext；单次不代表稳定性。"
+      }
+    ],
+    "conclusion": "合成成年手握持无品牌瓶子最小用例符合主要要求。"
+  },
+  "images": [
+    {
+      "file": "results/T085-hand-bottle/output.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "9b146e44267e876208e52a554ebe755ea7fb33038c30b65c73be98e18dec44e7"
+    }
+  ]
+}

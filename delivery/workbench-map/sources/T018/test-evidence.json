@@ -1,0 +1,62 @@
+{
+  "test": {
+    "test_id": "T018",
+    "title": "极简白底高端产品工业图鉴",
+    "type": "直接JSON图像提示词",
+    "test_input": "同一合成无品牌运动鞋作为唯一来源。",
+    "reference_material": [
+      "materials/sneaker-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原模型未调用",
+    "changes": [
+      "去除元数据、外链图和重复中译版本，保留完整原文另存original.md。",
+      "参考无品牌，以UNBRANDED事实占位，不编造品牌；真实品牌名渲染子项不适用。",
+      "后视/未见结构仅可作为推演，不能当作已从参考证实的事实。"
+    ],
+    "final_prompt": "Generate the product documentation image described by this JSON. The attached synthetic reference is the sole visual source. It has no brand, so use the factual placeholder UNBRANDED at top left; never invent a real brand. Do not add hidden mechanisms or performance claims. Auxiliary rear or unseen views are unverified inferences and must not add new components. Render a single layout image, not a JSON response.\n{\n  \"reference\": {\n    \"type\": \"image\",\n    \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\"\n  },\n  \"scene\": {\n    \"description\": \"Minimal, premium product presentation layout inspired by high-end industrial design and product documentation.\",\n    \"background\": \"Pure white, clean, distraction-free\"\n  },\n  \"layout\": {\n    \"top_left\": {\n      \"content\": \"Brand name\",\n      \"style\": \"Modern sans-serif typography, subtle, elegant\"\n    },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\n        \"Primary front or main view\",\n        \"Secondary side view\",\n        \"Alternate angle or rear view\",\n        \"Detail or top view if applicable\"\n      ],\n      \"arrangement\": \"Vertically stacked, evenly spaced, aligned\"\n    },\n    \"right_section\": {\n      \"content\": \"Main hero product render\",\n      \"style\": \"Large, dominant, photorealistic\",\n      \"lighting\": \"Soft studio lighting\",\n      \"materials\": \"Visually accurate to the uploaded product\"\n    }\n  },\n  \"annotations\": {\n    \"analysis_phase\": [\n      \"Visually analyze the product to identify distinct physical components\",\n      \"Determine visible materials, surfaces, interfaces, and structures\",\n      \"Ignore assumed internal mechanisms or hidden features\"\n    ],\n    \"binding_rules\": [\n      \"Each annotation line must point to one clearly visible component\",\n      \"Each label must describe exactly what that component is and does, based only on visual evidence\",\n      \"No label may rely on the product category for meaning\",\n      \"One line equals one component equals one explanation\"\n    ],\n    \"line_style\": {\n      \"type\": \"Hairline-thin vector lines\",\n      \"color\": \"Neutral light gray\",\n      \"termination\": \"Exact contact point on the referenced component\"\n    },\n    \"labels\": {\n      \"content_rules\": [\n        \"Use neutral, descriptive nouns (e.g. outer shell, surface panel, joint, opening, interface, edge, enclosure)\",\n        \"Mention material only if visually identifiable\",\n        \"Mention function only if structurally implied\",\n        \"Avoid category-specific terminology unless clearly visible\"\n      ],\n      \"placement_rules\": [\n        \"Place text outside the product silhouette\",\n        \"Maintain consistent spacing\",\n        \"Avoid overlaps\",\n        \"Align labels for technical clarity\"\n      ],\n      \"tone\": \"Factual, precise, non-marketing\",\n      \"typography\": \"Minimal technical sans-serif\"\n    }\n  },\n  \"visual_style\": {\n    \"aesthetic\": \"Scandinavian, modern, industrial documentation\",\n    \"mood\": \"Calm, precise, professional\",\n    \"color_palette\": \"Neutral and restrained\"\n  },\n  \"rendering\": {\n    \"quality\": \"Ultra-high resolution\",\n    \"shadows\": \"Soft and realistic\",\n    \"accuracy\": \"Exact proportions and geometry fidelity\"\n  },\n  \"rules\": {\n    \"do_not\": [\n      \"Assume product category\",\n      \"Hallucinate features\",\n      \"Use generic marketing language\",\n      \"Mismatch labels and components\",\n      \"Decorate annotation lines\"\n    ],\n    \"focus_on\": [\n      \"Visual truth\",\n      \"Semantic correctness\",\n      \"Component-level understanding\",\n      \"Professional design documentation\"\n    ]\n  }\n}\n",
+    "original_filename": "提示词库/电商产品/[已投产·5分] 极简白底高端产品工业图鉴.md",
+    "original_sha256": "0ff6afd5a80955fdef8f80d7765e182ea94947542ef8a04345bcac6483f4d80e",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/sneaker-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "白底、左辅助视图、右主产品、细线注释",
+        "result": "符合布局要求",
+        "evidence": "左侧4个辅助视图，右侧大鞋，细灰线与外置标签，UNBRANDED文字可读。"
+      },
+      {
+        "requirement": "仅根据可见证据、禁止虚构隐藏特征",
+        "result": "不符合严格原文",
+        "evidence": "辅助图补出了原参考看不到的鞋底完整纹路、后视结构；这些是模型推演，不能当成已证实产品事实。"
+      },
+      {
+        "requirement": "一线一组件、标注准确且无推断",
+        "result": "部分符合",
+        "evidence": "Lace、Eyelet、Toe panel、Heel panel、Upper panel、Outsole基本指向可见处；Midsole的Solid construction不能从外观确认材料内部实心性，超出视觉证据。"
+      },
+      {
+        "requirement": "准确产品比例及材料",
+        "result": "基本保留，未见面无法验证",
+        "evidence": "主图接近原参考，白鞋黑跟片厚底保留；多视图缺少原始实物对照，不宣称工程精确复现。"
+      }
+    ],
+    "conclusion": "版式有用，但视觉真实性约束不足，存在不可证实的新视图与结构用语；不能按真实工业资料直接验收。"
+  },
+  "images": [
+    {
+      "file": "results/T018-product-atlas/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "41492a042354f5fa25927fa841458a767393dc16ca65fb1baa39fbfa292fe3bb"
+    }
+  ]
+}

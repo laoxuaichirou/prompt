@@ -1,0 +1,56 @@
+{
+  "test": {
+    "test_id": "T039",
+    "title": "分镜导演与动作编排专家",
+    "type": "元提示词→分镜文本→静态图",
+    "test_input": "{\"narrative\":\"An adult parkour athlete sprints across a training rooftop, shoes skimming shallow puddles as momentum builds toward a padded obstacle. From a low angle, the athlete plants one foot on a ledge and launches upward, arms driving the body over the gap. A bird's-eye view catches the descent toward a suspended foam pad. The athlete strikes the pad with both feet, bending the knees to absorb the impact while the pad swings away. Carrying the rebound sideways, the athlete rolls behind a low practice wall and settles into stillness. Cut to a close-up of alert eyes peering around the wall; one controlled breath steadies the shoulders while a distant hanging target becomes visible. The athlete retrieves a soft training disc, shifts weight onto the rear foot, and coils the torso. An over-the-shoulder view reveals the final release: the arm snaps forward, the disc streaks across the courtyard, and the target rocks backward from a clean central hit. The athlete follows through, regains balance, and watches the target slowly settle.\",\"frames\":[\"sprint along rooftop toward foam pad\",\"plant foot and launch from ledge\",\"bird's-eye descent toward hanging foam pad\",\"feet strike foam pad, knees bend, pad swings\",\"roll behind low practice wall\",\"ECU eyes peering around wall, hanging target visible\",\"coil torso and draw soft disc back\",\"over-shoulder disc hits target, follow-through\"]}",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只测试选定可见框架，不把原库5分当本轮证据。",
+      "先执行150—200词动作扩写，再执行可见8格预演框架；新版子页缺失，不补写。"
+    ],
+    "selected_source_prompt": "Create one rough director previs storyboard containing exactly EIGHT sequential panels in a 4x2 grid. Stick figures and gesture mannequins only, construction lines, motion arcs, directional arrows, momentum trails and impact marks; no realistic face, muscles, costume details, shading, textures or polished comic illustration. An adult parkour athlete in a training environment, foam pad and soft disc target, not a combat scene. Minimal short camera notes only, no dialogue. Panels:\n1. sprint along rooftop toward foam pad\n2. plant foot and launch from ledge\n3. bird's-eye descent toward hanging foam pad\n4. feet strike foam pad, knees bend, pad swings\n5. roll behind low practice wall\n6. ECU eyes peering around wall, hanging target visible\n7. coil torso and draw soft disc back\n8. over-shoulder disc hits target, follow-through",
+    "final_prompt": "Create one rough director previs storyboard containing exactly EIGHT sequential panels in a 4x2 grid. Stick figures and gesture mannequins only, construction lines, motion arcs, directional arrows, momentum trails and impact marks; no realistic face, muscles, costume details, shading, textures or polished comic illustration. An adult parkour athlete in a training environment, foam pad and soft disc target, not a combat scene. Minimal short camera notes only, no dialogue. Panels:\n1. sprint along rooftop toward foam pad\n2. plant foot and launch from ledge\n3. bird's-eye descent toward hanging foam pad\n4. feet strike foam pad, knees bend, pad swings\n5. roll behind low practice wall\n6. ECU eyes peering around wall, hanging target visible\n7. coil torso and draw soft disc back\n8. over-shoulder disc hits target, follow-through",
+    "meta_output": {
+      "narrative": "An adult parkour athlete sprints across a training rooftop, shoes skimming shallow puddles as momentum builds toward a padded obstacle. From a low angle, the athlete plants one foot on a ledge and launches upward, arms driving the body over the gap. A bird's-eye view catches the descent toward a suspended foam pad. The athlete strikes the pad with both feet, bending the knees to absorb the impact while the pad swings away. Carrying the rebound sideways, the athlete rolls behind a low practice wall and settles into stillness. Cut to a close-up of alert eyes peering around the wall; one controlled breath steadies the shoulders while a distant hanging target becomes visible. The athlete retrieves a soft training disc, shifts weight onto the rear foot, and coils the torso. An over-the-shoulder view reveals the final release: the arm snaps forward, the disc streaks across the courtyard, and the target rocks backward from a clean central hit. The athlete follows through, regains balance, and watches the target slowly settle.",
+      "frames": [
+        "sprint along rooftop toward foam pad",
+        "plant foot and launch from ledge",
+        "bird's-eye descent toward hanging foam pad",
+        "feet strike foam pad, knees bend, pad swings",
+        "roll behind low practice wall",
+        "ECU eyes peering around wall, hanging target visible",
+        "coil torso and draw soft disc back",
+        "over-shoulder disc hits target, follow-through"
+      ]
+    },
+    "original_filename": "提示词库/视频分镜/[已投产·5分] 分镜导演与动作编排专家.md",
+    "original_sha256": "1392657912aecb71615c4ec640aec06dd609f735daa4cf1864a2b4ce1dee72b5",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "核心结构、视觉连续性与原文约束",
+        "result": "存在问题",
+        "evidence": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。"
+      }
+    ],
+    "conclusion": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。 模型单轮初评，未宣称视频通过。"
+  },
+  "images": [
+    {
+      "file": "results/T039-action-previs8/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5cd1faa5ad721b28e9c7e9d47714952cf3baf791c5aab0dff8ec8416bec593f2"
+    }
+  ]
+}

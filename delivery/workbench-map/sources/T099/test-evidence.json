@@ -1,0 +1,76 @@
+{
+  "test": {
+    "test_id": "T099",
+    "title": "换姿势",
+    "type": "双参考姿态编辑",
+    "test_input": "左图=合成32岁女性正面全身；右图=T077虚构成年园艺师弯腰浇花姿势。保留左图身份服装/正常比例，取右图动作。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+      "/workspace/image-test-20261018/results/T077-full-caricature/output.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "用自制成年素材填充普通左右图输入；本工具接收两张独立参考，按顺序明确对应",
+      "右图夸张漫画只供姿态动作，风格和身体比例以左图为准，属于原文自然协调目标的输入说明"
+    ],
+    "selected_source_prompt": "请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。",
+    "final_prompt": [
+      "工具参考图1对应原文左图，图2对应右图。图2仅提供弯腰浇花姿态动作，人物外貌、衣着及正常比例和写实风格来自图1。\n请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/adult-woman-synthetic.png",
+          "/workspace/image-test-20261018/results/T077-full-caricature/output.png"
+        ],
+        "prompt": "工具参考图1对应原文左图，图2对应右图。图2仅提供弯腰浇花姿态动作，人物外貌、衣着及正常比例和写实风格来自图1。\n请将左边图片中的人物形象，按照右边图片中人物的姿态和动作进行重构，生成一个新图像：即保留左边人物的外貌特征（如脸、服装风格、体型等），但使其做出右边人物的动作。请确保动作自然、比例协调。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png",
+          "results/T077-full-caricature/output.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/图像编辑/[已投产·3分] 换姿势.md",
+    "original_sha256": "1c1e8d0ae36d8d33b89ba498195296e937984d8d09131fcbf0da11394a219e8d",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png",
+      "results/T077-full-caricature/output.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "左图身份服装",
+        "result": "基本符合",
+        "evidence": "仍为成年女性短黑发、小痣、白T深蓝裤白鞋，正常人体比例；没有复制右图男性脸或夸张大头。"
+      },
+      {
+        "requirement": "右图动作",
+        "result": "符合要求",
+        "evidence": "弯腰、双手持绿水壶、一手扶提手一手扶壶身、向盆栽浇水，动作骨架接近右图。"
+      },
+      {
+        "requirement": "范围",
+        "result": "未验证",
+        "evidence": "只做一个跨角色/画风的双图用例，未做多次稳定性验证。"
+      }
+    ],
+    "conclusion": "双参考姿态转换最小用例符合主要要求。"
+  },
+  "images": [
+    {
+      "file": "results/T099-pose-transfer/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "05e0226b2c78256f0aa2bb108c2099b897deff7831458173362168c08b0414e4"
+    }
+  ]
+}

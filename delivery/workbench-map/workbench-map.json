@@ -1,0 +1,1829 @@
+{
+  "schema_version": "0.1.0",
+  "date": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "classification_basis": "输入素材 → 用户任务 → 输出成果；风格、镜头、布局为横向标签",
+  "already_curated_workbench": "创意人像：84张预设草案，独立目录",
+  "additional_directions": 11,
+  "unique_candidate_sources": 75,
+  "source_occurrences": 82,
+  "counts_note": "分类允许共享来源；来源数不等于去重预设数，不相加冒称新增已验证预设。",
+  "additional_normalized_presets": 0,
+  "new_media_tests": 0,
+  "directions": [
+    {
+      "id": "product",
+      "title": "商品视觉工作台",
+      "priority": "优先整理",
+      "input": "商品照片＋目标场景/用途；少数原模板仅需商品文字描述",
+      "outputs": [
+        "换背景与场景陈列",
+        "手持商品广告",
+        "白底工业图鉴",
+        "商品多角度与细节",
+        "珠宝、美食等专项视觉",
+        "电商主图与详情页图"
+      ],
+      "subgroups": [
+        "背景替换",
+        "产品棚拍",
+        "多视图图鉴",
+        "手持展示",
+        "珠宝广告",
+        "美食广告",
+        "详情页组图"
+      ],
+      "notes": [
+        "这是最接近创意人像工作台的第二个入口：把固定对象由人物换成商品，核心验收改为外形、颜色、标签与结构保真。",
+        "T052和T082原测没有商品参考图，T053是文生美食；不能直接宣称它们已支持上传任意实物保真。",
+        "T085原测使用瓶子与手掌两份参考；T086需要版式参考和商品图。",
+        "T092标题中的96组不能视为96个已通过预设；原测仅覆盖第一组八角度，存在几何漂移。",
+        "T083【AI商业】原文缺失，本方向只登记其缺失情况，不列为候选预设。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T016",
+          "test_id": "T016",
+          "title": "【商品】9宫格奢华悬浮运动鞋",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 【商品】9宫格奢华悬浮运动鞋.md",
+          "sha256": "fc7235c2e1852d33efea9e1d2a52f9ad76b89fa9b0ccc4714c8f338cac223667",
+          "original_copy": "sources/T016/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "九概念和3:4布局本次有效；产品细节严格一致性仍有问题，真实品牌与字标未验证。",
+          "original_test_reference_material": [
+            "materials/sneaker-synthetic.png"
+          ],
+          "test_evidence": "sources/T016/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/029-T016-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T018",
+          "test_id": "T018",
+          "title": "极简白底高端产品工业图鉴",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 极简白底高端产品工业图鉴.md",
+          "sha256": "0ff6afd5a80955fdef8f80d7765e182ea94947542ef8a04345bcac6483f4d80e",
+          "original_copy": "sources/T018/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "版式有用，但视觉真实性约束不足，存在不可证实的新视图与结构用语；不能按真实工业资料直接验收。",
+          "original_test_reference_material": [
+            "materials/sneaker-synthetic.png"
+          ],
+          "test_evidence": "sources/T018/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/031-T018-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T052",
+          "test_id": "T052",
+          "title": "多视角亚麻椅材质分解图",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 多视角亚麻椅材质分解图.md",
+          "sha256": "f4b8843f6efd25eb3bf41bcfcd8a8b388eef483c30a924e8d10709aa98dbf905",
+          "original_copy": "sources/T052/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三视图与材质分栏、亚麻/橡木/黑钢样本及文字可读，3:2成立；Frame标注线端点却落在座垫布面，未准确指向黑钢框架。多视图几何大体类似，不能当实物测量或真实材料鉴定。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T052/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/064-T052-T052.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T053",
+          "test_id": "T053",
+          "title": "奢华8K国家美食广告",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 奢华8K国家美食广告.md",
+          "sha256": "f819e9ae9db6e524a86fef3517b49037803756d94c991c2b748741f7cdf17359",
+          "original_copy": "sources/T053/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T053/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/065-T053-T053-01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T054",
+          "test_id": "T054",
+          "title": "戒指",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 戒指.md",
+          "sha256": "05253dc98285ea1e21a1973f67c9d923906dc36e1a71b21b97aeb9fd71dc4452",
+          "original_copy": "sources/T054/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "双手交叠佩戴与绿绒八角盒两版均生成，包镶椭圆绿石和黄金融面戒圈大体延续；双手版无法可靠确认戒指位于要求的第四指，需人工复核。圆顶绿石未见原词要求的明显棱镜火彩，4K也未达到；中间单手子例未执行。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [
+            "materials/ring-synthetic.png"
+          ],
+          "test_evidence": "sources/T054/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/067-T054-T054-01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T082",
+          "test_id": "T082",
+          "title": "kontext大家电场景图（示例）",
+          "original_filename": "提示词库/电商产品/[仅参考·2分] kontext大家电场景图（示例）.md",
+          "sha256": "37029ca19669e74c0dc0c6c4cd8f94a28576294741fdc2ecd02887747fc56529",
+          "original_copy": "sources/T082/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "可见客厅文生图示例符合主要视觉要求，仅ChatGPT适配单次初评。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T082/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/097-T082-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T085",
+          "test_id": "T085",
+          "title": "kontext电商手持商品",
+          "original_filename": "提示词库/电商产品/[已投产·3分] kontext电商手持商品.md",
+          "sha256": "d4a4536335a11611f3450e13092ef81e55acab04cd4e3a3b4698f9f6e3b6445c",
+          "original_copy": "sources/T085/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "合成成年手握持无品牌瓶子最小用例符合主要要求。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png",
+            "materials/palm-synthetic.png"
+          ],
+          "test_evidence": "sources/T085/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/099-T085-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T086",
+          "test_id": "T086",
+          "title": "无标题",
+          "original_filename": "提示词库/电商产品/[已投产·3分] 无标题.md",
+          "sha256": "7af208dab75246766ac8399feec380dfb805592379fceab19bf10bd921a92163",
+          "original_copy": "sources/T086/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "指定自制参考的图鉴布局复现符合主要要求，结论仅限该最小用例。",
+          "original_test_reference_material": [
+            "results/T018-product-atlas/output.png",
+            "materials/sneaker-synthetic.png"
+          ],
+          "test_evidence": "sources/T086/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/100-T086-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T089",
+          "test_id": "T089",
+          "title": "电商详情页 元提示词",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 电商详情页 元提示词.md",
+          "sha256": "55b7284f50e51d3ad8f4aef6cd80013701bfaf73aad7b946917fc59dc3878c58",
+          "original_copy": "sources/T089/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "默认四图及中文文案最小用例符合主要要求，已实际比较四张输出。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "test_evidence": "sources/T089/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/104-T089-creative.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T092",
+          "test_id": "T092",
+          "title": "96组角度提示词",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 96组角度提示词.md",
+          "sha256": "14f0685c721c51ce283f46fb2633e04f4013c3a2dd5a29a87a3aae9c43f858e1",
+          "original_copy": "sources/T092/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "第一组八角度已实际对比；纯侧面不严格、产品几何有漂移，8K未达到。",
+          "original_test_reference_material": [
+            "materials/briefs-synthetic.png"
+          ],
+          "test_evidence": "sources/T092/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/121-T092-01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T097",
+          "test_id": "T097",
+          "title": "【电商】产品背景更换场景丨提示词优化",
+          "original_filename": "提示词库/图像编辑/[已投产·3分] 【电商】产品背景更换场景丨提示词优化.md",
+          "sha256": "2cbefe180d6f4577db4a2911b3fbf2312ef76b5b4f555c2b80d97adb446342a4",
+          "original_copy": "sources/T097/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "短句背景优化的森林最小用例符合主要要求。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "test_evidence": "sources/T097/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/139-T097-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "fashion",
+      "title": "服装与虚拟试衣工作台",
+      "priority": "优先整理",
+      "input": "服装平铺/实物图；试衣时再提供人物照；可加场景和广告文案",
+      "outputs": [
+        "换装试穿图",
+        "同服装多动作模特组图",
+        "去人留衣与幽灵模特图",
+        "悬浮服装",
+        "服装广告与系列展示页视觉"
+      ],
+      "subgroups": [
+        "人物试衣",
+        "服装静物",
+        "幽灵模特",
+        "模特组图",
+        "服装广告"
+      ],
+      "notes": [
+        "与人像工作台共享人物身份模块，但主保留对象是服装：领型、口袋、抽绳、剪裁、色块等。",
+        "T024为换装；T051是先分析再生成去人留衣提示词；T055原文只有一句悬浮概念，不能当作完整通用方案。",
+        "T017是落地页视觉图，原文固定示例人物与服饰；任意服装输入及可交互页面都没有据此验证。",
+        "T007为25分镜商业广告，需完整检查每格；单张成图不等于服装一致性流程通过。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T004",
+          "test_id": "T004",
+          "title": "广告创意",
+          "original_filename": "提示词库/海报封面/[待测试·4分] 广告创意.md",
+          "sha256": "05fce292ec1f330cf3104c43b4cfa199c4d9708ba720636e0366ed8abaea8043",
+          "original_copy": "sources/T004/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三次适配文字子项均命中，但服装细节在穿着侧受遮挡和裤脚变化影响；整体存在问题。三次成功不代表稳定性已验证，不冒充原模型实测。",
+          "original_test_reference_material": [
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T004/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/013-T004-ad01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T007",
+          "test_id": "T007",
+          "title": "商业广告25分镜",
+          "original_filename": "提示词库/视频分镜/[待测试·3分] 商业广告25分镜.md",
+          "sha256": "c91e24de6b945bc88e19a4fe2dee4eac29cdac9714fd4297b535cd29c4e35ea0",
+          "original_copy": "sources/T007/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "25格数量与大致三幕命中，边框、无遮挡和8K要求未满足；仅静态适配测试，不是视频生成通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T007/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/019-T007-grid25.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T011",
+          "test_id": "T011",
+          "title": "AI时尚丨JSON人物场景动作丨LLM提示词优化",
+          "original_filename": "提示词库/人像摄影/[已投产·5分] AI时尚丨JSON人物场景动作丨LLM提示词优化.md",
+          "sha256": "86ff0fcbfd9f644a18a837f5f928054cf516790b35f3ecd61912d593ce78ee4c",
+          "original_copy": "sources/T011/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三图融合4图已实测，场景与服装大体有效；动态姿势指令失效，景别多样性较有限。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "materials/scrubs-synthetic.png",
+            "results/T001-fixed-person/06-winter.png"
+          ],
+          "test_evidence": "sources/T011/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/021-T011-pose01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T017",
+          "test_id": "T017",
+          "title": "【服装展示】冬季时尚系列落地页设计，雪景",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 【服装展示】冬季时尚系列落地页设计，雪景.md",
+          "sha256": "b6f68c7cf278e80f5ef2d884fd88f2ba5aaea6b2918db34ec19c02298f352c88",
+          "original_copy": "sources/T017/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "本次静态落地页核心布局、人物服装及指定文案符合模型初评；仅一次适配，不代表中文长期稳定性或真实网页可用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T017/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/030-T017-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T019",
+          "test_id": "T019",
+          "title": "电商模特组图生成-根据需要修改",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 电商模特组图生成-根据需要修改.md",
+          "sha256": "408808cea0e8b5c778945a3c4ed27984e92116c4cfcae71f28b4e82cb36af21b",
+          "original_copy": "sources/T019/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "九景别最小用例已实测，大部分层级有效，MLS偏近；单张宫格不证明跨调用一致性。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T019/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/032-T019-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T020",
+          "test_id": "T020",
+          "title": "【元提示词】商业摄影",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】商业摄影.md",
+          "sha256": "76d52004205b244daaf519d95e3b8c62f76c9a20e6351d60474669c8389a24cd",
+          "original_copy": "sources/T020/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "四方案到四图链路完成，动作多样但机位/景别未全部命中，不能完整通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T020/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/033-T020-pose01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T024",
+          "test_id": "T024",
+          "title": "换装提示词示例",
+          "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
+          "sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
+          "original_copy": "sources/T024/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两版换装链路已实测，主版本次细节较好；初版抽绳变化，严格服装保真未全部满足。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T024/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/040-T024-T024-initial.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T051",
+          "test_id": "T051",
+          "title": "【元提示词】服装立体化lora：3Dghostmannequin",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 【元提示词】服装立体化lora：3Dghostmannequin.md",
+          "sha256": "649dfe5d3bb13af23a67f17cf478c0a6a77bcae1725452dbcaa89d420d3a08f2",
+          "original_copy": "sources/T051/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "元输出按固定3Dghostmannequin开头与英文画质词结尾；实图仅保留蓝色V领短袖上衣，胸1下摆2贴袋、白色空白织标与侧开衩均在，无人体/模特/裤鞋/听诊器，立体中空质感基本符合本用例。未运行原ComfyUI/LoRA。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T051/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/063-T051-T051.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T055",
+          "test_id": "T055",
+          "title": "衣服悬浮在空中",
+          "original_filename": "提示词库/电商产品/[仅参考·2分] 衣服悬浮在空中.md",
+          "sha256": "47409a2014d70965d62179eff307f2982f5fd3b0658e50eb2fbf4a08d5e4932c",
+          "original_copy": "sources/T055/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "空心人形由蓝色刷手服上衣和长裤形成，服装悬空有投影，无实际人体或模特，鞋和听诊器已移除；三上衣口袋与裤腿贴袋基本保留。原始单句很简略，本用例增加了明确的服装/形状输入，不代表裸句独立稳定性通过。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T055/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/069-T055-T055.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "graphic",
+      "title": "品牌海报与封面工作台",
+      "priority": "优先整理",
+      "input": "主题、主副标题、品牌色、产品或可选人物素材",
+      "outputs": [
+        "文字创意封面",
+        "促销海报",
+        "旅行城市海报",
+        "产品广告",
+        "系列封面与图文版式"
+      ],
+      "subgroups": [
+        "纯文字封面",
+        "旅行海报",
+        "促销海报",
+        "产品广告",
+        "系列封面"
+      ],
+      "notes": [
+        "以传播信息和版式为入口，T178等人像海报可同时挂这个标签，不复制成第二份提示词。",
+        "T081只允许指定主副标题；适合抽取为标题白名单、文字材质和情绪选项。",
+        "T030一个文件里含多种示例，原测只覆盖广州旅行海报；同页水彩肖像不是已验证的上传本人预设。",
+        "固定品牌、城市和营销文案需参数化；新版本必须重新检查文字、版式及产品细节。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T004",
+          "test_id": "T004",
+          "title": "广告创意",
+          "original_filename": "提示词库/海报封面/[待测试·4分] 广告创意.md",
+          "sha256": "05fce292ec1f330cf3104c43b4cfa199c4d9708ba720636e0366ed8abaea8043",
+          "original_copy": "sources/T004/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三次适配文字子项均命中，但服装细节在穿着侧受遮挡和裤脚变化影响；整体存在问题。三次成功不代表稳定性已验证，不冒充原模型实测。",
+          "original_test_reference_material": [
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T004/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/013-T004-ad01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T030",
+          "test_id": "T030",
+          "title": "image-2水彩拼贴旅行海报提示词！",
+          "original_filename": "提示词库/海报封面/[已投产·3分] image-2水彩拼贴旅行海报提示词！.md",
+          "sha256": "08c48b4413f86586e95a527d1f9d8935d80a098e1b84f89181f45b55cfa4ddbc",
+          "original_copy": "sources/T030/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "广州海报主要场景与标题命中，竖排及空缺文案处理有偏差；仅测第一子例。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T030/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/048-T030-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T053",
+          "test_id": "T053",
+          "title": "奢华8K国家美食广告",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 奢华8K国家美食广告.md",
+          "sha256": "f819e9ae9db6e524a86fef3517b49037803756d94c991c2b748741f7cdf17359",
+          "original_copy": "sources/T053/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。 视觉评分为模型初评，单次不证明稳定性。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T053/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/065-T053-T053-01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T074",
+          "test_id": "T074",
+          "title": "封面常用提示词",
+          "original_filename": "提示词库/海报封面/[仅参考·3分] 封面常用提示词.md",
+          "sha256": "d23f22c6d8f53372faa2f7b60b2253723464adb93e4583aaa81324c2b55c79ce",
+          "original_copy": "sources/T074/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "封面核心布局符合要求；8K未达到，精确黄金分割未验证。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T074/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/088-T074-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T081",
+          "test_id": "T081",
+          "title": "封面大师",
+          "original_filename": "提示词库/海报封面/[已投产·4分] 封面大师.md",
+          "sha256": "4d2e365c6499f91f7abd22f227c64a2c530a2daac15948bc24d39b11601cff17",
+          "original_copy": "sources/T081/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "可见简体原版的两页最小用例符合要求；不代表缺失的发布版本或稳定性通过。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T081/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/095-T081-page1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T084",
+          "test_id": "T084",
+          "title": "电商海报生成元提示词",
+          "original_filename": "提示词库/电商产品/[仅参考·4分] 电商海报生成元提示词.md",
+          "sha256": "bc67851d3df2947fc633d0e454e6fee4cc358e27e24fcc8a5b3621aaa04ab728",
+          "original_copy": "sources/T084/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "877词元提示词已执行并出图，主要内容符合，最终图片比例与扩写要求不符。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "test_evidence": "sources/T084/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/098-T084-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T089",
+          "test_id": "T089",
+          "title": "电商详情页 元提示词",
+          "original_filename": "提示词库/电商产品/[已投产·4分] 电商详情页 元提示词.md",
+          "sha256": "55b7284f50e51d3ad8f4aef6cd80013701bfaf73aad7b946917fc59dc3878c58",
+          "original_copy": "sources/T089/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "默认四图及中文文案最小用例符合主要要求，已实际比较四张输出。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "test_evidence": "sources/T089/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/104-T089-creative.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "story",
+      "title": "故事分镜与影视资产工作台",
+      "priority": "优先整理",
+      "input": "故事/剧本，或参考图＋剧情要求；可补角色、场景与道具素材",
+      "outputs": [
+        "角色档案与设定图",
+        "场景道具资产",
+        "电影前期美术设定板",
+        "连续静态分镜",
+        "镜头清单与分镜提示词"
+      ],
+      "subgroups": [
+        "剧情拆解",
+        "角色资产",
+        "场景道具",
+        "美术设定板",
+        "静态分镜",
+        "镜头连续性"
+      ],
+      "notes": [
+        "比单次人像创意多了事件推进、角色与物件连续性；规划结果与实际生成的图需分开保存。",
+        "T162主任务是电影前期美术设定板，原文存在分镜措辞冲突，不宜直接并入九宫格分镜模板。",
+        "T165、T170等是长流程素材，不把其中一个静态用例当作完整短片或20镜流程通过。",
+        "T166的宠物冒险可挂宠物题材标签；目前来源数量不足以另立丰富的宠物工作台。",
+        "T008、T010、T105、T163等缺失/空白来源维持阻塞，不自行补写成原版。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T002",
+          "test_id": "T002",
+          "title": "NanoBananaPro 分镜拆解助手（未测试）",
+          "original_filename": "提示词库/视频分镜/[待测试·4分] NanoBananaPro 分镜拆解助手（未测试）.md",
+          "sha256": "cf68979cf8104e3c037f1e6ec17ee9d07547a8ce63712b4af64bf683e6e20a5b",
+          "original_copy": "sources/T002/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "静态九宫格实测已出图，故事可读但餐袋状态连续性有问题。仅一次适配；未生成视频。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T002/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/007-T002-storyboard9.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T003",
+          "test_id": "T003",
+          "title": "LLM动作引擎（各类提示词示例）",
+          "original_filename": "提示词库/视频分镜/[待测试·4分] LLM动作引擎（各类提示词示例）.md",
+          "sha256": "2acfaeabac65c959ec823cb7c42ff04af7aef57a4d12d1e27431c9be048233ed",
+          "original_copy": "sources/T003/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "可见主框架五动作链路完成，动作多样性和景别基本成立；细微表情偏弱，A/B比较阻塞，不自动转正。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T003/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/008-T003-01-squat.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T005",
+          "test_id": "T005",
+          "title": "四宫格分镜",
+          "original_filename": "提示词库/视频分镜/[待测试·4分] 四宫格分镜.md",
+          "sha256": "9739d207a56b1bf820d0710d0afcf55d38a81f756c556f15b1e4c5122307cf04",
+          "original_copy": "sources/T005/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "四宫格静态适配已实测，主体要求大体满足；新增挎包与点头符号为偏差，不能给出严格全项通过或视频通过。",
+          "original_test_reference_material": [
+            "materials/anime-adults-synthetic.png"
+          ],
+          "test_evidence": "sources/T005/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/016-T005-storyboard4.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T007",
+          "test_id": "T007",
+          "title": "商业广告25分镜",
+          "original_filename": "提示词库/视频分镜/[待测试·3分] 商业广告25分镜.md",
+          "sha256": "c91e24de6b945bc88e19a4fe2dee4eac29cdac9714fd4297b535cd29c4e35ea0",
+          "original_copy": "sources/T007/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "25格数量与大致三幕命中，边框、无遮挡和8K要求未满足；仅静态适配测试，不是视频生成通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T007/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/019-T007-grid25.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T036",
+          "test_id": "T036",
+          "title": "【9宫格分镜】人物一致性分镜提示词",
+          "original_filename": "提示词库/视频分镜/[已投产·5分] 【9宫格分镜】人物一致性分镜提示词.md",
+          "sha256": "37fbea188ff46a0f44a9d8303f29ed8c816b3421b4970f8891ddebb140e0f7bb",
+          "original_copy": "sources/T036/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "9格与大部分景别命中，人物/白衬衫黑裤/臂搭外套/黑包/右侧列车基本一致；首格ELS仍是近距离全身，与第二格重复，MLS也裁得偏近，不能给出9镜全命中。 模型单轮初评，未宣称视频通过。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/02-metro.png"
+          ],
+          "test_evidence": "sources/T036/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/054-T036-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T037",
+          "test_id": "T037",
+          "title": "【九宫格】1图转电影分镜图提示词",
+          "original_filename": "提示词库/视频分镜/[已投产·5分] 【九宫格】1图转电影分镜图提示词.md",
+          "sha256": "9e3fedfe9c25bfc849a654cf7c270d6391bdc9bf19072e4dd7c34589a12a5128",
+          "original_copy": "sources/T037/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "九个KF编号、景别标签与1.6s均可读，面部/花束/白衬衫绿围裙/暖花店延续；首尾ELS不够远且与LS近似，具体运镜幅度规划未完整覆盖，本轮不验证14.4秒动态视频。 模型单轮初评，未宣称视频通过。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/04-florist.png"
+          ],
+          "test_evidence": "sources/T037/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/055-T037-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T039",
+          "test_id": "T039",
+          "title": "分镜导演与动作编排专家",
+          "original_filename": "提示词库/视频分镜/[已投产·5分] 分镜导演与动作编排专家.md",
+          "sha256": "1392657912aecb71615c4ec640aec06dd609f735daa4cf1864a2b4ce1dee72b5",
+          "original_copy": "sources/T039/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "8格顺序覆盖跑、跳、落、撞垫、隐蔽、观察、蓄力、投盘命中，箭头/动量线清楚；但泡沫垫和环境加入填色、排线及轻微明暗，偏离严格no shading/textures，少数相机代码为工具自加且不准确。 模型单轮初评，未宣称视频通过。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T039/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/056-T039-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T040",
+          "test_id": "T040",
+          "title": "视觉连续性导演",
+          "original_filename": "提示词库/视频分镜/[已投产·5分] 视觉连续性导演.md",
+          "sha256": "cc14b1a3e27d03e3d60d188a247d065bff687c4ac3549179fb45d7b0a19d343a",
+          "original_copy": "sources/T040/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "元输出9行连续文本、无空行、无代词；实图9格从花店人物转到叶/花瓣/手指再回全景，身份大体保留；第二格已触碰而第三格才给诱因，触碰发生的因果时序不严格，静态格不能验证真实回弹运动。 模型单轮初评，未宣称视频通过。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/04-florist.png"
+          ],
+          "test_evidence": "sources/T040/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/057-T040-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T161",
+          "test_id": "T161",
+          "title": "工业级影视生成流程",
+          "original_filename": "提示词库/视频分镜/[仅参考·2分] 工业级影视生成流程.md",
+          "sha256": "ff80722b5b32b4d9b7122aa3a341609d8fcd57959fa37397b625ec9282fed15e",
+          "original_copy": "sources/T161/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "场景两变体成图，精确空间未满足；不代表工业影视全流程或视频通过。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T161/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/195-T161-battle.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T162",
+          "test_id": "T162",
+          "title": "故事版提示词",
+          "original_filename": "提示词库/视频分镜/[仅参考·2分] 故事版提示词.md",
+          "sha256": "9b09734f8bfc4e7f3c90b07348bc4a092acccee90e430dab7e3ba26f84e89883",
+          "original_copy": "sources/T162/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "本次解释后的电影前期设计概念表用例符合可见要求。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T162/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/197-T162-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T164",
+          "test_id": "T164",
+          "title": "QWEN3分镜元提示词",
+          "original_filename": "提示词库/视频分镜/[仅参考·3分] QWEN3分镜元提示词.md",
+          "sha256": "5c9916c0a61f0b99d4db47cd6c62599ae57fe0c29eb9cb29d5174d9b1e88dc43",
+          "original_copy": "sources/T164/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三张静态连续用例已生成并逐张检查，机位与杯位置一致性有偏差。",
+          "original_test_reference_material": [
+            "results/T145-cafe-mini/output.png"
+          ],
+          "test_evidence": "sources/T164/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/198-T164-scene1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T165",
+          "test_id": "T165",
+          "title": "未整理整套分镜提示词",
+          "original_filename": "提示词库/视频分镜/[仅参考·3分] 未整理整套分镜提示词.md",
+          "sha256": "fe58921cdfe4c5a77913534518e7b6dce15cb8656b16fdc103a170a3573c7264",
+          "original_copy": "sources/T165/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "首个人物分析元任务及三视角最小用例符合主要视觉要求，不覆盖整套工作流。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T165/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/201-T165-back.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T166",
+          "test_id": "T166",
+          "title": "AI脚本分镜",
+          "original_filename": "提示词库/视频分镜/[已投产·3分] AI脚本分镜.md",
+          "sha256": "1bb728cf985a1632a21bc3bc0c7cd3782bf065fba08ea572843dc1f3ec40e72f",
+          "original_copy": "sources/T166/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三镜故事推进实现，狗的眼部/体型一致性有偏差。",
+          "original_test_reference_material": [
+            "materials/cartoon-dog-box-synthetic.png"
+          ],
+          "test_evidence": "sources/T166/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/204-T166-scene1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T169",
+          "test_id": "T169",
+          "title": "2509+WAN2.2，LLM",
+          "original_filename": "提示词库/视频分镜/[已投产·4分] 2509+WAN2.2，LLM.md",
+          "sha256": "dc90f3234f0630761b57d5c4de3601038ae82a38712026861995821e900a849a",
+          "original_copy": "sources/T169/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "元任务已执行两图，关键文字正确但木牌与门结构明显漂移。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T169/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/207-T169-scene1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T170",
+          "test_id": "T170",
+          "title": "AI漫剧提示词",
+          "original_filename": "提示词库/视频分镜/[已投产·4分] AI漫剧提示词.md",
+          "sha256": "9e19fbcb8f73b653d8b8223cb3aef18baa5d1c69a73158ab775683a8ea1f20ae",
+          "original_copy": "sources/T170/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "单角色资产已出图，8K未满足，不代表全漫剧流程通过。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T170/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/209-T170-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T171",
+          "test_id": "T171",
+          "title": "【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）",
+          "original_filename": "提示词库/视频分镜/[已投产·4分] 【视频分镜】（测试过，还不错，不过只有单帧分镜）分镜连贯生成场景丨反推的聊天设置（喂给LLM的）.md",
+          "sha256": "78a20b281f69ba0b8f85e056171e2a037d74b4c04777f81b2478fe11f4b16d5d",
+          "original_copy": "sources/T171/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "原版元任务的两个连续静态用例符合主要可见要求。",
+          "original_test_reference_material": [
+            "results/T164-qwen-next3/scene3.png"
+          ],
+          "test_evidence": "sources/T171/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/210-T171-scene1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T172",
+          "test_id": "T172",
+          "title": "小说转影视流程（初版）",
+          "original_filename": "提示词库/视频分镜/[已投产·4分] 小说转影视流程（初版）.md",
+          "sha256": "8ec40ee6a331c206deb4ece24a22d1ea84b19724d8b6f7a05c75cab956191b1b",
+          "original_copy": "sources/T172/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "七视图最小资产用例已出图，8K与完全无阴影未满足，不代表全影视流程通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T172/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/212-T172-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T173",
+          "test_id": "T173",
+          "title": "镜头角度与提示词：6 - Camera Angles & Movements",
+          "original_filename": "提示词库/视频分镜/[已投产·4分] 镜头角度与提示词：6 - Camera Angles & Movements.md",
+          "sha256": "0e96a453a8e6fecb54065c206fa37527629658f74f66e58643aba3c735fe795a",
+          "original_copy": "sources/T173/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "所选高低机位两图对比符合主要视觉要求。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T173/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/213-T173-high.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "edit",
+      "title": "图像编辑与修复工作台",
+      "priority": "优先整理",
+      "input": "已有图片＋明确修改指令；换装、姿态或场景替换可需第二份参考",
+      "outputs": [
+        "画质修复",
+        "添加删除替换",
+        "换背景",
+        "换姿态",
+        "换装",
+        "调色与重布光",
+        "场景人物替换"
+      ],
+      "subgroups": [
+        "修复",
+        "局部编辑",
+        "换背景",
+        "姿态迁移",
+        "换装",
+        "调色",
+        "重布光"
+      ],
+      "notes": [
+        "入口先选择要改的部分，并记录应保持的人物、商品、构图和背景。与其他工作台共用编辑能力。",
+        "T025原文多数是不同主体的调色示例，纯调色控制变量版本属于新增适配。",
+        "T093原测同时改变色温与机位，不是单一光照因素的严格对照。",
+        "T022含编辑笔记与多个子任务，只能逐个提取可用操作，不整页视为一个稳定预设。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T006",
+          "test_id": "T006",
+          "title": "JsonPromptMaker 身份锁定元提示词（原无标题）",
+          "original_filename": "提示词库/图像编辑/[待测试·3分] JsonPromptMaker 身份锁定元提示词（原无标题）.md",
+          "sha256": "72303c5042308892467ebe613496e465301ca46f737f39e519c2d9aae5381694",
+          "original_copy": "sources/T006/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两次编辑已实测；主体保留较好，衬衫款式未命中。独立LLM确定性测试未完成，不能宣称原模板完全通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T006/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/017-T006-run01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T021",
+          "test_id": "T021",
+          "title": "GPT2画质修复元提示词",
+          "original_filename": "提示词库/图像编辑/[已投产·5分] GPT2画质修复元提示词.md",
+          "sha256": "c62773b764bd1e9cf0c2dc61fa50f4befc94b8fd13ac5960ca2996ba1bb4f7ab",
+          "original_copy": "sources/T021/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "本次合成降质人像A型污染清除符合视觉初评；只证明该子用例可用，不证明真实信息恢复或全类型稳定性。",
+          "original_test_reference_material": [
+            "materials/damaged-adult-synthetic.png"
+          ],
+          "test_evidence": "sources/T021/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/037-T021-T021.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T022",
+          "test_id": "T022",
+          "title": "编辑模型思考",
+          "original_filename": "提示词库/图像编辑/[已投产·5分] 编辑模型思考.md",
+          "sha256": "ca1dbd73e411f7c12e9f878faa8be1c6e36fe3b92ecc2177e3517982e0ca934f",
+          "original_copy": "sources/T022/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "移除本会话自加标记的最小用例符合初评；整页其余工作流未验证，原5分标签不作为证据。",
+          "original_test_reference_material": [
+            "materials/marked-adult-synthetic.png"
+          ],
+          "test_evidence": "sources/T022/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/038-T022-T022.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T023",
+          "test_id": "T023",
+          "title": "高清修复提示词模板",
+          "original_filename": "提示词库/图像编辑/[已投产·4分] 高清修复提示词模板.md",
+          "sha256": "fdc9a8e2771a84e1aa8f27da46da7be77a35189a2b25ced1b0c43a4e43d51b24",
+          "original_copy": "sources/T023/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "合成降质人像视觉清理成功，但4K要求未满足；生成式纹理不是被证实的真实信息恢复。",
+          "original_test_reference_material": [
+            "materials/damaged-adult-synthetic.png"
+          ],
+          "test_evidence": "sources/T023/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/039-T023-T023.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T024",
+          "test_id": "T024",
+          "title": "换装提示词示例",
+          "original_filename": "提示词库/图像编辑/[已投产·4分] 换装提示词示例.md",
+          "sha256": "1340793567eb40b4e183de38ce4bee58033ee30b6a057fa6b9ad29006249c917",
+          "original_copy": "sources/T024/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两版换装链路已实测，主版本次细节较好；初版抽绳变化，严格服装保真未全部满足。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "materials/scrubs-synthetic.png"
+          ],
+          "test_evidence": "sources/T024/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/040-T024-T024-initial.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T025",
+          "test_id": "T025",
+          "title": "22种AI调色提示词22种AI调色提示词",
+          "original_filename": "提示词库/图像编辑/[已投产·4分] 22种AI调色提示词22种AI调色提示词.md",
+          "sha256": "4918c7af452d97b5f8945915cf4722b2bfc56862f962b01d058e0300d8029602",
+          "original_copy": "sources/T025/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "所选01与17两个直接生图子例符合视觉初评；其余20组、纯调色控制变量及稳定性未验证。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T025/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/042-T025-T025-look01.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T093",
+          "test_id": "T093",
+          "title": "动态光影超精细写真",
+          "original_filename": "提示词库/图像编辑/[仅参考·2分] 动态光影超精细写真.md",
+          "sha256": "2f4d2731d743d0abb0079ab52b2cff1fd2dbdf472c0caeab7ca83760e0a711c4",
+          "original_copy": "sources/T093/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "补入明确样式后，双图系列最小用例符合主要视觉要求。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T093/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/129-T093-cool-low.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T095",
+          "test_id": "T095",
+          "title": "【图片提示词】添加、删除、替换提示词增强",
+          "original_filename": "提示词库/图像编辑/[仅参考·4分] 【图片提示词】添加、删除、替换提示词增强.md",
+          "sha256": "1d79cef19197d235bafe4ca6c47cf7de319f014b59e7c51a649d7256d531d663",
+          "original_copy": "sources/T095/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "三子例均实际出图，删除和换字表现良好；添加有局部背景改动，原格式合同存在冲突。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/04-florist.png",
+            "results/T084-ecom-poster/output.png"
+          ],
+          "test_evidence": "sources/T095/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/135-T095-add.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T097",
+          "test_id": "T097",
+          "title": "【电商】产品背景更换场景丨提示词优化",
+          "original_filename": "提示词库/图像编辑/[已投产·3分] 【电商】产品背景更换场景丨提示词优化.md",
+          "sha256": "2cbefe180d6f4577db4a2911b3fbf2312ef76b5b4f555c2b80d97adb446342a4",
+          "original_copy": "sources/T097/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "短句背景优化的森林最小用例符合主要要求。",
+          "original_test_reference_material": [
+            "materials/bottle-synthetic.png"
+          ],
+          "test_evidence": "sources/T097/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/139-T097-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T099",
+          "test_id": "T099",
+          "title": "换姿势",
+          "original_filename": "提示词库/图像编辑/[已投产·3分] 换姿势.md",
+          "sha256": "1c1e8d0ae36d8d33b89ba498195296e937984d8d09131fcbf0da11394a219e8d",
+          "original_copy": "sources/T099/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "双参考姿态转换最小用例符合主要要求。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png",
+            "results/T077-full-caricature/output.png"
+          ],
+          "test_evidence": "sources/T099/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/141-T099-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T134",
+          "test_id": "T134",
+          "title": "人物一致性",
+          "original_filename": "提示词库/人像摄影/[已投产·4分] 人物一致性.md",
+          "sha256": "fe24d0b2bb365a0f96e0ce1c67a5085f4b85fba26f04bb5458cb4b39990bc565",
+          "original_copy": "sources/T134/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "两种场景的身份替换最小用例视觉初评符合，精确身份及未测模板不在结论内。",
+          "original_test_reference_material": [
+            "results/T077-full-caricature/output.png",
+            "materials/adult-woman-synthetic.png",
+            "results/T101-middle-man/output.png"
+          ],
+          "test_evidence": "sources/T134/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/172-T134-garden.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "prompt",
+      "title": "参考图反推与提示词助手",
+      "priority": "优先整理",
+      "input": "参考图片、简单想法或已有提示词＋编辑意图",
+      "outputs": [
+        "结构化视觉描述",
+        "风格与光影分析",
+        "生图提示词改写",
+        "动作编辑指令",
+        "模型格式适配提示词"
+      ],
+      "subgroups": [
+        "看图反推",
+        "自然语言扩写",
+        "风格提取",
+        "动作指令",
+        "模型格式转换"
+      ],
+      "notes": [
+        "适合作为所有创作入口的共用助手；默认输出文本，不应显示成已经生图。",
+        "T065含教学/反推内容，T069存在原文件标题错配；按实际正文和测试记录使用。",
+        "模型名称是格式目标，不能用本轮ChatGPT适配测试冒充对应原模型实测。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T056",
+          "test_id": "T056",
+          "title": "图像 Prompt 改写专家丨三合一（喂给LLM）",
+          "original_filename": "提示词库/提示词工程/[已投产·5分] 图像 Prompt 改写专家丨三合一（喂给LLM）.md",
+          "sha256": "8da9e5c1b25a396a573c3d5b6d659243345415a2736bc3e359f19d443af1cf75",
+          "original_copy": "sources/T056/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "含文字图最小用例符合要求；不代表三个分流或稳定性已验证。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T056/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/070-T056-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T057",
+          "test_id": "T057",
+          "title": "逆向提示词反推",
+          "original_filename": "提示词库/提示词工程/[已投产·5分] 逆向提示词反推.md",
+          "sha256": "0eb344f99a68409491dcac5974ff5350d6ffeb8fa3b26f2a721b8985ca412016",
+          "original_copy": "sources/T057/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "已完成两角色对比，保留了主要风格和背景；严格姿态锁定失败，语言识别不可验证。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/04-florist.png",
+            "materials/adult-woman-synthetic.png",
+            "results/T032-christmas/output.png"
+          ],
+          "test_evidence": "sources/T057/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/071-T057-baseline.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T059",
+          "test_id": "T059",
+          "title": "【LLM】元提示词模板",
+          "original_filename": "提示词库/提示词工程/[已投产·4分] 【LLM】元提示词模板.md",
+          "sha256": "a2c5266096c81af94fe9e504bde4336eba66e8064d44d49b2752bccef5cadd71",
+          "original_copy": "sources/T059/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两种姿势已对比；动作大体落实，前倾不足，不能宣称身份完全一致或30%指标通过。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T059/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/075-T059-pose1.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T060",
+          "test_id": "T060",
+          "title": "提示词增强",
+          "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词增强.md",
+          "sha256": "db4b11514fbb6b98aa46c03003a57b9052f23c21e125087e53dfcffa2a063c0a",
+          "original_copy": "sources/T060/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "简易版背景替换最小用例符合要求，仅为单次模型初评。",
+          "original_test_reference_material": [
+            "materials/adult-woman-synthetic.png"
+          ],
+          "test_evidence": "sources/T060/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/077-T060-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T062",
+          "test_id": "T062",
+          "title": "【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路",
+          "original_filename": "提示词库/提示词工程/[仅参考·3分] 【图片】提示词反推丨光影描绘丨通用模板：场景化 Agent 提示词” 的思路.md",
+          "sha256": "a1e6849d478c4f04a826aa23dd3a987f4bdfdd58816469d6320ab4a2dbace0b9",
+          "original_copy": "sources/T062/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "光影编辑主体保留良好；分辨率及原SD权重未验证，不能算原模型完整通过。",
+          "original_test_reference_material": [
+            "results/T001-fixed-person/04-florist.png"
+          ],
+          "test_evidence": "sources/T062/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/078-T062-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T065",
+          "test_id": "T065",
+          "title": "提示词设计（教学用-反推部分修改）",
+          "original_filename": "提示词库/提示词工程/[已投产·4分] 提示词设计（教学用-反推部分修改）.md",
+          "sha256": "49116938c3aa95107c8e1431fd9ce8c3929db81dab4eafb1d6e17760d6ccfd95",
+          "original_copy": "sources/T065/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "v4单图局部属性编辑最小用例符合要求；不代表整个教学页所有版本通过。",
+          "original_test_reference_material": [
+            "materials/sneaker-synthetic.png"
+          ],
+          "test_evidence": "sources/T065/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/080-T065-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T069",
+          "test_id": "T069",
+          "title": "MJ提示词生成器system prompt（原Z image页，标题错配）",
+          "original_filename": "提示词库/模型工具/[仅参考·3分] MJ提示词生成器system prompt（原Z image页，标题错配）.md",
+          "sha256": "b124838bdcb8809a2b1a81b283ad5d8f5c8438f08493608a08b50e784e62e92f",
+          "original_copy": "sources/T069/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "元提示词展开后的水彩最小用例符合视觉要求，仅ChatGPT适配测试。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T069/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/083-T069-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "ui",
+      "title": "UI与页面视觉设计",
+      "priority": "储备方向",
+      "input": "页面需求、平台、内容、主题色及风格要求",
+      "outputs": [
+        "组件化UI描述JSON",
+        "亮暗主题设计图",
+        "落地页视觉效果图"
+      ],
+      "subgroups": [
+        "UI描述JSON",
+        "主题迁移",
+        "页面视觉"
+      ],
+      "notes": [
+        "核心来源是T058，T017提供营销落地页视觉示例，来源较少。",
+        "T058原测换主题时布局和插图也发生变化，不能当作已验证的纯主题迁移。",
+        "输出JSON/页面图与可运行网页是不同交付；现有资料不构成完整前端应用生成器。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T058",
+          "test_id": "T058",
+          "title": "JSON提示词",
+          "original_filename": "提示词库/提示词工程/[已投产·4分] JSON提示词.md",
+          "sha256": "e7f835d0e62ebca9cdf7887091277626ffb5d79e8f2730cf5bfba9d693c18390",
+          "original_copy": "sources/T058/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "存在问题",
+          "source_test_conclusion": "两主题都已生成，但迁移时布局和插图一起改变，未满足仅改主题。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T058/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/073-T058-dark.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T017",
+          "test_id": "T017",
+          "title": "【服装展示】冬季时尚系列落地页设计，雪景",
+          "original_filename": "提示词库/电商产品/[已投产·5分] 【服装展示】冬季时尚系列落地页设计，雪景.md",
+          "sha256": "b6f68c7cf278e80f5ef2d884fd88f2ba5aaea6b2918db34ec19c02298f352c88",
+          "original_copy": "sources/T017/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "符合要求",
+          "source_test_conclusion": "本次静态落地页核心布局、人物服装及指定文案符合模型初评；仅一次适配，不代表中文长期稳定性或真实网页可用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T017/test-evidence.json",
+          "source_example": "https://github.com/laoxuaichirou/prompt/blob/image-test-delivery-2026-10-18/delivery/previews/030-T017-output.jpg",
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "video",
+      "title": "视频脚本与运动提示词编排",
+      "priority": "储备方向",
+      "input": "图片、首尾两帧、参考视频或故事＋动作/时长要求",
+      "outputs": [
+        "视频拆解表",
+        "时间轴脚本",
+        "首尾帧过渡提示词",
+        "图生视频提示词",
+        "FPV路径与打戏镜头指令"
+      ],
+      "subgroups": [
+        "参考视频解析",
+        "图生视频",
+        "首尾帧",
+        "航拍路径",
+        "动作打戏",
+        "转场"
+      ],
+      "notes": [
+        "本轮图像测试没有验证真实视频输出；该分类当前整理的是脚本、运动指令和模型适配入口。",
+        "FPV模板依赖路径/节点图；T179依赖特定人物素材，原素材无法获得时需要记录阻塞。",
+        "视频转场提示词主要是术语表，可作选项词库，不应包装成完整生成模板。",
+        "指定Sora、WAN、LTX或Seedance的内容，需对应工具另行测试时长、运动及连续性。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "T061",
+          "test_id": "T061",
+          "title": "视频解析",
+          "original_filename": "提示词库/提示词工程/[仅参考·2分] 视频解析.md",
+          "sha256": "aa779c752f75384773c9d122ea0633b66362a9985c39a72a2ff8a4a06900a9d3",
+          "original_copy": "sources/T061/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频解析与表格任务，本轮不适用，未生成图片。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T061/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T104",
+          "test_id": "T104",
+          "title": "分镜格式sora2",
+          "original_filename": "提示词库/视频分镜/[仅参考·2分] 分镜格式sora2.md",
+          "sha256": "a97819d4514870323ef8f0f8a2f7d2aa350040e4f15ca63d897f50780786a57b",
+          "original_copy": "sources/T104/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频广告样例，本轮不适用，未生成图片。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T104/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T167",
+          "test_id": "T167",
+          "title": "AI视频导演",
+          "original_filename": "提示词库/视频分镜/[已投产·3分] AI视频导演.md",
+          "sha256": "0d4a59a7afdf9f1171d8f3874dd0a4c5a6771ca48741289fef0a908ef78c852a",
+          "original_copy": "sources/T167/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频任务，本轮不适用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T167/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T168",
+          "test_id": "T168",
+          "title": "【AI影视】",
+          "original_filename": "提示词库/视频分镜/[已投产·3分] 【AI影视】.md",
+          "sha256": "37ed317eb39dabe5ece3340d9bf0f597fd819ac3881184898d4b1f44613b28ff",
+          "original_copy": "sources/T168/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "3",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频任务，本轮不适用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T168/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T175",
+          "test_id": "T175",
+          "title": "远程法术打戏提示词生成专家",
+          "original_filename": "提示词库/视频分镜/[已投产·5分] 远程法术打戏提示词生成专家.md",
+          "sha256": "c74bbabaf1ba8e63c4944068eaddbd12d990fe92ceaf137fa6047e3246c2aaf7",
+          "original_copy": "sources/T175/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频任务，本轮不适用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T175/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "T179",
+          "test_id": "T179",
+          "title": "超燃AI打斗提示词分享",
+          "original_filename": "提示词库/视频生成/[已投产·4分] 超燃AI打斗提示词分享.md",
+          "sha256": "a59f9c3fb7d9f5d622bc4abff5f4e7805892621440d07290e9dfb01edec42cf2",
+          "original_copy": "sources/T179/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯视频任务，本轮不适用。",
+          "original_test_reference_material": [],
+          "test_evidence": "sources/T179/test-evidence.json",
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-eefba595507f",
+          "test_id": null,
+          "title": "FPV航拍提示词模板",
+          "original_filename": "提示词库/视频生成/[已投产·4分] FPV航拍提示词模板.md",
+          "sha256": "eefba595507ff67a03d14681bea6d882ef8caef230b662b595a5663e7368f212",
+          "original_copy": "sources/SRC-eefba595507f/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "已查看正文目标，为运镜/转场/连续时序视频或视频提示词任务；本轮仅生图，不用静态图宣称视频通过。",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-e2b357e3bb78",
+          "test_id": null,
+          "title": "LTX2.3提示词优化",
+          "original_filename": "提示词库/视频生成/[已投产·4分] LTX2.3提示词优化.md",
+          "sha256": "e2b357e3bb78df39b49583955f1e669cd4f50cd1f51210ce4f3e0ddbaeaa3888",
+          "original_copy": "sources/SRC-e2b357e3bb78/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "已查看正文目标，为运镜/转场/连续时序视频或视频提示词任务；本轮仅生图，不用静态图宣称视频通过。",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-a7f71855e63c",
+          "test_id": null,
+          "title": "【视频】首尾帧提示词",
+          "original_filename": "提示词库/视频生成/[已投产·5分] 【视频】首尾帧提示词.md",
+          "sha256": "a7f71855e63c07c1f1375e9e1cd99795c5f5b59b1c6129bcea41675876e317f9",
+          "original_copy": "sources/SRC-a7f71855e63c/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "5",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "已查看正文目标，为运镜/转场/连续时序视频或视频提示词任务；本轮仅生图，不用静态图宣称视频通过。",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-8422edb52e64",
+          "test_id": null,
+          "title": "【视频】WAN2.2图生视频提示词扩写",
+          "original_filename": "提示词库/视频生成/[待测试·3分] 【视频】WAN2.2图生视频提示词扩写.md",
+          "sha256": "8422edb52e64f9364502e160440bf0f74966b30d8153a6bf3753523bcb2b1d25",
+          "original_copy": "sources/SRC-8422edb52e64/original.md",
+          "original_library_status": "待测试",
+          "original_library_score": "3",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "正文目标为动态视频/转场或视频提示词，未以静态图冒充视频验证",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-04a3117cec68",
+          "test_id": null,
+          "title": "视频转场提示词",
+          "original_filename": "提示词库/视频生成/[仅参考·2分] 视频转场提示词.md",
+          "sha256": "04a3117cec68ab862d47e7398bbabda0d7d29f7557fbc1dab44bb50749b92711",
+          "original_copy": "sources/SRC-04a3117cec68/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "2",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "已查看正文目标，为运镜/转场/连续时序视频或视频提示词任务；本轮仅生图，不用静态图宣称视频通过。",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "music",
+      "title": "音乐创作与配乐提示词",
+      "priority": "储备方向",
+      "input": "歌词，或场景、情绪、曲风、乐器要求",
+      "outputs": [
+        "音乐风格标签",
+        "编曲时间轴",
+        "乐器分层",
+        "Suno/Udio等工具提示词"
+      ],
+      "subgroups": [
+        "歌词到作曲指令",
+        "场景配乐标签"
+      ],
+      "notes": [
+        "AI音乐主要提供标签词库，根据歌词作曲为元提示词；当前没有歌曲音频实测。",
+        "可以先做可组合标签与作曲提示词工具，不把文本方案称为已生成音乐。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "SRC-b651161eb9e2",
+          "test_id": null,
+          "title": "AI音乐",
+          "original_filename": "提示词库/音频音乐/[仅参考·3分] AI音乐.md",
+          "sha256": "b651161eb9e2ce1aa4d835944ac69ed89624f174ff34963feb9ab6fefc7ef42b",
+          "original_copy": "sources/SRC-b651161eb9e2/original.md",
+          "original_library_status": "仅参考",
+          "original_library_score": "3",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-5bcbac2fd462",
+          "test_id": null,
+          "title": "【音乐】根据歌词作曲",
+          "original_filename": "提示词库/音频音乐/[已投产·4分] 【音乐】根据歌词作曲.md",
+          "sha256": "5bcbac2fd462fb203f7c26c40e902104c88436e1571ef6fa721d1595ae8e8f7c",
+          "original_copy": "sources/SRC-5bcbac2fd462/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "tts",
+      "title": "口播与有声剧脚本工作台",
+      "priority": "储备方向",
+      "input": "文章、技术文案或小说原文",
+      "outputs": [
+        "适合TTS朗读的纯文本",
+        "数字缩写读法处理",
+        "角色音色配置JSON",
+        "多人有声剧脚本"
+      ],
+      "subgroups": [
+        "文章口播化",
+        "技术文案朗读",
+        "小说多人有声剧"
+      ],
+      "notes": [
+        "一个是朗读前文本清理，一个是人物音色配置与分角色剧本，可以共用原文输入入口。",
+        "当前没有音频生成/听检；Qwen-TTS等名称表示原文目标工具。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "SRC-e57908d6172d",
+          "test_id": null,
+          "title": "TTS转换的聊天提示（发给大模型用以转换文档内容适合TTS转语音）",
+          "original_filename": "提示词库/音频音乐/[已投产·4分] TTS转换的聊天提示（发给大模型用以转换文档内容适合TTS转语音）.md",
+          "sha256": "e57908d6172d65345b155048d95bd579eb546f2802dff7f8a4e4db7a288f4e5c",
+          "original_copy": "sources/SRC-e57908d6172d/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-30ad7b7c3756",
+          "test_id": null,
+          "title": "小说改编TTS",
+          "original_filename": "提示词库/音频音乐/[已投产·4分] 小说改编TTS.md",
+          "sha256": "30ad7b7c375693e39e1ef4bb16ca5d49f8f3740c8602f31083a91ff76873a32a",
+          "original_copy": "sources/SRC-30ad7b7c3756/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    },
+    {
+      "id": "text",
+      "title": "翻译与资料研究助手",
+      "priority": "储备方向",
+      "input": "待翻译文本＋术语表，或研究主题＋来源要求",
+      "outputs": [
+        "保持段落格式的译文",
+        "资料调查与结构化表格",
+        "报告与研究任务说明"
+      ],
+      "subgroups": [
+        "保留格式翻译",
+        "资料调查",
+        "表格报告"
+      ],
+      "notes": [
+        "这两类需求使用目的不同，当前资料少，可先作文字工具区，后续有更多模板时再拆。",
+        "研究示例需要检索、证据追溯和文件生成能力，不能只靠角色提示词承诺完成。",
+        "单独名为Agent的文件仅有子页链接，不列为可用助手。"
+      ],
+      "source_entries": [
+        {
+          "source_key": "SRC-1bfc64ff5545",
+          "test_id": null,
+          "title": "沉浸式翻译丨提示词参考",
+          "original_filename": "提示词库/Agent应用/[已投产·4分] 沉浸式翻译丨提示词参考.md",
+          "sha256": "1bfc64ff554555a6cc51b479900c9fe55e1f398d66c8fd1940a70cd85c967f39",
+          "original_copy": "sources/SRC-1bfc64ff5545/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        },
+        {
+          "source_key": "SRC-1f9472d8a01d",
+          "test_id": null,
+          "title": "Agent经典提示词（非AIGC）",
+          "original_filename": "提示词库/Agent应用/[已投产·4分] Agent经典提示词（非AIGC）.md",
+          "sha256": "1f9472d8a01d3caef88277c152e28d13326d213403aa23634d0ce67d16215368",
+          "original_copy": "sources/SRC-1f9472d8a01d/original.md",
+          "original_library_status": "已投产",
+          "original_library_score": "4",
+          "source_test_status": "本轮不适用",
+          "source_test_conclusion": "纯Agent/音频任务，不纳入生图实测",
+          "original_test_reference_material": null,
+          "test_evidence": null,
+          "source_example": null,
+          "normalized_preset_created": false,
+          "new_image_or_media_test_performed": false
+        }
+      ],
+      "mapping_status": "候选来源映射，未逐项归一化成预设，未新增生成测试"
+    }
+  ]
+}

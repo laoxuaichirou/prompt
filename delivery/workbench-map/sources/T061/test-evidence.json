@@ -1,0 +1,38 @@
+{
+  "test": {
+    "test_id": "T061",
+    "title": "视频解析",
+    "type": "视频解析/分镜表格任务",
+    "test_input": "阅读正文判断适用范围；无视频附件，不把自行生成静态图当作视频解析实测。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "原文仅请求解析输入视频并输出含时长/运镜/台词/音效的表格，无生图步骤"
+    ],
+    "selected_source_prompt": "帮我把这个视频解析，并且生成成分镜脚本表格，表头包含：镜号、时间段、时长、景别、镜头运动、画面风格、画面内容、光影色调、台词、音效配乐。",
+    "final_prompt": [],
+    "meta_output": null,
+    "cases": [],
+    "meta_execution": "不适用，未执行生图或元提示词改写",
+    "original_filename": "提示词库/提示词工程/[仅参考·2分] 视频解析.md",
+    "original_sha256": "aa779c752f75384773c9d122ea0633b66362a9985c39a72a2ff8a4a06900a9d3",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "本轮不适用",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "正文任务",
+        "result": "不适用",
+        "evidence": "仅解析视频为10列分镜脚本表，属于视频理解/文本任务，没有生图步骤。"
+      }
+    ],
+    "conclusion": "纯视频解析与表格任务，本轮不适用，未生成图片。"
+  },
+  "images": []
+}

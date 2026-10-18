@@ -1,0 +1,43 @@
+{
+  "test": {
+    "test_id": "T052",
+    "title": "多视角亚麻椅材质分解图",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "按文本创建虚构椅子设计三视图＋材质分解；3:2。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "英文JSON完整保留，二选一画幅固定3:2。",
+      "文本指定亚麻混纺/橡木/黑钢为虚构设计，不当成从现实产品验证的材料。"
+    ],
+    "selected_source_prompt": "{\n  \"objective\": \"Create a detailed product showcase image of a chair design with multiple perspectives and material information\",\n  \"image_specifications\": {\n    \"style\": \"Realistic 3D render or high-quality product illustration\",\n    \"layout\": \"Split view\",\n    \"aspect_ratio\": \"3:2 or 4:3\",\n    \"background\": \"Neutral (light gray or white) to enhance clarity and contrast\"\n  },\n  \"left_side\": {\n    \"section_title\": \"Chair Perspectives\",\n    \"views\": [\n      {\n        \"view\": \"Top-down\",\n        \"description\": \"Display the full chair from above, showing seat shape and armrest layout\"\n      },\n      {\n        \"view\": \"Side view\",\n        \"description\": \"Profile of the chair to show leg design, seat height, and backrest angle\"\n      },\n      {\n        \"view\": \"Front view\",\n        \"description\": \"Straight-on view to show width, symmetry, and front structure\"\n      }\n    ],\n    \"visual_style\": \"Consistent lighting and shadows for realism, subtle shadows to define form\"\n  },\n  \"right_side\": {\n    \"section_title\": \"Material Breakdown\",\n    \"content\": [\n      {\n        \"material\": \"Seat Fabric\",\n        \"material_type\": \"Linen blend\",\n        \"swatch_image\": \"Small fabric texture sample shown\",\n        \"label_style\": \"Clean sans-serif text with arrows pointing to chair sections\"\n      },\n      {\n        \"material\": \"Legs\",\n        \"material_type\": \"Polished oak wood\",\n        \"swatch_image\": \"Close-up wood grain sample\",\n        \"label_style\": \"Consistent labeling with visual connection to perspective images\"\n      },\n      {\n        \"material\": \"Frame\",\n        \"material_type\": \"Matte black steel\",\n        \"swatch_image\": \"Small metallic texture sample\",\n        \"label_style\": \"Minimalist annotations\"\n      }\n    ]\n  },\n  \"visual_elements\": {\n    \"separation\": \"Vertical dividing line or subtle split background\",\n    \"color_palette\": \"Natural tones for materials, grayscale for background and lines\",\n    \"typography\": \"Modern, readable font for labels and section titles\"\n  },\n  \"output_format\": {\n    \"type\": \"Image\",\n    \"high_resolution\": true,\n    \"use_case\": [\n      \"Product sheet\",\n      \"Interior design catalog\",\n      \"Furniture showcase\"\n    ]\n  }\n}\n",
+    "final_prompt": "Render one product showcase image from the JSON. This is a fictional design, not a real tested chair. Choose3:2 and retain exactly the same geometry in the3 views. {\n  \"objective\": \"Create a detailed product showcase image of a chair design with multiple perspectives and material information\",\n  \"image_specifications\": {\n    \"style\": \"Realistic 3D render or high-quality product illustration\",\n    \"layout\": \"Split view\",\n    \"aspect_ratio\": \"3:2 or 4:3\",\n    \"background\": \"Neutral (light gray or white) to enhance clarity and contrast\"\n  },\n  \"left_side\": {\n    \"section_title\": \"Chair Perspectives\",\n    \"views\": [\n      {\n        \"view\": \"Top-down\",\n        \"description\": \"Display the full chair from above, showing seat shape and armrest layout\"\n      },\n      {\n        \"view\": \"Side view\",\n        \"description\": \"Profile of the chair to show leg design, seat height, and backrest angle\"\n      },\n      {\n        \"view\": \"Front view\",\n        \"description\": \"Straight-on view to show width, symmetry, and front structure\"\n      }\n    ],\n    \"visual_style\": \"Consistent lighting and shadows for realism, subtle shadows to define form\"\n  },\n  \"right_side\": {\n    \"section_title\": \"Material Breakdown\",\n    \"content\": [\n      {\n        \"material\": \"Seat Fabric\",\n        \"material_type\": \"Linen blend\",\n        \"swatch_image\": \"Small fabric texture sample shown\",\n        \"label_style\": \"Clean sans-serif text with arrows pointing to chair sections\"\n      },\n      {\n        \"material\": \"Legs\",\n        \"material_type\": \"Polished oak wood\",\n        \"swatch_image\": \"Close-up wood grain sample\",\n        \"label_style\": \"Consistent labeling with visual connection to perspective images\"\n      },\n      {\n        \"material\": \"Frame\",\n        \"material_type\": \"Matte black steel\",\n        \"swatch_image\": \"Small metallic texture sample\",\n        \"label_style\": \"Minimalist annotations\"\n      }\n    ]\n  },\n  \"visual_elements\": {\n    \"separation\": \"Vertical dividing line or subtle split background\",\n    \"color_palette\": \"Natural tones for materials, grayscale for background and lines\",\n    \"typography\": \"Modern, readable font for labels and section titles\"\n  },\n  \"output_format\": {\n    \"type\": \"Image\",\n    \"high_resolution\": true,\n    \"use_case\": [\n      \"Product sheet\",\n      \"Interior design catalog\",\n      \"Furniture showcase\"\n    ]\n  }\n}\n",
+    "original_filename": "提示词库/电商产品/[已投产·4分] 多视角亚麻椅材质分解图.md",
+    "original_sha256": "f4b8843f6efd25eb3bf41bcfcd8a8b388eef483c30a924e8d10709aa98dbf905",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "原文关键要求与本次输入",
+        "result": "存在问题",
+        "evidence": "三视图与材质分栏、亚麻/橡木/黑钢样本及文字可读，3:2成立；Frame标注线端点却落在座垫布面，未准确指向黑钢框架。多视图几何大体类似，不能当实物测量或真实材料鉴定。"
+      }
+    ],
+    "conclusion": "三视图与材质分栏、亚麻/橡木/黑钢样本及文字可读，3:2成立；Frame标注线端点却落在座垫布面，未准确指向黑钢框架。多视图几何大体类似，不能当实物测量或真实材料鉴定。 视觉评分为模型初评，单次不证明稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T052-chair/T052.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f0cc0d472b59d7203383efba866a9ec452aacd7806a3527ef4cf3d73541d78f7"
+    }
+  ]
+}

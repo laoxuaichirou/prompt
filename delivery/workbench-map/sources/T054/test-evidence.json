@@ -1,0 +1,72 @@
+{
+  "test": {
+    "test_id": "T054",
+    "title": "戒指",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一合成金色包镶绿石戒指；原文第一版双手与第三版珠宝盒各一次。",
+    "reference_material": [
+      "materials/ring-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "只抽测第1和第3个完整子例；中间单手版未执行。",
+      "两版本均复用同一合成戒指参考；不把戒指材质和价值当真实商品鉴定。",
+      "4K要求以实际文件像素验收。"
+    ],
+    "selected_source_prompt": "Transform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.",
+    "final_prompt": "Use the exact single synthetic ring from the supplied reference. Any hands shown are entirely fictional adult hands. Transform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.",
+    "final_prompts": [
+      {
+        "id": "T054-01",
+        "dir": "T054-ring",
+        "prompt": "Use the exact single synthetic ring from the supplied reference. Any hands shown are entirely fictional adult hands. Transform the jewelry into a highly stylized, ultra-realistic close-up of two elegant hands. The left hand rests gently over the right, with the ring—centered on the fourth finger—gleaming under focused cinematic lighting. Flawless skin with refined natural texture enhances the sense of intimacy and quiet sophistication. Set against a pure black background, the gemstones catch the light with vivid, prismatic sparkle, while soft gradients sculpt the hands without distraction. The composition is minimal, editorial, and luxuriously restrained—reminiscent of a high-end jewelry campaign. Ultra-detailed, 4K resolution, with razor-sharp focus on the ring and exquisite hand anatomy.",
+        "refs": [
+          "materials/ring-synthetic.png"
+        ]
+      },
+      {
+        "id": "T054-03",
+        "dir": "T054-ring",
+        "prompt": "Use the exact single synthetic ring from the supplied reference. Any hands shown are entirely fictional adult hands. An ultra-realistic, close-up photograph of a woman’s hands with flawless, naturally textured skin and delicately manicured nails, gently cradling open a vintage-inspired octagonal jewelry box upholstered in deep emerald velvet. Inside, the user-provided ring rests precisely centered—its design, gemstone setting, metal finish, and every intricate detail rendered with absolute fidelity to the reference image. The background is pure black, amplifying dramatic contrast, while a focused cinematic spotlight illuminates the ring with intense brilliance and prismatic fire, casting soft, sculptural gradients across the hands and velvet folds. The mood is editorial, timeless, and luxuriously restrained—worthy of a haute joaillerie campaign. Ultra-detailed, 4K resolution, minimal composition, with razor-sharp focus locked exclusively on the jewelry.\nStrong cinematic spotlighting from the side illuminates the scene. The light creates sharp highlights and soft shadows on the ring and hands. The background is deep pure black, creating a dramatic, high-contrast, and luxurious atmosphere. The composition feels intimate and editorial, like a premium jewelry campaign. Ultra-detailed, 4K resolution, sharp focus on the jewelry.",
+        "refs": [
+          "materials/ring-synthetic.png"
+        ]
+      }
+    ],
+    "original_filename": "提示词库/电商产品/[已投产·4分] 戒指.md",
+    "original_sha256": "05253dc98285ea1e21a1973f67c9d923906dc36e1a71b21b97aeb9fd71dc4452",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/ring-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "原文关键要求与本次输入",
+        "result": "存在问题",
+        "evidence": "双手交叠佩戴与绿绒八角盒两版均生成，包镶椭圆绿石和黄金融面戒圈大体延续；双手版无法可靠确认戒指位于要求的第四指，需人工复核。圆顶绿石未见原词要求的明显棱镜火彩，4K也未达到；中间单手子例未执行。"
+      }
+    ],
+    "conclusion": "双手交叠佩戴与绿绒八角盒两版均生成，包镶椭圆绿石和黄金融面戒圈大体延续；双手版无法可靠确认戒指位于要求的第四指，需人工复核。圆顶绿石未见原词要求的明显棱镜火彩，4K也未达到；中间单手子例未执行。 视觉评分为模型初评，单次不证明稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T054-ring/T054-01.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "aadd0269ba387b1cd13e3acdb2c5082f24664b0c21296bb5b637619664bfd855"
+    },
+    {
+      "file": "results/T054-ring/T054-03.png",
+      "width": 1312,
+      "height": 1199,
+      "sha256": "755ea62b001e650ad9f1004645f04c9ccc6d312773e150502782b591f9f09373"
+    }
+  ]
+}

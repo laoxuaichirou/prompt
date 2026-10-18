@@ -2,6 +2,7 @@
 
 这是 GitHub 下载副本，用于绕过聊天附件下载故障。测试日期：2026-10-18（Asia/Shanghai）。
 
+- [其余提示词可整理的11个工作台方向](./workbench-map/README.md) · [分类与来源映射ZIP](./workbench-map.zip?raw=true)
 - [创意人像工作台：84张预设目录](./portrait-workbench/README.md) · [效果索引](./portrait-workbench/GALLERY.md) · [下载预设ZIP](./portrait-workbench-presets.zip?raw=true)
 - [直接在GitHub查看图片：11页画廊](./gallery/README.md)
 - [图片浏览 PDF：217页，约50 MB](./prompt-test-images.pdf?raw=true)

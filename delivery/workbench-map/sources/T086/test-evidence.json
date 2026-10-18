@@ -1,0 +1,76 @@
+{
+  "test": {
+    "test_id": "T086",
+    "title": "无标题",
+    "type": "参考设计语言迁移编辑",
+    "test_input": "参考1=本轮T018工业图鉴图，参考2=同一无品牌鞋产品素材。检验布局/配色/功能标注形式迁移；不是原库未取得的设计预览。",
+    "reference_material": [
+      "/workspace/image-test-20261018/results/T018-product-atlas/output.png",
+      "/workspace/image-test-20261018/materials/sneaker-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "使用正文英文版；将参考图变量填为本轮已有合成图鉴，不声称复刻未取得的原库预览",
+      "标注仅描述可见外观，不引入不可见技术性能或工艺"
+    ],
+    "selected_source_prompt": "Analyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+    "final_prompt": [
+      "Reference image 1 supplies the design language, layout, white/gray palette, thin callout lines and technical typography. Reference image 2 supplies the ONLY product. All factual labels must describe visible exterior features rather than inventing material composition or performance. Original instruction: Analyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style."
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/results/T018-product-atlas/output.png",
+          "/workspace/image-test-20261018/materials/sneaker-synthetic.png"
+        ],
+        "prompt": "Reference image 1 supplies the design language, layout, white/gray palette, thin callout lines and technical typography. Reference image 2 supplies the ONLY product. All factual labels must describe visible exterior features rather than inventing material composition or performance. Original instruction: Analyze the visual style, layout, color palette, and infographic format of the reference image. Create a product technical analysis infographic for shoe that perfectly matches the reference's design language, including layout structure, UI elements, feature callouts, and information presentation style.",
+        "reference_material_portable": [
+          "results/T018-product-atlas/output.png",
+          "materials/sneaker-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/电商产品/[已投产·3分] 无标题.md",
+    "original_sha256": "7af208dab75246766ac8399feec380dfb805592379fceab19bf10bd921a92163",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "results/T018-product-atlas/output.png",
+      "materials/sneaker-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "参考设计语言",
+        "result": "符合要求",
+        "evidence": "白底、左侧四视图列、右侧大产品、细灰引线、无衬线标注与参考图鉴十分接近。"
+      },
+      {
+        "requirement": "标注",
+        "result": "基本符合",
+        "evidence": "Lace/Eyelet/Toe panel/Heel panel/Upper panel/Midsole等对准可见区域；删除了原图Solid construction不可见内部工艺说法。"
+      },
+      {
+        "requirement": "覆盖边界",
+        "result": "未验证",
+        "evidence": "仅用自制同款鞋图鉴作样式参考，不代表未取得原库示例或不同产品间迁移已验证。"
+      }
+    ],
+    "conclusion": "指定自制参考的图鉴布局复现符合主要要求，结论仅限该最小用例。"
+  },
+  "images": [
+    {
+      "file": "results/T086-infographic-transfer/output.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7717f9501f82e925cb0d551d65e43b5ee705fb091efc7c77066f59819554526c"
+    }
+  ]
+}

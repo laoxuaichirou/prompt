@@ -1,0 +1,64 @@
+{
+  "test": {
+    "test_id": "T053",
+    "title": "奢华8K国家美食广告",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "国家=China；菜品=Chinese steamed pork bao buns；食物类型=steamed stuffed bun；背景=deep jade green；画幅4:3，两种摄影变化。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "仅替换原文国家、菜品、类型、背景色和画幅变量。",
+      "多视觉版本需求用两张独立图执行，不添加原文未要求的宫格。",
+      "无参考图的两次文生图共用同一组变量；不测试同一实物的身份一致性。"
+    ],
+    "selected_source_prompt": "Ultra-high-quality, hyper-realistic commercial food photography of Chinese steamed pork bao buns, rendered in 8K detail with a 4:3 aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Chinese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to steamed stuffed pork bun\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in deep jade green\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n",
+    "final_prompt": "Ultra-high-quality, hyper-realistic commercial food photography of Chinese steamed pork bao buns, rendered in 8K detail with a 4:3 aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Chinese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to steamed stuffed pork bun\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in deep jade green\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n\nVariation1: three bao buns suspended in a clean cluster, one bun cut open to show cooked pork and scallion filling; a few tiny crumbs frozen in air. No plate, no bowl, no table.",
+    "final_prompts": [
+      {
+        "id": "T053-01",
+        "dir": "T053-food",
+        "prompt": "Ultra-high-quality, hyper-realistic commercial food photography of Chinese steamed pork bao buns, rendered in 8K detail with a 4:3 aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Chinese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to steamed stuffed pork bun\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in deep jade green\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n\nVariation1: three bao buns suspended in a clean cluster, one bun cut open to show cooked pork and scallion filling; a few tiny crumbs frozen in air. No plate, no bowl, no table.",
+        "refs": []
+      },
+      {
+        "id": "T053-02",
+        "dir": "T053-food",
+        "prompt": "Ultra-high-quality, hyper-realistic commercial food photography of Chinese steamed pork bao buns, rendered in 8K detail with a 4:3 aspect ratio.\n\nThe food is shown in multiple premium visual variations, each highlighting texture, layers, and freshness in a cinematic way.\n\nFood details:\n– Authentic Chinese cuisine presentation\n– Clearly visible layers, fillings, or structure specific to steamed stuffed pork bun\n– Rich, natural colors and realistic textures\n\nMotion & drama:\n– Subtle mid-air elements (crumbs, ingredients, sauce, or spices)\n– Natural gravity realism, frozen motion\n– No mess, clean and controlled composition\n\nLighting & camera:\n– Controlled studio lighting emphasizing texture and shine\n– High-speed photography look\n– Shallow to medium depth of field\n\nBackground:\n– Solid or soft gradient background in deep jade green\n– Clean, seamless, distraction-free\n\nStyle & finish:\n– Luxury food advertising aesthetic\n– Rich contrast, warm natural tones\n– Ultra-sharp focus, no artificial glow\n\nNegative prompt:\nText, logos, branding, hands, people, utensils, plates, tables, cartoon style, burnt food, overexposure, low-detail textures, artificial shine.\n\nVariation2: extreme macro cutaway of one suspended bao bun, showing fluffy steamed skin and moist cooked pork scallion filling, a few tiny crumbs frozen in air. No plate, no bowl, no table.",
+        "refs": []
+      }
+    ],
+    "original_filename": "提示词库/电商产品/[已投产·4分] 奢华8K国家美食广告.md",
+    "original_sha256": "f819e9ae9db6e524a86fef3517b49037803756d94c991c2b748741f7cdf17359",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "原文关键要求与本次输入",
+        "result": "存在问题",
+        "evidence": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。"
+      }
+    ],
+    "conclusion": "两幅独立4:3美食图均有深绿背景、蒸包皮与猪肉葱馅、悬空碎屑和摄影变化，无手/盘/桌/文字/商标；微距比主图更突出截面。原生1448×1086未达8K，非同一实物保真对照。 视觉评分为模型初评，单次不证明稳定性。"
+  },
+  "images": [
+    {
+      "file": "results/T053-food/T053-01.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "bd83df98f7ac8b4d82adfe2121d20e376a1efbb509e085eaccac92609408fcc0"
+    },
+    {
+      "file": "results/T053-food/T053-02.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "6f4b6dd864f33b352f5abdbe912170e7d4620b073f144c2ba0adf0afd47ba3de"
+    }
+  ]
+}

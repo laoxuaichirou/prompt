@@ -1,0 +1,61 @@
+{
+  "test": {
+    "test_id": "T019",
+    "title": "电商模特组图生成-根据需要修改",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "同一合成成年女性，白T藏蓝裤，九景别。",
+    "reference_material": [
+      "materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原模型未调用",
+    "changes": [
+      "去除元数据、外链图和重复中译版本，保留完整原文另存original.md。",
+      "明确参考人物为32岁成年人；不新增服装变量。"
+    ],
+    "final_prompt": "人物为参考素材中32岁虚构成年女性，不改变人物面部、黑短发、白色T恤、藏蓝长裤和白鞋。根据我上传的图片，生成一个 3x3 的电影故事板网格，只生成拼图，不用添加文字，【1:1】比例。\n一位固定的女模特，同样的服装，同样的灯光。\n镜头拍摄顺序：\n第一行：ELS、LS、MLS\n第 2 行：MS、MCU、CU\n第 3 行：ECU（细节）、低角度拍摄、高角度拍摄\n面部细节极其丰富，肌肤纹理自然，瞳孔高光清晰。\n高端时尚杂志风格，简洁的背景，奢华电商风格。",
+    "original_filename": "提示词库/电商产品/[已投产·5分] 电商模特组图生成-根据需要修改.md",
+    "original_sha256": "408808cea0e8b5c778945a3c4ed27984e92116c4cfcae71f28b4e82cb36af21b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "1:1九宫格，无文字",
+        "result": "符合要求",
+        "evidence": "1254×1254原生3×3九格，无叠字。"
+      },
+      {
+        "requirement": "ELS/LS/MLS，MS/MCU/CU，ECU/低角/高角",
+        "result": "基本符合，MLS略偏近",
+        "evidence": "由远到近的层级、眼睛极近特写与低/高角度均出现；右上MLS裁切在大腿上部，偏离通常膝上中长景界限。"
+      },
+      {
+        "requirement": "同人同服装同灯光",
+        "result": "视觉基本符合",
+        "evidence": "黑短发、眼下痣、白T、藏蓝裤及灰棚柔光持续；极近眼部格无法验证全身服装。"
+      },
+      {
+        "requirement": "面部细节、皮肤纹理、瞳孔高光",
+        "result": "符合可见细节",
+        "evidence": "近脸与眼睛格有自然纹理和高光，无明显破坏。"
+      }
+    ],
+    "conclusion": "九景别最小用例已实测，大部分层级有效，MLS偏近；单张宫格不证明跨调用一致性。"
+  },
+  "images": [
+    {
+      "file": "results/T019-ecom-model9/output.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9999b2a441df9db09f89be7b81b0cc984527abdeff5ddba535c577b9fc405813"
+    }
+  ]
+}

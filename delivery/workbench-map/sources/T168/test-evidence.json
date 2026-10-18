@@ -1,0 +1,35 @@
+{
+  "test": {
+    "test_id": "T168",
+    "title": "【AI影视】",
+    "type": "纯视频任务",
+    "test_input": "视频链接逐秒反推并生成新视频，本轮不适用，未提供原视频。",
+    "reference_material": [],
+    "tool": "无（本轮不适用）",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [],
+    "selected_source_prompt": "\n\n**根据抖音视频反推提示词，并生成新视频方法<br>**视频链接，帮我分析这一个视频，提取生成这个视频的提示词，要按照秒来生成提示词。\n",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/视频分镜/[已投产·3分] 【AI影视】.md",
+    "original_sha256": "37ed317eb39dabe5ece3340d9bf0f597fd819ac3881184898d4b1f44613b28ff",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "本轮不适用",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "范围",
+        "result": "本轮不适用",
+        "evidence": "按视频逐秒反推并生成新视频，未提供视频，非图像任务。"
+      }
+    ],
+    "conclusion": "纯视频任务，本轮不适用。"
+  },
+  "images": []
+}

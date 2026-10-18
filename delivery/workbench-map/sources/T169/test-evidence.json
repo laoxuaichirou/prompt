@@ -1,0 +1,82 @@
+{
+  "test": {
+    "test_id": "T169",
+    "title": "2509+WAN2.2，LLM",
+    "type": "元提示词→两张静态分镜",
+    "test_input": "图一=成年女性合成参考；2026年东京附近虚构花店：拿起写“春”的木牌，再挂门上。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "执行为两条Next Scene；保留图一引用、年代地点和引号文字“春”，不声称WAN原模型实测。",
+      "两图共同复用同一人物参考，花店为本次虚构场景，非实地照片。"
+    ],
+    "selected_source_prompt": "\n\n【输入方式】：文本描述\n【延展目标】：深度了解文本描述中的情节，并使用AI能理解的语言重新写两个或两个以上的分镜，要求划分要细致，一个分镜头中不要有过多的动作和情节。<br>其中，文本描述中的\"图一/图二/图三/Image1/Image2/Image3中的xx\"是明确表示要调用参考图片中内容的指令，不可省略。<br>文本描述中的引号部分如果表示的是要在画面中显示的文字，也不可变更引号里面的内容且需要保留引号。<br>文本描述中表示时间、年代、种族等限制性提示词不可忽略。<br>生成分镜图的时候也要注意剧情中同一称呼的角色、道具和背景应保持相符合的对应外观颜色特征。<br>输出时以Next Scene:开头，后面马上接文字。每一段文字是连续的，没有特殊符号，没有多余的解释，每一段文字100字左右，直接输出内容。\n<empty-block/>\n",
+    "final_prompt": [
+      "Next Scene: 2026年，东京附近一间虚构花店门前，中景平视。图一中的32岁东亚成年女性，短黑发左脸小痣、白T深蓝裤白鞋不变，站木门左侧，双手拿起一块小木牌，牌面清楚写着“春”。门旁红黄花盆和绿色藤叶、柔和阴天光，写实电影感，无品牌。",
+      "Next Scene: 承接上一镜，2026年东京附近同一虚构花店，略侧中景。图一中的同一位32岁女性保持短黑发、白T深蓝裤白鞋，双手将写有“春”的木牌挂到木门中央的小挂钩上，目光确认位置；门边红黄花盆与藤叶布局不变，柔阴天光与自然肤色统一。"
+    ],
+    "meta_output": [
+      "Next Scene: 2026年，东京附近一间虚构花店门前，中景平视。图一中的32岁东亚成年女性，短黑发左脸小痣、白T深蓝裤白鞋不变，站木门左侧，双手拿起一块小木牌，牌面清楚写着“春”。门旁红黄花盆和绿色藤叶、柔和阴天光，写实电影感，无品牌。",
+      "Next Scene: 承接上一镜，2026年东京附近同一虚构花店，略侧中景。图一中的同一位32岁女性保持短黑发、白T深蓝裤白鞋，双手将写有“春”的木牌挂到木门中央的小挂钩上，目光确认位置；门边红黄花盆与藤叶布局不变，柔阴天光与自然肤色统一。"
+    ],
+    "cases": [
+      {
+        "name": "scene1",
+        "prompt": "Next Scene: 2026年，东京附近一间虚构花店门前，中景平视。图一中的32岁东亚成年女性，短黑发左脸小痣、白T深蓝裤白鞋不变，站木门左侧，双手拿起一块小木牌，牌面清楚写着“春”。门旁红黄花盆和绿色藤叶、柔和阴天光，写实电影感，无品牌。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      },
+      {
+        "name": "scene2",
+        "prompt": "Next Scene: 承接上一镜，2026年东京附近同一虚构花店，略侧中景。图一中的同一位32岁女性保持短黑发、白T深蓝裤白鞋，双手将写有“春”的木牌挂到木门中央的小挂钩上，目光确认位置；门边红黄花盆与藤叶布局不变，柔阴天光与自然肤色统一。",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/视频分镜/[已投产·4分] 2509+WAN2.2，LLM.md",
+    "original_sha256": "dc90f3234f0630761b57d5c4de3601038ae82a38712026861995821e900a849a",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 2,
+    "opened": 2,
+    "checks": [
+      {
+        "requirement": "两步动作/文字/人物",
+        "result": "基本符合",
+        "evidence": "两张依次拿牌、挂门，春字均正确，白T深蓝裤和短发基本一致，花店氛围连续。"
+      },
+      {
+        "requirement": "道具背景一致",
+        "result": "存在问题",
+        "evidence": "木牌从横版白字变竖版黑字，第一张玻璃多格门变第二张实木门，未保持同一物件和背景结构。2026/东京属于虚构设定，不是地点事实验证。"
+      }
+    ],
+    "conclusion": "元任务已执行两图，关键文字正确但木牌与门结构明显漂移。"
+  },
+  "images": [
+    {
+      "file": "results/T169-wan-text-shots/scene1.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "16ce4162e34365f4ca2ee33694443bd28460b2bcf0f40a8c0c76fbf3f18bc8eb"
+    },
+    {
+      "file": "results/T169-wan-text-shots/scene2.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c5f43e11cb0e51f583234f49df4d32c260a4f5b170e89bbda4e8e3784eede607"
+    }
+  ]
+}

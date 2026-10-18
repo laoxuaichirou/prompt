@@ -1,0 +1,70 @@
+{
+  "test": {
+    "test_id": "T172",
+    "title": "小说转影视流程（初版）",
+    "type": "参数化角色设计表直接生图",
+    "test_input": "成年女性合成参考，原1.1全身3视图+上半身3视图+证件脸共7视图。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/adult-woman-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "选择原文1.1完整角色设计表，填入空缺的脸/衣服/比例字段，未删减七视图要求。",
+      "保留原8K/16:9及MJ后缀为文本，工具不提供原MJ参数。",
+      "其余动作/武器/场景/特效/小说拆分/视频流程与缺失子页未执行。"
+    ],
+    "selected_source_prompt": "Character design sheet, consistent character from reference image,<br>FULL BODY three-view: front view + side view + back view,<br>UPPER BODY close-up three-view: front + left 3/4 + right 3/4,<br>PASSPORT-style face close-up: neutral expression, front facing,<br><br>Character details:<br>- Exact face replication from reference: <br>- Costume: <br>- Proportions: <br><br>Technical specs:<br>- CG ultra-realistic 3D render style<br>- Soft studio lighting, neutral gray background<br>- 8K resolution, highly detailed fabric texture<br>- Character centered, consistent scale across all views<br>- No shadows on background for easy extraction<br><br>--ar 16:9 --style raw --v 6.0",
+    "final_prompt": [
+      "Character design sheet, consistent character from reference image,<br>FULL BODY three-view: front view + side view + back view,<br>UPPER BODY close-up three-view: front + left 3/4 + right 3/4,<br>PASSPORT-style face close-up: neutral expression, front facing,<br><br>Character details:<br>- Exact face replication from reference: fictional 32-year-old adult woman, oval face, dark almond eyes, small left-cheek mole, short black side-parted bob. <br>- Costume: plain white crew-neck T-shirt, navy straight trousers, white lace-up sneakers. <br>- Proportions: natural adult proportions from reference. <br><br>Technical specs:<br>- CG ultra-realistic 3D render style<br>- Soft studio lighting, neutral gray background<br>- 8K resolution, highly detailed fabric texture<br>- Character centered, consistent scale across all views<br>- No shadows on background for easy extraction<br><br>--ar 16:9 --style raw --v 6.0"
+    ],
+    "cases": [
+      {
+        "name": "output",
+        "prompt": "Character design sheet, consistent character from reference image,<br>FULL BODY three-view: front view + side view + back view,<br>UPPER BODY close-up three-view: front + left 3/4 + right 3/4,<br>PASSPORT-style face close-up: neutral expression, front facing,<br><br>Character details:<br>- Exact face replication from reference: fictional 32-year-old adult woman, oval face, dark almond eyes, small left-cheek mole, short black side-parted bob. <br>- Costume: plain white crew-neck T-shirt, navy straight trousers, white lace-up sneakers. <br>- Proportions: natural adult proportions from reference. <br><br>Technical specs:<br>- CG ultra-realistic 3D render style<br>- Soft studio lighting, neutral gray background<br>- 8K resolution, highly detailed fabric texture<br>- Character centered, consistent scale across all views<br>- No shadows on background for easy extraction<br><br>--ar 16:9 --style raw --v 6.0",
+        "reference_material_portable": [
+          "materials/adult-woman-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "直接生图或图像编辑；不另行执行提示词生成元任务",
+    "original_filename": "提示词库/视频分镜/[已投产·4分] 小说转影视流程（初版）.md",
+    "original_sha256": "8ec40ee6a331c206deb4ece24a22d1ea84b19724d8b6f7a05c75cab956191b1b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/adult-woman-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "七视图/服饰/背景",
+        "result": "符合要求",
+        "evidence": "全身正侧背三图、上半身正面与左右3/4三图、证件式正脸一图均有，白T深蓝裤白鞋、灰棚一致。"
+      },
+      {
+        "requirement": "8K/无阴影",
+        "result": "存在问题",
+        "evidence": "非8K；脚下有轻微地面投影，没有完全无背景地面阴影；不可见背面为合成推断。"
+      },
+      {
+        "requirement": "其余工作流",
+        "result": "未执行",
+        "evidence": "仅1.1角色设计表，变体/武器/场景/小说拆解/视频与诊断任务未执行。"
+      }
+    ],
+    "conclusion": "七视图最小资产用例已出图，8K与完全无阴影未满足，不代表全影视流程通过。"
+  },
+  "images": [
+    {
+      "file": "results/T172-novel-asset7/output.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cd6411c7030a1b624114f35a44909891dde3acdb556aece4bfcdcdfc37ef22e7"
+    }
+  ]
+}

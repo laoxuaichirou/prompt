@@ -1,0 +1,37 @@
+{
+  "test": {
+    "test_id": "T104",
+    "title": "分镜格式sora2",
+    "type": "纯10秒视频广告样例",
+    "test_input": "按正文判断：三个按秒分段的AppleWatch镜头含屏幕动态、晨跑、追随和拉远；原目标为Sora2视频。",
+    "reference_material": [],
+    "tool": "无生图调用",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "纯视频样例本轮不适用；不生成任意静帧后宣称Sora2或运镜通过"
+    ],
+    "selected_source_prompt": "第一镜（0–3秒）静谧晨光\n窗外的城市尚在沉睡，镜头推向一只放在床头的 Apple Watch。屏幕亮起的瞬间，柔和的光映照出主人的脸庞，他睁开眼，呼吸与心率同步闪烁。\n第二镜（3–7秒）节奏苏醒\n主角在晨跑，步伐稳健。手表屏幕显示心率曲线与路线图，汗水顺着手臂滑落。阳光从高楼间洒下，镜头追随腕间的微光与动作的力量。\n第三镜（7–10秒） · 自我回归\n跑步结束，他停在桥上深吸一口气，城市的天际线在他背后延伸。镜头慢慢拉远，Apple Watch 的屏幕定格在闪烁的数字上，文字浮现：“掌控每一秒的呼吸。”",
+    "final_prompt": [],
+    "cases": [],
+    "meta_execution": "不适用或正文缺失",
+    "original_filename": "提示词库/视频分镜/[仅参考·2分] 分镜格式sora2.md",
+    "original_sha256": "a97819d4514870323ef8f0f8a2f7d2aa350040e4f15ca63d897f50780786a57b",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "本轮不适用",
+    "generated": 0,
+    "opened": 0,
+    "checks": [
+      {
+        "requirement": "正文目标",
+        "result": "不适用",
+        "evidence": "0–10秒Sora2视频镜头、动态屏幕与连续运动；没有独立静态生图要求。"
+      }
+    ],
+    "conclusion": "纯视频广告样例，本轮不适用，未生成图片。"
+  },
+  "images": []
+}

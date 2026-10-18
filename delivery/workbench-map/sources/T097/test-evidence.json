@@ -1,0 +1,73 @@
+{
+  "test": {
+    "test_id": "T097",
+    "title": "【电商】产品背景更换场景丨提示词优化",
+    "type": "短句元提示词→背景编辑",
+    "test_input": "森林，丁达尔光；对同一合成琥珀瓶编辑。",
+    "reference_material": [
+      "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "遵守Background change to前缀、少于100字符、最终Prompt不提产品；只测森林分支",
+      "苔藓石面是光影/纹理细化；大理石和雪地分支未执行"
+    ],
+    "selected_source_prompt": "Prefix: Background change to Rules:Focus: Lighting, atmosphere, textures, and depth.Strictly No Subject: Never mention the product itself.Limit: Under 100 characters total.输入： 森林，丁达尔光输出： Background change to misty forest, ethereal Tyndall effect, soft sunlight, cinematic bokeh.输入： 极简，大理石，暖光输出： Background change to minimalist marble, warm sunset glow, soft shadows, clean studio vibe.输入： 雪地，清晨，冷色调输出： Background change to serene snow field, crisp morning air, cool blue tones, hazy horizon.",
+    "final_prompt": [
+      "Background change to misty forest, Tyndall rays, mossy stone, soft green bokeh."
+    ],
+    "meta_output": "Background change to misty forest, Tyndall rays, mossy stone, soft green bokeh.",
+    "cases": [
+      {
+        "name": "output",
+        "refs": [
+          "/workspace/image-test-20261018/materials/bottle-synthetic.png"
+        ],
+        "prompt": "Background change to misty forest, Tyndall rays, mossy stone, soft green bokeh.",
+        "reference_material_portable": [
+          "materials/bottle-synthetic.png"
+        ]
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/图像编辑/[已投产·3分] 【电商】产品背景更换场景丨提示词优化.md",
+    "original_sha256": "2cbefe180d6f4577db4a2911b3fbf2312ef76b5b4f555c2b80d97adb446342a4",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/bottle-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "元输出约束",
+        "result": "符合要求",
+        "evidence": "79字符，严格Background change to前缀，不提商品。"
+      },
+      {
+        "requirement": "森林/丁达尔光/产品保持",
+        "result": "基本符合",
+        "evidence": "背景变为森林和苔藓石面，体积光明显；同一无标签琥珀瓶黑盖、玻璃形状和完整构图基本保持，反射随环境改变。"
+      },
+      {
+        "requirement": "其他分支",
+        "result": "未执行",
+        "evidence": "大理石/雪地未执行，单次不代表重复稳定性。"
+      }
+    ],
+    "conclusion": "短句背景优化的森林最小用例符合主要要求。"
+  },
+  "images": [
+    {
+      "file": "results/T097-product-background/output.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "707ff1ebf56b4928a4a746f18fc760946861043cdb26461c15097f5a4374d50a"
+    }
+  ]
+}

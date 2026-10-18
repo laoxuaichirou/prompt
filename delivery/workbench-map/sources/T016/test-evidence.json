@@ -1,0 +1,62 @@
+{
+  "test": {
+    "test_id": "T016",
+    "title": "【商品】9宫格奢华悬浮运动鞋",
+    "type": "直接生图/参考编辑提示词",
+    "test_input": "指定无品牌白色厚底运动鞋，九个商业概念。",
+    "reference_material": [
+      "materials/sneaker-synthetic.png"
+    ],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，原模型未调用",
+    "changes": [
+      "去除元数据、外链图和重复中译版本，保留完整原文另存original.md。",
+      "使用原文允许的or specific model provided分支，以无品牌合成鞋作为指定测试款。",
+      "将真实品牌主体和logo压印检查改成该测试款的空白黑跟片、形状与缝线；不能宣称真实品牌款及logo还原通过。"
+    ],
+    "final_prompt": "Use the attached synthetic product as the specified test model. No real brand names or logo text. Generate the requested single native 3×3 commercial grid.\nCreate a 3×3 grid in 3:4 aspect ratio for a high-end commercial marketing campaign using the the specified synthetic unbranded oversized white sneaker from the reference as the central subject.\n\nEach frame must present a distinct visual concept while maintaining perfect product consistency across all nine images.\n\nGrid Concepts (one per cell):\n\n1.  **Iconic Hero Shot:** Eye-level profile view of the shoe on a dark, sleek pedestal, emphasizing the signature oversized sole.\n2.  **Extreme Macro Detail:** Close-up on the heel counter or stitching details, highlighting the premium leather grain and blank unbranded black heel tab and fine stitching.\n3.  **Dynamic Interaction:** The shoe stepping onto a surface causing a subtle, elegant splash of dark liquid or marble dust (impact visual).\n4.  **Minimal Sculptural:** The shoe balanced artistically on geometric concrete or marble blocks, emphasizing architectural design.\n5.  **Levitation & Lightness:** The shoe floating in mid-air with laces suspended dynamically, suggesting premium comfort and airiness.\n6.  **Sensory Texture:** A mood shot focusing on the tactile quality of the velvet or smooth leather upper against a contrasting rough stone texture.\n7.  **Monochrome Luxury:** A color-blocked scene where the background perfectly matches the shoe's accent color (e.g., black or navy), creating a bold editorial look.\n8.  **Deconstructed Craftsmanship:** An abstract arrangement of raw materials (leather swatches, rubber textures) surrounding the shoe, symbolizing high-quality construction.\n9.  **Surreal Fusion:** The shoe integrated into a surreal, dreamlike landscape (e.g., a cloudscape or mirrored infinity room) blending realism with high fashion.\n\nVisual Rules:\n* **Subject:** the specified synthetic unbranded oversized sneaker from reference.\n* **Consistency:** The shoe must remain 100% accurate in shape, proportions, sole thickness, blank heel-tab placement and stitching.\n* **No Distortion:** No deformation of the signature sole or unbranded surface details.\n* **Separation:** Clean separation between the footwear and the background.\n\nLighting & Style:\n* Soft, controlled studio lighting with dramatic rim lights to accentuate the shoe's silhouette.\n* Subtle highlights on leather, deep realistic shadows under the sole.\n* High dynamic range, 8k resolution, ultra-sharp focus.\n* Editorial luxury fashion advertising aesthetic (Vogue/GQ style).\n* Palette: Minimalist, monochrome, metallic, and deep matte tones.\n\nOverall Feel:\n* Modern, refined, visually cohesive.\n* High-end commercial campaign for a luxury fashion house.\n* Hyperreal, cinematic, polished, and aspirational.\n",
+    "original_filename": "提示词库/电商产品/[已投产·5分] 【商品】9宫格奢华悬浮运动鞋.md",
+    "original_sha256": "fc7235c2e1852d33efea9e1d2a52f9ad76b89fa9b0ccc4714c8f338cac223667",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": [
+      "materials/sneaker-synthetic.png"
+    ]
+  },
+  "inspection": {
+    "status": "存在问题",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "3×3，整体3:4，九个商业概念",
+        "result": "符合核心布局",
+        "evidence": "图为1086×1448的3:4竖幅九格，依次出现主图、后跟微距、踩踏溅水、几何雕塑、悬浮、粗石质感、黑底单色、材料解构、云与镜面超现实。"
+      },
+      {
+        "requirement": "合成指定款100%产品一致",
+        "result": "基本保留但不能精确确认",
+        "evidence": "白色厚底、黑后跟片、白鞋带持续；多视角中的孔数、鞋底曲线与缝线细节有变化或不可核实，不能宣称100%还原。"
+      },
+      {
+        "requirement": "真实品牌logo",
+        "result": "本适配不验证",
+        "evidence": "原文允许specific model provided，本轮使用无品牌指定测试款，不宣称Alexander McQueen实物或字标实测。"
+      },
+      {
+        "requirement": "8K",
+        "result": "不符合",
+        "evidence": "原生1086×1448，不是8K。"
+      }
+    ],
+    "conclusion": "九概念和3:4布局本次有效；产品细节严格一致性仍有问题，真实品牌与字标未验证。"
+  },
+  "images": [
+    {
+      "file": "results/T016-sneaker9/output.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "970747ebac310328dc974cc624796d11948f6e9d3b17a39a3830ce8fb242a293"
+    }
+  ]
+}

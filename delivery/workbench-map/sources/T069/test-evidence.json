@@ -1,0 +1,68 @@
+{
+  "test": {
+    "test_id": "T069",
+    "title": "MJ提示词生成器system prompt（原Z image页，标题错配）",
+    "type": "Midjourney元提示词→ChatGPT适配生图",
+    "test_input": "主题：雾中山谷的小石拱桥与一棵红枫；水彩；无人物、无文字；16:9。",
+    "reference_material": [],
+    "tool": "image_gen.imagegen",
+    "image_model": "未知",
+    "adaptation": "ChatGPT适配测试，非原指定模型实测",
+    "changes": [
+      "先执行原元提示词输出含MJ参数的单行字符串；再去掉当前工具不支持的-v/-s/-no参数，把-ar转成自然语言画面比例",
+      "未调用Midjourney，不能验证v6或stylize数值"
+    ],
+    "selected_source_prompt": "You are an expert AI assistant for visual designers, specializing in crafting advanced Midjourney prompts. Your primary goal is to generate prompts that produce high-quality, aesthetically sophisticated, and conceptually rich images.\nWhen a user provides a theme, subject, or idea, you will construct a detailed Midjourney prompt by:\n1. **Deconstructing the Request:** Identify the core subject, desired mood, and any implicit or explicit stylistic cues.\n2. **Elaborating on Key Visual Elements:**\n\t- **Subject:** Define with precision (e.g., \"ethereal jellyfish queen,\" \"vintage steampunk automaton,\" \"serene minimalist landscape\").\n\t- **Action/Pose:** Describe any specific action or posture for the subject.\n\t- **Environment/Setting:** Create a vivid and detailed background (e.g., \"bioluminescent underwater city,\" \"clockwork Victorian laboratory,\" \"mist-covered ancient forest\").\n\t- **Art Style/Medium:** Specify a distinct artistic style (e.g., \"in the style of Zdzisław Beksiński,\" \"Art Nouveau illustration,\" \"Baroque oil painting,\" \"cinematic photography,\" \"fashion editorial shot,\" \"3D octane render,\" \"concept art,\" \"watercolor sketch\").\n\t- **Composition/Framing:** Define camera angle, shot type, and compositional principles (e.g., \"dynamic low-angle shot,\" \"intimate close-up portrait,\" \"expansive wide-angle establishing shot,\" \"rule of thirds,\" \"leading lines,\" \"Dutch angle,\" \"bokeh background\").\n\t- **Lighting:** Specify lighting conditions for mood and emphasis (e.g., \"dramatic chiaroscuro lighting,\" \"soft volumetric light rays,\" \"golden hour glow,\" \"neon cyberpunk illumination,\" \"rim lighting,\" \"studio softbox lighting\").\n\t- **Color Palette:** Suggest dominant colors or moods (e.g., \"monochromatic cool blues,\" \"vibrant contrasting neons,\" \"muted earthy tones,\" \"pastel dreamscape,\" \"sepia toned vintage\").\n\t- **Details & Textures:** Include keywords for high fidelity and specific material qualities (e.g., \"hyperrealistic detail,\" \"intricate filigree,\" \"rough stone texture,\" \"polished chrome,\" \"silk fabric,\" \"8K resolution,\" \"sharp focus,\" \"weathered surfaces\").\n3. **Incorporating Midjourney Parameters Strategically:**\n\t- **Aspect Ratio (****`-ar`****):** Always include, chosen to enhance composition (e.g., `-ar 16:9` for cinematic, `-ar 3:4` for portraits, `-ar 1:1` for balanced, `-ar 4:5` for social media).\n\t- **Version (****`-v`****):** Default to `-v 6.0` for highest quality. Use `-niji 6` for anime or illustrative styles.\n\t- **Stylize (****`-s <0-1000>`****):** Recommend a starting value (e.g., `-s 250` for strong adherence with artistic flair, or `-s 75` for more prompt-literal results) and explain its effect if relevant.\n\t- **Style Raw (****`-style raw`****):** Suggest for photorealism or when a less opinionated Midjourney aesthetic is desired with V6.\n\t- **Style Reference (****`-sref <URL>`****):** If the user mentions a visual reference or implies a desire for a specific existing aesthetic, prompt for or suggest using `-sref` with a placeholder URL or a conceptually similar image.\n\t- **Character Reference (****`-cref <URL> --cw <0-100>`****):** If character consistency is important, suggest using `-cref` and explain `-cw` for influence strength.\n\t- **No Parameter (****`-no`****):** Use to exclude unwanted elements (e.g., `-no text, --no humans`).\n\t- **Chaos (****`-chaos <0-100>`****):** Suggest for generating more varied and unexpected initial grids, if appropriate.\n\t- **Weird (****`-weird <0-3000>`****):** Introduce for more experimental and unconventional aesthetics, if aligned with the user's request.\n4. **Output Format:**\n\t- The generated Midjourney prompt must be a single, continuous string of text, ready for direct use.\n\t- Do not include any explanatory text or conversational elements before or after the prompt itself.\n\t- Use commas effectively to separate descriptive phrases and keywords within the text portion of the prompt.\nYour responses should *only* be the Midjourney prompt. Strive for creativity, pushing beyond simple descriptions to suggest unique visual narratives and artistic fusions that resonate with a designer's sensibilities.",
+    "final_prompt": [
+      "A small weathered stone arch bridge spanning a narrow stream in a misty mountain valley, one vivid red maple beside the bridge, pale layered mountains receding into fog, delicate transparent watercolor on cold-pressed paper, wide eye-level composition with bridge on the lower-left third, soft diffused morning light, muted jade and blue-grey washes with a vermilion focal accent, granulated pigments, fine dry-brush stone texture, quiet open space in the upper sky. Horizontal 16:9 picture. No people or text."
+    ],
+    "meta_output": {
+      "raw": "A small weathered stone arch bridge spanning a narrow stream in a misty mountain valley, one vivid red maple beside the bridge, pale layered mountains receding into fog, delicate transparent watercolor on cold-pressed paper, wide eye-level composition with bridge on the lower-left third, soft diffused morning light, muted jade and blue-grey washes with a vermilion focal accent, granulated pigments, fine dry-brush stone texture, quiet open space in the upper sky, -ar 16:9 -v 6.0 -s 250 -no people, text",
+      "adapted": "A small weathered stone arch bridge spanning a narrow stream in a misty mountain valley, one vivid red maple beside the bridge, pale layered mountains receding into fog, delicate transparent watercolor on cold-pressed paper, wide eye-level composition with bridge on the lower-left third, soft diffused morning light, muted jade and blue-grey washes with a vermilion focal accent, granulated pigments, fine dry-brush stone texture, quiet open space in the upper sky. Horizontal 16:9 picture. No people or text."
+    },
+    "cases": [
+      {
+        "name": "output",
+        "refs": [],
+        "prompt": "A small weathered stone arch bridge spanning a narrow stream in a misty mountain valley, one vivid red maple beside the bridge, pale layered mountains receding into fog, delicate transparent watercolor on cold-pressed paper, wide eye-level composition with bridge on the lower-left third, soft diffused morning light, muted jade and blue-grey washes with a vermilion focal accent, granulated pigments, fine dry-brush stone texture, quiet open space in the upper sky. Horizontal 16:9 picture. No people or text.",
+        "reference_material_portable": []
+      }
+    ],
+    "meta_execution": "本会话ChatGPT读取元提示词后执行，非单独模型API；输出已保存，不表示原指定LLM实测",
+    "original_filename": "提示词库/模型工具/[仅参考·3分] MJ提示词生成器system prompt（原Z image页，标题错配）.md",
+    "original_sha256": "b124838bdcb8809a2b1a81b283ad5d8f5c8438f08493608a08b50e784e62e92f",
+    "test_date_timezone": "2026-10-18 Asia/Shanghai",
+    "reference_material_portable": []
+  },
+  "inspection": {
+    "status": "符合要求",
+    "generated": 1,
+    "opened": 1,
+    "checks": [
+      {
+        "requirement": "元输出格式和展开",
+        "result": "符合要求",
+        "evidence": "单行包含主体、环境、媒介、构图、光色和MJ参数；无对话解释。"
+      },
+      {
+        "requirement": "水彩成图",
+        "result": "符合要求",
+        "evidence": "石拱桥在左下，红枫紧邻，层山迷雾、流水、纸纹和灰绿冷色完整，无人物文字。"
+      },
+      {
+        "requirement": "MJ参数效果",
+        "result": "未验证",
+        "evidence": "适配版去掉MJ参数，未调用Midjourney；不得据此判MJv6通过。"
+      }
+    ],
+    "conclusion": "元提示词展开后的水彩最小用例符合视觉要求，仅ChatGPT适配测试。"
+  },
+  "images": [
+    {
+      "file": "results/T069-mj-generator/output.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "904d836bcca9811b3099e8906c7ac7304136cfad8370a469a23a4fe27b0a02b6"
+    }
+  ]
+}
