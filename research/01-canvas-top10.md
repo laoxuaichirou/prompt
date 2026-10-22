@@ -96,4 +96,3 @@
 - 固定版本入口：[README.md](https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/README.md)
 - 核验提交：`b138ff867943ddff6c4c79560e10ab6ee3b5600e`
 - Star观察：`2026-10-22T19:54:35.853818+00:00`；[检索证据](../research/evidence/search/whiteboard__p1.json)；[仓库/许可证据](../research/evidence/repos/plait-board__drawnix.json)
-

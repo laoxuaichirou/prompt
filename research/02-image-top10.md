@@ -96,4 +96,3 @@
 - 固定版本入口：[README_zh.md](https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/3419a50241a107b5c0394fdab4376518dd310b8d/README_zh.md)
 - 核验提交：`3419a50241a107b5c0394fdab4376518dd310b8d`
 - Star观察：`2026-10-22T19:57:14.039520+00:00`；[检索证据](../research/evidence/search/image_prompts_stars_5000__p1.json)；[仓库/许可证据](../research/evidence/repos/YouMind-OpenLab__awesome-gpt-image-2.json)
-

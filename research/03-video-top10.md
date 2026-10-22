@@ -96,4 +96,3 @@
 - 固定版本入口：[short-drama-director/SKILL.md](https://github.com/lixiaoxiao9888-create/manju-laoli-skill/blob/6f16955c57053d77ea0ffbdbbf3a7985a3e0080a/short-drama-director/SKILL.md)
 - 核验提交：`6f16955c57053d77ea0ffbdbbf3a7985a3e0080a`
 - Star观察：`2026-10-22T19:54:37.285852+00:00`；[检索证据](../research/evidence/search/seedance_skill__p1.json)；[仓库/许可证据](../research/evidence/repos/lixiaoxiao9888-create__manju-laoli-skill.json)
-

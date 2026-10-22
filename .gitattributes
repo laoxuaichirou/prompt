@@ -1,0 +1,8 @@
+# Generated media are binary artifacts, not source text.
+*.pdf binary
+*.png binary
+*.mp4 binary
+# Preserve licensed upstream mirrors byte-for-byte, including Markdown hard breaks.
+third_party/** -text -whitespace
+# CSV exports intentionally preserve their recorded bytes and accept CRLF rows.
+*.csv -text whitespace=cr-at-eol
