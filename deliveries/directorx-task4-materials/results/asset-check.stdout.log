@@ -1,0 +1,18 @@
+{
+  "status": "FILES_VERIFIED_WITH_RECORDED_EDIT_LIMITATIONS",
+  "executedAtUTC": "2026-10-22T13:41:58.813541+00:00",
+  "python": "3.12.14",
+  "independentPNGFiles": 10,
+  "realBuiltinImageCalls": 8,
+  "photoOutputs": 8,
+  "technicalMasks": 2,
+  "fileAndMaskChecks": "PASS",
+  "assertions": 92,
+  "strictMaskedEditOutsidePreservation": "FAIL",
+  "nativeMaskAPIValidated": false,
+  "QwenTested": false,
+  "KreaTested": false,
+  "H3Tested": false,
+  "unavailableGeneratedImages": [],
+  "discardedAttempts": []
+}

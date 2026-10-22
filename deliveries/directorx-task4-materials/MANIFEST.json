@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "scope": "Task four: actual GPT image assets and GPT effect references, not Qwen/Krea/H3 tests",
+  "selfHash": "MANIFEST.json excludes itself to avoid circular hashing; all other ZIP entries are listed",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7413,
+      "sha256": "7e0ad45b0cabd31f3081e806dd4c190f74fbe95b493e16d6383f0b14710571a3",
+      "purpose": "使用说明、真实效果审阅或未验证边界"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4305,
+      "sha256": "d591cc697c3c8799898379a84a7f4da4b4e4a5e410889d9984cfd20d9f9b9049",
+      "purpose": "使用说明、真实效果审阅或未验证边界"
+    },
+    {
+      "path": "UNVERIFIED.md",
+      "bytes": 1866,
+      "sha256": "20c6a83cf416a003a411d5ad0c55b39163b1cc4eb9596b7af415954eb7da6e0a",
+      "purpose": "使用说明、真实效果审阅或未验证边界"
+    },
+    {
+      "path": "asset-index.csv",
+      "bytes": 2549,
+      "sha256": "bb98ba13b3c16449662930af6a490ba356d5f4ab5ca09eea58b66ffa258aa293",
+      "purpose": "独立素材ID、来源、尺寸、SHA256、提示词及引用顺序索引"
+    },
+    {
+      "path": "asset-index.json",
+      "bytes": 9420,
+      "sha256": "48cb6ed818f75db4153ae1a7e1258d467d37c645fbe12e505bf264400d543df3",
+      "purpose": "独立素材ID、来源、尺寸、SHA256、提示词及引用顺序索引"
+    },
+    {
+      "path": "assets/masked-local-edit/gpt-effect-reference-attempt-01.png",
+      "bytes": 2610472,
+      "sha256": "8ecd82935a2ebe11e0a747ec53bb1a5a07151355e8198920aee9dd82053355de",
+      "purpose": "真实GPT编辑首轮结果；仅GPT效果参考，包含未达到严格保留条件的结果"
+    },
+    {
+      "path": "assets/masked-local-edit/mask-edit-alpha.png",
+      "bytes": 9897,
+      "sha256": "44dabe953ccd5ea6f042799c0269284229a2e60e9f29efca976b0f709823ebb4",
+      "purpose": "由最终原图实际尺寸和轮廓产生的独立技术蒙版，约定见metadata"
+    },
+    {
+      "path": "assets/masked-local-edit/mask-edit-white.png",
+      "bytes": 2913,
+      "sha256": "05ab7d6517ee5813ced06c0753b4a9c7155684e53ae321485365d7e52a71d1e8",
+      "purpose": "由最终原图实际尺寸和轮廓产生的独立技术蒙版，约定见metadata"
+    },
+    {
+      "path": "assets/masked-local-edit/source-living-room.png",
+      "bytes": 2789577,
+      "sha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+      "purpose": "真实ChatGPT生成的独立原图或参考图，未重编码、未拼图替代"
+    },
+    {
+      "path": "assets/product-background/gpt-effect-reference-attempt-01.png",
+      "bytes": 2040745,
+      "sha256": "58d55742382ed9d561fe0d17781e6bd2863b8295bbf5bf32a7def9776e1d66f4",
+      "purpose": "真实GPT编辑首轮结果；仅GPT效果参考，包含未达到严格保留条件的结果"
+    },
+    {
+      "path": "assets/product-background/reference-background.png",
+      "bytes": 1883659,
+      "sha256": "a3b1987c31aa07234016effd4b8a448d0bdd836067f3c5ba958396cef898d897",
+      "purpose": "真实ChatGPT生成的独立原图或参考图，未重编码、未拼图替代"
+    },
+    {
+      "path": "assets/product-background/source-product.png",
+      "bytes": 1818181,
+      "sha256": "ec1573ba7a09a195370a27d365985a0e1b3f1dc8662c4bcf86d135f227ec2db4",
+      "purpose": "真实ChatGPT生成的独立原图或参考图，未重编码、未拼图替代"
+    },
+    {
+      "path": "assets/two-image-tryon/gpt-effect-reference-attempt-01.png",
+      "bytes": 1823821,
+      "sha256": "945f197ed8836c6886b81d089f3758018e38d8b31e85ff002cdd192dc59956a3",
+      "purpose": "真实GPT编辑首轮结果；仅GPT效果参考，包含未达到严格保留条件的结果"
+    },
+    {
+      "path": "assets/two-image-tryon/reference-jacket.png",
+      "bytes": 2459024,
+      "sha256": "7edc46cef9afd2e36e0f8ee40e138ae5fd61df1b0f8b251f330ba9dc1d07e7d0",
+      "purpose": "真实ChatGPT生成的独立原图或参考图，未重编码、未拼图替代"
+    },
+    {
+      "path": "assets/two-image-tryon/source-person.png",
+      "bytes": 1851540,
+      "sha256": "6001e3b2c0799c9c52d95a968d966d42e3c232bd66ea53b1c3363db79dcf9b25",
+      "purpose": "真实ChatGPT生成的独立原图或参考图，未重编码、未拼图替代"
+    },
+    {
+      "path": "prompts/01-product-source.txt",
+      "bytes": 1247,
+      "sha256": "469c3409953b7735c6e66caba2e1d93cbd3bb11c93ad5c5f70b1b25cb5460745",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/02-background-reference.txt",
+      "bytes": 942,
+      "sha256": "a7673aa88cb6d14bbe6d7d36c5622c1de9ccdb5004994ab044d381ba1cd7cffa",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/03-fictional-adult-source.txt",
+      "bytes": 1167,
+      "sha256": "f77c53b34b97d7aa3a245964db05bfd3775600cd8699690ba92d4409589e7dca",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/04-jacket-reference.txt",
+      "bytes": 1101,
+      "sha256": "da9d9bbdab647c3be3a77b442a4bfb531bf05c42ea41d59f1491ace15de51510",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/05-local-edit-source.txt",
+      "bytes": 1440,
+      "sha256": "0c86f68958b9ba7678d8bc6a7c52789fe49a3e329a166d1016f690def6c66fcc",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/06-product-background-edit.txt",
+      "bytes": 1161,
+      "sha256": "5e4d8de1f295bcea2f6edf692620041c298135a54229185ceb5d610dbcebe347",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/07-two-image-tryon-edit.txt",
+      "bytes": 1504,
+      "sha256": "c3eee74841a819180068cdd99d8800316d613141b4c538ea514a133c4307d2f4",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/08-masked-local-edit.txt",
+      "bytes": 1553,
+      "sha256": "3189011e2d001c572390f9ebdc9b116e73f01f7d0cf9896077722a3c6f16f1b8",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "prompts/复用说明.md",
+      "bytes": 1619,
+      "sha256": "3e898c19e743a2f74072ef8a71aa17327edce2fd16e197b243b6c6e1692ee88d",
+      "purpose": "真实调用提示词或中文复用说明，参考顺序与索引对应"
+    },
+    {
+      "path": "results/asset-check.stdout.log",
+      "bytes": 510,
+      "sha256": "210517cc163e34ec99e079d42690ecb0b084436512806d218040bde3819926c9",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/checks.json",
+      "bytes": 3744,
+      "sha256": "3ddafeed62337124061a786452f0188e289df95eb891183af83bcbad33f2c4d1",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/mask-build.stdout.log",
+      "bytes": 1246,
+      "sha256": "be706992d93b73357aa62fe53f8ef46241bb2f369803fdc618542dea027979a3",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/mask-metadata.json",
+      "bytes": 1246,
+      "sha256": "be706992d93b73357aa62fe53f8ef46241bb2f369803fdc618542dea027979a3",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/masked-edit-diff.json",
+      "bytes": 1073,
+      "sha256": "ebe5ecf807669ac3b6909034bf2fd8671c36313586e0ce1eb6afa2061a52a89e",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/run-log.json",
+      "bytes": 506,
+      "sha256": "313199a290ccf88ed6dce39263b46886b03db9e3d1282481bbf2576596290090",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "results/tool-calls.json",
+      "bytes": 3212,
+      "sha256": "b532b83a42d6c0f8083cda0925ea9f191f10b34a8ed6f32d109f2784abfa03c7",
+      "purpose": "本次实际调用记录、文件/蒙版检查、失败差异或日志"
+    },
+    {
+      "path": "tools/check_assets.py",
+      "bytes": 6367,
+      "sha256": "05e3917f88b46cc62571d253dd4569ec421c528b5b601de6cdbf2cc2b46a248a",
+      "purpose": "技术蒙版/只读诊断/哈希检查或打包脚本，不调用生成服务"
+    },
+    {
+      "path": "tools/make_mask.py",
+      "bytes": 3543,
+      "sha256": "7ef171d1040293a1048ee893c39dae1fd6d1c10a8fff035dc1a653bd299545a4",
+      "purpose": "技术蒙版/只读诊断/哈希检查或打包脚本，不调用生成服务"
+    },
+    {
+      "path": "tools/package.py",
+      "bytes": 2371,
+      "sha256": "4e72cf32d506d78579fef9345962a9ec25738273eb5bf179c800289f3121672b",
+      "purpose": "技术蒙版/只读诊断/哈希检查或打包脚本，不调用生成服务"
+    },
+    {
+      "path": "tools/run_checks.py",
+      "bytes": 1193,
+      "sha256": "cd2d49c9112f8d89bd20da128c4c6021d28917f96d098b2a63d7a9264be4f1d2",
+      "purpose": "技术蒙版/只读诊断/哈希检查或打包脚本，不调用生成服务"
+    },
+    {
+      "path": "tools/verify_manifest.py",
+      "bytes": 645,
+      "sha256": "ffb364d559408b67d5e159f536a33e7738eadacc9a83d60013926c3328f0f0af",
+      "purpose": "技术蒙版/只读诊断/哈希检查或打包脚本，不调用生成服务"
+    }
+  ]
+}

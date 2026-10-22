@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "title": "任务四独立测试素材",
+  "scope": "真实GPT生图及GPT效果参考；不代表Qwen/Krea/H3测试",
+  "fictionalAdult": "所有人物均按约32岁虚构成年人生成；没有使用真实人物照片",
+  "fictionalBrand": "NIVOXA-47为本次新设虚构测试品牌；未作商标唯一性检索",
+  "assets": [
+    {
+      "id": "A01",
+      "scenario": "product-background",
+      "role": "source",
+      "description": "虚构原创品牌商品原图",
+      "path": "assets/product-background/source-product.png",
+      "sha256": "ec1573ba7a09a195370a27d365985a0e1b3f1dc8662c4bcf86d135f227ec2db4",
+      "bytes": 1818181,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G01",
+      "prompt": "prompts/01-product-source.txt",
+      "actualReferenceOrder": [],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A02",
+      "scenario": "product-background",
+      "role": "reference",
+      "description": "商品换背景参考图（空场景）",
+      "path": "assets/product-background/reference-background.png",
+      "sha256": "a3b1987c31aa07234016effd4b8a448d0bdd836067f3c5ba958396cef898d897",
+      "bytes": 1883659,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G02",
+      "prompt": "prompts/02-background-reference.txt",
+      "actualReferenceOrder": [],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A03",
+      "scenario": "two-image-tryon",
+      "role": "source",
+      "description": "生成的虚构成年人人物原图，设定约32岁",
+      "path": "assets/two-image-tryon/source-person.png",
+      "sha256": "6001e3b2c0799c9c52d95a968d966d42e3c232bd66ea53b1c3363db79dcf9b25",
+      "bytes": 1851540,
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G03",
+      "prompt": "prompts/03-fictional-adult-source.txt",
+      "actualReferenceOrder": [],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A04",
+      "scenario": "two-image-tryon",
+      "role": "reference",
+      "description": "原创夹克款式参考图",
+      "path": "assets/two-image-tryon/reference-jacket.png",
+      "sha256": "7edc46cef9afd2e36e0f8ee40e138ae5fd61df1b0f8b251f330ba9dc1d07e7d0",
+      "bytes": 2459024,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G04",
+      "prompt": "prompts/04-jacket-reference.txt",
+      "actualReferenceOrder": [],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A05",
+      "scenario": "masked-local-edit",
+      "role": "source",
+      "description": "蒙版绑定的最终客厅原图",
+      "path": "assets/masked-local-edit/source-living-room.png",
+      "sha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+      "bytes": 2789577,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G05",
+      "prompt": "prompts/05-local-edit-source.txt",
+      "actualReferenceOrder": [],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A06",
+      "scenario": "product-background",
+      "role": "gpt-effect-reference",
+      "description": "GPT效果参考：换背景第一次结果",
+      "path": "assets/product-background/gpt-effect-reference-attempt-01.png",
+      "sha256": "58d55742382ed9d561fe0d17781e6bd2863b8295bbf5bf32a7def9776e1d66f4",
+      "bytes": 2040745,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G06",
+      "prompt": "prompts/06-product-background-edit.txt",
+      "actualReferenceOrder": [
+        {
+          "path": "assets/product-background/source-product.png",
+          "sha256": "ec1573ba7a09a195370a27d365985a0e1b3f1dc8662c4bcf86d135f227ec2db4"
+        },
+        {
+          "path": "assets/product-background/reference-background.png",
+          "sha256": "a3b1987c31aa07234016effd4b8a448d0bdd836067f3c5ba958396cef898d897"
+        }
+      ],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A07",
+      "scenario": "two-image-tryon",
+      "role": "gpt-effect-reference",
+      "description": "GPT效果参考：双图换装第一次结果",
+      "path": "assets/two-image-tryon/gpt-effect-reference-attempt-01.png",
+      "sha256": "945f197ed8836c6886b81d089f3758018e38d8b31e85ff002cdd192dc59956a3",
+      "bytes": 1823821,
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G07",
+      "prompt": "prompts/07-two-image-tryon-edit.txt",
+      "actualReferenceOrder": [
+        {
+          "path": "assets/two-image-tryon/source-person.png",
+          "sha256": "6001e3b2c0799c9c52d95a968d966d42e3c232bd66ea53b1c3363db79dcf9b25"
+        },
+        {
+          "path": "assets/two-image-tryon/reference-jacket.png",
+          "sha256": "7edc46cef9afd2e36e0f8ee40e138ae5fd61df1b0f8b251f330ba9dc1d07e7d0"
+        }
+      ],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A08",
+      "scenario": "masked-local-edit",
+      "role": "gpt-effect-reference",
+      "description": "GPT效果参考：局部改色第一次结果，严格区外保留失败",
+      "path": "assets/masked-local-edit/gpt-effect-reference-attempt-01.png",
+      "sha256": "8ecd82935a2ebe11e0a747ec53bb1a5a07151355e8198920aee9dd82053355de",
+      "bytes": 2610472,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "creation": "ChatGPT built-in image generation/editing",
+      "callId": "G08",
+      "prompt": "prompts/08-masked-local-edit.txt",
+      "actualReferenceOrder": [
+        {
+          "path": "assets/masked-local-edit/source-living-room.png",
+          "sha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63"
+        },
+        {
+          "path": "assets/masked-local-edit/mask-edit-white.png",
+          "sha256": "05ab7d6517ee5813ced06c0753b4a9c7155684e53ae321485365d7e52a71d1e8"
+        }
+      ],
+      "modelVersion": "not exposed by tool",
+      "seed": "not exposed",
+      "rawToolOutputCopiedWithoutReencoding": true
+    },
+    {
+      "id": "A09",
+      "scenario": "masked-local-edit",
+      "role": "mask",
+      "description": "黑底白编辑区二值蒙版",
+      "path": "assets/masked-local-edit/mask-edit-white.png",
+      "sha256": "05ab7d6517ee5813ced06c0753b4a9c7155684e53ae321485365d7e52a71d1e8",
+      "bytes": 2913,
+      "width": 1254,
+      "height": 1254,
+      "mode": "L",
+      "creation": "technical mask made from actual finalized source; no photo edit",
+      "sourceAsset": "A05",
+      "sourceSha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+      "reproductionScript": "tools/make_mask.py",
+      "maskMetadata": "results/mask-metadata.json"
+    },
+    {
+      "id": "A10",
+      "scenario": "masked-local-edit",
+      "role": "mask",
+      "description": "透明编辑区alpha蒙版，未作为本次工具参数使用",
+      "path": "assets/masked-local-edit/mask-edit-alpha.png",
+      "sha256": "44dabe953ccd5ea6f042799c0269284229a2e60e9f29efca976b0f709823ebb4",
+      "bytes": 9897,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "creation": "technical mask made from actual finalized source; no photo edit",
+      "sourceAsset": "A05",
+      "sourceSha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+      "reproductionScript": "tools/make_mask.py",
+      "maskMetadata": "results/mask-metadata.json"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "product-background",
+      "source": "A01",
+      "reference": "A02",
+      "actualToolInputOrder": [
+        "A01",
+        "A02"
+      ],
+      "gptEffectReference": "A06",
+      "editCallId": "G06"
+    },
+    {
+      "id": "two-image-tryon",
+      "source": "A03",
+      "reference": "A04",
+      "actualToolInputOrder": [
+        "A03",
+        "A04"
+      ],
+      "gptEffectReference": "A07",
+      "editCallId": "G07"
+    },
+    {
+      "id": "masked-local-edit",
+      "source": "A05",
+      "binaryMask": "A09",
+      "alphaMask": "A10",
+      "actualToolInputOrder": [
+        "A05",
+        "A09"
+      ],
+      "gptEffectReference": "A08",
+      "editCallId": "G08",
+      "nativeMaskParameterUsed": false
+    }
+  ],
+  "unavailableGeneratedImages": [],
+  "discardedAttempts": [],
+  "note": "每张图片为独立PNG，无拼图替代；8次工具输出全部保留，mask由最终A05制作。"
+}

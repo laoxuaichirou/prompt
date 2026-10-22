@@ -1,0 +1,24 @@
+{
+  "executedAtUTC": "2026-10-22T13:41:58.823484+00:00",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "tools/make_mask.py"
+      ],
+      "exitCode": 0,
+      "stdout": "results/mask-build.stdout.log",
+      "stderr": null
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_assets.py"
+      ],
+      "exitCode": 0,
+      "stdout": "results/asset-check.stdout.log",
+      "stderr": null
+    }
+  ],
+  "status": "FILE_AND_MASK_CHECKS_PASS_WITH_RECORDED_EDIT_FAILURE"
+}

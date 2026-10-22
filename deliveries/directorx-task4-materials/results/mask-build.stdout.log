@@ -1,0 +1,41 @@
+{
+  "source": "assets/masked-local-edit/source-living-room.png",
+  "sourceSha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+  "width": 1254,
+  "height": 1254,
+  "coordinateSystem": "pixel origin top-left, x right, y down; bounds are [left, top, rightExclusive, bottomExclusive]",
+  "inspectedROI": [
+    450,
+    390,
+    820,
+    710
+  ],
+  "seedPixel": [
+    620,
+    500
+  ],
+  "editBoundingBox": [
+    466,
+    409,
+    787,
+    673
+  ],
+  "editPixels": 63073,
+  "editFraction": 0.0401096077877745,
+  "binaryMask": {
+    "path": "assets/masked-local-edit/mask-edit-white.png",
+    "mode": "L",
+    "editValue": 255,
+    "preserveValue": 0,
+    "featherPixels": 0
+  },
+  "alphaMask": {
+    "path": "assets/masked-local-edit/mask-edit-alpha.png",
+    "mode": "RGBA",
+    "editAlpha": 0,
+    "preserveAlpha": 255,
+    "rgb": "white constant"
+  },
+  "method": "Actual source RGB segmentation in visually inspected cushion ROI, connected component at seed, fill enclosed holes, one-pixel edge inclusion; no photograph was recolored or composited.",
+  "toolContract": "GPT image editing used the binary mask as a reference image only; no native mask parameter was available, so hard pixel preservation is not claimed."
+}

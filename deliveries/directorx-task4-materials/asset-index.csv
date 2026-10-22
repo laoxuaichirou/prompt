@@ -1,0 +1,11 @@
+﻿id,scenario,role,description,path,width,height,mode,bytes,sha256,prompt_or_script
+A01,product-background,source,虚构原创品牌商品原图,assets/product-background/source-product.png,1254,1254,RGB,1818181,ec1573ba7a09a195370a27d365985a0e1b3f1dc8662c4bcf86d135f227ec2db4,prompts/01-product-source.txt
+A02,product-background,reference,商品换背景参考图（空场景）,assets/product-background/reference-background.png,1254,1254,RGB,1883659,a3b1987c31aa07234016effd4b8a448d0bdd836067f3c5ba958396cef898d897,prompts/02-background-reference.txt
+A03,two-image-tryon,source,生成的虚构成年人人物原图，设定约32岁,assets/two-image-tryon/source-person.png,1024,1536,RGB,1851540,6001e3b2c0799c9c52d95a968d966d42e3c232bd66ea53b1c3363db79dcf9b25,prompts/03-fictional-adult-source.txt
+A04,two-image-tryon,reference,原创夹克款式参考图,assets/two-image-tryon/reference-jacket.png,1254,1254,RGB,2459024,7edc46cef9afd2e36e0f8ee40e138ae5fd61df1b0f8b251f330ba9dc1d07e7d0,prompts/04-jacket-reference.txt
+A05,masked-local-edit,source,蒙版绑定的最终客厅原图,assets/masked-local-edit/source-living-room.png,1254,1254,RGB,2789577,c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63,prompts/05-local-edit-source.txt
+A06,product-background,gpt-effect-reference,GPT效果参考：换背景第一次结果,assets/product-background/gpt-effect-reference-attempt-01.png,1254,1254,RGB,2040745,58d55742382ed9d561fe0d17781e6bd2863b8295bbf5bf32a7def9776e1d66f4,prompts/06-product-background-edit.txt
+A07,two-image-tryon,gpt-effect-reference,GPT效果参考：双图换装第一次结果,assets/two-image-tryon/gpt-effect-reference-attempt-01.png,1024,1536,RGB,1823821,945f197ed8836c6886b81d089f3758018e38d8b31e85ff002cdd192dc59956a3,prompts/07-two-image-tryon-edit.txt
+A08,masked-local-edit,gpt-effect-reference,GPT效果参考：局部改色第一次结果，严格区外保留失败,assets/masked-local-edit/gpt-effect-reference-attempt-01.png,1254,1254,RGB,2610472,8ecd82935a2ebe11e0a747ec53bb1a5a07151355e8198920aee9dd82053355de,prompts/08-masked-local-edit.txt
+A09,masked-local-edit,mask,黑底白编辑区二值蒙版,assets/masked-local-edit/mask-edit-white.png,1254,1254,L,2913,05ab7d6517ee5813ced06c0753b4a9c7155684e53ae321485365d7e52a71d1e8,tools/make_mask.py
+A10,masked-local-edit,mask,透明编辑区alpha蒙版，未作为本次工具参数使用,assets/masked-local-edit/mask-edit-alpha.png,1254,1254,RGBA,9897,44dabe953ccd5ea6f042799c0269284229a2e60e9f29efca976b0f709823ebb4,tools/make_mask.py

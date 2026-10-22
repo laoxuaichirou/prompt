@@ -1,0 +1,29 @@
+{
+  "scope": "GPT效果参考；逐像素差异诊断，不是Qwen/Krea/H3测试或感知质量评分",
+  "inputSha256": "c23dbd3648f42d05fe198dfcde9585fcf38080923294e3e3d6802152e2ce1e63",
+  "outputSha256": "8ecd82935a2ebe11e0a747ec53bb1a5a07151355e8198920aee9dd82053355de",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "nativeMaskParameterUsed": false,
+  "maskAsImageReference": true,
+  "insidePixels": 63073,
+  "outsidePixels": 1509443,
+  "outsidePixelsAnyChange": 1492830,
+  "outsideFractionAnyChange": 0.988993953398704,
+  "outsidePixelsMaxChannelDiffAbove16": 151512,
+  "outsideFractionMaxChannelDiffAbove16": 0.10037609899810725,
+  "outsideMeanAbsoluteRGBDifference": [
+    5.059154933309837,
+    5.916961422193484,
+    5.585918116815275
+  ],
+  "insideMeanAbsoluteRGBDifference": [
+    125.24454203859021,
+    27.233459642002124,
+    51.255893964136796
+  ],
+  "strictOutsidePixelPreservation": "FAIL",
+  "interpretation": "中心抱枕变蓝，但非蒙版区域也被重绘；保留第一次结果作为局部硬约束不理想样例，不作后期贴回掩饰。"
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "G01",
+    "operation": "generate",
+    "label": "GPT生成原图",
+    "asset": "assets/product-background/source-product.png",
+    "prompt": "prompts/01-product-source.txt",
+    "references": [],
+    "toolOutputPath": "/workspace/generated_images/exec-b71d9959-f7f3-4325-bdcd-5caafa4b3d78.png"
+  },
+  {
+    "id": "G02",
+    "operation": "generate",
+    "label": "GPT生成原图或参考图",
+    "asset": "assets/product-background/reference-background.png",
+    "prompt": "prompts/02-background-reference.txt",
+    "references": [],
+    "toolOutputPath": "/workspace/generated_images/exec-57fe85b7-64f1-4756-a05e-7c1f4e616b79.png"
+  },
+  {
+    "id": "G03",
+    "operation": "generate",
+    "label": "GPT生成原图或参考图",
+    "asset": "assets/two-image-tryon/source-person.png",
+    "prompt": "prompts/03-fictional-adult-source.txt",
+    "references": [],
+    "toolOutputPath": "/workspace/generated_images/exec-7a21438d-0828-4e23-8dc8-3aa447487cb8.png"
+  },
+  {
+    "id": "G04",
+    "operation": "generate",
+    "label": "GPT生成原图或参考图",
+    "asset": "assets/two-image-tryon/reference-jacket.png",
+    "prompt": "prompts/04-jacket-reference.txt",
+    "references": [],
+    "toolOutputPath": "/workspace/generated_images/exec-018fa388-6e8f-4a8f-b3ab-27ca287cf096.png"
+  },
+  {
+    "id": "G05",
+    "operation": "generate",
+    "label": "GPT生成原图或参考图",
+    "asset": "assets/masked-local-edit/source-living-room.png",
+    "prompt": "prompts/05-local-edit-source.txt",
+    "references": [],
+    "toolOutputPath": "/workspace/generated_images/exec-acac3e17-ae5c-4105-b68f-44d889eab567.png"
+  },
+  {
+    "id": "G06",
+    "operation": "edit",
+    "label": "GPT效果参考",
+    "asset": "assets/product-background/gpt-effect-reference-attempt-01.png",
+    "prompt": "prompts/06-product-background-edit.txt",
+    "references": [
+      "assets/product-background/source-product.png",
+      "assets/product-background/reference-background.png"
+    ],
+    "transparent_background": false,
+    "toolOutputPath": "/workspace/generated_images/exec-fd32b36d-c615-4dbf-a861-505b1f90334e.png",
+    "nativeMaskParameterUsed": false
+  },
+  {
+    "id": "G07",
+    "operation": "edit",
+    "label": "GPT效果参考",
+    "asset": "assets/two-image-tryon/gpt-effect-reference-attempt-01.png",
+    "prompt": "prompts/07-two-image-tryon-edit.txt",
+    "references": [
+      "assets/two-image-tryon/source-person.png",
+      "assets/two-image-tryon/reference-jacket.png"
+    ],
+    "transparent_background": false,
+    "toolOutputPath": "/workspace/generated_images/exec-85a820ac-f31c-49eb-9db6-93d411e8d839.png",
+    "nativeMaskParameterUsed": false
+  },
+  {
+    "id": "G08",
+    "operation": "edit",
+    "label": "GPT效果参考",
+    "asset": "assets/masked-local-edit/gpt-effect-reference-attempt-01.png",
+    "prompt": "prompts/08-masked-local-edit.txt",
+    "references": [
+      "assets/masked-local-edit/source-living-room.png",
+      "assets/masked-local-edit/mask-edit-white.png"
+    ],
+    "transparent_background": false,
+    "toolOutputPath": "/workspace/generated_images/exec-011ab8c9-09d3-4e10-937a-74741a32aa7a.png",
+    "nativeMaskParameterUsed": false
+  }
+]
