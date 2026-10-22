@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-13",
+  "name": "细腻肌理",
+  "version": "B",
+  "prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修细腻肌理：在原脸上保留并清楚呈现自然毛孔、浅细绒毛与极细皮肤纹理，毛孔微对比明显但不粗糙，不增加皱纹/年龄/雀斑/疤痕。不磨皮，不人为锐化眼睛衣服背景，保持原生肤色和原表情。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "c223923bc4c808e19c9e67fd5c4664a0ed02cfd0d6dfa686939fc55f66498b3f",
+  "path": "/workspace/generated_images/exec-f297b87b-b7ba-43df-93ee-abac81440064.png",
+  "started_at_utc": "2026-10-22T16:06:39.254Z",
+  "completed_at_utc": "2026-10-22T16:10:20.276Z",
+  "tool": "image_gen.imagegen"
+}

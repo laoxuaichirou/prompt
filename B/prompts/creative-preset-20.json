@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-20",
+  "name": "4视图",
+  "version": "B",
+  "prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。 同一原创成年角色正侧背全身及面部特写，2×2排列。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版四视图：居中的2×2等格图组，整个图组外侧至少10%浅灰空白。左上正面全身，右上左侧全身，左下背面全身，右下面部特写。前三格头脚完整，留内部空隙。只有第四格是头像。单肩包从人物右肩斜跨至左髋，正面包在画面右、背面包在画面左；同一包形、棕色扣带和裤子口袋，衣领无标签，四格身份不漂移。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-character.png"
+  ],
+  "base_asset": "base-character",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "ae63bf2c929c24c6b0defd3c9fab5d85a08f805bcf6e3c318b7d198c58e7e531"
+}

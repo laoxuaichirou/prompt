@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-8",
+  "name": "胶片颗粒",
+  "version": "B",
+  "prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版真实颗粒：保留参考中性颜色与曝光，只有细密不规则、亮暗相关的胶片银盐颗粒增加，肤毛、胡须、布料仍自然。颗粒是细微材质，不是彩色坏点、脏污或破损胶片，不产生大斑点。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-scene.png"
+  ],
+  "base_asset": "base-scene",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "52cbb9b3a3dfe9e7a4b82dff982615a4b2d417f779919f6f90deb32c9f1d918a",
+  "path": "/workspace/generated_images/exec-bfe79e55-3bf5-44bb-b4f0-4f1f19a9f926.png",
+  "started_at_utc": "2026-10-22T16:06:39.254Z",
+  "completed_at_utc": "2026-10-22T16:07:03.150Z",
+  "tool": "image_gen.imagegen"
+}

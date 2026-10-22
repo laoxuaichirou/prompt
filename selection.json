@@ -1,0 +1,546 @@
+{
+  "schema": "directorx-assistant-ab-selection/1",
+  "selection_is_not_canvas_integration": true,
+  "items": [
+    {
+      "asset_id": "creative-preset-0",
+      "name": "柯达",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-0",
+        "name": "柯达",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "主观偏好A：暖胶片与金色高光意图更鲜明；B较柔和，但改善不足以替换A。两版都保留。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-0.png",
+      "thumbnail": "selected/thumbs/creative-preset-0.webp",
+      "card": "selected/cards/creative-preset-0.webp",
+      "sha256": "2da3862eb1016420b906fe4e6746c57849ebf519477325c8a2e6029fc559c179",
+      "source_master": "A/masters/creative-preset-0.png"
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "name": "富士",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-1",
+        "name": "富士",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B的冷蓝窗光与清爽绿色更明确，肤色仍自然，和暖色滤镜区分更清楚。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-1.png",
+      "thumbnail": "selected/thumbs/creative-preset-1.webp",
+      "card": "selected/cards/creative-preset-1.webp",
+      "sha256": "d8e882d6bab528bb43dba10411248c22cfa187eecf493cd3b14b47294b20da2e",
+      "source_master": "B/masters/creative-preset-1.png"
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "name": "伊尔福",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-2",
+        "name": "伊尔福",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "主观偏好A的中灰与细颗粒；B也符合黑白意图，但面部亮度更高，未形成明确优势。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-2.png",
+      "thumbnail": "selected/thumbs/creative-preset-2.webp",
+      "card": "selected/cards/creative-preset-2.webp",
+      "sha256": "c79fdbe7c5cf29be6578660e78b8e82f5f33a73ba5fafa3170adb902a83fb0aa",
+      "source_master": "A/masters/creative-preset-2.png"
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "name": "电影胶片",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-3",
+        "name": "电影胶片",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B的冷青灰阴影和克制饱和度更符合负片意图，也更容易与暖黄复古图区分。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-3.png",
+      "thumbnail": "selected/thumbs/creative-preset-3.webp",
+      "card": "selected/cards/creative-preset-3.webp",
+      "sha256": "3d5488470325fe31da1402cc3733543e71d398d5d49584647f39c29f6e96a7ec",
+      "source_master": "B/masters/creative-preset-3.png"
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "name": "宝丽来",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-4",
+        "name": "宝丽来",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B的乳白高光、褪色和柔和反差更清晰，和柯达暖调有更明显区别。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-4.png",
+      "thumbnail": "selected/thumbs/creative-preset-4.webp",
+      "card": "selected/cards/creative-preset-4.webp",
+      "sha256": "d9de74f8c813847b775fcd20b5fc3c9efeca10255e833e0d0b388d006a996da4",
+      "source_master": "B/masters/creative-preset-4.png"
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "name": "电影光效",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-5",
+        "name": "电影光效",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B通过负补光和较暗背景形成层次，和单纯暖色调区别更清楚；人物仍可读。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-5.png",
+      "thumbnail": "selected/thumbs/creative-preset-5.webp",
+      "card": "selected/cards/creative-preset-5.webp",
+      "sha256": "e2e148461dc48afaef38f79dc91e842a8720b4c389fc04ca6fa4dde43d329ff7",
+      "source_master": "B/masters/creative-preset-5.png"
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "name": "HDR",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-6",
+        "name": "HDR",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B的衣服暗部略提升，但窗外高光恢复及宽容度扩展仍不够明确，不能只凭变亮认定HDR意图完成。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "name": "柔焦效果",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-7",
+        "name": "柔焦效果",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "选A：B白杯与桌面高光扩散过强，杯口细节受损；A更接近轻微扩散镜要求。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-7.png",
+      "thumbnail": "selected/thumbs/creative-preset-7.webp",
+      "card": "selected/cards/creative-preset-7.webp",
+      "sha256": "562334b3d3807ea2c8a8422151e746bfa2d3d1adc0af6ee616ff0b5f4057ff09",
+      "source_master": "A/masters/creative-preset-7.png"
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "name": "胶片颗粒",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-8",
+        "name": "胶片颗粒",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B在原尺寸下颗粒更明确，同时保留胡须和布料；缩略图没有被粗噪点淹没。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-8.png",
+      "thumbnail": "selected/thumbs/creative-preset-8.webp",
+      "card": "selected/cards/creative-preset-8.webp",
+      "sha256": "18247cc70cf769ad478c54022d73d0bf99a0c7e999a20a0471b004ca901b2ab9",
+      "source_master": "B/masters/creative-preset-8.png"
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "name": "赛博朋克",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-9",
+        "name": "赛博朋克",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "主观偏好A：青红对照和肤色更均衡；B的右后方红色覆盖更强，可作为更强烈的备选。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-9.png",
+      "thumbnail": "selected/thumbs/creative-preset-9.webp",
+      "card": "selected/cards/creative-preset-9.webp",
+      "sha256": "a3ee1805915b7b12c5148aaafdd910c93c80a9e01f4a7e129338cab463056edc",
+      "source_master": "A/masters/creative-preset-9.png"
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "name": "复古色调",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-10",
+        "name": "复古色调",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "A的褪色、暖黄与低饱和阴影更容易辨认；B较清晰鲜亮，与柯达暖调接近。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-10.png",
+      "thumbnail": "selected/thumbs/creative-preset-10.webp",
+      "card": "selected/cards/creative-preset-10.webp",
+      "sha256": "dd791eb13298fb777211cf42be8560dc182a1445cca0d684d01447a66ef445be",
+      "source_master": "A/masters/creative-preset-10.png"
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "name": "清透美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-11",
+        "name": "清透美颜",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B原尺寸更均匀清透，但六种肤质在640缩略图中的区别仍不足；没有用换脸或换取景制造差别。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "name": "柔肤美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-12",
+        "name": "柔肤美颜",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B有局部柔化，原尺寸可见，但缩略图仍不能清楚传达本项与奶油肌/柔化的差别。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "name": "细腻肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-13",
+        "name": "细腻肌理",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：原尺寸下A的纹理甚至更明确，B没有充分强化细腻肌理，小图也难以区分。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "name": "奶油肌",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-14",
+        "name": "奶油肌",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B原尺寸更柔润均匀，但缩略图与柔肤仍相近；不能只因肤色略亮就选B。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "name": "柔化质感",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-15",
+        "name": "柔化质感",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B的高频柔化效果没有清晰超越A，缩略图与其余肤质缺乏稳定区别。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "name": "哑光肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-16",
+        "name": "哑光肌理",
+        "slot": "filter"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B定向重试后油亮点有所控制，但小图中的哑光特征仍不够明确，不能以原尺寸局部裁切代替卡片验收。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "name": "全景图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-17",
+        "name": "全景图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": null,
+      "status": "both_need_revision",
+      "reason": "两版都待返修：B移开了边缘家具，接缝颜色更易检查，但墙顶曲线接合仍有拐折，未完成360无缝认定；B仅可作全景构图参考。",
+      "generated_by": null,
+      "master": null,
+      "thumbnail": null,
+      "card": null,
+      "sha256": null,
+      "source_master": null
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "name": "多机位九宫格",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-18",
+        "name": "多机位九宫格",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B定向修正后首排侧视明确，3×3等格且外侧留白更完整，九种机位/景别意图可辨。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-18.png",
+      "thumbnail": "selected/thumbs/creative-preset-18.webp",
+      "card": "selected/cards/creative-preset-18.webp",
+      "sha256": "dadf4142a8d262dbaea506e9617e28baca7c02a53a516e69cbee6a4b15407601",
+      "source_master": "B/masters/creative-preset-18.png"
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "name": "人物三视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-19",
+        "name": "人物三视图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B重试后头脚完整，上下留白显著改善，正侧背等高且包的身体侧位置可辨，优于A的紧构图。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-19.png",
+      "thumbnail": "selected/thumbs/creative-preset-19.webp",
+      "card": "selected/cards/creative-preset-19.webp",
+      "sha256": "5478178b3a47ab4ccfef03bca6ea39f45be1aac1d4cc7933eaeff346d97ac770",
+      "source_master": "B/masters/creative-preset-19.png"
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "name": "4视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-20",
+        "name": "4视图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B的2×2图组增加外侧空间，正侧背与头像分工更明确，全身三格头脚完整。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-20.png",
+      "thumbnail": "selected/thumbs/creative-preset-20.webp",
+      "card": "selected/cards/creative-preset-20.webp",
+      "sha256": "901668f58242492f82146eeabac776a118350b64209c3f28be91d97aaca4b1b9",
+      "source_master": "B/masters/creative-preset-20.png"
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "name": "人物设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-21",
+        "name": "人物设计图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B简化为单一全身主视图加关键细节，小图用途更清楚，去掉了A中衣领的微小伪标签。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-21.png",
+      "thumbnail": "selected/thumbs/creative-preset-21.webp",
+      "card": "selected/cards/creative-preset-21.webp",
+      "sha256": "0b913ae8dacce926415fb5be9f4afc78ef3311ca98196f86fb9829da9085e52b",
+      "source_master": "B/masters/creative-preset-21.png"
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "name": "场景设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-22",
+        "name": "场景设计图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B保留同一湖畔咖啡馆，去掉难匹配的剖切模型，整体、室内与三种材质关系更简洁。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-22.png",
+      "thumbnail": "selected/thumbs/creative-preset-22.webp",
+      "card": "selected/cards/creative-preset-22.webp",
+      "sha256": "2403a3e50484640a9256544ad2e70fe0a88a7c163a7f2f503fb29289ca6d9acb",
+      "source_master": "B/masters/creative-preset-22.png"
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "name": "道具设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-23",
+        "name": "道具设计图",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B正侧背与简单壳体拆解更清楚，减少复杂假机芯和杂乱细节，表冠和铰链方向总体对应。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-23.png",
+      "thumbnail": "selected/thumbs/creative-preset-23.webp",
+      "card": "selected/cards/creative-preset-23.webp",
+      "sha256": "694d033cc91416983238831a1689644b752168fe72ba643edf6dba85485e6f86",
+      "source_master": "B/masters/creative-preset-23.png"
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "name": "3秒后",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-24",
+        "name": "3秒后",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "选A：A举杯动作和杯体更明确；B虽然左手保持下垂，但杯把/持握关系不清，疑似改变原杯形。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-24.png",
+      "thumbnail": "selected/thumbs/creative-preset-24.webp",
+      "card": "selected/cards/creative-preset-24.webp",
+      "sha256": "4e29ab7ddcc0b914490c966233b3ebc7aa82df671357f1574abb2bec42d0fe0e",
+      "source_master": "A/masters/creative-preset-24.png"
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "name": "5秒前",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-25",
+        "name": "5秒前",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "A",
+      "status": "selected_candidate",
+      "reason": "A已能明确表现尚未伸手的前态，B与A非常接近，没有明确替换收益，保留A。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-25.png",
+      "thumbnail": "selected/thumbs/creative-preset-25.webp",
+      "card": "selected/cards/creative-preset-25.webp",
+      "sha256": "ace1b05665d090c7b8103d3211edb262dd7d646c3962ac60e8ad7f34c579310c",
+      "source_master": "A/masters/creative-preset-25.png"
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "name": "电影级光影校正",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-26",
+        "name": "电影级光影校正",
+        "slot": "preset"
+      },
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "selected_version": "B",
+      "status": "selected_candidate",
+      "reason": "B更有效校正整体偏橙，白杯与白衣更接近中性，窗光与背景暗部层次清楚。",
+      "generated_by": "ChatGPT",
+      "master": "selected/masters/creative-preset-26.png",
+      "thumbnail": "selected/thumbs/creative-preset-26.webp",
+      "card": "selected/cards/creative-preset-26.webp",
+      "sha256": "9362630623acac56681e8a8baf96f2fe81efbad1116891bcaefb16ab356ef4c7",
+      "source_master": "B/masters/creative-preset-26.png"
+    }
+  ]
+}

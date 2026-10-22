@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-6",
+  "name": "HDR",
+  "version": "B",
+  "prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修HDR：在不改变白平衡的情况下，恢复窗外高光细节、白杯釉面细节，显著提起橄榄绿衣服阴影褶皱、椅子及右后墙暗部细节，同时保留明暗主次和自然黑位。局部宽容度扩展应在640小图中可读，禁止灰雾、夸张锐化和轮廓光晕。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-scene.png"
+  ],
+  "base_asset": "base-scene",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "31b7dfd8661477d644f49220f49af3c81a4a99a4a33527144301b89e3c8c8493",
+  "path": "/workspace/generated_images/exec-67ef99f5-1c5c-4a76-a2f1-1abf284abd03.png",
+  "started_at_utc": "2026-10-22T16:03:06.847Z",
+  "completed_at_utc": "2026-10-22T16:05:47.809Z",
+  "tool": "image_gen.imagegen"
+}

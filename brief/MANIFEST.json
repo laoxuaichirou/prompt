@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "asset-requests.json",
+      "sha256": "62c4046ff39cdf6378db983042fe8ccdc11ac8c397cf59b9ba5b7629be87634d",
+      "bytes": 48963
+    },
+    {
+      "path": "existing-inventory.json",
+      "sha256": "b8b4c66de9de8e6dc4a4674beed2e7562d2d30320da1f8b33cc53c457dd58491",
+      "bytes": 44790
+    },
+    {
+      "path": "LICENSE.upstream",
+      "sha256": "a99da262f66cb0d3881991d9f79d690db18f83f84d22fde5e56ee43eea9151bf",
+      "bytes": 11561
+    },
+    {
+      "path": "production-list.csv",
+      "sha256": "0fbfaf4ce4652de963868cb716d273e8aa1e620cd5251fcad3d2ef56aaba53d8",
+      "bytes": 10456
+    },
+    {
+      "path": "README.md",
+      "sha256": "bce709f9a7bf350fc0a7e2b9bfa4f738bd8dece4093437685df307ad49eafaf1",
+      "bytes": 251
+    },
+    {
+      "path": "先读我_网页GPT任务.md",
+      "sha256": "fc628e0dd12f58f7144d5acf8b8ded5be179ca7b2e5cafc3d62249cfd963c346",
+      "bytes": 3987
+    }
+  ]
+}

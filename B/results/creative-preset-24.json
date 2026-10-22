@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-24",
+  "name": "3秒后",
+  "version": "B",
+  "prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。 以统一动作底图为参考：成年人在桌边伸手拿杯，推演接下来的自然状态；保留人物/杯子/背景。交付before和after两张独立原图。3秒只是情境设定，不能声称真实时间测量。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版动作后态：从同一伸手底图推演到成年男子右手稳稳握住原白杯把手，将杯子刚刚抬离原杯碟约20厘米、停在胸腹前，杯口朝上，杯碟仍留原桌面。右手五指关系自然，左手保持自然下垂，不插口袋。人物双脚、相机、蓝衬衫米裤、脸与窗边咖啡馆固定；只改变右臂和持杯动作，不改变桌面别的物件。单张新的瞬间，不要前后拼图。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-action.png"
+  ],
+  "base_asset": "base-action",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "8392257f9e03c3b2f7a4230e3155ab8fc593b63ccfa9506938b634f4afd59561",
+  "path": "/workspace/generated_images/exec-710a014b-4a3c-4ba8-82ba-eecbf214a45c.png",
+  "started_at_utc": "2026-10-22T16:16:26.147Z",
+  "completed_at_utc": "2026-10-22T16:17:15.962Z",
+  "tool": "image_gen.imagegen"
+}

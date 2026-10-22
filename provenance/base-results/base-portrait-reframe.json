@@ -1,0 +1,11 @@
+{
+  "id": "base-portrait-reframe",
+  "prompt": "编辑这张虚构成年女性肖像底图。保持同一个人、同一面部五官、肤色、自然皮肤纹理、发型、灰色衣服、15度头部角度、灰背景和均匀自然光不变。仅将相机后移，扩大构图：整个发顶最高处必须距画面顶部至少10%画面高度，头顶不能切掉，下巴和双肩完整，脸在画面中央。横向16:9独立照片，绝不美颜磨皮，绝不改身份，无文字无边框。",
+  "path": "/workspace/generated_images/exec-e9a91f91-f82e-409c-a481-b8a9262cf4d1.png",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-portrait.png"
+  ],
+  "generated_by": "ChatGPT",
+  "time": "2026-10-22T14:12:24.497Z",
+  "reference_snapshot": "attempts/base-portrait-initial.png"
+}

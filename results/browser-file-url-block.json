@@ -1,0 +1,27 @@
+{
+  "navigation": {
+    "frameId": "F02DB3DB0A39957A5B3A1D82953AB6CE",
+    "loaderId": "02BFFF3FE064AD421B15363004340C7F",
+    "errorText": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+    "isDownload": false
+  },
+  "state": {
+    "url": "chrome-error://chromewebdata/",
+    "title": "file:///workspace/directorx-task5-ab/review.html",
+    "articles": 0,
+    "images": 2,
+    "body": "This page is blocked\n\nYour organization doesn’t allow you to view this site"
+  },
+  "errors": [
+    {
+      "method": "Network.loadingFailed",
+      "params": {
+        "requestId": "02BFFF3FE064AD421B15363004340C7F",
+        "timestamp": 18897.913899,
+        "type": "Document",
+        "errorText": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+        "canceled": false
+      }
+    }
+  ]
+}

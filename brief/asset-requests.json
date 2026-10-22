@@ -1,0 +1,896 @@
+{
+  "schema": "directorx-preset-art-request/1",
+  "status": "brief_only_no_images_generated",
+  "source_files": [
+    {
+      "path": "src/client/stage/creative-settings.ts",
+      "sha256": "03b567de3ddb88b7b56736e4fb0ba6122b51db126b1934f732c4ff47515afe62"
+    },
+    {
+      "path": "src/client/stage/CreativeControls.tsx",
+      "sha256": "c3479dce6fa235b9ed8095fbc203b8cb758e6a90f78cc9f840c8fe43d2c70ef3"
+    },
+    {
+      "path": "src/client/stage/creative-controls.css",
+      "sha256": "50e4211b4ad106f57997f993765152e2873c0823a8be2f9d7b122949ed8a728a"
+    }
+  ],
+  "priority_counts": {
+    "P0": 27,
+    "P1": 4,
+    "P2": 12
+  },
+  "bases": [
+    {
+      "asset_id": "base-portrait",
+      "description": "原创约30岁成年人，正面略转15度、肩部以上肖像，头发不挡脸，无妆或淡妆，保留毛孔和少量真实皮肤细节；中灰背景、均匀自然光。16:9画面人脸居中，头顶下巴完整。"
+    },
+    {
+      "asset_id": "base-scene",
+      "description": "原创成年人坐在咖啡馆窗边，中景，有白色杯子、红色物件、绿色植物和明暗层次；曝光与白平衡自然，平衡冷暖，不提前加胶片滤镜。16:9。"
+    },
+    {
+      "asset_id": "base-character",
+      "description": "原创成年冒险者，中性非暴露服装，蓝灰短外套、米白衬衫、深色长裤、棕鞋与单肩包。单人全身正面，浅灰背景，所有配件清晰，留足边距。"
+    },
+    {
+      "asset_id": "base-action",
+      "description": "原创成年人站在咖啡馆桌旁，手伸向桌上白杯但尚未拿起；身体与手完整可见，物件关系清楚，16:9。"
+    },
+    {
+      "asset_id": "base-prop",
+      "description": "原创无品牌复古金属怀表，表冠与侧铰链清晰，素雅表盘，单物件完整，浅灰底；供道具多角度参考。"
+    }
+  ],
+  "spec": {
+    "card_ratio": "16:9",
+    "preferred_master": [
+      1536,
+      864
+    ],
+    "thumbnail": [
+      640,
+      360
+    ],
+    "safe_margin_fraction": 0.08,
+    "no_upscale_claim": true,
+    "thumbnail_format": "webp",
+    "master_format": "png",
+    "special_panorama_ratio": "2:1",
+    "mapping_rule": "preset_id + name + source_prompt_sha256; camera/lighting names are real targets, asset_id is only packaging identifier"
+  },
+  "items": [
+    {
+      "asset_id": "creative-preset-0",
+      "priority": "P0",
+      "name": "柯达",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-0",
+        "name": "柯达",
+        "slot": "filter"
+      },
+      "source_prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。",
+      "source_prompt_sha256": "639d24e35c6c49c47bf6f62b3e92e9acef891235661e932a7c7df74ae846a54f",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-0.png",
+      "thumbnail": "thumbs/creative-preset-0.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "priority": "P0",
+      "name": "富士",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-1",
+        "name": "富士",
+        "slot": "filter"
+      },
+      "source_prompt": "清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。",
+      "source_prompt_sha256": "ecd8d6e409eedcebea223db221638dc66221c85e53557c029bd1b1c235fe9dce",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-1.png",
+      "thumbnail": "thumbs/creative-preset-1.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "priority": "P0",
+      "name": "伊尔福",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-2",
+        "name": "伊尔福",
+        "slot": "filter"
+      },
+      "source_prompt": "黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。",
+      "source_prompt_sha256": "708c4522c884b36aa579f488c8fca222c8ac6d62f2c9c3d4a6c3df1bbd39e70c",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-2.png",
+      "thumbnail": "thumbs/creative-preset-2.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "priority": "P0",
+      "name": "电影胶片",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-3",
+        "name": "电影胶片",
+        "slot": "filter"
+      },
+      "source_prompt": "电影负片色彩，克制饱和度，柔和高光和深邃阴影。",
+      "source_prompt_sha256": "af1dd358bf9215448101f4dcafc5b6d83f9aa5d46e48e216f1da80475302f684",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "电影负片色彩，克制饱和度，柔和高光和深邃阴影。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-3.png",
+      "thumbnail": "thumbs/creative-preset-3.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "priority": "P0",
+      "name": "宝丽来",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-4",
+        "name": "宝丽来",
+        "slot": "filter"
+      },
+      "source_prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。",
+      "source_prompt_sha256": "68e2801ef920de8bf7008666212700060ce49b8cf30139868fd44f0477cc8708",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-4.png",
+      "thumbnail": "thumbs/creative-preset-4.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "priority": "P0",
+      "name": "电影光效",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-5",
+        "name": "电影光效",
+        "slot": "filter"
+      },
+      "source_prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。",
+      "source_prompt_sha256": "87665cd8f290335195efb8193edeee7f58c0828aafc3e840a0b3ece5fa6bdffa",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-5.png",
+      "thumbnail": "thumbs/creative-preset-5.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "priority": "P0",
+      "name": "HDR",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-6",
+        "name": "HDR",
+        "slot": "filter"
+      },
+      "source_prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。",
+      "source_prompt_sha256": "31b7dfd8661477d644f49220f49af3c81a4a99a4a33527144301b89e3c8c8493",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-6.png",
+      "thumbnail": "thumbs/creative-preset-6.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "priority": "P0",
+      "name": "柔焦效果",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-7",
+        "name": "柔焦效果",
+        "slot": "filter"
+      },
+      "source_prompt": "柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。",
+      "source_prompt_sha256": "c8728a22b396b12dacaae13c58691b7ec265fe045c6eb8ff9281c93f7d5be500",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-7.png",
+      "thumbnail": "thumbs/creative-preset-7.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "priority": "P0",
+      "name": "胶片颗粒",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-8",
+        "name": "胶片颗粒",
+        "slot": "filter"
+      },
+      "source_prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。",
+      "source_prompt_sha256": "52cbb9b3a3dfe9e7a4b82dff982615a4b2d417f779919f6f90deb32c9f1d918a",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-8.png",
+      "thumbnail": "thumbs/creative-preset-8.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "priority": "P0",
+      "name": "赛博朋克",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-9",
+        "name": "赛博朋克",
+        "slot": "filter"
+      },
+      "source_prompt": "夜间霓虹青红对照，湿润反光环境，主体清晰。",
+      "source_prompt_sha256": "054afb4e948e35a6ac203ed1e928708bc8f8fc66f5b1e9eafd0f82ff2a704609",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "夜间霓虹青红对照，湿润反光环境，主体清晰。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-9.png",
+      "thumbnail": "thumbs/creative-preset-9.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "priority": "P0",
+      "name": "复古色调",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-10",
+        "name": "复古色调",
+        "slot": "filter"
+      },
+      "source_prompt": "暖黄褪色和低饱和阴影，复古生活摄影。",
+      "source_prompt_sha256": "824fa8b5d71bf00cc240d7472b99d0e78b1bbf731224743bade5a79bce85c0b7",
+      "base_asset": "base-scene",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "暖黄褪色和低饱和阴影，复古生活摄影。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-10.png",
+      "thumbnail": "thumbs/creative-preset-10.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "priority": "P0",
+      "name": "清透美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-11",
+        "name": "清透美颜",
+        "slot": "filter"
+      },
+      "source_prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。",
+      "source_prompt_sha256": "f2b7e649ef99c15eabd6f492febf821370fc46f9b16ef9730c8a4ea4f9f5b901",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-11.png",
+      "thumbnail": "thumbs/creative-preset-11.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "priority": "P0",
+      "name": "柔肤美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-12",
+        "name": "柔肤美颜",
+        "slot": "filter"
+      },
+      "source_prompt": "柔化局部瑕疵但保留面部身份和自然纹理。",
+      "source_prompt_sha256": "82acd7f12a0aa811039bf6757fc1000c305de61a2c2ed8964677344f97f2a185",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "柔化局部瑕疵但保留面部身份和自然纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-12.png",
+      "thumbnail": "thumbs/creative-preset-12.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "priority": "P0",
+      "name": "细腻肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-13",
+        "name": "细腻肌理",
+        "slot": "filter"
+      },
+      "source_prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。",
+      "source_prompt_sha256": "c223923bc4c808e19c9e67fd5c4664a0ed02cfd0d6dfa686939fc55f66498b3f",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-13.png",
+      "thumbnail": "thumbs/creative-preset-13.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "priority": "P0",
+      "name": "奶油肌",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-14",
+        "name": "奶油肌",
+        "slot": "filter"
+      },
+      "source_prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。",
+      "source_prompt_sha256": "bed6d4eda9a6830f290736532109b8adc6d960ca6fed62b4b0e74ed884556b3f",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-14.png",
+      "thumbnail": "thumbs/creative-preset-14.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "priority": "P0",
+      "name": "柔化质感",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-15",
+        "name": "柔化质感",
+        "slot": "filter"
+      },
+      "source_prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。",
+      "source_prompt_sha256": "a5a16c48902f541c15dfe822ee771259b68e3b38370ff6ae7231f14c688c829d",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-15.png",
+      "thumbnail": "thumbs/creative-preset-15.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "priority": "P0",
+      "name": "哑光肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-16",
+        "name": "哑光肌理",
+        "slot": "filter"
+      },
+      "source_prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。",
+      "source_prompt_sha256": "a5b7f6fb737d7b03c21811f510dfeba0dfe660321707a74c34e4bc3f767f04ea",
+      "base_asset": "base-portrait",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "image_prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-16.png",
+      "thumbnail": "thumbs/creative-preset-16.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "priority": "P0",
+      "name": "全景图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-17",
+        "name": "全景图",
+        "slot": "preset"
+      },
+      "source_prompt": "将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。",
+      "source_prompt_sha256": "19f2886ac50c0932487f640985082d7cfb20abe8622fe8d404028a9e45b18a37",
+      "base_asset": null,
+      "art_direction": "生成空旷原创室内空间的2:1等距柱状投影意图图。卡片16:9内完整呈现2:1原图，不拉伸。左右边缘检查单独记录，未通过则只标全景构图示意，不宣称360度无缝。",
+      "image_prompt": "将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。 生成空旷原创室内空间的2:1等距柱状投影意图图。卡片16:9内完整呈现2:1原图，不拉伸。左右边缘检查单独记录，未通过则只标全景构图示意，不宣称360度无缝。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-17.png",
+      "thumbnail": "thumbs/creative-preset-17.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "priority": "P0",
+      "name": "多机位九宫格",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-18",
+        "name": "多机位九宫格",
+        "slot": "preset"
+      },
+      "source_prompt": "生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。",
+      "source_prompt_sha256": "8713ec8343db8f84d292e77d9db558d3c0fb9a7caa73e944364f1b7684c931e6",
+      "base_asset": "base-character",
+      "art_direction": "使用同一原创成年角色、同套服装和场景，真实3×3等大排列，九种可区分景别/机位。这里只允许预设本身要求的九宫格，不拼入其他预设。",
+      "image_prompt": "生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。 使用同一原创成年角色、同套服装和场景，真实3×3等大排列，九种可区分景别/机位。这里只允许预设本身要求的九宫格，不拼入其他预设。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-18.png",
+      "thumbnail": "thumbs/creative-preset-18.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "priority": "P0",
+      "name": "人物三视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-19",
+        "name": "人物三视图",
+        "slot": "preset"
+      },
+      "source_prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。",
+      "source_prompt_sha256": "ca251991639ff86aeef64510afee38d218f3b1a630e85d4299f3974dfbb721a6",
+      "base_asset": "base-character",
+      "art_direction": "同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。",
+      "image_prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。 同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-19.png",
+      "thumbnail": "thumbs/creative-preset-19.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "priority": "P0",
+      "name": "4视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-20",
+        "name": "4视图",
+        "slot": "preset"
+      },
+      "source_prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。",
+      "source_prompt_sha256": "ae63bf2c929c24c6b0defd3c9fab5d85a08f805bcf6e3c318b7d198c58e7e531",
+      "base_asset": "base-character",
+      "art_direction": "同一原创成年角色正侧背全身及面部特写，2×2排列。",
+      "image_prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。 同一原创成年角色正侧背全身及面部特写，2×2排列。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-20.png",
+      "thumbnail": "thumbs/creative-preset-20.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "priority": "P0",
+      "name": "人物设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-21",
+        "name": "人物设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。",
+      "source_prompt_sha256": "412653ea0dd56e46799563d4c7e8ec21a7f358ae907d1d5b872bb85a66fe51f9",
+      "base_asset": "base-character",
+      "art_direction": "同一原创成年角色主全身+服装配件细节，无乱码注释，保留身份与服饰。",
+      "image_prompt": "制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。 同一原创成年角色主全身+服装配件细节，无乱码注释，保留身份与服饰。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-21.png",
+      "thumbnail": "thumbs/creative-preset-21.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "priority": "P0",
+      "name": "场景设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-22",
+        "name": "场景设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。",
+      "source_prompt_sha256": "cbcaa866e24134ee53fdaffc3f4c7bca39333e12b3a18b7b5f78cdd7b56eeb88",
+      "base_asset": null,
+      "art_direction": "原创小咖啡馆场景概念页，主全景+建筑/材质细节，明确空间关系，不画UI。",
+      "image_prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。 原创小咖啡馆场景概念页，主全景+建筑/材质细节，明确空间关系，不画UI。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-22.png",
+      "thumbnail": "thumbs/creative-preset-22.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "priority": "P0",
+      "name": "道具设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-23",
+        "name": "道具设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。",
+      "source_prompt_sha256": "b708fab1bbde8e1e82cef441146614bdf8c19f81e2c3d5c13389735cd7e3c5bf",
+      "base_asset": "base-prop",
+      "art_direction": "同一原创无商标复古怀表正侧背及结构细节，表冠、铰链、材质位置一致，不要求模型准确画复杂文字。",
+      "image_prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。 同一原创无商标复古怀表正侧背及结构细节，表冠、铰链、材质位置一致，不要求模型准确画复杂文字。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-23.png",
+      "thumbnail": "thumbs/creative-preset-23.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "priority": "P0",
+      "name": "3秒后",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-24",
+        "name": "3秒后",
+        "slot": "preset"
+      },
+      "source_prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。",
+      "source_prompt_sha256": "8392257f9e03c3b2f7a4230e3155ab8fc593b63ccfa9506938b634f4afd59561",
+      "base_asset": "base-action",
+      "art_direction": "以统一动作底图为参考：成年人在桌边伸手拿杯，推演接下来的自然状态；保留人物/杯子/背景。交付before和after两张独立原图。3秒只是情境设定，不能声称真实时间测量。",
+      "image_prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。 以统一动作底图为参考：成年人在桌边伸手拿杯，推演接下来的自然状态；保留人物/杯子/背景。交付before和after两张独立原图。3秒只是情境设定，不能声称真实时间测量。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-24.png",
+      "thumbnail": "thumbs/creative-preset-24.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "priority": "P0",
+      "name": "5秒前",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-25",
+        "name": "5秒前",
+        "slot": "preset"
+      },
+      "source_prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。",
+      "source_prompt_sha256": "499812c89afa001ec83f2579f56cbf09af3d653883d0451d317b2bb8011d6d97",
+      "base_asset": "base-action",
+      "art_direction": "沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。",
+      "image_prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。 沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-25.png",
+      "thumbnail": "thumbs/creative-preset-25.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "priority": "P0",
+      "name": "电影级光影校正",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-26",
+        "name": "电影级光影校正",
+        "slot": "preset"
+      },
+      "source_prompt": "保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。",
+      "source_prompt_sha256": "ca8d797d2e8e0ca31249ad10927a170afd956c56da08094d6f969e9eba1d13a9",
+      "base_asset": "base-scene",
+      "art_direction": "从同一咖啡馆底图编辑照明，保持主体位置/身份/衣服/道具/构图，对比图独立保存；只标GPT光影示例。",
+      "image_prompt": "保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。 从同一咖啡馆底图编辑照明，保持主体位置/身份/衣服/道具/构图，对比图独立保存；只标GPT光影示例。 图片内不要添加标题、UI、按钮、水印或说明文字。",
+      "master": "masters/creative-preset-26.png",
+      "thumbnail": "thumbs/creative-preset-26.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "camera-preview-01",
+      "priority": "P1",
+      "name": "电影人像",
+      "target": {
+        "type": "camera-preset",
+        "name": "电影人像",
+        "parameters": {
+          "name": "电影人像",
+          "body": "ARRI ALEXA 35（阿莱）",
+          "lens": "Cooke S4",
+          "focal": "85 mm",
+          "aperture": "f/1.8"
+        }
+      },
+      "base_asset": null,
+      "image_prompt": "制作电影人像的摄影意图示例，摄影参数语义参考：ARRI ALEXA 35（阿莱），Cooke S4，85 mm，f/1.8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。",
+      "master": "masters/camera-preview-01.png",
+      "thumbnail": "thumbs/camera-preview-01.webp",
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "camera-preview-02",
+      "priority": "P1",
+      "name": "环境纪实",
+      "target": {
+        "type": "camera-preset",
+        "name": "环境纪实",
+        "parameters": {
+          "name": "环境纪实",
+          "body": "Contax T2（康泰时）",
+          "lens": "Zeiss Ultra Prime",
+          "focal": "35 mm",
+          "aperture": "f/5.6"
+        }
+      },
+      "base_asset": null,
+      "image_prompt": "制作环境纪实的摄影意图示例，摄影参数语义参考：Contax T2（康泰时），Zeiss Ultra Prime，35 mm，f/5.6。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。",
+      "master": "masters/camera-preview-02.png",
+      "thumbnail": "thumbs/camera-preview-02.webp",
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "camera-preview-03",
+      "priority": "P1",
+      "name": "广角建筑",
+      "target": {
+        "type": "camera-preset",
+        "name": "广角建筑",
+        "parameters": {
+          "name": "广角建筑",
+          "body": "Sony VENICE（索尼）",
+          "lens": "移轴镜头",
+          "focal": "24 mm",
+          "aperture": "f/8"
+        }
+      },
+      "base_asset": null,
+      "image_prompt": "制作广角建筑的摄影意图示例，摄影参数语义参考：Sony VENICE（索尼），移轴镜头，24 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。",
+      "master": "masters/camera-preview-03.png",
+      "thumbnail": "thumbs/camera-preview-03.webp",
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "camera-preview-04",
+      "priority": "P1",
+      "name": "产品微距",
+      "target": {
+        "type": "camera-preset",
+        "name": "产品微距",
+        "parameters": {
+          "name": "产品微距",
+          "body": "Hasselblad X2D",
+          "lens": "微距镜头",
+          "focal": "105 mm",
+          "aperture": "f/8"
+        }
+      },
+      "base_asset": null,
+      "image_prompt": "制作产品微距的摄影意图示例，摄影参数语义参考：Hasselblad X2D，微距镜头，105 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。",
+      "master": "masters/camera-preview-04.png",
+      "thumbnail": "thumbs/camera-preview-04.webp",
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-01",
+      "priority": "P2",
+      "name": "窗边侧光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "窗边侧光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为窗边侧光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-01.png",
+      "thumbnail": "thumbs/lighting-preview-01.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-02",
+      "priority": "P2",
+      "name": "丁达尔光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "丁达尔光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为丁达尔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-02.png",
+      "thumbnail": "thumbs/lighting-preview-02.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-03",
+      "priority": "P2",
+      "name": "黄金时刻",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "黄金时刻"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为黄金时刻。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-03.png",
+      "thumbnail": "thumbs/lighting-preview-03.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-04",
+      "priority": "P2",
+      "name": "冷调月光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "冷调月光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为冷调月光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-04.png",
+      "thumbnail": "thumbs/lighting-preview-04.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-05",
+      "priority": "P2",
+      "name": "米白柔光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "米白柔光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为米白柔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-05.png",
+      "thumbnail": "thumbs/lighting-preview-05.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-06",
+      "priority": "P2",
+      "name": "霓虹混光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "霓虹混光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为霓虹混光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-06.png",
+      "thumbnail": "thumbs/lighting-preview-06.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-07",
+      "priority": "P2",
+      "name": "逆光轮廓",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "逆光轮廓"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为逆光轮廓。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-07.png",
+      "thumbnail": "thumbs/lighting-preview-07.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-08",
+      "priority": "P2",
+      "name": "舞台聚光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "舞台聚光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为舞台聚光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-08.png",
+      "thumbnail": "thumbs/lighting-preview-08.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-09",
+      "priority": "P2",
+      "name": "阴天散射光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "阴天散射光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为阴天散射光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-09.png",
+      "thumbnail": "thumbs/lighting-preview-09.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-10",
+      "priority": "P2",
+      "name": "影棚硬光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "影棚硬光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为影棚硬光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-10.png",
+      "thumbnail": "thumbs/lighting-preview-10.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-11",
+      "priority": "P2",
+      "name": "烛光暖光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "烛光暖光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为烛光暖光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-11.png",
+      "thumbnail": "thumbs/lighting-preview-11.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    },
+    {
+      "asset_id": "lighting-preview-12",
+      "priority": "P2",
+      "name": "自然顺光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "自然顺光"
+      },
+      "base_asset": "base-portrait",
+      "image_prompt": "以统一成年人物肖像为参考，仅调整为自然顺光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。",
+      "master": "masters/lighting-preview-12.png",
+      "thumbnail": "thumbs/lighting-preview-12.webp",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "not_generated"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-15",
+  "name": "柔化质感",
+  "version": "B",
+  "prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修柔化质感：只压低皮肤上的极细高频杂点与粗糙微对比，得到丝绒般柔化表面；保留额头鼻子自然高光、皮肤色差、面部结构、锐利眼睫发丝，局部痘印保留非常浅的痕迹。它不是局部祛痘，也不是改变整体照明；五官、姿态、衣服和构图原样。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "a5a16c48902f541c15dfe822ee771259b68e3b38370ff6ae7231f14c688c829d"
+}

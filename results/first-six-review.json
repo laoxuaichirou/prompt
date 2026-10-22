@@ -1,0 +1,22 @@
+{
+  "reviewed_at_utc": "2026-10-22T16:02:51.258473+00:00",
+  "before_other_21_B_jobs": true,
+  "ids": [
+    0,
+    12,
+    19,
+    18,
+    23,
+    26
+  ],
+  "sheet": "reviews/first-six-ab-initial.jpg",
+  "method": "assistant viewed actual original outputs and A/B thumbnails",
+  "observations": {
+    "0": "B warm and softer; A/B both recognizable Kodak color intent.",
+    "12": "Identity held subjectively, small thumbnail distinction still too weak.",
+    "19": "Front/side/back clear; bag and raw margins need further review.",
+    "18": "3x3 with outer blank area, but first-row middle is oblique not true side.",
+    "23": "Simpler shell assembly, fewer invented gear details, no labels visible.",
+    "26": "B neutralizes excess orange; cup and shirt approach neutral white."
+  }
+}

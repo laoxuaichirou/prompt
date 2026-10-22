@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-0",
+  "name": "柯达",
+  "version": "B",
+  "prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版色彩：温暖的米黄高光、温柔棕色中间调、低饱和深绿阴影。比通常橙黄滤镜克制，白杯保留乳白，肤色温暖但不能染橙，红本仍是红色，颗粒极细。保持同一相机、同一人物像素布局、同一动作与原物件。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-scene.png"
+  ],
+  "base_asset": "base-scene",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "639d24e35c6c49c47bf6f62b3e92e9acef891235661e932a7c7df74ae846a54f",
+  "path": "/workspace/generated_images/exec-dd45aa3e-fa5f-41bf-bfdb-e5d4e910b217.png",
+  "started_at_utc": "2026-10-22T15:57:13.503Z",
+  "completed_at_utc": "2026-10-22T15:57:49.160Z",
+  "tool": "image_gen.imagegen"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "creative-preset-16",
+  "prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+  "base": "base-portrait",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-portrait.png"
+  ],
+  "kind": "preset",
+  "generated_by": "ChatGPT",
+  "path": "/workspace/generated_images/exec-234349ad-ea58-4c37-a563-06ded02d9849.png",
+  "time": "2026-10-22T14:25:35.658Z"
+}

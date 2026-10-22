@@ -1,0 +1,6211 @@
+{
+  "executed_at_utc": "2026-10-22T16:42:24.381701+00:00",
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "visual_quality_certified": false,
+  "manifest_checked": false,
+  "tool_originals_checked": true,
+  "source_A_checked": true,
+  "checks": [
+    {
+      "check": "exact_27_unique_P0_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "uploaded_brief_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "selection_exact_27_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:ref_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:neither_has_null_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:both_statuses_need_revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:panorama_2_to_1_A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:panorama_2_to_1_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:ref_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:ref_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:A:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:B:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:A:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:B:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:exact_target_and_original_prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:pair_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:unchanged_A_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:unchanged_A_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:unchanged_A_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:unchanged_A_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:A:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:real_attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:master:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:thumbnail:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:card:nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:canonical_dimensions_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:actual_prompt_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:ref_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:correct_shared_base_first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:reference_order_actual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:unchanged_tool_file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:comparison_before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:B:comparison_after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:selection_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:chosen_is_reviewed_candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:selected_copy_master",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:selected_copy_thumbnail",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:selected_copy_card",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_54_distinct_native_output_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-portrait:unchanged_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-scene:unchanged_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-character:unchanged_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-action:unchanged_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-prop:unchanged_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_action_base_for_24_and_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_portrait_base_for_all_six_skin_presets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_recommendation_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "selected_masters_exact_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "selected_thumbs_exact_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "selected_cards_exact_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "three_real_initial_attempts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "initial_16_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "initial_18_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "initial_19_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CSV_has_all_27_mappings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_package_images_decode",
+      "passed": true,
+      "detail": {
+        "count": 284
+      }
+    },
+    {
+      "check": "no_zero_byte_payloads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_browser_test_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior_A_manifest_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_prior_A_files_unchanged",
+      "passed": true,
+      "detail": {
+        "count": 312
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "executed_at_utc": "2026-10-22T16:39:00.792Z",
+  "passed": false,
+  "error": "Error: Failed offline_page_and_54_thumbnails_load",
+  "checks": [
+    {
+      "check": "offline_page_and_54_thumbnails_load",
+      "passed": false,
+      "detail": {
+        "articles": 0,
+        "images": 2
+      }
+    }
+  ]
+}

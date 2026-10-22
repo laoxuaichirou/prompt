@@ -1,0 +1,33 @@
+{
+  "review_method": "assistant inspected all 27 actual A/B pairs at 640x360, actual B tool outputs, native skin crops and panorama joins; qualitative creative review, not human/provider certification",
+  "criteria": ["source prompt fidelity", "same identity and fixed scene for edits", "required functional layout", "thumbnail readability", "no pseudo UI or text", "honest unresolved issues"],
+  "items": {
+    "0": {"recommended_version":"A","B_status":"reviewed_candidate","reason":"主观偏好A：暖胶片与金色高光意图更鲜明；B较柔和，但改善不足以替换A。两版都保留。","B_notes":"暖调柔和，人物及杯、本、植物保持；与A相比差异较小，作为备用色彩候选。"},
+    "1": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B的冷蓝窗光与清爽绿色更明确，肤色仍自然，和暖色滤镜区分更清楚。","B_notes":"绿色与蓝色意图可读，原人物、物件与取景目视保持；不是真实富士胶片测量。"},
+    "2": {"recommended_version":"A","B_status":"reviewed_candidate","reason":"主观偏好A的中灰与细颗粒；B也符合黑白意图，但面部亮度更高，未形成明确优势。","B_notes":"完整黑白、灰阶丰富，主体保持；较A面部更亮，无物理银盐测试。"},
+    "3": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B的冷青灰阴影和克制饱和度更符合负片意图，也更容易与暖黄复古图区分。","B_notes":"阴影偏冷，肤色保留温度，高光柔和，深暗部仍可读。"},
+    "4": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B的乳白高光、褪色和柔和反差更清晰，和柯达暖调有更明显区别。","B_notes":"即时成像色调意图明确，没有加相纸边框或标题；窗缘较柔亮。"},
+    "5": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B通过负补光和较暗背景形成层次，和单纯暖色调区别更清楚；人物仍可读。","B_notes":"左窗主光、右侧压暗和实景暖灯构成明暗层次，没有新增灯具或光束。"},
+    "6": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B的衣服暗部略提升，但窗外高光恢复及宽容度扩展仍不够明确，不能只凭变亮认定HDR意图完成。","B_notes":"暗部有轻微提升，但高光细节回收和小图HDR识别仍不足。"},
+    "7": {"recommended_version":"A","B_status":"needs_revision","reason":"选A：B白杯与桌面高光扩散过强，杯口细节受损；A更接近轻微扩散镜要求。","B_notes":"真实生成了高光晕染，但白杯和窗缘过亮，超出轻微柔焦，保留为不理想结果。"},
+    "8": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B在原尺寸下颗粒更明确，同时保留胡须和布料；缩略图没有被粗噪点淹没。","B_notes":"细密颗粒可见，主体和物件保持；颗粒只在原尺寸审查，不夸称640图能分辨每个颗粒。"},
+    "9": {"recommended_version":"A","B_status":"reviewed_candidate","reason":"主观偏好A：青红对照和肤色更均衡；B的右后方红色覆盖更强，可作为更强烈的备选。","B_notes":"夜间青红光与湿反射清楚，同一咖啡馆；红色背景较强，属于不同强度的意图候选。"},
+    "10": {"recommended_version":"A","B_status":"reviewed_candidate","reason":"A的褪色、暖黄与低饱和阴影更容易辨认；B较清晰鲜亮，与柯达暖调接近。","B_notes":"暖黄与棕绿阴影保留，但褪色幅度较弱，作为较轻版本备用。"},
+    "11": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B原尺寸更均匀清透，但六种肤质在640缩略图中的区别仍不足；没有用换脸或换取景制造差别。","B_notes":"局部微红减少，脸、灰衣和发型保持；小图仍与其他肤质接近。"},
+    "12": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B有局部柔化，原尺寸可见，但缩略图仍不能清楚传达本项与奶油肌/柔化的差别。","B_notes":"同一脸的局部瑕疵变化轻微；不靠改变身份、妆容或光线扩大区别。"},
+    "13": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：原尺寸下A的纹理甚至更明确，B没有充分强化细腻肌理，小图也难以区分。","B_notes":"保留真实肌理，但纹理增强不充分；B不优于A，不能默认升级。"},
+    "14": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B原尺寸更柔润均匀，但缩略图与柔肤仍相近；不能只因肤色略亮就选B。","B_notes":"奶油般均匀柔润有轻微表现，没有塑料化，但区别仍弱。"},
+    "15": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B的高频柔化效果没有清晰超越A，缩略图与其余肤质缺乏稳定区别。","B_notes":"眼发和五官保留，但皮肤柔化幅度及缩略图辨识不足。"},
+    "16": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B定向重试后油亮点有所控制，但小图中的哑光特征仍不够明确，不能以原尺寸局部裁切代替卡片验收。","B_notes":"保留首版及定向控油重试；微小亮斑仍在，哑光缩略图效果不够稳定。"},
+    "17": {"recommended_version":null,"B_status":"needs_revision","reason":"两版都待返修：B移开了边缘家具，接缝颜色更易检查，但墙顶曲线接合仍有拐折，未完成360无缝认定；B仅可作全景构图参考。","B_notes":"真实2:1，保留A室内设计，边缘家具清空；接合几何及球面投影未通过验收，不能宣称无缝。"},
+    "18": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B定向修正后首排侧视明确，3×3等格且外侧留白更完整，九种机位/景别意图可辨。","B_notes":"初版首排中格为斜侧面，已保留；最终改为90度侧视。包带细节仍只经主观概念审查，未做工程一致性认证。"},
+    "19": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B重试后头脚完整，上下留白显著改善，正侧背等高且包的身体侧位置可辨，优于A的紧构图。","B_notes":"三视图外侧留白由GPT实际扩大，非代码补画；包带材质与形状仍是概念候选，没有三维建模验证。"},
+    "20": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B的2×2图组增加外侧空间，正侧背与头像分工更明确，全身三格头脚完整。","B_notes":"四格布局清晰、人物衣服基本对应；局部包形仅作创意设计参考，未认证可制造或逐像素一致。"},
+    "21": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B简化为单一全身主视图加关键细节，小图用途更清楚，去掉了A中衣领的微小伪标签。","B_notes":"主视图和包、鞋、面料、扣具细节清楚，未观察到伪标签；不等同于服装结构工程图。"},
+    "22": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B保留同一湖畔咖啡馆，去掉难匹配的剖切模型，整体、室内与三种材质关系更简洁。","B_notes":"参考A原场景编辑，建筑设计与世界观保持；精确空间几何未验证。"},
+    "23": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B正侧背与简单壳体拆解更清楚，减少复杂假机芯和杂乱细节，表冠和铰链方向总体对应。","B_notes":"外壳装配意图，光滑机芯圆盘不代表可工作机芯；尺寸及制造结构未验证。"},
+    "24": {"recommended_version":"A","B_status":"needs_revision","reason":"选A：A举杯动作和杯体更明确；B虽然左手保持下垂，但杯把/持握关系不清，疑似改变原杯形。","B_notes":"真实举杯图已保留，杯把不清楚且持握不符合原提示词，应返修；3秒不是实测。"},
+    "25": {"recommended_version":"A","B_status":"reviewed_candidate","reason":"A已能明确表现尚未伸手的前态，B与A非常接近，没有明确替换收益，保留A。","B_notes":"同一动作底图，双手下垂、杯仍在桌面；5秒只是叙事设定。"},
+    "26": {"recommended_version":"B","B_status":"reviewed_candidate","reason":"B更有效校正整体偏橙，白杯与白衣更接近中性，窗光与背景暗部层次清楚。","B_notes":"同一人物物件构图，白平衡/照明校正可见；仅GPT效果参考，没有光度学或目标工作流验证。"}
+  }
+}

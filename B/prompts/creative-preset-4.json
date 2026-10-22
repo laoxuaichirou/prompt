@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-4",
+  "name": "宝丽来",
+  "version": "B",
+  "prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版即时成像色调：高光奶白、低反差轻微褪色，阴影轻微青灰，脸和桌面温暖。保持真实红绿物件；不加宝丽来边框、不做纸张相框或拼图。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-scene.png"
+  ],
+  "base_asset": "base-scene",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "68e2801ef920de8bf7008666212700060ce49b8cf30139868fd44f0477cc8708"
+}

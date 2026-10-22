@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-25",
+  "name": "5秒前",
+  "version": "B",
+  "prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。 沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版动作前态：同一男子此时右手尚未伸向杯，双手自然垂在身体两侧，右手距桌杯很远，身体自然挺直且目光看向白杯。白杯和杯碟还在参考原位置，杯把方向一致。不要拿杯，不要伸手。保留同一脸、蓝衣米裤、同一站位脚位置、所有窗框椅桌和灯光，单张此前状态。5秒只是推演设定，不做时间字样。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-action.png"
+  ],
+  "base_asset": "base-action",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "499812c89afa001ec83f2579f56cbf09af3d653883d0451d317b2bb8011d6d97",
+  "path": "/workspace/generated_images/exec-b364fde7-3999-42a6-a05a-9e21f8ead761.png",
+  "started_at_utc": "2026-10-22T16:16:26.147Z",
+  "completed_at_utc": "2026-10-22T16:18:20.625Z",
+  "tool": "image_gen.imagegen"
+}

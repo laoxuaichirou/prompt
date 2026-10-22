@@ -1,0 +1,163 @@
+{
+  "A_commit": "a220b7bab57a493e6ce8a4354fd30f0695207843",
+  "A_original_manifest_sha256": "73cebe2b72c42d70acd968e1d7ff4ae16d20e8db65e094797237186f8f04f46c",
+  "A_P0": [
+    {
+      "asset_id": "creative-preset-0",
+      "sha256": "2da3862eb1016420b906fe4e6746c57849ebf519477325c8a2e6029fc559c179",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "sha256": "818784710643613f44db22e6fdab5325cf0c8ec2e94d849485cd1f7ad4376d0d",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "sha256": "c79fdbe7c5cf29be6578660e78b8e82f5f33a73ba5fafa3170adb902a83fb0aa",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "sha256": "bd66877167e46fd0df84669fddcf3514e0db8d9df6e66284ceb7b81ed541f614",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "sha256": "e9bbfe1d5ae168d7bb8e3bd9e4c69cfb47c700d8fd93b4c46d015789299df176",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "sha256": "32fc6e57af030f0a5ad348abb454007d154868a3034d3ad6c34d21c86be6bf32",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "sha256": "3cc86602c6d366b95a256efc550ddb03f1504ad03ab15f9b52f056d88e2a973f",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "sha256": "562334b3d3807ea2c8a8422151e746bfa2d3d1adc0af6ee616ff0b5f4057ff09",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "sha256": "0180d2705d36cf4e970cf08550d6919a14315ab8d8f53d4d86a5941ea3d5da29",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "sha256": "a3ee1805915b7b12c5148aaafdd910c93c80a9e01f4a7e129338cab463056edc",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "sha256": "dd791eb13298fb777211cf42be8560dc182a1445cca0d684d01447a66ef445be",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "sha256": "69c1ca861dadc55e8ab5a0a21d573725f4c7e428ddf9a0527bee5173c687666e",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "sha256": "58aef5c85e17b1fb650d776af5abf5779783f3b780855802009607eb38ad9287",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "sha256": "e8dd83204e97d23cd5355fc5e2b2d55280bd6e9f33fc17bd3e58f5a196904c34",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "sha256": "0fec25d4783f31e7bec938f7589978b5fc386744b08f1311ea29116abeae44ac",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "sha256": "c9ddd9a4b036786e658af056f29b0339b71b2d2811f1ad5ab5369354d26beaea",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "sha256": "1ff50099e5aff880a4d15ea4849e4474ddc98465508432c9f46c9204aedf3169",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "sha256": "508cdc01b96187ee78b96ebb02ea418d208213483a1dbe07a22b982b4d3859df",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "sha256": "73709ec4a26988f7467e00832fa0aa9377a14c364c6530c806609a53730bb8af",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "sha256": "16195e6d0899f7c42239bd60850b94dbc1aca75d59651f4b668ae5dbd380fdba",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "sha256": "b4621c921a5966f4d7291a94e0dc61cfe27afc2c6182173c9bdbbe42ae76c8f2",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "sha256": "57194c29ccae86674df155acbcafdbd737d4017b30e54e823a6dd29e812000c4",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "sha256": "0b23a2caf93333a8a84417acd0664298069e9f82cae63740d7f7b5776d9d7e31",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "sha256": "b58d64d9f7f44c723d9801b31027e5b146fb5a0eb41fbfbe77684296267735e4",
+      "status": "needs_revision"
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "sha256": "4e29ab7ddcc0b914490c966233b3ebc7aa82df671357f1574abb2bec42d0fe0e",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "sha256": "ace1b05665d090c7b8103d3211edb262dd7d646c3962ac60e8ad7f34c579310c",
+      "status": "reviewed_candidate"
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "sha256": "0bd82cf1130dcb8035b0551491cd61a8e82fa7f073fc1836bfe12563031feec7",
+      "status": "reviewed_candidate"
+    }
+  ],
+  "base_hashes": [
+    {
+      "asset_id": "base-portrait",
+      "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+    },
+    {
+      "asset_id": "base-scene",
+      "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+    },
+    {
+      "asset_id": "base-character",
+      "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23"
+    },
+    {
+      "asset_id": "base-action",
+      "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b"
+    },
+    {
+      "asset_id": "base-prop",
+      "sha256": "00bb292b4d143646e07853896ad98ab50d5bd9fa286cf7e615db88918b54372d"
+    }
+  ]
+}

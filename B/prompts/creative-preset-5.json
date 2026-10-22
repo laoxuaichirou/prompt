@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-5",
+  "name": "电影光效",
+  "version": "B",
+  "prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版布光：左窗柔和主光，人物右侧以负补光压暗、保持轮廓有清晰但柔和窗光亮边，背景实景暖灯更暗一档形成景深层次。主辅光比明显但脸不能黑掉，不能把加橙色当作布光；不改变构图、不增加灯具。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-scene.png"
+  ],
+  "base_asset": "base-scene",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "87665cd8f290335195efb8193edeee7f58c0828aafc3e840a0b3ece5fa6bdffa"
+}

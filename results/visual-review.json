@@ -1,0 +1,299 @@
+{
+  "review_method": "assistant inspected all 27 actual A/B pairs at 640x360, actual B tool outputs, native skin crops and panorama joins; qualitative creative review, not human/provider certification",
+  "criteria": [
+    "source prompt fidelity",
+    "same identity and fixed scene for edits",
+    "required functional layout",
+    "thumbnail readability",
+    "no pseudo UI or text",
+    "honest unresolved issues"
+  ],
+  "summary": {
+    "P0_requested": 27,
+    "A_generated": 27,
+    "B_generated": 27,
+    "recommend_A": 7,
+    "recommend_B": 12,
+    "both_need_revision": 8,
+    "mixed_selected": 19,
+    "this_run_B_image_calls": 30,
+    "retained_B_initial_attempts": 3,
+    "quota_error_observed": false
+  },
+  "first_six_record": "results/first-six-review.json",
+  "all_pairs_reviewed": true,
+  "native_skin_review": "reviews/details/skin-native-crops.jpg",
+  "panorama_join_review": "reviews/panorama-seams-ab.jpg",
+  "decisions": [
+    {
+      "asset_id": "creative-preset-0",
+      "name": "柯达",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "主观偏好A：暖胶片与金色高光意图更鲜明；B较柔和，但改善不足以替换A。两版都保留。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "name": "富士",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B的冷蓝窗光与清爽绿色更明确，肤色仍自然，和暖色滤镜区分更清楚。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "name": "伊尔福",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "主观偏好A的中灰与细颗粒；B也符合黑白意图，但面部亮度更高，未形成明确优势。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "name": "电影胶片",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B的冷青灰阴影和克制饱和度更符合负片意图，也更容易与暖黄复古图区分。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "name": "宝丽来",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B的乳白高光、褪色和柔和反差更清晰，和柯达暖调有更明显区别。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "name": "电影光效",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B通过负补光和较暗背景形成层次，和单纯暖色调区别更清楚；人物仍可读。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "name": "HDR",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B的衣服暗部略提升，但窗外高光恢复及宽容度扩展仍不够明确，不能只凭变亮认定HDR意图完成。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "name": "柔焦效果",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "选A：B白杯与桌面高光扩散过强，杯口细节受损；A更接近轻微扩散镜要求。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "name": "胶片颗粒",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B在原尺寸下颗粒更明确，同时保留胡须和布料；缩略图没有被粗噪点淹没。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "name": "赛博朋克",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "主观偏好A：青红对照和肤色更均衡；B的右后方红色覆盖更强，可作为更强烈的备选。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "name": "复古色调",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "A的褪色、暖黄与低饱和阴影更容易辨认；B较清晰鲜亮，与柯达暖调接近。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "name": "清透美颜",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B原尺寸更均匀清透，但六种肤质在640缩略图中的区别仍不足；没有用换脸或换取景制造差别。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "name": "柔肤美颜",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B有局部柔化，原尺寸可见，但缩略图仍不能清楚传达本项与奶油肌/柔化的差别。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "name": "细腻肌理",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：原尺寸下A的纹理甚至更明确，B没有充分强化细腻肌理，小图也难以区分。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "name": "奶油肌",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B原尺寸更柔润均匀，但缩略图与柔肤仍相近；不能只因肤色略亮就选B。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "name": "柔化质感",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B的高频柔化效果没有清晰超越A，缩略图与其余肤质缺乏稳定区别。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "name": "哑光肌理",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B定向重试后油亮点有所控制，但小图中的哑光特征仍不够明确，不能以原尺寸局部裁切代替卡片验收。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "name": "全景图",
+      "decision": {
+        "recommended_version": null,
+        "reason": "两版都待返修：B移开了边缘家具，接缝颜色更易检查，但墙顶曲线接合仍有拐折，未完成360无缝认定；B仅可作全景构图参考。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "name": "多机位九宫格",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B定向修正后首排侧视明确，3×3等格且外侧留白更完整，九种机位/景别意图可辨。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "name": "人物三视图",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B重试后头脚完整，上下留白显著改善，正侧背等高且包的身体侧位置可辨，优于A的紧构图。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "name": "4视图",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B的2×2图组增加外侧空间，正侧背与头像分工更明确，全身三格头脚完整。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "name": "人物设计图",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B简化为单一全身主视图加关键细节，小图用途更清楚，去掉了A中衣领的微小伪标签。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "name": "场景设计图",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B保留同一湖畔咖啡馆，去掉难匹配的剖切模型，整体、室内与三种材质关系更简洁。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "name": "道具设计图",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B正侧背与简单壳体拆解更清楚，减少复杂假机芯和杂乱细节，表冠和铰链方向总体对应。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "name": "3秒后",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "选A：A举杯动作和杯体更明确；B虽然左手保持下垂，但杯把/持握关系不清，疑似改变原杯形。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "name": "5秒前",
+      "decision": {
+        "recommended_version": "A",
+        "reason": "A已能明确表现尚未伸手的前态，B与A非常接近，没有明确替换收益，保留A。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "name": "电影级光影校正",
+      "decision": {
+        "recommended_version": "B",
+        "reason": "B更有效校正整体偏橙，白杯与白衣更接近中性，窗光与背景暗部层次清楚。",
+        "method": "assistant_visual_review",
+        "provider_verified": false
+      }
+    }
+  ]
+}

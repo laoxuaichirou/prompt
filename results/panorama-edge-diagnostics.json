@@ -1,0 +1,25 @@
+{
+  "method": "Raw first/last column absolute RGB difference, diagnostic only. Not a geometric continuity or 360 test.",
+  "versions": {
+    "A": {
+      "dimensions": [
+        1774,
+        887
+      ],
+      "exact_2_to_1": true,
+      "edge_column_mean_absolute_RGB_error_0_255": 2.8057121382938743,
+      "image": "/workspace/directorx-task5-ab/A/masters/creative-preset-17.png",
+      "seamless_360_verified": false
+    },
+    "B": {
+      "dimensions": [
+        1774,
+        887
+      ],
+      "exact_2_to_1": true,
+      "edge_column_mean_absolute_RGB_error_0_255": 3.5971439308530626,
+      "image": "/workspace/generated_images/exec-a23e87ac-955a-49bd-b4fe-a8c99897ad5b.png",
+      "seamless_360_verified": false
+    }
+  }
+}

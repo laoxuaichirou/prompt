@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-11",
+  "name": "清透美颜",
+  "version": "B",
+  "prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版清透：只编辑皮肤，使肤色清澈、通透且轻微均匀，保留原有微小毛孔和自然高光。微红瑕疵降低约一半，脸部不变白、不增加彩妆。与磨皮不同，真实纹理仍可见，发丝、眼睛、灰衣、背景、取景与表情严格不变。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "f2b7e649ef99c15eabd6f492febf821370fc46f9b16ef9730c8a4ea4f9f5b901",
+  "path": "/workspace/generated_images/exec-cfeb6577-bcd3-4ae7-aa90-694d39a2be2c.png",
+  "started_at_utc": "2026-10-22T16:06:39.254Z",
+  "completed_at_utc": "2026-10-22T16:09:53.395Z",
+  "tool": "image_gen.imagegen"
+}

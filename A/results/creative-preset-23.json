@@ -1,0 +1,12 @@
+{
+  "id": "creative-preset-23",
+  "prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。 同一原创无商标复古怀表正侧背及结构细节，表冠、铰链、材质位置一致，不要求模型准确画复杂文字。 图片内不要添加标题、UI、按钮、水印或说明文字。 大幅正面、较小侧面、背面、极简结构分解与铰链局部。表冠始终在12点、铰链在物件右侧3点。正反视图左右翻转遵守实物几何。保持同一只怀表，所有视图无文字，不能用不同物品填充。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-prop；严格使用此图，不引用其他对话图片。",
+  "base": "base-prop",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-prop.png"
+  ],
+  "kind": "preset",
+  "generated_by": "ChatGPT",
+  "path": "/workspace/generated_images/exec-3fb238dc-0287-48ec-84f0-39ca1df6eed7.png",
+  "time": "2026-10-22T14:15:32.352Z"
+}

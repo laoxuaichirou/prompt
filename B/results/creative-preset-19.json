@@ -1,0 +1,22 @@
+{
+  "id": "creative-preset-19",
+  "name": "人物三视图",
+  "version": "B",
+  "prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。 同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修：只画三个人物形象，实为同一成年角色正面、左侧面、背面三个全身视图。头顶都位于总画面高度15%，鞋底位于85%，等高同一水平基线；左右外侧各留12%空白；不得切头切脚。单肩包始终在人物自身左髋，肩带从右肩到左髋；正面包在画面右，背面包在画面左，侧面面对画面左时包位于可见左侧髋。不要改变包形、裤子侧袋和扣带，衣领不要品牌/字标。清楚的浅灰背景上三视图并列，不添加面部特写、物品拆解或标题。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n第一张参考是共用底图，锁定身份/物件；第二张是当前B版，锁定已有布局，定向修改；不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。\n本次重点修正：只修改第二张图的整体排版和边距，不改变每个人物任何衣服包形或五官：将三个人物一起等比缩小，三个人头顶都位于整个画面高度的15%处、鞋底都位于85%处，完整正侧背并列等高。必须明显扩大上/下方浅灰空白；不能仍把人物画到接近满画幅。不要增加局部图、边框或文字。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-character.png",
+    "/workspace/directorx-task5-ab/attempts/B-creative-preset-19-initial.png"
+  ],
+  "base_asset": "base-character",
+  "reference_role": "shared_base_identity_then_initial_B_for_targeted_revision",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "ca251991639ff86aeef64510afee38d218f3b1a630e85d4299f3974dfbb721a6",
+  "completed_at_utc": "2026-10-22T16:21:42.191Z",
+  "tool": "image_gen.imagegen",
+  "revision": 1,
+  "path": "/workspace/generated_images/exec-6f410a70-7fd6-4a4e-b9b9-a7bbcc1ef895.png",
+  "initial_job_started_at_utc": "2026-10-22T15:57:13.503Z",
+  "revision_call_started_at_utc": null,
+  "timestamp_note": "Targeted retry records actual completion time. Its call start time was not separately captured; initial_job_started_at_utc refers only to the original attempt."
+}

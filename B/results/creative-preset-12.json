@@ -1,0 +1,18 @@
+{
+  "id": "creative-preset-12",
+  "name": "柔肤美颜",
+  "version": "B",
+  "prompt": "柔化局部瑕疵但保留面部身份和自然纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修柔肤：仅针对脸颊/下巴零星痘印与局部粗糙进行自然局部修复，去掉这些微红瑕疵和零星不均匀，不改鼻子嘴唇眼睛下颌。保留清晰而细小的真实毛孔，皮肤细腻柔和但不能蜡像；不要变白、改妆容或改变照明与取景。灰衣/发丝/背景完全不变，至少原图能清楚看见局部瑕疵减少。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "82acd7f12a0aa811039bf6757fc1000c305de61a2c2ed8964677344f97f2a185",
+  "path": "/workspace/generated_images/exec-3e1a8a29-19dc-4c7e-b8d6-35a3176ca9e0.png",
+  "started_at_utc": "2026-10-22T15:57:13.503Z",
+  "completed_at_utc": "2026-10-22T15:58:11.959Z",
+  "tool": "image_gen.imagegen"
+}

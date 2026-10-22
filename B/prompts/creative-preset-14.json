@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-14",
+  "name": "奶油肌",
+  "version": "B",
+  "prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修奶油肌：皮肤均匀、柔润、温柔奶油般细腻，有很柔软的宽面高光与真实细小纹理，去除局部微红瑕疵而不是蒙一层白。比原图皮肤更均匀柔润，但不能塑料、蜡、油亮，也不允许改脸/改鼻嘴/加妆/变白；服装背景和取景严格原样。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "bed6d4eda9a6830f290736532109b8adc6d960ca6fed62b4b0e74ed884556b3f"
+}

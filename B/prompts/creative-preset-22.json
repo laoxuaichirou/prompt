@@ -1,0 +1,14 @@
+{
+  "id": "creative-preset-22",
+  "name": "场景设计图",
+  "version": "B",
+  "prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。 原创小咖啡馆场景概念页，主全景+建筑/材质细节，明确空间关系，不画UI。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：B版从A原图编辑同一湖畔小咖啡馆设计页，保持同一石墙绿百叶窗红瓦屋顶和露台，不换地点不换建筑。布局简化：上半60%为整体咖啡馆与露台全景；下半左侧是同一主入口和吧台关系的室内近景，下半右侧仅三块较大的石墙、绿漆木窗、红瓦材质细节。去掉难以匹配的模型剖切图，保留真实空间关系，光线都是左上自然日光。整页外侧留10%空隙，无商标无注释无伪文字，咖啡馆黑板保持空白。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n仅使用传入的这张参考图，不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/A/masters/creative-preset-22.png"
+  ],
+  "base_asset": null,
+  "reference_role": "A_original_for_same_scene",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "cbcaa866e24134ee53fdaffc3f4c7bca39333e12b3a18b7b5f78cdd7b56eeb88"
+}

@@ -1,0 +1,11 @@
+{
+  "crop_box_xyxy": [
+    660,
+    280,
+    980,
+    600
+  ],
+  "no_artistic_filters": true,
+  "resize": false,
+  "purpose": "native skin detail only; cannot replace complete card thumbnail distinction"
+}

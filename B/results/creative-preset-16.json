@@ -1,0 +1,22 @@
+{
+  "id": "creative-preset-16",
+  "name": "哑光肌理",
+  "version": "B",
+  "prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。\nB版具体执行要求：重点返修哑光：消除额头、鼻尖、两颊和下巴的油亮点，皮肤呈柔雾哑光、微微粉质但仍有真实毛孔与明暗体积。微小毛孔应仍比柔肤可辨，不能一团平涂。不要变白、不要妆容、不要抹掉颧骨阴影或改变五官、灰衣、发丝、背景。\n输出单张独立横向16:9，尽可能1536×864。输出内不包含A/B对照、标题、UI、按钮、水印、乱码、注释；仅本预设规定的九宫格/多视图/设计页允许多格。\n第一张参考是共用底图，锁定身份/物件；第二张是当前B版，锁定已有布局，定向修改；不引用会话其他图片；滤镜和肤质必须固定身份、脸形、表情、姿势、衣服、裁切和全部物件。不可用换脸或换取景制造差别。\n本次重点修正：只编辑第二张图的皮肤反射：把额头中心、鼻梁、鼻尖和两颊的白色镜面亮斑真正去掉，改成同一区域自然肤色的柔雾漫反射，控油要明显。保留毛孔、皮肤体积、光照方向、脸型、眼鼻嘴、原年龄与表情。不要用改变背景/衣服/整体曝光产生差别，不要改变皮肤本身的色相或加妆。眼睛高光和头发高光不能抹掉。",
+  "reference_paths": [
+    "/workspace/directorx-task5-ab/bases/base-portrait.png",
+    "/workspace/directorx-task5-ab/attempts/B-creative-preset-16-initial.png"
+  ],
+  "base_asset": "base-portrait",
+  "reference_role": "shared_base_identity_then_initial_B_for_targeted_revision",
+  "generated_by": "ChatGPT",
+  "preview_kind": "gpt_illustration_not_provider_result",
+  "source_prompt_sha256": "a5b7f6fb737d7b03c21811f510dfeba0dfe660321707a74c34e4bc3f767f04ea",
+  "completed_at_utc": "2026-10-22T16:22:12.069Z",
+  "tool": "image_gen.imagegen",
+  "revision": 1,
+  "path": "/workspace/generated_images/exec-e4262efd-8195-4776-88af-e0516fd07c60.png",
+  "initial_job_started_at_utc": "2026-10-22T16:10:50.352Z",
+  "revision_call_started_at_utc": null,
+  "timestamp_note": "Targeted retry records actual completion time. Its call start time was not separately captured; initial_job_started_at_utc refers only to the original attempt."
+}

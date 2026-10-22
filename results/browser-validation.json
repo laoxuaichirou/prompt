@@ -1,0 +1,169 @@
+{
+  "executed_at_utc": "2026-10-22T16:41:10.479Z",
+  "browser": "Chrome/154.0.8037.57",
+  "network_mode": "Temporary localhost static server; all non-origin HTTP(S) blocked by CDP",
+  "direct_file_url_test": "Blocked by managed Chromium administrator policy, retained in browser-file-url-block.json; no policy changes attempted",
+  "checks": [
+    {
+      "check": "offline_page_and_54_thumbnails_load",
+      "passed": true,
+      "detail": {
+        "articles": 27,
+        "images": 54
+      }
+    },
+    {
+      "check": "initial_27_ids_and_recommendations",
+      "passed": true
+    },
+    {
+      "check": "select_B_exports_corresponding_original_and_hash",
+      "passed": true
+    },
+    {
+      "check": "reject_both_exports_null_paths_and_hash",
+      "passed": true
+    },
+    {
+      "check": "actual_browser_download_contains_27_selections",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-0",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-1",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-2",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-3",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-4",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-5",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-6",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-7",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-8",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-9",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-10",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-11",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-12",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-13",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-14",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-15",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-16",
+      "passed": true
+    },
+    {
+      "check": "exported_missing_is_null_creative-preset-17",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-18",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-19",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-20",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-21",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-22",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-23",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-24",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-25",
+      "passed": true
+    },
+    {
+      "check": "exported_hash_creative-preset-26",
+      "passed": true
+    },
+    {
+      "check": "reset_restores_every_original_recommendation",
+      "passed": true
+    },
+    {
+      "check": "desktop_has_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "check": "mobile_has_no_horizontal_overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "check": "no_javascript_exceptions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_external_page_network_requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true,
+  "export_download_sha256": "34698ad2f5bd888755a611d8dd47b43f26ad54fa233a99491e29843e94366bd5",
+  "export_download_bytes": 16471
+}
