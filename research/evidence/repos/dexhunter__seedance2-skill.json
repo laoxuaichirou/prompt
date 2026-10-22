@@ -1,0 +1,48 @@
+{
+  "name": "dexhunter/seedance2-skill",
+  "url": "https://github.com/dexhunter/seedance2-skill",
+  "retrieved_at": "2026-10-22T19:55:47.294788+00:00",
+  "default_branch": "main",
+  "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/dexhunter/seedance2-skill/blob/516284d5bab58361bfdfed3cc96cee3e837d4c44/README.md",
+  "readme_sha256": "a8134a64991da32e3f2bb33ad805b012ed7dfc9d427ecfbd5b1923f65bb89c38",
+  "root_paths": [
+    "assets",
+    "zh",
+    ".gitignore",
+    "LICENSE",
+    "README-zh.md",
+    "README.md",
+    "SKILL.md"
+  ],
+  "readme_headings": [
+    "Seedance 2.0 Prompt Writing Skills",
+    "Install",
+    "Option A: Manual copy (recommended)",
+    "English",
+    "Chinese",
+    "Option B: Via skills CLI",
+    "Skills",
+    "Sources",
+    "License"
+  ],
+  "resource_links": [
+    "https://agentskills.io",
+    "SKILL.md",
+    "zh/SKILL.md"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/dexhunter/seedance2-skill/blob/516284d5bab58361bfdfed3cc96cee3e837d4c44/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 Dex (i@dex.moe)",
+        ""
+      ],
+      "sha256": "56abf51bba5502dcc1cd014c9adea5787cd9eec67421858484b660ec97922978"
+    }
+  ]
+}

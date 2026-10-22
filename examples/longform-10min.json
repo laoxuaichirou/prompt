@@ -1,0 +1,2183 @@
+{
+  "schema_version": "1.0",
+  "title": "AI创作流程讲解：10分钟计划示例",
+  "status": "planned-not-rendered",
+  "target_duration_seconds": 600,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "transition": "hard-cut; no overlap",
+  "note": "镜头表结构示例，不是完整旁白或已生成影片。投产前需补每镜具体动作、实际参考资产、已核实口播文稿、模型能力与成本。",
+  "chapters": [
+    "开场：问题与目标",
+    "确定素材与风格",
+    "建立角色和商品资产",
+    "拆分镜头与引用",
+    "短片逐镜头生产",
+    "口播动效与图表",
+    "剪辑声音与质检",
+    "总结与下一步"
+  ],
+  "shots": [
+    {
+      "id": "S001",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 0,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S002",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S003",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S004",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S005",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S006",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S007",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S008",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S009",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S010",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S011",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S012",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S013",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S014",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 1950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S015",
+      "chapter": 1,
+      "chapter_title": "开场：问题与目标",
+      "start_frame": 2100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S016",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 2250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S017",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 2400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S018",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 2550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S019",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 2700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S020",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 2850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S021",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3000,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S022",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S023",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S024",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S025",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S026",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S027",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 3900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S028",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 4050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S029",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 4200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S030",
+      "chapter": 2,
+      "chapter_title": "确定素材与风格",
+      "start_frame": 4350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S031",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 4500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S032",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 4650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S033",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 4800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S034",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 4950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S035",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S036",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S037",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S038",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S039",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S040",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 5850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S041",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 6000,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S042",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 6150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S043",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 6300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S044",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 6450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S045",
+      "chapter": 3,
+      "chapter_title": "建立角色和商品资产",
+      "start_frame": 6600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S046",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 6750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S047",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 6900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S048",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S049",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S050",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S051",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S052",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S053",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S054",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 7950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S055",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S056",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S057",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S058",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S059",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S060",
+      "chapter": 4,
+      "chapter_title": "拆分镜头与引用",
+      "start_frame": 8850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S061",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9000,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S062",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S063",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S064",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S065",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S066",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S067",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 9900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S068",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S069",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S070",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S071",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S072",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S073",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S074",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 10950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S075",
+      "chapter": 5,
+      "chapter_title": "短片逐镜头生产",
+      "start_frame": 11100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S076",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 11250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S077",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 11400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S078",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 11550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S079",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 11700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S080",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 11850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S081",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12000,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S082",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S083",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S084",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S085",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S086",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S087",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 12900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S088",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 13050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S089",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 13200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S090",
+      "chapter": 6,
+      "chapter_title": "口播动效与图表",
+      "start_frame": 13350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S091",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 13500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S092",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 13650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S093",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 13800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S094",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 13950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S095",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S096",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S097",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S098",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S099",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S100",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 14850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S101",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 15000,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S102",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 15150,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S103",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 15300,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S104",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 15450,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S105",
+      "chapter": 7,
+      "chapter_title": "剪辑声音与质检",
+      "start_frame": 15600,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S106",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 15750,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S107",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 15900,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S108",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16050,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S109",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16200,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S110",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16350,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S111",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16500,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S112",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16650,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S113",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16800,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S114",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 16950,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S115",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17100,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S116",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17250,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "观点解释",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S117",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17400,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "场景示意",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S118",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17550,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "ai-video",
+      "purpose": "操作过程",
+      "prompt_id": "VID-SOC-01",
+      "asset_refs": [],
+      "required_assets": [
+        "已批准的场景/商品参考"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S119",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17700,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "still-motion",
+      "purpose": "信息对照",
+      "prompt_id": "IMG-SOC-04",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    },
+    {
+      "id": "S120",
+      "chapter": 8,
+      "chapter_title": "总结与下一步",
+      "start_frame": 17850,
+      "duration_frames": 150,
+      "duration_seconds": 5,
+      "kind": "remotion",
+      "purpose": "章节衔接",
+      "prompt_id": "REM-02",
+      "asset_refs": [],
+      "required_assets": [
+        "已核实文字/数据与本地字体"
+      ],
+      "status": "planned",
+      "audio": "旁白轨待录制；镜头自身默认静音",
+      "continuity_check": "角色/商品版本、光线、运动方向和上一镜结束状态"
+    }
+  ]
+}

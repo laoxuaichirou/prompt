@@ -1,0 +1,54 @@
+{
+  "name": "jgraph/drawio-desktop",
+  "url": "https://github.com/jgraph/drawio-desktop",
+  "retrieved_at": "2026-10-22T19:55:35.218748+00:00",
+  "default_branch": "dev",
+  "commit": "6ceb5d6292e343b5f2b49046cf0087aac7b6ce6f",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/jgraph/drawio-desktop/blob/6ceb5d6292e343b5f2b49046cf0087aac7b6ce6f/README.md",
+  "readme_sha256": "bd5abacd56d9b8e0810dd6e3bde1890cda8a605da89cc62032735f7f29e6b566",
+  "root_paths": [
+    ".github",
+    "build",
+    "doc",
+    "drawio",
+    "src",
+    ".gitignore",
+    ".gitmodules",
+    ".nvmrc",
+    "CLAUDE.md",
+    "CODE_OF_CONDUCT.md",
+    "DEVELOPMENT.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "dependency-diagram.png",
+    "electron-builder-appx.json",
+    "electron-builder-linux-mac.json",
+    "electron-builder-snap.json",
+    "electron-builder-win-arm64.json",
+    "electron-builder-win.json",
+    "package-lock.json",
+    "package.json",
+    "preload.js",
+    "screenshot.png",
+    "sync.cjs"
+  ],
+  "readme_headings": [
+    "Windows on Arm"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/jgraph/drawio-desktop/blob/6ceb5d6292e343b5f2b49046cf0087aac7b6ce6f/LICENSE",
+      "first_lines": [
+        "GNU GENERAL PUBLIC LICENSE",
+        "                       Version 3, 29 June 2007",
+        "",
+        " Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+      ],
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "willwulfken/MidJourney-Styles-and-Keywords-Reference",
+  "url": "https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference",
+  "retrieved_at": "2026-10-22T19:55:45.704896+00:00",
+  "default_branch": "main",
+  "commit": "1e54e7ffd4b6a9a2afc6de83bcfcff962619f299",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference/blob/1e54e7ffd4b6a9a2afc6de83bcfcff962619f299/README.md",
+  "readme_sha256": "223984111587e3e1e07b5270baade7abd2c086222aa5c6117867541c45e997dc",
+  "root_paths": [
+    ".github",
+    "Images",
+    "Pages",
+    ".gitignore",
+    "README.md"
+  ],
+  "readme_headings": [],
+  "resource_links": [],
+  "license_evidence": []
+}

@@ -1,0 +1,61 @@
+{
+  "name": "iart-ai/motion-skills",
+  "url": "https://github.com/iart-ai/motion-skills",
+  "retrieved_at": "2026-10-22T19:55:50.640820+00:00",
+  "default_branch": "master",
+  "commit": "bb5a3ce666110855a3437de2f70e9968c408e005",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/iart-ai/motion-skills/blob/bb5a3ce666110855a3437de2f70e9968c408e005/README.md",
+  "readme_sha256": "8355a85d53ef65820603642871ab21c8b57f26dcf6f0a9d8e4598c87378dbf76",
+  "root_paths": [
+    "tools",
+    "LICENSE",
+    "README.md",
+    "showcase.gif",
+    "showcase.html"
+  ],
+  "readme_headings": [
+    "Motion Graphics Skills for AI Coding Agents",
+    "The 18 packs",
+    "Install",
+    "…or any pack above",
+    "What's a skill?",
+    "Built for every kind of motion",
+    "License"
+  ],
+  "resource_links": [
+    "https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=motion-skills&utm_content=intro",
+    "https://github.com/iart-ai/tiktok-video-skills",
+    "https://github.com/iart-ai/text-message-video-skills",
+    "https://github.com/iart-ai/youtube-video-skills",
+    "https://github.com/iart-ai/ecommerce-video-skills",
+    "https://github.com/iart-ai/ad-video-skills",
+    "https://github.com/iart-ai/data-animation-skills",
+    "https://github.com/iart-ai/explainer-video-skills",
+    "https://github.com/iart-ai/map-animation-skills",
+    "https://github.com/iart-ai/web-animation-skills",
+    "https://github.com/iart-ai/motion-design-skills",
+    "https://github.com/iart-ai/kinetic-typography-skills",
+    "https://github.com/iart-ai/freelance-motion-skills",
+    "https://github.com/iart-ai/webgl-animation-skills",
+    "https://github.com/iart-ai/manim-skills",
+    "https://github.com/iart-ai/generative-illustration-skills",
+    "https://github.com/iart-ai/javascript-animation-skills",
+    "https://github.com/iart-ai/lower-thirds-skills",
+    "https://github.com/iart-ai/b-roll-skills",
+    "https://iart.ai/?utm_source=github&utm_medium=readme&utm_campaign=motion-skills&utm_content=footer"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/iart-ai/motion-skills/blob/bb5a3ce666110855a3437de2f70e9968c408e005/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 iart.ai",
+        ""
+      ],
+      "sha256": "33d6cd35a20903b5e968a76a1e584a7aeae2c83e3e58ea58ecc50b889b83e668"
+    }
+  ]
+}

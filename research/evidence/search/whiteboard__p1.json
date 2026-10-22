@@ -1,0 +1,224 @@
+{
+  "query": "whiteboard",
+  "page": 1,
+  "url": "https://github.com/search?q=whiteboard&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:54:35.853818+00:00",
+  "result_count": 23177,
+  "items": [
+    {
+      "name": "excalidraw/excalidraw",
+      "stars": 134389,
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "topics": [
+        "productivity",
+        "drawing",
+        "canvas",
+        "collaboration",
+        "whiteboard",
+        "diagrams",
+        "hacktoberfest"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T13:20:32.295Z",
+      "url": "https://github.com/excalidraw/excalidraw"
+    },
+    {
+      "name": "toeverything/AFFiNE",
+      "stars": 73764,
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creati…",
+      "topics": [
+        "electron",
+        "editor",
+        "markdown",
+        "rust",
+        "app",
+        "wiki",
+        "notes",
+        "table",
+        "rust-language",
+        "workspace",
+        "whiteboard",
+        "tableview",
+        "rust-lang",
+        "crdt",
+        "knowledge-base",
+        "notion",
+        "miro",
+        "notion-alternative"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T14:12:26.586Z",
+      "url": "https://github.com/toeverything/AFFiNE"
+    },
+    {
+      "name": "poteto/hiring-without-whiteboards",
+      "stars": 52846,
+      "description": "⭐️ Companies that don't have a broken hiring process",
+      "topics": [
+        "tech",
+        "jobs",
+        "interview",
+        "whiteboard",
+        "hiring",
+        "airtable",
+        "hiring-without-whiteboards"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-09-24T04:48:39.028Z",
+      "url": "https://github.com/poteto/hiring-without-whiteboards"
+    },
+    {
+      "name": "tldraw/tldraw",
+      "stars": 51043,
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+      "topics": [
+        "react",
+        "drawing",
+        "design",
+        "sync",
+        "sdk",
+        "canvas",
+        "diagram",
+        "multiplayer",
+        "sketch",
+        "collaboration",
+        "whiteboard",
+        "infinite"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T16:57:38.148Z",
+      "url": "https://github.com/tldraw/tldraw"
+    },
+    {
+      "name": "plait-board/drawnix",
+      "stars": 14968,
+      "description": "开源白板工具（SaaS），一体化白板，包含思维导图、流程图、自由画等。All in one open-source whiteboard tool with mind, flowchart, freehand and etc.",
+      "topics": [
+        "productivity",
+        "drawing",
+        "collaboration",
+        "whiteboard",
+        "flowchart",
+        "mind-map",
+        "mindmap",
+        "localfirst"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-09-08T03:15:08.485Z",
+      "url": "https://github.com/plait-board/drawnix"
+    },
+    {
+      "name": "konvajs/konva",
+      "stars": 14888,
+      "description": "Konva.js is an HTML5 Canvas JavaScript framework for interactive graphics, design editors, whiteboards, and diagrams. Scene graph with ev…",
+      "topics": [
+        "javascript",
+        "canvas",
+        "drag-and-drop",
+        "animation",
+        "konva",
+        "shape",
+        "node-canvas",
+        "graphics",
+        "html5-canvas",
+        "whiteboard",
+        "design-editor",
+        "canvas-editor"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T00:14:08.572Z",
+      "url": "https://github.com/konvajs/konva"
+    },
+    {
+      "name": "Agents365-ai/drawio-skill",
+      "stars": 10306,
+      "description": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into editable, tested …",
+      "topics": [
+        "graphql",
+        "kubernetes",
+        "protobuf",
+        "diagram",
+        "terraform",
+        "architecture",
+        "uml",
+        "bpmn",
+        "flowchart",
+        "sysml",
+        "architecture-diagram",
+        "drawio",
+        "asyncapi",
+        "github-actions",
+        "c4-model",
+        "diagrams-as-code",
+        "mcp-server",
+        "agent-skills",
+        "claude-code",
+        "image-to-diagram"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-11T11:22:56.030Z",
+      "url": "https://github.com/Agents365-ai/drawio-skill"
+    },
+    {
+      "name": "jgraph/drawio",
+      "stars": 8932,
+      "description": "draw.io is a JavaScript, client-side editor for general diagramming.",
+      "topics": [
+        "javascript",
+        "diagram",
+        "whiteboard"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-18T10:53:15.638Z",
+      "url": "https://github.com/jgraph/drawio"
+    },
+    {
+      "name": "mbrlabs/Lorien",
+      "stars": 6861,
+      "description": "Infinite canvas drawing/whiteboarding app for Windows, Linux and macOS. Made with Godot.",
+      "topics": [
+        "notebook",
+        "whiteboard",
+        "godot-engine",
+        "note-taking",
+        "vector-graphics",
+        "infinite-canvas",
+        "drawing-app"
+      ],
+      "archived": false,
+      "language": "GDScript",
+      "updated_at": "2025-09-22T21:29:46.859Z",
+      "url": "https://github.com/mbrlabs/Lorien"
+    },
+    {
+      "name": "konvajs/react-konva",
+      "stars": 6437,
+      "description": "React components for the Konva 2d canvas library. Build interactive graphics, design editors, and whiteboards with JSX.",
+      "topics": [
+        "react",
+        "visualization",
+        "canvas",
+        "konva",
+        "draw-graphics",
+        "konva-framework",
+        "whiteboard",
+        "design-editor",
+        "react-canvas",
+        "canvas-editor"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T01:08:23.664Z",
+      "url": "https://github.com/konvajs/react-konva"
+    }
+  ]
+}

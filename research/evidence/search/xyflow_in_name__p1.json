@@ -1,0 +1,152 @@
+{
+  "query": "xyflow in:name",
+  "page": 1,
+  "url": "https://github.com/search?q=xyflow+in%3Aname&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:55:00.361235+00:00",
+  "result_count": 88,
+  "items": [
+    {
+      "name": "xyflow/xyflow",
+      "stars": 38751,
+      "description": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https…",
+      "topics": [
+        "react",
+        "javascript",
+        "workflow",
+        "typescript",
+        "graph",
+        "svelte",
+        "typescript-library",
+        "flowchart",
+        "react-flow",
+        "node-based-ui",
+        "svelte-flow"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T13:08:24.499Z",
+      "url": "https://github.com/xyflow/xyflow"
+    },
+    {
+      "name": "xyflow/awesome-node-based-uis",
+      "stars": 3696,
+      "description": "A curated list with resources about node-based UIs",
+      "topics": [
+        "etl",
+        "awesome-list",
+        "visual-programming",
+        "workflow-editor",
+        "node-based-ui"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2025-06-29T08:11:39.264Z",
+      "url": "https://github.com/xyflow/awesome-node-based-uis"
+    },
+    {
+      "name": "xyflow/strudel-flow",
+      "stars": 236,
+      "description": "A visual music sequencer built with React Flow and Strudel.",
+      "topics": [
+        "strudel",
+        "react-flow"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T10:55:29.152Z",
+      "url": "https://github.com/xyflow/strudel-flow"
+    },
+    {
+      "name": "xyflow/react-flow-example-apps",
+      "stars": 217,
+      "description": "Example React Flow apps for Create React App, Next.js and Remix.",
+      "topics": [
+        "workflow-engine",
+        "starterkit",
+        "graph-editor",
+        "reactflow",
+        "node-based-ui"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-09-30T20:46:10.931Z",
+      "url": "https://github.com/xyflow/react-flow-example-apps"
+    },
+    {
+      "name": "xyflow/pro-platform",
+      "stars": 129,
+      "description": "The legacy subscriber platform for React Flow Pro. Not maintained anymore since the platform is now integrated into our websites.",
+      "topics": [
+        "nextjs",
+        "react-flow",
+        "nhost"
+      ],
+      "archived": true,
+      "language": "TypeScript",
+      "updated_at": "2026-07-23T08:12:44.970Z",
+      "url": "https://github.com/xyflow/pro-platform"
+    },
+    {
+      "name": "xyflow/react-flow-mindmap-app",
+      "stars": 126,
+      "description": "A quick and organized mind map app built with React Flow. Follow the tutorial to learn how to build it yourself.",
+      "topics": [
+        "react",
+        "mindmap",
+        "react-flow"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-03-19T11:28:05.332Z",
+      "url": "https://github.com/xyflow/react-flow-mindmap-app"
+    },
+    {
+      "name": "xyflow/vite-react-flow-template",
+      "stars": 100,
+      "description": "A vite template to get started with React Flow",
+      "topics": [
+        "vite",
+        "react-flow"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-07-06T16:04:21.903Z",
+      "url": "https://github.com/xyflow/vite-react-flow-template"
+    },
+    {
+      "name": "knackstedt/ngx-xyflow",
+      "stars": 61,
+      "description": "Angular wrapper of xyflow (formerly Reactflow)",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-07-01T23:36:55.527Z",
+      "url": "https://github.com/knackstedt/ngx-xyflow"
+    },
+    {
+      "name": "xyflow/react-flow-docs",
+      "stars": 50,
+      "description": "⚠️ This repo contains old versions of the React Flow website. The new repo is located at:",
+      "topics": [],
+      "archived": true,
+      "language": "JavaScript",
+      "updated_at": "2026-08-10T08:12:57.734Z",
+      "url": "https://github.com/xyflow/react-flow-docs"
+    },
+    {
+      "name": "xyflow/vite-svelte-flow-template",
+      "stars": 33,
+      "description": "A vite template to get started with Svelte Flow",
+      "topics": [
+        "svelte",
+        "vite",
+        "svelte-flow"
+      ],
+      "archived": false,
+      "language": "Svelte",
+      "updated_at": "2026-05-06T04:42:14.922Z",
+      "url": "https://github.com/xyflow/vite-svelte-flow-template"
+    }
+  ]
+}

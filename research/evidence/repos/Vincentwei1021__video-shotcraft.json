@@ -1,0 +1,75 @@
+{
+  "name": "Vincentwei1021/video-shotcraft",
+  "url": "https://github.com/Vincentwei1021/video-shotcraft",
+  "retrieved_at": "2026-10-22T19:55:50.775582+00:00",
+  "default_branch": "main",
+  "commit": "43bd349a136651865ecfa6ea1cf012f6e957d304",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/Vincentwei1021/video-shotcraft/blob/43bd349a136651865ecfa6ea1cf012f6e957d304/README.md",
+  "readme_sha256": "fa2bdc818346354b617fd3749d89e1ec36da8c9c8e807c94167b4b70b93d5c31",
+  "root_paths": [
+    ".claude-plugin",
+    ".github",
+    "agents",
+    "assets",
+    "demos",
+    "gallery",
+    "jianying-export",
+    "publish",
+    "references",
+    "shot-polish",
+    "template",
+    "videos/readme-workflow",
+    "workbench",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "README_CN.md",
+    "README_JA.md",
+    "README_RU.md",
+    "SKILL.md",
+    "package-lock.json",
+    "package.json"
+  ],
+  "readme_headings": [
+    "video-shotcraft",
+    "What it does",
+    "What's new",
+    "❤️ Sponsors",
+    "Install",
+    "Use",
+    "Shot library",
+    "Motion Workbench",
+    "What you get",
+    "Showcase",
+    "Requirements",
+    "Audio and assets",
+    "License",
+    "Acknowledgements",
+    "Follow me",
+    "Star history"
+  ],
+  "resource_links": [
+    "https://img.shields.io/badge/Claude%20Code-skill-d97757",
+    "SKILL.md",
+    "https://img.shields.io/badge/Codex-skill-10a37f",
+    "SKILL.md",
+    "assets/readme/workflow.gif",
+    "https://skills.sh/",
+    "https://github.com/Vincentwei1021/video-shotcraft/issues/new?template=showcase.yml",
+    "SKILL.md"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/43bd349a136651865ecfa6ea1cf012f6e957d304/LICENSE",
+      "first_lines": [
+        "Apache License",
+        "                           Version 2.0, January 2004",
+        "                        http://www.apache.org/licenses/",
+        ""
+      ],
+      "sha256": "b2ce9877a55547ada9b870150664d1468ff777e67cc9888806a73927d31c5771"
+    }
+  ]
+}

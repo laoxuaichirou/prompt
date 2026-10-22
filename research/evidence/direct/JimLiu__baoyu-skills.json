@@ -1,0 +1,14 @@
+{
+  "query": "named repository inspection: JimLiu/baoyu-skills",
+  "kind": "repository-page metadata (not a search result)",
+  "url": "https://github.com/JimLiu/baoyu-skills",
+  "retrieved_at": "2026-10-22T20:23:03.391017+00:00",
+  "items": [
+    {
+      "name": "JimLiu/baoyu-skills",
+      "stars": 26873,
+      "url": "https://github.com/JimLiu/baoyu-skills"
+    }
+  ],
+  "raw_field": "stargazerCount"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "wshuyi/remotion-video-skill",
+  "url": "https://github.com/wshuyi/remotion-video-skill",
+  "retrieved_at": "2026-10-22T19:55:51.392604+00:00",
+  "default_branch": "main",
+  "commit": "d16ebd9ca330d636cf82bfd33d48ae12df74fadd",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/wshuyi/remotion-video-skill/blob/d16ebd9ca330d636cf82bfd33d48ae12df74fadd/README.md",
+  "readme_sha256": "6542db409abb400bd5f6164892f8d417f58dedeeaef9d0098c3611af0c0dc8c4",
+  "root_paths": [
+    "scripts",
+    "templates",
+    "README.md",
+    "README_CN.md",
+    "SKILL.md"
+  ],
+  "readme_headings": [
+    "remotion-video",
+    "Features",
+    "Installation",
+    "For Claude Code Users",
+    "TTS Setup (Choose One)",
+    "Option A: Edge TTS (Free, Recommended for Quick Start)",
+    "Option B: MiniMax TTS (Paid, Voice Cloning Support)",
+    "Add to your ~/.zshrc or ~/.bashrc",
+    "Usage",
+    "Example Prompts",
+    "Project Structure",
+    "Requirements",
+    "macOS",
+    "Ubuntu/Debian",
+    "License"
+  ],
+  "resource_links": [],
+  "license_evidence": []
+}

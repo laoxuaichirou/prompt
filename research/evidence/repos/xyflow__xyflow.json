@@ -1,0 +1,57 @@
+{
+  "name": "xyflow/xyflow",
+  "url": "https://github.com/xyflow/xyflow",
+  "retrieved_at": "2026-10-22T19:55:36.759945+00:00",
+  "default_branch": "main",
+  "commit": "8523d8dd9f1551954bc221dccabd6a3119ef9e22",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/xyflow/xyflow/blob/8523d8dd9f1551954bc221dccabd6a3119ef9e22/README.md",
+  "readme_sha256": "be7df4c1810d7c7d0e44e26d08404a97fa9ab62d3fdf3e5fd4c31f3070472d63",
+  "root_paths": [
+    ".changeset",
+    ".github",
+    "examples",
+    "packages",
+    "tests/playwright",
+    "tooling",
+    ".codespellrc",
+    ".gitattributes",
+    ".gitignore",
+    ".npmrc",
+    ".prettierignore",
+    ".prettierrc.json",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "dependabot.yml",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "turbo.json"
+  ],
+  "readme_headings": [
+    "The xyflow mono repo",
+    "Commercial usage",
+    "Getting started",
+    "Releases ",
+    "Built by [xyflow](https://xyflow.com)",
+    "License"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/xyflow/xyflow/blob/8523d8dd9f1551954bc221dccabd6a3119ef9e22/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2019-2025 webkid GmbH",
+        ""
+      ],
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff"
+    }
+  ]
+}

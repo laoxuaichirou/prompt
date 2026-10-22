@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks_passed": 758,
+  "scope": "offline evidence, schemas, pinned references, actual media probing, mirrored-source hashes, local links, full delivery checksums",
+  "live_github_stars": "not refreshed",
+  "browser_test": "saved evidence checked; rerun scripts/test_canvas.py for independent browser execution",
+  "long_video_generation": "not performed; supplied plans only",
+  "checksums": "verified"
+}

@@ -1,0 +1,179 @@
+{
+  "query": "seedance skill",
+  "page": 1,
+  "url": "https://github.com/search?q=seedance+skill&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:54:37.285852+00:00",
+  "result_count": 1037,
+  "items": [
+    {
+      "name": "lsdefine/GenericAgent",
+      "stars": 14344,
+      "description": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+      "topics": [
+        "python",
+        "lightweight",
+        "automation",
+        "gemini",
+        "desktop-automation",
+        "task-automation",
+        "browser-automation",
+        "skill-tree",
+        "claude",
+        "computer-control",
+        "autonomous-agent",
+        "ai-agent",
+        "llm-agent",
+        "memory-system",
+        "self-evolving"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-21T16:19:29.607Z",
+      "url": "https://github.com/lsdefine/GenericAgent"
+    },
+    {
+      "name": "dexhunter/seedance2-skill",
+      "stars": 4333,
+      "description": "skill to create best prompts for generating videos with seedance2.0",
+      "topics": [
+        "prompt",
+        "seedance",
+        "video-prompt",
+        "seedance-2"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-19T18:18:50.186Z",
+      "url": "https://github.com/dexhunter/seedance2-skill"
+    },
+    {
+      "name": "songguoxs/seedance-prompt-skill",
+      "stars": 2951,
+      "description": "Seedance 2.0 prompt skill，使用该Skill生成Seedance 2.0 视频提示词",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-02-12T16:14:10.425Z",
+      "url": "https://github.com/songguoxs/seedance-prompt-skill"
+    },
+    {
+      "name": "liangdabiao/Seedance2-Storyboard-Generator",
+      "stars": 2653,
+      "description": "一句话：试错成本越来越高，提示词的重要性从来没有像今天这样大。Seedance 2.0 Storyboard Generator 开源剧情剧本Skill工具，帮佬友一键写好剧本 - 将小说/故事转化为多集视频。 为什么做这个？ 因为 seedance2 已经改变了一切，需要…",
+      "topics": [
+        "agent",
+        "skills",
+        "skill"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-21T02:46:33.105Z",
+      "url": "https://github.com/liangdabiao/Seedance2-Storyboard-Generator"
+    },
+    {
+      "name": "LearnPrompt/awesome-seedance",
+      "stars": 2218,
+      "description": "🎬 Evidence-led Seedance 2.5 / 2.0 prompt library: 840+ cases traced to original posts, 490+ cross-model retest runs, 27 copy-ready templa…",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "minimax",
+        "codex",
+        "prompts",
+        "video-generation",
+        "bytedance",
+        "text-to-video",
+        "prompt-engineering",
+        "ai-video",
+        "prompt-library",
+        "ai-video-generation",
+        "prompt-templates",
+        "claude-code",
+        "seedance",
+        "agent-skill",
+        "seedance-2-0",
+        "seedance-2-5",
+        "goodcase"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T06:18:55.765Z",
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    },
+    {
+      "name": "lixiaoxiao9888-create/manju-laoli-skill",
+      "stars": 1598,
+      "description": "漫剧老李 AIGC 创作全流程 Skill · V7.4.26 多技能套装版（Short-Drama Director Suite）：1 总控 + 12 子技能 · 四层纵深——赛道分流 / 素材采风 / 剧本 / 资产 / 分镜 / 三大打戏引擎 / 投喂 / 质检全链路…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-21T02:06:32.644Z",
+      "url": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill"
+    },
+    {
+      "name": "beshuaxian/higgsfield-seedance2-jineng",
+      "stars": 981,
+      "description": "Seedance 2.0 × Higgsfield 技能集 | 15 Claude prompt skills for AI video generation — cinematic, 3D CGI, anime, e-commerce ads, music videos …",
+      "topics": [],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-04-09T17:37:21.530Z",
+      "url": "https://github.com/beshuaxian/higgsfield-seedance2-jineng"
+    },
+    {
+      "name": "MapleShaw/seedance2.0-prompt-skill",
+      "stars": 824,
+      "description": "",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-06-21T08:40:20.946Z",
+      "url": "https://github.com/MapleShaw/seedance2.0-prompt-skill"
+    },
+    {
+      "name": "OSideMedia/higgsfield-ai-prompt-skill",
+      "stars": 779,
+      "description": "Claude AI skill for cinematic Higgsfield AI prompts — 32 sub-skills covering Seedance 2.5 (omni-reference, video edit + extend) and 2.0, …",
+      "topics": [
+        "wan",
+        "motion-control",
+        "video-generation",
+        "veo",
+        "prompt-engineering",
+        "ai-video",
+        "ai-cinema",
+        "ai-filmmaking",
+        "kling",
+        "claude-code",
+        "higgsfield",
+        "seedance",
+        "claude-skill",
+        "dreamina",
+        "claude-cowork",
+        "soul-id",
+        "mcsla",
+        "cinema-studio",
+        "seedance-2-5",
+        "character-acting"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-27T03:24:18.600Z",
+      "url": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill"
+    },
+    {
+      "name": "liangdabiao/make-prompt-seedance2",
+      "stars": 727,
+      "description": "一句话：试错成本越来越高，提示词的重要性从来没有像今天这样大。seedance2结构化提示语和通用SKILL，整合了 Seedance 2.0（字节跳动 AI 视频生成模型）的结构化提示词使用方法，帮助用户快速上手并创作出高质量的视频内容。包含 16+ 个模板和 8+ 个示…",
+      "topics": [
+        "skills",
+        "skill"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-10-04T07:48:02.590Z",
+      "url": "https://github.com/liangdabiao/make-prompt-seedance2"
+    }
+  ]
+}

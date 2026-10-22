@@ -1,0 +1,88 @@
+{
+  "status": "partial-search-coverage",
+  "failures": [
+    {
+      "query": "image prompts stars:>5000",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "video prompt stars:>1500",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "video prompt stars:>1500",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "AI video skill stars:>1500",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "AI video skill stars:>1500",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "seedance skill stars:>1500",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "seedance skill stars:>1500",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "midjourney in:name stars:>10000",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "midjourney in:name stars:>10000",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "nanobanana in:name stars:>8000",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "nanobanana in:name stars:>8000",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "remotion in:description stars:>500",
+      "page": 1,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    },
+    {
+      "query": "remotion in:description stars:>500",
+      "page": 2,
+      "http_status": 429,
+      "meaning": "GitHub public search rate limit; not a zero-result query"
+    }
+  ],
+  "api_probe": {
+    "endpoint": "https://api.github.com/search/repositories",
+    "status": "proxy CONNECT 403; no API search results used"
+  },
+  "completed_search_pages": 65
+}

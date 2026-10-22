@@ -1,0 +1,59 @@
+{
+  "name": "LiamGvchi/gc-minimal-zine-poster",
+  "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+  "retrieved_at": "2026-10-22T19:55:41.035707+00:00",
+  "default_branch": "main",
+  "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/README.md",
+  "readme_sha256": "02419e873f4b8e5987101252923b0ac088a92e8c7ed8959972c7490912742d19",
+  "root_paths": [
+    "agents",
+    "evals",
+    "examples",
+    "references",
+    ".gitignore",
+    "LICENSE",
+    "README.ja.md",
+    "README.md",
+    "README.zh-CN.md",
+    "SKILL.md"
+  ],
+  "readme_headings": [
+    "GC Minimal Zine Poster v0.3.1",
+    "What's New in v0.3.1",
+    "Visual Direction",
+    "Examples",
+    "Requirements",
+    "Installation",
+    "Upgrading from v0.3.0",
+    "Upgrading from v0.1",
+    "Usage",
+    "Request Modes",
+    "Output",
+    "Repository Structure",
+    "Acknowledgements",
+    "License"
+  ],
+  "resource_links": [
+    "examples/night-door.jpeg",
+    "examples/yellow-step.jpeg",
+    "examples/shore-pause.jpeg",
+    "examples/pause-map.jpeg",
+    "examples/typhoon-memory.jpeg",
+    "examples/moon-tide.jpeg"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 LiamGvchi",
+        ""
+      ],
+      "sha256": "d15c81ae8fa9a0b4b1db46c66e4490cc92e4898fb1f55e030559fbd2a2e2a232"
+    }
+  ]
+}

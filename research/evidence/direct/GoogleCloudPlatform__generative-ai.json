@@ -1,0 +1,14 @@
+{
+  "query": "named repository inspection: GoogleCloudPlatform/generative-ai",
+  "kind": "repository-page metadata (not a search result)",
+  "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+  "retrieved_at": "2026-10-22T20:23:06.233758+00:00",
+  "items": [
+    {
+      "name": "GoogleCloudPlatform/generative-ai",
+      "stars": 17807,
+      "url": "https://github.com/GoogleCloudPlatform/generative-ai"
+    }
+  ],
+  "raw_field": "stargazerCount"
+}

@@ -1,0 +1,187 @@
+{
+  "query": "video generation prompts",
+  "page": 1,
+  "url": "https://github.com/search?q=video+generation+prompts&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:37.481750+00:00",
+  "result_count": 1111,
+  "items": [
+    {
+      "name": "wide-trace/open-higgsfield",
+      "stars": 4526,
+      "description": "A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-09-17T01:53:26.114Z",
+      "url": "https://github.com/wide-trace/open-higgsfield"
+    },
+    {
+      "name": "ZeroLu/awesome-seedance",
+      "stars": 2769,
+      "description": "The ultimate collection of high-fidelity Seedance 2.0 prompts and Seedance AI resources. Discover Seedance 2.0 how to use for cinematic f…",
+      "topics": [
+        "video",
+        "ai",
+        "prompts",
+        "how-to-use",
+        "prompt-engineering",
+        "seedance",
+        "seedance-2",
+        "seedance2",
+        "seedance-api",
+        "seedance-2-api"
+      ],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-10-22T12:20:18.360Z",
+      "url": "https://github.com/ZeroLu/awesome-seedance"
+    },
+    {
+      "name": "YouMind-OpenLab/awesome-seedance-2-prompts",
+      "stars": 2167,
+      "description": "🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character …",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "video-generation",
+        "prompt-engineering",
+        "ai-video",
+        "seedance",
+        "video-prompt",
+        "seedance-2",
+        "seedance2",
+        "seedance-api"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T17:03:51.888Z",
+      "url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts"
+    },
+    {
+      "name": "beshuaxian/higgsfield-seedance2-jineng",
+      "stars": 981,
+      "description": "Seedance 2.0 × Higgsfield 技能集 | 15 Claude prompt skills for AI video generation — cinematic, 3D CGI, anime, e-commerce ads, music videos …",
+      "topics": [],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-04-09T17:37:21.530Z",
+      "url": "https://github.com/beshuaxian/higgsfield-seedance2-jineng"
+    },
+    {
+      "name": "aqm857886159/Nomi",
+      "stars": 600,
+      "description": "Open-source AI video workbench. Bring any model or your local ComfyUI, and let Claude Code / Codex / Cursor direct it over MCP — storyboa…",
+      "topics": [
+        "electron",
+        "react",
+        "desktop-app",
+        "typescript",
+        "offline",
+        "mcp",
+        "storyboard",
+        "image-generation",
+        "text-to-image",
+        "video-editing",
+        "video-generation",
+        "bring-your-own-key",
+        "local-first",
+        "text-to-video",
+        "creative-tools",
+        "timeline-editor",
+        "ai-agent",
+        "ai-video-generator",
+        "ai-video",
+        "comfyui"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T19:25:11.545Z",
+      "url": "https://github.com/aqm857886159/Nomi"
+    },
+    {
+      "name": "bytedance/Video-As-Prompt",
+      "stars": 460,
+      "description": "[ICLR 2026] Official repo for paper \"Video-As-Prompt: Unified Semantic Control for Video Generation\"",
+      "topics": [
+        "video",
+        "video-generation",
+        "video-dataset",
+        "in-context-generation",
+        "controllable-video-generation"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-02-08T01:59:06.014Z",
+      "url": "https://github.com/bytedance/Video-As-Prompt"
+    },
+    {
+      "name": "haochenheheda/segment-anything-annotator",
+      "stars": 387,
+      "description": "We developed a python UI based on labelme and segment-anything for pixel-level annotation. It support multiple masks generation by SAM(bo…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-01-19T06:22:29.640Z",
+      "url": "https://github.com/haochenheheda/segment-anything-annotator"
+    },
+    {
+      "name": "NickPittas/DirectorsConsole",
+      "stars": 363,
+      "description": "A web application for prompt generation and multiple ComfyUI remote and local connections for image and video generation in parallel in a…",
+      "topics": [
+        "prompt-toolkit",
+        "cinematography",
+        "video-generation",
+        "prompt-engineering",
+        "comfyui",
+        "image-generation-and-inpainting"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-02T15:23:27.041Z",
+      "url": "https://github.com/NickPittas/DirectorsConsole"
+    },
+    {
+      "name": "TencentARC/DiTCtrl",
+      "stars": 326,
+      "description": "[CVPR 2025] Official code of \"DiTCtrl: Exploring Attention Control in Multi-Modal Diffusion Transformer for Tuning-Free Multi-Prompt Longer ",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-03-30T07:22:03.931Z",
+      "url": "https://github.com/TencentARC/DiTCtrl"
+    },
+    {
+      "name": "Anil-matcha/awesome-seedance-2.5-api-prompts",
+      "stars": 324,
+      "description": "Seedance 2.5 API guide, prompts, parameters, and examples for video generation",
+      "topics": [
+        "python",
+        "camera-control",
+        "video-generation",
+        "muapi",
+        "image-to-video",
+        "bytedance",
+        "video-ai",
+        "text-to-video",
+        "prompt-engineering",
+        "generative-ai",
+        "ai-video",
+        "ai-video-generation",
+        "multimodal-ai",
+        "cinematic-ai",
+        "seedance",
+        "sora-alternative",
+        "seedance2",
+        "seedance-api",
+        "seedance-2-mini",
+        "seedance-2-5"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-10-06T21:47:20.340Z",
+      "url": "https://github.com/Anil-matcha/awesome-seedance-2.5-api-prompts"
+    }
+  ]
+}

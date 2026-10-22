@@ -1,0 +1,81 @@
+{
+  "query": "canvas stars:>20000",
+  "page": 2,
+  "url": "https://github.com/search?q=canvas+stars%3A%3E20000&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:56:26.678056+00:00",
+  "result_count": 14,
+  "items": [
+    {
+      "name": "niklasvh/html2canvas",
+      "stars": 31925,
+      "description": "Screenshots with JavaScript",
+      "topics": [
+        "javascript",
+        "screenshot",
+        "dom"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-07-18T07:26:56.705Z",
+      "url": "https://github.com/niklasvh/html2canvas"
+    },
+    {
+      "name": "fabricjs/fabric.js",
+      "stars": 31513,
+      "description": "Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T06:11:37.928Z",
+      "url": "https://github.com/fabricjs/fabric.js"
+    },
+    {
+      "name": "dream-num/univer",
+      "stars": 22725,
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "topics": [
+        "pdf",
+        "board",
+        "grid",
+        "sdk",
+        "presentation",
+        "excel",
+        "word",
+        "table",
+        "slides",
+        "xlsx",
+        "spreadsheet",
+        "collaboration",
+        "docx",
+        "data-table",
+        "pptx",
+        "doc",
+        "sheet",
+        "wordprocessor",
+        "ppt"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T13:27:39.958Z",
+      "url": "https://github.com/dream-num/univer"
+    },
+    {
+      "name": "rough-stuff/rough",
+      "stars": 21296,
+      "description": "Create graphics with a hand-drawn, sketchy, appearance",
+      "topics": [
+        "svg",
+        "canvas",
+        "graphics",
+        "html5-canvas",
+        "draw",
+        "svg-path"
+      ],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2024-07-28T21:12:58.191Z",
+      "url": "https://github.com/rough-stuff/rough"
+    }
+  ]
+}

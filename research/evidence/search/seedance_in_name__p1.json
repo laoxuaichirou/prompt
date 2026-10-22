@@ -1,0 +1,164 @@
+{
+  "query": "seedance in:name",
+  "page": 1,
+  "url": "https://github.com/search?q=seedance+in%3Aname&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:55:47.062567+00:00",
+  "result_count": 2008,
+  "items": [
+    {
+      "name": "Emily2040/seedance-2.0",
+      "stars": 7899,
+      "description": "Comprehensive production pipeline for quad-modal AI filmmaking with Seedance 2.0",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-03T01:39:10.817Z",
+      "url": "https://github.com/Emily2040/seedance-2.0"
+    },
+    {
+      "name": "dexhunter/seedance2-skill",
+      "stars": 4333,
+      "description": "skill to create best prompts for generating videos with seedance2.0",
+      "topics": [
+        "prompt",
+        "seedance",
+        "video-prompt",
+        "seedance-2"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-19T18:18:50.186Z",
+      "url": "https://github.com/dexhunter/seedance2-skill"
+    },
+    {
+      "name": "songguoxs/seedance-prompt-skill",
+      "stars": 2951,
+      "description": "Seedance 2.0 prompt skill，使用该Skill生成Seedance 2.0 视频提示词",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-02-12T16:14:10.425Z",
+      "url": "https://github.com/songguoxs/seedance-prompt-skill"
+    },
+    {
+      "name": "ZeroLu/awesome-seedance",
+      "stars": 2769,
+      "description": "The ultimate collection of high-fidelity Seedance 2.0 prompts and Seedance AI resources. Discover Seedance 2.0 how to use for cinematic f…",
+      "topics": [
+        "video",
+        "ai",
+        "prompts",
+        "how-to-use",
+        "prompt-engineering",
+        "seedance",
+        "seedance-2",
+        "seedance2",
+        "seedance-api",
+        "seedance-2-api"
+      ],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-10-22T12:20:18.360Z",
+      "url": "https://github.com/ZeroLu/awesome-seedance"
+    },
+    {
+      "name": "liangdabiao/Seedance2-Storyboard-Generator",
+      "stars": 2653,
+      "description": "一句话：试错成本越来越高，提示词的重要性从来没有像今天这样大。Seedance 2.0 Storyboard Generator 开源剧情剧本Skill工具，帮佬友一键写好剧本 - 将小说/故事转化为多集视频。 为什么做这个？ 因为 seedance2 已经改变了一切，需要…",
+      "topics": [
+        "agent",
+        "skills",
+        "skill"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-21T02:46:33.105Z",
+      "url": "https://github.com/liangdabiao/Seedance2-Storyboard-Generator"
+    },
+    {
+      "name": "LearnPrompt/awesome-seedance",
+      "stars": 2218,
+      "description": "🎬 Evidence-led Seedance 2.5 / 2.0 prompt library: 840+ cases traced to original posts, 490+ cross-model retest runs, 27 copy-ready templa…",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "minimax",
+        "codex",
+        "prompts",
+        "video-generation",
+        "bytedance",
+        "text-to-video",
+        "prompt-engineering",
+        "ai-video",
+        "prompt-library",
+        "ai-video-generation",
+        "prompt-templates",
+        "claude-code",
+        "seedance",
+        "agent-skill",
+        "seedance-2-0",
+        "seedance-2-5",
+        "goodcase"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T06:18:55.765Z",
+      "url": "https://github.com/LearnPrompt/awesome-seedance"
+    },
+    {
+      "name": "YouMind-OpenLab/awesome-seedance-2-prompts",
+      "stars": 2167,
+      "description": "🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character …",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "video-generation",
+        "prompt-engineering",
+        "ai-video",
+        "seedance",
+        "video-prompt",
+        "seedance-2",
+        "seedance2",
+        "seedance-api"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T17:03:51.888Z",
+      "url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts"
+    },
+    {
+      "name": "beshuaxian/higgsfield-seedance2-jineng",
+      "stars": 981,
+      "description": "Seedance 2.0 × Higgsfield 技能集 | 15 Claude prompt skills for AI video generation — cinematic, 3D CGI, anime, e-commerce ads, music videos …",
+      "topics": [],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-04-09T17:37:21.530Z",
+      "url": "https://github.com/beshuaxian/higgsfield-seedance2-jineng"
+    },
+    {
+      "name": "MapleShaw/seedance2.0-prompt-skill",
+      "stars": 824,
+      "description": "",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-06-21T08:40:20.946Z",
+      "url": "https://github.com/MapleShaw/seedance2.0-prompt-skill"
+    },
+    {
+      "name": "liangdabiao/make-prompt-seedance2",
+      "stars": 727,
+      "description": "一句话：试错成本越来越高，提示词的重要性从来没有像今天这样大。seedance2结构化提示语和通用SKILL，整合了 Seedance 2.0（字节跳动 AI 视频生成模型）的结构化提示词使用方法，帮助用户快速上手并创作出高质量的视频内容。包含 16+ 个模板和 8+ 个示…",
+      "topics": [
+        "skills",
+        "skill"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-10-04T07:48:02.590Z",
+      "url": "https://github.com/liangdabiao/make-prompt-seedance2"
+    }
+  ]
+}

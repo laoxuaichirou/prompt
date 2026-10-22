@@ -1,0 +1,232 @@
+{
+  "query": "sora prompts",
+  "page": 2,
+  "url": "https://github.com/search?q=sora+prompts&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:53:01.992780+00:00",
+  "result_count": 287,
+  "items": [
+    {
+      "name": "SoraFlows/SoraFlows",
+      "stars": 185,
+      "description": "The most powerful and modular Sora WebUI, api and backend with OpenAI's Sora Model. Collecting the highest quality prompts for Sora. usin…",
+      "topics": [
+        "video",
+        "prompt",
+        "openai",
+        "webui",
+        "gpt",
+        "open-ai",
+        "sora",
+        "texttovideo",
+        "text-to-video",
+        "llms"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-03-06T13:53:39.130Z",
+      "url": "https://github.com/SoraFlows/SoraFlows"
+    },
+    {
+      "name": "Rylaispirit/cinematic-video-prompt-skill",
+      "stars": 157,
+      "description": "AI video prompt cheat sheet & Claude Skill: cinematic camera angles, camera movement, lighting, composition, color grading for Veo 3, Kli…",
+      "topics": [
+        "vietnamese",
+        "runway",
+        "lighting",
+        "cinematography",
+        "prompts",
+        "camera-movement",
+        "sora",
+        "text-to-video",
+        "midjourney",
+        "prompt-engineering",
+        "generative-ai",
+        "ai-video",
+        "kling",
+        "veo3",
+        "claude-skill"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-27T16:36:37.431Z",
+      "url": "https://github.com/Rylaispirit/cinematic-video-prompt-skill"
+    },
+    {
+      "name": "Alisa0808/vibe-creating-skill",
+      "stars": 150,
+      "description": "Open-source, bilingual AI video-prompt skill — rewrite ideas into model-ready text-to-video prompts. A portable Agent Skill (Claude Code,…",
+      "topics": [
+        "prompt",
+        "hermes",
+        "codex",
+        "video-generation",
+        "sora",
+        "text-to-video",
+        "veo",
+        "llm",
+        "prompt-engineering",
+        "generative-ai",
+        "ai-video",
+        "prompt-optimization",
+        "kling",
+        "agent-skills",
+        "claude-code",
+        "vibe-creating",
+        "seedance",
+        "claude-skill",
+        "agent-skill",
+        "openclaw"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-06-17T09:12:18.068Z",
+      "url": "https://github.com/Alisa0808/vibe-creating-skill"
+    },
+    {
+      "name": "SoraEase/sora-prompt-zh",
+      "stars": 129,
+      "description": "Sora 中文的提示词 | 短视频提示词（prompt）技巧 | 调教指南。各种场景使用指南。学习怎么让它听你的话。兼顾了 Sora 的多场景应用。",
+      "topics": [
+        "ai",
+        "prompt",
+        "sora",
+        "chatgpt",
+        "chatgpt4"
+      ],
+      "archived": true,
+      "language": null,
+      "updated_at": "2026-04-07T14:20:55.033Z",
+      "url": "https://github.com/SoraEase/sora-prompt-zh"
+    },
+    {
+      "name": "xjpp22/awesome--sora-prompts",
+      "stars": 99,
+      "description": "A reference containing Visual Style Prompt and Editing Style Prompt that you can use with Sora AI. ",
+      "topics": [
+        "guide",
+        "prompt",
+        "openai",
+        "sora",
+        "ai-art",
+        "prompt-engineering"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2024-02-23T09:05:34.088Z",
+      "url": "https://github.com/xjpp22/awesome--sora-prompts"
+    },
+    {
+      "name": "ZeroLu/Ultimate-AI-Media-Generator-Skill",
+      "stars": 97,
+      "description": "Open-source ai image generator skill and ai video generator skill for Codex, Claude Code, OpenClaw, Cursor, and more. Powered by CyberBar…",
+      "topics": [
+        "image-generation",
+        "video-generation",
+        "sora-2",
+        "claude-code-skill",
+        "nano-banana-2",
+        "codex-skill",
+        "cursor-skill",
+        "openclaw-skill",
+        "seedance-2",
+        "image-generation-skill",
+        "video-generation-skill",
+        "nano-banana-pro-skill"
+      ],
+      "archived": false,
+      "language": "MDX",
+      "updated_at": "2026-09-08T03:12:38.429Z",
+      "url": "https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill"
+    },
+    {
+      "name": "geekjourneyx/awesome-ai-video-prompts",
+      "stars": 85,
+      "description": " A curated collection of AI video prompting resources, featuring official guides, prompt templates, cinematic techniques, and audio-visua…",
+      "topics": [
+        "awesome-list",
+        "video-generation",
+        "sora",
+        "runwayml",
+        "text-to-video",
+        "prompt-engineering",
+        "ai-video",
+        "generative-video",
+        "veo3",
+        "cinematic-prompts"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-01-04T11:42:08.378Z",
+      "url": "https://github.com/geekjourneyx/awesome-ai-video-prompts"
+    },
+    {
+      "name": "LichAmnesia/awesome-ad-video-prompts",
+      "stars": 82,
+      "description": "Curated, original high-craft prompts for AI video ads (Seedance 2.0 / Veo 3 / Kling / Runway). Companion to HeyDreaming.",
+      "topics": [
+        "marketing",
+        "awesome-list",
+        "advertising",
+        "prompts",
+        "video-generation",
+        "sora",
+        "text-to-video",
+        "veo",
+        "ad-creative",
+        "prompt-engineering",
+        "generative-ai",
+        "ai-video",
+        "ai-ads",
+        "video-prompts"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-06-16T04:36:23.976Z",
+      "url": "https://github.com/LichAmnesia/awesome-ad-video-prompts"
+    },
+    {
+      "name": "charyou/SoraVault",
+      "stars": 64,
+      "description": "Free Chrome extension to bulk export and backup your OpenAI Sora library. Download V1 images, V2 videos (Profile & Drafts), and Liked con…",
+      "topics": [
+        "chrome-extension",
+        "scraper",
+        "backup",
+        "json-export",
+        "tampermonkey",
+        "tampermonkey-script",
+        "soracom",
+        "sora",
+        "sora-video-ai",
+        "sora-video",
+        "sora-ai",
+        "sora-ai-video",
+        "video-downloader-apps",
+        "sora2",
+        "sora-2"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-04-25T10:00:15.039Z",
+      "url": "https://github.com/charyou/SoraVault"
+    },
+    {
+      "name": "SoraEase/sora-prompt",
+      "stars": 53,
+      "description": "Sora Prompt Collection, a repository dedicated to inspiring AI-driven video creation with Sora. ",
+      "topics": [
+        "ai",
+        "openai",
+        "sora",
+        "chatgpt",
+        "soraai"
+      ],
+      "archived": true,
+      "language": null,
+      "updated_at": "2026-03-31T14:02:48.368Z",
+      "url": "https://github.com/SoraEase/sora-prompt"
+    }
+  ]
+}

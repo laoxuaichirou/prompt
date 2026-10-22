@@ -1,0 +1,178 @@
+{
+  "query": "node-based image",
+  "page": 1,
+  "url": "https://github.com/search?q=node-based+image&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:36.213261+00:00",
+  "result_count": 416,
+  "items": [
+    {
+      "name": "chaiNNer-org/chaiNNer",
+      "stars": 6103,
+      "description": "A node-based image processing GUI aimed at making chaining image processing tasks easy and customizable. Born as an AI upscaling applicat…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T06:53:46.524Z",
+      "url": "https://github.com/chaiNNer-org/chaiNNer"
+    },
+    {
+      "name": "ttddee/Cascade",
+      "stars": 765,
+      "description": "Node-based image editor with GPU-acceleration.",
+      "topics": [
+        "vulkan",
+        "image-editor",
+        "gpu-acceleration",
+        "node-based"
+      ],
+      "archived": true,
+      "language": "C++",
+      "updated_at": "2024-07-06T20:26:10.147Z",
+      "url": "https://github.com/ttddee/Cascade"
+    },
+    {
+      "name": "SamurAIGPT/Vibe-Workflow",
+      "stars": 628,
+      "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image…",
+      "topics": [
+        "open-source",
+        "ai",
+        "nextjs",
+        "image-generation",
+        "workflow-automation",
+        "node-editor",
+        "video-generation",
+        "fastapi",
+        "artistic-intelligence",
+        "creative-tools",
+        "weavy",
+        "generative-ai",
+        "comfyui",
+        "self-hosted-ai",
+        "weavyai",
+        "weavy-ai-alternative",
+        "krea-nodes-alternative",
+        "freepik-spaces-alternative",
+        "florafauna-ai-alternative",
+        "ai-workflow-builder"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-09-17T15:37:33.428Z",
+      "url": "https://github.com/SamurAIGPT/Vibe-Workflow"
+    },
+    {
+      "name": "Fabric-Project/Fabric",
+      "stars": 604,
+      "description": "Node Creative Coding / 3D / Image Processing tool inspired by Quartz Composer",
+      "topics": [
+        "swift",
+        "video",
+        "computer-vision",
+        "metal",
+        "creative-coding",
+        "multimedia",
+        "shaders",
+        "graphics",
+        "realtime",
+        "post-processing",
+        "3d",
+        "mlx",
+        "vlm",
+        "swiftui",
+        "node-based",
+        "llm"
+      ],
+      "archived": false,
+      "language": "Swift",
+      "updated_at": "2026-10-20T18:55:58.825Z",
+      "url": "https://github.com/Fabric-Project/Fabric"
+    },
+    {
+      "name": "RayWangQvQ/sing-box-installer",
+      "stars": 368,
+      "description": "One-click installation of sing-box server, and automatic generation of reality, naiveproxy, hysteria2 nodes, based on official images and…",
+      "topics": [],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2025-06-08T02:43:34.467Z",
+      "url": "https://github.com/RayWangQvQ/sing-box-installer"
+    },
+    {
+      "name": "SpectralVectors/MindMapper",
+      "stars": 115,
+      "description": "Node-based multi-line text and image flowchart",
+      "topics": [
+        "node",
+        "blender3d",
+        "blender-scripts",
+        "blender",
+        "flowchart",
+        "blender-addon",
+        "mindmap",
+        "blender-python",
+        "flowchart-designer"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-07-30T19:56:22.533Z",
+      "url": "https://github.com/SpectralVectors/MindMapper"
+    },
+    {
+      "name": "ssitu/ComfyUI_fabric",
+      "stars": 94,
+      "description": "ComfyUI nodes based on the paper \"FABRIC: Personalizing Diffusion Models with Iterative Feedback\" (Feedback via Attention-Based Reference I…",
+      "topics": [
+        "stable-diffusion",
+        "comfyui"
+      ],
+      "archived": false,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-05-22T18:10:19.091Z",
+      "url": "https://github.com/ssitu/ComfyUI_fabric"
+    },
+    {
+      "name": "imgflo/imgflo",
+      "stars": 90,
+      "description": "Node-based image processing with GEGL and Flowhub",
+      "topics": [
+        "c",
+        "image-processing",
+        "graph-processing",
+        "flowhub",
+        "fbp-runtime",
+        "gegl"
+      ],
+      "archived": false,
+      "language": "C",
+      "updated_at": "2024-02-06T10:57:43.538Z",
+      "url": "https://github.com/imgflo/imgflo"
+    },
+    {
+      "name": "bynne2602/museflow",
+      "stars": 82,
+      "description": "A visual node-based workflow extension for generating images and videos with Muse.ai.",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-12T03:39:34.216Z",
+      "url": "https://github.com/bynne2602/museflow"
+    },
+    {
+      "name": "dan335/nimp",
+      "stars": 82,
+      "description": "Nimp - Node-based image manipulation program.",
+      "topics": [
+        "image-processing",
+        "image-manipulation",
+        "photo-editing",
+        "node-based"
+      ],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2026-08-06T17:49:53.381Z",
+      "url": "https://github.com/dan335/nimp"
+    }
+  ]
+}

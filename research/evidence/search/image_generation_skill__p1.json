@@ -1,0 +1,169 @@
+{
+  "query": "image generation skill",
+  "page": 1,
+  "url": "https://github.com/search?q=image+generation+skill&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:37.098317+00:00",
+  "result_count": 1254,
+  "items": [
+    {
+      "name": "ConardLi/garden-skills",
+      "stars": 13173,
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "topics": [
+        "agent",
+        "skills",
+        "web-design",
+        "claude",
+        "rag",
+        "gpt-image-2"
+      ],
+      "archived": false,
+      "language": "CSS",
+      "updated_at": "2026-10-11T02:28:13.555Z",
+      "url": "https://github.com/ConardLi/garden-skills"
+    },
+    {
+      "name": "wuyoscar/GPT-Image2-Skill",
+      "stars": 5838,
+      "description": "GPT Image 2/2.5 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
+      "topics": [
+        "cli",
+        "image-editing",
+        "openai",
+        "image-generation",
+        "text-to-image",
+        "image-prompt",
+        "prompt-library",
+        "prompt-templates",
+        "agent-skills",
+        "gpt-image",
+        "ai-image-prompts",
+        "claude-code-skill",
+        "codex-skill",
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "research-figures"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-30T11:54:50.521Z",
+      "url": "https://github.com/wuyoscar/GPT-Image2-Skill"
+    },
+    {
+      "name": "AgriciDaniel/banana-claude",
+      "stars": 1121,
+      "description": "AI image generation skill for Claude Code - Creative Director powered by Gemini",
+      "topics": [
+        "open-source",
+        "ai",
+        "content-creation",
+        "ai-content",
+        "claude-code",
+        "claude-code-skill"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-21T08:59:44.112Z",
+      "url": "https://github.com/AgriciDaniel/banana-claude"
+    },
+    {
+      "name": "alfredxw/denova",
+      "stars": 964,
+      "description": "An AI creative platform for novel writing and AI generated RPG, with built-in support for AI agents, Skills, subagent workflows, automati…",
+      "topics": [
+        "agent",
+        "ide",
+        "novel",
+        "ai-agents",
+        "ai-tools"
+      ],
+      "archived": false,
+      "language": "Go",
+      "updated_at": "2026-10-21T15:44:59.053Z",
+      "url": "https://github.com/alfredxw/denova"
+    },
+    {
+      "name": "TaiT-tt/tait-crt-interface-skill",
+      "stars": 532,
+      "description": "TaiT-CRT-Interface-Skill is a Codex image generation skill that transforms user-uploaded portraits, photographs, or text descriptions int…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-08-11T06:22:03.251Z",
+      "url": "https://github.com/TaiT-tt/tait-crt-interface-skill"
+    },
+    {
+      "name": "AKCodez/higgsfield-claude-skills",
+      "stars": 448,
+      "description": "19 Claude Code skills for Higgsfield AI — automate image generation, Seedance 2.0 video creation, and full UGC ad pipelines with Playwrig…",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-04-13T19:24:47.733Z",
+      "url": "https://github.com/AKCodez/higgsfield-claude-skills"
+    },
+    {
+      "name": "Yacey/agnes-ai-generation-skill",
+      "stars": 425,
+      "description": "Agent Skill for Agnes AI text, image, and video generation APIs.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-06-21T05:04:59.702Z",
+      "url": "https://github.com/Yacey/agnes-ai-generation-skill"
+    },
+    {
+      "name": "kingbootoshi/nano-banana-2-skill",
+      "stars": 417,
+      "description": "AI image generation CLI powered by Gemini 3 Pro. Green screen transparency, reference images, style transfer. Also a Claude Code plugin.",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-04-02T02:01:00.131Z",
+      "url": "https://github.com/kingbootoshi/nano-banana-2-skill"
+    },
+    {
+      "name": "sunchaokun/PPT-Design-Skill",
+      "stars": 346,
+      "description": "Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, an…",
+      "topics": [
+        "skill",
+        "pptx",
+        "codex",
+        "ppt",
+        "pptx-generator",
+        "presentation-design",
+        "ai-coding-tools",
+        "claude-code-skills",
+        "codex-skills",
+        "codex-skill",
+        "opencode-skills",
+        "dsh-plugin"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-16T10:10:01.922Z",
+      "url": "https://github.com/sunchaokun/PPT-Design-Skill"
+    },
+    {
+      "name": "GradientSurfer/Draw2Img",
+      "stars": 344,
+      "description": "A simple web UI for interactive text-guided image to image generation, intended for any age and skill level.",
+      "topics": [
+        "paint",
+        "canvas",
+        "web-ui",
+        "img2img",
+        "ai-art",
+        "txt2img",
+        "stable-diffusion",
+        "sdxl-turbo"
+      ],
+      "archived": false,
+      "language": "Vue",
+      "updated_at": "2024-06-05T19:06:03.451Z",
+      "url": "https://github.com/GradientSurfer/Draw2Img"
+    }
+  ]
+}

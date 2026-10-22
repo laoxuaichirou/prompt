@@ -1,0 +1,147 @@
+{
+  "query": "penpot in:name",
+  "page": 1,
+  "url": "https://github.com/search?q=penpot+in%3Aname&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:55:46.231288+00:00",
+  "result_count": 608,
+  "items": [
+    {
+      "name": "penpot/penpot",
+      "stars": 61491,
+      "description": "Penpot: The open-source design platform for Product teams that need scalable collaboration.",
+      "topics": [
+        "design",
+        "clojure",
+        "ui",
+        "clojurescript",
+        "prototyping",
+        "ux-experience",
+        "ux-design"
+      ],
+      "archived": false,
+      "language": "Clojure",
+      "updated_at": "2026-10-22T18:54:19.915Z",
+      "url": "https://github.com/penpot/penpot"
+    },
+    {
+      "name": "author-more/penpot-desktop",
+      "stars": 1194,
+      "description": "A desktop application for Penpot, an open-source design tool.",
+      "topics": [
+        "design",
+        "desktop",
+        "design-tool",
+        "penpot"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-19T21:23:35.082Z",
+      "url": "https://github.com/author-more/penpot-desktop"
+    },
+    {
+      "name": "penpot/penpot-mcp",
+      "stars": 532,
+      "description": "Penpot's official MCP Server",
+      "topics": [
+        "plugin",
+        "design",
+        "ai",
+        "mcp"
+      ],
+      "archived": true,
+      "language": "TypeScript",
+      "updated_at": "2026-03-19T12:45:10.833Z",
+      "url": "https://github.com/penpot/penpot-mcp"
+    },
+    {
+      "name": "penpot/penpot-exporter-figma-plugin",
+      "stars": 461,
+      "description": "Penpot exporter Figma plugin",
+      "topics": [
+        "exporter",
+        "design-tools",
+        "figma-plugin",
+        "penpot"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T09:47:40.241Z",
+      "url": "https://github.com/penpot/penpot-exporter-figma-plugin"
+    },
+    {
+      "name": "penpot/penpot-files",
+      "stars": 248,
+      "description": "Publicly released files and assets of Penpot, The Open-Source design & prototyping platform",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-10-18T13:55:52.526Z",
+      "url": "https://github.com/penpot/penpot-files"
+    },
+    {
+      "name": "montevive/penpot-mcp",
+      "stars": 241,
+      "description": "Penpot MCP server",
+      "topics": [
+        "python",
+        "open-source",
+        "ai",
+        "mcp",
+        "prototyping",
+        "cursor",
+        "ui-ux",
+        "design-tools",
+        "api-integration",
+        "penpot",
+        "llm",
+        "model-context-protocol",
+        "mcp-server"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-11-01T09:19:10.928Z",
+      "url": "https://github.com/montevive/penpot-mcp"
+    },
+    {
+      "name": "penpot/penpot-docs",
+      "stars": 158,
+      "description": "Website and documentation about Penpot, The Open-Source design & prototyping platform",
+      "topics": [],
+      "archived": true,
+      "language": "Nunjucks",
+      "updated_at": "2024-10-31T09:38:21.994Z",
+      "url": "https://github.com/penpot/penpot-docs"
+    },
+    {
+      "name": "penpot/penpot-ai-kit",
+      "stars": 103,
+      "description": "Penpot AI kit",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-07T08:14:58.951Z",
+      "url": "https://github.com/penpot/penpot-ai-kit"
+    },
+    {
+      "name": "penpot/penpot-export",
+      "stars": 85,
+      "description": "Devtool to export the design tokens of a Penpot file to CSS, SCSS or JSON files",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-06-07T21:30:19.358Z",
+      "url": "https://github.com/penpot/penpot-export"
+    },
+    {
+      "name": "penpot/penai",
+      "stars": 66,
+      "description": "AI applied research",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-10-29T09:09:36.320Z",
+      "url": "https://github.com/penpot/penai"
+    }
+  ]
+}

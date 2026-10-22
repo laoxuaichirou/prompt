@@ -1,0 +1,83 @@
+{
+  "name": "ningzimu/codex-ppt-skill",
+  "url": "https://github.com/ningzimu/codex-ppt-skill",
+  "retrieved_at": "2026-10-22T19:56:28.540471+00:00",
+  "default_branch": "main",
+  "commit": "941dcafe2f23ea4ae61de99e9b22fb0ef3d9e06c",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/ningzimu/codex-ppt-skill/blob/941dcafe2f23ea4ae61de99e9b22fb0ef3d9e06c/README.md",
+  "readme_sha256": "1b8b43cd3cd409f229223afd187032c6711db011cd78eee84d1a6d137d08f7f5",
+  "root_paths": [
+    ".github",
+    "assets",
+    "docs",
+    "skills/codex-ppt",
+    "tests",
+    ".gitignore",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "README_en.md",
+    "README_ko.md"
+  ],
+  "readme_headings": [
+    "Codex PPT Skill",
+    "赞助",
+    "温馨提示",
+    "特点",
+    "生成效果",
+    "风格示例",
+    "输出结构",
+    "适用场景",
+    "安装",
+    "一句话安装",
+    "手动安装到 Codex",
+    "OpenClaw",
+    "Claude Code、Hermes Agent",
+    "Claude Code",
+    "Hermes Agent",
+    "更新",
+    "生图模型配置",
+    "使用方式",
+    "使用技巧",
+    "我的其他项目",
+    "支持",
+    "许可证",
+    "致谢"
+  ],
+  "resource_links": [
+    "https://ningzimu.github.io/codex-ppt-skill/#/",
+    "https://app.clawmama.run/skills/5lak48/hermes?utm_source=github&utm_medium=issue&utm_campaign=skill_outreach_ningzimu_codex_ppt_skill",
+    "https://img.shields.io/github/stars/ningzimu/codex-ppt-skill?style=flat&logo=github&label=stars",
+    "https://github.com/ningzimu/codex-ppt-skill/stargazers",
+    "https://img.shields.io/github/forks/ningzimu/codex-ppt-skill?style=flat&logo=github&label=forks",
+    "https://github.com/ningzimu/codex-ppt-skill/forks",
+    "https://github.com/ningzimu/image-to-editable-ppt-skill",
+    "assets/skill_duo_intro.pdf",
+    "https://github.com/ningzimu/codex-ppt-skill/issues/34",
+    "assets/good-skill-design.pptx",
+    "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf",
+    "assets/slides_example.png",
+    "assets/paper-figures-example.png",
+    "skills/codex-ppt/docs/image-model-configuration.md",
+    "assets/single-slide-revision-example.png",
+    "https://github.com/ningzimu/image-to-editable-ppt-skill",
+    "https://github.com/ningzimu/awesome-skills",
+    "https://ningzimu.github.io/codex-ppt-skill/#/",
+    "https://github.com/ningzimu/codex-ppt-skill/issues/new"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/ningzimu/codex-ppt-skill/blob/941dcafe2f23ea4ae61de99e9b22fb0ef3d9e06c/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 ningzimu",
+        ""
+      ],
+      "sha256": "68e435621ab299c7cbe3ad8f088e877f9bca76508c621f27a697606df8ff2154"
+    }
+  ]
+}

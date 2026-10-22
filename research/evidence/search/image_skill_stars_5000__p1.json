@@ -1,0 +1,182 @@
+{
+  "query": "image skill stars:>5000",
+  "page": 1,
+  "url": "https://github.com/search?q=image+skill+stars%3A%3E5000&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:55:46.643500+00:00",
+  "result_count": 8,
+  "items": [
+    {
+      "name": "Leonxlnx/taste-skill",
+      "stars": 101065,
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "topics": [
+        "ui-design",
+        "landing-page",
+        "frontend",
+        "cursor",
+        "web-design",
+        "codex",
+        "design-system",
+        "ai-agents",
+        "agent-skills",
+        "claude-code",
+        "anti-slop"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-20T22:04:30.421Z",
+      "url": "https://github.com/Leonxlnx/taste-skill"
+    },
+    {
+      "name": "freestylefly/awesome-gpt-image-2",
+      "stars": 34896,
+      "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
+      "topics": [
+        "skills",
+        "agents",
+        "workflow-automation",
+        "prompt-engineering",
+        "ai-image-generation",
+        "chatgpt",
+        "image-prompts",
+        "prompt-as-code",
+        "gpt-image-2",
+        "dsh-plugin"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-14T08:48:21.778Z",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2"
+    },
+    {
+      "name": "op7418/guizang-ppt-skill",
+      "stars": 28454,
+      "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/…",
+      "topics": [
+        "skills",
+        "skill",
+        "presentation",
+        "image-generation",
+        "codex",
+        "ppt",
+        "swiss-design",
+        "ai-agent",
+        "claude-code",
+        "web-ppt",
+        "html-deck"
+      ],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2026-08-07T03:58:08.381Z",
+      "url": "https://github.com/op7418/guizang-ppt-skill"
+    },
+    {
+      "name": "ConardLi/garden-skills",
+      "stars": 13173,
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "topics": [
+        "agent",
+        "skills",
+        "web-design",
+        "claude",
+        "rag",
+        "gpt-image-2"
+      ],
+      "archived": false,
+      "language": "CSS",
+      "updated_at": "2026-10-11T02:28:13.555Z",
+      "url": "https://github.com/ConardLi/garden-skills"
+    },
+    {
+      "name": "LiamGvchi/gc-minimal-zine-poster",
+      "stars": 7398,
+      "description": "Codex skill for generating quiet minimal zine-style editorial poster prompts and images.",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-08-13T15:12:25.656Z",
+      "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster"
+    },
+    {
+      "name": "ningzimu/codex-ppt-skill",
+      "stars": 7203,
+      "description": "GPT-Image-2 PPT Generator Skill for Creating Image-Based PowerPoint Presentations in Codex and Other Skill-Compatible Agents",
+      "topics": [
+        "skill",
+        "presentation",
+        "powerpoint",
+        "pptx",
+        "codex",
+        "ppt",
+        "ai-ppt",
+        "agent-skills",
+        "claude-code",
+        "ppt-skill",
+        "gpt-image-2"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-13T13:04:15.550Z",
+      "url": "https://github.com/ningzimu/codex-ppt-skill"
+    },
+    {
+      "name": "wiltodelta/remove-ai-watermarks",
+      "stars": 6092,
+      "description": "Remove visible and invisible AI watermarks from images and video, and AI provenance metadata from images, video, and audio. Python librar…",
+      "topics": [
+        "cli",
+        "metadata",
+        "image-processing",
+        "provenance",
+        "exif",
+        "gemini",
+        "video-processing",
+        "watermark-remover",
+        "veo",
+        "watermark-removal",
+        "c2pa",
+        "stable-diffusion",
+        "generative-ai",
+        "comfyui",
+        "content-credentials",
+        "synthid",
+        "nano-banana",
+        "ai-watermark",
+        "agent-skill",
+        "gemini-watermark-remover"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T04:40:14.831Z",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks"
+    },
+    {
+      "name": "wuyoscar/GPT-Image2-Skill",
+      "stars": 5838,
+      "description": "GPT Image 2/2.5 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
+      "topics": [
+        "cli",
+        "image-editing",
+        "openai",
+        "image-generation",
+        "text-to-image",
+        "image-prompt",
+        "prompt-library",
+        "prompt-templates",
+        "agent-skills",
+        "gpt-image",
+        "ai-image-prompts",
+        "claude-code-skill",
+        "codex-skill",
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "research-figures"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-30T11:54:50.521Z",
+      "url": "https://github.com/wuyoscar/GPT-Image2-Skill"
+    }
+  ]
+}

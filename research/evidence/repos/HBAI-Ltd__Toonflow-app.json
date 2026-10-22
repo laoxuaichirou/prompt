@@ -1,0 +1,73 @@
+{
+  "name": "HBAI-Ltd/Toonflow-app",
+  "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+  "retrieved_at": "2026-10-22T19:55:37.392254+00:00",
+  "default_branch": "master",
+  "commit": "30139c931e80476caa718b31684b86383c6e83ce",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/HBAI-Ltd/Toonflow-app/blob/30139c931e80476caa718b31684b86383c6e83ce/README.md",
+  "readme_sha256": "8c38c9bb6e51adb96de6ac26f36d60e1179aba95dd2667f4b2f83eaf9eb88473",
+  "root_paths": [
+    ".github/workflows",
+    "apps",
+    "compat",
+    "docs",
+    "packages",
+    "patches",
+    ".dockerignore",
+    ".gitignore",
+    ".prettierrc.json",
+    "AGENTS.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "Dockerfile",
+    "LICENSE",
+    "README.md",
+    "bun.lock",
+    "compose.yaml",
+    "cspell.config.yaml",
+    "electrobun.config.ts",
+    "hutch.config.ts",
+    "package.json",
+    "postcss.config.ts",
+    "tsconfig.base.json"
+  ],
+  "readme_headings": [
+    "1. 💛 赞助与支持",
+    "2. 🌟 亮点",
+    "如何用 Toonflow 制作 AI 短剧与漫剧",
+    "常见问题",
+    "多语言支持",
+    "3. 📸 截图",
+    "4. 🚀 下载并安装",
+    "4.1 客户端安装",
+    "4.2 Docker 安装",
+    "4.3 服务器安装",
+    "构建内置节点、工具、Web 与 Server",
+    "4.4 访问与数据说明",
+    "4.5 云平台部署",
+    "5. 🎬 作品示例",
+    "案例信息",
+    "6. 🚀 TF-Router 官方中转平台",
+    "7. 👨‍👩‍👧‍👦 微信交流群",
+    "8. 💌 联系我们",
+    "9. 📜 开源许可",
+    "10. 🙏 致谢"
+  ],
+  "resource_links": [
+    "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/blob/30139c931e80476caa718b31684b86383c6e83ce/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 HBAI-Ltd",
+        ""
+      ],
+      "sha256": "e301150b3205cbb097e30c30e488f5a9ac9a70cbcfe819b8d486367812a53ef7"
+    }
+  ]
+}

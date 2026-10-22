@@ -1,0 +1,76 @@
+{
+  "name": "GraphiteEditor/Graphite",
+  "url": "https://github.com/GraphiteEditor/Graphite",
+  "retrieved_at": "2026-10-22T19:55:36.860518+00:00",
+  "default_branch": "master",
+  "commit": "90df05063f3bd045f60e5c3b867eb28744ce9dc1",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/GraphiteEditor/Graphite/blob/90df05063f3bd045f60e5c3b867eb28744ce9dc1/README.md",
+  "readme_sha256": "40e1f3b0468bd88205958ea44dd888c69efcf9716e388c5d01a8d576715ce53d",
+  "root_paths": [
+    ".cargo",
+    ".devcontainer",
+    ".github",
+    ".nix",
+    ".vscode",
+    "demo-artwork",
+    "desktop",
+    "document",
+    "editor",
+    "frontend",
+    "libraries",
+    "node-graph",
+    "proc-macros",
+    "tools",
+    "website",
+    ".branding",
+    ".editorconfig",
+    ".envrc",
+    ".gitattributes",
+    ".gitignore",
+    ".nvmrc",
+    ".prettierrc",
+    "Cargo.lock",
+    "Cargo.toml",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "README.md",
+    "about.toml",
+    "deny.toml",
+    "flake.lock",
+    "flake.nix",
+    "rustfmt.toml"
+  ],
+  "readme_headings": [
+    "Your procedural toolbox for 2D content creation",
+    "Support our mission ❤️",
+    "Screenshots",
+    "Contributing/building the code",
+    "License"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE-APACHE",
+      "url": "https://github.com/GraphiteEditor/Graphite/blob/90df05063f3bd045f60e5c3b867eb28744ce9dc1/LICENSE-APACHE",
+      "first_lines": [
+        "Apache License",
+        "                           Version 2.0, January 2004",
+        "                        http://www.apache.org/licenses/",
+        ""
+      ],
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "url": "https://github.com/GraphiteEditor/Graphite/blob/90df05063f3bd045f60e5c3b867eb28744ce9dc1/LICENSE-MIT",
+      "first_lines": [
+        "Copyright (c) Graphite contributors",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining a copy",
+        "of this software and associated documentation files (the \"Software\"), to deal"
+      ],
+      "sha256": "4949989af51b07086e4ec4bfdaa843a4cd35cda7495f77747b3d9a45cb8b4ca3"
+    }
+  ]
+}

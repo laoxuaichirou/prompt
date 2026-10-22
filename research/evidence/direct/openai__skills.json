@@ -1,0 +1,14 @@
+{
+  "query": "named repository inspection: openai/skills",
+  "kind": "repository-page metadata (not a search result)",
+  "url": "https://github.com/openai/skills",
+  "retrieved_at": "2026-10-22T20:23:04.159118+00:00",
+  "items": [
+    {
+      "name": "openai/skills",
+      "stars": 28249,
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "raw_field": "stargazerCount"
+}

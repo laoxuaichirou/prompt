@@ -1,0 +1,222 @@
+{
+  "query": "canvas",
+  "page": 1,
+  "url": "https://github.com/search?q=canvas&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:36.294276+00:00",
+  "result_count": 209145,
+  "items": [
+    {
+      "name": "excalidraw/excalidraw",
+      "stars": 134389,
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "topics": [
+        "productivity",
+        "drawing",
+        "canvas",
+        "collaboration",
+        "whiteboard",
+        "diagrams",
+        "hacktoberfest"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T13:20:32.295Z",
+      "url": "https://github.com/excalidraw/excalidraw"
+    },
+    {
+      "name": "mrdoob/three.js",
+      "stars": 116782,
+      "description": "JavaScript 3D Library.",
+      "topics": [
+        "javascript",
+        "svg",
+        "webgl",
+        "html5",
+        "canvas",
+        "augmented-reality",
+        "webaudio",
+        "virtual-reality",
+        "webgl2",
+        "3d",
+        "webgpu",
+        "webxr"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T18:52:51.651Z",
+      "url": "https://github.com/mrdoob/three.js"
+    },
+    {
+      "name": "d3/d3",
+      "stars": 113793,
+      "description": "Bring data to life with SVG, Canvas and HTML. 📊📈🎉",
+      "topics": [
+        "visualization",
+        "d3",
+        "svg",
+        "chart",
+        "charts",
+        "data-visualization"
+      ],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-10-21T22:24:11.702Z",
+      "url": "https://github.com/d3/d3"
+    },
+    {
+      "name": "juliangarnier/anime",
+      "stars": 73769,
+      "description": "JavaScript animation engine",
+      "topics": [
+        "javascript",
+        "css",
+        "svg",
+        "canvas",
+        "anime",
+        "animation",
+        "javascript-library"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-08-21T21:29:50.944Z",
+      "url": "https://github.com/juliangarnier/anime"
+    },
+    {
+      "name": "chartjs/Chart.js",
+      "stars": 67752,
+      "description": "Simple HTML5 Charts using the <canvas> tag",
+      "topics": [
+        "javascript",
+        "chart",
+        "html5",
+        "canvas",
+        "graph",
+        "html5-charts"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T17:19:45.767Z",
+      "url": "https://github.com/chartjs/Chart.js"
+    },
+    {
+      "name": "apache/echarts",
+      "stars": 67572,
+      "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+      "topics": [
+        "visualization",
+        "svg",
+        "charts",
+        "canvas",
+        "charting-library",
+        "apache",
+        "data-visualization",
+        "data-viz",
+        "echarts"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-13T09:27:20.675Z",
+      "url": "https://github.com/apache/echarts"
+    },
+    {
+      "name": "tldraw/tldraw",
+      "stars": 51043,
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+      "topics": [
+        "react",
+        "drawing",
+        "design",
+        "sync",
+        "sdk",
+        "canvas",
+        "diagram",
+        "multiplayer",
+        "sketch",
+        "collaboration",
+        "whiteboard",
+        "infinite"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T16:57:38.148Z",
+      "url": "https://github.com/tldraw/tldraw"
+    },
+    {
+      "name": "kepano/obsidian-skills",
+      "stars": 49922,
+      "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+      "topics": [
+        "markdown",
+        "cli",
+        "skills",
+        "opencode",
+        "hermes",
+        "obsidian",
+        "agents",
+        "bases",
+        "md",
+        "codex",
+        "claude",
+        "knap",
+        "jsoncanvas",
+        "defuddle",
+        "agentskills",
+        "clawdbot",
+        "openclaw"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-15T14:43:57.510Z",
+      "url": "https://github.com/kepano/obsidian-skills"
+    },
+    {
+      "name": "pixijs/pixijs",
+      "stars": 48438,
+      "description": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+      "topics": [
+        "javascript",
+        "game",
+        "webgl",
+        "canvas",
+        "rendering",
+        "glsl",
+        "data-visualization",
+        "renderer",
+        "pixijs",
+        "pixi",
+        "canvas2d",
+        "rendering-engine",
+        "rendering-2d-graphics"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T15:05:59.993Z",
+      "url": "https://github.com/pixijs/pixijs"
+    },
+    {
+      "name": "phaserjs/phaser",
+      "stars": 40540,
+      "description": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL …",
+      "topics": [
+        "javascript",
+        "gamedev",
+        "webgl",
+        "canvas",
+        "phaser",
+        "game-development",
+        "phaserjs",
+        "html5-game-development",
+        "game-frameworks",
+        "facebook-instant-games",
+        "phaser-development",
+        "discord-activities",
+        "youtube-playables"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-08-21T06:56:13.929Z",
+      "url": "https://github.com/phaserjs/phaser"
+    }
+  ]
+}

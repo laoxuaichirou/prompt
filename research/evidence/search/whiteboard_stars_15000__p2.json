@@ -1,0 +1,9 @@
+{
+  "query": "whiteboard stars:>15000",
+  "page": 2,
+  "url": "https://github.com/search?q=whiteboard+stars%3A%3E15000&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:56:27.210729+00:00",
+  "result_count": 4,
+  "items": []
+}

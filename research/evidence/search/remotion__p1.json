@@ -1,0 +1,197 @@
+{
+  "query": "remotion",
+  "page": 1,
+  "url": "https://github.com/search?q=remotion&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:38.137289+00:00",
+  "result_count": 209468,
+  "items": [
+    {
+      "name": "rustdesk/rustdesk",
+      "stars": 126630,
+      "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+      "topics": [
+        "android",
+        "windows",
+        "macos",
+        "linux",
+        "dart",
+        "rust",
+        "ios",
+        "remote-control",
+        "p2p",
+        "teamviewer",
+        "rust-lang",
+        "rdp",
+        "remote-desktop",
+        "vnc",
+        "flutter",
+        "flatpak",
+        "wayland",
+        "flutter-apps",
+        "anydesk"
+      ],
+      "archived": false,
+      "language": "Rust",
+      "updated_at": "2026-10-22T10:48:41.884Z",
+      "url": "https://github.com/rustdesk/rustdesk"
+    },
+    {
+      "name": "stablyai/orca",
+      "stars": 102600,
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Avail…",
+      "topics": [
+        "bot",
+        "automation",
+        "terminal",
+        "runtime",
+        "opencode",
+        "mobile-app",
+        "orchestration",
+        "muse",
+        "pi",
+        "codex",
+        "ai-agents",
+        "ade",
+        "worktrees",
+        "ghostty",
+        "claude-code",
+        "openclaw",
+        "hermes-agent",
+        "agent-ide",
+        "yc-backed",
+        "grok-bot"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T19:49:38.356Z",
+      "url": "https://github.com/stablyai/orca"
+    },
+    {
+      "name": "ansible/ansible",
+      "stars": 71058,
+      "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate eve…",
+      "topics": [
+        "python",
+        "ansible"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T19:31:01.709Z",
+      "url": "https://github.com/ansible/ansible"
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "stars": 70862,
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledg…",
+      "topics": [
+        "python",
+        "agent",
+        "flux",
+        "open-source",
+        "text-to-speech",
+        "ai",
+        "ffmpeg",
+        "openai",
+        "image-generation",
+        "cursor",
+        "copilot",
+        "claude",
+        "video-production",
+        "video-generation",
+        "remotion",
+        "text-to-video",
+        "stable-diffusion",
+        "elevenlabs",
+        "agentic-ai"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-16T15:07:33.935Z",
+      "url": "https://github.com/calesthio/OpenMontage"
+    },
+    {
+      "name": "remotion-dev/remotion",
+      "stars": 66334,
+      "description": "🎥 Make videos programmatically with React",
+      "topics": [
+        "react",
+        "javascript",
+        "video"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T19:13:57.282Z",
+      "url": "https://github.com/remotion-dev/remotion"
+    },
+    {
+      "name": "lukasz-madon/awesome-remote-job",
+      "stars": 49785,
+      "description": "A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python",
+      "topics": [
+        "list",
+        "awesome",
+        "awesome-list"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-21T15:00:51.960Z",
+      "url": "https://github.com/lukasz-madon/awesome-remote-job"
+    },
+    {
+      "name": "remoteintech/remote-jobs",
+      "stars": 40910,
+      "description": "Source for remoteintech.company — a community-maintained directory of remote-friendly tech companies",
+      "topics": [
+        "remote",
+        "jobs-search",
+        "jobseeker",
+        "remote-work",
+        "jobsearch",
+        "hacktoberfest",
+        "remote-job",
+        "distributed-companies",
+        "remote-companies"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-21T23:43:02.355Z",
+      "url": "https://github.com/remoteintech/remote-jobs"
+    },
+    {
+      "name": "select2/select2",
+      "stars": 25909,
+      "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+      "topics": [
+        "javascript",
+        "jquery",
+        "select2",
+        "hacktoberfest"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-20T18:34:18.528Z",
+      "url": "https://github.com/select2/select2"
+    },
+    {
+      "name": "Netflix/Hystrix",
+      "stars": 24480,
+      "description": "Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries…",
+      "topics": [],
+      "archived": false,
+      "language": "Java",
+      "updated_at": "2025-12-17T03:21:02.505Z",
+      "url": "https://github.com/Netflix/Hystrix"
+    },
+    {
+      "name": "fabric/fabric",
+      "stars": 15520,
+      "description": "Simple, Pythonic remote execution and deployment.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-04-10T13:53:02.796Z",
+      "url": "https://github.com/fabric/fabric"
+    }
+  ]
+}

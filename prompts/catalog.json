@@ -1,0 +1,1069 @@
+{
+  "schema_version": "1.0",
+  "license": "CC-BY-4.0 (original prompt text only)",
+  "items": [
+    {
+      "id": "IMG-EC-01",
+      "title": "电商白底主图",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [],
+      "prompt": "为一个虚构的无品牌哑光象牙白保温杯制作电商主图。杯身为无缝圆柱形，圆润窄口杯盖，底部一条细香槟金金属环。唯一一个杯子，正面略偏三分之四视角，居中，产品完整且不裁切，纯白背景，接地柔和阴影，高端商业棚拍，陶瓷般微纹理与真实金属反射，产品占画面高度约75%，四周留足裁切空间。正方形构图。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "产品轮廓完整",
+        "仅一个杯子",
+        "纯白底",
+        "材质可信",
+        "没有生成文字"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-02",
+      "title": "生活方式场景图",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "product"
+      ],
+      "prompt": "将参考图中的 {{product}} 放置于清晨自然光照射的浅橡木书桌，后方只有虚焦的亚麻窗帘和一盆小绿植。保持产品外形、颜色、材质、配件和相对尺寸，与参考图一致。主体位于右侧三分之一，左侧留40%干净文案区；暖中性色，真实商业摄影，柔光，横版16:9。不要生成文案。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "产品一致",
+        "文字区可用",
+        "没有多余配件"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-03",
+      "title": "材质微距",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "detail",
+        "product"
+      ],
+      "prompt": "以参考图的 {{product}} 为唯一商品，近距离呈现 {{detail}} 的工艺微距；保持真实材质和结构，不增添不存在的功能或部件，侧向柔光揭示纹理，背景深浅对比克制，4:5竖版，清晰聚焦于一个工艺细节。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "结构未虚构",
+        "纹理自然",
+        "单一焦点"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-04",
+      "title": "节日促销底图",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "festival",
+        "palette",
+        "product"
+      ],
+      "prompt": "为 {{product}} 制作 {{festival}} 电商活动底图。产品保持参考图一致，单主体置于画面中下部，占高50%；采用 {{palette}} 配色和简洁几何展台，顶部35%留空供后期排版。商业摄影与精致场景搭建，竖版4:5，不生成价格、折扣、标语或品牌。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "顶部可排版",
+        "无价格伪造",
+        "主体突出"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-05",
+      "title": "详情页三卖点配图",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "feature",
+        "product",
+        "verified_claim"
+      ],
+      "prompt": "为参考图 {{product}} 生成一张单独的 {{feature}} 卖点视觉，使用可被实物验证的细节和真实使用环境，保持商品结构；背景干净，主图清晰，留白充足，1:1。功能仅展示 {{verified_claim}}，不添加未提供的性能事实。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "卖点可验证",
+        "无捏造参数",
+        "便于详情页排版"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-06",
+      "title": "多SKU一致布景",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "sku"
+      ],
+      "prompt": "参考既定场景图，替换为参考图中的 {{sku}} 产品。锁定机位、焦距、背景、光源方向和阴影，保持新SKU自身颜色与结构；一件商品，1:1，棚拍写实。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "SKU颜色正确",
+        "布景一致",
+        "不混合不同SKU"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-07",
+      "title": "透明底抠图目标",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "product"
+      ],
+      "prompt": "从参考图中提取 {{product}}，保持完整轮廓、细小孔洞、透明或半透明部分及真实边缘。只保留商品，去掉背景和道具，输出透明背景PNG，禁止棋盘格被画进图片。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "检查真实alpha通道",
+        "无背景残留",
+        "没有裁切"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-EC-08",
+      "title": "商品海报布局草图",
+      "category": "ecommerce",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "palette",
+        "product"
+      ],
+      "prompt": "为 {{product}} 设计海报视觉底稿：产品在右下，顶部20%和左侧35%留给真实字体后期排版。以 {{palette}} 建立主色和对比色，简洁几何层次，真实产品摄影质感，9:16。画面不生成任何可读文字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "留白可用",
+        "竖屏安全区",
+        "无伪文字"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-01",
+      "title": "角色四视图设定",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "adult_age",
+        "character"
+      ],
+      "prompt": "为原创成年角色 {{character}} 制作角色设定板，年龄 {{adult_age}} 岁。纯中性浅灰背景，均匀棚光，同一服装和发型，正面、左侧、背面全身及面部特写四格；五官、衣服纹理、身材比例一致；四格尺寸整齐，无标签无文字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "明确成年",
+        "四视图一致",
+        "服饰细节稳定"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-02",
+      "title": "场景空镜资产",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "layout",
+        "location",
+        "time_weather",
+        "visual_style"
+      ],
+      "prompt": "建立原创场景 {{location}} 的空镜参考图：{{layout}}。镜头朝向、门窗位置和主要道具位置明确；{{time_weather}}；{{visual_style}}，广角建立镜头，16:9，无人物。保持空间结构可供后续多个镜头复用。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "空间清晰",
+        "门窗可定位",
+        "无人",
+        "可用于参考"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-03",
+      "title": "影视关键帧",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [],
+      "prompt": "原创科幻电影的单张分镜关键帧：一位30岁的成年女性设备维修员，深棕短发，穿赭橙工作夹克，肩背旧工具包，站在废弃的山间气象站门前，向右侧窗内看。黎明蓝色环境光，窗内柔暖琥珀灯光，地上薄雪和少量水汽。全景偏中远景，人物在左侧三分之一，右侧保留建筑结构，平视，35mm电影摄影，克制的写实美术，清楚的叙事焦点，16:9。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "成年角色明确",
+        "动作可读",
+        "冷暖光分离",
+        "无多余角色"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-04",
+      "title": "道具定稿",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "constraints",
+        "materials",
+        "prop"
+      ],
+      "prompt": "设计原创影视道具 {{prop}}，功能和结构限制为 {{constraints}}。三分之四棚拍，灰色背景，全物可见，统一比例；材料 {{materials}}，自然磨损，不能增加故事中未设定的按钮和文字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "无虚构结构",
+        "可跨镜头使用",
+        "轮廓完整"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-05",
+      "title": "六镜头分镜板",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "beat",
+        "character"
+      ],
+      "prompt": "为以下原创情节制作2行3列无文字分镜板：{{beat}}。同一成年角色 {{character}}，同一服饰、场景、色调；六格依次为环境建立、人物中景、道具特写、反应近景、行动中景、结果远景；保持轴线和视线方向，16:9整体排版，每格边框清楚。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "六格",
+        "无乱序",
+        "角色一致",
+        "轴线合理"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-06",
+      "title": "灯光风格探索",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "lighting",
+        "scene_ref"
+      ],
+      "prompt": "参考同一机位和角色 {{scene_ref}}，只改变光线为 {{lighting}}。锁定人物、服饰、构图和空间；电影写实，16:9。不要改变其他变量。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "只变灯光",
+        "主体不漂移",
+        "可作A/B对照"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-07",
+      "title": "连续镜头反打",
+      "category": "film",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "lens",
+        "reverse_shot"
+      ],
+      "prompt": "根据场景和角色参考，生成反打镜头：{{reverse_shot}}。锁定场景门窗布局、光线方向、衣服及道具，保持原场景180度轴线，视线匹配；{{lens}}，16:9。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "视线和轴线正确",
+        "空间对应",
+        "参考资产齐全"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-FILM-08",
+      "title": "口播叠加插画",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [],
+      "prompt": "口播视频使用的单张原创编辑插画：一个极简深蓝色立体文件夹，旁边三张干净的白色卡片，以有序的由散到整齐的状态围绕文件夹漂浮。淡米白背景，柔和投影，珊瑚橙小面积点缀，形体轮廓清楚，居中偏下，上方留30%空白供后期真实字体排版。现代杂志插画，简洁，高对比，9:16，无文字无数字无Logo。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "竖屏可读",
+        "上方留白",
+        "图形简单",
+        "无生成文字"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-01",
+      "title": "口播封面底图",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "palette",
+        "subject",
+        "topic"
+      ],
+      "prompt": "为主题 {{topic}} 创建自媒体封面底图：视觉主体 {{subject}} 置于右侧，下方和左上留文字空间，色彩 {{palette}}，形体在手机缩略图中可识别，竖版9:16；不生成标题，标题用后期真实字体排版。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "缩略图可识别",
+        "安全区",
+        "无伪文字"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-02",
+      "title": "知识卡片插图",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "concept",
+        "metaphor",
+        "palette"
+      ],
+      "prompt": "把概念 {{concept}} 变成一个简单视觉隐喻 {{metaphor}}，只用三至五个大形体，背景纯净，{{palette}}，1:1，真实文字和箭头由后期制作，不把复杂知识直接画进图。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "隐喻单一",
+        "元素少",
+        "便于动效拆分"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-03",
+      "title": "动效前景资产",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "object"
+      ],
+      "prompt": "生成单独的 {{object}} 前景资产，居中完整，可供Remotion独立缩放和位移动画。正面略有透视，柔和一致光源，透明背景PNG，不含投影之外的背景、不含文字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "alpha真实",
+        "边缘完整",
+        "可独立动画"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-04",
+      "title": "长视频章节封面",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "chapter",
+        "palette",
+        "series_style",
+        "subject"
+      ],
+      "prompt": "为原创长视频章节 {{chapter}} 创建统一系列的背景图，固定 {{series_style}} 与色板 {{palette}}，主体 {{subject}} 在右下角，左上留白，16:9，构图简洁。不要生成章节名或数字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "系列一致",
+        "留白可排版",
+        "16:9"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-05",
+      "title": "前后对照配图",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "background",
+        "camera",
+        "lighting",
+        "single_variable",
+        "state",
+        "subject"
+      ],
+      "prompt": "生成一个 {{subject}} 的{{state}}状态配图，机位 {{camera}}，背景 {{background}}，光线 {{lighting}}。与对照组锁定同一布局，仅改变 {{single_variable}}。单独一张，不做拼图，不加说明文字，16:9。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "只改一个变量",
+        "同构图",
+        "对照可解释"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-06",
+      "title": "信息图背景",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "palette",
+        "topic"
+      ],
+      "prompt": "为数据主题 {{topic}} 制作低干扰背景，{{palette}}，简单纹理和少量抽象几何元素，中心70%近乎纯色留给Remotion真实图表，16:9；不要生成图表、数据或文字。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "中心无干扰",
+        "不伪造数据",
+        "图表由代码绘制"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-07",
+      "title": "产品口播B-roll底图",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "product"
+      ],
+      "prompt": "原创 {{product}} 使用场景的静态背景底图，人物如出现则为成年且无可辨识真实人物身份，商品以提供参考为准，构图为手机9:16安全区，关键细节居中，不生成字幕，适合后续缓慢推近的口播插入画面。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "商品准确",
+        "中心安全区",
+        "适合轻运动"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "IMG-SOC-08",
+      "title": "片尾行动引导底图",
+      "category": "social",
+      "kind": "image",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "elements",
+        "series",
+        "style"
+      ],
+      "prompt": "为 {{series}} 系列制作片尾视觉背景，整体 {{style}}，下方保留20%空白、中心保留50%空白供真实按钮和文字，四周少量 {{elements}}，9:16，不生成文字、二维码、社交平台标识。",
+      "negative_guidance": "不生成未要求的文字、水印或Logo；避免主体变形、额外肢体和多余物体。负面词需合并到正文或按供应商能力映射，不假定所有模型支持negative_prompt字段。",
+      "acceptance": [
+        "中心可排版",
+        "无伪二维码",
+        "风格统一"
+      ],
+      "reference_policy": "出现参考图或参考资产变量时必须实际附图，纯文字不能替代引用。",
+      "model_notes": "模型与分辨率、比例、透明背景能力以实际接口为准；商品精确保真需有参考图并人工比对。"
+    },
+    {
+      "id": "VID-EC-01",
+      "title": "商品环绕展示",
+      "category": "ecommerce",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "product_ref"
+      ],
+      "prompt": "锁定参考商品 {{product_ref}} 的外观和材质。单个5秒镜头，商品静止，摄像机从正面缓慢向右环绕约15度，恒定柔光，纯净棚拍背景，16:9，无声音需求。禁止结构变形、出现额外配件或文字。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-EC-02",
+      "title": "使用动作演示",
+      "category": "ecommerce",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "action",
+        "product_ref",
+        "verified_feature"
+      ],
+      "prompt": "以 {{product_ref}} 为商品参考，成年演示者完成一个简单动作 {{action}}，5秒固定中近景，手部清晰，背景简洁。仅演示有依据的功能 {{verified_feature}}，动作前后逻辑完整；不生成字幕或功效数据。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-EC-03",
+      "title": "氛围场景短片",
+      "category": "ecommerce",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "lighting",
+        "product_ref",
+        "scene",
+        "subtle_motion"
+      ],
+      "prompt": "锁定 {{product_ref}}，产品置于 {{scene}}，6秒单镜头，轻微推近，仅环境中的 {{subtle_motion}} 缓慢移动，主产品结构不变，{{lighting}}，9:16；静音B-roll。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-EC-04",
+      "title": "细节横移",
+      "category": "ecommerce",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "detail",
+        "product_ref"
+      ],
+      "prompt": "参考商品 {{product_ref}} 的 {{detail}}，5秒微距，镜头从左到右缓慢平移，细节一直在焦平面内，柔光不闪烁，不增添零件，16:9；不生成字幕。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-01",
+      "title": "单镜头角色动作",
+      "category": "film",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "adult_character",
+        "audio_plan",
+        "camera",
+        "character_ref",
+        "duration_seconds",
+        "one_action",
+        "position",
+        "prop_ref",
+        "scene_ref"
+      ],
+      "prompt": "【参考锚定】角色 {{character_ref}}、场景 {{scene_ref}}、道具 {{prop_ref}}，保持脸、服饰与空间一致。\n【分镜动作】{{adult_character}} 在 {{position}} 完成 {{one_action}}，{{camera}}，{{duration_seconds}}秒，单镜头。\n【声音】{{audio_plan}}；对白如需配音则单独交由TTS，不假定模型口型同步。\n【禁止项】无字幕、水印、Logo、额外人物、跳切、脸部漂移和道具变形。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-02",
+      "title": "空镜建立",
+      "category": "film",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "ambience",
+        "duration_seconds",
+        "environment_motion",
+        "scene_ref"
+      ],
+      "prompt": "【参考锚定】使用 {{scene_ref}} 的建筑与光线。\n【分镜动作】{{duration_seconds}}秒广角建立镜头，缓慢推进，只有 {{environment_motion}} 运动；无人物。\n【声音】{{ambience}}，若模型不支持音频则后期添加。\n【禁止项】不新增建筑、文字、天气突变或镜头跳切。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-03",
+      "title": "反应近景",
+      "category": "film",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "character_ref",
+        "duration_seconds",
+        "emotion",
+        "eyeline",
+        "scene_ref"
+      ],
+      "prompt": "【参考锚定】成年角色 {{character_ref}} 和场景 {{scene_ref}}。\n【分镜动作】{{duration_seconds}}秒近景，角色看向 {{eyeline}}，先保持平静，再出现轻微 {{emotion}}，动作克制，固定机位。\n【声音】不说话，环境声后期补。\n【禁止项】不换脸、不换衣、不夸张表演、不突然转头、无字幕。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-04",
+      "title": "动作衔接镜头",
+      "category": "film",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "action",
+        "audio_plan",
+        "camera",
+        "character_ref",
+        "duration_seconds",
+        "end_pose_ref",
+        "previous_shot_id",
+        "screen_direction"
+      ],
+      "prompt": "【参考锚定】沿用镜头 {{previous_shot_id}} 的角色资产 {{character_ref}} 和结束姿态 {{end_pose_ref}}。\n【分镜动作】从该姿态开始，角色 {{action}}，运动方向 {{screen_direction}}，时长 {{duration_seconds}}秒，机位 {{camera}}。\n【声音】{{audio_plan}}。\n【禁止项】不反转方向、不改变持物手、不跨越轴线、无跳切字幕。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-05",
+      "title": "道具插入特写",
+      "category": "film",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "prop_ref",
+        "scene_ref"
+      ],
+      "prompt": "【参考锚定】道具 {{prop_ref}}，场景 {{scene_ref}} 的桌面与光线。\n【分镜动作】{{duration_seconds}}秒固定特写，一只成年人的手将道具轻放桌面，动作完成后停留1秒。\n【声音】轻微接触声可后期添加。\n【禁止项】不改变道具数量与结构，不生成文字，不穿模。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-06",
+      "title": "长片逐镜头生产",
+      "category": "longform",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "asset_manifest",
+        "bible",
+        "shot_id",
+        "shotlist"
+      ],
+      "prompt": "你是长视频分镜执行助手。输入项目圣经 {{bible}}、镜头表 {{shotlist}}、已批准资产 {{asset_manifest}}、目标镜头 {{shot_id}}。只为这个镜头输出参考锚定、单动作分镜、声音计划、禁止项四段提示词；另外输出模型能力需求与人工验收项。不得一次请求生成5–10分钟视频；缺引用则停止此镜头并列出缺项，其他可执行镜头仍可排队。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-07",
+      "title": "失败镜头单变量重试",
+      "category": "longform",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "expected",
+        "observed",
+        "one_variable",
+        "shot_id"
+      ],
+      "prompt": "比较镜头 {{shot_id}} 的预期 {{expected}} 与观察问题 {{observed}}，保持参考资产、模型、时长不变，只调整 {{one_variable}}。输出修改前后差异、修订提示词与验收条件。不得声称仅文字就能保证人物完全一致。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-FILM-08",
+      "title": "片段延长",
+      "category": "longform",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "clip_ref",
+        "duration_seconds",
+        "end_state",
+        "last_frame_ref",
+        "ongoing_action"
+      ],
+      "prompt": "以 {{clip_ref}} 的最后一帧 {{last_frame_ref}} 为起点，延长 {{duration_seconds}}秒，继续 {{ongoing_action}}，保持角色、道具、镜头速度和光照；结尾停在 {{end_state}}。先确认供应商支持延长与输入片段长度，否则改用末帧图生视频并安排剪辑遮挡衔接。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-01",
+      "title": "口播插入B-roll",
+      "category": "social",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "visual_action",
+        "voiceover_sentence"
+      ],
+      "prompt": "围绕口播句 {{voiceover_sentence}}，生成一个 {{duration_seconds}}秒无对白B-roll镜头：{{visual_action}}。画面表达一个概念，9:16，主体置中，底部20%不放关键内容，镜头缓慢稳定。字幕、配音和图表都在后期完成，不生成伪文字。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-02",
+      "title": "轻运动静物",
+      "category": "social",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "image_ref",
+        "subtle_motion"
+      ],
+      "prompt": "使用 {{image_ref}} 为首帧，{{duration_seconds}}秒轻微推近约5%，保留原图构图和主体，不增添物体，仅 {{subtle_motion}} 缓慢运动，静音，无文字。用于口播视频短暂视觉切换。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-03",
+      "title": "章节过渡空镜",
+      "category": "social",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "chapter",
+        "duration_seconds",
+        "motion",
+        "palette",
+        "scene"
+      ],
+      "prompt": "为章节 {{chapter}} 生成{{duration_seconds}}秒过渡空镜：{{scene}}，{{motion}}，{{palette}}，16:9，中心留白用于Remotion章节标题，镜头平稳，无字无对白。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-04",
+      "title": "观点可视化规划",
+      "category": "social",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "script",
+        "source"
+      ],
+      "prompt": "将口播段落 {{script}} 转成素材清单。逐项给出时间起止、作用、推荐方式（实拍/AI短片/Remotion图表）、参考资产和提示词。数字和结论来自 {{source}}；数据图表优先Remotion，不把可读文字交给视频模型生成。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-05",
+      "title": "15秒短片拆镜",
+      "category": "social",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "brief",
+        "style_bible"
+      ],
+      "prompt": "把 {{brief}} 拆为总时长15秒的3个镜头，各5秒；每镜头一个主体动作，锁定 {{style_bible}}。分别输出资产需求、图像关键帧提示词、四段式视频提示词、旁白位置和转场，不把三镜头当成供应商一定支持的单次请求。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "VID-SOC-06",
+      "title": "成片镜头质检",
+      "category": "longform",
+      "kind": "video",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "observations",
+        "shot_manifest"
+      ],
+      "prompt": "检查 {{shot_manifest}} 和实际观察 {{observations}}，逐镜头判断身份、服饰、空间、动作、轴线、时长、技术编码与声音；输出通过/退回/待人工复核及证据时间码。不把未播放或未分析的素材写成通过；总时长与时间线实际相加。",
+      "acceptance": [
+        "参考资产实际传入",
+        "单镜头动作可完成",
+        "检查身份与空间连续性",
+        "时长和音频满足镜头表"
+      ],
+      "model_notes": "提示词不是API参数；先核对供应商输入类型、时长、画幅、音频与参考数量，不能凭示例模型名推断支持。"
+    },
+    {
+      "id": "REM-01",
+      "title": "口播关键词动效",
+      "category": "kinetic",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "script",
+        "timings"
+      ],
+      "prompt": "根据口播 {{script}} 与时间码 {{timings}}，设计一段 {{duration_seconds}} 秒Remotion动效：短词分段进入，最多两行，每行不超过12个汉字；动画绑定useCurrentFrame，真实字体渲染，9:16，底部20%字幕安全区。交付可编译的组件与帧区间，不使用CSS时间动画或Math.random。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-02",
+      "title": "三步流程卡片",
+      "category": "steps",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "palette",
+        "steps",
+        "timings"
+      ],
+      "prompt": "将 {{steps}} 制作为三步卡片动效，步骤分别按 {{timings}} 入场，颜色 {{palette}}，字体大于48px（1080竖屏），总时长 {{duration_seconds}}秒，30fps。使用Sequence、interpolate和spring，所有值可由输入props替换。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-03",
+      "title": "数据对比动效",
+      "category": "comparison",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "data",
+        "source",
+        "timings"
+      ],
+      "prompt": "为 {{data}} 设计Remotion对比图表，明确单位、来源 {{source}} 和是否示例数据，不夸大截断坐标轴；按 {{timings}} 动画，数据与图形长度一致，支持9:16与16:9，文本由React渲染。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-04",
+      "title": "章节标题",
+      "category": "chapter",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "series",
+        "subtitle",
+        "title"
+      ],
+      "prompt": "制作系列 {{series}} 的Remotion章节过渡：章节名 {{title}}，副标题 {{subtitle}}，时长 {{duration_seconds}}秒；背景图从资产清单读取，缓慢缩放，标题在安全区，淡入淡出共不超过总长30%。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-05",
+      "title": "商品参数卡",
+      "category": "product",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "product",
+        "verified_specs"
+      ],
+      "prompt": "为 {{product}} 的真实参数 {{verified_specs}} 设计Remotion产品卡；图片使用Img，文字真实渲染，主图不变形，参数依序出现，禁止增加未提供的功效或数据，9:16。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-06",
+      "title": "观点对照",
+      "category": "contrast",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "after",
+        "before",
+        "timings"
+      ],
+      "prompt": "把 {{before}} 和 {{after}} 设计成Remotion左右对照卡片，竖屏时改为上下；锁定字号、留白与颜色逻辑，按 {{timings}} 入场；示例结论明确标注示意，不编造实测。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-07",
+      "title": "时间线素材插入",
+      "category": "timeline",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "asset_manifest",
+        "shotlist"
+      ],
+      "prompt": "根据 {{shotlist}} 和 {{asset_manifest}} 输出Remotion时间线组件：以帧为唯一时间单位，用Sequence拼接素材，保留旁白轨，统一音量；缺文件要报错而不是静默跳过，不用视频生成模型画字幕。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    },
+    {
+      "id": "REM-08",
+      "title": "透明叠加说明层",
+      "category": "overlay",
+      "kind": "remotion",
+      "origin": "original",
+      "language": "zh-CN",
+      "variables": [
+        "duration_seconds",
+        "host_bbox",
+        "point"
+      ],
+      "prompt": "为 {{point}} 设计透明背景Remotion说明层，使用真实字体、箭头和形状；位置避开 {{host_bbox}} 与字幕区，持续 {{duration_seconds}}秒。先交付普通MP4示例；透明交付另用支持alpha的编解码器并用ffprobe与alpha测试确认，不能把普通H264称为透明视频。",
+      "acceptance": [
+        "帧驱动且确定性",
+        "真实字体与安全区",
+        "渲染后ffprobe确认时长分辨率",
+        "引用的素材文件存在"
+      ]
+    }
+  ]
+}

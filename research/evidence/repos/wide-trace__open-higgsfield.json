@@ -1,0 +1,40 @@
+{
+  "name": "wide-trace/open-higgsfield",
+  "url": "https://github.com/wide-trace/open-higgsfield",
+  "retrieved_at": "2026-10-22T19:55:46.462351+00:00",
+  "default_branch": "main",
+  "commit": "b16a0efe4d7e2707b56f8ccb02387fd2a9d2eddf",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/wide-trace/open-higgsfield/blob/b16a0efe4d7e2707b56f8ccb02387fd2a9d2eddf/README.md",
+  "readme_sha256": "d9dde8f7d7648f701033fbacf466ec78c32d34a47c2879f189907cbbf9ed59cb",
+  "root_paths": [
+    "public",
+    "scripts",
+    "src",
+    ".env.example",
+    ".gitignore",
+    "README.md",
+    "next-env.d.ts",
+    "next.config.ts",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "tsconfig.json"
+  ],
+  "readme_headings": [
+    "OpenHiggsfield AI — Open-Source Alternative to Higgsfield AI",
+    "🌐 Try it Online — No Install Required",
+    "Features",
+    "Generate",
+    "Gallery",
+    "State and errors",
+    "Architecture",
+    "Getting started",
+    "Environment",
+    "Commands",
+    "Layout",
+    "Design principles"
+  ],
+  "resource_links": [],
+  "license_evidence": []
+}

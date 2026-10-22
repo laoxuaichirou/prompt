@@ -1,0 +1,203 @@
+{
+  "query": "midjourney prompts",
+  "page": 1,
+  "url": "https://github.com/search?q=midjourney+prompts&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:37.901637+00:00",
+  "result_count": 930,
+  "items": [
+    {
+      "name": "thinkingjimmy/Learning-Prompt",
+      "stars": 5302,
+      "description": "Free prompt engineering online course. ChatGPT and Midjourney tutorials are now included!",
+      "topics": [
+        "prompt",
+        "prompt-toolkit",
+        "prompt-engineering"
+      ],
+      "archived": false,
+      "language": "CSS",
+      "updated_at": "2023-09-17T02:06:16.887Z",
+      "url": "https://github.com/thinkingjimmy/Learning-Prompt"
+    },
+    {
+      "name": "jina-ai/discoart",
+      "stars": 3816,
+      "description": "🪩 Create Disco Diffusion artworks in one line",
+      "topics": [
+        "generative-art",
+        "cross-modal",
+        "diffusion",
+        "prompts",
+        "creative-ai",
+        "creative-art",
+        "multimodal",
+        "clip-guided-diffusion",
+        "dalle",
+        "disco-diffusion",
+        "midjourney",
+        "imgen",
+        "discodiffusion",
+        "latent-diffusion",
+        "stable-diffusion"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2023-05-16T09:48:00.630Z",
+      "url": "https://github.com/jina-ai/discoart"
+    },
+    {
+      "name": "LearnPrompt/LearnPrompt",
+      "stars": 2714,
+      "description": "永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人…",
+      "topics": [
+        "agent",
+        "cli",
+        "prompt",
+        "codex",
+        "aivoice",
+        "prompt-learning",
+        "aimusic",
+        "stable-diffusion",
+        "chatgpt-app",
+        "midjourney-app",
+        "llms-book",
+        "prompt-enginering",
+        "claude-code",
+        "openclaw",
+        "hermes-agent"
+      ],
+      "archived": false,
+      "language": "MDX",
+      "updated_at": "2026-10-19T09:04:17.109Z",
+      "url": "https://github.com/LearnPrompt/LearnPrompt"
+    },
+    {
+      "name": "YiVal/YiVal",
+      "stars": 2136,
+      "description": "Your Automatic Prompt Engineering Assistant for GenAI Applications",
+      "topics": [
+        "python",
+        "api",
+        "framework",
+        "ai",
+        "prompt",
+        "fine-tuning",
+        "ai-toolkit",
+        "ai-experiments",
+        "gpt4",
+        "prompt-tuning",
+        "aigc",
+        "llm",
+        "midjourney",
+        "prompt-engineering",
+        "stable-diffusion",
+        "promptengineering",
+        "generative-ai",
+        "autogpt",
+        "auto-prompting"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-04-22T04:42:25.792Z",
+      "url": "https://github.com/YiVal/YiVal"
+    },
+    {
+      "name": "TanShilongMario/PromptFill",
+      "stars": 1950,
+      "description": "designed specifically for AI painting (GPT, Midjourney, Nano Banana, etc.). Help users quickly build, manage, and iterate complex prompts …",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-09-12T12:53:15.490Z",
+      "url": "https://github.com/TanShilongMario/PromptFill"
+    },
+    {
+      "name": "altryne/awesome-ai-art-image-synthesis",
+      "stars": 1824,
+      "description": "A list of awesome tools, ideas, prompt engineering tools, colabs, models, and helpers for the prompt designer playing with aiArt and imag…",
+      "topics": [
+        "ai"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2022-12-03T09:33:26.657Z",
+      "url": "https://github.com/altryne/awesome-ai-art-image-synthesis"
+    },
+    {
+      "name": "YouMind-OpenLab/ai-image-prompts-skill",
+      "stars": 1325,
+      "description": "AI Image Prompts — 10,000+ curated prompts for any model. Works with Nano Banana Pro, Nano Banana 2, Seedream 5.0, GPT Image 1.5, Midjourney",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T16:55:41.064Z",
+      "url": "https://github.com/YouMind-OpenLab/ai-image-prompts-skill"
+    },
+    {
+      "name": "soulteary/docker-prompt-generator",
+      "stars": 1155,
+      "description": "Using a Model to generate prompts for Model applications. / 使用模型来生成作图咒语的偷懒工具，支持 MidJourney、Stable Diffusion 等。",
+      "topics": [
+        "prompt",
+        "prompt-tool",
+        "midjourney",
+        "stable-diffusion",
+        "stable-diffusion-webui",
+        "midjourney-app"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2023-04-05T16:20:44.224Z",
+      "url": "https://github.com/soulteary/docker-prompt-generator"
+    },
+    {
+      "name": "jesselau76/GPT-Prompts",
+      "stars": 810,
+      "description": "Useful GPT Prompts",
+      "topics": [
+        "generator",
+        "prompt",
+        "gpt",
+        "gpt-4",
+        "midjourney",
+        "prompt-engineering"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2025-04-02T22:55:19.723Z",
+      "url": "https://github.com/jesselau76/GPT-Prompts"
+    },
+    {
+      "name": "VigoZhao/AI-Visual-Prompt-Cookbook",
+      "stars": 801,
+      "description": "Plug-and-play JSON style prompts for Nano Banana Pro, GPT Image & Midjourney. Copy one style.json, get a consistent look. New styles ever…",
+      "topics": [
+        "json",
+        "ai",
+        "gemini",
+        "style-transfer",
+        "image-generation",
+        "graphic-design",
+        "text-to-image",
+        "prompts",
+        "design-resources",
+        "poster-design",
+        "ai-art",
+        "midjourney",
+        "prompt-engineering",
+        "generative-ai",
+        "ai-prompts",
+        "prompt-library",
+        "prompt-templates",
+        "gpt-image",
+        "nano-banana",
+        "nano-banana-pro"
+      ],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2026-10-21T15:19:54.757Z",
+      "url": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook"
+    }
+  ]
+}

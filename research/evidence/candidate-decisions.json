@@ -1,0 +1,57 @@
+[
+  {
+    "name": "JimLiu/baoyu-skills",
+    "commit": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+    "decision": "include-image",
+    "reason": "存在可读取的独立baoyu-image-gen技能，包含具体输入与生成流程；按star排序纳入生图榜。",
+    "readme_url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/README.md",
+    "file_checks": [
+      {
+        "path": "skills/baoyu-image-gen/SKILL.md",
+        "http_status": 200
+      }
+    ]
+  },
+  {
+    "name": "openai/skills",
+    "commit": "49f948faa9258a0c61caceaf225e179651397431",
+    "decision": "exclude",
+    "reason": "本次固定版本README标记deprecated；历史imagegen/sora入口均404，不把旧印象当当前可用资源。",
+    "readme_url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md",
+    "file_checks": [
+      {
+        "path": "skills/.curated/imagegen/SKILL.md",
+        "http_status": 404
+      },
+      {
+        "path": "skills/.curated/sora/SKILL.md",
+        "http_status": 404
+      }
+    ]
+  },
+  {
+    "name": "sickn33/antigravity-awesome-skills",
+    "commit": "8bda5fa7264cafe8259fc8212550d13bf690bfb0",
+    "decision": "exclude",
+    "reason": "当前重定向到agentic-awesome-skills。已检查fal-generate入口是通用集成操作规范，明确未附客户端/模型目录/可执行例子且历史上游不可用；不当作本次具体生图/导演提示词库。",
+    "readme_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/8bda5fa7264cafe8259fc8212550d13bf690bfb0/README.md",
+    "file_checks": [
+      {
+        "path": "skills/imagegen/SKILL.md",
+        "http_status": 404
+      },
+      {
+        "path": "skills/fal-generate/SKILL.md",
+        "http_status": 200
+      }
+    ]
+  },
+  {
+    "name": "GoogleCloudPlatform/generative-ai",
+    "commit": "9bffb4d802d9e6c6af353d15f162c90504d27c17",
+    "decision": "exclude",
+    "reason": "通用Google Cloud生成式AI教程/示例工程，非本轮提示词案例或独立Agent Skill库；可作为未来官方API学习资料。",
+    "readme_url": "https://github.com/GoogleCloudPlatform/generative-ai/blob/9bffb4d802d9e6c6af353d15f162c90504d27c17/README.md",
+    "file_checks": []
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "query": "design editor",
+  "page": 2,
+  "url": "https://github.com/search?q=design+editor&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:51:58.023230+00:00",
+  "result_count": 7944,
+  "items": [
+    {
+      "name": "storytold/designcraft",
+      "stars": 4662,
+      "description": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
+      "topics": [
+        "art",
+        "rust",
+        "layout",
+        "print"
+      ],
+      "archived": false,
+      "language": "Rust",
+      "updated_at": "2026-10-22T19:41:20.869Z",
+      "url": "https://github.com/storytold/designcraft"
+    },
+    {
+      "name": "alibaba/designable",
+      "stars": 3524,
+      "description": "🧩 Make everything designable 🧩 ",
+      "topics": [
+        "react",
+        "editor",
+        "builder",
+        "form",
+        "designer",
+        "designable"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-04-07T03:20:40.730Z",
+      "url": "https://github.com/alibaba/designable"
+    },
+    {
+      "name": "buqiyuan/vite-vue3-lowcode",
+      "stars": 3405,
+      "description": "vue3.x + vite2.x + vant + element-plus H5移动端低代码平台 lowcode 可视化拖拽 可视化编辑器 visual editor 类似易企秀的H5制作、建站工具、可视化搭建工具",
+      "topics": [
+        "design",
+        "demo",
+        "typescript",
+        "vue",
+        "drag-and-drop",
+        "ts",
+        "monaco-editor",
+        "tsx",
+        "draggable",
+        "element-ui",
+        "low-code",
+        "nocode",
+        "vue3",
+        "vite",
+        "lowcode",
+        "vant-ui",
+        "vuex4",
+        "vue-router4",
+        "element-plus"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-08-20T10:54:56.806Z",
+      "url": "https://github.com/buqiyuan/vite-vue3-lowcode"
+    },
+    {
+      "name": "kalcaddle/kodbox",
+      "stars": 3361,
+      "description": "kodbox is a file manager for web. It is a newly designed product based on kodexplorer. It is also a web code editor, which allows you to …",
+      "topics": [
+        "javascript",
+        "php",
+        "filemanager",
+        "markdown-editor",
+        "filesystem",
+        "file-upload",
+        "xlsx",
+        "file-sharing",
+        "webdav",
+        "free-software",
+        "text-editor",
+        "docx",
+        "file-explorer",
+        "file-viewer",
+        "file-manager"
+      ],
+      "archived": false,
+      "language": "PHP",
+      "updated_at": "2026-10-12T12:33:04.669Z",
+      "url": "https://github.com/kalcaddle/kodbox"
+    },
+    {
+      "name": "saga-soft/novelWriter",
+      "stars": 3189,
+      "description": "novelWriter is an open source plain text editor designed for writing novels",
+      "topics": [
+        "python",
+        "editor",
+        "windows",
+        "linux",
+        "text-editor",
+        "novels",
+        "qt6",
+        "pyqt6",
+        "writing-novels"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-20T19:28:03.563Z",
+      "url": "https://github.com/saga-soft/novelWriter"
+    },
+    {
+      "name": "google/mozc",
+      "stars": 3021,
+      "description": "Mozc - a Japanese Input Method Editor designed for multi-platform",
+      "topics": [],
+      "archived": false,
+      "language": "C++",
+      "updated_at": "2026-10-21T04:18:51.225Z",
+      "url": "https://github.com/google/mozc"
+    },
+    {
+      "name": "phcode-dev/phoenix",
+      "stars": 3008,
+      "description": "The text editor designed to make coding as simple and fun as playing a video game",
+      "topics": [
+        "javascript",
+        "css",
+        "editor",
+        "html",
+        "phoenix",
+        "web",
+        "brackets",
+        "code",
+        "ide",
+        "preview"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T17:50:02.144Z",
+      "url": "https://github.com/phcode-dev/phoenix"
+    },
+    {
+      "name": "skills/secure-code-game",
+      "stars": 2848,
+      "description": "Learn to code securely while having fun through our popular open source in-editor experience, designed for developers, students, and anyo…",
+      "topics": [
+        "ai",
+        "cybersecurity",
+        "security-training",
+        "online-course",
+        "secure-coding",
+        "coding-training",
+        "ai-security",
+        "code-security"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-21T18:02:16.997Z",
+      "url": "https://github.com/skills/secure-code-game"
+    },
+    {
+      "name": "SendWithSES/Drag-and-Drop-Email-Designer",
+      "stars": 2304,
+      "description": "Free, open source, HTML email template editor and no code designer.",
+      "topics": [
+        "open-source-html-email-designer",
+        "no-code-email-editor",
+        "free-html-email-editor",
+        "open-source-free-wysiwig-email-editor",
+        "free-open-source-email-editor-and-designer",
+        "open-source-email-template-creator",
+        "aws-ses-template-editor"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-06-08T10:45:14.991Z",
+      "url": "https://github.com/SendWithSES/Drag-and-Drop-Email-Designer"
+    },
+    {
+      "name": "miroiu/nodify",
+      "stars": 2010,
+      "description": "Highly performant and modular controls for node-based editors designed for data-binding and MVVM.",
+      "topics": [
+        "editor",
+        "calculator",
+        "zooming",
+        "state-machine",
+        "graph",
+        "wpf",
+        "mvvm",
+        "panning",
+        "controls",
+        "flow-based-programming",
+        "visual-programming",
+        "node-graph",
+        "infinite-canvas",
+        "node-editor",
+        "vpl",
+        "good-first-issue",
+        "node-network",
+        "net6",
+        "graph-control"
+      ],
+      "archived": false,
+      "language": "C#",
+      "updated_at": "2026-10-22T19:12:13.459Z",
+      "url": "https://github.com/miroiu/nodify"
+    }
+  ]
+}

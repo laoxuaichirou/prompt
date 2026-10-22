@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');const M=require('../prototype/model.js');
+const node=(id,type)=>({id,type,title:id,content:'test',x:0,y:0});
+const g={version:1,title:'test',template:'film',nodes:[node('t','text'),node('a','image'),node('b','image'),node('v','video')],edges:[]};
+assert.equal(M.canConnect(g,'t','a'),null);g.edges.push({source:'t',target:'a'});
+assert.equal(M.canConnect(g,'a','b'),null);g.edges.push({source:'a',target:'b'});
+assert.match(M.canConnect(g,'b','a'),/循环/);assert.match(M.canConnect(g,'a','a'),/自身/);
+assert.match(M.canConnect(g,'a','t'),/类型/);assert.match(M.canConnect(g,'v','a'),/类型/);
+assert.match(M.canConnect(g,'t','a'),/已有/);assert.deepEqual(M.validate(g),g);
+const duplicate=M.clone(g);duplicate.nodes.push(node('a','image'));assert.throws(()=>M.validate(duplicate),/重复/);
+const hostile=M.clone(g);hostile.nodes[1].image='https://external.invalid/tracker';assert.throws(()=>M.validate(hostile),/本地/);
+const cycle=M.clone(g);cycle.edges.push({source:'b',target:'a'});assert.throws(()=>M.validate(cycle),/循环/);
+const missing=M.clone(g);missing.edges.push({source:'missing',target:'v'});assert.throws(()=>M.validate(missing),/缺少/);
+const nan=M.clone(g);nan.nodes[0].x=Infinity;assert.throws(()=>M.validate(nan),/无效/);
+console.log('Canvas model: 13 assertions passed (DAG, type, import validation).');

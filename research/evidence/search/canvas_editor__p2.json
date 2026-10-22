@@ -1,0 +1,220 @@
+{
+  "query": "canvas editor",
+  "page": 2,
+  "url": "https://github.com/search?q=canvas+editor&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:51:10.829251+00:00",
+  "result_count": 3466,
+  "items": [
+    {
+      "name": "alyssaxuu/animockup",
+      "stars": 1934,
+      "description": "Create animated mockups in the browser 🔥",
+      "topics": [
+        "javascript",
+        "editor",
+        "design",
+        "marketing",
+        "canvas",
+        "tool",
+        "design-tools",
+        "marketing-tools"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2022-07-02T08:12:35.289Z",
+      "url": "https://github.com/alyssaxuu/animockup"
+    },
+    {
+      "name": "salgum1114/react-design-editor",
+      "stars": 1710,
+      "description": "React Design Editor has started to developed direct manipulation of editable design tools like Powerpoint, We've developed it with reactj…",
+      "topics": [
+        "javascript",
+        "editor",
+        "workflow",
+        "canvas",
+        "es6",
+        "reactjs",
+        "fabricjs",
+        "antd",
+        "mediaelementjs",
+        "ant-design",
+        "animejs",
+        "react-ace",
+        "imagemap",
+        "fontawesome5",
+        "webpack4"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-11T08:15:51.965Z",
+      "url": "https://github.com/salgum1114/react-design-editor"
+    },
+    {
+      "name": "naomiaro/waveform-playlist",
+      "stars": 1686,
+      "description": "Multitrack Web Audio editor and player with canvas waveform preview. Set cues, fades and shift multiple tracks in time. Record audio trac…",
+      "topics": [
+        "audio",
+        "music",
+        "harmony",
+        "playlist",
+        "waveform",
+        "annotations",
+        "audio-visualizer",
+        "daw",
+        "webaudio",
+        "audio-player",
+        "playback",
+        "hacktoberfest",
+        "audiorecorder",
+        "tonejs",
+        "audioworklet"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T18:15:35.099Z",
+      "url": "https://github.com/naomiaro/waveform-playlist"
+    },
+    {
+      "name": "rgab1508/PixelCraft",
+      "stars": 1529,
+      "description": "A Pixel Art Editor",
+      "topics": [
+        "editor",
+        "drawing",
+        "pwa",
+        "canvas",
+        "pixel-art",
+        "computer-graphics",
+        "image-manipulation",
+        "canvas-api",
+        "pixel-editor",
+        "pixel-art-maker"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2025-03-16T19:39:36.411Z",
+      "url": "https://github.com/rgab1508/PixelCraft"
+    },
+    {
+      "name": "konvajs/vue-konva",
+      "stars": 1358,
+      "description": "Vue components for the Konva 2d canvas library. Build interactive graphics, design editors, and whiteboards in Vue.",
+      "topics": [
+        "canvas",
+        "vue",
+        "konva",
+        "shape",
+        "graphics",
+        "whiteboard",
+        "konvajs",
+        "canvas-animation",
+        "design-editor",
+        "vue-styleguidist",
+        "vue-canvas",
+        "canvas-editor"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-09-04T16:58:38.797Z",
+      "url": "https://github.com/konvajs/vue-konva"
+    },
+    {
+      "name": "sleepy-zone/fabritor-web",
+      "stars": 1200,
+      "description": "👻 A creative editor based on fabricjs. 一款基于 fabricjs 的开源创意图片编辑器，旨在让开发者快速构建属于自己的图片编辑器。可应用于海报设计、小红书公众号封面设计、banner 设计等场景。",
+      "topics": [
+        "react",
+        "editor",
+        "image",
+        "canvas",
+        "text",
+        "fabricjs"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-08-30T09:17:39.333Z",
+      "url": "https://github.com/sleepy-zone/fabritor-web"
+    },
+    {
+      "name": "lospec/pixel-editor",
+      "stars": 1138,
+      "description": "An online canvas based Pixel Art creation tool for Lospec.com",
+      "topics": [
+        "editor",
+        "palette",
+        "pixel-art",
+        "webapp",
+        "pixel-editor"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2024-06-29T21:32:44.830Z",
+      "url": "https://github.com/lospec/pixel-editor"
+    },
+    {
+      "name": "opennookorg/screenshot-studio",
+      "stars": 1083,
+      "description": "A free, browser-based editor for creating stunning screenshots and visuals. No signup, no watermarks.",
+      "topics": [
+        "typescript",
+        "oss",
+        "canvas",
+        "nextjs",
+        "showcase",
+        "blob",
+        "blob-storage",
+        "vercel",
+        "shadcn-ui",
+        "vercel-oss"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-18T12:29:19.419Z",
+      "url": "https://github.com/opennookorg/screenshot-studio"
+    },
+    {
+      "name": "F-star/suika",
+      "stars": 975,
+      "description": "A Web Graphics Editor Built with Canvas. 基于 Canvas 实现的图形编辑器",
+      "topics": [
+        "visualization",
+        "typescript",
+        "canvas",
+        "graphics",
+        "figma",
+        "design-editor",
+        "graphics-editor",
+        "canvas-editor",
+        "graph-editor-gui"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-09-29T16:13:11.909Z",
+      "url": "https://github.com/F-star/suika"
+    },
+    {
+      "name": "mohyware/clip-js",
+      "stars": 773,
+      "description": "online video editor built with nextjs, remotion and ffmpeg (web assembly port) for render.",
+      "topics": [
+        "editor",
+        "canvas",
+        "ffmpeg",
+        "reactjs",
+        "nextjs",
+        "webassembly",
+        "render",
+        "video-editing",
+        "remotion",
+        "remotion-video"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-03T18:03:38.425Z",
+      "url": "https://github.com/mohyware/clip-js"
+    }
+  ]
+}

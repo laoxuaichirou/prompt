@@ -1,0 +1,17 @@
+{
+  "status": "template-not-connected",
+  "provider_id": "replace-after-verifying-official-api",
+  "model_id": null,
+  "documentation_url": null,
+  "verified_at": null,
+  "supported_inputs": [],
+  "supported_aspect_ratios": [],
+  "supported_resolutions": [],
+  "min_duration_seconds": null,
+  "max_duration_seconds": null,
+  "reference_limits": {"images": null, "video_seconds": null, "audio_seconds": null},
+  "supports": {"audio_output": null, "image_edit": null, "video_extend": null, "alpha_output": null, "idempotency_key": null, "cancel": null},
+  "price": {"currency": null, "unit": null, "amount": null, "source": null},
+  "credential_binding_name": null,
+  "note": "仅为能力表结构示例；空值表示未知，不表示支持。没有endpoint、密钥或可执行请求。接入前按实际官方文档与测试结果填写，凭据只保存在服务端安全配置。"
+}

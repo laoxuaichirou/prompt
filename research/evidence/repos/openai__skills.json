@@ -1,0 +1,30 @@
+{
+  "name": "openai/skills",
+  "url": "https://github.com/openai/skills",
+  "retrieved_at": "2026-10-22T20:21:38.911764+00:00",
+  "default_branch": "main",
+  "commit": "49f948faa9258a0c61caceaf225e179651397431",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md",
+  "readme_sha256": "0f6a07580f3c627253e15a58dd0439e135049ec38eb16cf3587f7e50abc6f590",
+  "root_paths": [
+    "skills",
+    ".gitignore",
+    "README.md",
+    "contributing.md"
+  ],
+  "readme_headings": [
+    "Agent Skills",
+    "Installing a skill",
+    "License"
+  ],
+  "resource_links": [
+    "https://developers.openai.com/codex/skills",
+    "https://developers.openai.com/codex/skills/create-skill",
+    "https://agentskills.io",
+    "skills/.system/",
+    "skills/.curated/",
+    "skills/.experimental/"
+  ],
+  "license_evidence": []
+}

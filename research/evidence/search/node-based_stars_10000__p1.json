@@ -1,0 +1,176 @@
+{
+  "query": "node-based stars:>10000",
+  "page": 1,
+  "url": "https://github.com/search?q=node-based+stars%3A%3E10000&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:54:59.926114+00:00",
+  "result_count": 9,
+  "items": [
+    {
+      "name": "axios/axios",
+      "stars": 109307,
+      "description": "Promise based HTTP client for the browser and node.js",
+      "topics": [
+        "nodejs",
+        "javascript",
+        "promise",
+        "http-client",
+        "hacktoberfest"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T14:44:28.460Z",
+      "url": "https://github.com/axios/axios"
+    },
+    {
+      "name": "base/node",
+      "stars": 68325,
+      "description": "Everything required to run your own Base node",
+      "topics": [],
+      "archived": true,
+      "language": "Shell",
+      "updated_at": "2026-09-08T20:01:17.924Z",
+      "url": "https://github.com/base/node"
+    },
+    {
+      "name": "xyflow/xyflow",
+      "stars": 38751,
+      "description": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https…",
+      "topics": [
+        "react",
+        "javascript",
+        "workflow",
+        "typescript",
+        "graph",
+        "svelte",
+        "typescript-library",
+        "flowchart",
+        "react-flow",
+        "node-based-ui",
+        "svelte-flow"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T13:08:24.499Z",
+      "url": "https://github.com/xyflow/xyflow"
+    },
+    {
+      "name": "GraphiteEditor/Graphite",
+      "stars": 27687,
+      "description": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics…",
+      "topics": [
+        "art",
+        "design",
+        "creative-coding",
+        "procedural-generation",
+        "animation",
+        "graphics",
+        "image-processing",
+        "procedural",
+        "procedural-drawing",
+        "image-manipulation",
+        "motion-graphics",
+        "motion-design",
+        "vector-graphics",
+        "photo-editor",
+        "graphic-design",
+        "node-graph",
+        "2d-graphics",
+        "svg-editor",
+        "graphics-editor"
+      ],
+      "archived": false,
+      "language": "Rust",
+      "updated_at": "2026-10-22T08:29:44.646Z",
+      "url": "https://github.com/GraphiteEditor/Graphite"
+    },
+    {
+      "name": "NodeBB/NodeBB",
+      "stars": 15240,
+      "description": "Node.js based forum software built for the modern web",
+      "topics": [
+        "nodejs",
+        "javascript",
+        "redis",
+        "community",
+        "node",
+        "mongodb",
+        "websockets",
+        "socket-io",
+        "postgresql",
+        "forum",
+        "nodebb"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T19:49:30.040Z",
+      "url": "https://github.com/NodeBB/NodeBB"
+    },
+    {
+      "name": "pyodide/pyodide",
+      "stars": 14901,
+      "description": "Pyodide is a Python distribution for the browser and Node.js based on WebAssembly",
+      "topics": [
+        "python",
+        "webassembly",
+        "wasm",
+        "emscripten",
+        "pyodide"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T17:59:55.908Z",
+      "url": "https://github.com/pyodide/pyodide"
+    },
+    {
+      "name": "alicevision/Meshroom",
+      "stars": 13033,
+      "description": "Node-based Visual Programming Toolbox",
+      "topics": [
+        "computer-vision",
+        "structure-from-motion",
+        "multi-view-stereo",
+        "image-stitching",
+        "photogrammetry",
+        "3d-reconstruction",
+        "workflow-automation",
+        "camera-tracking",
+        "texturing",
+        "hdr-imaging",
+        "nocode",
+        "meshroom",
+        "alicevision",
+        "nodal-interface"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T17:45:56.971Z",
+      "url": "https://github.com/alicevision/Meshroom"
+    },
+    {
+      "name": "node-inspector/node-inspector",
+      "stars": 12635,
+      "description": "Node.js debugger based on Blink Developer Tools",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2018-02-08T23:01:21.673Z",
+      "url": "https://github.com/node-inspector/node-inspector"
+    },
+    {
+      "name": "bailicangdu/node-elm",
+      "stars": 12326,
+      "description": "Backend system based on node.js + Mongodb. 基于 node.js + Mongodb 构建的后台系统",
+      "topics": [
+        "express",
+        "node",
+        "mongodb",
+        "mongoose"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2021-12-14T07:06:56.285Z",
+      "url": "https://github.com/bailicangdu/node-elm"
+    }
+  ]
+}

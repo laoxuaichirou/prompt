@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "first/middle/last extraction, retained background and non-static comparison; middle-frame visual review separately documented",
+  "items": [
+    {
+      "id": "kinetic",
+      "first_frame_mean_rgb": [
+        245.0,
+        239.0,
+        232.0
+      ],
+      "last_frame_mean_rgb": [
+        244.99999855324074,
+        238.99999855324074,
+        231.99999855324074
+      ],
+      "retained_light_background": true,
+      "middle_differs_from_first": true,
+      "frames": [
+        "artifacts/frames/kinetic-first.png",
+        "artifacts/frames/kinetic-middle.png",
+        "artifacts/frames/kinetic-last.png"
+      ]
+    },
+    {
+      "id": "steps",
+      "first_frame_mean_rgb": [
+        245.0,
+        239.0,
+        232.0
+      ],
+      "last_frame_mean_rgb": [
+        244.99980661651236,
+        238.99980661651236,
+        231.99980661651236
+      ],
+      "retained_light_background": true,
+      "middle_differs_from_first": true,
+      "frames": [
+        "artifacts/frames/steps-first.png",
+        "artifacts/frames/steps-middle.png",
+        "artifacts/frames/steps-last.png"
+      ]
+    },
+    {
+      "id": "comparison",
+      "first_frame_mean_rgb": [
+        245.0,
+        239.0,
+        232.0
+      ],
+      "last_frame_mean_rgb": [
+        244.9999893904321,
+        238.9999893904321,
+        231.9999893904321
+      ],
+      "retained_light_background": true,
+      "middle_differs_from_first": true,
+      "frames": [
+        "artifacts/frames/comparison-first.png",
+        "artifacts/frames/comparison-middle.png",
+        "artifacts/frames/comparison-last.png"
+      ]
+    }
+  ]
+}

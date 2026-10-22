@@ -1,0 +1,222 @@
+[
+  {
+    "category": "image",
+    "repository": "freestylefly/awesome-gpt-image-2",
+    "rank": 1,
+    "type": "提示词库 + Agent Skill",
+    "entry_url": "https://github.com/freestylefly/awesome-gpt-image-2/blob/63e6176fa01be51c000108dacd72716d3e46784b/agents/skills/gpt-image-2-style-library/SKILL.md",
+    "commit": "63e6176fa01be51c000108dacd72716d3e46784b",
+    "use": "产品、品牌、海报模板及结构化分类",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "op7418/guizang-ppt-skill",
+    "rank": 2,
+    "type": "配图/封面/PPT Skill",
+    "entry_url": "https://github.com/op7418/guizang-ppt-skill/blob/c91369c449d34755d320a8b81d0734000d99d1ab/references/image-prompts.md",
+    "commit": "c91369c449d34755d320a8b81d0734000d99d1ab",
+    "use": "封面、配图和视觉系统一致性",
+    "license": "AGPL-3.0",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "JimLiu/baoyu-skills",
+    "rank": 3,
+    "type": "视觉内容技能合集中的生图Skill",
+    "entry_url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-image-gen/SKILL.md",
+    "commit": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+    "use": "多供应商生图、参考图编辑与提示词文件批处理",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "PicoTrex/Awesome-Nano-Banana-images",
+    "rank": 4,
+    "type": "生图案例与提示词库",
+    "entry_url": "https://github.com/PicoTrex/Awesome-Nano-Banana-images/blob/2558bf0bb825be150c5d1aeab918cd90004882d3/README.md",
+    "commit": "2558bf0bb825be150c5d1aeab918cd90004882d3",
+    "use": "参考编辑、多视图与视觉案例",
+    "license": "Apache-2.0（仓库）",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
+    "rank": 5,
+    "type": "生图提示词库",
+    "entry_url": "https://github.com/Evolink-AI/awesome-gpt-image-2-API-Prompts/blob/e2a269ad1a055a0b4f6c1e170341c6c1aba30faa/README.md",
+    "commit": "e2a269ad1a055a0b4f6c1e170341c6c1aba30faa",
+    "use": "电商主图、广告与产品场景",
+    "license": "CC0-1.0（仓库）",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+    "rank": 6,
+    "type": "生图提示词库",
+    "entry_url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/6ee3c6ffefb95a3774baeeaa645d14914cd6d949/README_zh.md",
+    "commit": "6ee3c6ffefb95a3774baeeaa645d14914cd6d949",
+    "use": "头像、营销图、缩略图分类",
+    "license": "CC-BY-4.0",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "ConardLi/garden-skills",
+    "rank": 7,
+    "type": "技能合集中的独立生图Skill",
+    "entry_url": "https://github.com/ConardLi/garden-skills/blob/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/gpt-image-2/SKILL.md",
+    "commit": "7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68",
+    "use": "gpt-image-2子技能与视觉规划",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "willwulfken/MidJourney-Styles-and-Keywords-Reference",
+    "rank": 8,
+    "type": "风格与关键词参考库",
+    "entry_url": "https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference/blob/1e54e7ffd4b6a9a2afc6de83bcfcff962619f299/README.md",
+    "commit": "1e54e7ffd4b6a9a2afc6de83bcfcff962619f299",
+    "use": "风格探索、材质与镜头词汇",
+    "license": "未发现根目录许可证；仅链接与摘要",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "ZeroLu/awesome-nanobanana-pro",
+    "rank": 9,
+    "type": "生图提示词案例库",
+    "entry_url": "https://github.com/ZeroLu/awesome-nanobanana-pro/blob/415896b006f8228c638ef2a27de9414b82982896/README.md",
+    "commit": "415896b006f8228c638ef2a27de9414b82982896",
+    "use": "写实、海报与视觉表达",
+    "license": "MIT（仓库）",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "image",
+    "repository": "YouMind-OpenLab/awesome-gpt-image-2",
+    "rank": 10,
+    "type": "生图提示词库",
+    "entry_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/3419a50241a107b5c0394fdab4376518dd310b8d/README_zh.md",
+    "commit": "3419a50241a107b5c0394fdab4376518dd310b8d",
+    "use": "电商、社媒、信息视觉分类",
+    "license": "CC-BY-4.0",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "Emily2040/seedance-2.0",
+    "rank": 1,
+    "type": "导演/分镜Agent Skill",
+    "entry_url": "https://github.com/Emily2040/seedance-2.0/blob/4668457e560eee06e95d7fcfdf441c8c0bba802e/skills/seedance-prompt/SKILL.md",
+    "commit": "4668457e560eee06e95d7fcfdf441c8c0bba802e",
+    "use": "镜头表、参考绑定、续接与单动作分镜",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "dexhunter/seedance2-skill",
+    "rank": 2,
+    "type": "视频提示词Skill",
+    "entry_url": "https://github.com/dexhunter/seedance2-skill/blob/516284d5bab58361bfdfed3cc96cee3e837d4c44/zh/SKILL.md",
+    "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+    "use": "中文/英文多模态引用、运镜与广告模板",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "zenstory-ai/drama-skills",
+    "rank": 3,
+    "type": "影视生产多Skill",
+    "entry_url": "https://github.com/zenstory-ai/drama-skills/blob/fdb7b7c58017e3eae64eca382c2a85ede368dab0/skills/short-drama-video-prompts/SKILL.md",
+    "commit": "fdb7b7c58017e3eae64eca382c2a85ede368dab0",
+    "use": "剧本、资产、分镜、视频提示词、剪辑交接",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "songguoxs/seedance-prompt-skill",
+    "rank": 4,
+    "type": "视频提示词Skill",
+    "entry_url": "https://github.com/songguoxs/seedance-prompt-skill/blob/57d1e2f273747c238dd892698a05137ab2f10d4a/.claude/skills/seedance/SKILL.md",
+    "commit": "57d1e2f273747c238dd892698a05137ab2f10d4a",
+    "use": "多参考锚定、场景策略与镜头语言",
+    "license": "未发现根目录许可证；仅链接与摘要",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "ZeroLu/awesome-seedance",
+    "rank": 5,
+    "type": "视频提示词案例库",
+    "entry_url": "https://github.com/ZeroLu/awesome-seedance/blob/51e06d7f0f827d30f4d63609f45ebcebaa2f7a29/README-zh.md",
+    "commit": "51e06d7f0f827d30f4d63609f45ebcebaa2f7a29",
+    "use": "电影感、广告与运镜案例",
+    "license": "MIT（仓库）",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "kaomei/stickman-video-director",
+    "rank": 6,
+    "type": "火柴人动画导演Skill",
+    "entry_url": "https://github.com/kaomei/stickman-video-director/blob/70199c86911d84de9804441ce581eeb25142efba/skills/directing-stickman-videos/SKILL.md",
+    "commit": "70199c86911d84de9804441ce581eeb25142efba",
+    "use": "知识解释、自媒体、叙事风格与分镜",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "liangdabiao/Seedance2-Storyboard-Generator",
+    "rank": 7,
+    "type": "故事到分镜/视频提示词Skill",
+    "entry_url": "https://github.com/liangdabiao/Seedance2-Storyboard-Generator/blob/aceab4e277aa26cb33794fce6e17e5425ad721dd/.claude/skills/seedance-storyboard-generator/SKILL.md",
+    "commit": "aceab4e277aa26cb33794fce6e17e5425ad721dd",
+    "use": "人物/场景/道具编号与多集衔接",
+    "license": "README称仅供学习参考；未发现根许可证",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "LearnPrompt/awesome-seedance",
+    "rank": 8,
+    "type": "视频提示词库 + Skill",
+    "entry_url": "https://github.com/LearnPrompt/awesome-seedance/blob/6c2a99ab454b5201a8886a36d91bc2fe3906743a/README_zh.md",
+    "commit": "6c2a99ab454b5201a8886a36d91bc2fe3906743a",
+    "use": "商业产品、UGC与叙事模板",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "YouMind-OpenLab/awesome-seedance-2-prompts",
+    "rank": 9,
+    "type": "视频提示词案例库",
+    "entry_url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts/blob/a32d396ca4defb0a019af301266dad3a0288efec/README_zh.md",
+    "commit": "a32d396ca4defb0a019af301266dad3a0288efec",
+    "use": "短片、广告与镜头案例分类",
+    "license": "CC-BY-4.0",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  },
+  {
+    "category": "video",
+    "repository": "lixiaoxiao9888-create/manju-laoli-skill",
+    "rank": 10,
+    "type": "漫剧全流程导演Skill",
+    "entry_url": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill/blob/6f16955c57053d77ea0ffbdbbf3a7985a3e0080a/short-drama-director/SKILL.md",
+    "commit": "6f16955c57053d77ea0ffbdbbf3a7985a3e0080a",
+    "use": "资产锁定、分镜、提示词封装与质检",
+    "license": "MIT",
+    "storage": "indexed; selected MIT text separately mirrored under third_party/"
+  }
+]

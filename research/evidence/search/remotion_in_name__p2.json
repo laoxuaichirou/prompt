@@ -1,0 +1,123 @@
+{
+  "query": "remotion in:name",
+  "page": 2,
+  "url": "https://github.com/search?q=remotion+in%3Aname&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:52:31.848693+00:00",
+  "result_count": 4797,
+  "items": [
+    {
+      "name": "nyanko3141592/remotion-voicevox-template",
+      "stars": 284,
+      "description": "Remotion + VOICEVOX動画テンプレート（ずんだもん＆めたん掛け合い動画）",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-01-29T00:43:16.501Z",
+      "url": "https://github.com/nyanko3141592/remotion-voicevox-template"
+    },
+    {
+      "name": "remotion-dev/template-prompt-to-motion-graphics-saas",
+      "stars": 281,
+      "description": "",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T08:09:42.496Z",
+      "url": "https://github.com/remotion-dev/template-prompt-to-motion-graphics-saas"
+    },
+    {
+      "name": "remotion-dev/template-audiogram",
+      "stars": 274,
+      "description": "A template for making podcast video clips with Remotion.",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T15:32:01.327Z",
+      "url": "https://github.com/remotion-dev/template-audiogram"
+    },
+    {
+      "name": "reactvideoeditor/remotion-templates",
+      "stars": 267,
+      "description": "Free Remotion Effects & Animations",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-04-21T04:01:10.762Z",
+      "url": "https://github.com/reactvideoeditor/remotion-templates"
+    },
+    {
+      "name": "stefanwittwer/remotion-animated",
+      "stars": 226,
+      "description": "🌟 A delightful way to animate objects in Remotion.",
+      "topics": [
+        "react",
+        "typescript",
+        "animation",
+        "remotion"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-02-22T21:54:23.467Z",
+      "url": "https://github.com/stefanwittwer/remotion-animated"
+    },
+    {
+      "name": "remotion-dev/template-code-hike",
+      "stars": 220,
+      "description": "Beautiful code snippet animations",
+      "topics": [
+        "remotion",
+        "codehike"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T08:10:28.658Z",
+      "url": "https://github.com/remotion-dev/template-code-hike"
+    },
+    {
+      "name": "Cuongyd196/remotion-cuongit-template",
+      "stars": 210,
+      "description": "Tự động tạo video chia sẻ kiến thức với Remotion.",
+      "topics": [
+        "ai-video",
+        "remotion-template",
+        "remotion-video",
+        "remotion-cuongit-template"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T01:58:20.943Z",
+      "url": "https://github.com/Cuongyd196/remotion-cuongit-template"
+    },
+    {
+      "name": "remotion-dev/html-in-canvas",
+      "stars": 197,
+      "description": "",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-05-03T14:24:19.216Z",
+      "url": "https://github.com/remotion-dev/html-in-canvas"
+    },
+    {
+      "name": "brownhci/Remotion",
+      "stars": 184,
+      "description": "Remotion is an open-source platform that visualizes smartphone user movements",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2019-11-02T03:43:35.993Z",
+      "url": "https://github.com/brownhci/Remotion"
+    },
+    {
+      "name": "remotion-dev/template-prompt-to-video",
+      "stars": 160,
+      "description": "Create a story with images and voiceover from a prompt",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T08:10:16.466Z",
+      "url": "https://github.com/remotion-dev/template-prompt-to-video"
+    }
+  ]
+}

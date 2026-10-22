@@ -1,0 +1,160 @@
+{
+  "query": "remotion in:name",
+  "page": 1,
+  "url": "https://github.com/search?q=remotion+in%3Aname&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:52:16.019870+00:00",
+  "result_count": 4797,
+  "items": [
+    {
+      "name": "remotion-dev/remotion",
+      "stars": 66334,
+      "description": "🎥 Make videos programmatically with React",
+      "topics": [
+        "react",
+        "javascript",
+        "video"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T19:13:57.282Z",
+      "url": "https://github.com/remotion-dev/remotion"
+    },
+    {
+      "name": "remotion-dev/skills",
+      "stars": 5535,
+      "description": "Agent Skills",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T15:31:18.384Z",
+      "url": "https://github.com/remotion-dev/skills"
+    },
+    {
+      "name": "remotion-dev/github-unwrapped",
+      "stars": 1330,
+      "description": "Your coding year in review",
+      "topics": [
+        "github",
+        "video",
+        "remotion",
+        "unwrapped",
+        "year-in-review"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-07-06T17:20:46.984Z",
+      "url": "https://github.com/remotion-dev/github-unwrapped"
+    },
+    {
+      "name": "remotion-dev/github-unwrapped-2022",
+      "stars": 1318,
+      "description": "Your coding year in review #GitHubUnwrapped",
+      "topics": [
+        "github",
+        "react",
+        "remotion"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2023-04-04T06:53:57.013Z",
+      "url": "https://github.com/remotion-dev/github-unwrapped-2022"
+    },
+    {
+      "name": "remotion-dev/trailer",
+      "stars": 1147,
+      "description": "The promo video for Remotion",
+      "topics": [
+        "remotion"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2024-03-18T12:59:32.834Z",
+      "url": "https://github.com/remotion-dev/trailer"
+    },
+    {
+      "name": "haidrrrry/claude-remotion-skill",
+      "stars": 583,
+      "description": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics video…",
+      "topics": [
+        "react",
+        "typescript",
+        "motion-graphics",
+        "video-editing",
+        "ai-agents",
+        "claude",
+        "remotion",
+        "content-creation",
+        "text-to-video",
+        "ai-video",
+        "anthropic",
+        "claude-ai",
+        "ai-video-generation",
+        "faceless-video",
+        "claude-code",
+        "ai-video-editor",
+        "claude-skills",
+        "claude-agent-skills"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-12T21:05:03.230Z",
+      "url": "https://github.com/haidrrrry/claude-remotion-skill"
+    },
+    {
+      "name": "av/remotion-bits",
+      "stars": 496,
+      "description": "Ready-made animated components for Remotion — charts, transitions, text reveals, and more",
+      "topics": [
+        "react",
+        "components",
+        "typescript",
+        "video",
+        "animation",
+        "motion-graphics",
+        "video-editing",
+        "remotion",
+        "remotion-video"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-09-15T21:12:12.514Z",
+      "url": "https://github.com/av/remotion-bits"
+    },
+    {
+      "name": "wcandillon/remotion-fireship",
+      "stars": 493,
+      "description": "Fireship video made with React",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-08-27T09:27:12.705Z",
+      "url": "https://github.com/wcandillon/remotion-fireship"
+    },
+    {
+      "name": "wshuyi/remotion-video-skill",
+      "stars": 426,
+      "description": "A Claude Code Skill for creating programmatic videos with Remotion framework",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-01-25T02:21:58.881Z",
+      "url": "https://github.com/wshuyi/remotion-video-skill"
+    },
+    {
+      "name": "remotion-dev/template-tiktok",
+      "stars": 291,
+      "description": "Generate TikTok-style captions with Whisper.cpp",
+      "topics": [
+        "captions",
+        "whisper",
+        "tiktok",
+        "remotion"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T08:10:36.593Z",
+      "url": "https://github.com/remotion-dev/template-tiktok"
+    }
+  ]
+}

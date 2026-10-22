@@ -1,0 +1,82 @@
+{
+  "name": "op7418/guizang-ppt-skill",
+  "url": "https://github.com/op7418/guizang-ppt-skill",
+  "retrieved_at": "2026-10-22T19:55:39.054919+00:00",
+  "default_branch": "main",
+  "commit": "c91369c449d34755d320a8b81d0734000d99d1ab",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/op7418/guizang-ppt-skill/blob/c91369c449d34755d320a8b81d0734000d99d1ab/README.md",
+  "readme_sha256": "58360b425706e29ea79ed8bd3e26f0b322a69926e164a3d223aa24692581698f",
+  "root_paths": [
+    ".github",
+    "assets",
+    "docs",
+    "references",
+    "scripts",
+    ".gitignore",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.en.md",
+    "README.md",
+    "SKILL.md",
+    "SPONSORS.md"
+  ],
+  "readme_headings": [
+    "Guizang PPT Skill · 网页 PPT / 配图 / 封面",
+    "30 秒开始",
+    "赞助与支持",
+    "在其他地方使用归藏 PPT Skill",
+    "效果",
+    "适合 / 不适合",
+    "常见使用场景",
+    "为什么是 HTML PPT",
+    "平台支持",
+    "安装",
+    "方式一:一行命令安装(推荐)",
+    "方式二:把下面这段话直接发给 AI",
+    "方式三:手动命令行",
+    "触发方式",
+    "使用流程",
+    "演讲者模式",
+    "演讲时能看到什么",
+    "时间、排练与自动翻页",
+    "现场工具与故障恢复",
+    "Style B 瑞士风",
+    "Codex 配图能力",
+    "封面生成",
+    "示例请求",
+    "目录结构",
+    "主题色预设",
+    "Style A 电子杂志主题",
+    "Style B 瑞士主题",
+    "核心设计原则",
+    "视觉参考",
+    "Roadmap",
+    "FAQ",
+    "贡献",
+    "License"
+  ],
+  "resource_links": [
+    "https://img.shields.io/github/stars/op7418/guizang-ppt-skill?style=flat-square",
+    "https://img.shields.io/github/license/op7418/guizang-ppt-skill?style=flat-square",
+    "https://img.shields.io/badge/Skill-Agent-111111?style=flat-square",
+    "https://img.shields.io/static/v1?label=Cola%20Skill&message=%E9%87%91%E7%89%8C%E8%B5%9E%E5%8A%A9&color=E4353F&style=flat-square",
+    "https://claw.360.cn/claw?vm_id=p19c1be5d7bed40bcb857ec4a9c785b69&target_url=https%3A%2F%2Fp19c1be5d7bed40bcb857ec4a9c785b69.claw.360.cn%2Fagents",
+    "https://colaskill.com/guizang-ppt-skill/",
+    "./SKILL.md",
+    "./references/image-prompts.md"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/op7418/guizang-ppt-skill/blob/c91369c449d34755d320a8b81d0734000d99d1ab/LICENSE",
+      "first_lines": [
+        "GNU AFFERO GENERAL PUBLIC LICENSE",
+        "                       Version 3, 19 November 2007",
+        "",
+        " Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+      ],
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    }
+  ]
+}

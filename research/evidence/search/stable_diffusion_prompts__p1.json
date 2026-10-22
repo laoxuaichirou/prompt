@@ -1,0 +1,178 @@
+{
+  "query": "stable diffusion prompts",
+  "page": 1,
+  "url": "https://github.com/search?q=stable+diffusion+prompts&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:53.978337+00:00",
+  "result_count": 1898,
+  "items": [
+    {
+      "name": "easydiffusion/easydiffusion",
+      "stars": 10474,
+      "description": "An easy 1-click way to create beautiful artwork on your PC using AI, with no tech knowledge. Provides a browser UI for generating images …",
+      "topics": [
+        "art",
+        "gui",
+        "stable",
+        "generative-art",
+        "diffusion"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T11:17:23.577Z",
+      "url": "https://github.com/easydiffusion/easydiffusion"
+    },
+    {
+      "name": "nateraw/stable-diffusion-videos",
+      "stars": 4712,
+      "description": "Create 🔥 videos with Stable Diffusion by exploring the latent space and morphing between text prompts",
+      "topics": [
+        "machine-learning",
+        "huggingface",
+        "ai-art",
+        "stable-diffusion",
+        "huggingface-diffusers"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-12-16T08:16:07.880Z",
+      "url": "https://github.com/nateraw/stable-diffusion-videos"
+    },
+    {
+      "name": "saharmor/dalle-playground",
+      "stars": 2737,
+      "description": "A playground to generate images from any text prompt using Stable Diffusion (past: using DALL-E Mini)",
+      "topics": [
+        "machine-learning",
+        "transformers",
+        "artificial-intelligence",
+        "gan",
+        "openai",
+        "artificial",
+        "text-to-image",
+        "dall-e",
+        "dalle",
+        "dalle-mini",
+        "stable-diffusion"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2024-06-03T22:19:37.226Z",
+      "url": "https://github.com/saharmor/dalle-playground"
+    },
+    {
+      "name": "LearnPrompt/LearnPrompt",
+      "stars": 2714,
+      "description": "永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人…",
+      "topics": [
+        "agent",
+        "cli",
+        "prompt",
+        "codex",
+        "aivoice",
+        "prompt-learning",
+        "aimusic",
+        "stable-diffusion",
+        "chatgpt-app",
+        "midjourney-app",
+        "llms-book",
+        "prompt-enginering",
+        "claude-code",
+        "openclaw",
+        "hermes-agent"
+      ],
+      "archived": false,
+      "language": "MDX",
+      "updated_at": "2026-10-19T09:04:17.109Z",
+      "url": "https://github.com/LearnPrompt/LearnPrompt"
+    },
+    {
+      "name": "adieyal/sd-dynamic-prompts",
+      "stars": 2299,
+      "description": "A custom script for AUTOMATIC1111/stable-diffusion-webui to implement a tiny template language for random prompt generation",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-07-19T10:45:59.329Z",
+      "url": "https://github.com/adieyal/sd-dynamic-prompts"
+    },
+    {
+      "name": "sudoskys/StableDiffusionBook",
+      "stars": 1962,
+      "description": "How do we integrate AI generation tools into actual work? | 关于 Ai 绘画的Wiki | Wiki about Ai painting | Prompts Engineering| 指南 Guide | Seek…",
+      "topics": [
+        "stable-diffusion",
+        "stablediffusion",
+        "stable-diffusion-tutorial",
+        "aiart",
+        "stable-diffusion-webui"
+      ],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2024-10-31T13:19:13.421Z",
+      "url": "https://github.com/sudoskys/StableDiffusionBook"
+    },
+    {
+      "name": "poloclub/diffusiondb",
+      "stars": 1405,
+      "description": "A large-scale text-to-image prompt gallery dataset based on Stable Diffusion",
+      "topics": [
+        "computer-vision",
+        "image-generation",
+        "ai-art",
+        "prompt-engineering",
+        "stable-diffusion"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-07-11T16:10:02.474Z",
+      "url": "https://github.com/poloclub/diffusiondb"
+    },
+    {
+      "name": "receyuki/stable-diffusion-prompt-reader",
+      "stars": 1345,
+      "description": "A simple standalone viewer for reading prompts from Stable Diffusion generated image outside the webui.",
+      "topics": [
+        "python",
+        "windows",
+        "macos",
+        "ai",
+        "tkinter",
+        "image-generation",
+        "prompt-toolkit",
+        "prompt-engineering",
+        "stable-diffusion",
+        "stable-diffusion-webui"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-05-29T20:16:12.365Z",
+      "url": "https://github.com/receyuki/stable-diffusion-prompt-reader"
+    },
+    {
+      "name": "bloc97/CrossAttentionControl",
+      "stars": 1338,
+      "description": "Unofficial implementation of \"Prompt-to-Prompt Image Editing with Cross Attention Control\" with Stable Diffusion",
+      "topics": [
+        "deep-learning",
+        "diffusion-models",
+        "cross-attention",
+        "stable-diffusion"
+      ],
+      "archived": false,
+      "language": "Jupyter Notebook",
+      "updated_at": "2022-10-18T15:50:28.537Z",
+      "url": "https://github.com/bloc97/CrossAttentionControl"
+    },
+    {
+      "name": "YouMind-OpenLab/ai-image-prompts-skill",
+      "stars": 1325,
+      "description": "AI Image Prompts — 10,000+ curated prompts for any model. Works with Nano Banana Pro, Nano Banana 2, Seedream 5.0, GPT Image 1.5, Midjour…",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T16:55:41.064Z",
+      "url": "https://github.com/YouMind-OpenLab/ai-image-prompts-skill"
+    }
+  ]
+}

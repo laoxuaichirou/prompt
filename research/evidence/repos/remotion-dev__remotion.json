@@ -1,0 +1,75 @@
+{
+  "name": "remotion-dev/remotion",
+  "url": "https://github.com/remotion-dev/remotion",
+  "retrieved_at": "2026-10-22T19:55:49.489825+00:00",
+  "default_branch": "main",
+  "commit": "3ab34665c49279cc35820275380983068bb1bbf9",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/remotion-dev/remotion/blob/3ab34665c49279cc35820275380983068bb1bbf9/README.md",
+  "readme_sha256": "867c11b80c8ba7a56b3fdaff4501cf8871529c9bb9cf50f2ee87cae9f4d6a505",
+  "root_paths": [
+    ".agents/skills",
+    ".claude",
+    ".codex/environments",
+    ".githooks",
+    ".github",
+    ".pi/extensions",
+    ".vscode",
+    ".zed",
+    "packages",
+    "patches",
+    "repros/sequence-child-retention",
+    "scripts",
+    ".cursorignore",
+    ".dockerignore",
+    ".gitattributes",
+    ".gitignore",
+    ".oxfmtrc.json",
+    ".prettierrc.js",
+    "AGENTS.md",
+    "CODE-OF-CONDUCT.md",
+    "CONTRIBUTING.md",
+    "DESIGN.md",
+    "FUNDING.yml",
+    "LICENSE.md",
+    "README.md",
+    "bun.lock",
+    "bunfig.toml",
+    "go.work",
+    "go.work.sum",
+    "new",
+    "package.json",
+    "pre-commit.ts",
+    "publish.ts",
+    "set-version.ts",
+    "tsconfig.json",
+    "turbo.json"
+  ],
+  "readme_headings": [
+    "Video Creation",
+    "Video Automation",
+    "Get started",
+    "Discover Remotion",
+    "Documentation",
+    "License",
+    "Contributing"
+  ],
+  "resource_links": [
+    "https://www.remotion.dev/docs/ai/skills",
+    "https://www.remotion.dev/prompts",
+    "https://remotion.dev/templates"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE.md",
+      "url": "https://github.com/remotion-dev/remotion/blob/3ab34665c49279cc35820275380983068bb1bbf9/LICENSE.md",
+      "first_lines": [
+        "# Remotion License",
+        "",
+        "In Remotion 5.0, the license will slightly change. [View the changes here](https://github.com/remotion-dev/remotion/pull/3750).",
+        ""
+      ],
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+    }
+  ]
+}

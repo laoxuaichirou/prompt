@@ -1,0 +1,182 @@
+{
+  "query": "node-based UI",
+  "page": 1,
+  "url": "https://github.com/search?q=node-based+UI&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:51:10.844773+00:00",
+  "result_count": 227,
+  "items": [
+    {
+      "name": "xyflow/awesome-node-based-uis",
+      "stars": 3696,
+      "description": "A curated list with resources about node-based UIs",
+      "topics": [
+        "etl",
+        "awesome-list",
+        "visual-programming",
+        "workflow-editor",
+        "node-based-ui"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2025-06-29T08:11:39.264Z",
+      "url": "https://github.com/xyflow/awesome-node-based-uis"
+    },
+    {
+      "name": "artem-mangilev/ngx-vflow",
+      "stars": 487,
+      "description": "An open source library to build node-based UI with Angular 16+",
+      "topics": [
+        "javascript",
+        "flow",
+        "angular",
+        "typescript",
+        "graph",
+        "drag-and-drop",
+        "flowchart",
+        "node-based-ui"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T07:32:33.891Z",
+      "url": "https://github.com/artem-mangilev/ngx-vflow"
+    },
+    {
+      "name": "raindrop313/ComfyUI-WanVideoStartEndFrames",
+      "stars": 383,
+      "description": "Start and end frames video generation nodes based on the modified Kijai version Wan2.1 nodes",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-03-22T09:59:11.897Z",
+      "url": "https://github.com/raindrop313/ComfyUI-WanVideoStartEndFrames"
+    },
+    {
+      "name": "MeeeyoAI/ComfyUI_StringOps",
+      "stars": 215,
+      "description": "StringOps is a versatile text processing toolkit built for ComfyUI's node-based workflows.\"",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-06-04T17:47:55.474Z",
+      "url": "https://github.com/MeeeyoAI/ComfyUI_StringOps"
+    },
+    {
+      "name": "ryo33/egui_cable",
+      "stars": 169,
+      "description": "Generic and extensible egui widgets to create analog synthesizer-like UI with data-oriented API",
+      "topics": [
+        "data-oriented",
+        "data-flow-diagram",
+        "egui",
+        "node-based"
+      ],
+      "archived": false,
+      "language": "Rust",
+      "updated_at": "2025-04-30T04:19:28.225Z",
+      "url": "https://github.com/ryo33/egui_cable"
+    },
+    {
+      "name": "Akascape/TkNodeSystem",
+      "stars": 161,
+      "description": "Create visual node-based UI with Tkinter!",
+      "topics": [
+        "node-module",
+        "flow-based-programming",
+        "nodes",
+        "directed-acyclic-graph",
+        "tkinter-gui",
+        "tkinter-python",
+        "visual-scripting",
+        "visual-nodes",
+        "node-system",
+        "customtkinter",
+        "node-based-ui",
+        "tknodes",
+        "tknodesystem",
+        "tk-nodes"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-08-18T14:21:23.623Z",
+      "url": "https://github.com/Akascape/TkNodeSystem"
+    },
+    {
+      "name": "playcanvas/pcui-graph",
+      "stars": 148,
+      "description": "A PCUI extension for creating node-based graphs",
+      "topics": [
+        "javascript",
+        "ui",
+        "reactjs",
+        "ui-components",
+        "playcanvas",
+        "pcui"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-05T16:31:07.166Z",
+      "url": "https://github.com/playcanvas/pcui-graph"
+    },
+    {
+      "name": "dovvnloading/Graphite",
+      "stars": 147,
+      "description": "A private, modular node based AI workspace for thinking and creation. Seamlessly connect to Ollama, OpenAI, Gemini, Anthropic, and Groq m…",
+      "topics": [
+        "open-source",
+        "gui",
+        "ui",
+        "ai",
+        "openai",
+        "gpt",
+        "language-model",
+        "node-graph",
+        "ai-assistant",
+        "pyside6",
+        "llm",
+        "chatgpt",
+        "anthropic-claude",
+        "llm-tools",
+        "ollama"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-07-22T18:08:38.901Z",
+      "url": "https://github.com/dovvnloading/Graphite"
+    },
+    {
+      "name": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
+      "stars": 145,
+      "description": "MCWW: Additional non-node based UI for ComfyUI focused on inference. Stable UI states; presets; and advanced queue. Based on Gradio",
+      "topics": [
+        "pwa",
+        "ai",
+        "artificial-intelligence",
+        "image-generation",
+        "music-generation",
+        "gradio",
+        "video-generation",
+        "image-edit",
+        "audio-generation",
+        "generative-ai",
+        "comfyui",
+        "comfyui-nodes",
+        "minimax-h3"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-20T12:29:09.324Z",
+      "url": "https://github.com/light-and-ray/Minimalistic-Comfy-Wrapper-WebUI"
+    },
+    {
+      "name": "FlexMonkey/ShinpuruNodeUI",
+      "stars": 105,
+      "description": "Node Based UI Component Written in Swift",
+      "topics": [],
+      "archived": false,
+      "language": "Swift",
+      "updated_at": "2020-11-25T20:50:11.039Z",
+      "url": "https://github.com/FlexMonkey/ShinpuruNodeUI"
+    }
+  ]
+}

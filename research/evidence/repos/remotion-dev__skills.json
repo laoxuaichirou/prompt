@@ -1,0 +1,38 @@
+{
+  "name": "remotion-dev/skills",
+  "url": "https://github.com/remotion-dev/skills",
+  "retrieved_at": "2026-10-22T19:55:49.425467+00:00",
+  "default_branch": "main",
+  "commit": "6c67adcd9cdbe6eb84d76342da89b225f9161cb2",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/remotion-dev/skills/blob/6c67adcd9cdbe6eb84d76342da89b225f9161cb2/README.md",
+  "readme_sha256": "6e0e9a0bf53e2c7f14b3f35a5ad6195cc07ac20c5a0bb1fd8ffe3198408cf50d",
+  "root_paths": [
+    "scripts",
+    "skills",
+    "README.md",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "readme_headings": [
+    "Remotion Agent Skills",
+    "Available skills",
+    "`/remotion-best-practices`",
+    "`/remotion-create`",
+    "`/remotion-markup`",
+    "`/remotion-studio`",
+    "`/remotion-render`",
+    "`/remotion-maps`",
+    "`/remotion-captions`",
+    "`/remotion-saas`",
+    "`/remotion-interactivity`",
+    "`/remotion-docs`",
+    "`/remotion-upgrade`",
+    "`/remotion-multimedia`"
+  ],
+  "resource_links": [
+    "https://agentskills.io/home",
+    "https://www.remotion.dev/docs/ai/skills"
+  ],
+  "license_evidence": []
+}

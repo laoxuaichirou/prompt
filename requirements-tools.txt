@@ -1,0 +1,5 @@
+# Optional authoring/browser QA tools. Core verify_delivery.py uses stdlib + system ffprobe.
+playwright==1.62.0
+reportlab==4.4.9
+PyMuPDF==1.26.6
+Pillow==12.3.0

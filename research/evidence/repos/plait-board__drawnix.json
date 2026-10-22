@@ -1,0 +1,62 @@
+{
+  "name": "plait-board/drawnix",
+  "url": "https://github.com/plait-board/drawnix",
+  "retrieved_at": "2026-10-22T19:55:37.858399+00:00",
+  "default_branch": "develop",
+  "commit": "b138ff867943ddff6c4c79560e10ab6ee3b5600e",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/README.md",
+  "readme_sha256": "cd9b1fa40eb887c2e8b36906112d9b3b9ea12e9f3d176d77ebd997eb5c73e491",
+  "root_paths": [
+    ".github",
+    ".vscode",
+    "apps",
+    "packages",
+    "scripts",
+    ".dockerignore",
+    ".editorconfig",
+    ".gitignore",
+    ".nvmrc",
+    ".oxfmtrc.json",
+    ".oxlintrc.json",
+    "CFPAGE-DEPLOY.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "Dockerfile",
+    "LICENSE",
+    "README.md",
+    "README_en.md",
+    "SECURITY.md",
+    "nx.json",
+    "package-lock.json",
+    "package.json",
+    "tsconfig.base.json"
+  ],
+  "readme_headings": [
+    "特性",
+    "关于名称",
+    "与 Plait 画图框架",
+    "仓储结构",
+    "应用",
+    "开发",
+    "Docker",
+    "依赖",
+    "贡献",
+    "感谢支持",
+    "License"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2024 Drawnix",
+        ""
+      ],
+      "sha256": "4f1a9d0d4be46b51a8127e6f34ff815a020c8bfbe7d7e65d6c333c25b5a26a94"
+    }
+  ]
+}

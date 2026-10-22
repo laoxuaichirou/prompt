@@ -1,0 +1,61 @@
+{
+  "name": "haidrrrry/claude-remotion-skill",
+  "url": "https://github.com/haidrrrry/claude-remotion-skill",
+  "retrieved_at": "2026-10-22T19:55:50.726779+00:00",
+  "default_branch": "main",
+  "commit": "1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/README.md",
+  "readme_sha256": "82e7c5108d204bbbbaf4d4b2ce77e62eb5fcdda0cd5b411853eb8fb9726b7d66",
+  "root_paths": [
+    "examples",
+    "remotion-motion-graphics",
+    "scripts",
+    ".gitignore",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "demo.gif",
+    "demo.mp4",
+    "remotion-motion-graphics.skill"
+  ],
+  "readme_headings": [
+    "🎬 Claude Remotion Skill — Make AI Video Editing & Motion Graphics with Claude",
+    "🎥 Demo — made with this skill",
+    "🤖 What is this? (TL;DR)",
+    "❓ FAQ",
+    "🆚 Generic AI video vs. with this skill",
+    "📦 What's inside",
+    "🚀 Install",
+    "🎯 Usage",
+    "🧠 The 10 rules (short version)",
+    "Examples",
+    "🤝 Contributing",
+    "⭐ Star this repo",
+    "📄 License"
+  ],
+  "resource_links": [
+    "https://img.shields.io/badge/Claude-Agent%20Skill-8A63D2",
+    "https://img.shields.io/github/stars/haidrrrry/claude-remotion-skill?style=social",
+    "https://github.com/haidrrrry/claude-remotion-skill",
+    "https://github.com/haidrrrry/claude-remotion-skill/raw/main/demo.mp4",
+    "https://github.com/haidrrrry/claude-remotion-skill/raw/main/demo.mp4",
+    "examples/",
+    "examples/videos/focus-cat.gif",
+    "https://github.com/haidrrrry/claude-remotion-skill/raw/main/examples/videos/focus-cat-promo.mp4",
+    "https://github.com/haidrrrry/claude-remotion-skill"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2025 haidrrrry",
+        ""
+      ],
+      "sha256": "e9cb352fbe6212007b61e7c43982e4741852b1e467fe07093256ec04228f2b85"
+    }
+  ]
+}

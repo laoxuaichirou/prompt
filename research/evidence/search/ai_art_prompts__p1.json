@@ -1,0 +1,155 @@
+{
+  "query": "ai art prompts",
+  "page": 1,
+  "url": "https://github.com/search?q=ai+art+prompts&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:54:37.287673+00:00",
+  "result_count": 1055,
+  "items": [
+    {
+      "name": "easydiffusion/easydiffusion",
+      "stars": 10474,
+      "description": "An easy 1-click way to create beautiful artwork on your PC using AI, with no tech knowledge. Provides a browser UI for generating images …",
+      "topics": [
+        "art",
+        "gui",
+        "stable",
+        "generative-art",
+        "diffusion"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T11:17:23.577Z",
+      "url": "https://github.com/easydiffusion/easydiffusion"
+    },
+    {
+      "name": "altryne/awesome-ai-art-image-synthesis",
+      "stars": 1824,
+      "description": "A list of awesome tools, ideas, prompt engineering tools, colabs, models, and helpers for the prompt designer playing with aiArt and imag…",
+      "topics": [
+        "ai"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2022-12-03T09:33:26.657Z",
+      "url": "https://github.com/altryne/awesome-ai-art-image-synthesis"
+    },
+    {
+      "name": "guanmo-ai/awesome-ai-motion",
+      "stars": 408,
+      "description": "发现惊艳动效、创意视频与交互艺术，探索背后的源码、提示词与制作过程。Curated motion design, creative video & interactive art — with source code, prompts & making-of resources.",
+      "topics": [
+        "awesome",
+        "animation",
+        "awesome-list",
+        "opus",
+        "motion-design",
+        "prompts",
+        "claude",
+        "ai-video"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-22T10:42:15.267Z",
+      "url": "https://github.com/guanmo-ai/awesome-ai-motion"
+    },
+    {
+      "name": "526christian/AI-Image-PromptGenerator",
+      "stars": 245,
+      "description": "A flexible UI script to help create and expand on prompts for generative AI art models, such as Stable Diffusion and MidJourney. Get insp…",
+      "topics": [
+        "python",
+        "ai",
+        "python-script",
+        "python3",
+        "generative-art",
+        "image-generation",
+        "prompts",
+        "ai-art",
+        "midjourney",
+        "prompt-engineering",
+        "txt2img",
+        "stable-diffusion",
+        "prompt-generator",
+        "stablediffusion"
+      ],
+      "archived": true,
+      "language": "Python",
+      "updated_at": "2024-03-07T23:28:42.179Z",
+      "url": "https://github.com/526christian/AI-Image-PromptGenerator"
+    },
+    {
+      "name": "ausbitbank/stable-diffusion-discord-bot",
+      "stars": 211,
+      "description": "A discord bot to generate AI art from prompts using invokeAI",
+      "topics": [
+        "discord",
+        "discord-bot",
+        "stable-diffusion",
+        "invokeai"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-03-27T22:25:51.036Z",
+      "url": "https://github.com/ausbitbank/stable-diffusion-discord-bot"
+    },
+    {
+      "name": "BCG-X-Official/artkit",
+      "stars": 174,
+      "description": "Automated prompt-based testing and evaluation of Gen AI applications",
+      "topics": [
+        "python",
+        "data-science",
+        "test-automation",
+        "asyncio",
+        "red-teaming",
+        "gen-ai",
+        "genai"
+      ],
+      "archived": false,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-03-06T18:33:04.361Z",
+      "url": "https://github.com/BCG-X-Official/artkit"
+    },
+    {
+      "name": "articraftresearch/Articraft",
+      "stars": 137,
+      "description": "A simple AI agent that turns prompts into articulated 3D objects.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-30T19:47:04.580Z",
+      "url": "https://github.com/articraftresearch/Articraft"
+    },
+    {
+      "name": "vioaki/Prompt-Manager",
+      "stars": 125,
+      "description": "A local AI art prompt management tool.",
+      "topics": [],
+      "archived": false,
+      "language": "HTML",
+      "updated_at": "2026-06-09T07:49:55.750Z",
+      "url": "https://github.com/vioaki/Prompt-Manager"
+    },
+    {
+      "name": "WASasquatch/noodle-soup-prompts",
+      "stars": 120,
+      "description": "A terminology database for creating unique prompts for Disco Diffusion or other related AI Art Generators. ",
+      "topics": [],
+      "archived": false,
+      "language": "Jupyter Notebook",
+      "updated_at": "2023-02-03T05:01:14.218Z",
+      "url": "https://github.com/WASasquatch/noodle-soup-prompts"
+    },
+    {
+      "name": "ShadowHackrs/prompt-generating",
+      "stars": 99,
+      "description": "is an elite, highly advanced command-line framework designed for generating complex prompt structures. It is built to push the boundaries…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-16T21:17:31.164Z",
+      "url": "https://github.com/ShadowHackrs/prompt-generating"
+    }
+  ]
+}

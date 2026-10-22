@@ -1,0 +1,45 @@
+{
+  "query": "visual editor stars:>15000",
+  "page": 1,
+  "url": "https://github.com/search?q=visual+editor+stars%3A%3E15000&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:56:27.241138+00:00",
+  "result_count": 2,
+  "items": [
+    {
+      "name": "microsoft/vscode",
+      "stars": 194214,
+      "description": "Visual Studio Code",
+      "topics": [
+        "electron",
+        "microsoft",
+        "editor",
+        "typescript",
+        "visual-studio-code"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T19:45:42.128Z",
+      "url": "https://github.com/microsoft/vscode"
+    },
+    {
+      "name": "dotnet-architecture/eShopOnContainers",
+      "stars": 24292,
+      "description": "Cross-platform .NET sample microservices and container based application that runs on Linux Windows and macOS. Powered by .NET 7, Docker …",
+      "topics": [
+        "docker",
+        "microservices",
+        "spa",
+        "xamarin",
+        "ddd",
+        "netcore",
+        "ddd-patterns",
+        "windowscontainers"
+      ],
+      "archived": true,
+      "language": "C#",
+      "updated_at": "2023-11-15T22:27:17.829Z",
+      "url": "https://github.com/dotnet-architecture/eShopOnContainers"
+    }
+  ]
+}

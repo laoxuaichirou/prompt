@@ -1,0 +1,9 @@
+{
+  "query": "design tool stars:>20000",
+  "page": 2,
+  "url": "https://github.com/search?q=design+tool+stars%3A%3E20000&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:56:27.802858+00:00",
+  "result_count": 6,
+  "items": []
+}

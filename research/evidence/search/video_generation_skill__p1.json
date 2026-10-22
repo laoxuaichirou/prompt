@@ -1,0 +1,154 @@
+{
+  "query": "video generation skill",
+  "page": 1,
+  "url": "https://github.com/search?q=video+generation+skill&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:37.863863+00:00",
+  "result_count": 625,
+  "items": [
+    {
+      "name": "beshuaxian/higgsfield-seedance2-jineng",
+      "stars": 981,
+      "description": "Seedance 2.0 × Higgsfield 技能集 | 15 Claude prompt skills for AI video generation — cinematic, 3D CGI, anime, e-commerce ads, music videos …",
+      "topics": [],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-04-09T17:37:21.530Z",
+      "url": "https://github.com/beshuaxian/higgsfield-seedance2-jineng"
+    },
+    {
+      "name": "Rimagination/h3lite",
+      "stars": 460,
+      "description": "A hardware-aware Codex skill for local MiniMax H3 video generation through ComfyUI",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-08-23T17:09:50.159Z",
+      "url": "https://github.com/Rimagination/h3lite"
+    },
+    {
+      "name": "AKCodez/higgsfield-claude-skills",
+      "stars": 448,
+      "description": "19 Claude Code skills for Higgsfield AI — automate image generation, Seedance 2.0 video creation, and full UGC ad pipelines with Playwrig…",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-04-13T19:24:47.733Z",
+      "url": "https://github.com/AKCodez/higgsfield-claude-skills"
+    },
+    {
+      "name": "Yacey/agnes-ai-generation-skill",
+      "stars": 425,
+      "description": "Agent Skill for Agnes AI text, image, and video generation APIs.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-06-21T05:04:59.702Z",
+      "url": "https://github.com/Yacey/agnes-ai-generation-skill"
+    },
+    {
+      "name": "Clipcat-ai/clipcat-skill",
+      "stars": 303,
+      "description": "TikTok e-commerce video generation, replication, and analysis SKILL",
+      "topics": [
+        "cli",
+        "ecommerce",
+        "ugc",
+        "affiliate-marketing",
+        "video-generation",
+        "tiktok",
+        "sora",
+        "ai-agent",
+        "prompt-engineering",
+        "tiktok-shop",
+        "ai-video",
+        "agent-skills",
+        "claude-code",
+        "veo3",
+        "openclaw",
+        "ugc-ads"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-09-20T05:41:46.444Z",
+      "url": "https://github.com/Clipcat-ai/clipcat-skill"
+    },
+    {
+      "name": "Sfedfcv/redesigned-pancake",
+      "stars": 268,
+      "description": "-using-discussions/collaborating-with-maintainers-using-discussions - /discussions/managing-discussions-for-your-community/managing-categ…",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2021-05-16T05:22:26.230Z",
+      "url": "https://github.com/Sfedfcv/redesigned-pancake"
+    },
+    {
+      "name": "roomi-fields/notebooklm-mcp",
+      "stars": 204,
+      "description": "Google NotebookLM over MCP + a local HTTP REST API. Citation-backed Q&A, audio/video/content generation, multi-account rotation. For Clau…",
+      "topics": [
+        "automation",
+        "typescript",
+        "skills",
+        "skill",
+        "rest-api",
+        "mcp",
+        "citations",
+        "codex",
+        "rag",
+        "n8n",
+        "anthropic",
+        "notebooklm",
+        "mcp-server",
+        "claude-code",
+        "claude-skills",
+        "google-notebooklm",
+        "agentic-skill",
+        "notebooklm-skill",
+        "gemini-notebook",
+        "gemini-notebook-api"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T09:40:49.637Z",
+      "url": "https://github.com/roomi-fields/notebooklm-mcp"
+    },
+    {
+      "name": "cosmicstack-labs/lazy-frames",
+      "stars": 168,
+      "description": "Lazy Frames — agentic video generation. Feed the skill URL to your AI agent; it captures, authors, renders. Fully local, byte-stable, no …",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-19T06:24:30.205Z",
+      "url": "https://github.com/cosmicstack-labs/lazy-frames"
+    },
+    {
+      "name": "machina-exm/film-studio-skills",
+      "stars": 156,
+      "description": "7 installable agent skills that run the pipeline behind $2M AI video productions — script to locked, generation-ready shot prompts. Claud…",
+      "topics": [
+        "ai-video",
+        "agent-skills",
+        "claude-code",
+        "higgsfield",
+        "seedance"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-08-14T02:27:21.774Z",
+      "url": "https://github.com/machina-exm/film-studio-skills"
+    },
+    {
+      "name": "BarneyD66/clipmivo-tools",
+      "stars": 142,
+      "description": "ClipmivoAI video generation tools: REST API, CLI, local MCP server and Agent Skill.",
+      "topics": [],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-15T18:24:10.712Z",
+      "url": "https://github.com/BarneyD66/clipmivo-tools"
+    }
+  ]
+}

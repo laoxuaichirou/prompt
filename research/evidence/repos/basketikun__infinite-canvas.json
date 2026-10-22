@@ -1,0 +1,62 @@
+{
+  "name": "basketikun/infinite-canvas",
+  "url": "https://github.com/basketikun/infinite-canvas",
+  "retrieved_at": "2026-10-22T19:55:37.803893+00:00",
+  "default_branch": "main",
+  "commit": "9f2bd9f1b27c45fd1b8f5323072b07243f9e0fac",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/basketikun/infinite-canvas/blob/9f2bd9f1b27c45fd1b8f5323072b07243f9e0fac/README.md",
+  "readme_sha256": "15aeb773e1b2a15955b6a8bcf0210352b0dea56730125604e9b1d8072241057f",
+  "root_paths": [
+    ".agents",
+    ".github/workflows",
+    "assets",
+    "canvas-agent",
+    "canvas-proxy",
+    "docs",
+    "plugins",
+    "web",
+    ".dockerignore",
+    ".gitignore",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "Dockerfile",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "VERSION",
+    "docker-compose.local.yml",
+    "docker-compose.yml",
+    "nginx.conf",
+    "render.yaml",
+    "skills-lock.json",
+    "vercel.json"
+  ],
+  "readme_headings": [
+    "赞助商",
+    "核心功能",
+    "快速开始",
+    "本地开发",
+    "Docker 运行",
+    "效果展示",
+    "联系方式",
+    "赞助支持",
+    "社区支持",
+    "开源协议",
+    "Star History"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/basketikun/infinite-canvas/blob/9f2bd9f1b27c45fd1b8f5323072b07243f9e0fac/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 basketikun",
+        ""
+      ],
+      "sha256": "4a3ea42531a7fc18b11471baa1676b11ef6c8badee4e02711392d9fdc8f59d58"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "yihui-dev/awesome-opus5-5-videos",
+  "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "retrieved_at": "2026-10-22T19:55:46.213680+00:00",
+  "default_branch": "main",
+  "commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/README.md",
+  "readme_sha256": "0aea4fdbab29c20416b0c14c485f13e24fff4af26c39d43fb671a407b361e92c",
+  "root_paths": [
+    "data",
+    "prompts",
+    ".gitignore",
+    "LICENSE",
+    "README.md"
+  ],
+  "readme_headings": [
+    "Awesome Opus 5.5 Videos",
+    "Contents",
+    "Motion graphics",
+    "Explainers",
+    "3D scenes",
+    "Games & interactive",
+    "Latest prompts",
+    "How to use a prompt",
+    "Credits"
+  ],
+  "resource_links": [
+    "https://skillry.dev/ai-videos/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=awesome-opus5-5-videos",
+    "prompts/",
+    "#latest-prompts",
+    "#latest-prompts",
+    "#how-to-use-a-prompt",
+    "prompts/",
+    "https://skillry.dev/ai-videos/opus-5-5?utm_source=github&utm_medium=readme&utm_campaign=awesome-opus5-5-videos"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 yihui-dev",
+        ""
+      ],
+      "sha256": "0adca04960d4c36b2524d26a400b790c28e583ce019635ab2d3a9ba3dc9dda7f"
+    }
+  ]
+}

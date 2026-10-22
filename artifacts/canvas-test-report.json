@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": [
+    "default graph contains three nodes",
+    "sample image actually loaded",
+    "edits persist after reload",
+    "drag updates graph coordinates",
+    "undo restores node position",
+    "can add node",
+    "port connection changes graph",
+    "incompatible input not offered",
+    "execution plan explicitly says no provider task",
+    "zoom changes viewport",
+    "export contains current graph",
+    "invalid import preserves project",
+    "template changes workflow",
+    "import restores exported content",
+    "mobile layout stays within viewport",
+    "no browser exceptions"
+  ],
+  "count": 16,
+  "browser": "system Chromium; Playwright",
+  "note": "Checks prototype workflow only; no image/video provider call."
+}

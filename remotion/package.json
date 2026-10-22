@@ -1,0 +1,25 @@
+{
+  "name": "canvas-creator-remotion-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original deterministic motion inserts for Chinese talking-head videos",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --public-dir=public",
+    "typecheck": "tsc --noEmit",
+    "render:kinetic": "remotion render src/index.ts KineticWords ../artifacts/remotion-kinetic.mp4 --browser-executable=${REMOTION_BROWSER_EXECUTABLE:-/usr/bin/chromium} --concurrency=2 --crf=20",
+    "render:steps": "remotion render src/index.ts ProcessSteps ../artifacts/remotion-steps.mp4 --browser-executable=${REMOTION_BROWSER_EXECUTABLE:-/usr/bin/chromium} --concurrency=2 --crf=20",
+    "render:comparison": "remotion render src/index.ts DataComparison ../artifacts/remotion-comparison.mp4 --browser-executable=${REMOTION_BROWSER_EXECUTABLE:-/usr/bin/chromium} --concurrency=2 --crf=20",
+    "render:all": "npm run render:kinetic && npm run render:steps && npm run render:comparison"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

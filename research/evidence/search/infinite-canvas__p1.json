@@ -1,0 +1,185 @@
+{
+  "query": "infinite-canvas",
+  "page": 1,
+  "url": "https://github.com/search?q=infinite-canvas&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:50:36.258798+00:00",
+  "result_count": 2460,
+  "items": [
+    {
+      "name": "tldraw/tldraw",
+      "stars": 51043,
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+      "topics": [
+        "react",
+        "drawing",
+        "design",
+        "sync",
+        "sdk",
+        "canvas",
+        "diagram",
+        "multiplayer",
+        "sketch",
+        "collaboration",
+        "whiteboard",
+        "infinite"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T16:57:38.148Z",
+      "url": "https://github.com/tldraw/tldraw"
+    },
+    {
+      "name": "HBAI-Ltd/Toonflow-app",
+      "stars": 18969,
+      "description": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short…",
+      "topics": [
+        "open-source",
+        "image-generation",
+        "text-to-image",
+        "infinite-canvas",
+        "workflow-automation",
+        "ai-agents",
+        "storyboarding",
+        "video-generation",
+        "image-to-video",
+        "text-to-video",
+        "ai-comic",
+        "libtv",
+        "generative-ai",
+        "ai-content-creation",
+        "ai-filmmaking",
+        "node-based-editor",
+        "tapnow",
+        "ai-short-drama",
+        "short-drama",
+        "motion-comics"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T16:19:49.628Z",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app"
+    },
+    {
+      "name": "flxzt/rnote",
+      "stars": 11792,
+      "description": "Sketch and take handwritten notes.",
+      "topics": [
+        "rust",
+        "pdf",
+        "gtk",
+        "drawing",
+        "gtk-rs",
+        "notes",
+        "hacktoberfest",
+        "handwriting",
+        "infinite-canvas",
+        "notes-app",
+        "gtk4",
+        "wacom-tablet",
+        "gtk4-rs"
+      ],
+      "archived": false,
+      "language": "Rust",
+      "updated_at": "2026-10-21T18:53:52.292Z",
+      "url": "https://github.com/flxzt/rnote"
+    },
+    {
+      "name": "basketikun/infinite-canvas",
+      "stars": 7893,
+      "description": "面向 AI 创作的开源无限画布工作台，集成 AI 生图、参考图编辑、视频生成、Agent 智能助手、画布编排、对话创作、提示词库与素材管理等能力，支持可视化创作流程与多 Agent 协同工作。兼容 OpenAI 接口生态，支持 chatgpt2api、grok2api、fl…",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T04:22:01.928Z",
+      "url": "https://github.com/basketikun/infinite-canvas"
+    },
+    {
+      "name": "mbrlabs/Lorien",
+      "stars": 6861,
+      "description": "Infinite canvas drawing/whiteboarding app for Windows, Linux and macOS. Made with Godot.",
+      "topics": [
+        "notebook",
+        "whiteboard",
+        "godot-engine",
+        "note-taking",
+        "vector-graphics",
+        "infinite-canvas",
+        "drawing-app"
+      ],
+      "archived": false,
+      "language": "GDScript",
+      "updated_at": "2025-09-22T21:29:46.859Z",
+      "url": "https://github.com/mbrlabs/Lorien"
+    },
+    {
+      "name": "leaferjs/leafer-ui",
+      "stars": 4461,
+      "description": "好用的 Canvas 引擎，轻松构建可交互、可编辑的图形应用，AI 时代的无限画布引擎。An easy-to-use Canvas engine for building interactive and editable graphics applications — an i…",
+      "topics": [
+        "canvas",
+        "infinite-canvas",
+        "leaferjs",
+        "leafer"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-13T01:12:33.713Z",
+      "url": "https://github.com/leaferjs/leafer-ui"
+    },
+    {
+      "name": "lkwq007/stablediffusion-infinity",
+      "stars": 3889,
+      "description": "Outpainting with Stable Diffusion on an infinite canvas",
+      "topics": [
+        "gui",
+        "inpainting",
+        "outpainting",
+        "stable-diffusion",
+        "stablediffusion"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2023-05-16T12:20:16.666Z",
+      "url": "https://github.com/lkwq007/stablediffusion-infinity"
+    },
+    {
+      "name": "obsidianmd/jsoncanvas",
+      "stars": 3735,
+      "description": "An open file format for infinite canvas data.",
+      "topics": [
+        "markdown",
+        "json",
+        "canvas",
+        "obsidian",
+        "md",
+        "formats",
+        "jsoncanvas"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-07-24T15:53:51.741Z",
+      "url": "https://github.com/obsidianmd/jsoncanvas"
+    },
+    {
+      "name": "hero8152/Infinite-Canvas",
+      "stars": 3152,
+      "description": "Supports comfyui/API calls/modelscope calls",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-08-28T01:39:34.328Z",
+      "url": "https://github.com/hero8152/Infinite-Canvas"
+    },
+    {
+      "name": "0-AI-UG/cate",
+      "stars": 2199,
+      "description": "An infinite zoomable canvas for coding. Editor, terminal, and browser panels in a spatial workspace.",
+      "topics": [],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-10-22T15:08:50.505Z",
+      "url": "https://github.com/0-AI-UG/cate"
+    }
+  ]
+}

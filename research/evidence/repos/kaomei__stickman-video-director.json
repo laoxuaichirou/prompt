@@ -1,0 +1,62 @@
+{
+  "name": "kaomei/stickman-video-director",
+  "url": "https://github.com/kaomei/stickman-video-director",
+  "retrieved_at": "2026-10-22T19:55:47.327221+00:00",
+  "default_branch": "main",
+  "commit": "70199c86911d84de9804441ce581eeb25142efba",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/kaomei/stickman-video-director/blob/70199c86911d84de9804441ce581eeb25142efba/README.md",
+  "readme_sha256": "7b49d2af9f7fd2e21ebee664aa77340ea8855ec8814e89bdca809c50ff5e6f73",
+  "root_paths": [
+    "assets/readme",
+    "docs/superpowers",
+    "scripts",
+    "skills/directing-stickman-videos",
+    "tests",
+    ".gitignore",
+    "CHANGELOG.zh-CN.md",
+    "LICENSE",
+    "README.en.md",
+    "README.id.md",
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.pt-BR.md",
+    "README.tr.md",
+    "README.zh-CN.md"
+  ],
+  "readme_headings": [
+    "AI Stickman Animation Style Library",
+    "Find your style",
+    "Style 1: Minimalist Monochrome",
+    "Style 2: Modern Pop",
+    "Style 3: Prehistoric Sketch / Dark Comedy",
+    "Style 4: Cozy Storytelling",
+    "Style 5: Historical Cartoon",
+    "What the Skill does",
+    "Get started",
+    "1. Install the Skill",
+    "2. Give it a topic",
+    "3. Follow the prompts and approve the plan",
+    "4. Generate the clips and edit your video",
+    "A few practical tips",
+    "Latest updates",
+    "What should we add next?",
+    "Star History",
+    "License"
+  ],
+  "resource_links": [],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/kaomei/stickman-video-director/blob/70199c86911d84de9804441ce581eeb25142efba/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 Stickman Video Director contributors",
+        ""
+      ],
+      "sha256": "39db520f9483ddb84418c21d59547f39da00083bf2dae1039166299d64f715c3"
+    }
+  ]
+}

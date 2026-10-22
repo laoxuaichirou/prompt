@@ -1,0 +1,220 @@
+{
+  "query": "node editor",
+  "page": 1,
+  "url": "https://github.com/search?q=node+editor&type=repositories&s=stars&o=desc&p=1",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:54:36.555562+00:00",
+  "result_count": 5626,
+  "items": [
+    {
+      "name": "joemccann/dillinger",
+      "stars": 8292,
+      "description": "The last Markdown editor, ever.",
+      "topics": [
+        "nodejs",
+        "javascript",
+        "blog",
+        "editor",
+        "markdown",
+        "node",
+        "ide",
+        "writing",
+        "blogging",
+        "md"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-06-21T18:06:55.542Z",
+      "url": "https://github.com/joemccann/dillinger"
+    },
+    {
+      "name": "jagenjo/litegraph.js",
+      "stars": 8171,
+      "description": "A graph node engine and editor written in Javascript similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D. The en…",
+      "topics": [
+        "nodejs",
+        "javascript",
+        "editor",
+        "workflow",
+        "modular",
+        "graph",
+        "graphs",
+        "visual",
+        "canvas2d",
+        "blueprints",
+        "nodes",
+        "visual-programming",
+        "node-graph",
+        "nocode"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2024-08-01T08:49:24.970Z",
+      "url": "https://github.com/jagenjo/litegraph.js"
+    },
+    {
+      "name": "ONLYOFFICE/DocumentServer",
+      "stars": 7041,
+      "description": "ONLYOFFICE Docs is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, for…",
+      "topics": [
+        "nodejs",
+        "node",
+        "presentation",
+        "excel",
+        "word",
+        "xlsx",
+        "xls",
+        "spreadsheet",
+        "collaboration",
+        "office",
+        "docx",
+        "node-js",
+        "pptx",
+        "collaborative",
+        "doc",
+        "ods",
+        "odp",
+        "odt",
+        "ppt",
+        "onlyoffice"
+      ],
+      "archived": false,
+      "language": "Shell",
+      "updated_at": "2026-10-22T17:52:53.540Z",
+      "url": "https://github.com/ONLYOFFICE/DocumentServer"
+    },
+    {
+      "name": "thedmd/imgui-node-editor",
+      "stars": 4537,
+      "description": "Node Editor built using Dear ImGui",
+      "topics": [
+        "middleware",
+        "gamedev",
+        "imgui",
+        "immediate-gui",
+        "game-development",
+        "blueprint",
+        "dear-imgui",
+        "blueprints",
+        "node-editor"
+      ],
+      "archived": false,
+      "language": "C++",
+      "updated_at": "2026-10-14T08:45:09.482Z",
+      "url": "https://github.com/thedmd/imgui-node-editor"
+    },
+    {
+      "name": "Siccity/xNode",
+      "stars": 3747,
+      "description": "Unity Node Editor: Lets you view and edit node graphs inside Unity",
+      "topics": [
+        "editor",
+        "node",
+        "framework",
+        "graph",
+        "unity"
+      ],
+      "archived": false,
+      "language": "C#",
+      "updated_at": "2024-08-26T13:00:57.090Z",
+      "url": "https://github.com/Siccity/xNode"
+    },
+    {
+      "name": "paceholder/nodeeditor",
+      "stars": 3718,
+      "description": "Qt Node Editor. Dataflow programming framework",
+      "topics": [
+        "cpp",
+        "graph",
+        "qt5",
+        "dataflow-programming",
+        "model-view",
+        "qt6"
+      ],
+      "archived": false,
+      "language": "C++",
+      "updated_at": "2026-07-31T16:56:51.002Z",
+      "url": "https://github.com/paceholder/nodeeditor"
+    },
+    {
+      "name": "ryanlelek/Raneto",
+      "stars": 2904,
+      "description": "Markdown powered Knowledgebase Wiki for Node.js",
+      "topics": [
+        "editor",
+        "markdown",
+        "node",
+        "wiki",
+        "writing",
+        "self-hosted",
+        "knowledgebase"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-03-18T06:31:15.224Z",
+      "url": "https://github.com/ryanlelek/Raneto"
+    },
+    {
+      "name": "IndieSmiths/nodezator",
+      "stars": 2792,
+      "description": "A generalist Python node editor",
+      "topics": [
+        "desktop-app",
+        "python",
+        "open-source",
+        "application",
+        "app",
+        "gui",
+        "graph",
+        "desktop",
+        "python3",
+        "pygame",
+        "desktop-application",
+        "public-domain",
+        "nodes",
+        "unlicense",
+        "pygame-application",
+        "node-editor",
+        "unlicense-license",
+        "pygame-ce",
+        "python-node-editor"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-21T17:57:21.468Z",
+      "url": "https://github.com/IndieSmiths/nodezator"
+    },
+    {
+      "name": "alelievr/NodeGraphProcessor",
+      "stars": 2695,
+      "description": "Node graph editor framework focused on data processing using Unity UIElements and C# 4.6",
+      "topics": [
+        "graph",
+        "unity",
+        "unity-editor",
+        "node-based"
+      ],
+      "archived": false,
+      "language": "C#",
+      "updated_at": "2025-09-22T17:16:09.821Z",
+      "url": "https://github.com/alelievr/NodeGraphProcessor"
+    },
+    {
+      "name": "Nelarius/imnodes",
+      "stars": 2495,
+      "description": "A small, dependency-free node editor for dear imgui",
+      "topics": [
+        "gamedev",
+        "ui",
+        "cpp",
+        "tool",
+        "imgui",
+        "node-editor"
+      ],
+      "archived": false,
+      "language": "C++",
+      "updated_at": "2026-10-17T23:21:32.802Z",
+      "url": "https://github.com/Nelarius/imnodes"
+    }
+  ]
+}

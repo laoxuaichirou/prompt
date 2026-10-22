@@ -1,0 +1,129 @@
+{
+  "query": "ComfyUI in:name",
+  "page": 2,
+  "url": "https://github.com/search?q=ComfyUI+in%3Aname&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:51:11.589856+00:00",
+  "result_count": 24339,
+  "items": [
+    {
+      "name": "MrForExample/ComfyUI-3D-Pack",
+      "stars": 3889,
+      "description": "An extensive node suite that enables ComfyUI to process 3D inputs (Mesh & UV Texture, etc) using cutting edge algorithms (3DGS, NeRF, etc.)",
+      "topics": [
+        "machine-learning",
+        "comfy",
+        "comfyui"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-12-29T08:06:02.568Z",
+      "url": "https://github.com/MrForExample/ComfyUI-3D-Pack"
+    },
+    {
+      "name": "Kosinkadink/ComfyUI-AnimateDiff-Evolved",
+      "stars": 3559,
+      "description": "Improved AnimateDiff for ComfyUI and Advanced Sampling Support",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-07-28T11:39:29.860Z",
+      "url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
+    },
+    {
+      "name": "kijai/ComfyUI-KJNodes",
+      "stars": 3400,
+      "description": "Various custom nodes for ComfyUI",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-22T19:07:21.601Z",
+      "url": "https://github.com/kijai/ComfyUI-KJNodes"
+    },
+    {
+      "name": "ltdrdata/ComfyUI-Impact-Pack",
+      "stars": 3350,
+      "description": "Custom nodes pack for ComfyUI This custom node helps to conveniently enhance images through Detector, Detailer, Upscaler, Pipe, and more.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-04-19T17:07:11.875Z",
+      "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    },
+    {
+      "name": "pythongosssss/ComfyUI-Custom-Scripts",
+      "stars": 3221,
+      "description": "Enhancements & experiments for ComfyUI, mostly focusing on UI features",
+      "topics": [
+        "comfyui"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-02-12T11:31:30.232Z",
+      "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    },
+    {
+      "name": "chflame163/ComfyUI_LayerStyle",
+      "stars": 3192,
+      "description": "A set of nodes for ComfyUI that can composite layer and mask to achieve Photoshop like functionality.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-10T14:47:41.836Z",
+      "url": "https://github.com/chflame163/ComfyUI_LayerStyle"
+    },
+    {
+      "name": "numz/ComfyUI-SeedVR2_VideoUpscaler",
+      "stars": 2936,
+      "description": "Official SeedVR2 Video Upscaler for ComfyUI",
+      "topics": [
+        "ai",
+        "video-processing",
+        "upscaler",
+        "comfyui",
+        "comfyui-nodes"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-12-24T08:52:32.077Z",
+      "url": "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
+    },
+    {
+      "name": "nunchux-ai/ComfyUI-nunchaku",
+      "stars": 2930,
+      "description": "ComfyUI Plugin of Nunchaku",
+      "topics": [
+        "flux",
+        "quantization",
+        "diffusion",
+        "mlsys",
+        "comfyui",
+        "genai"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-09-06T23:20:46.578Z",
+      "url": "https://github.com/nunchux-ai/ComfyUI-nunchaku"
+    },
+    {
+      "name": "yolain/ComfyUI-Easy-Use",
+      "stars": 2793,
+      "description": "In order to make it easier to use the ComfyUI, I have made some optimizations and integrations to some commonly used nodes.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-21T07:39:26.892Z",
+      "url": "https://github.com/yolain/ComfyUI-Easy-Use"
+    },
+    {
+      "name": "PowerHouseMan/ComfyUI-AdvancedLivePortrait",
+      "stars": 2684,
+      "description": "",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-08-21T06:14:24.138Z",
+      "url": "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait"
+    }
+  ]
+}

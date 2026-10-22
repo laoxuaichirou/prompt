@@ -1,0 +1,149 @@
+{
+  "query": "node-based UI",
+  "page": 2,
+  "url": "https://github.com/search?q=node-based+UI&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:51:11.602560+00:00",
+  "result_count": 227,
+  "items": [
+    {
+      "name": "ssitu/ComfyUI_fabric",
+      "stars": 94,
+      "description": "ComfyUI nodes based on the paper \"FABRIC: Personalizing Diffusion Models with Iterative Feedback\" (Feedback via Attention-Based Reference…",
+      "topics": [
+        "stable-diffusion",
+        "comfyui"
+      ],
+      "archived": false,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-05-22T18:10:19.091Z",
+      "url": "https://github.com/ssitu/ComfyUI_fabric"
+    },
+    {
+      "name": "synergycodes/overflow-ui",
+      "stars": 61,
+      "description": "Open-source collection of ready-to-use UI components for building node-based user interfaces with React Flow.",
+      "topics": [
+        "react",
+        "open-source",
+        "workflow",
+        "typescript",
+        "drag-and-drop",
+        "react-components",
+        "data-visualization",
+        "graph-editor",
+        "diagrams",
+        "ui-components",
+        "flowchart",
+        "diagram-editor",
+        "diagramming",
+        "node-editor",
+        "react-flow",
+        "flow-editor",
+        "node-based-ui",
+        "flow-diagrams",
+        "interface-c",
+        "interactive-diag"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-12T20:50:41.187Z",
+      "url": "https://github.com/synergycodes/overflow-ui"
+    },
+    {
+      "name": "smthemex/ComfyUI_ParlerTTS",
+      "stars": 52,
+      "description": "This is a simple ComfyUI custom TTS node based on Parler_tts.",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-07-02T09:39:48.855Z",
+      "url": "https://github.com/smthemex/ComfyUI_ParlerTTS"
+    },
+    {
+      "name": "1038lab/ComfyUI-MegaTTS",
+      "stars": 51,
+      "description": "A ComfyUI custom node based on ByteDance MegaTTS3, enabling high-quality text-to-speech synthesis with voice cloning capabilities for bot…",
+      "topics": [
+        "tts",
+        "comfyui",
+        "comfyui-nodes"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2025-06-19T19:12:51.624Z",
+      "url": "https://github.com/1038lab/ComfyUI-MegaTTS"
+    },
+    {
+      "name": "needle-mirror/com.unity.graphtools.foundation",
+      "stars": 45,
+      "description": "A framework for node based tools including a graph data model, a UI foundation and graph-to-asset pipeline. Use this package to speed up …",
+      "topics": [],
+      "archived": false,
+      "language": "C#",
+      "updated_at": "2021-07-07T15:03:08.061Z",
+      "url": "https://github.com/needle-mirror/com.unity.graphtools.foundation"
+    },
+    {
+      "name": "takemetosiberia/ComfyUI-SAMURAI--SAM2-",
+      "stars": 43,
+      "description": "This is my version of nodes based on SAMURAI project. The project is made for entertainment purposes, I will not be engaged in further de…",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2024-12-01T13:06:02.068Z",
+      "url": "https://github.com/takemetosiberia/ComfyUI-SAMURAI--SAM2-"
+    },
+    {
+      "name": "FlexMonkey/UIScrollViewDemo",
+      "stars": 42,
+      "description": "A Node Based User Interface implemented with the Presentation Model Pattern",
+      "topics": [],
+      "archived": false,
+      "language": "Swift",
+      "updated_at": "2015-04-14T17:58:09.587Z",
+      "url": "https://github.com/FlexMonkey/UIScrollViewDemo"
+    },
+    {
+      "name": "OlegWock/makyo",
+      "stars": 22,
+      "description": "Modern frontend for LLMs (cloud & local) with node-based UI and branching",
+      "topics": [
+        "claude",
+        "llm",
+        "chatgpt",
+        "openrouter",
+        "ollama"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-05-23T20:11:31.256Z",
+      "url": "https://github.com/OlegWock/makyo"
+    },
+    {
+      "name": "nMaroulis/agent-smith",
+      "stars": 21,
+      "description": "Visual AI agent builder. Drag, drop, and generate LangChain/LangGraph code using natural language or a node-based UI.",
+      "topics": [
+        "react",
+        "python",
+        "langgraph",
+        "agentic-ai"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2025-10-24T10:18:25.661Z",
+      "url": "https://github.com/nMaroulis/agent-smith"
+    },
+    {
+      "name": "lihaoyun6/ComfyUI-SegmentAnything3",
+      "stars": 21,
+      "description": "ComfyUI SAM3 node based on transformers / 基于 transformers 框架的 SAM3分割节点",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-01-29T12:31:28.030Z",
+      "url": "https://github.com/lihaoyun6/ComfyUI-SegmentAnything3"
+    }
+  ]
+}

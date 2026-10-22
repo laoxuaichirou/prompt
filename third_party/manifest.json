@@ -1,0 +1,135 @@
+{
+  "note": "只镜像明确MIT授权的选定文本文件；保留各自LICENSE。资源索引不等于已安装上游完整应用。",
+  "files": [
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "LICENSE",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/LICENSE",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/LICENSE",
+      "sha256": "d15c81ae8fa9a0b4b1db46c66e4490cc92e4898fb1f55e030559fbd2a2e2a232",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.682333+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "SKILL.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/SKILL.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/SKILL.md",
+      "sha256": "89c7dc90c9aa80ba020c55e54b7de2fa2b49b49d20c240b150cd79ebea59775d",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.478582+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "agents/openai.yaml",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/agents/openai.yaml",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/agents/openai.yaml",
+      "sha256": "4ef795103680c78bf593d9307167069b3f3651061b57ffef3b2b01623bfc99fe",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:44.133435+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "references/prompt-compiler.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/references/prompt-compiler.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/prompt-compiler.md",
+      "sha256": "dbb79043c183051740735f6a604e7db18bf9974a79ea7b9846f638c73fd81784",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.959142+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "references/quality-gate.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/references/quality-gate.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/quality-gate.md",
+      "sha256": "642952c568cddb7cecad13d1783d179494b4c839ef3d31e1e5e55bf9d8cedc5e",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:44.111835+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "references/reference-analysis.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/references/reference-analysis.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/reference-analysis.md",
+      "sha256": "e555d645efed396ec61d8a89d588a014473787becf555645c29c48eea382ad61",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.937016+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "references/style-system.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/references/style-system.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/style-system.md",
+      "sha256": "904890bd4a08c3883ae2d2c7c00c04816eaaba3022891f6cf1d181dc1b401504",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:44.769376+00:00"
+    },
+    {
+      "repository": "LiamGvchi/gc-minimal-zine-poster",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "upstream_path": "references/variation-engine.md",
+      "local_path": "third_party/image/gc-minimal-zine-poster-v0-3/references/variation-engine.md",
+      "url": "https://raw.githubusercontent.com/LiamGvchi/gc-minimal-zine-poster/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/variation-engine.md",
+      "sha256": "f48d3e0cdf803ed9d931d4bfb278ccf842da29255333c1d0573e98e404d99735",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.823707+00:00"
+    },
+    {
+      "repository": "freestylefly/awesome-gpt-image-2",
+      "commit": "63e6176fa01be51c000108dacd72716d3e46784b",
+      "upstream_path": "LICENSE",
+      "local_path": "third_party/image/gpt-image-2-templates/LICENSE",
+      "url": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/63e6176fa01be51c000108dacd72716d3e46784b/LICENSE",
+      "sha256": "27a75c48bac29eb78f43c19f75c4e175974c8f1046d848d5562eae1ead2f1176",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:44.335443+00:00"
+    },
+    {
+      "repository": "freestylefly/awesome-gpt-image-2",
+      "commit": "63e6176fa01be51c000108dacd72716d3e46784b",
+      "upstream_path": "docs/templates.md",
+      "local_path": "third_party/image/gpt-image-2-templates/docs/templates.md",
+      "url": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/63e6176fa01be51c000108dacd72716d3e46784b/docs/templates.md",
+      "sha256": "f8e5009821d2099da51e23ab467ec9e938fdab34856e439ac36138c155eec926",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:44.232599+00:00"
+    },
+    {
+      "repository": "dexhunter/seedance2-skill",
+      "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+      "upstream_path": "LICENSE",
+      "local_path": "third_party/video/seedance2-skill/LICENSE",
+      "url": "https://raw.githubusercontent.com/dexhunter/seedance2-skill/516284d5bab58361bfdfed3cc96cee3e837d4c44/LICENSE",
+      "sha256": "56abf51bba5502dcc1cd014c9adea5787cd9eec67421858484b660ec97922978",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.393823+00:00"
+    },
+    {
+      "repository": "dexhunter/seedance2-skill",
+      "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+      "upstream_path": "SKILL.md",
+      "local_path": "third_party/video/seedance2-skill/SKILL.md",
+      "url": "https://raw.githubusercontent.com/dexhunter/seedance2-skill/516284d5bab58361bfdfed3cc96cee3e837d4c44/SKILL.md",
+      "sha256": "107dd9fa5ef46f64d3d5183957244fd42f32a91df57e615ba63338c1344cf442",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.414755+00:00"
+    },
+    {
+      "repository": "dexhunter/seedance2-skill",
+      "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+      "upstream_path": "zh/SKILL.md",
+      "local_path": "third_party/video/seedance2-skill/zh/SKILL.md",
+      "url": "https://raw.githubusercontent.com/dexhunter/seedance2-skill/516284d5bab58361bfdfed3cc96cee3e837d4c44/zh/SKILL.md",
+      "sha256": "3ef949443bf7947bd45f53571176602a313df5eec41b7e2a2cb97d54625c6833",
+      "license": "MIT",
+      "retrieved_at": "2026-10-22T20:07:43.359623+00:00"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "query": "remotion skill",
+  "page": 2,
+  "url": "https://github.com/search?q=remotion+skill&type=repositories&s=stars&o=desc&p=2",
+  "sort": "stars descending",
+  "retrieved_at": "2026-10-22T19:53:18.024715+00:00",
+  "result_count": 3634,
+  "items": [
+    {
+      "name": "zhuyansen/awesome-claude-video-skills",
+      "stars": 816,
+      "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. …",
+      "topics": [
+        "video",
+        "awesome-list",
+        "motion-graphics",
+        "codex",
+        "remotion",
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "hyperframes",
+        "opus-5-5"
+      ],
+      "archived": false,
+      "language": null,
+      "updated_at": "2026-10-22T14:43:53.144Z",
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+    },
+    {
+      "name": "howseen-ai/claude-motion-design",
+      "stars": 636,
+      "description": "A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license.",
+      "topics": [
+        "ffmpeg",
+        "motion-design",
+        "playwright",
+        "claude-code",
+        "claude-skills"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-04T05:56:51.574Z",
+      "url": "https://github.com/howseen-ai/claude-motion-design"
+    },
+    {
+      "name": "haidrrrry/claude-remotion-skill",
+      "stars": 583,
+      "description": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics video…",
+      "topics": [
+        "react",
+        "typescript",
+        "motion-graphics",
+        "video-editing",
+        "ai-agents",
+        "claude",
+        "remotion",
+        "content-creation",
+        "text-to-video",
+        "ai-video",
+        "anthropic",
+        "claude-ai",
+        "ai-video-generation",
+        "faceless-video",
+        "claude-code",
+        "ai-video-editor",
+        "claude-skills",
+        "claude-agent-skills"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-08-12T21:05:03.230Z",
+      "url": "https://github.com/haidrrrry/claude-remotion-skill"
+    },
+    {
+      "name": "trustfuture/simon-skills",
+      "stars": 468,
+      "description": "不露脸做视频账号的 AI skill 合集：调查长片 + 手绘白板讲解视频，一句选题出片、配音字幕、封面与各平台文案",
+      "topics": [
+        "skills",
+        "codex",
+        "video-generation",
+        "remotion",
+        "excalidraw",
+        "claude-code"
+      ],
+      "archived": false,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T04:07:14.148Z",
+      "url": "https://github.com/trustfuture/simon-skills"
+    },
+    {
+      "name": "wshuyi/remotion-video-skill",
+      "stars": 426,
+      "description": "A Claude Code Skill for creating programmatic videos with Remotion framework",
+      "topics": [],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-01-25T02:21:58.881Z",
+      "url": "https://github.com/wshuyi/remotion-video-skill"
+    },
+    {
+      "name": "liyupi/ai-promo-video-maker",
+      "stars": 362,
+      "description": "一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商…",
+      "topics": [
+        "react",
+        "marketing",
+        "text-to-speech",
+        "ffmpeg",
+        "motion-graphics",
+        "cursor",
+        "codex",
+        "video-generation",
+        "remotion",
+        "playwright",
+        "ai-agent",
+        "aigc",
+        "ai-video-generator",
+        "ai-video",
+        "elevenlabs",
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "promo-video",
+        "product-video"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-10-09T08:44:49.717Z",
+      "url": "https://github.com/liyupi/ai-promo-video-maker"
+    },
+    {
+      "name": "Bomx/super-video-maker-skill",
+      "stars": 320,
+      "description": "AI video production skill for agents: HeyGen avatars, Seedance b-roll, OpenAI images, Remotion, HyperFrames, screen recording, FFmpeg cap…",
+      "topics": [
+        "ffmpeg",
+        "video-generation",
+        "screen-recording",
+        "remotion",
+        "ai-video",
+        "heygen",
+        "agent-skill"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-08-09T13:17:04.882Z",
+      "url": "https://github.com/Bomx/super-video-maker-skill"
+    },
+    {
+      "name": "Hainrixz/editor-pro-max",
+      "stars": 275,
+      "description": "AI-powered video editor by @soyenriquerocha — built with Remotion + Claude Code. Describe videos in natural language, get professional MP…",
+      "topics": [
+        "react",
+        "typescript",
+        "ai",
+        "motion-graphics",
+        "video-editor",
+        "remotion",
+        "claude-code"
+      ],
+      "archived": false,
+      "language": "TypeScript",
+      "updated_at": "2026-03-26T12:39:28.432Z",
+      "url": "https://github.com/Hainrixz/editor-pro-max"
+    },
+    {
+      "name": "Sfedfcv/redesigned-pancake",
+      "stars": 268,
+      "description": " collaboration skills. - [Sign up for a new {% data variables.product.prodname_dotcom %} account](/github/getting-started-with-github/sig…",
+      "topics": [],
+      "archived": false,
+      "language": null,
+      "updated_at": "2021-05-16T05:22:26.230Z",
+      "url": "https://github.com/Sfedfcv/redesigned-pancake"
+    },
+    {
+      "name": "AgriciDaniel/claude-shorts",
+      "stars": 238,
+      "description": "Interactive longform-to-shortform video creator — Claude Code skill with Remotion-rendered animated captions, AI segment scoring, cursor …",
+      "topics": [
+        "open-source",
+        "ai",
+        "content-creation",
+        "ai-content",
+        "claude-code",
+        "claude-code-skill"
+      ],
+      "archived": false,
+      "language": "Python",
+      "updated_at": "2026-07-11T02:32:45.082Z",
+      "url": "https://github.com/AgriciDaniel/claude-shorts"
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "tool": "ffprobe",
+  "items": [
+    {
+      "id": "kinetic",
+      "artifact": "artifacts/remotion-kinetic.mp4",
+      "sha256": "847647e947dda05105677f5bfe49cf87ee962610994097425886577683d6fd15",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 180,
+      "duration_seconds": 6.0,
+      "codec": "h264",
+      "audio": "none (intentional silent insert)",
+      "status": "passed",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1080,
+            "height": 1920,
+            "coded_width": 1088,
+            "coded_height": 1920,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuvj420p",
+            "level": 40,
+            "color_range": "pc",
+            "color_space": "bt470bg",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 4,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 540000,
+            "duration": "6.000000",
+            "bit_rate": "475833",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "180",
+            "nb_read_frames": "180",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          }
+        ],
+        "format": {
+          "filename": "/workspace/prompt/artifacts/remotion-kinetic.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "6.000000",
+          "size": "360360",
+          "bit_rate": "480480",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.100",
+            "comment": "Made with Remotion 4.0.538"
+          }
+        }
+      }
+    },
+    {
+      "id": "steps",
+      "artifact": "artifacts/remotion-steps.mp4",
+      "sha256": "c56c4e0c4de5211b82abe7fd9e2fdf3cf80ad6c2f49ac76c3c39a756cc13dbdf",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 240,
+      "duration_seconds": 8.0,
+      "codec": "h264",
+      "audio": "none (intentional silent insert)",
+      "status": "passed",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1080,
+            "height": 1920,
+            "coded_width": 1088,
+            "coded_height": 1920,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuvj420p",
+            "level": 40,
+            "color_range": "pc",
+            "color_space": "bt470bg",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 4,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 720000,
+            "duration": "8.000000",
+            "bit_rate": "282259",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "240",
+            "nb_read_frames": "240",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          }
+        ],
+        "format": {
+          "filename": "/workspace/prompt/artifacts/remotion-steps.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "8.000000",
+          "size": "286416",
+          "bit_rate": "286416",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.100",
+            "comment": "Made with Remotion 4.0.538"
+          }
+        }
+      }
+    },
+    {
+      "id": "comparison",
+      "artifact": "artifacts/remotion-comparison.mp4",
+      "sha256": "63f346cee045bc45c8dd5277c7cf3867e79aad929156f5c3cfe1414747d63f11",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 180,
+      "duration_seconds": 6.0,
+      "codec": "h264",
+      "audio": "none (intentional silent insert)",
+      "status": "passed",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1080,
+            "height": 1920,
+            "coded_width": 1088,
+            "coded_height": 1920,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuvj420p",
+            "level": 40,
+            "color_range": "pc",
+            "color_space": "bt470bg",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 4,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 540000,
+            "duration": "6.000000",
+            "bit_rate": "245982",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "180",
+            "nb_read_frames": "180",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          }
+        ],
+        "format": {
+          "filename": "/workspace/prompt/artifacts/remotion-comparison.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "6.000000",
+          "size": "187988",
+          "bit_rate": "250650",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.100",
+            "comment": "Made with Remotion 4.0.538"
+          }
+        }
+      }
+    }
+  ]
+}

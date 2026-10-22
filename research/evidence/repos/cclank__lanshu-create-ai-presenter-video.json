@@ -1,0 +1,68 @@
+{
+  "name": "cclank/lanshu-create-ai-presenter-video",
+  "url": "https://github.com/cclank/lanshu-create-ai-presenter-video",
+  "retrieved_at": "2026-10-22T19:56:28.474633+00:00",
+  "default_branch": "main",
+  "commit": "762d3ee42623b75a4ec63ad6aa61ace69d78ce6e",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/cclank/lanshu-create-ai-presenter-video/blob/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e/README.md",
+  "readme_sha256": "0a23ffb0895e35751118dad3ae607447cd0c535d0d328d8f772eee36c8ad0005",
+  "root_paths": [
+    ".github/workflows",
+    "agents",
+    "assets",
+    "explainer",
+    "references",
+    "scripts",
+    "tests",
+    ".gitignore",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "README.zh-CN.md",
+    "SKILL.md",
+    "VERSION"
+  ],
+  "readme_headings": [
+    "lanshu-create-ai-presenter-video",
+    "Highlights",
+    "Two routes",
+    "What you provide",
+    "How it works",
+    "Requirements",
+    "Installation",
+    "Quick start",
+    "Scripts",
+    "Explainer tools",
+    "Reference guides",
+    "Repository layout",
+    "Defaults",
+    "Safety and cost controls",
+    "Privacy",
+    "Testing",
+    "Contributing",
+    "Author",
+    "License"
+  ],
+  "resource_links": [
+    "https://img.shields.io/badge/Agent_Skills-SKILL.md-111827",
+    "https://agentskills.io",
+    "https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml/badge.svg",
+    "https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml",
+    "https://agentskills.io",
+    "https://agentskills.io/clients"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/cclank/lanshu-create-ai-presenter-video/blob/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 lanshu",
+        ""
+      ],
+      "sha256": "5ee4e300085ba144aae1ec5b72774ef5408bd933c1f02f429359313a4251bfad"
+    }
+  ]
+}

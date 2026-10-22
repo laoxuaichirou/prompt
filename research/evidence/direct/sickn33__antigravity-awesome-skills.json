@@ -1,0 +1,14 @@
+{
+  "query": "named repository inspection: sickn33/antigravity-awesome-skills",
+  "kind": "repository-page metadata (not a search result)",
+  "url": "https://github.com/sickn33/antigravity-awesome-skills",
+  "retrieved_at": "2026-10-22T20:23:05.425547+00:00",
+  "items": [
+    {
+      "name": "sickn33/antigravity-awesome-skills",
+      "stars": 48329,
+      "url": "https://github.com/sickn33/antigravity-awesome-skills"
+    }
+  ],
+  "raw_field": "stargazerCount"
+}

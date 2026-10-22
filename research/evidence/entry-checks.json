@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Comfy-Org/ComfyUI",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/a071826fd36147da6a81e9e91257df9968a4b06b/README.md",
+    "status": "verified",
+    "bytes": 29300,
+    "sha256": "d812a66af88fe0a08d25d19c2dba3b6ce604ce364f88b1e315c13587d6f7a2eb",
+    "observed_at": "2026-10-22T20:23:06.664408+00:00"
+  },
+  {
+    "name": "excalidraw/excalidraw",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/excalidraw/excalidraw/1d4dc2c0e6e476911d0760e9c3cf3694f2d43384/README.md",
+    "status": "verified",
+    "bytes": 7774,
+    "sha256": "011eea74cbbf38fd263ec93a221f379466c557dc7587acfe93797201193a7e7a",
+    "observed_at": "2026-10-22T20:23:06.716701+00:00"
+  },
+  {
+    "name": "toeverything/AFFiNE",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/toeverything/AFFiNE/e32f8dce0475218934f247570155bdd4237e95c3/LICENSE",
+    "status": "verified",
+    "bytes": 1663,
+    "sha256": "c107c8088fe42bce6def95d313cfe7b5984d3bb2c1608b67f855327da45f497b",
+    "observed_at": "2026-10-22T20:23:06.737529+00:00"
+  },
+  {
+    "name": "jgraph/drawio-desktop",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/jgraph/drawio-desktop/6ceb5d6292e343b5f2b49046cf0087aac7b6ce6f/README.md",
+    "status": "verified",
+    "bytes": 7553,
+    "sha256": "bd5abacd56d9b8e0810dd6e3bde1890cda8a605da89cc62032735f7f29e6b566",
+    "observed_at": "2026-10-22T20:23:06.716387+00:00"
+  },
+  {
+    "name": "penpot/penpot",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/penpot/penpot/9aa78a536b35e8c7832e99d760b3aed024ffc162/README.md",
+    "status": "verified",
+    "bytes": 11834,
+    "sha256": "8c79712fea5fb2d98462817e65f5eba37ef66f652611da23bc64275ac008ad53",
+    "observed_at": "2026-10-22T20:23:06.976381+00:00"
+  },
+  {
+    "name": "tldraw/tldraw",
+    "path": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/tldraw/tldraw/71e9eae0502a06b8299b9a67b881539d28516f0d/LICENSE.md",
+    "status": "verified",
+    "bytes": 4609,
+    "sha256": "9578fcddc20e404b6a29f44b6fea81d8b331698c0e7e9be34132d6f4394fa533",
+    "observed_at": "2026-10-22T20:23:07.002263+00:00"
+  },
+  {
+    "name": "xyflow/xyflow",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/xyflow/xyflow/8523d8dd9f1551954bc221dccabd6a3119ef9e22/README.md",
+    "status": "verified",
+    "bytes": 5271,
+    "sha256": "be7df4c1810d7c7d0e44e26d08404a97fa9ab62d3fdf3e5fd4c31f3070472d63",
+    "observed_at": "2026-10-22T20:23:07.043321+00:00"
+  },
+  {
+    "name": "GraphiteEditor/Graphite",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/GraphiteEditor/Graphite/90df05063f3bd045f60e5c3b867eb28744ce9dc1/README.md",
+    "status": "verified",
+    "bytes": 5956,
+    "sha256": "40e1f3b0468bd88205958ea44dd888c69efcf9716e388c5d01a8d576715ce53d",
+    "observed_at": "2026-10-22T20:23:06.940225+00:00"
+  },
+  {
+    "name": "HBAI-Ltd/Toonflow-app",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/HBAI-Ltd/Toonflow-app/30139c931e80476caa718b31684b86383c6e83ce/README.md",
+    "status": "verified",
+    "bytes": 31380,
+    "sha256": "8c38c9bb6e51adb96de6ac26f36d60e1179aba95dd2667f4b2f83eaf9eb88473",
+    "observed_at": "2026-10-22T20:23:07.206786+00:00"
+  },
+  {
+    "name": "plait-board/drawnix",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/plait-board/drawnix/b138ff867943ddff6c4c79560e10ab6ee3b5600e/README.md",
+    "status": "verified",
+    "bytes": 5633,
+    "sha256": "cd9b1fa40eb887c2e8b36906112d9b3b9ea12e9f3d176d77ebd997eb5c73e491",
+    "observed_at": "2026-10-22T20:23:07.269787+00:00"
+  },
+  {
+    "name": "freestylefly/awesome-gpt-image-2",
+    "path": "agents/skills/gpt-image-2-style-library/SKILL.md",
+    "url": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/63e6176fa01be51c000108dacd72716d3e46784b/agents/skills/gpt-image-2-style-library/SKILL.md",
+    "status": "verified",
+    "bytes": 2433,
+    "sha256": "98519a3bfd28c5ab5630771a536f18fbe3627123cd7dd7a8801fa5da166a60f9",
+    "observed_at": "2026-10-22T20:23:07.181476+00:00"
+  },
+  {
+    "name": "op7418/guizang-ppt-skill",
+    "path": "references/image-prompts.md",
+    "url": "https://raw.githubusercontent.com/op7418/guizang-ppt-skill/c91369c449d34755d320a8b81d0734000d99d1ab/references/image-prompts.md",
+    "status": "verified",
+    "bytes": 12415,
+    "sha256": "dae1ce04bbeb75d5222dc2e5196d438af6512acbc125e91b1594b41a1850d6f8",
+    "observed_at": "2026-10-22T20:23:07.291845+00:00"
+  },
+  {
+    "name": "JimLiu/baoyu-skills",
+    "path": "skills/baoyu-image-gen/SKILL.md",
+    "url": "https://raw.githubusercontent.com/JimLiu/baoyu-skills/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-image-gen/SKILL.md",
+    "status": "verified",
+    "bytes": 21384,
+    "sha256": "212ce2f9c4b49b165b09e8f8b47416f3cc716796ed1b79c4c3a08dc9db539ab9",
+    "observed_at": "2026-10-22T20:23:07.242414+00:00"
+  },
+  {
+    "name": "PicoTrex/Awesome-Nano-Banana-images",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/2558bf0bb825be150c5d1aeab918cd90004882d3/README.md",
+    "status": "verified",
+    "bytes": 189693,
+    "sha256": "0ceec3d505054bf518346c8d2e9b3a316273ca3d63d0511904221297a925de54",
+    "observed_at": "2026-10-22T20:23:07.577036+00:00"
+  },
+  {
+    "name": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/Evolink-AI/awesome-gpt-image-2-API-Prompts/e2a269ad1a055a0b4f6c1e170341c6c1aba30faa/README.md",
+    "status": "verified",
+    "bytes": 1121931,
+    "sha256": "9538387ea77eb41311bf26e44bc2b5e21ef6b3b7173551a370b6f6df64040e3c",
+    "observed_at": "2026-10-22T20:23:07.759969+00:00"
+  },
+  {
+    "name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+    "path": "README_zh.md",
+    "url": "https://raw.githubusercontent.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/6ee3c6ffefb95a3774baeeaa645d14914cd6d949/README_zh.md",
+    "status": "verified",
+    "bytes": 299259,
+    "sha256": "411834bee2629092f8ad0a4a6aed3179f6b2ed8782d59d9106d89205f85f9096",
+    "observed_at": "2026-10-22T20:23:07.535249+00:00"
+  },
+  {
+    "name": "ConardLi/garden-skills",
+    "path": "skills/gpt-image-2/SKILL.md",
+    "url": "https://raw.githubusercontent.com/ConardLi/garden-skills/7a6d5a72e4f44bb4cc0c23c01b3d97205c723b68/skills/gpt-image-2/SKILL.md",
+    "status": "verified",
+    "bytes": 26643,
+    "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+    "observed_at": "2026-10-22T20:23:07.507523+00:00"
+  },
+  {
+    "name": "willwulfken/MidJourney-Styles-and-Keywords-Reference",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/willwulfken/MidJourney-Styles-and-Keywords-Reference/1e54e7ffd4b6a9a2afc6de83bcfcff962619f299/README.md",
+    "status": "verified",
+    "bytes": 37801,
+    "sha256": "223984111587e3e1e07b5270baade7abd2c086222aa5c6117867541c45e997dc",
+    "observed_at": "2026-10-22T20:23:07.751481+00:00"
+  },
+  {
+    "name": "ZeroLu/awesome-nanobanana-pro",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/ZeroLu/awesome-nanobanana-pro/415896b006f8228c638ef2a27de9414b82982896/README.md",
+    "status": "verified",
+    "bytes": 100511,
+    "sha256": "c2652d400f840753de966d3be1e9594eaaf90ee0cc9c818e2d8a456458f66945",
+    "observed_at": "2026-10-22T20:23:07.809457+00:00"
+  },
+  {
+    "name": "YouMind-OpenLab/awesome-gpt-image-2",
+    "path": "README_zh.md",
+    "url": "https://raw.githubusercontent.com/YouMind-OpenLab/awesome-gpt-image-2/3419a50241a107b5c0394fdab4376518dd310b8d/README_zh.md",
+    "status": "verified",
+    "bytes": 307746,
+    "sha256": "ca48e05ce5cad4b5407a8a1beca19264aed951f90dd6ea5157c2c845a585cbb3",
+    "observed_at": "2026-10-22T20:23:07.807892+00:00"
+  },
+  {
+    "name": "Emily2040/seedance-2.0",
+    "path": "skills/seedance-prompt/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Emily2040/seedance-2.0/4668457e560eee06e95d7fcfdf441c8c0bba802e/skills/seedance-prompt/SKILL.md",
+    "status": "verified",
+    "bytes": 15096,
+    "sha256": "3ae6968f00c6c9a9b07dd90c2e9853af4dc568bb5fd5c4840b59c92153104cfb",
+    "observed_at": "2026-10-22T20:23:08.151891+00:00"
+  },
+  {
+    "name": "dexhunter/seedance2-skill",
+    "path": "zh/SKILL.md",
+    "url": "https://raw.githubusercontent.com/dexhunter/seedance2-skill/516284d5bab58361bfdfed3cc96cee3e837d4c44/zh/SKILL.md",
+    "status": "verified",
+    "bytes": 17450,
+    "sha256": "3ef949443bf7947bd45f53571176602a313df5eec41b7e2a2cb97d54625c6833",
+    "observed_at": "2026-10-22T20:23:08.131571+00:00"
+  },
+  {
+    "name": "zenstory-ai/drama-skills",
+    "path": "skills/short-drama-video-prompts/SKILL.md",
+    "url": "https://raw.githubusercontent.com/zenstory-ai/drama-skills/fdb7b7c58017e3eae64eca382c2a85ede368dab0/skills/short-drama-video-prompts/SKILL.md",
+    "status": "verified",
+    "bytes": 17566,
+    "sha256": "647a5ee2965c50158a6e4f4176a84fec426c1420b5866cf7114a2676e6747865",
+    "observed_at": "2026-10-22T20:23:08.169922+00:00"
+  },
+  {
+    "name": "songguoxs/seedance-prompt-skill",
+    "path": ".claude/skills/seedance/SKILL.md",
+    "url": "https://raw.githubusercontent.com/songguoxs/seedance-prompt-skill/57d1e2f273747c238dd892698a05137ab2f10d4a/.claude/skills/seedance/SKILL.md",
+    "status": "verified",
+    "bytes": 23110,
+    "sha256": "cd1a712e9422d394204026e89e9aba1d7e0c5c46abc4d0aa0cc08c7157b9cf12",
+    "observed_at": "2026-10-22T20:23:08.158188+00:00"
+  },
+  {
+    "name": "ZeroLu/awesome-seedance",
+    "path": "README-zh.md",
+    "url": "https://raw.githubusercontent.com/ZeroLu/awesome-seedance/51e06d7f0f827d30f4d63609f45ebcebaa2f7a29/README-zh.md",
+    "status": "verified",
+    "bytes": 45524,
+    "sha256": "0c15c8585034b26b294b20905d41357ac4cd91de13e73ef0a4aab1ded5ac224b",
+    "observed_at": "2026-10-22T20:23:08.411247+00:00"
+  },
+  {
+    "name": "kaomei/stickman-video-director",
+    "path": "skills/directing-stickman-videos/SKILL.md",
+    "url": "https://raw.githubusercontent.com/kaomei/stickman-video-director/70199c86911d84de9804441ce581eeb25142efba/skills/directing-stickman-videos/SKILL.md",
+    "status": "verified",
+    "bytes": 10925,
+    "sha256": "f32c291ed3bb20bf191f8fc5267935ed03706ab07ff72f71c2c796c06eacd377",
+    "observed_at": "2026-10-22T20:23:08.419935+00:00"
+  },
+  {
+    "name": "liangdabiao/Seedance2-Storyboard-Generator",
+    "path": ".claude/skills/seedance-storyboard-generator/SKILL.md",
+    "url": "https://raw.githubusercontent.com/liangdabiao/Seedance2-Storyboard-Generator/aceab4e277aa26cb33794fce6e17e5425ad721dd/.claude/skills/seedance-storyboard-generator/SKILL.md",
+    "status": "verified",
+    "bytes": 20303,
+    "sha256": "7bc6d8264ad0e884642269d2a350501c943139185221b3b430824b3ec8ae0edf",
+    "observed_at": "2026-10-22T20:23:08.393498+00:00"
+  },
+  {
+    "name": "LearnPrompt/awesome-seedance",
+    "path": "README_zh.md",
+    "url": "https://raw.githubusercontent.com/LearnPrompt/awesome-seedance/6c2a99ab454b5201a8886a36d91bc2fe3906743a/README_zh.md",
+    "status": "verified",
+    "bytes": 132113,
+    "sha256": "7ccbc79a8c0d6658aa54a746a1bcae9f7b4e5aaaaaa577b7d46d564e569b1cb6",
+    "observed_at": "2026-10-22T20:23:08.384530+00:00"
+  },
+  {
+    "name": "YouMind-OpenLab/awesome-seedance-2-prompts",
+    "path": "README_zh.md",
+    "url": "https://raw.githubusercontent.com/YouMind-OpenLab/awesome-seedance-2-prompts/a32d396ca4defb0a019af301266dad3a0288efec/README_zh.md",
+    "status": "verified",
+    "bytes": 309087,
+    "sha256": "19705ba62f3168d2ff7018e83c1e2ad38b14e589c5b7e653aea5afd4faf5bede",
+    "observed_at": "2026-10-22T20:23:08.607434+00:00"
+  },
+  {
+    "name": "lixiaoxiao9888-create/manju-laoli-skill",
+    "path": "short-drama-director/SKILL.md",
+    "url": "https://raw.githubusercontent.com/lixiaoxiao9888-create/manju-laoli-skill/6f16955c57053d77ea0ffbdbbf3a7985a3e0080a/short-drama-director/SKILL.md",
+    "status": "verified",
+    "bytes": 187393,
+    "sha256": "d0541e7eb52709b633875d04da652fb8834038ebaf4f4484f79e36f1367ca81a",
+    "observed_at": "2026-10-22T20:23:08.605683+00:00"
+  }
+]

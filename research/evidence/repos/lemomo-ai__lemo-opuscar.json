@@ -1,0 +1,80 @@
+{
+  "name": "lemomo-ai/lemo-opuscar",
+  "url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "retrieved_at": "2026-10-22T19:55:45.961397+00:00",
+  "default_branch": "main",
+  "commit": "3961ddb3d24d8876e0e2754f7790d66908acee51",
+  "readme_path": "README.md",
+  "readme_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/3961ddb3d24d8876e0e2754f7790d66908acee51/README.md",
+  "readme_sha256": "c7988c67fab6491e206fd5af4e4efaa6042fdedabf461a461783ad2a03ee8867",
+  "root_paths": [
+    ".claude-plugin",
+    ".github/workflows",
+    "core",
+    "docs",
+    "plugin",
+    "styleboard",
+    "styles",
+    "tools",
+    ".gitignore",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "DIRECTOR.md",
+    "LICENSE",
+    "MAINTAINING.md",
+    "MY-STYLES.md",
+    "README.md",
+    "README.zh-CN.md",
+    "TECHNIQUE.md",
+    "package-lock.json",
+    "package.json",
+    "requirements-dev.txt",
+    "requirements-music.txt",
+    "requirements-voice.txt",
+    "requirements.txt"
+  ],
+  "readme_headings": [
+    "Lemo-Opuscar",
+    "🎬 Feature presentation: OPUSCAR 98",
+    "👋 About me",
+    "How to use",
+    "Option 1: install the skill (recommended)",
+    "Option 2: clone the repo",
+    "Then just say what you want",
+    "Make a style your own",
+    "Before you start",
+    "Update or uninstall",
+    "The styles",
+    "Edit & Documentary",
+    "Evidence Films",
+    "Hand-drawn & Painting",
+    "East Asian Traditions",
+    "Print & Printmaking",
+    "Graphic & Type",
+    "Information & Keynote",
+    "Cartoon & Anime",
+    "Games",
+    "Cinema & Eras",
+    "Materials & 3D",
+    "Star history",
+    "Thank you for every star",
+    "Licence",
+    "More from LemoLab"
+  ],
+  "resource_links": [
+    "plugin/skills/lemo-opuscar/"
+  ],
+  "license_evidence": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/3961ddb3d24d8876e0e2754f7790d66908acee51/LICENSE",
+      "first_lines": [
+        "MIT License",
+        "",
+        "Copyright (c) 2026 LemoLab",
+        ""
+      ],
+      "sha256": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33"
+    }
+  ]
+}

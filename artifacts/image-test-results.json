@@ -1,0 +1,80 @@
+{
+  "scope": "Three single-run original-prompt tests, not a model benchmark or product-fidelity test",
+  "items": [
+    {
+      "id": "IMG-EC-01",
+      "artifact": "artifacts/IMG-EC-01.png",
+      "tool": "image_gen.imagegen (built-in)",
+      "execution_prompt": "生成一张图片，严格执行以下原创测试提示词 IMG-EC-01：为一个虚构的无品牌哑光象牙白保温杯制作电商主图。杯身为无缝圆柱形，圆润窄口杯盖，底部一条细香槟金金属环。唯一一个杯子，正面略偏三分之四视角，居中，产品完整且不裁切，纯白背景，接地柔和阴影，高端商业棚拍，陶瓷般微纹理与真实金属反射，产品占画面高度约75%，四周留足裁切空间。正方形构图。不生成文字、品牌或水印。",
+      "transparent_background": false,
+      "model_version": "not exposed by tool result",
+      "seed": "not exposed",
+      "attempts": 1,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "73a9a74a0d38f6ee1e66744a58b84abeef7bafe9c612e76481aecab5fb364001",
+      "review": "visual inspection of actual generated image",
+      "status": "passed-with-notes",
+      "observations": [
+        "只有一个保温杯，主体完整，白底、柔和接地阴影可见",
+        "象牙白杯身、金色底环及棚拍质感符合描述",
+        "未见生成文字或品牌"
+      ],
+      "limitations": [
+        "产品比要求的约75%画高略大；正式投放前可做版式裁切检查",
+        "无真实商品参考，因此只验概念构图，未验证实物保真"
+      ]
+    },
+    {
+      "id": "IMG-FILM-03",
+      "artifact": "artifacts/IMG-FILM-03.png",
+      "tool": "image_gen.imagegen (built-in)",
+      "execution_prompt": "生成单张图片，严格执行原创测试提示词 IMG-FILM-03：原创科幻电影的单张分镜关键帧：一位30岁的成年女性设备维修员，深棕短发，穿赭橙工作夹克，肩背旧工具包，站在废弃的山间气象站门前，向右侧窗内看。黎明蓝色环境光，窗内柔暖琥珀灯光，地上薄雪和少量水汽。全景偏中远景，人物在左侧三分之一，右侧保留建筑结构，平视，35mm电影摄影，克制的写实美术，清楚的叙事焦点，16:9。不生成文字、品牌或水印。",
+      "transparent_background": false,
+      "model_version": "not exposed by tool result",
+      "seed": "not exposed",
+      "attempts": 1,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "bd1473c1c6497edaf817faa9cc1b23488aff5be2ae0bb4c3ce1cce62d31ca81f",
+      "review": "visual inspection of actual generated image",
+      "status": "passed-with-notes",
+      "observations": [
+        "单个成年女性角色在左侧，橙夹克和工具包可见",
+        "右侧气象站与窗内暖光、室外冷色黎明和薄雪可见",
+        "景别和叙事方向符合关键帧用途"
+      ],
+      "limitations": [
+        "只生成一个关键帧，没有同角色多镜头对照，不验连续性",
+        "未通过视频生成或动作测试"
+      ]
+    },
+    {
+      "id": "IMG-FILM-08",
+      "artifact": "artifacts/IMG-FILM-08.png",
+      "tool": "image_gen.imagegen (built-in)",
+      "execution_prompt": "生成单张图片，严格执行原创测试提示词 IMG-FILM-08：口播视频使用的单张原创编辑插画：一个极简深蓝色立体文件夹，旁边三张干净的白色卡片，以有序的由散到整齐的状态围绕文件夹漂浮。淡米白背景，柔和投影，珊瑚橙小面积点缀，形体轮廓清楚，居中偏下，上方留30%空白供后期真实字体排版。现代杂志插画，简洁，高对比，9:16，无文字无数字无Logo。",
+      "transparent_background": false,
+      "model_version": "not exposed by tool result",
+      "seed": "not exposed",
+      "attempts": 1,
+      "width": 941,
+      "height": 1672,
+      "mode": "RGB",
+      "sha256": "83be62fd5076e7d1525c255083217ffd643a04b81a58ade48a7885fcbb674202",
+      "review": "visual inspection of actual generated image",
+      "status": "passed-with-notes",
+      "observations": [
+        "深蓝文件夹与三张白卡片可见，橙色点缀符合描述",
+        "画面上部有大面积留白，适合真实字体后期排版",
+        "没有可读文字、数字或品牌"
+      ],
+      "limitations": [
+        "背景为不透明米白，不能当透明前景直接使用",
+        "只验静态插画；Remotion中另用代码添加文字与动画"
+      ]
+    }
+  ]
+}
