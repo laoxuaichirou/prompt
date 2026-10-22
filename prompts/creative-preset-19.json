@@ -1,0 +1,10 @@
+{
+  "id": "creative-preset-19",
+  "prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。 同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。 图片内不要添加标题、UI、按钮、水印或说明文字。 三人实为同一人三个视图，正面、左侧、背面，等高基线；留足头脚空间。单肩包在同一身体左侧，侧面与背面肩带相符。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-character；严格使用此图，不引用其他对话图片。",
+  "base": "base-character",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-character.png"
+  ],
+  "kind": "preset",
+  "generated_by": "ChatGPT"
+}

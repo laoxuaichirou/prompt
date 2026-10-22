@@ -1,0 +1,10 @@
+{
+  "id": "camera-preview-01",
+  "prompt": "制作电影人像的摄影意图示例，摄影参数语义参考：ARRI ALEXA 35（阿莱），Cooke S4，85 mm，f/1.8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+  "base": null,
+  "reference_paths": [],
+  "kind": "preset",
+  "generated_by": "ChatGPT",
+  "path": "/workspace/generated_images/exec-74475fa5-2566-4c2a-9ebd-31d1e3c7f175.png",
+  "time": "2026-10-22T14:32:56.652Z"
+}

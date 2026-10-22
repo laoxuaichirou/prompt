@@ -1,0 +1,1920 @@
+{
+  "source_files": [
+    {
+      "path": "src/client/stage/creative-settings.ts",
+      "sha256": "03b567de3ddb88b7b56736e4fb0ba6122b51db126b1934f732c4ff47515afe62"
+    },
+    {
+      "path": "src/client/stage/CreativeControls.tsx",
+      "sha256": "c3479dce6fa235b9ed8095fbc203b8cb758e6a90f78cc9f840c8fe43d2c70ef3"
+    },
+    {
+      "path": "src/client/stage/creative-controls.css",
+      "sha256": "50e4211b4ad106f57997f993765152e2873c0823a8be2f9d7b122949ed8a728a"
+    }
+  ],
+  "image_presets": [
+    {
+      "id": "creative-preset-0",
+      "slot": "filter",
+      "category": "通用",
+      "name": "柯达",
+      "prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。"
+    },
+    {
+      "id": "creative-preset-1",
+      "slot": "filter",
+      "category": "通用",
+      "name": "富士",
+      "prompt": "清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。"
+    },
+    {
+      "id": "creative-preset-2",
+      "slot": "filter",
+      "category": "通用",
+      "name": "伊尔福",
+      "prompt": "黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。"
+    },
+    {
+      "id": "creative-preset-3",
+      "slot": "filter",
+      "category": "通用",
+      "name": "电影胶片",
+      "prompt": "电影负片色彩，克制饱和度，柔和高光和深邃阴影。"
+    },
+    {
+      "id": "creative-preset-4",
+      "slot": "filter",
+      "category": "通用",
+      "name": "宝丽来",
+      "prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。"
+    },
+    {
+      "id": "creative-preset-5",
+      "slot": "filter",
+      "category": "通用",
+      "name": "电影光效",
+      "prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。"
+    },
+    {
+      "id": "creative-preset-6",
+      "slot": "filter",
+      "category": "通用",
+      "name": "HDR",
+      "prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。"
+    },
+    {
+      "id": "creative-preset-7",
+      "slot": "filter",
+      "category": "通用",
+      "name": "柔焦效果",
+      "prompt": "柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。"
+    },
+    {
+      "id": "creative-preset-8",
+      "slot": "filter",
+      "category": "通用",
+      "name": "胶片颗粒",
+      "prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。"
+    },
+    {
+      "id": "creative-preset-9",
+      "slot": "filter",
+      "category": "通用",
+      "name": "赛博朋克",
+      "prompt": "夜间霓虹青红对照，湿润反光环境，主体清晰。"
+    },
+    {
+      "id": "creative-preset-10",
+      "slot": "filter",
+      "category": "通用",
+      "name": "复古色调",
+      "prompt": "暖黄褪色和低饱和阴影，复古生活摄影。"
+    },
+    {
+      "id": "creative-preset-11",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "清透美颜",
+      "prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。"
+    },
+    {
+      "id": "creative-preset-12",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "柔肤美颜",
+      "prompt": "柔化局部瑕疵但保留面部身份和自然纹理。"
+    },
+    {
+      "id": "creative-preset-13",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "细腻肌理",
+      "prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。"
+    },
+    {
+      "id": "creative-preset-14",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "奶油肌",
+      "prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。"
+    },
+    {
+      "id": "creative-preset-15",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "柔化质感",
+      "prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。"
+    },
+    {
+      "id": "creative-preset-16",
+      "slot": "filter",
+      "category": "人像质感",
+      "name": "哑光肌理",
+      "prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。"
+    },
+    {
+      "id": "creative-preset-17",
+      "slot": "preset",
+      "category": "功能",
+      "name": "全景图",
+      "prompt": "将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。"
+    },
+    {
+      "id": "creative-preset-18",
+      "slot": "preset",
+      "category": "功能",
+      "name": "多机位九宫格",
+      "prompt": "生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。"
+    },
+    {
+      "id": "creative-preset-19",
+      "slot": "preset",
+      "category": "功能",
+      "name": "人物三视图",
+      "prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。"
+    },
+    {
+      "id": "creative-preset-20",
+      "slot": "preset",
+      "category": "功能",
+      "name": "4视图",
+      "prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。"
+    },
+    {
+      "id": "creative-preset-21",
+      "slot": "preset",
+      "category": "功能",
+      "name": "人物设计图",
+      "prompt": "制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。"
+    },
+    {
+      "id": "creative-preset-22",
+      "slot": "preset",
+      "category": "功能",
+      "name": "场景设计图",
+      "prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。"
+    },
+    {
+      "id": "creative-preset-23",
+      "slot": "preset",
+      "category": "功能",
+      "name": "道具设计图",
+      "prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。"
+    },
+    {
+      "id": "creative-preset-24",
+      "slot": "preset",
+      "category": "功能",
+      "name": "3秒后",
+      "prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。"
+    },
+    {
+      "id": "creative-preset-25",
+      "slot": "preset",
+      "category": "功能",
+      "name": "5秒前",
+      "prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。"
+    },
+    {
+      "id": "creative-preset-26",
+      "slot": "preset",
+      "category": "功能",
+      "name": "电影级光影校正",
+      "prompt": "保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。"
+    }
+  ],
+  "camera_presets": [
+    {
+      "name": "电影人像",
+      "body": "ARRI ALEXA 35（阿莱）",
+      "lens": "Cooke S4",
+      "focal": "85 mm",
+      "aperture": "f/1.8"
+    },
+    {
+      "name": "环境纪实",
+      "body": "Contax T2（康泰时）",
+      "lens": "Zeiss Ultra Prime",
+      "focal": "35 mm",
+      "aperture": "f/5.6"
+    },
+    {
+      "name": "广角建筑",
+      "body": "Sony VENICE（索尼）",
+      "lens": "移轴镜头",
+      "focal": "24 mm",
+      "aperture": "f/8"
+    },
+    {
+      "name": "产品微距",
+      "body": "Hasselblad X2D",
+      "lens": "微距镜头",
+      "focal": "105 mm",
+      "aperture": "f/8"
+    }
+  ],
+  "character_groups": [
+    {
+      "tab": "基础",
+      "name": "性别表达",
+      "options": [
+        "非二元",
+        "男性",
+        "女性",
+        "中性"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "基础",
+      "name": "年龄段",
+      "options": [
+        "儿童（6–12）",
+        "少年（13–17）",
+        "青年（18–25）",
+        "轻熟（26–35）",
+        "中年（36–50）",
+        "熟龄（51–65）",
+        "老年（65+）"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "基础",
+      "name": "种族 / 族裔",
+      "options": [
+        "北美原住民",
+        "大洋洲",
+        "东南亚",
+        "东亚",
+        "混血",
+        "拉丁美洲",
+        "南亚",
+        "欧洲",
+        "撒哈拉以南非洲",
+        "西亚/北非",
+        "中亚"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "基础",
+      "name": "时代背景",
+      "options": [
+        "古代（先秦–明清）",
+        "中世纪",
+        "近代（民国/维多利亚）",
+        "现代",
+        "近未来赛博",
+        "远未来科幻",
+        "架空奇幻",
+        "末日废土"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "基础",
+      "name": "职业身份",
+      "options": [
+        "白领",
+        "厨师",
+        "服务员/店员",
+        "海盗",
+        "护士",
+        "画家/艺术家",
+        "机器人/仿生人",
+        "教师",
+        "精灵/妖精",
+        "警察",
+        "军人",
+        "流浪者/乞丐",
+        "魔法师",
+        "偶像明星",
+        "企业家/老板",
+        "忍者/刺客",
+        "赛博黑客",
+        "舞者",
+        "侠客",
+        "学生",
+        "医生",
+        "音乐家",
+        "运动员",
+        "侦探"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "服装风格",
+      "options": [
+        "哥特暗黑",
+        "工装/劳工",
+        "古风汉服",
+        "街头潮牌",
+        "军装/军事",
+        "铠甲战士",
+        "礼服盛装",
+        "洛丽塔",
+        "魔法长袍",
+        "朋克/摇滚",
+        "日常休闲",
+        "日式和服",
+        "赛博机能",
+        "商务正装",
+        "睡衣/居家",
+        "田园/森女",
+        "未来科幻",
+        "西部牛仔",
+        "学院风",
+        "雅痞绅士",
+        "泳装/沙滩",
+        "运动休闲"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "上装",
+      "options": [
+        "背心/马甲",
+        "衬衫",
+        "吊带",
+        "斗篷/披肩",
+        "风衣",
+        "夹克",
+        "露胳装",
+        "毛衣",
+        "抹胸",
+        "皮衣",
+        "卫衣",
+        "无袖",
+        "西装外套",
+        "针织衫",
+        "T恤"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "下装",
+      "options": [
+        "半身裙",
+        "背带裤",
+        "打底裤/leggings",
+        "短裤",
+        "短裙",
+        "工装裤",
+        "哈伦裤",
+        "阔腿裤",
+        "牛仔裤",
+        "蓬蓬裙",
+        "西裤",
+        "长裙"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "配色",
+      "options": [
+        "大地色",
+        "单色全白",
+        "单色全黑",
+        "黑白灰",
+        "冷色调",
+        "马卡龙色",
+        "迷彩/军绿",
+        "明亮高饱和",
+        "莫兰迪低饱和",
+        "霓虹色",
+        "暖色调",
+        "撞色对比"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "配饰",
+      "options": [
+        "包袋",
+        "翅膀/尾巴",
+        "耳饰",
+        "发饰",
+        "戒指",
+        "帽子",
+        "面具",
+        "墨镜",
+        "手表",
+        "手环/手链",
+        "手套",
+        "围巾",
+        "武器",
+        "项链",
+        "眼镜",
+        "腰带",
+        "choker",
+        "无"
+      ],
+      "multi": true
+    },
+    {
+      "tab": "妆容与穿搭",
+      "name": "妆容",
+      "options": [
+        "素颜",
+        "自然裸妆",
+        "清透日常妆",
+        "复古红唇",
+        "烟熏妆",
+        "舞台浓妆",
+        "国风花钿",
+        "雀斑妆",
+        "赛博金属妆",
+        "柔雾哑光妆",
+        "水光妆"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "脸型",
+      "options": [
+        "鹅蛋脸",
+        "方脸",
+        "方圆脸",
+        "瓜子脸",
+        "梨形脸",
+        "菱形脸",
+        "心形脸",
+        "圆脸",
+        "长脸",
+        "钻石脸"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "眼型",
+      "options": [
+        "丹凤眼",
+        "狐狸眼",
+        "柳叶眼",
+        "上扬猫眼",
+        "深邃眼窝",
+        "睡凤眼",
+        "桃花眼",
+        "铜铃眼",
+        "细长眼",
+        "下垂眼",
+        "杏眼",
+        "圆眼"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "眉型",
+      "options": [
+        "粗挑眉",
+        "断眉/缺眉",
+        "剑眉",
+        "柳叶弯眉",
+        "欧式挑眉",
+        "新月眉",
+        "野生眉",
+        "一字眉",
+        "远山眉",
+        "自然平眉"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "鼻型",
+      "options": [
+        "精致小翘鼻",
+        "立体高鼻梁",
+        "柔和圆鼻头",
+        "蒜头鼻",
+        "英气直鼻",
+        "鹰钩鼻",
+        "窄直高鼻",
+        "自然直鼻"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "唇型",
+      "options": [
+        "薄唇",
+        "饱满唇",
+        "嘟嘟唇",
+        "厚唇",
+        "微笑唇",
+        "下垂唇",
+        "自然唇",
+        "M唇"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "肤色",
+      "options": [
+        "苍白肤色",
+        "古铜色",
+        "冷白皮",
+        "暖白皮",
+        "雀斑肌肤",
+        "深肤色",
+        "小麦色",
+        "自然色"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "面部气质",
+      "options": [
+        "成熟绅士",
+        "高级骨相",
+        "古典温婉",
+        "可爱幼态",
+        "浓颜立体",
+        "清冷疏离",
+        "柔和自然",
+        "少年感",
+        "书卷文雅",
+        "甜美元气",
+        "仙气出尘",
+        "厌世高级",
+        "妩媚魅惑",
+        "野性粗犷",
+        "英气利落",
+        "中性飒爽"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "五官",
+      "name": "标志特征",
+      "options": [
+        "疤痕",
+        "胡须",
+        "虎牙",
+        "酒窝",
+        "泪痣",
+        "梨涡",
+        "眉间花钿",
+        "美人尖",
+        "面部纹身",
+        "雀斑",
+        "卧蚕",
+        "无"
+      ],
+      "multi": true
+    },
+    {
+      "tab": "体型",
+      "name": "体型",
+      "options": [
+        "丰满曲线",
+        "肌肉壮汉",
+        "娇小玲珑",
+        "微胖丰腴",
+        "纤细苗条",
+        "小骨架纤薄",
+        "修长挺拔",
+        "匀称标准",
+        "运动健美",
+        "壮硕魁梧"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "体型",
+      "name": "身高感",
+      "options": [
+        "高挑",
+        "矮小",
+        "中等"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "体型",
+      "name": "姿态",
+      "options": [
+        "奔跑",
+        "侧身回眸",
+        "蹲下/跪姿",
+        "双手叉腰",
+        "躺卧",
+        "跳跃腾空",
+        "行走动态",
+        "倚靠墙",
+        "拥抱/互动",
+        "战斗姿态",
+        "自然站立",
+        "坐姿"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "发型",
+      "name": "头发长度",
+      "options": [
+        "超短",
+        "超长发",
+        "短发",
+        "光头",
+        "齐耳",
+        "齐肩",
+        "长发",
+        "中长发"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "发型",
+      "name": "发型款式",
+      "options": [
+        "编发",
+        "寸头",
+        "大波浪",
+        "蛋卷头",
+        "公主切",
+        "狼尾",
+        "梨花头",
+        "马尾",
+        "莫西干",
+        "盘发",
+        "泡面卷",
+        "双马尾",
+        "秃头/地中海",
+        "丸子头",
+        "微分碎盖",
+        "小卷",
+        "羊毛卷",
+        "脏辫",
+        "直发",
+        "鲻鱼头"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "发型",
+      "name": "刘海",
+      "options": [
+        "八字刘海",
+        "侧分刘海",
+        "法式刘海",
+        "厚齐刘海",
+        "空气刘海",
+        "龙须刘海",
+        "眉上短刘海",
+        "齐刘海",
+        "胎毛刘海",
+        "无刘海"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "发型",
+      "name": "发色",
+      "options": [
+        "彩虹色",
+        "橙色",
+        "粉色",
+        "红色",
+        "灰色",
+        "渐变挑染",
+        "金色",
+        "蓝色",
+        "栗棕",
+        "绿色",
+        "深棕",
+        "亚麻金",
+        "银白",
+        "紫色",
+        "自然黑"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "核心性格",
+      "options": [
+        "傲娇",
+        "霸道强势",
+        "沉稳内敛",
+        "成熟魅惑",
+        "呆萌可爱",
+        "腹黑",
+        "高冷疏离",
+        "清冷仙气",
+        "热血正义",
+        "温柔治愈",
+        "邪魅狂狷",
+        "阳光开朗",
+        "英气飒爽",
+        "慵懒性感",
+        "忧郁文艺"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "整体氛围",
+      "options": [
+        "暗黑神秘",
+        "皇室贵气",
+        "江湖侠气",
+        "恐怖惊悚",
+        "邻家亲切",
+        "末世荒凉",
+        "赛博边缘",
+        "史诗宏大",
+        "童话梦幻",
+        "校园青春",
+        "职场精英",
+        "治愈系"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "渲染媒介",
+      "options": [
+        "2D动漫（国风）",
+        "2D动漫（日系）",
+        "3D渲染",
+        "浮世绘",
+        "黑白漫画",
+        "厚涂插画",
+        "美式卡通",
+        "黏土动画",
+        "赛璐璐",
+        "水彩手绘",
+        "水墨国风",
+        "像素风",
+        "油画质感",
+        "真人写实"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "精细度",
+      "options": [
+        "标准完成",
+        "草稿速涂",
+        "超精细8K",
+        "精细刻画"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "景别",
+      "options": [
+        "半身像",
+        "七分身",
+        "全身像",
+        "特写大头像",
+        "胸像",
+        "远景",
+        "证件头像"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "角度",
+      "options": [
+        "侧面90°",
+        "大仰拍",
+        "俯拍/上帝视角",
+        "回眸",
+        "轻转15°",
+        "微俯拍",
+        "微仰拍",
+        "正面平视"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "光线",
+      "options": [
+        "窗边侧光",
+        "丁达尔光",
+        "黄金时刻",
+        "冷调月光",
+        "米白柔光",
+        "霓虹混光",
+        "逆光轮廓",
+        "舞台聚光",
+        "阴天散射光",
+        "影棚硬光",
+        "烛光暖光",
+        "自然顺光"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "背景",
+      "options": [
+        "城市街景",
+        "抽象纹理",
+        "纯白底",
+        "纯色背景",
+        "渐变背景",
+        "浅灰影棚",
+        "实景虚化",
+        "室内场景",
+        "透明底",
+        "自然风景"
+      ],
+      "multi": false
+    },
+    {
+      "tab": "风格",
+      "name": "表情",
+      "options": [
+        "悲伤",
+        "鄙视",
+        "沉静思考",
+        "得意",
+        "调皮眨眼",
+        "愤怒",
+        "害羞",
+        "惊讶",
+        "开怀大笑",
+        "恐惧",
+        "哭泣",
+        "冷漠",
+        "平静正视",
+        "轻微浅笑",
+        "若有所思",
+        "恬静放空",
+        "自信克制",
+        "自信微笑"
+      ],
+      "multi": false
+    }
+  ],
+  "existing_style_count": 205,
+  "existing_style_images_found": 205,
+  "existing_styles": [
+    {
+      "id": "001",
+      "name": "日式日常青春动画",
+      "thumbnail": "/api/styles/001.png"
+    },
+    {
+      "id": "002",
+      "name": "日式可爱软萌动画",
+      "thumbnail": "/api/styles/002.png"
+    },
+    {
+      "id": "003",
+      "name": "日式简化表情卡通",
+      "thumbnail": "/api/styles/003.png"
+    },
+    {
+      "id": "004",
+      "name": "老上海民族动画",
+      "thumbnail": "/api/styles/004.png"
+    },
+    {
+      "id": "005",
+      "name": "中国水墨动画",
+      "thumbnail": "/api/styles/005.png"
+    },
+    {
+      "id": "006",
+      "name": "中国剪纸动画",
+      "thumbnail": "/api/styles/006.png"
+    },
+    {
+      "id": "007",
+      "name": "中国皮影动画",
+      "thumbnail": "/api/styles/007.png"
+    },
+    {
+      "id": "008",
+      "name": "国风赛璐璐动画",
+      "thumbnail": "/api/styles/008.png"
+    },
+    {
+      "id": "009",
+      "name": "国风厚涂插画",
+      "thumbnail": "/api/styles/009.png"
+    },
+    {
+      "id": "010",
+      "name": "中式民俗怪谈",
+      "thumbnail": "/api/styles/010.png"
+    },
+    {
+      "id": "011",
+      "name": "水墨国漫动画",
+      "thumbnail": "/api/styles/011.png"
+    },
+    {
+      "id": "012",
+      "name": "清新治愈国漫",
+      "thumbnail": "/api/styles/012.png"
+    },
+    {
+      "id": "013",
+      "name": "日式圆润儿童漫画",
+      "thumbnail": "/api/styles/013.png"
+    },
+    {
+      "id": "014",
+      "name": "90年代魔法少女动画",
+      "thumbnail": "/api/styles/014.png"
+    },
+    {
+      "id": "015",
+      "name": "日式热血动画",
+      "thumbnail": "/api/styles/015.png"
+    },
+    {
+      "id": "016",
+      "name": "航海冒险少年漫",
+      "thumbnail": "/api/styles/016.png"
+    },
+    {
+      "id": "017",
+      "name": "忍者热血少年漫",
+      "thumbnail": "/api/styles/017.png"
+    },
+    {
+      "id": "018",
+      "name": "时尚灵异少年漫",
+      "thumbnail": "/api/styles/018.png"
+    },
+    {
+      "id": "019",
+      "name": "奇异硬派变态漫画",
+      "thumbnail": "/api/styles/019.png"
+    },
+    {
+      "id": "020",
+      "name": "写实青春运动漫画",
+      "thumbnail": "/api/styles/020.png"
+    },
+    {
+      "id": "021",
+      "name": "80年代日式赛博动画",
+      "thumbnail": "/api/styles/021.png"
+    },
+    {
+      "id": "022",
+      "name": "冷峻赛博哲学动画",
+      "thumbnail": "/api/styles/022.png"
+    },
+    {
+      "id": "023",
+      "name": "日式实验变形动画",
+      "thumbnail": "/api/styles/023.png"
+    },
+    {
+      "id": "024",
+      "name": "日式心理成人动画",
+      "thumbnail": "/api/styles/024.png"
+    },
+    {
+      "id": "025",
+      "name": "暖阳赛璐璐CG",
+      "thumbnail": "/api/styles/025.png"
+    },
+    {
+      "id": "026",
+      "name": "原子朋克末日风格",
+      "thumbnail": "/api/styles/026.png"
+    },
+    {
+      "id": "027",
+      "name": "手绘质感3D动画",
+      "thumbnail": "/api/styles/027.png"
+    },
+    {
+      "id": "028",
+      "name": "电影感",
+      "thumbnail": "/api/styles/028.png"
+    },
+    {
+      "id": "029",
+      "name": "UE5渲染风格",
+      "thumbnail": "/api/styles/029.png"
+    },
+    {
+      "id": "030",
+      "name": "电视剧感",
+      "thumbnail": "/api/styles/030.png"
+    },
+    {
+      "id": "031",
+      "name": "科幻国漫",
+      "thumbnail": "/api/styles/031.png"
+    },
+    {
+      "id": "032",
+      "name": "科幻机甲CG",
+      "thumbnail": "/api/styles/032.png"
+    },
+    {
+      "id": "033",
+      "name": "国漫3D电影",
+      "thumbnail": "/api/styles/033.png"
+    },
+    {
+      "id": "034",
+      "name": "爱死机CG短片",
+      "thumbnail": "/api/styles/034.png"
+    },
+    {
+      "id": "035",
+      "name": "漫画感3D动画",
+      "thumbnail": "/api/styles/035.png"
+    },
+    {
+      "id": "036",
+      "name": "短剧风格",
+      "thumbnail": "/api/styles/036.png"
+    },
+    {
+      "id": "037",
+      "name": "3D乙游",
+      "thumbnail": "/api/styles/037.png"
+    },
+    {
+      "id": "038",
+      "name": "日式幻想CG",
+      "thumbnail": "/api/styles/038.png"
+    },
+    {
+      "id": "039",
+      "name": "史诗奇幻CG",
+      "thumbnail": "/api/styles/039.png"
+    },
+    {
+      "id": "040",
+      "name": "邵氏电影",
+      "thumbnail": "/api/styles/040.png"
+    },
+    {
+      "id": "041",
+      "name": "游戏动画电影感",
+      "thumbnail": "/api/styles/041.png"
+    },
+    {
+      "id": "042",
+      "name": "宫斗权谋",
+      "thumbnail": "/api/styles/042.png"
+    },
+    {
+      "id": "043",
+      "name": "时尚大片",
+      "thumbnail": "/api/styles/043.png"
+    },
+    {
+      "id": "044",
+      "name": "温情家庭动画",
+      "thumbnail": "/api/styles/044.png"
+    },
+    {
+      "id": "045",
+      "name": "原子朋克",
+      "thumbnail": "/api/styles/045.png"
+    },
+    {
+      "id": "046",
+      "name": "梦幻童话动画",
+      "thumbnail": "/api/styles/046.png"
+    },
+    {
+      "id": "047",
+      "name": "赛璐璐CG",
+      "thumbnail": "/api/styles/047.png"
+    },
+    {
+      "id": "048",
+      "name": "单色线稿",
+      "thumbnail": "/api/styles/048.png"
+    },
+    {
+      "id": "049",
+      "name": "插画卡通",
+      "thumbnail": "/api/styles/049.png"
+    },
+    {
+      "id": "050",
+      "name": "二维渲染动漫",
+      "thumbnail": "/api/styles/050.png"
+    },
+    {
+      "id": "051",
+      "name": "Q版2D",
+      "thumbnail": "/api/styles/051.png"
+    },
+    {
+      "id": "052",
+      "name": "3D国漫",
+      "thumbnail": "/api/styles/052.png"
+    },
+    {
+      "id": "053",
+      "name": "2D国漫",
+      "thumbnail": "/api/styles/053.png"
+    },
+    {
+      "id": "054",
+      "name": "国风水墨2D",
+      "thumbnail": "/api/styles/054.png"
+    },
+    {
+      "id": "055",
+      "name": "生活方式摄影",
+      "thumbnail": "/api/styles/055.png"
+    },
+    {
+      "id": "056",
+      "name": "潮玩手办",
+      "thumbnail": "/api/styles/056.png"
+    },
+    {
+      "id": "057",
+      "name": "国风悬疑2D",
+      "thumbnail": "/api/styles/057.png"
+    },
+    {
+      "id": "058",
+      "name": "韩剧柔光",
+      "thumbnail": "/api/styles/058.png"
+    },
+    {
+      "id": "059",
+      "name": "商业广告大片",
+      "thumbnail": "/api/styles/059.png"
+    },
+    {
+      "id": "060",
+      "name": "东方神话",
+      "thumbnail": "/api/styles/060.png"
+    },
+    {
+      "id": "061",
+      "name": "暗童话3D",
+      "thumbnail": "/api/styles/061.png"
+    },
+    {
+      "id": "062",
+      "name": "奶油甜品3D",
+      "thumbnail": "/api/styles/062.png"
+    },
+    {
+      "id": "063",
+      "name": "国风悬疑3D",
+      "thumbnail": "/api/styles/063.png"
+    },
+    {
+      "id": "064",
+      "name": "国产悬疑",
+      "thumbnail": "/api/styles/064.png"
+    },
+    {
+      "id": "065",
+      "name": "2D赛璐璐",
+      "thumbnail": "/api/styles/065.png"
+    },
+    {
+      "id": "066",
+      "name": "90年代港片",
+      "thumbnail": "/api/styles/066.png"
+    },
+    {
+      "id": "067",
+      "name": "新海城风格",
+      "thumbnail": "/api/styles/067.png"
+    },
+    {
+      "id": "068",
+      "name": "科幻电影",
+      "thumbnail": "/api/styles/068.png"
+    },
+    {
+      "id": "069",
+      "name": "2D治愈",
+      "thumbnail": "/api/styles/069.png"
+    },
+    {
+      "id": "070",
+      "name": "硬科幻电影",
+      "thumbnail": "/api/styles/070.png"
+    },
+    {
+      "id": "071",
+      "name": "日漫2D热血",
+      "thumbnail": "/api/styles/071.png"
+    },
+    {
+      "id": "072",
+      "name": "黏土动画",
+      "thumbnail": "/api/styles/072.png"
+    },
+    {
+      "id": "073",
+      "name": "柴油朋克",
+      "thumbnail": "/api/styles/073.png"
+    },
+    {
+      "id": "074",
+      "name": "纪实纪录片",
+      "thumbnail": "/api/styles/074.png"
+    },
+    {
+      "id": "075",
+      "name": "新闻纪实摄影",
+      "thumbnail": "/api/styles/075.png"
+    },
+    {
+      "id": "076",
+      "name": "街头摄影",
+      "thumbnail": "/api/styles/076.png"
+    },
+    {
+      "id": "077",
+      "name": "黑白电影",
+      "thumbnail": "/api/styles/077.png"
+    },
+    {
+      "id": "078",
+      "name": "黑色犯罪电影",
+      "thumbnail": "/api/styles/078.png"
+    },
+    {
+      "id": "079",
+      "name": "悬疑电影",
+      "thumbnail": "/api/styles/079.png"
+    },
+    {
+      "id": "080",
+      "name": "恐怖片",
+      "thumbnail": "/api/styles/080.png"
+    },
+    {
+      "id": "081",
+      "name": "日式恐怖",
+      "thumbnail": "/api/styles/081.png"
+    },
+    {
+      "id": "082",
+      "name": "宗教恐怖",
+      "thumbnail": "/api/styles/082.png"
+    },
+    {
+      "id": "083",
+      "name": "监控恐怖",
+      "thumbnail": "/api/styles/083.png"
+    },
+    {
+      "id": "084",
+      "name": "港风霓虹",
+      "thumbnail": "/api/styles/084.png"
+    },
+    {
+      "id": "085",
+      "name": "香港警匪片",
+      "thumbnail": "/api/styles/085.png"
+    },
+    {
+      "id": "086",
+      "name": "港式迷离文艺",
+      "thumbnail": "/api/styles/086.png"
+    },
+    {
+      "id": "087",
+      "name": "赛博朋克电影",
+      "thumbnail": "/api/styles/087.png"
+    },
+    {
+      "id": "088",
+      "name": "末世废土",
+      "thumbnail": "/api/styles/088.png"
+    },
+    {
+      "id": "089",
+      "name": "写实武侠",
+      "thumbnail": "/api/styles/089.png"
+    },
+    {
+      "id": "090",
+      "name": "仙侠玄幻",
+      "thumbnail": "/api/styles/090.png"
+    },
+    {
+      "id": "091",
+      "name": "中式梦核",
+      "thumbnail": "/api/styles/091.png"
+    },
+    {
+      "id": "092",
+      "name": "MV风格",
+      "thumbnail": "/api/styles/092.png"
+    },
+    {
+      "id": "093",
+      "name": "日系青春胶片",
+      "thumbnail": "/api/styles/093.png"
+    },
+    {
+      "id": "094",
+      "name": "复古电影",
+      "thumbnail": "/api/styles/094.png"
+    },
+    {
+      "id": "095",
+      "name": "老上海电影",
+      "thumbnail": "/api/styles/095.png"
+    },
+    {
+      "id": "096",
+      "name": "民国影楼",
+      "thumbnail": "/api/styles/096.png"
+    },
+    {
+      "id": "097",
+      "name": "昭和电影",
+      "thumbnail": "/api/styles/097.png"
+    },
+    {
+      "id": "098",
+      "name": "法式文艺",
+      "thumbnail": "/api/styles/098.png"
+    },
+    {
+      "id": "099",
+      "name": "北欧冷淡",
+      "thumbnail": "/api/styles/099.png"
+    },
+    {
+      "id": "100",
+      "name": "拉美魔幻现实",
+      "thumbnail": "/api/styles/100.png"
+    },
+    {
+      "id": "101",
+      "name": "荒诞喜剧电影",
+      "thumbnail": "/api/styles/101.png"
+    },
+    {
+      "id": "102",
+      "name": "超现实电影",
+      "thumbnail": "/api/styles/102.png"
+    },
+    {
+      "id": "103",
+      "name": "美式复古广告",
+      "thumbnail": "/api/styles/103.png"
+    },
+    {
+      "id": "104",
+      "name": "美式繁荣年代",
+      "thumbnail": "/api/styles/104.png"
+    },
+    {
+      "id": "105",
+      "name": "80年代录像厅",
+      "thumbnail": "/api/styles/105.png"
+    },
+    {
+      "id": "106",
+      "name": "90年代写实电影",
+      "thumbnail": "/api/styles/106.png"
+    },
+    {
+      "id": "107",
+      "name": "民俗志怪真人",
+      "thumbnail": "/api/styles/107.png"
+    },
+    {
+      "id": "108",
+      "name": "西部电影",
+      "thumbnail": "/api/styles/108.png"
+    },
+    {
+      "id": "109",
+      "name": "复古战争电影",
+      "thumbnail": "/api/styles/109.png"
+    },
+    {
+      "id": "110",
+      "name": "中世纪史诗",
+      "thumbnail": "/api/styles/110.png"
+    },
+    {
+      "id": "111",
+      "name": "维京传奇",
+      "thumbnail": "/api/styles/111.png"
+    },
+    {
+      "id": "112",
+      "name": "蓝调电影",
+      "thumbnail": "/api/styles/112.png"
+    },
+    {
+      "id": "113",
+      "name": "迷幻电影",
+      "thumbnail": "/api/styles/113.png"
+    },
+    {
+      "id": "114",
+      "name": "紫调梦幻电影",
+      "thumbnail": "/api/styles/114.png"
+    },
+    {
+      "id": "115",
+      "name": "星际史诗",
+      "thumbnail": "/api/styles/115.png"
+    },
+    {
+      "id": "116",
+      "name": "反乌托邦",
+      "thumbnail": "/api/styles/116.png"
+    },
+    {
+      "id": "117",
+      "name": "生化惊悚",
+      "thumbnail": "/api/styles/117.png"
+    },
+    {
+      "id": "118",
+      "name": "梦核影像",
+      "thumbnail": "/api/styles/118.png"
+    },
+    {
+      "id": "119",
+      "name": "怪核影像",
+      "thumbnail": "/api/styles/119.png"
+    },
+    {
+      "id": "120",
+      "name": "美式怪趣电影",
+      "thumbnail": "/api/styles/120.png"
+    },
+    {
+      "id": "121",
+      "name": "宫廷冷调",
+      "thumbnail": "/api/styles/121.png"
+    },
+    {
+      "id": "122",
+      "name": "喜剧冒险动画",
+      "thumbnail": "/api/styles/122.png"
+    },
+    {
+      "id": "123",
+      "name": "夸张卡通3D",
+      "thumbnail": "/api/styles/123.png"
+    },
+    {
+      "id": "124",
+      "name": "卡通小人",
+      "thumbnail": "/api/styles/124.png"
+    },
+    {
+      "id": "125",
+      "name": "超写实数字人",
+      "thumbnail": "/api/styles/125.png"
+    },
+    {
+      "id": "126",
+      "name": "二次元3D动画",
+      "thumbnail": "/api/styles/126.png"
+    },
+    {
+      "id": "127",
+      "name": "盲盒玩具",
+      "thumbnail": "/api/styles/127.png"
+    },
+    {
+      "id": "128",
+      "name": "毛绒玩具",
+      "thumbnail": "/api/styles/128.png"
+    },
+    {
+      "id": "129",
+      "name": "毛线3D卡通",
+      "thumbnail": "/api/styles/129.png"
+    },
+    {
+      "id": "130",
+      "name": "微缩玩具世界",
+      "thumbnail": "/api/styles/130.png"
+    },
+    {
+      "id": "131",
+      "name": "方块沙盒游戏",
+      "thumbnail": "/api/styles/131.png"
+    },
+    {
+      "id": "132",
+      "name": "积木玩具世界",
+      "thumbnail": "/api/styles/132.png"
+    },
+    {
+      "id": "133",
+      "name": "写实游戏CG",
+      "thumbnail": "/api/styles/133.png"
+    },
+    {
+      "id": "134",
+      "name": "游戏过场动画",
+      "thumbnail": "/api/styles/134.png"
+    },
+    {
+      "id": "135",
+      "name": "暗黑奇幻游戏",
+      "thumbnail": "/api/styles/135.png"
+    },
+    {
+      "id": "136",
+      "name": "魂系游戏美术",
+      "thumbnail": "/api/styles/136.png"
+    },
+    {
+      "id": "137",
+      "name": "赛博游戏电影",
+      "thumbnail": "/api/styles/137.png"
+    },
+    {
+      "id": "138",
+      "name": "开放世界游戏感",
+      "thumbnail": "/api/styles/138.png"
+    },
+    {
+      "id": "139",
+      "name": "影视怪兽CG",
+      "thumbnail": "/api/styles/139.png"
+    },
+    {
+      "id": "140",
+      "name": "莱卡定格动画",
+      "thumbnail": "/api/styles/140.png"
+    },
+    {
+      "id": "141",
+      "name": "西部写实游戏CG",
+      "thumbnail": "/api/styles/141.png"
+    },
+    {
+      "id": "142",
+      "name": "中式武侠游戏CG",
+      "thumbnail": "/api/styles/142.png"
+    },
+    {
+      "id": "143",
+      "name": "开放幻想二游3D",
+      "thumbnail": "/api/styles/143.png"
+    },
+    {
+      "id": "144",
+      "name": "星穹科幻二游3D",
+      "thumbnail": "/api/styles/144.png"
+    },
+    {
+      "id": "145",
+      "name": "美式英雄游戏3D",
+      "thumbnail": "/api/styles/145.png"
+    },
+    {
+      "id": "146",
+      "name": "果冻质感3D",
+      "thumbnail": "/api/styles/146.png"
+    },
+    {
+      "id": "147",
+      "name": "日式手绘童话动画",
+      "thumbnail": "/api/styles/147.png"
+    },
+    {
+      "id": "148",
+      "name": "日系新海诚动画",
+      "thumbnail": "/api/styles/148.png"
+    },
+    {
+      "id": "149",
+      "name": "都市咒术系动画",
+      "thumbnail": "/api/styles/149.png"
+    },
+    {
+      "id": "150",
+      "name": "日式华丽和风动画",
+      "thumbnail": "/api/styles/150.png"
+    },
+    {
+      "id": "151",
+      "name": "复古赛璐璐动画",
+      "thumbnail": "/api/styles/151.png"
+    },
+    {
+      "id": "152",
+      "name": "压迫史诗日漫",
+      "thumbnail": "/api/styles/152.png"
+    },
+    {
+      "id": "153",
+      "name": "粗粝青年动漫",
+      "thumbnail": "/api/styles/153.png"
+    },
+    {
+      "id": "154",
+      "name": "安静奇幻旅途动画",
+      "thumbnail": "/api/styles/154.png"
+    },
+    {
+      "id": "155",
+      "name": "日式黑白恐怖漫画",
+      "thumbnail": "/api/styles/155.png"
+    },
+    {
+      "id": "156",
+      "name": "日式粗线低细节卡通",
+      "thumbnail": "/api/styles/156.png"
+    },
+    {
+      "id": "157",
+      "name": "简化喜剧国漫",
+      "thumbnail": "/api/styles/157.png"
+    },
+    {
+      "id": "158",
+      "name": "国创实验短片",
+      "thumbnail": "/api/styles/158.png"
+    },
+    {
+      "id": "159",
+      "name": "现代都市国漫",
+      "thumbnail": "/api/styles/159.png"
+    },
+    {
+      "id": "160",
+      "name": "中国古风女频",
+      "thumbnail": "/api/styles/160.png"
+    },
+    {
+      "id": "161",
+      "name": "国风仙侠女频",
+      "thumbnail": "/api/styles/161.png"
+    },
+    {
+      "id": "162",
+      "name": "都市精致女频",
+      "thumbnail": "/api/styles/162.png"
+    },
+    {
+      "id": "163",
+      "name": "甜宠少女风",
+      "thumbnail": "/api/styles/163.png"
+    },
+    {
+      "id": "164",
+      "name": "韩式精致恋爱动画",
+      "thumbnail": "/api/styles/164.png"
+    },
+    {
+      "id": "165",
+      "name": "韩漫贵族幻想动画",
+      "thumbnail": "/api/styles/165.png"
+    },
+    {
+      "id": "166",
+      "name": "韩漫热血动作动画",
+      "thumbnail": "/api/styles/166.png"
+    },
+    {
+      "id": "167",
+      "name": "韩漫悬疑惊悚动画",
+      "thumbnail": "/api/styles/167.png"
+    },
+    {
+      "id": "168",
+      "name": "美式极简温柔卡通",
+      "thumbnail": "/api/styles/168.png"
+    },
+    {
+      "id": "169",
+      "name": "美式怪趣卡通",
+      "thumbnail": "/api/styles/169.png"
+    },
+    {
+      "id": "170",
+      "name": "经典美式弹性卡通",
+      "thumbnail": "/api/styles/170.png"
+    },
+    {
+      "id": "171",
+      "name": "美式讽刺家庭卡通",
+      "thumbnail": "/api/styles/171.png"
+    },
+    {
+      "id": "172",
+      "name": "美式粗糙剪纸卡通",
+      "thumbnail": "/api/styles/172.png"
+    },
+    {
+      "id": "173",
+      "name": "美式现代怪奇卡通",
+      "thumbnail": "/api/styles/173.png"
+    },
+    {
+      "id": "174",
+      "name": "美式柔和成长卡通",
+      "thumbnail": "/api/styles/174.png"
+    },
+    {
+      "id": "175",
+      "name": "美式黑暗英雄动画",
+      "thumbnail": "/api/styles/175.png"
+    },
+    {
+      "id": "176",
+      "name": "复古美式漫画",
+      "thumbnail": "/api/styles/176.png"
+    },
+    {
+      "id": "177",
+      "name": "比利时清线冒险漫画",
+      "thumbnail": "/api/styles/177.png"
+    },
+    {
+      "id": "178",
+      "name": "欧洲童话儿童漫画",
+      "thumbnail": "/api/styles/178.png"
+    },
+    {
+      "id": "179",
+      "name": "50年代美式现代动画",
+      "thumbnail": "/api/styles/179.png"
+    },
+    {
+      "id": "180",
+      "name": "复古电视卡通",
+      "thumbnail": "/api/styles/180.png"
+    },
+    {
+      "id": "181",
+      "name": "现代美式电视卡通",
+      "thumbnail": "/api/styles/181.png"
+    },
+    {
+      "id": "182",
+      "name": "怪趣儿童频道卡通",
+      "thumbnail": "/api/styles/182.png"
+    },
+    {
+      "id": "183",
+      "name": "几何可爱卡通",
+      "thumbnail": "/api/styles/183.png"
+    },
+    {
+      "id": "184",
+      "name": "简笔奇幻卡通",
+      "thumbnail": "/api/styles/184.png"
+    },
+    {
+      "id": "185",
+      "name": "成人科幻怪趣卡通",
+      "thumbnail": "/api/styles/185.png"
+    },
+    {
+      "id": "186",
+      "name": "美式报纸幽默漫画",
+      "thumbnail": "/api/styles/186.png"
+    },
+    {
+      "id": "187",
+      "name": "复古悬疑卡通",
+      "thumbnail": "/api/styles/187.png"
+    },
+    {
+      "id": "188",
+      "name": "美式街头动作卡通",
+      "thumbnail": "/api/styles/188.png"
+    },
+    {
+      "id": "189",
+      "name": "低龄温暖动画",
+      "thumbnail": "/api/styles/189.png"
+    },
+    {
+      "id": "190",
+      "name": "精致推理日常动画",
+      "thumbnail": "/api/styles/190.png"
+    },
+    {
+      "id": "191",
+      "name": "日式妖怪古风动画",
+      "thumbnail": "/api/styles/191.png"
+    },
+    {
+      "id": "192",
+      "name": "90年代灵异少年动画",
+      "thumbnail": "/api/styles/192.png"
+    },
+    {
+      "id": "193",
+      "name": "明治古风少年动画",
+      "thumbnail": "/api/styles/193.png"
+    },
+    {
+      "id": "194",
+      "name": "蒸汽奇幻少年漫",
+      "thumbnail": "/api/styles/194.png"
+    },
+    {
+      "id": "195",
+      "name": "江户科幻喜剧动画",
+      "thumbnail": "/api/styles/195.png"
+    },
+    {
+      "id": "196",
+      "name": "青春催泪动画",
+      "thumbnail": "/api/styles/196.png"
+    },
+    {
+      "id": "197",
+      "name": "少女日常轻喜剧",
+      "thumbnail": "/api/styles/197.png"
+    },
+    {
+      "id": "198",
+      "name": "强视觉实验日漫",
+      "thumbnail": "/api/styles/198.png"
+    },
+    {
+      "id": "199",
+      "name": "高冷晶体幻想动画",
+      "thumbnail": "/api/styles/199.png"
+    },
+    {
+      "id": "200",
+      "name": "唐风轻喜剧国漫",
+      "thumbnail": "/api/styles/200.png"
+    },
+    {
+      "id": "201",
+      "name": "都市异能国漫",
+      "thumbnail": "/api/styles/201.png"
+    },
+    {
+      "id": "202",
+      "name": "清甜东方恋爱国漫",
+      "thumbnail": "/api/styles/202.png"
+    },
+    {
+      "id": "203",
+      "name": "国漫夸张日常喜剧",
+      "thumbnail": "/api/styles/203.png"
+    },
+    {
+      "id": "204",
+      "name": "都市女性成长",
+      "thumbnail": "/api/styles/204.png"
+    },
+    {
+      "id": "205",
+      "name": "史诗电影",
+      "thumbnail": "/api/styles/205.png"
+    }
+  ],
+  "note": "Existing styles are listed for inventory only. Do not replace all 205 thumbnails. Character options total 406; only 12 lighting options are requested in P2."
+}

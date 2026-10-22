@@ -1,0 +1,13 @@
+{
+  "id": "creative-preset-25",
+  "prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。 沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-action；严格使用此图，不引用其他对话图片。 必须明显表现此前的瞬间：男子此时尚未伸手，右手完全收回自然垂放在身体右侧，左手也自然垂放，双手都远离杯子，身体稍微挺直，视线开始看向桌上白杯。杯子保持在相同桌面杯碟位置，杯柄相同，千万不能拿起杯子，不能把右手仍画在杯柄旁。相机、人物身份、蓝衬衣、米色裤子、背景家具灯光完全不变，只编辑姿势。此状态随后才会伸手取杯。不要拼图。",
+  "base": "base-action",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-action.png"
+  ],
+  "kind": "preset",
+  "generated_by": "ChatGPT",
+  "time": "2026-10-22T14:31:07.946Z",
+  "path": "/workspace/generated_images/exec-a6e25c5f-15b9-486a-a183-f030d3fc3f1a.png",
+  "retry_reason": "Initial output repeated base action; retry shows hands withdrawn."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "creative-preset-25",
+  "prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。 沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-action；严格使用此图，不引用其他对话图片。",
+  "base": "base-action",
+  "reference_paths": [
+    "/workspace/directorx-task5-preset-art/bases/base-action.png"
+  ],
+  "kind": "preset",
+  "generated_by": "ChatGPT"
+}

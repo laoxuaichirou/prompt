@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "stage": "first structural verification, aborted at first P1 record",
+  "script_error": "KeyError: 'source_prompt'",
+  "cause": "The verifier incorrectly indexed an optional field. P1/P2 requests omit source_prompt; the delivered mapping correctly uses null.",
+  "fix": "Use it.get('source_prompt') for the optional source prompt check; rerun the complete verifier.",
+  "asset_failure": false
+}

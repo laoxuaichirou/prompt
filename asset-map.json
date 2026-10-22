@@ -1,0 +1,3363 @@
+{
+  "schema": "directorx-preset-art-delivery/1",
+  "generated_by": "ChatGPT",
+  "built_at_utc": "2026-10-22T14:48:16.469558+00:00",
+  "summary": {
+    "P0": {
+      "requested": 27,
+      "generated": 27,
+      "needs_revision": 13
+    },
+    "P1": {
+      "requested": 4,
+      "generated": 4,
+      "needs_revision": 1
+    },
+    "P2": {
+      "requested": 12,
+      "generated": 12,
+      "needs_revision": 2
+    }
+  },
+  "status_definitions": {
+    "reviewed_candidate": "Actual generated, visually inspected creative candidate; not a target-provider or production approval.",
+    "needs_revision": "Actual files delivered; unresolved visual issues listed.",
+    "not_generated": "No image produced; file paths null."
+  },
+  "bases": [
+    {
+      "asset_id": "base-portrait",
+      "description": "原创约30岁成年人，正面略转15度、肩部以上肖像，头发不挡脸，无妆或淡妆，保留毛孔和少量真实皮肤细节；中灰背景、均匀自然光。16:9画面人脸居中，头顶下巴完整。",
+      "generated_by": "ChatGPT",
+      "path": "bases/base-portrait.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1888386,
+      "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22",
+      "actual_prompt": "编辑这张虚构成年女性肖像底图。保持同一个人、同一面部五官、肤色、自然皮肤纹理、发型、灰色衣服、15度头部角度、灰背景和均匀自然光不变。仅将相机后移，扩大构图：整个发顶最高处必须距画面顶部至少10%画面高度，头顶不能切掉，下巴和双肩完整，脸在画面中央。横向16:9独立照片，绝不美颜磨皮，绝不改身份，无文字无边框。",
+      "generation_record": "results/base-portrait-reframe.json",
+      "notes": "Portrait first output clipped crown; retained in attempts and reframed by image tool."
+    },
+    {
+      "asset_id": "base-scene",
+      "description": "原创成年人坐在咖啡馆窗边，中景，有白色杯子、红色物件、绿色植物和明暗层次；曝光与白平衡自然，平衡冷暖，不提前加胶片滤镜。16:9。",
+      "generated_by": "ChatGPT",
+      "path": "bases/base-scene.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2156776,
+      "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535",
+      "actual_prompt": "原创成年人坐在咖啡馆窗边，中景，有白色杯子、红色物件、绿色植物和明暗层次；曝光与白平衡自然，平衡冷暖，不提前加胶片滤镜。16:9。 虚构30岁成年男性，短深棕发，橄榄绿外衬米白T恤，窗在画面左侧，红色无字笔记本、白色杯子、绿色盆栽固定在桌上。中景。 独立单张原图，横向16:9画幅，尽可能1536×864。主体与关键结构都放在中央84%安全区。不加文字、字母、标签、边框、UI、水印。此为生成素材的中性底图，不能用拼图代替。",
+      "generation_record": "results/base-scene.json",
+      "notes": "Actual generated base. Full-body/prop raw margins tighter than requested; inspect before production."
+    },
+    {
+      "asset_id": "base-character",
+      "description": "原创成年冒险者，中性非暴露服装，蓝灰短外套、米白衬衫、深色长裤、棕鞋与单肩包。单人全身正面，浅灰背景，所有配件清晰，留足边距。",
+      "generated_by": "ChatGPT",
+      "path": "bases/base-character.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1701342,
+      "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23",
+      "actual_prompt": "原创成年冒险者，中性非暴露服装，蓝灰短外套、米白衬衫、深色长裤、棕鞋与单肩包。单人全身正面，浅灰背景，所有配件清晰，留足边距。 虚构30岁成年女性冒险者，深棕色短发，棕色单肩包斜跨身体，肩带结构简单合理。写实角色设定，四肢自然垂放。 独立单张原图，横向16:9画幅，尽可能1536×864。主体与关键结构都放在中央84%安全区。不加文字、字母、标签、边框、UI、水印。此为生成素材的中性底图，不能用拼图代替。",
+      "generation_record": "results/base-character.json",
+      "notes": "Actual generated base. Full-body/prop raw margins tighter than requested; inspect before production."
+    },
+    {
+      "asset_id": "base-action",
+      "description": "原创成年人站在咖啡馆桌旁，手伸向桌上白杯但尚未拿起；身体与手完整可见，物件关系清楚，16:9。",
+      "generated_by": "ChatGPT",
+      "path": "bases/base-action.png",
+      "dimensions": [
+        1672,
+        940
+      ],
+      "bytes": 2210057,
+      "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b",
+      "actual_prompt": "原创成年人站在咖啡馆桌旁，手伸向桌上白杯但尚未拿起；身体与手完整可见，物件关系清楚，16:9。 虚构30岁成年男性，短深棕发，深蓝衬衫、米色长裤、棕鞋。全身站在咖啡馆圆桌右侧，右手刚伸向桌面白杯，指尖距离杯柄约8厘米。保持左右位置明确，桌腿和双脚可见。 独立单张原图，横向16:9画幅，尽可能1536×864。主体与关键结构都放在中央84%安全区。不加文字、字母、标签、边框、UI、水印。此为生成素材的中性底图，不能用拼图代替。",
+      "generation_record": "results/base-action.json",
+      "notes": "Actual generated base. Full-body/prop raw margins tighter than requested; inspect before production."
+    },
+    {
+      "asset_id": "base-prop",
+      "description": "原创无品牌复古金属怀表，表冠与侧铰链清晰，素雅表盘，单物件完整，浅灰底；供道具多角度参考。",
+      "generated_by": "ChatGPT",
+      "path": "bases/base-prop.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1989164,
+      "sha256": "00bb292b4d143646e07853896ad98ab50d5bd9fa286cf7e615db88918b54372d",
+      "actual_prompt": "原创无品牌复古金属怀表，表冠与侧铰链清晰，素雅表盘，单物件完整，浅灰底；供道具多角度参考。 黄铜怀表，正面略俯拍，12点表冠，右侧3点位置铰链，简洁无字时标，指针10:10，完整显示表圈和表冠。不要链条，避免商标。 独立单张原图，横向16:9画幅，尽可能1536×864。主体与关键结构都放在中央84%安全区。不加文字、字母、标签、边框、UI、水印。此为生成素材的中性底图，不能用拼图代替。",
+      "generation_record": "results/base-prop.json",
+      "notes": "Actual generated base. Full-body/prop raw margins tighter than requested; inspect before production."
+    }
+  ],
+  "items": [
+    {
+      "asset_id": "creative-preset-0",
+      "priority": "P0",
+      "name": "柯达",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-0",
+        "name": "柯达",
+        "slot": "filter"
+      },
+      "source_prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。",
+      "source_prompt_sha256": "639d24e35c6c49c47bf6f62b3e92e9acef891235661e932a7c7df74ae846a54f",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-0.png",
+      "thumbnail": "thumbs/creative-preset-0.webp",
+      "card": "cards/creative-preset-0.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "2da3862eb1016420b906fe4e6746c57849ebf519477325c8a2e6029fc559c179",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "暖色、高光过渡和细颗粒可见；脸、衣服、杯子、红本与植物位置保持。品牌名称仅代表色彩意图。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-0.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2117194,
+          "sha256": "2da3862eb1016420b906fe4e6746c57849ebf519477325c8a2e6029fc559c179"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-0.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 36540,
+          "sha256": "06154e23de07ae2a76195a7e9e68a0b3aaaa24e1f027f176a67477221e5a38e6"
+        },
+        "card": {
+          "path": "cards/creative-preset-0.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 190302,
+          "sha256": "6ca81f30980455d66b5862fd9b8c841c545cfa77abcafb8f2ccccac8481639c8"
+        }
+      },
+      "generation_record": "results/creative-preset-0.json",
+      "actual_prompt_file": "prompts/creative-preset-0-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "priority": "P0",
+      "name": "富士",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-1",
+        "name": "富士",
+        "slot": "filter"
+      },
+      "source_prompt": "清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。",
+      "source_prompt_sha256": "ecd8d6e409eedcebea223db221638dc66221c85e53557c029bd1b1c235fe9dce",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-1.png",
+      "thumbnail": "thumbs/creative-preset-1.webp",
+      "card": "cards/creative-preset-1.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "818784710643613f44db22e6fdab5325cf0c8ec2e94d849485cd1f7ad4376d0d",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "绿蓝较清新，阴影略冷；同一咖啡馆物件和姿势。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-1.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2211594,
+          "sha256": "818784710643613f44db22e6fdab5325cf0c8ec2e94d849485cd1f7ad4376d0d"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-1.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 41608,
+          "sha256": "650bcd61bcddeec457e87a11f7e24687770b45de841f9aea7fe74322d3f4b9b3"
+        },
+        "card": {
+          "path": "cards/creative-preset-1.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 212870,
+          "sha256": "8be8de4e057bfc8151cb9bbc9c07731c4082205ff23937c35b600d17f459d28e"
+        }
+      },
+      "generation_record": "results/creative-preset-1.json",
+      "actual_prompt_file": "prompts/creative-preset-1-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "priority": "P0",
+      "name": "伊尔福",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-2",
+        "name": "伊尔福",
+        "slot": "filter"
+      },
+      "source_prompt": "黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。",
+      "source_prompt_sha256": "708c4522c884b36aa579f488c8fca222c8ac6d62f2c9c3d4a6c3df1bbd39e70c",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-2.png",
+      "thumbnail": "thumbs/creative-preset-2.webp",
+      "card": "cards/creative-preset-2.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "c79fdbe7c5cf29be6578660e78b8e82f5f33a73ba5fafa3170adb902a83fb0aa",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "黑白与灰阶层次明确，缩略图易辨认；颗粒未经物理测量。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-2.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2552040,
+          "sha256": "c79fdbe7c5cf29be6578660e78b8e82f5f33a73ba5fafa3170adb902a83fb0aa"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-2.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 32154,
+          "sha256": "40a3829376637c102a0d4736831694c145d9b73fb60f19f839cf608812c3c5ee"
+        },
+        "card": {
+          "path": "cards/creative-preset-2.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 196484,
+          "sha256": "60dda5bbc07e19ac2e4a40b0b9abd1c1a7cb6218f7da551db6848639d6b7201c"
+        }
+      },
+      "generation_record": "results/creative-preset-2.json",
+      "actual_prompt_file": "prompts/creative-preset-2-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "priority": "P0",
+      "name": "电影胶片",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-3",
+        "name": "电影胶片",
+        "slot": "filter"
+      },
+      "source_prompt": "电影负片色彩，克制饱和度，柔和高光和深邃阴影。",
+      "source_prompt_sha256": "af1dd358bf9215448101f4dcafc5b6d83f9aa5d46e48e216f1da80475302f684",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-3.png",
+      "thumbnail": "thumbs/creative-preset-3.webp",
+      "card": "cards/creative-preset-3.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "电影负片色彩，克制饱和度，柔和高光和深邃阴影。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "bd66877167e46fd0df84669fddcf3514e0db8d9df6e66284ceb7b81ed541f614",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "饱和度受控、阴影加深；主体构图保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-3.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2024401,
+          "sha256": "bd66877167e46fd0df84669fddcf3514e0db8d9df6e66284ceb7b81ed541f614"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-3.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 34050,
+          "sha256": "18162af968777ca931996b2babf42bb808d07220144c0aad765d9cbdb9d0f025"
+        },
+        "card": {
+          "path": "cards/creative-preset-3.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 178360,
+          "sha256": "0ad27d85586de198812d397b3abbbf3609b96520be0bf3f3f1066688c0b712cb"
+        }
+      },
+      "generation_record": "results/creative-preset-3.json",
+      "actual_prompt_file": "prompts/creative-preset-3-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "priority": "P0",
+      "name": "宝丽来",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-4",
+        "name": "宝丽来",
+        "slot": "filter"
+      },
+      "source_prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。",
+      "source_prompt_sha256": "68e2801ef920de8bf7008666212700060ce49b8cf30139868fd44f0477cc8708",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-4.png",
+      "thumbnail": "thumbs/creative-preset-4.webp",
+      "card": "cards/creative-preset-4.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "即时成像色调，轻微褪色，温暖柔和的生活摄影质感。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "e9bbfe1d5ae168d7bb8e3bd9e4c69cfb47c700d8fd93b4c46d015789299df176",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "暖色褪色与柔和反差可见，没有额外宝丽来边框。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-4.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2215350,
+          "sha256": "e9bbfe1d5ae168d7bb8e3bd9e4c69cfb47c700d8fd93b4c46d015789299df176"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-4.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 34822,
+          "sha256": "1a666e6bdef304b019e49864908991fc07b338241ff323e886adddf801a4fa43"
+        },
+        "card": {
+          "path": "cards/creative-preset-4.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 180638,
+          "sha256": "8c54c2b21330dc786b5d89876d618c90e46f207854f8f607fb130376ad42d15b"
+        }
+      },
+      "generation_record": "results/creative-preset-4.json",
+      "actual_prompt_file": "prompts/creative-preset-4-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "priority": "P0",
+      "name": "电影光效",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-5",
+        "name": "电影光效",
+        "slot": "filter"
+      },
+      "source_prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。",
+      "source_prompt_sha256": "87665cd8f290335195efb8193edeee7f58c0828aafc3e840a0b3ece5fa6bdffa",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-5.png",
+      "thumbnail": "thumbs/creative-preset-5.webp",
+      "card": "cards/creative-preset-5.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "有动机的电影布光，明确主辅光、轮廓光与空间层次。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "32fc6e57af030f0a5ad348abb454007d154868a3034d3ad6c34d21c86be6bf32",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "窗侧主光与亮边增强，背景实景灯保持；与柯达暖调仍相近，作为灯光候选。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-5.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2035467,
+          "sha256": "32fc6e57af030f0a5ad348abb454007d154868a3034d3ad6c34d21c86be6bf32"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-5.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 37218,
+          "sha256": "fdfb14ee6084488ff716f0ad8dc31b4195d443560e10bec13cfac33304ca6b06"
+        },
+        "card": {
+          "path": "cards/creative-preset-5.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 192156,
+          "sha256": "fe43bd1dbd2371d2087ed8eadbd3779dd0770aa529196a40524076fbe9455913"
+        }
+      },
+      "generation_record": "results/creative-preset-5.json",
+      "actual_prompt_file": "prompts/creative-preset-5-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "priority": "P0",
+      "name": "HDR",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-6",
+        "name": "HDR",
+        "slot": "filter"
+      },
+      "source_prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。",
+      "source_prompt_sha256": "31b7dfd8661477d644f49220f49af3c81a4a99a4a33527144301b89e3c8c8493",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-6.png",
+      "thumbnail": "thumbs/creative-preset-6.webp",
+      "card": "cards/creative-preset-6.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "扩大明暗细节，保留自然对比，避免过度锐化和光晕。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        940
+      ],
+      "sha256": "3cc86602c6d366b95a256efc550ddb03f1504ad03ab15f9b52f056d88e2a973f",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "暗部可读，但相对自然光底图改变较弱，640缩略图中不易辨识HDR意图，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-6.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2262573,
+          "sha256": "3cc86602c6d366b95a256efc550ddb03f1504ad03ab15f9b52f056d88e2a973f"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-6.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 43144,
+          "sha256": "a6f508c29c3e8aa081f0d9b3f85db727c53066d99a75e191899e2741549af86a"
+        },
+        "card": {
+          "path": "cards/creative-preset-6.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 224728,
+          "sha256": "13ce776cb10f7c030a4fe058cfc9cb404e0a1e70dfbc404c183270e02ec45068"
+        }
+      },
+      "generation_record": "results/creative-preset-6.json",
+      "actual_prompt_file": "prompts/creative-preset-6-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "priority": "P0",
+      "name": "柔焦效果",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-7",
+        "name": "柔焦效果",
+        "slot": "filter"
+      },
+      "source_prompt": "柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。",
+      "source_prompt_sha256": "c8728a22b396b12dacaae13c58691b7ec265fe045c6eb8ff9281c93f7d5be500",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-7.png",
+      "thumbnail": "thumbs/creative-preset-7.webp",
+      "card": "cards/creative-preset-7.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "562334b3d3807ea2c8a8422151e746bfa2d3d1adc0af6ee616ff0b5f4057ff09",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "高光扩散明显，五官与主体轮廓仍可读；窗边高光略强。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-7.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1974602,
+          "sha256": "562334b3d3807ea2c8a8422151e746bfa2d3d1adc0af6ee616ff0b5f4057ff09"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-7.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 33814,
+          "sha256": "e40c16dd374a623837fce7513ba911f136b093d3e0cab127f10e1be559421e65"
+        },
+        "card": {
+          "path": "cards/creative-preset-7.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 172212,
+          "sha256": "459ae90a78c33a9279d64049852bf88b18060d8982387d7b5d4f64a379ab8958"
+        }
+      },
+      "generation_record": "results/creative-preset-7.json",
+      "actual_prompt_file": "prompts/creative-preset-7-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "priority": "P0",
+      "name": "胶片颗粒",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-8",
+        "name": "胶片颗粒",
+        "slot": "filter"
+      },
+      "source_prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。",
+      "source_prompt_sha256": "52cbb9b3a3dfe9e7a4b82dff982615a4b2d417f779919f6f90deb32c9f1d918a",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-8.png",
+      "thumbnail": "thumbs/creative-preset-8.webp",
+      "card": "cards/creative-preset-8.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "增加细密自然胶片颗粒，保留皮肤和材质细节。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0180d2705d36cf4e970cf08550d6919a14315ab8d8f53d4d86a5941ea3d5da29",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "原图可见细颗粒，缩略图不应期待颗粒显著；未用代码添加噪声。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-8.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2574186,
+          "sha256": "0180d2705d36cf4e970cf08550d6919a14315ab8d8f53d4d86a5941ea3d5da29"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-8.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 38688,
+          "sha256": "77a2398f26bb41207e46ede324f976e005ba91948aa6673c4a823e27520ca3b1"
+        },
+        "card": {
+          "path": "cards/creative-preset-8.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 244504,
+          "sha256": "612a6d78c65ce5e0df193e41b31b0fe0f8347bfbe13cd6bc35248bb4da709a25"
+        }
+      },
+      "generation_record": "results/creative-preset-8.json",
+      "actual_prompt_file": "prompts/creative-preset-8-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "priority": "P0",
+      "name": "赛博朋克",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-9",
+        "name": "赛博朋克",
+        "slot": "filter"
+      },
+      "source_prompt": "夜间霓虹青红对照，湿润反光环境，主体清晰。",
+      "source_prompt_sha256": "054afb4e948e35a6ac203ed1e928708bc8f8fc66f5b1e9eafd0f82ff2a704609",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-9.png",
+      "thumbnail": "thumbs/creative-preset-9.webp",
+      "card": "cards/creative-preset-9.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "夜间霓虹青红对照，湿润反光环境，主体清晰。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "a3ee1805915b7b12c5148aaafdd910c93c80a9e01f4a7e129338cab463056edc",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "青红夜间霓虹、雨窗和湿桌反射明确；人物与固定物件保持，新增湿润表面属于预设要求。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-9.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2310789,
+          "sha256": "a3ee1805915b7b12c5148aaafdd910c93c80a9e01f4a7e129338cab463056edc"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-9.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 47832,
+          "sha256": "16c81c8ec42dda643cb2e31433c863367a3744e7181b126e7d73847f919be73c"
+        },
+        "card": {
+          "path": "cards/creative-preset-9.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 255074,
+          "sha256": "ad28c10fbad7fb378f7089cfc89f651dee574498b83fac5c5f3853e661439d7a"
+        }
+      },
+      "generation_record": "results/creative-preset-9.json",
+      "actual_prompt_file": "prompts/creative-preset-9-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "priority": "P0",
+      "name": "复古色调",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-10",
+        "name": "复古色调",
+        "slot": "filter"
+      },
+      "source_prompt": "暖黄褪色和低饱和阴影，复古生活摄影。",
+      "source_prompt_sha256": "824fa8b5d71bf00cc240d7472b99d0e78b1bbf731224743bade5a79bce85c0b7",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-10.png",
+      "thumbnail": "thumbs/creative-preset-10.webp",
+      "card": "cards/creative-preset-10.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "暖黄褪色和低饱和阴影，复古生活摄影。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "dd791eb13298fb777211cf42be8560dc182a1445cca0d684d01447a66ef445be",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "暖黄褪色和低饱和阴影可见，缩略图与其他暖色胶片仍有相近之处。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-10.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2086477,
+          "sha256": "dd791eb13298fb777211cf42be8560dc182a1445cca0d684d01447a66ef445be"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-10.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 33112,
+          "sha256": "51ea16dc1dfb5064120e118c56d83a6aff14b0c571624656dd8d9d731767b5da"
+        },
+        "card": {
+          "path": "cards/creative-preset-10.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 175368,
+          "sha256": "13f46f361ae1277df14557cf51b5a70c6b020daf7d8d98748b96a931cea12c7e"
+        }
+      },
+      "generation_record": "results/creative-preset-10.json",
+      "actual_prompt_file": "prompts/creative-preset-10-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "priority": "P0",
+      "name": "清透美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-11",
+        "name": "清透美颜",
+        "slot": "filter"
+      },
+      "source_prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。",
+      "source_prompt_sha256": "f2b7e649ef99c15eabd6f492febf821370fc46f9b16ef9730c8a4ea4f9f5b901",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-11.png",
+      "thumbnail": "thumbs/creative-preset-11.webp",
+      "card": "cards/creative-preset-11.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "清透自然肤色，保留微小皮肤纹理，不改变五官。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "69c1ca861dadc55e8ab5a0a21d573725f4c7e428ddf9a0527bee5173c687666e",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "同一脸、发型、表情、灰衣和取景；清透与其他肤质在缩略图中区别不足，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-11.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1902777,
+          "sha256": "69c1ca861dadc55e8ab5a0a21d573725f4c7e428ddf9a0527bee5173c687666e"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-11.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 10728,
+          "sha256": "ffd918f1470c1fdd45c5a68ff93ebe241f15049c94e7c982138c45f0153516a7"
+        },
+        "card": {
+          "path": "cards/creative-preset-11.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 88636,
+          "sha256": "2ff42d28d5e57f648c88703b31e4e6bde28a1b7f95ed0c00b8c5d0502816213c"
+        }
+      },
+      "generation_record": "results/creative-preset-11.json",
+      "actual_prompt_file": "prompts/creative-preset-11-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "priority": "P0",
+      "name": "柔肤美颜",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-12",
+        "name": "柔肤美颜",
+        "slot": "filter"
+      },
+      "source_prompt": "柔化局部瑕疵但保留面部身份和自然纹理。",
+      "source_prompt_sha256": "82acd7f12a0aa811039bf6757fc1000c305de61a2c2ed8964677344f97f2a185",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-12.png",
+      "thumbnail": "thumbs/creative-preset-12.webp",
+      "card": "cards/creative-preset-12.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "柔化局部瑕疵但保留面部身份和自然纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "58aef5c85e17b1fb650d776af5abf5779783f3b780855802009607eb38ad9287",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "局部瑕疵有柔化，身份保持；缩略图与底图及其他肤质区别不足，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-12.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1839313,
+          "sha256": "58aef5c85e17b1fb650d776af5abf5779783f3b780855802009607eb38ad9287"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-12.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 9294,
+          "sha256": "9b3b46d46f2822a952293dcea29ae0495d551576f7cbe1ddfc2f8f2b74497e62"
+        },
+        "card": {
+          "path": "cards/creative-preset-12.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 80330,
+          "sha256": "77ef317182166639e25cdec2b716fa29ea50223a7c6e004c73b4fdafdb77c8b6"
+        }
+      },
+      "generation_record": "results/creative-preset-12.json",
+      "actual_prompt_file": "prompts/creative-preset-12-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "priority": "P0",
+      "name": "细腻肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-13",
+        "name": "细腻肌理",
+        "slot": "filter"
+      },
+      "source_prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。",
+      "source_prompt_sha256": "c223923bc4c808e19c9e67fd5c4664a0ed02cfd0d6dfa686939fc55f66498b3f",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-13.png",
+      "thumbnail": "thumbs/creative-preset-13.webp",
+      "card": "cards/creative-preset-13.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "增强真实细微皮肤纹理，保留毛孔与自然肤色。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "e8dd83204e97d23cd5355fc5e2b2d55280bd6e9f33fc17bd3e58f5a196904c34",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "原图毛孔细节有所增强；在640缩略图仍难与其他肤质快速区分，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-13.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1898819,
+          "sha256": "e8dd83204e97d23cd5355fc5e2b2d55280bd6e9f33fc17bd3e58f5a196904c34"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-13.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 10698,
+          "sha256": "d26dee312d3a85a514b9d1f3a09a364942c64d144d19c03d8b84041f0b8f1236"
+        },
+        "card": {
+          "path": "cards/creative-preset-13.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 91356,
+          "sha256": "c66b0568ecb51f733e5975df97d915ecc30ad39c2dc18913265d83970e2a8cbf"
+        }
+      },
+      "generation_record": "results/creative-preset-13.json",
+      "actual_prompt_file": "prompts/creative-preset-13-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "priority": "P0",
+      "name": "奶油肌",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-14",
+        "name": "奶油肌",
+        "slot": "filter"
+      },
+      "source_prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。",
+      "source_prompt_sha256": "bed6d4eda9a6830f290736532109b8adc6d960ca6fed62b4b0e74ed884556b3f",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-14.png",
+      "thumbnail": "thumbs/creative-preset-14.webp",
+      "card": "cards/creative-preset-14.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0fec25d4783f31e7bec938f7589978b5fc386744b08f1311ea29116abeae44ac",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "肤色略均匀柔润，未换脸；奶油肌视觉识别度仍弱，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-14.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1867910,
+          "sha256": "0fec25d4783f31e7bec938f7589978b5fc386744b08f1311ea29116abeae44ac"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-14.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 10322,
+          "sha256": "2199301ed4337c9d2cbaabb8235e078ecd619423033fd90e7991e6a5dcdfc8b2"
+        },
+        "card": {
+          "path": "cards/creative-preset-14.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 85220,
+          "sha256": "643f9de77a133d05dc55179d278e72d85601e752a01fafe2d1e915521ee873c9"
+        }
+      },
+      "generation_record": "results/creative-preset-14.json",
+      "actual_prompt_file": "prompts/creative-preset-14-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "priority": "P0",
+      "name": "柔化质感",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-15",
+        "name": "柔化质感",
+        "slot": "filter"
+      },
+      "source_prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。",
+      "source_prompt_sha256": "a5a16c48902f541c15dfe822ee771259b68e3b38370ff6ae7231f14c688c829d",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-15.png",
+      "thumbnail": "thumbs/creative-preset-15.webp",
+      "card": "cards/creative-preset-15.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "柔化皮肤高频噪点，保留眼睛、头发和面部结构。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "c9ddd9a4b036786e658af056f29b0339b71b2d2811f1ad5ab5369354d26beaea",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "高频细节略柔化，眼睛与头发清晰；缩略图区别弱，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-15.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1844321,
+          "sha256": "c9ddd9a4b036786e658af056f29b0339b71b2d2811f1ad5ab5369354d26beaea"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-15.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 9268,
+          "sha256": "e8040554c7300532ea82f3a7e62f91f00b93f65ead4f35379be4822a8daff80f"
+        },
+        "card": {
+          "path": "cards/creative-preset-15.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 82296,
+          "sha256": "9d2875e3f241cfd6f0fe043a087c5783a7d837a0d030d869531a29a8937b3229"
+        }
+      },
+      "generation_record": "results/creative-preset-15.json",
+      "actual_prompt_file": "prompts/creative-preset-15-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "priority": "P0",
+      "name": "哑光肌理",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-16",
+        "name": "哑光肌理",
+        "slot": "filter"
+      },
+      "source_prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。",
+      "source_prompt_sha256": "a5b7f6fb737d7b03c21811f510dfeba0dfe660321707a74c34e4bc3f767f04ea",
+      "art_direction": "基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。",
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-16.png",
+      "thumbnail": "thumbs/creative-preset-16.webp",
+      "card": "cards/creative-preset-16.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "控制油光，柔雾哑光肌肤，保留层次和真实纹理。 基于统一底图编辑，仅改变本项质感/颜色/照明；固定身份、构图、姿态、服装及物件。保留原图，不用CSS滤镜结果冒充GPT实际生成图。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "1ff50099e5aff880a4d15ea4849e4474ddc98465508432c9f46c9204aedf3169",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "额头和鼻部油光有所控制，身份保持；缩略图与柔肤仍相近，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-16.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1861123,
+          "sha256": "1ff50099e5aff880a4d15ea4849e4474ddc98465508432c9f46c9204aedf3169"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-16.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 9306,
+          "sha256": "e44497083cf435a4bd00479d4ca1c9b1d6d9c35c35857c5da236e46302d38720"
+        },
+        "card": {
+          "path": "cards/creative-preset-16.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 80892,
+          "sha256": "f2a23db91bf0c883cf671c6a66f72e4fbdd62707342b3560adbb5bd2039fd20c"
+        }
+      },
+      "generation_record": "results/creative-preset-16.json",
+      "actual_prompt_file": "prompts/creative-preset-16-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "priority": "P0",
+      "name": "全景图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-17",
+        "name": "全景图",
+        "slot": "preset"
+      },
+      "source_prompt": "将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。",
+      "source_prompt_sha256": "19f2886ac50c0932487f640985082d7cfb20abe8622fe8d404028a9e45b18a37",
+      "art_direction": "生成空旷原创室内空间的2:1等距柱状投影意图图。卡片16:9内完整呈现2:1原图，不拉伸。左右边缘检查单独记录，未通过则只标全景构图示意，不宣称360度无缝。",
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-17.png",
+      "thumbnail": "thumbs/creative-preset-17.webp",
+      "card": "cards/creative-preset-17.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。 生成空旷原创室内空间的2:1等距柱状投影意图图。卡片16:9内完整呈现2:1原图，不拉伸。左右边缘检查单独记录，未通过则只标全景构图示意，不宣称360度无缝。 图片内不要添加标题、UI、按钮、水印或说明文字。  原图必须为2:1横向等距柱状全景构图，尽可能1792×896；不要画16:9，不要分格。空旷原创咖啡馆室内，360全景意图、地平线居中，左右边缘安排同色无窗素墙。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "508cdc01b96187ee78b96ebb02ea418d208213483a1dbe07a22b982b4d3859df",
+      "reference_images": [],
+      "visual_notes": [
+        "实际原图1774×887，严格2:1；横向空间可读。左右柱、家具和亮度不能证明接缝连续，仅为全景构图示意，待返修/专门全景验证。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-17.png",
+          "dimensions": [
+            1774,
+            887
+          ],
+          "bytes": 2064178,
+          "sha256": "508cdc01b96187ee78b96ebb02ea418d208213483a1dbe07a22b982b4d3859df"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-17.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 17484,
+          "sha256": "f126aa59823f59cb2743574949d9cdee82ba555a6cd4703f23780cfffad47f65"
+        },
+        "card": {
+          "path": "cards/creative-preset-17.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 137746,
+          "sha256": "331eb7d40a2f9efe9345b31b45e45947431386f2ba2e155a67a6f6714fc69b42"
+        }
+      },
+      "generation_record": "results/creative-preset-17.json",
+      "actual_prompt_file": "prompts/creative-preset-17-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "priority": "P0",
+      "name": "多机位九宫格",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-18",
+        "name": "多机位九宫格",
+        "slot": "preset"
+      },
+      "source_prompt": "生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。",
+      "source_prompt_sha256": "8713ec8343db8f84d292e77d9db558d3c0fb9a7caa73e944364f1b7684c931e6",
+      "art_direction": "使用同一原创成年角色、同套服装和场景，真实3×3等大排列，九种可区分景别/机位。这里只允许预设本身要求的九宫格，不拼入其他预设。",
+      "base_asset": "base-character",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-18.png",
+      "thumbnail": "thumbs/creative-preset-18.webp",
+      "card": "cards/creative-preset-18.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。 使用同一原创成年角色、同套服装和场景，真实3×3等大排列，九种可区分景别/机位。这里只允许预设本身要求的九宫格，不拼入其他预设。 图片内不要添加标题、UI、按钮、水印或说明文字。 九个视图按行：全身正面、全身左侧、全身背面；半身正面、半身45度、半身侧面；面部特写、略俯视、略仰视。每一格必须等宽等高，完整3列3行。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-character；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "73709ec4a26988f7467e00832fa0aa9377a14c364c6530c806609a53730bb8af",
+      "reference_images": [
+        {
+          "path": "bases/base-character.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1701342,
+          "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23"
+        }
+      ],
+      "visual_notes": [
+        "实际3×3等格，九种景别/机位可分辨。原图顶行头脚靠近格线；小图面部细节有限，部分背包/肩带形状不完全一致，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-18.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1937644,
+          "sha256": "73709ec4a26988f7467e00832fa0aa9377a14c364c6530c806609a53730bb8af"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-18.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 20760,
+          "sha256": "0e2703db8ba1e6eaa61f74f76a539aa2a5b2c1adae3fd4a42abdea8595f4f6b9"
+        },
+        "card": {
+          "path": "cards/creative-preset-18.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 125388,
+          "sha256": "e785c00f5d54dbffbfd46619bdab9b8fa35752e9c954aaac82d87a606b8100cc"
+        }
+      },
+      "generation_record": "results/creative-preset-18.json",
+      "actual_prompt_file": "prompts/creative-preset-18-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "priority": "P0",
+      "name": "人物三视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-19",
+        "name": "人物三视图",
+        "slot": "preset"
+      },
+      "source_prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。",
+      "source_prompt_sha256": "ca251991639ff86aeef64510afee38d218f3b1a630e85d4299f3974dfbb721a6",
+      "art_direction": "同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。",
+      "base_asset": "base-character",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-19.png",
+      "thumbnail": "thumbs/creative-preset-19.webp",
+      "card": "cards/creative-preset-19.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。 同一原创成年角色正侧背全身并列，脚和头完整、等高，衣服与配件对应。 图片内不要添加标题、UI、按钮、水印或说明文字。 三人实为同一人三个视图，正面、左侧、背面，等高基线；留足头脚空间。单肩包在同一身体左侧，侧面与背面肩带相符。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-character；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "16195e6d0899f7c42239bd60850b94dbc1aca75d59651f4b668ae5dbd380fdba",
+      "reference_images": [
+        {
+          "path": "bases/base-character.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1701342,
+          "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23"
+        }
+      ],
+      "visual_notes": [
+        "正侧背全身齐全，等高；原图上下安全留白不足，肩带/包形跨视角有偏差，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-19.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1883155,
+          "sha256": "16195e6d0899f7c42239bd60850b94dbc1aca75d59651f4b668ae5dbd380fdba"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-19.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 18022,
+          "sha256": "f34a5d04da5a6b1b939391141f964b25ad5141f99354cbd8cb573a38fc936856"
+        },
+        "card": {
+          "path": "cards/creative-preset-19.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 107542,
+          "sha256": "6279c88bfa269f9de157d03d9aab5b4bc8181a783bfc4da7fe069394db371ab6"
+        }
+      },
+      "generation_record": "results/creative-preset-19.json",
+      "actual_prompt_file": "prompts/creative-preset-19-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "priority": "P0",
+      "name": "4视图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-20",
+        "name": "4视图",
+        "slot": "preset"
+      },
+      "source_prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。",
+      "source_prompt_sha256": "ae63bf2c929c24c6b0defd3c9fab5d85a08f805bcf6e3c318b7d198c58e7e531",
+      "art_direction": "同一原创成年角色正侧背全身及面部特写，2×2排列。",
+      "base_asset": "base-character",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-20.png",
+      "thumbnail": "thumbs/creative-preset-20.webp",
+      "card": "cards/creative-preset-20.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。 同一原创成年角色正侧背全身及面部特写，2×2排列。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-character；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b4621c921a5966f4d7291a94e0dc61cfe27afc2c6182173c9bdbbe42ae76c8f2",
+      "reference_images": [
+        {
+          "path": "bases/base-character.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1701342,
+          "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23"
+        }
+      ],
+      "visual_notes": [
+        "2×2包含正侧背全身与面部特写；侧面肩带/包位置仍需核对，原图外边距偏小，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-20.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1853796,
+          "sha256": "b4621c921a5966f4d7291a94e0dc61cfe27afc2c6182173c9bdbbe42ae76c8f2"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-20.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 14680,
+          "sha256": "24964d00eab6f0a75d0c87302c40ec302fabc974abed8c051b7c2d0c2c84208f"
+        },
+        "card": {
+          "path": "cards/creative-preset-20.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 95540,
+          "sha256": "31a349bfd39f134dad1c12112584558d7346de6f6ab4d955d3673b86e442e3e4"
+        }
+      },
+      "generation_record": "results/creative-preset-20.json",
+      "actual_prompt_file": "prompts/creative-preset-20-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "priority": "P0",
+      "name": "人物设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-21",
+        "name": "人物设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。",
+      "source_prompt_sha256": "412653ea0dd56e46799563d4c7e8ec21a7f358ae907d1d5b872bb85a66fe51f9",
+      "art_direction": "同一原创成年角色主全身+服装配件细节，无乱码注释，保留身份与服饰。",
+      "base_asset": "base-character",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-21.png",
+      "thumbnail": "thumbs/creative-preset-21.webp",
+      "card": "cards/creative-preset-21.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。 同一原创成年角色主全身+服装配件细节，无乱码注释，保留身份与服饰。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-character；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "57194c29ccae86674df155acbcafdbd737d4017b30e54e823a6dd29e812000c4",
+      "reference_images": [
+        {
+          "path": "bases/base-character.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1701342,
+          "sha256": "de9658c0f64b91996dbf4b07c63eedbfebe36b92f268c35104f7b242dced7c23"
+        }
+      ],
+      "visual_notes": [
+        "全身主视图及衣服、包、鞋细节齐全；部件拼接关系未工程验证，原图边距紧，缩略图细节偏密，衣领有细小伪标签，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-21.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2359265,
+          "sha256": "57194c29ccae86674df155acbcafdbd737d4017b30e54e823a6dd29e812000c4"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-21.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 37162,
+          "sha256": "79fd2c4db3f8e1e8ff335fa56a8c8ac0a084939f9e047c586ac4cdca05c80445"
+        },
+        "card": {
+          "path": "cards/creative-preset-21.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 220312,
+          "sha256": "9926543a27b01d6b799281f0d43a292c3796ce315dccc9cd1878dd86c905d9ac"
+        }
+      },
+      "generation_record": "results/creative-preset-21.json",
+      "actual_prompt_file": "prompts/creative-preset-21-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "priority": "P0",
+      "name": "场景设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-22",
+        "name": "场景设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。",
+      "source_prompt_sha256": "cbcaa866e24134ee53fdaffc3f4c7bca39333e12b3a18b7b5f78cdd7b56eeb88",
+      "art_direction": "原创小咖啡馆场景概念页，主全景+建筑/材质细节，明确空间关系，不画UI。",
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-22.png",
+      "thumbnail": "thumbs/creative-preset-22.webp",
+      "card": "cards/creative-preset-22.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。 原创小咖啡馆场景概念页，主全景+建筑/材质细节，明确空间关系，不画UI。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0b23a2caf93333a8a84417acd0664298069e9f82cae63740d7f7b5776d9d7e31",
+      "reference_images": [],
+      "visual_notes": [
+        "原创湖畔小咖啡馆概念页，外观、室内和材质细节可辨。模型自行加入湖山环境；剖视与外观未严格几何对应，作为概念意图候选。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-22.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 3147940,
+          "sha256": "0b23a2caf93333a8a84417acd0664298069e9f82cae63740d7f7b5776d9d7e31"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-22.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 67700,
+          "sha256": "fd46463ce09725e7dba46c361583eb2596aa0e99658003fed8bdde666e00e244"
+        },
+        "card": {
+          "path": "cards/creative-preset-22.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 428944,
+          "sha256": "a2eb3b7e2bcc00047d21a1de68516c67cd7b30b689ecb3f7138a6143a7ae3321"
+        }
+      },
+      "generation_record": "results/creative-preset-22.json",
+      "actual_prompt_file": "prompts/creative-preset-22-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "priority": "P0",
+      "name": "道具设计图",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-23",
+        "name": "道具设计图",
+        "slot": "preset"
+      },
+      "source_prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。",
+      "source_prompt_sha256": "b708fab1bbde8e1e82cef441146614bdf8c19f81e2c3d5c13389735cd7e3c5bf",
+      "art_direction": "同一原创无商标复古怀表正侧背及结构细节，表冠、铰链、材质位置一致，不要求模型准确画复杂文字。",
+      "base_asset": "base-prop",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/creative-preset-23.png",
+      "thumbnail": "thumbs/creative-preset-23.webp",
+      "card": "cards/creative-preset-23.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。 同一原创无商标复古怀表正侧背及结构细节，表冠、铰链、材质位置一致，不要求模型准确画复杂文字。 图片内不要添加标题、UI、按钮、水印或说明文字。 大幅正面、较小侧面、背面、极简结构分解与铰链局部。表冠始终在12点、铰链在物件右侧3点。正反视图左右翻转遵守实物几何。保持同一只怀表，所有视图无文字，不能用不同物品填充。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-prop；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b58d64d9f7f44c723d9801b31027e5b146fb5a0eb41fbfbe77684296267735e4",
+      "reference_images": [
+        {
+          "path": "bases/base-prop.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1989164,
+          "sha256": "00bb292b4d143646e07853896ad98ab50d5bd9fa286cf7e615db88918b54372d"
+        }
+      ],
+      "visual_notes": [
+        "正侧背、拆解与材质细节齐全；表冠/铰链方向大体对应，但机芯拆解为生成想象，部分形状与底图不同，原图边距紧，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-23.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2431661,
+          "sha256": "b58d64d9f7f44c723d9801b31027e5b146fb5a0eb41fbfbe77684296267735e4"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-23.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 33656,
+          "sha256": "3907d01d6a2f32d59eab146fc965cb05cea911b5738c68008edc22a5ad9fdadc"
+        },
+        "card": {
+          "path": "cards/creative-preset-23.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 228722,
+          "sha256": "db464244f0aaf425fee5434cf752f7a258bc858033c39e4a44cd36e261a49d29"
+        }
+      },
+      "generation_record": "results/creative-preset-23.json",
+      "actual_prompt_file": "prompts/creative-preset-23-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "priority": "P0",
+      "name": "3秒后",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-24",
+        "name": "3秒后",
+        "slot": "preset"
+      },
+      "source_prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。",
+      "source_prompt_sha256": "8392257f9e03c3b2f7a4230e3155ab8fc593b63ccfa9506938b634f4afd59561",
+      "art_direction": "以统一动作底图为参考：成年人在桌边伸手拿杯，推演接下来的自然状态；保留人物/杯子/背景。交付before和after两张独立原图。3秒只是情境设定，不能声称真实时间测量。",
+      "base_asset": "base-action",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-24.png",
+      "thumbnail": "thumbs/creative-preset-24.webp",
+      "card": "cards/creative-preset-24.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。 以统一动作底图为参考：成年人在桌边伸手拿杯，推演接下来的自然状态；保留人物/杯子/背景。交付before和after两张独立原图。3秒只是情境设定，不能声称真实时间测量。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-action；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "4e29ab7ddcc0b914490c966233b3ebc7aa82df671357f1574abb2bec42d0fe0e",
+      "reference_images": [
+        {
+          "path": "bases/base-action.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2210057,
+          "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b"
+        }
+      ],
+      "visual_notes": [
+        "从伸手未持杯推进到举杯，人物服装与咖啡馆连续；手指接触未做逐像素或物理验证。3秒为叙事情境。"
+      ],
+      "comparisons": [
+        {
+          "path": "comparisons/creative-preset-24/before.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2210057,
+          "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b",
+          "role": "before",
+          "copy_of": "bases/base-action.png"
+        },
+        {
+          "path": "comparisons/creative-preset-24/after.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2093064,
+          "sha256": "4e29ab7ddcc0b914490c966233b3ebc7aa82df671357f1574abb2bec42d0fe0e",
+          "role": "after",
+          "copy_of": "masters/creative-preset-24.png"
+        }
+      ],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-24.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2093064,
+          "sha256": "4e29ab7ddcc0b914490c966233b3ebc7aa82df671357f1574abb2bec42d0fe0e"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-24.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 43336,
+          "sha256": "45ab8750adaba18bf4c5c3279aafd027c202912bb8b45864fc4ce4f3f6e5ca7f"
+        },
+        "card": {
+          "path": "cards/creative-preset-24.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 217254,
+          "sha256": "58bb0021b328a6e516b299d3041fd23ffccf066216af4dfa737d70c00f0284f9"
+        }
+      },
+      "generation_record": "results/creative-preset-24.json",
+      "actual_prompt_file": "prompts/creative-preset-24-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects.",
+      "comparison_time_order": "before is chronologically earlier; 25: generated minus5s -> shared t0; 24: shared t0 -> generated plus3s"
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "priority": "P0",
+      "name": "5秒前",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-25",
+        "name": "5秒前",
+        "slot": "preset"
+      },
+      "source_prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。",
+      "source_prompt_sha256": "499812c89afa001ec83f2579f56cbf09af3d653883d0451d317b2bb8011d6d97",
+      "art_direction": "沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。",
+      "base_asset": "base-action",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-25.png",
+      "thumbnail": "thumbs/creative-preset-25.webp",
+      "card": "cards/creative-preset-25.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。 沿用与3秒后相同动作底图，推演此前自然状态；交付before/after独立图，不用换背景或换人代表时间变化。 图片内不要添加标题、UI、按钮、水印或说明文字。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-action；严格使用此图，不引用其他对话图片。 必须明显表现此前的瞬间：男子此时尚未伸手，右手完全收回自然垂放在身体右侧，左手也自然垂放，双手都远离杯子，身体稍微挺直，视线开始看向桌上白杯。杯子保持在相同桌面杯碟位置，杯柄相同，千万不能拿起杯子，不能把右手仍画在杯柄旁。相机、人物身份、蓝衬衣、米色裤子、背景家具灯光完全不变，只编辑姿势。此状态随后才会伸手取杯。不要拼图。",
+      "actual_dimensions": [
+        1672,
+        940
+      ],
+      "sha256": "ace1b05665d090c7b8103d3211edb262dd7d646c3962ac60e8ad7f34c579310c",
+      "reference_images": [
+        {
+          "path": "bases/base-action.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2210057,
+          "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b"
+        }
+      ],
+      "visual_notes": [
+        "初版几乎重复底图，已保留。重试后双手下垂远离杯，白杯仍在原桌面，形成伸手前状态；5秒为叙事情境。"
+      ],
+      "comparisons": [
+        {
+          "path": "comparisons/creative-preset-25/before.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2183360,
+          "sha256": "ace1b05665d090c7b8103d3211edb262dd7d646c3962ac60e8ad7f34c579310c",
+          "role": "before",
+          "copy_of": "masters/creative-preset-25.png"
+        },
+        {
+          "path": "comparisons/creative-preset-25/after.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2210057,
+          "sha256": "62ee8445fd15c6ab92eaf1d03a3af858693cd002ae024d4e31de30fba2b0510b",
+          "role": "after",
+          "copy_of": "bases/base-action.png"
+        }
+      ],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-25.png",
+          "dimensions": [
+            1672,
+            940
+          ],
+          "bytes": 2183360,
+          "sha256": "ace1b05665d090c7b8103d3211edb262dd7d646c3962ac60e8ad7f34c579310c"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-25.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 45926,
+          "sha256": "aaf15c9a6a609d4894dd7af34733bf8e5194097ff25727bcc9aa690e646e89d1"
+        },
+        "card": {
+          "path": "cards/creative-preset-25.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 232864,
+          "sha256": "138e1f1961c3d3cadfa34b21ed500b68f72ff29f7ad8e1ea6afab41942e6d469"
+        }
+      },
+      "generation_record": "results/creative-preset-25.json",
+      "actual_prompt_file": "prompts/creative-preset-25-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects.",
+      "comparison_time_order": "before is chronologically earlier; 25: generated minus5s -> shared t0; 24: shared t0 -> generated plus3s"
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "priority": "P0",
+      "name": "电影级光影校正",
+      "target": {
+        "type": "image-preset",
+        "preset_id": "creative-preset-26",
+        "name": "电影级光影校正",
+        "slot": "preset"
+      },
+      "source_prompt": "保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。",
+      "source_prompt_sha256": "ca8d797d2e8e0ca31249ad10927a170afd956c56da08094d6f969e9eba1d13a9",
+      "art_direction": "从同一咖啡馆底图编辑照明，保持主体位置/身份/衣服/道具/构图，对比图独立保存；只标GPT光影示例。",
+      "base_asset": "base-scene",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/creative-preset-26.png",
+      "thumbnail": "thumbs/creative-preset-26.webp",
+      "card": "cards/creative-preset-26.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。 从同一咖啡馆底图编辑照明，保持主体位置/身份/衣服/道具/构图，对比图独立保存；只标GPT光影示例。 图片内不要添加标题、UI、按钮、水印或说明文字。 左侧窗光为有动机主光，温暖背景灯仅作实景光，适度冷暗背景、柔和暖肤，修正阴影方向。不要移动相机和物件，不要新造强烈光束。 输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-scene；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0bd82cf1130dcb8035b0551491cd61a8e82fa7f073fc1836bfe12563031feec7",
+      "reference_images": [
+        {
+          "path": "bases/base-scene.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535"
+        }
+      ],
+      "visual_notes": [
+        "同一取景、身份与物件，窗光和明暗比校正可见；不是目标工作流实测，也不是光度学正确性结论。"
+      ],
+      "comparisons": [
+        {
+          "path": "comparisons/creative-preset-26/before.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2156776,
+          "sha256": "8989c0a9efa21cc97543ec287e059d963730b1c0740cb2badc0a17079a024535",
+          "role": "before",
+          "copy_of": "bases/base-scene.png"
+        },
+        {
+          "path": "comparisons/creative-preset-26/after.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2096911,
+          "sha256": "0bd82cf1130dcb8035b0551491cd61a8e82fa7f073fc1836bfe12563031feec7",
+          "role": "after",
+          "copy_of": "masters/creative-preset-26.png"
+        }
+      ],
+      "files": {
+        "master": {
+          "path": "masters/creative-preset-26.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2096911,
+          "sha256": "0bd82cf1130dcb8035b0551491cd61a8e82fa7f073fc1836bfe12563031feec7"
+        },
+        "thumbnail": {
+          "path": "thumbs/creative-preset-26.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 37574,
+          "sha256": "16cd1e88fcb777b377021d5af8d18a1320c56e1baf748ee812a5a38dc0aa31c8"
+        },
+        "card": {
+          "path": "cards/creative-preset-26.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 198012,
+          "sha256": "0eb593b922d84b10e062726787752d6a568856513dac17f07053eb304c7e6d5a"
+        }
+      },
+      "generation_record": "results/creative-preset-26.json",
+      "actual_prompt_file": "prompts/creative-preset-26-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects.",
+      "comparison_time_order": "lighting base -> GPT relighting"
+    },
+    {
+      "asset_id": "camera-preview-01",
+      "priority": "P1",
+      "name": "电影人像",
+      "target": {
+        "type": "camera-preset",
+        "name": "电影人像",
+        "parameters": {
+          "name": "电影人像",
+          "body": "ARRI ALEXA 35（阿莱）",
+          "lens": "Cooke S4",
+          "focal": "85 mm",
+          "aperture": "f/1.8"
+        }
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "reviewed_candidate",
+      "master": "masters/camera-preview-01.png",
+      "thumbnail": "thumbs/camera-preview-01.webp",
+      "card": "cards/camera-preview-01.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作电影人像的摄影意图示例，摄影参数语义参考：ARRI ALEXA 35（阿莱），Cooke S4，85 mm，f/1.8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "75d60986f4d33c6ad58a7b241fe618e15e9bb4dea290722a943358c247648343",
+      "reference_images": [],
+      "visual_notes": [
+        "成年虚构人物浅景深人像，冷暖实景光与电影感可读；不是ARRI/Cooke实拍或镜头标定。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/camera-preview-01.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1853840,
+          "sha256": "75d60986f4d33c6ad58a7b241fe618e15e9bb4dea290722a943358c247648343"
+        },
+        "thumbnail": {
+          "path": "thumbs/camera-preview-01.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 20174,
+          "sha256": "6b6317c710a7228cf21fe12923412347db22090139809fda18c09ceb102fd777"
+        },
+        "card": {
+          "path": "cards/camera-preview-01.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 110304,
+          "sha256": "b17c0b8644fb446ad182a15fabb9e0255e418dec119b20c328f5cae0dfa1843c"
+        }
+      },
+      "generation_record": "results/camera-preview-01.json",
+      "actual_prompt_file": "prompts/camera-preview-01-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "camera-preview-02",
+      "priority": "P1",
+      "name": "环境纪实",
+      "target": {
+        "type": "camera-preset",
+        "name": "环境纪实",
+        "parameters": {
+          "name": "环境纪实",
+          "body": "Contax T2（康泰时）",
+          "lens": "Zeiss Ultra Prime",
+          "focal": "35 mm",
+          "aperture": "f/5.6"
+        }
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "reviewed_candidate",
+      "master": "masters/camera-preview-02.png",
+      "thumbnail": "thumbs/camera-preview-02.webp",
+      "card": "cards/camera-preview-02.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作环境纪实的摄影意图示例，摄影参数语义参考：Contax T2（康泰时），Zeiss Ultra Prime，35 mm，f/5.6。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "56ff7665e07a835bdfb70cc4ae7211266fd61fd36a3c493931289844e86b8349",
+      "reference_images": [],
+      "visual_notes": [
+        "河岸人物与周围环境同时可见，环境纪实意图清楚；未测视场角与真实景深。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/camera-preview-02.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2535258,
+          "sha256": "56ff7665e07a835bdfb70cc4ae7211266fd61fd36a3c493931289844e86b8349"
+        },
+        "thumbnail": {
+          "path": "thumbs/camera-preview-02.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 51304,
+          "sha256": "c12c17e89381a321eddcae547e4b6f479005a97e78bdd819872daa5f5e007238"
+        },
+        "card": {
+          "path": "cards/camera-preview-02.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 299438,
+          "sha256": "b71e4ef89d48ba093ae0b096239206ebb501089a16828df84c73f1d59e66b9d8"
+        }
+      },
+      "generation_record": "results/camera-preview-02.json",
+      "actual_prompt_file": "prompts/camera-preview-02-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "camera-preview-03",
+      "priority": "P1",
+      "name": "广角建筑",
+      "target": {
+        "type": "camera-preset",
+        "name": "广角建筑",
+        "parameters": {
+          "name": "广角建筑",
+          "body": "Sony VENICE（索尼）",
+          "lens": "移轴镜头",
+          "focal": "24 mm",
+          "aperture": "f/8"
+        }
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "reviewed_candidate",
+      "master": "masters/camera-preview-03.png",
+      "thumbnail": "thumbs/camera-preview-03.webp",
+      "card": "cards/camera-preview-03.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作广角建筑的摄影意图示例，摄影参数语义参考：Sony VENICE（索尼），移轴镜头，24 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "ee22bb5eb22b92c8b0801fefb31d3ccc87a8b785de6ec0b49191368ec73ecf4a",
+      "reference_images": [],
+      "visual_notes": [
+        "建筑主立面与空间透视可读，广角建筑意图明确；垂线未做像素级标定或移轴光学验证。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/camera-preview-03.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2648797,
+          "sha256": "ee22bb5eb22b92c8b0801fefb31d3ccc87a8b785de6ec0b49191368ec73ecf4a"
+        },
+        "thumbnail": {
+          "path": "thumbs/camera-preview-03.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 43108,
+          "sha256": "90377e45839b64d85ff744d59bb256d4af1b4a56ebd3b9d351c0a96b88ecac75"
+        },
+        "card": {
+          "path": "cards/camera-preview-03.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 303022,
+          "sha256": "fb0e68d0978dd8dd91a28e4244bce031330bc2d0330dba347ed0e1494ff02e3c"
+        }
+      },
+      "generation_record": "results/camera-preview-03.json",
+      "actual_prompt_file": "prompts/camera-preview-03-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "camera-preview-04",
+      "priority": "P1",
+      "name": "产品微距",
+      "target": {
+        "type": "camera-preset",
+        "name": "产品微距",
+        "parameters": {
+          "name": "产品微距",
+          "body": "Hasselblad X2D",
+          "lens": "微距镜头",
+          "focal": "105 mm",
+          "aperture": "f/8"
+        }
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": null,
+      "preview_kind": "gpt_illustration_not_optical_measurement",
+      "status": "needs_revision",
+      "master": "masters/camera-preview-04.png",
+      "thumbnail": "thumbs/camera-preview-04.webp",
+      "card": "cards/camera-preview-04.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "制作产品微距的摄影意图示例，摄影参数语义参考：Hasselblad X2D，微距镜头，105 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "dcdbf5e69ed3e75f74ec72eb36a72a301e61196eb6d8d429f894f242c162731e",
+      "reference_images": [],
+      "visual_notes": [
+        "原创无品牌腕表机芯微距，金属细节可读；机芯出现细小伪刻字，需清除；外缘与表带为细节裁切，机械结构未验证，待返修。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/camera-preview-04.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 2252338,
+          "sha256": "dcdbf5e69ed3e75f74ec72eb36a72a301e61196eb6d8d429f894f242c162731e"
+        },
+        "thumbnail": {
+          "path": "thumbs/camera-preview-04.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 38102,
+          "sha256": "9122c440db2e4078e3362fbd49e4e1ae0f63c64bb9fac232a0f752b14e662197"
+        },
+        "card": {
+          "path": "cards/camera-preview-04.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 200888,
+          "sha256": "19ac695eb882f1f5d4ca852c5c97b02810a0b1b617e4e5ec4d05d5e9473d07ea"
+        }
+      },
+      "generation_record": "results/camera-preview-04.json",
+      "actual_prompt_file": "prompts/camera-preview-04-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-01",
+      "priority": "P2",
+      "name": "窗边侧光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "窗边侧光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-01.png",
+      "thumbnail": "thumbs/lighting-preview-01.webp",
+      "card": "cards/lighting-preview-01.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为窗边侧光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "f277081b7a913f26fd035c9c761ae754fa26b9b92adbe75ae14ad8337ce1b2f9",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "左侧窗光、背景窗影可读，人物姿势服装保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-01.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1846960,
+          "sha256": "f277081b7a913f26fd035c9c761ae754fa26b9b92adbe75ae14ad8337ce1b2f9"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-01.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 11708,
+          "sha256": "fd9bde2665f99cfde85d3eeac231bab6636c97a5994a6b18d3738d250787f0a8"
+        },
+        "card": {
+          "path": "cards/lighting-preview-01.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 89580,
+          "sha256": "0f792caab8da18d04c36a6338f3c6094b080715a1c9025cccd178dcc569f0085"
+        }
+      },
+      "generation_record": "results/lighting-preview-01.json",
+      "actual_prompt_file": "prompts/lighting-preview-01-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-02",
+      "priority": "P2",
+      "name": "丁达尔光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "丁达尔光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-02.png",
+      "thumbnail": "thumbs/lighting-preview-02.webp",
+      "card": "cards/lighting-preview-02.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为丁达尔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0a1400c05004da4c9f14d20e03763276d278c93e1ac408de8c0d880da5176354",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "斜向可见光束与漂浮微粒形成丁达尔意图，人物保持；没有物理散射测量。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-02.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1899156,
+          "sha256": "0a1400c05004da4c9f14d20e03763276d278c93e1ac408de8c0d880da5176354"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-02.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 13112,
+          "sha256": "6efc714295ee0a2972c0eac6a86788335a84673407f74ca97872ef46aa89c562"
+        },
+        "card": {
+          "path": "cards/lighting-preview-02.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 103414,
+          "sha256": "862565bf51fffc9fc2bd0cf53624a5db849edffce75d75624fd614c8232ad9f7"
+        }
+      },
+      "generation_record": "results/lighting-preview-02.json",
+      "actual_prompt_file": "prompts/lighting-preview-02-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-03",
+      "priority": "P2",
+      "name": "黄金时刻",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "黄金时刻"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-03.png",
+      "thumbnail": "thumbs/lighting-preview-03.webp",
+      "card": "cards/lighting-preview-03.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为黄金时刻。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "0c54f0d7e9a378390066dcc44d5385f142c249322ad59808a75c987cba04535d",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "低角度暖金光明显，脸与服装保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-03.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1858971,
+          "sha256": "0c54f0d7e9a378390066dcc44d5385f142c249322ad59808a75c987cba04535d"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-03.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 14904,
+          "sha256": "5924080ac5c5a7c7876fe74084135897f017634fade7bfe3f7bb0110bdace7e0"
+        },
+        "card": {
+          "path": "cards/lighting-preview-03.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 98136,
+          "sha256": "057406fa4f7cdaa1a31acbff297ca4df7f8b4a2423be8c3fd2999484128d34d6"
+        }
+      },
+      "generation_record": "results/lighting-preview-03.json",
+      "actual_prompt_file": "prompts/lighting-preview-03-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-04",
+      "priority": "P2",
+      "name": "冷调月光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "冷调月光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-04.png",
+      "thumbnail": "thumbs/lighting-preview-04.webp",
+      "card": "cards/lighting-preview-04.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为冷调月光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "31530e2d389047941b71896ce5704d28ac0d99cbc5adff9932c569d39fe2a2b2",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "冷蓝月光与暗背景明显，脸与服装保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-04.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1847337,
+          "sha256": "31530e2d389047941b71896ce5704d28ac0d99cbc5adff9932c569d39fe2a2b2"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-04.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 10110,
+          "sha256": "0bc79a4ada671748c1687df1e07c54313fa52330ee0c648e09c90609f3189aa5"
+        },
+        "card": {
+          "path": "cards/lighting-preview-04.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 83032,
+          "sha256": "c027ed6850e973bffb17af96c52314773eb913cee51114a6f37fe7e5212db4e3"
+        }
+      },
+      "generation_record": "results/lighting-preview-04.json",
+      "actual_prompt_file": "prompts/lighting-preview-04-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-05",
+      "priority": "P2",
+      "name": "米白柔光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "米白柔光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-05.png",
+      "thumbnail": "thumbs/lighting-preview-05.webp",
+      "card": "cards/lighting-preview-05.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为米白柔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "325ed0722b421ef6fadeb16e2299dd488898312772d3603ac4bb976820b12217",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "米白柔光过渡与低反差意图，暖白背景与灰底其他光线可区分；没有改变衣服与脸。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-05.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1858776,
+          "sha256": "325ed0722b421ef6fadeb16e2299dd488898312772d3603ac4bb976820b12217"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-05.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 11046,
+          "sha256": "956f925dbbc46f4e25695d5105cd5a47eb9e1dd1218abc891c985d6ddb2ec467"
+        },
+        "card": {
+          "path": "cards/lighting-preview-05.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 87194,
+          "sha256": "0d6341b9a0f650a4733e7cfa47cf76bdf44bef153d302ab28795de7d9d88b75b"
+        }
+      },
+      "generation_record": "results/lighting-preview-05.json",
+      "actual_prompt_file": "prompts/lighting-preview-05-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-06",
+      "priority": "P2",
+      "name": "霓虹混光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "霓虹混光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-06.png",
+      "thumbnail": "thumbs/lighting-preview-06.webp",
+      "card": "cards/lighting-preview-06.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为霓虹混光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "9c6c80f2228d34510e31edcee277daf2b8474cbf3a91aecdc9e1820eb79ab0b2",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "青红混合照明意图，脸与服装保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-06.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1896715,
+          "sha256": "9c6c80f2228d34510e31edcee277daf2b8474cbf3a91aecdc9e1820eb79ab0b2"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-06.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 12968,
+          "sha256": "680dd646dd9f728d0529122ef8d1d64caeacc575d8f893a4b75fae8127d73ee5"
+        },
+        "card": {
+          "path": "cards/lighting-preview-06.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 104280,
+          "sha256": "db87f589bb0c50ed55a769c99720c6f47994d9547515282910dcae267b553fd2"
+        }
+      },
+      "generation_record": "results/lighting-preview-06.json",
+      "actual_prompt_file": "prompts/lighting-preview-06-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-07",
+      "priority": "P2",
+      "name": "逆光轮廓",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "逆光轮廓"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-07.png",
+      "thumbnail": "thumbs/lighting-preview-07.webp",
+      "card": "cards/lighting-preview-07.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为逆光轮廓。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "25abb26c11bb959b81317016488fbea041b0cdcf5ccc39ec7d1bd619536997aa",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "背后边缘亮光形成轮廓，主体保留。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-07.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1912818,
+          "sha256": "25abb26c11bb959b81317016488fbea041b0cdcf5ccc39ec7d1bd619536997aa"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-07.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 12576,
+          "sha256": "0e74c2a9877e8afcdfb485388a3d5d04b24bde55589085736c3756ec350d4111"
+        },
+        "card": {
+          "path": "cards/lighting-preview-07.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 100564,
+          "sha256": "eee060b3482c99defb54dbc62a1b7d900df1ef2680b24273c0d47938a92e75a4"
+        }
+      },
+      "generation_record": "results/lighting-preview-07.json",
+      "actual_prompt_file": "prompts/lighting-preview-07-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-08",
+      "priority": "P2",
+      "name": "舞台聚光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "舞台聚光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-08.png",
+      "thumbnail": "thumbs/lighting-preview-08.webp",
+      "card": "cards/lighting-preview-08.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为舞台聚光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "e866e14329ae14cb60959f483f4289c0c1d494fa702771e145bef039d19e92a5",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "左上聚光束与明暗区隔可见，面部保留补光；舞台聚光意图示例，无实际灯具测量。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-08.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1873747,
+          "sha256": "e866e14329ae14cb60959f483f4289c0c1d494fa702771e145bef039d19e92a5"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-08.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 12508,
+          "sha256": "81032c8b74ac673861d0244fd6795768fc20b6e48c4da9f0de6538b65fef8d5f"
+        },
+        "card": {
+          "path": "cards/lighting-preview-08.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 95960,
+          "sha256": "9ecbc45dcff54e4c15cbfefdb0e6a6a1e989326a04fc9969696bee5a02d61cca"
+        }
+      },
+      "generation_record": "results/lighting-preview-08.json",
+      "actual_prompt_file": "prompts/lighting-preview-08-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-09",
+      "priority": "P2",
+      "name": "阴天散射光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "阴天散射光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/lighting-preview-09.png",
+      "thumbnail": "thumbs/lighting-preview-09.webp",
+      "card": "cards/lighting-preview-09.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为阴天散射光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "5cd82e3e7d5162ee2ac5e4321fa16ee59aa64a70487a4aac5ffbdfc5e574ffec",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "阴天散射、柔和低反差，取景与人物保持；与米白柔光差异需复核。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-09.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1824473,
+          "sha256": "5cd82e3e7d5162ee2ac5e4321fa16ee59aa64a70487a4aac5ffbdfc5e574ffec"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-09.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 9254,
+          "sha256": "47a98976ce3d2f5e6ef09dabd49b27c919e85df3c65198cbba77cf30ab747cbb"
+        },
+        "card": {
+          "path": "cards/lighting-preview-09.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 80516,
+          "sha256": "6ed7f436e9119e09ca6e14d404c8ab76aad71382bfce9edef97b401b9ec1fb1d"
+        }
+      },
+      "generation_record": "results/lighting-preview-09.json",
+      "actual_prompt_file": "prompts/lighting-preview-09-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-10",
+      "priority": "P2",
+      "name": "影棚硬光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "影棚硬光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-10.png",
+      "thumbnail": "thumbs/lighting-preview-10.webp",
+      "card": "cards/lighting-preview-10.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为影棚硬光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "aa2f9c24f4dfb557424b0c37d4deb8dcff60dbb1f0800acbe2ef902ef4a4a0fa",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "硬光与阴影边界明确，人物身份保持。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-10.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1908760,
+          "sha256": "aa2f9c24f4dfb557424b0c37d4deb8dcff60dbb1f0800acbe2ef902ef4a4a0fa"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-10.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 11640,
+          "sha256": "63ace4f8998663ac0640604f106a56ed6d90514af8cc6c5ddf58738002c397a1"
+        },
+        "card": {
+          "path": "cards/lighting-preview-10.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 94960,
+          "sha256": "50a168df35f2ed79523583bf97233cd41cfdbfa6d805e32ca2fb76d12727aeff"
+        }
+      },
+      "generation_record": "results/lighting-preview-10.json",
+      "actual_prompt_file": "prompts/lighting-preview-10-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-11",
+      "priority": "P2",
+      "name": "烛光暖光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "烛光暖光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "reviewed_candidate",
+      "master": "masters/lighting-preview-11.png",
+      "thumbnail": "thumbs/lighting-preview-11.webp",
+      "card": "cards/lighting-preview-11.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为烛光暖光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "a9c005303e4175c9017dd3dfdfb5550854cfc0b18ad2975b31b01aebdbc2a28f",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "低照度暖光与肤色反射意图，人物保持；不是烛光色温实测。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-11.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1792434,
+          "sha256": "a9c005303e4175c9017dd3dfdfb5550854cfc0b18ad2975b31b01aebdbc2a28f"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-11.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 10132,
+          "sha256": "de2145f55b9564f4dbe0a75c4eaa7110b1a0abe14948c6afbd958c65388e4ee6"
+        },
+        "card": {
+          "path": "cards/lighting-preview-11.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 84924,
+          "sha256": "d049e5f0e6659308bd6119aef5fbaa20d5c86ad1b5e9caa1a36336a440a0589f"
+        }
+      },
+      "generation_record": "results/lighting-preview-11.json",
+      "actual_prompt_file": "prompts/lighting-preview-11-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    },
+    {
+      "asset_id": "lighting-preview-12",
+      "priority": "P2",
+      "name": "自然顺光",
+      "target": {
+        "type": "character-option",
+        "tab": "风格",
+        "group": "光线",
+        "option": "自然顺光"
+      },
+      "source_prompt": null,
+      "source_prompt_sha256": null,
+      "art_direction": null,
+      "base_asset": "base-portrait",
+      "preview_kind": "gpt_illustration_not_provider_result",
+      "status": "needs_revision",
+      "master": "masters/lighting-preview-12.png",
+      "thumbnail": "thumbs/lighting-preview-12.webp",
+      "card": "cards/lighting-preview-12.webp",
+      "generated_by": "ChatGPT",
+      "actual_prompt": "以统一成年人物肖像为参考，仅调整为自然顺光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。 唯一参考图片为base-portrait；严格使用此图，不引用其他对话图片。",
+      "actual_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "cddbce13870084d5f7b1cd03b232bffcc99949ac18236b510f90291cb7f96530",
+      "reference_images": [
+        {
+          "path": "bases/base-portrait.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1888386,
+          "sha256": "3d85165c7a4e932104ce02924c5d02254c866a551b06e2684b1e62ff29fe5c22"
+        }
+      ],
+      "visual_notes": [
+        "自然正向光，明亮均匀，人物保持；与柔光类缩略图区分需复核。"
+      ],
+      "comparisons": [],
+      "files": {
+        "master": {
+          "path": "masters/lighting-preview-12.png",
+          "dimensions": [
+            1672,
+            941
+          ],
+          "bytes": 1894734,
+          "sha256": "cddbce13870084d5f7b1cd03b232bffcc99949ac18236b510f90291cb7f96530"
+        },
+        "thumbnail": {
+          "path": "thumbs/lighting-preview-12.webp",
+          "dimensions": [
+            640,
+            360
+          ],
+          "bytes": 9946,
+          "sha256": "e225730a86e784ff1ced1448969fc9837cc14d961f8bffd1e38f56ac6f459d68"
+        },
+        "card": {
+          "path": "cards/lighting-preview-12.webp",
+          "dimensions": [
+            1536,
+            864
+          ],
+          "bytes": 88046,
+          "sha256": "57806684e002f675de916349d947e71426b2417584ec21db8b6fcb0ef6ba8cb9"
+        }
+      },
+      "generation_record": "results/lighting-preview-12.json",
+      "actual_prompt_file": "prompts/lighting-preview-12-actual.txt",
+      "visual_review_method": "assistant visual inspection of actual image-tool output and review contact sheet; subjective, no face-recognition/physical proof",
+      "derivative_method": "contain whole original without stretch/crop inside a 1536x864 dark canvas with >=8% outer margin; quality94 WebP card, quality88 640x360 WebP thumbnail; originals unchanged. Does not fix already clipped contents or internal panel defects."
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "method": "assistant_visual_review",
+  "structural_tests_are_separate": true,
+  "first_six_inspected_before_remaining": [
+    "creative-preset-0",
+    "creative-preset-12",
+    "creative-preset-19",
+    "creative-preset-18",
+    "creative-preset-23",
+    "creative-preset-26"
+  ],
+  "notes_by_asset": [
+    {
+      "asset_id": "creative-preset-0",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "暖色、高光过渡和细颗粒可见；脸、衣服、杯子、红本与植物位置保持。品牌名称仅代表色彩意图。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-1",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "绿蓝较清新，阴影略冷；同一咖啡馆物件和姿势。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-2",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "黑白与灰阶层次明确，缩略图易辨认；颗粒未经物理测量。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-3",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "饱和度受控、阴影加深；主体构图保持。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-4",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "暖色褪色与柔和反差可见，没有额外宝丽来边框。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-5",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "窗侧主光与亮边增强，背景实景灯保持；与柯达暖调仍相近，作为灯光候选。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-6",
+      "status": "needs_revision",
+      "visual_notes": [
+        "暗部可读，但相对自然光底图改变较弱，640缩略图中不易辨识HDR意图，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-7",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "高光扩散明显，五官与主体轮廓仍可读；窗边高光略强。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-8",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "原图可见细颗粒，缩略图不应期待颗粒显著；未用代码添加噪声。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-9",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "青红夜间霓虹、雨窗和湿桌反射明确；人物与固定物件保持，新增湿润表面属于预设要求。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-10",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "暖黄褪色和低饱和阴影可见，缩略图与其他暖色胶片仍有相近之处。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-11",
+      "status": "needs_revision",
+      "visual_notes": [
+        "同一脸、发型、表情、灰衣和取景；清透与其他肤质在缩略图中区别不足，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-12",
+      "status": "needs_revision",
+      "visual_notes": [
+        "局部瑕疵有柔化，身份保持；缩略图与底图及其他肤质区别不足，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-13",
+      "status": "needs_revision",
+      "visual_notes": [
+        "原图毛孔细节有所增强；在640缩略图仍难与其他肤质快速区分，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-14",
+      "status": "needs_revision",
+      "visual_notes": [
+        "肤色略均匀柔润，未换脸；奶油肌视觉识别度仍弱，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-15",
+      "status": "needs_revision",
+      "visual_notes": [
+        "高频细节略柔化，眼睛与头发清晰；缩略图区别弱，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-16",
+      "status": "needs_revision",
+      "visual_notes": [
+        "额头和鼻部油光有所控制，身份保持；缩略图与柔肤仍相近，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-17",
+      "status": "needs_revision",
+      "visual_notes": [
+        "实际原图1774×887，严格2:1；横向空间可读。左右柱、家具和亮度不能证明接缝连续，仅为全景构图示意，待返修/专门全景验证。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-18",
+      "status": "needs_revision",
+      "visual_notes": [
+        "实际3×3等格，九种景别/机位可分辨。原图顶行头脚靠近格线；小图面部细节有限，部分背包/肩带形状不完全一致，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-19",
+      "status": "needs_revision",
+      "visual_notes": [
+        "正侧背全身齐全，等高；原图上下安全留白不足，肩带/包形跨视角有偏差，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-20",
+      "status": "needs_revision",
+      "visual_notes": [
+        "2×2包含正侧背全身与面部特写；侧面肩带/包位置仍需核对，原图外边距偏小，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-21",
+      "status": "needs_revision",
+      "visual_notes": [
+        "全身主视图及衣服、包、鞋细节齐全；部件拼接关系未工程验证，原图边距紧，缩略图细节偏密，衣领有细小伪标签，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-22",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "原创湖畔小咖啡馆概念页，外观、室内和材质细节可辨。模型自行加入湖山环境；剖视与外观未严格几何对应，作为概念意图候选。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-23",
+      "status": "needs_revision",
+      "visual_notes": [
+        "正侧背、拆解与材质细节齐全；表冠/铰链方向大体对应，但机芯拆解为生成想象，部分形状与底图不同，原图边距紧，待返修。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-24",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "从伸手未持杯推进到举杯，人物服装与咖啡馆连续；手指接触未做逐像素或物理验证。3秒为叙事情境。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-25",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "初版几乎重复底图，已保留。重试后双手下垂远离杯，白杯仍在原桌面，形成伸手前状态；5秒为叙事情境。"
+      ]
+    },
+    {
+      "asset_id": "creative-preset-26",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "同一取景、身份与物件，窗光和明暗比校正可见；不是目标工作流实测，也不是光度学正确性结论。"
+      ]
+    },
+    {
+      "asset_id": "camera-preview-01",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "成年虚构人物浅景深人像，冷暖实景光与电影感可读；不是ARRI/Cooke实拍或镜头标定。"
+      ]
+    },
+    {
+      "asset_id": "camera-preview-02",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "河岸人物与周围环境同时可见，环境纪实意图清楚；未测视场角与真实景深。"
+      ]
+    },
+    {
+      "asset_id": "camera-preview-03",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "建筑主立面与空间透视可读，广角建筑意图明确；垂线未做像素级标定或移轴光学验证。"
+      ]
+    },
+    {
+      "asset_id": "camera-preview-04",
+      "status": "needs_revision",
+      "visual_notes": [
+        "原创无品牌腕表机芯微距，金属细节可读；机芯出现细小伪刻字，需清除；外缘与表带为细节裁切，机械结构未验证，待返修。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-01",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "左侧窗光、背景窗影可读，人物姿势服装保持。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-02",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "斜向可见光束与漂浮微粒形成丁达尔意图，人物保持；没有物理散射测量。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-03",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "低角度暖金光明显，脸与服装保持。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-04",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "冷蓝月光与暗背景明显，脸与服装保持。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-05",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "米白柔光过渡与低反差意图，暖白背景与灰底其他光线可区分；没有改变衣服与脸。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-06",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "青红混合照明意图，脸与服装保持。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-07",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "背后边缘亮光形成轮廓，主体保留。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-08",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "左上聚光束与明暗区隔可见，面部保留补光；舞台聚光意图示例，无实际灯具测量。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-09",
+      "status": "needs_revision",
+      "visual_notes": [
+        "阴天散射、柔和低反差，取景与人物保持；与米白柔光差异需复核。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-10",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "硬光与阴影边界明确，人物身份保持。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-11",
+      "status": "reviewed_candidate",
+      "visual_notes": [
+        "低照度暖光与肤色反射意图，人物保持；不是烛光色温实测。"
+      ]
+    },
+    {
+      "asset_id": "lighting-preview-12",
+      "status": "needs_revision",
+      "visual_notes": [
+        "自然正向光，明亮均匀，人物保持；与柔光类缩略图区分需复核。"
+      ]
+    }
+  ]
+}

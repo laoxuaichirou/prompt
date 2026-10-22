@@ -1,0 +1,44 @@
+﻿priority,asset_id,name,base_asset,source_prompt_or_image_prompt,master,thumbnail
+P0,creative-preset-0,柯达,base-scene,暖色胶片色彩，柔和高光过渡，自然肤色，细腻胶片颗粒。,masters/creative-preset-0.png,thumbs/creative-preset-0.webp
+P0,creative-preset-1,富士,base-scene,清新绿色与蓝色，柔和对比，保留自然肤色和暗部细节。,masters/creative-preset-1.png,thumbs/creative-preset-1.webp
+P0,creative-preset-2,伊尔福,base-scene,黑白银盐摄影，丰富灰阶，真实颗粒和清晰层次。,masters/creative-preset-2.png,thumbs/creative-preset-2.webp
+P0,creative-preset-3,电影胶片,base-scene,电影负片色彩，克制饱和度，柔和高光和深邃阴影。,masters/creative-preset-3.png,thumbs/creative-preset-3.webp
+P0,creative-preset-4,宝丽来,base-scene,即时成像色调，轻微褪色，温暖柔和的生活摄影质感。,masters/creative-preset-4.png,thumbs/creative-preset-4.webp
+P0,creative-preset-5,电影光效,base-scene,有动机的电影布光，明确主辅光、轮廓光与空间层次。,masters/creative-preset-5.png,thumbs/creative-preset-5.webp
+P0,creative-preset-6,HDR,base-scene,扩大明暗细节，保留自然对比，避免过度锐化和光晕。,masters/creative-preset-6.png,thumbs/creative-preset-6.webp
+P0,creative-preset-7,柔焦效果,base-scene,柔和高光晕染，主体轮廓清晰，轻微扩散镜效果。,masters/creative-preset-7.png,thumbs/creative-preset-7.webp
+P0,creative-preset-8,胶片颗粒,base-scene,增加细密自然胶片颗粒，保留皮肤和材质细节。,masters/creative-preset-8.png,thumbs/creative-preset-8.webp
+P0,creative-preset-9,赛博朋克,base-scene,夜间霓虹青红对照，湿润反光环境，主体清晰。,masters/creative-preset-9.png,thumbs/creative-preset-9.webp
+P0,creative-preset-10,复古色调,base-scene,暖黄褪色和低饱和阴影，复古生活摄影。,masters/creative-preset-10.png,thumbs/creative-preset-10.webp
+P0,creative-preset-11,清透美颜,base-portrait,清透自然肤色，保留微小皮肤纹理，不改变五官。,masters/creative-preset-11.png,thumbs/creative-preset-11.webp
+P0,creative-preset-12,柔肤美颜,base-portrait,柔化局部瑕疵但保留面部身份和自然纹理。,masters/creative-preset-12.png,thumbs/creative-preset-12.webp
+P0,creative-preset-13,细腻肌理,base-portrait,增强真实细微皮肤纹理，保留毛孔与自然肤色。,masters/creative-preset-13.png,thumbs/creative-preset-13.webp
+P0,creative-preset-14,奶油肌,base-portrait,柔润均匀的奶油肤感，避免塑料皮肤和过度磨皮。,masters/creative-preset-14.png,thumbs/creative-preset-14.webp
+P0,creative-preset-15,柔化质感,base-portrait,柔化皮肤高频噪点，保留眼睛、头发和面部结构。,masters/creative-preset-15.png,thumbs/creative-preset-15.webp
+P0,creative-preset-16,哑光肌理,base-portrait,控制油光，柔雾哑光肌肤，保留层次和真实纹理。,masters/creative-preset-16.png,thumbs/creative-preset-16.webp
+P0,creative-preset-17,全景图,,将场景拓展为360度等距柱状投影全景，左右边缘连续，保留主体设计与空间逻辑。,masters/creative-preset-17.png,thumbs/creative-preset-17.webp
+P0,creative-preset-18,多机位九宫格,base-character,生成3×3九宫格，同一人物、服装、场景与光线，九个不同机位和景别，网格等大排列，无文字。,masters/creative-preset-18.png,thumbs/creative-preset-18.webp
+P0,creative-preset-19,人物三视图,base-character,生成同一角色正面、侧面和背面全身设计，三视图并列，同一身高比例、服装、配件和中性背景。,masters/creative-preset-19.png,thumbs/creative-preset-19.webp
+P0,creative-preset-20,4视图,base-character,生成同一角色正面、侧面、背面全身视图及面部特写，2×2排列，身份服装保持一致。,masters/creative-preset-20.png,thumbs/creative-preset-20.webp
+P0,creative-preset-21,人物设计图,base-character,制作角色设定页，包含全身主视图、服装配件和关键细节放大，统一身份、颜色与材质。,masters/creative-preset-21.png,thumbs/creative-preset-21.webp
+P0,creative-preset-22,场景设计图,,制作场景概念设计页，包含全景、关键建筑和材质细节，统一世界观与照明。,masters/creative-preset-22.png,thumbs/creative-preset-22.webp
+P0,creative-preset-23,道具设计图,base-prop,制作道具设计页，包含正侧背视图、结构拆解和材质细节，比例结构一致。,masters/creative-preset-23.png,thumbs/creative-preset-23.webp
+P0,creative-preset-24,3秒后,base-action,推演参考画面3秒后的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和运动逻辑连续。,masters/creative-preset-24.png,thumbs/creative-preset-24.webp
+P0,creative-preset-25,5秒前,base-action,推演参考画面5秒前的动作状态，仅输出一个新的瞬间，保持人物、服装、场景和事件逻辑连续。,masters/creative-preset-25.png,thumbs/creative-preset-25.webp
+P0,creative-preset-26,电影级光影校正,base-scene,保留构图人物和材质，校正主光、阴影方向、环境反射及色温，形成一致的电影级光照。,masters/creative-preset-26.png,thumbs/creative-preset-26.webp
+P1,camera-preview-01,电影人像,,制作电影人像的摄影意图示例，摄影参数语义参考：ARRI ALEXA 35（阿莱），Cooke S4，85 mm，f/1.8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。,masters/camera-preview-01.png,thumbs/camera-preview-01.webp
+P1,camera-preview-02,环境纪实,,制作环境纪实的摄影意图示例，摄影参数语义参考：Contax T2（康泰时），Zeiss Ultra Prime，35 mm，f/5.6。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。,masters/camera-preview-02.png,thumbs/camera-preview-02.webp
+P1,camera-preview-03,广角建筑,,制作广角建筑的摄影意图示例，摄影参数语义参考：Sony VENICE（索尼），移轴镜头，24 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。,masters/camera-preview-03.png,thumbs/camera-preview-03.webp
+P1,camera-preview-04,产品微距,,制作产品微距的摄影意图示例，摄影参数语义参考：Hasselblad X2D，微距镜头，105 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。,masters/camera-preview-04.png,thumbs/camera-preview-04.webp
+P2,lighting-preview-01,窗边侧光,base-portrait,以统一成年人物肖像为参考，仅调整为窗边侧光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-01.png,thumbs/lighting-preview-01.webp
+P2,lighting-preview-02,丁达尔光,base-portrait,以统一成年人物肖像为参考，仅调整为丁达尔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-02.png,thumbs/lighting-preview-02.webp
+P2,lighting-preview-03,黄金时刻,base-portrait,以统一成年人物肖像为参考，仅调整为黄金时刻。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-03.png,thumbs/lighting-preview-03.webp
+P2,lighting-preview-04,冷调月光,base-portrait,以统一成年人物肖像为参考，仅调整为冷调月光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-04.png,thumbs/lighting-preview-04.webp
+P2,lighting-preview-05,米白柔光,base-portrait,以统一成年人物肖像为参考，仅调整为米白柔光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-05.png,thumbs/lighting-preview-05.webp
+P2,lighting-preview-06,霓虹混光,base-portrait,以统一成年人物肖像为参考，仅调整为霓虹混光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-06.png,thumbs/lighting-preview-06.webp
+P2,lighting-preview-07,逆光轮廓,base-portrait,以统一成年人物肖像为参考，仅调整为逆光轮廓。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-07.png,thumbs/lighting-preview-07.webp
+P2,lighting-preview-08,舞台聚光,base-portrait,以统一成年人物肖像为参考，仅调整为舞台聚光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-08.png,thumbs/lighting-preview-08.webp
+P2,lighting-preview-09,阴天散射光,base-portrait,以统一成年人物肖像为参考，仅调整为阴天散射光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-09.png,thumbs/lighting-preview-09.webp
+P2,lighting-preview-10,影棚硬光,base-portrait,以统一成年人物肖像为参考，仅调整为影棚硬光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-10.png,thumbs/lighting-preview-10.webp
+P2,lighting-preview-11,烛光暖光,base-portrait,以统一成年人物肖像为参考，仅调整为烛光暖光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-11.png,thumbs/lighting-preview-11.webp
+P2,lighting-preview-12,自然顺光,base-portrait,以统一成年人物肖像为参考，仅调整为自然顺光。保持同一身份、服装、姿态、表情、取景。光源方向与阴影对应，图片内无文字，作为光线意图示意。,masters/lighting-preview-12.png,thumbs/lighting-preview-12.webp

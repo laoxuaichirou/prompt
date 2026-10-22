@@ -1,0 +1,10 @@
+{
+  "id": "camera-preview-03",
+  "prompt": "制作广角建筑的摄影意图示例，摄影参数语义参考：Sony VENICE（索尼），移轴镜头，24 mm，f/8。主体与用途吻合，不画相机产品广告或文字，不声称精确模拟品牌设备的光学特性。  输出一张独立横向16:9成图，主体及重要结构留在中央84%安全区。尽可能1536×864。禁止加标题、UI、按钮、水印、乱码标签。",
+  "base": null,
+  "reference_paths": [],
+  "kind": "preset",
+  "generated_by": "ChatGPT",
+  "path": "/workspace/generated_images/exec-a217ce78-e40a-4857-9ac6-12cd3c5ea7d7.png",
+  "time": "2026-10-22T14:33:52.921Z"
+}

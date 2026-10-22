@@ -1,0 +1,3976 @@
+{
+  "executed_at_utc": "2026-10-22T14:53:24.914052+00:00",
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "manifest_checked": false,
+  "tool_original_paths_checked": true,
+  "visual_quality_certified": false,
+  "checks": [
+    {
+      "check": "uploaded_brief_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "43_unique_ids_and_exact_request_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "27_exact_P0_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "csv_and_json_id_sets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-0:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-1:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-2:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-3:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-4:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-5:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-6:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-7:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-8:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-9:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-10:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-11:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-12:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-13:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-14:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-15:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-16:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-17:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-18:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-19:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-20:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-21:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-22:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-23:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:comparison:before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-24:comparison:after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:comparison:before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-25:comparison:after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:source_sha_and_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:comparison:before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "creative-preset-26:comparison:after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-01:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-02:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-03:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:no_invented_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "camera-preview-04:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-01:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-02:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-03:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-04:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-05:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-06:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-07:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-08:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-09:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-10:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-11:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:attribution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:actual_prompt_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:master:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:master:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:master:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:thumbnail:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:thumbnail:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:thumbnail:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:thumb_640x360",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:card:exists_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:card:hash_size_decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:card:format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:card_1536x864",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:top_level_hash_dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:exact_one_base_reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lighting-preview-12:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-portrait:base_hash_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-portrait:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-scene:base_hash_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-scene:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-character:base_hash_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-character:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-action:base_hash_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-action:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-prop:base_hash_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base-prop:unchanged_tool_original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five_shared_bases",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "panorama_exact_2_to_1_native",
+      "passed": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "all_43_generated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicate_master_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "temporal_shared_base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "temporal_reference_hash_same",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "master:independent_unique_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "thumbnail:independent_unique_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "card:independent_unique_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "P0:summary_consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "P1:summary_consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "P2:summary_consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_package_images_decode",
+      "passed": true,
+      "detail": {
+        "count": 148
+      }
+    },
+    {
+      "check": "no_zero_byte_files",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true
+}
