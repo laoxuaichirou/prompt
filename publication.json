@@ -1,0 +1,10 @@
+{
+  "product": "提示词去重合并器",
+  "path": "/workspace/promptdedup-delivery.zip",
+  "bytes": 383266,
+  "sha256": "57dbe1e0b488ff21bb46921212be70711a44902820b346b6c0364ee80988b3a7",
+  "files": 29,
+  "zip_crc": true,
+  "all_manifest_hashes": true,
+  "no_empty_files": true
+}

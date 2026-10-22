@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "tests/core-test.cjs"
+  ],
+  "exit_code": 2,
+  "elapsed_seconds": 23.548983573913574
+}

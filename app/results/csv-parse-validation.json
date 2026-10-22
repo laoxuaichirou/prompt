@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "file": "browser-conflicts.csv",
+  "rows_including_header": 6,
+  "columns": 6,
+  "parser": "Python standard-library csv, utf-8-sig",
+  "original_spec_sha256": "b3dbfe4b42ca554914a8a0133d48c130de1000ffdaaf55bdd4a89137ae814c94"
+}

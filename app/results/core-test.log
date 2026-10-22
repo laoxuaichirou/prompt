@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "acceptancePassed": false,
+  "tests": 22,
+  "calibration": {
+    "allPassed": false,
+    "assertions": [
+      {
+        "pair": [
+          "S1",
+          "S2"
+        ],
+        "actual": 0.6495304546945873,
+        "expected": 0.63,
+        "tolerance": 0.03,
+        "passed": true
+      },
+      {
+        "pair": [
+          "S3",
+          "S4"
+        ],
+        "actual": 0.7898535014035585,
+        "expected": 0.78,
+        "tolerance": 0.03,
+        "passed": true
+      },
+      {
+        "pair": [
+          "S5",
+          "S6"
+        ],
+        "actual": 0.7364423584658133,
+        "expected": 0.78,
+        "tolerance": 0.03,
+        "passed": false
+      },
+      {
+        "pair": [
+          "S1",
+          "S3"
+        ],
+        "actual": 0.12151898734177215,
+        "requirement": "<0.10",
+        "passed": false
+      },
+      {
+        "pair": [
+          "S7",
+          "S8"
+        ],
+        "actual": 0.10003580834777147,
+        "requirement": "<0.25",
+        "passed": true
+      }
+    ],
+    "explanation": "Exact documented normalization and formula agree with independent DP. Two supplied numeric expectations do not. No sample/threshold/formula tuning."
+  },
+  "performance": [
+    {
+      "entries": 1200,
+      "totalPairs": 719400,
+      "elapsedSeconds": 6.550906905,
+      "intervalCallbacks": 40,
+      "progressEvents": 41,
+      "maxProgressGapMs": 164.58395999999993,
+      "stats": {
+        "totalEntries": 1200,
+        "eligible": 1200,
+        "excluded": 0,
+        "totalPairs": 719400,
+        "processed": 719400,
+        "compared": 719400,
+        "pruned": 0,
+        "shortCount": 0,
+        "elapsed": 6.539634333
+      },
+      "dataKind": "synthetic copies of embedded sample, NOT real 403-entry library"
+    },
+    {
+      "entries": 2000,
+      "totalPairs": 1999000,
+      "elapsedSeconds": 16.873473981,
+      "intervalCallbacks": 104,
+      "progressEvents": 105,
+      "maxProgressGapMs": 162.67600700000003,
+      "stats": {
+        "totalEntries": 2000,
+        "eligible": 2000,
+        "excluded": 0,
+        "totalPairs": 1999000,
+        "processed": 1999000,
+        "compared": 1999000,
+        "pruned": 0,
+        "shortCount": 0,
+        "elapsed": 16.862229490999997
+      },
+      "dataKind": "synthetic copies of embedded sample, NOT real 403-entry library"
+    }
+  ]
+}

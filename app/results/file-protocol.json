@@ -1,0 +1,11 @@
+{
+  "attempted": true,
+  "url": "file:///workspace/promptdedup-delivery/promptdedup.html",
+  "navigation": {
+    "frameId": "A15B0927AB85BF838295DDB53B5FC95D",
+    "loaderId": "8005AFF630DA7C37A55BFDA87C039D21",
+    "errorText": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+    "isDownload": false
+  },
+  "passed": false
+}
