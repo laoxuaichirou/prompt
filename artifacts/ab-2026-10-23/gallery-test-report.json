@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "ten full-size image outputs load",
+    "six comparison sections",
+    "dark backdrop switch",
+    "native-pixel view stays within page",
+    "native-pixel alpha inspection",
+    "native-pixel mode resets to fit",
+    "white backdrop switch",
+    "checker backdrop switch",
+    "both actual MP4 metadata load",
+    "both seek to same 3-second point",
+    "both videos pause",
+    "play starts are approximately aligned (not frame-locked)",
+    "mobile layout has no horizontal overflow",
+    "no browser exceptions"
+  ],
+  "count": 14,
+  "scope": "offline gallery file loading, background switching, video controls, responsive layout and PDF print; not a quality-pass verdict"
+}

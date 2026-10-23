@@ -1,0 +1,626 @@
+{
+  "method": "Pillow metadata, PNG alpha histogram and explicitly located pixel probes; no image editing",
+  "note": "Pixel probes do not establish identity, physical Kelvin, product fidelity, or perceptual quality.",
+  "items": [
+    {
+      "id": "AB01-A",
+      "case_id": "AB01",
+      "artifact": "artifacts/ab-2026-10-23/AB01-A.png",
+      "invocation": {
+        "id": "AB01-A",
+        "status": "generated",
+        "started_at": "2026-10-23T08:14:45.233Z",
+        "finished_at": "2026-10-23T08:15:08.050Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2f7ffcdc-5663-4d44-a9fc-ddbd996f04b3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "c3a66aa9bb5c7a7be7a85dcc1782827828f4150f79bfb84e457331866741ccf8",
+      "corner_mean_rgb": [
+        [
+          254.171,
+          254.036,
+          254.233
+        ],
+        [
+          254.278,
+          254.109,
+          254.235
+        ],
+        [
+          254.263,
+          254.104,
+          254.216
+        ],
+        [
+          254.261,
+          254.1,
+          254.206
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1254,
+          1254
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        254.267,
+        253.999,
+        254.15
+      ],
+      "accent_probe_rgb": [
+        244,
+        243,
+        238
+      ]
+    },
+    {
+      "id": "AB01-B",
+      "case_id": "AB01",
+      "artifact": "artifacts/ab-2026-10-23/AB01-B.png",
+      "invocation": {
+        "id": "AB01-B",
+        "status": "generated",
+        "started_at": "2026-10-23T08:14:45.233Z",
+        "finished_at": "2026-10-23T08:15:26.816Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-82fa86e8-f390-42ae-804b-77527f59f1fd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "bc41f565818de4131a885e8cea2ba8b3eadaef5de27c85ea4519245441cf4b29",
+      "corner_mean_rgb": [
+        [
+          228.54,
+          223.427,
+          216.942
+        ],
+        [
+          228.604,
+          223.479,
+          217.001
+        ],
+        [
+          228.603,
+          223.462,
+          216.916
+        ],
+        [
+          228.805,
+          223.669,
+          217.213
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1254,
+          1254
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        228.631,
+        223.488,
+        217.078
+      ],
+      "accent_probe_rgb": [
+        244,
+        241,
+        236
+      ]
+    },
+    {
+      "id": "AB02-A",
+      "case_id": "AB02",
+      "artifact": "artifacts/ab-2026-10-23/AB02-A.png",
+      "invocation": {
+        "id": "AB02-A",
+        "status": "generated",
+        "started_at": "2026-10-23T08:14:45.233Z",
+        "finished_at": "2026-10-23T08:16:18.230Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-694b827f-a5cf-40e6-a64d-69025347b9cc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "9430d88247b046170628bc9cf54343237290e4597c49b38639308dbd2d163aa7",
+      "corner_mean_rgb": [
+        [
+          90.424,
+          132.657,
+          191.461
+        ],
+        [
+          33.273,
+          45.602,
+          61.78
+        ],
+        [
+          80.598,
+          117.895,
+          173.689
+        ],
+        [
+          22.836,
+          37.646,
+          61.31
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1672,
+          941
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        110.745,
+        154.929,
+        211.849
+      ],
+      "accent_probe_rgb": [
+        50,
+        69,
+        90
+      ]
+    },
+    {
+      "id": "AB02-B",
+      "case_id": "AB02",
+      "artifact": "artifacts/ab-2026-10-23/AB02-B.png",
+      "invocation": {
+        "id": "AB02-B",
+        "status": "generated",
+        "started_at": "2026-10-23T08:15:08.050Z",
+        "finished_at": "2026-10-23T08:16:16.846Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-75a145e8-4a8d-4900-a173-3068fe815e7c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "50f47e67401a6575f315a4d123f60985408e55c6c69e00107f5cb6c7ff49d9df",
+      "corner_mean_rgb": [
+        [
+          164.926,
+          129.867,
+          120.382
+        ],
+        [
+          43.557,
+          42.165,
+          45.116
+        ],
+        [
+          96.52,
+          103.613,
+          133.036
+        ],
+        [
+          31.613,
+          35.706,
+          49.568
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1672,
+          941
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        181.98,
+        150.872,
+        138.006
+      ],
+      "accent_probe_rgb": [
+        82,
+        67,
+        57
+      ]
+    },
+    {
+      "id": "AB03-A",
+      "case_id": "AB03",
+      "artifact": "artifacts/ab-2026-10-23/AB03-A.png",
+      "invocation": {
+        "id": "AB03-A",
+        "status": "generated",
+        "started_at": "2026-10-23T08:15:26.816Z",
+        "finished_at": "2026-10-23T08:16:34.359Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2d3f541b-2042-49c9-935a-caf304cb277c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 941,
+      "height": 1672,
+      "mode": "RGB",
+      "sha256": "a61092c782330033fb727872b9b2fa07b2c9a56fbd74dd171f4aaa6751feb566",
+      "corner_mean_rgb": [
+        [
+          253.983,
+          250.415,
+          242.209
+        ],
+        [
+          254.145,
+          250.352,
+          241.941
+        ],
+        [
+          253.687,
+          250.342,
+          243.107
+        ],
+        [
+          253.825,
+          250.421,
+          242.88
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          941,
+          1672
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        253.944,
+        250.287,
+        242.768
+      ],
+      "accent_probe_rgb": [
+        255,
+        139,
+        104
+      ]
+    },
+    {
+      "id": "AB03-B",
+      "case_id": "AB03",
+      "artifact": "artifacts/ab-2026-10-23/AB03-B.png",
+      "invocation": {
+        "id": "AB03-B",
+        "status": "generated",
+        "started_at": "2026-10-23T08:16:16.846Z",
+        "finished_at": "2026-10-23T08:16:51.442Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-90d97c99-ea3e-4cb7-a91b-915803da09b2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 941,
+      "height": 1672,
+      "mode": "RGB",
+      "sha256": "10d6db426ebd1d29b6433868826324f631bdda11abffa5e7b90cfc115e63a703",
+      "corner_mean_rgb": [
+        [
+          253.994,
+          250.473,
+          243.132
+        ],
+        [
+          254.158,
+          250.636,
+          242.878
+        ],
+        [
+          253.649,
+          250.341,
+          243.328
+        ],
+        [
+          253.881,
+          250.444,
+          243.081
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          941,
+          1672
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        254.099,
+        250.517,
+        243.239
+      ],
+      "accent_probe_rgb": [
+        42,
+        188,
+        170
+      ]
+    },
+    {
+      "id": "AB04-A",
+      "case_id": "AB04",
+      "artifact": "artifacts/ab-2026-10-23/AB04-A.png",
+      "invocation": {
+        "id": "AB04-A",
+        "status": "generated",
+        "started_at": "2026-10-23T08:16:18.230Z",
+        "finished_at": "2026-10-23T08:17:24.796Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-1d23291a-4aab-49cd-a64b-fb0b028bcb29.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "e5a83fa7f8f2a7c6622ee79908f95d338d8882bac8a7cddb87afc650db4eded7",
+      "corner_mean_rgb": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.736473,
+        "semitransparent_fraction": 0.263398,
+        "fully_opaque_fraction": 0.000128,
+        "has_real_transparency": true,
+        "visible_bbox_alpha_gt8": [
+          375,
+          88,
+          836,
+          1188
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accent_probe_rgb": [
+        239,
+        236,
+        231
+      ]
+    },
+    {
+      "id": "AB04-B",
+      "case_id": "AB04",
+      "artifact": "artifacts/ab-2026-10-23/AB04-B.png",
+      "invocation": {
+        "id": "AB04-B",
+        "status": "generated",
+        "started_at": "2026-10-23T08:16:34.359Z",
+        "finished_at": "2026-10-23T08:17:27.294Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fc54c295-78fc-4c46-b932-559b60baa0d9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "4265e9bb2735c915e023df341aa337060e6755d7f5c9ac91db35dd07a9269552",
+      "corner_mean_rgb": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.770937,
+        "semitransparent_fraction": 0.22876,
+        "fully_opaque_fraction": 0.000303,
+        "has_real_transparency": true,
+        "visible_bbox_alpha_gt8": [
+          452,
+          92,
+          802,
+          1157
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "accent_probe_rgb": [
+        236,
+        234,
+        229
+      ]
+    },
+    {
+      "id": "AB05-A",
+      "case_id": "AB05",
+      "artifact": "artifacts/ab-2026-10-23/AB05-A.png",
+      "invocation": {
+        "id": "AB05-A",
+        "status": "generated",
+        "started_at": "2026-10-23T08:16:51.442Z",
+        "finished_at": "2026-10-23T08:18:01.288Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b82c7923-76c5-4101-a34d-7d0680e6ed36.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "907af05f622d6c999f0aaf0d3ad257db63cb834c0dc67f775dfdc75fa439558c",
+      "corner_mean_rgb": [
+        [
+          137.759,
+          137.063,
+          137.948
+        ],
+        [
+          136.697,
+          136.106,
+          136.561
+        ],
+        [
+          184.126,
+          183.369,
+          185.354
+        ],
+        [
+          126.133,
+          84.621,
+          64.993
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1672,
+          941
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        134.965,
+        128.178,
+        125.637
+      ],
+      "accent_probe_rgb": [
+        17,
+        17,
+        16
+      ]
+    },
+    {
+      "id": "AB05-B",
+      "case_id": "AB05",
+      "artifact": "artifacts/ab-2026-10-23/AB05-B.png",
+      "invocation": {
+        "id": "AB05-B",
+        "status": "generated",
+        "started_at": "2026-10-23T08:17:24.796Z",
+        "finished_at": "2026-10-23T08:18:50.368Z",
+        "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-929ac072-9fbe-404c-83b2-cbafd36f02be.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+      },
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "73a78d440de712d9f153e975f24ee7da177954904fcd9548ae3c2735387d21dd",
+      "corner_mean_rgb": [
+        [
+          123.329,
+          123.402,
+          127.341
+        ],
+        [
+          130.201,
+          130.097,
+          134.095
+        ],
+        [
+          151.737,
+          152.096,
+          156.036
+        ],
+        [
+          130.902,
+          131.634,
+          135.601
+        ]
+      ],
+      "alpha": {
+        "minimum": 255,
+        "maximum": 255,
+        "fully_transparent_fraction": 0.0,
+        "semitransparent_fraction": 0.0,
+        "fully_opaque_fraction": 1.0,
+        "has_real_transparency": false,
+        "visible_bbox_alpha_gt8": [
+          0,
+          0,
+          1672,
+          941
+        ]
+      },
+      "sky_probe_mean_rgb": [
+        137.54,
+        134.056,
+        136.656
+      ],
+      "accent_probe_rgb": [
+        129,
+        130,
+        135
+      ]
+    }
+  ]
+}

@@ -41,3 +41,14 @@ npm run studio
 文字长度和数据有运行时检查。动画全部由帧数驱动；同样props没有时间随机性。使用本地生图素材，不依赖在线CDN。要把素材接入长片，用Sequence编排整数帧，单独加入旁白音轨。
 
 当前导出的H.264视频不透明。若需要透明叠加，应另实现ProRes 4444或其他支持alpha的格式并验证alpha通道，不能仅改扩展名。Remotion本身采用自定义许可，商用部署、团队规模与授权条件请查看 [官方LICENSE](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)。本仓库原创组件的MIT许可不覆盖Remotion依赖。
+
+## 同组件素材A/B
+
+`KineticWords`增加可选 `illustration` 参数，仅允许三个受控本地文件：原始folder-illustration.png、ab-coral.png、ab-teal.png。其他路径会拒绝。默认参数继续使用原图。
+
+`props/ab-A.json` 与 `props/ab-B.json` 仅illustration不同。输出在 `../artifacts/ab-2026-10-23/remotion-A.mp4`、`remotion-B.mp4`，均已实际渲染6秒。品牌主色、字体、时序不变；只替换插画不等于整个主题换色。
+
+```bash
+npx --no-install remotion render src/index.ts KineticWords ../artifacts/ab-2026-10-23/remotion-A.mp4 --props=props/ab-A.json --browser-executable=/usr/bin/chromium --concurrency=2 --crf=20
+npx --no-install remotion render src/index.ts KineticWords ../artifacts/ab-2026-10-23/remotion-B.mp4 --props=props/ab-B.json --browser-executable=/usr/bin/chromium --concurrency=2 --crf=20
+```

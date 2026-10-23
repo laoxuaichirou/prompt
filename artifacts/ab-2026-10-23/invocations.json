@@ -1,0 +1,74 @@
+{
+  "records": [
+    {
+      "id": "AB01-A",
+      "status": "generated",
+      "started_at": "2026-10-23T08:14:45.233Z",
+      "finished_at": "2026-10-23T08:15:08.050Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2f7ffcdc-5663-4d44-a9fc-ddbd996f04b3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB01-B",
+      "status": "generated",
+      "started_at": "2026-10-23T08:14:45.233Z",
+      "finished_at": "2026-10-23T08:15:26.816Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-82fa86e8-f390-42ae-804b-77527f59f1fd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB02-A",
+      "status": "generated",
+      "started_at": "2026-10-23T08:14:45.233Z",
+      "finished_at": "2026-10-23T08:16:18.230Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-694b827f-a5cf-40e6-a64d-69025347b9cc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB02-B",
+      "status": "generated",
+      "started_at": "2026-10-23T08:15:08.050Z",
+      "finished_at": "2026-10-23T08:16:16.846Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-75a145e8-4a8d-4900-a173-3068fe815e7c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB03-A",
+      "status": "generated",
+      "started_at": "2026-10-23T08:15:26.816Z",
+      "finished_at": "2026-10-23T08:16:34.359Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-2d3f541b-2042-49c9-935a-caf304cb277c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB03-B",
+      "status": "generated",
+      "started_at": "2026-10-23T08:16:16.846Z",
+      "finished_at": "2026-10-23T08:16:51.442Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-90d97c99-ea3e-4cb7-a91b-915803da09b2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB04-A",
+      "status": "generated",
+      "started_at": "2026-10-23T08:16:18.230Z",
+      "finished_at": "2026-10-23T08:17:24.796Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-1d23291a-4aab-49cd-a64b-fb0b028bcb29.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB04-B",
+      "status": "generated",
+      "started_at": "2026-10-23T08:16:34.359Z",
+      "finished_at": "2026-10-23T08:17:27.294Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fc54c295-78fc-4c46-b932-559b60baa0d9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB05-A",
+      "status": "generated",
+      "started_at": "2026-10-23T08:16:51.442Z",
+      "finished_at": "2026-10-23T08:18:01.288Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-b82c7923-76c5-4101-a34d-7d0680e6ed36.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "AB05-B",
+      "status": "generated",
+      "started_at": "2026-10-23T08:17:24.796Z",
+      "finished_at": "2026-10-23T08:18:50.368Z",
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-929ac072-9fbe-404c-83b2-cbafd36f02be.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

@@ -15,8 +15,10 @@ function Base({label,children}: {label:string;children:React.ReactNode}){
   <div style={{position:'absolute',bottom:height*.17,fontSize:22,color:C.muted}}>口播插入素材 / 静音画面</div>
  </AbsoluteFill></AbsoluteFill>
 }
-type KineticProps={title:string;words:string[];footer:string};
-export const KineticWords:React.FC<KineticProps>=({title,words,footer})=>{
+type KineticProps={title:string;words:string[];footer:string;illustration?:string};
+export const KineticWords:React.FC<KineticProps>=({title,words,footer,illustration})=>{
+ const imageName=illustration??'folder-illustration.png';
+ if(!['folder-illustration.png','ab-coral.png','ab-teal.png'].includes(imageName))throw new Error('Illustration must be an approved local asset');
  text(title,16);text(footer,24);if(!Array.isArray(words)||words.length!==3)throw new Error('Provide exactly 3 words');words.forEach(v=>text(v,8));
  const f=useCurrentFrame(),{fps}=useVideoConfig();
  return <Base label="01 — 从想法到素材">
@@ -25,7 +27,7 @@ export const KineticWords:React.FC<KineticProps>=({title,words,footer})=>{
    const p=spring({frame:f-16-i*26,fps,config:{damping:18,stiffness:110}});
    return <div key={i} style={{display:'flex',alignItems:'baseline',gap:30,opacity:Math.min(1,p),transform:`translateY(${(1-p)*48}px)`,marginBottom:23}}><span style={{fontSize:24,color:C.muted,fontWeight:500}}>0{i+1}</span><span style={{fontSize:104,fontWeight:800,letterSpacing:-3,color:i===1?C.orange:C.navy}}>{w}</span></div>
   })}</div>
-  <Img src={staticFile('folder-illustration.png')} style={{position:'absolute',right:48,top:800,width:510,height:660,objectFit:'cover',objectPosition:'center 62%',mixBlendMode:'multiply',maskImage:'radial-gradient(ellipse at 50% 55%, black 42%, transparent 75%)',opacity:interpolate(f,[74,96],[0,.95],clamp),transform:`translateY(${interpolate(f,[74,110],[30,0],clamp)}px)`}}/>
+  <Img src={staticFile(imageName)} style={{position:'absolute',right:48,top:800,width:510,height:660,objectFit:'cover',objectPosition:'center 62%',mixBlendMode:'multiply',maskImage:'radial-gradient(ellipse at 50% 55%, black 42%, transparent 75%)',opacity:interpolate(f,[74,96],[0,.95],clamp),transform:`translateY(${interpolate(f,[74,110],[30,0],clamp)}px)`}}/>
   <p style={{position:'absolute',left:90,top:1250,fontSize:27,lineHeight:1.7,maxWidth:450,whiteSpace:'pre-line'}}>{footer}</p>
  </Base>
 };

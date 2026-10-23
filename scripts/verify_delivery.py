@@ -48,6 +48,8 @@ try:
   check('video hash '+x['id'],hashlib.sha256(p.read_bytes()).hexdigest()==x['sha256'])
  browser=read('artifacts/canvas-test-report.json');check('recorded 16 browser checks passed',browser['status']=='passed' and browser['count']==len(browser['checks'])==16)
  check('recorded frame review',read('artifacts/frame-review.json')['status']=='passed')
+ ab=read('artifacts/ab-2026-10-23/ab-validation-report.json');check('recorded additional A/B evidence validation',ab['evidence_validation']=='passed')
+ check('A/B quality outcomes kept distinct',sum(ab['visual_quality_outcomes'].values())==5 and 'needs-human-review' in ab['visual_quality_outcomes'])
  pdf=(R/'artifacts/交付文档-创作画布研究与规划.pdf').read_bytes();check('downloadable PDF exists',pdf.startswith(b'%PDF') and len(pdf)>10000)
  # Verify our Markdown navigation without changing third-party source documents.
  for folder in ['docs','research','prompts','skills','prototype','remotion','artifacts']:

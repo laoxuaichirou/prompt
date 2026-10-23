@@ -6,6 +6,16 @@
 
 这是研究、规划与可运行样例。画布原型尚未接入真实付费生成接口；5/10分钟文件是镜头计划，三个MP4是6/8/6秒口播动效素材。
 
+## 追加：生图与动效 A/B 实测
+
+[并排查看原图](artifacts/ab-2026-10-23/README.md) · [完整测试报告](docs/05-生图与Remotion-AB测试报告.md) · [对照PDF](artifacts/ab-2026-10-23/AB对照报告.pdf)
+
+新增5组生图、10张实际原件，以及1组Remotion素材对照、2条6秒MP4。背景和强调色替换基本可用；影视光线有语义漂移；透明PNG需按原文件合成复核；角色参考版仍需身份复核。失败样例全部保留。
+
+每条件只有一次调用，没有固定seed；并非全部50条模板或8个Skill端到端通过。具体已测/未测见 [coverage.json](artifacts/ab-2026-10-23/coverage.json)。本轮按视觉步骤应用了电商、影视资产、Remotion三个Skill，并把发现的问题回写到验收要求。
+
+追加独立验收：`python scripts/verify_ab_tests.py`，需要Pillow与ffprobe。它检查证据与实际alpha/视频，不把质量失败改成通过。
+
 ## 从这里开始
 
 | 你要做什么 | 入口 |
@@ -31,7 +41,7 @@
 
 原型没有构建依赖；生成按钮为明确标注的“检查执行计划”，不调用AI服务。图片卡片使用下面本次真实生图结果。
 
-## 本次实际生成图片
+## 初次单图测试（原件保留）
 
 <table><tr><td><img src="artifacts/IMG-EC-01.png" width="240" alt="电商白底主图"></td><td><img src="artifacts/IMG-FILM-03.png" width="360" alt="气象站影视关键帧"></td><td><img src="artifacts/IMG-FILM-08.png" width="180" alt="口播插画"></td></tr><tr><td>电商主图 · IMG-EC-01</td><td>影视关键帧 · IMG-FILM-03</td><td>口播插画 · IMG-FILM-08</td></tr></table>
 

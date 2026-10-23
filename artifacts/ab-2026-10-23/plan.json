@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "tool": "image_gen.imagegen",
+  "design": "five paired exploratory tests, ten independent generation calls",
+  "model_version": "not exposed by tool",
+  "seed": "not exposed; not controllable",
+  "coverage": "five image prompt recipes and visual portions of three original skills; not all 50 prompts or 8 skills",
+  "cases": [
+    {
+      "id": "AB01",
+      "title": "电商：白底与浅灰背景",
+      "template_id": "IMG-EC-01",
+      "independent_variable": "背景颜色",
+      "reference_assets": [
+        {
+          "path": "/workspace/prompt/artifacts/IMG-EC-01.png",
+          "repository_path": "artifacts/IMG-EC-01.png",
+          "sha256": "73a9a74a0d38f6ee1e66744a58b84abeef7bafe9c612e76481aecab5fb364001"
+        }
+      ],
+      "variants": [
+        {
+          "id": "AB01-A",
+          "label": "A",
+          "variable_value": "纯白色 #FFFFFF",
+          "prompt": "编辑提供的虚构无品牌保温杯图片，制作一张1:1电商商品图片。只允许背景颜色变化，背景颜色为纯白色 #FFFFFF。严格保留原图同一个杯子的圆柱轮廓、圆润杯盖、象牙白哑光杯身、底部香槟金金属环、尺寸比例、数量、机位、构图位置和画面占比。保留柔和接地阴影与原有商品光线，不重设计商品，不新增道具。不生成任何文字、品牌、水印或边框。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-EC-01.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB01-A.png"
+        },
+        {
+          "id": "AB01-B",
+          "label": "B",
+          "variable_value": "浅暖灰色 #E7E3DC",
+          "prompt": "编辑提供的虚构无品牌保温杯图片，制作一张1:1电商商品图片。只允许背景颜色变化，背景颜色为浅暖灰色 #E7E3DC。严格保留原图同一个杯子的圆柱轮廓、圆润杯盖、象牙白哑光杯身、底部香槟金金属环、尺寸比例、数量、机位、构图位置和画面占比。保留柔和接地阴影与原有商品光线，不重设计商品，不新增道具。不生成任何文字、品牌、水印或边框。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-EC-01.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB01-B.png"
+        }
+      ],
+      "criteria": [
+        "背景是否符合对应色调",
+        "杯盖/杯身/金环与参考保持",
+        "只有一个完整杯子",
+        "没有新增文字或道具"
+      ],
+      "design": "single pair, one sample per condition; no fixed seed; exploratory, not causal/statistical evidence",
+      "prompt_relationship": "adapted recipe for this A/B test; full invocation text retained, not a verbatim test of every original template"
+    },
+    {
+      "id": "AB02",
+      "title": "影视：室外主光冷暖",
+      "template_id": "IMG-FILM-06",
+      "independent_variable": "室外主光色温",
+      "reference_assets": [
+        {
+          "path": "/workspace/prompt/artifacts/IMG-FILM-03.png",
+          "repository_path": "artifacts/IMG-FILM-03.png",
+          "sha256": "bd1473c1c6497edaf817faa9cc1b23488aff5be2ae0bb4c3ce1cce62d31ca81f"
+        }
+      ],
+      "variants": [
+        {
+          "id": "AB02-A",
+          "label": "A",
+          "variable_value": "6500K冷白色",
+          "prompt": "编辑提供的原创气象站影视关键帧，输出16:9。唯一允许调整的变量是室外主光色温，设置为6500K冷白色。保持与参考相同的曝光与光源方向；窗内琥珀暖灯不变。保持同一个成年女性维修员的身份、脸型、深棕短发、赭橙夹克、工具包、姿势与视线；保持气象站门窗结构、薄雪、山景、机位和构图。不得改变天气、角色数量、服饰、道具或叙事动作，不新增文字、Logo、水印。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-FILM-03.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB02-A.png"
+        },
+        {
+          "id": "AB02-B",
+          "label": "B",
+          "variable_value": "3200K暖白色",
+          "prompt": "编辑提供的原创气象站影视关键帧，输出16:9。唯一允许调整的变量是室外主光色温，设置为3200K暖白色。保持与参考相同的曝光与光源方向；窗内琥珀暖灯不变。保持同一个成年女性维修员的身份、脸型、深棕短发、赭橙夹克、工具包、姿势与视线；保持气象站门窗结构、薄雪、山景、机位和构图。不得改变天气、角色数量、服饰、道具或叙事动作，不新增文字、Logo、水印。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-FILM-03.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB02-B.png"
+        }
+      ],
+      "criteria": [
+        "室外冷暖变化可辨认",
+        "窗内暖灯保留",
+        "角色脸服装道具保持",
+        "建筑空间与构图保持"
+      ],
+      "design": "single pair, one sample per condition; no fixed seed; exploratory, not causal/statistical evidence",
+      "prompt_relationship": "adapted recipe for this A/B test; full invocation text retained, not a verbatim test of every original template",
+      "reference_source_prompt_id": "IMG-FILM-03"
+    },
+    {
+      "id": "AB03",
+      "title": "口播：强调色替换",
+      "template_id": "IMG-FILM-08",
+      "independent_variable": "强调色",
+      "reference_assets": [
+        {
+          "path": "/workspace/prompt/artifacts/IMG-FILM-08.png",
+          "repository_path": "artifacts/IMG-FILM-08.png",
+          "sha256": "83be62fd5076e7d1525c255083217ffd643a04b81a58ade48a7885fcbb674202"
+        }
+      ],
+      "variants": [
+        {
+          "id": "AB03-A",
+          "label": "A",
+          "variable_value": "珊瑚橙 #F27858",
+          "prompt": "编辑提供的口播插画，输出9:16。只把卡片上的色块和环绕的细弧线统一设置为珊瑚橙 #F27858，除此之外保持参考图不变。保留同一个深蓝色文件夹、恰好三张白色卡片、原有灰色短线、卡片形状、位置和透视、柔和投影与淡米白背景；保留顶部原有约30%以上的空白。不要重新构图，不增加任何文字、数字、Logo、卡片或其他物件。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-FILM-08.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB03-A.png"
+        },
+        {
+          "id": "AB03-B",
+          "label": "B",
+          "variable_value": "青绿色 #21A89A",
+          "prompt": "编辑提供的口播插画，输出9:16。只把卡片上的色块和环绕的细弧线统一设置为青绿色 #21A89A，除此之外保持参考图不变。保留同一个深蓝色文件夹、恰好三张白色卡片、原有灰色短线、卡片形状、位置和透视、柔和投影与淡米白背景；保留顶部原有约30%以上的空白。不要重新构图，不增加任何文字、数字、Logo、卡片或其他物件。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-FILM-08.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB03-B.png"
+        }
+      ],
+      "criteria": [
+        "色块与弧线统一变色",
+        "三张卡片与文件夹保留",
+        "顶部留白可排字",
+        "无生成文字数字"
+      ],
+      "design": "single pair, one sample per condition; no fixed seed; exploratory, not causal/statistical evidence",
+      "prompt_relationship": "adapted recipe for this A/B test; full invocation text retained, not a verbatim test of every original template"
+    },
+    {
+      "id": "AB04",
+      "title": "抠图：保留与去除投影",
+      "template_id": "IMG-EC-07",
+      "independent_variable": "是否保留接地阴影（两组都开启真实透明输出）",
+      "reference_assets": [
+        {
+          "path": "/workspace/prompt/artifacts/IMG-EC-01.png",
+          "repository_path": "artifacts/IMG-EC-01.png",
+          "sha256": "73a9a74a0d38f6ee1e66744a58b84abeef7bafe9c612e76481aecab5fb364001"
+        }
+      ],
+      "variants": [
+        {
+          "id": "AB04-A",
+          "label": "A",
+          "variable_value": "保留商品下方原有的柔和接地阴影。",
+          "prompt": "从参考图中提取唯一的无品牌象牙白保温杯，保持完整轮廓、圆润杯盖、哑光杯身和香槟金底环，保持原来物体比例与正面略偏三分之四机位。只保留商品，去掉背景与道具。保留商品下方原有的柔和接地阴影。输出真实透明背景PNG，禁止将棋盘格画进图片。不要裁切，不重设计产品，不新增任何文字、Logo或物件。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-EC-01.png"
+          ],
+          "transparent_background": true,
+          "expected_output": "artifacts/ab-2026-10-23/AB04-A.png"
+        },
+        {
+          "id": "AB04-B",
+          "label": "B",
+          "variable_value": "去掉商品下方原有的接地阴影，不保留任何投影。",
+          "prompt": "从参考图中提取唯一的无品牌象牙白保温杯，保持完整轮廓、圆润杯盖、哑光杯身和香槟金底环，保持原来物体比例与正面略偏三分之四机位。只保留商品，去掉背景与道具。去掉商品下方原有的接地阴影，不保留任何投影。输出真实透明背景PNG，禁止将棋盘格画进图片。不要裁切，不重设计产品，不新增任何文字、Logo或物件。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-EC-01.png"
+          ],
+          "transparent_background": true,
+          "expected_output": "artifacts/ab-2026-10-23/AB04-B.png"
+        }
+      ],
+      "criteria": [
+        "PNG中是否存在非恒定alpha",
+        "背景区域是否真正透明",
+        "商品是否完整",
+        "边缘是否有背景残留"
+      ],
+      "design": "single pair, one sample per condition; no fixed seed; exploratory, not causal/statistical evidence",
+      "prompt_relationship": "adapted recipe for this A/B test; full invocation text retained, not a verbatim test of every original template"
+    },
+    {
+      "id": "AB05",
+      "title": "角色设定：仅文字与实际参考",
+      "template_id": "IMG-FILM-01",
+      "independent_variable": "是否实际附加角色参考图",
+      "reference_assets": [
+        {
+          "path": "/workspace/prompt/artifacts/IMG-FILM-03.png",
+          "repository_path": "artifacts/IMG-FILM-03.png",
+          "sha256": "bd1473c1c6497edaf817faa9cc1b23488aff5be2ae0bb4c3ce1cce62d31ca81f"
+        }
+      ],
+      "variants": [
+        {
+          "id": "AB05-A",
+          "label": "A",
+          "variable_value": "仅文字，不附参考图",
+          "prompt": "为原创成年角色制作角色设定板，年龄30岁：女性设备维修员，深棕色短发，赭橙工作夹克，灰蓝工装裤，肩背旧棕色工具包。如果提供参考图，保持参考中女性的脸型、发型、服饰和工具包细节。纯中性浅灰背景，均匀棚光，同一服装和发型；整齐2×2四格，依次为正面全身、左侧全身、背面全身和面部特写；前三格人物含鞋完整可见。各格五官、服饰细节、身材比例一致。四格边界清楚，不生成标签、文字或数字。横向16:9设定板。",
+          "referenced_image_paths": [],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB05-A.png"
+        },
+        {
+          "id": "AB05-B",
+          "label": "B",
+          "variable_value": "相同文字，实际附参考图",
+          "prompt": "为原创成年角色制作角色设定板，年龄30岁：女性设备维修员，深棕色短发，赭橙工作夹克，灰蓝工装裤，肩背旧棕色工具包。如果提供参考图，保持参考中女性的脸型、发型、服饰和工具包细节。纯中性浅灰背景，均匀棚光，同一服装和发型；整齐2×2四格，依次为正面全身、左侧全身、背面全身和面部特写；前三格人物含鞋完整可见。各格五官、服饰细节、身材比例一致。四格边界清楚，不生成标签、文字或数字。横向16:9设定板。",
+          "referenced_image_paths": [
+            "/workspace/prompt/artifacts/IMG-FILM-03.png"
+          ],
+          "transparent_background": false,
+          "expected_output": "artifacts/ab-2026-10-23/AB05-B.png"
+        }
+      ],
+      "criteria": [
+        "四格对应要求视图",
+        "前三格全身完整",
+        "各格服饰/包带一致",
+        "与既定关键帧角色相似（需人工复核）"
+      ],
+      "design": "single pair, one sample per condition; no fixed seed; exploratory, not causal/statistical evidence",
+      "prompt_relationship": "adapted recipe for this A/B test; full invocation text retained, not a verbatim test of every original template"
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "original_prompt_count": 50,
+  "original_skill_count": 8,
+  "scope": "five adapted image recipes and one Remotion component A/B; three skills tested only in visual substeps",
+  "prompts": [
+    {
+      "id": "IMG-EC-01",
+      "kind": "image",
+      "status": "adapted-recipe-image-ab",
+      "case_id": "AB01",
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-02",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-03",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-04",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-05",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-06",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-07",
+      "kind": "image",
+      "status": "adapted-recipe-image-ab",
+      "case_id": "AB04",
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-EC-08",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-01",
+      "kind": "image",
+      "status": "adapted-recipe-image-ab",
+      "case_id": "AB05",
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-02",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-03",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-04",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-05",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-06",
+      "kind": "image",
+      "status": "adapted-recipe-image-ab",
+      "case_id": "AB02",
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-07",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-FILM-08",
+      "kind": "image",
+      "status": "adapted-recipe-image-ab",
+      "case_id": "AB03",
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-01",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-02",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-03",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-04",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-05",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-06",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-07",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "IMG-SOC-08",
+      "kind": "image",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-EC-01",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-EC-02",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-EC-03",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-EC-04",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-01",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-02",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-03",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-04",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-05",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-06",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-07",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-FILM-08",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-01",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-02",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-03",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-04",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-05",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "VID-SOC-06",
+      "kind": "video",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-01",
+      "kind": "remotion",
+      "status": "component-render-ab",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-02",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-03",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-04",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-05",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-06",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-07",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    },
+    {
+      "id": "REM-08",
+      "kind": "remotion",
+      "status": "not-run-in-this-round",
+      "case_id": null,
+      "note": "A/B执行文本是为实验改编，不等于原模板逐字执行；REM-01复用现有组件并只替换素材。"
+    }
+  ],
+  "skills": [
+    {
+      "name": "ecommerce-image-director",
+      "status": "visual-substeps-tested",
+      "scope": "AB01 / AB04 商品构图与alpha/边缘检查"
+    },
+    {
+      "name": "film-asset-bible",
+      "status": "visual-substeps-tested",
+      "scope": "AB02 / AB05 光线/参考与多视图检查"
+    },
+    {
+      "name": "hermes-delivery-auditor",
+      "status": "not-run-in-this-round",
+      "scope": "没有执行该技能的完整工作流"
+    },
+    {
+      "name": "longform-production-planner",
+      "status": "not-run-in-this-round",
+      "scope": "没有执行该技能的完整工作流"
+    },
+    {
+      "name": "prompt-library-curator",
+      "status": "not-run-in-this-round",
+      "scope": "没有执行该技能的完整工作流"
+    },
+    {
+      "name": "remotion-insert-designer",
+      "status": "visual-substeps-tested",
+      "scope": "AB03素材进入同一帧驱动组件并实际渲染A/B"
+    },
+    {
+      "name": "storyboard-shot-director",
+      "status": "not-run-in-this-round",
+      "scope": "没有执行该技能的完整工作流"
+    },
+    {
+      "name": "video-quality-reviewer",
+      "status": "not-run-in-this-round",
+      "scope": "没有执行该技能的完整工作流"
+    }
+  ]
+}

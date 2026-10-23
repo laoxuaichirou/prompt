@@ -1,0 +1,11 @@
+{
+  "evidence_validation": "passed",
+  "checks_passed": 84,
+  "visual_quality_outcomes": {
+    "passed-with-notes": 2,
+    "partial-pass": 2,
+    "needs-human-review": 1
+  },
+  "quality_warning": "AB04 needs target-background review after alpha-compositing recheck; AB02 strict lighting-only output control failed; AB05 identity needs review. Evidence validation does not turn them into passes.",
+  "scope": "10 original image outputs + 2 actual Remotion videos; not all 50 prompts or 8 skills end-to-end"
+}

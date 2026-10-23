@@ -1,0 +1,37 @@
+{
+  "case_id": "AB04",
+  "previous_status": "failed-production-gate",
+  "current_status": "needs-human-review",
+  "reason": "复核显示预览白点可能具有极低alpha，正确深底合成下几乎不可见；不能据预览确认成品白边缺陷。",
+  "observed_pixels": [
+    {
+      "artifact": "AB04-A.png",
+      "x": 716,
+      "y": 79,
+      "rgba": [
+        255,
+        255,
+        255,
+        1
+      ]
+    },
+    {
+      "artifact": "AB04-B.png",
+      "x": 556,
+      "y": 70,
+      "rgba": [
+        255,
+        255,
+        255,
+        1
+      ]
+    }
+  ],
+  "evidence": [
+    "image-metrics.json",
+    "alpha-edge-100pct.png",
+    "alpha-dark-review.png"
+  ],
+  "original_pngs_modified": false,
+  "previous_review": "review-initial-superseded.json"
+}

@@ -89,3 +89,9 @@ python scripts/prompt_cli.py render IMG-EC-02 --vars '{"product":"保温杯"}'
 ## 后续启动顺序
 
 先用真实商品和一场戏各做30秒试产，验证可用素材率与实际成本；据此锁定一个图片供应商和一个视频供应商，再实现P1–P3。先验5分钟合成，再扩10分钟。需要凭据时通过本机安全配置提供，不将密钥放入GitHub或聊天。
+
+## 追加A/B验收
+
+本轮最新main新增5组生图、10张原件，以及1组同组件素材对照、2条实际Remotion MP4。先读 [A/B测试报告](05-生图与Remotion-AB测试报告.md)，再运行 `python scripts/verify_ab_tests.py`（需要Pillow与ffprobe）。初版固定提交bc7a046不包含追加内容。
+
+请特别复核AB02的日出/曝光漂移、AB04的原PNG与目标背景合成，以及AB05的2×2布局与角色身份局限。文件/alpha检查通过不意味着这些质量问题已经修好。逐模板与技能覆盖见 `artifacts/ab-2026-10-23/coverage.json`。
