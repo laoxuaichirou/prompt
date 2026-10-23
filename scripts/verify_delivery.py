@@ -48,6 +48,10 @@ try:
   check('video hash '+x['id'],hashlib.sha256(p.read_bytes()).hexdigest()==x['sha256'])
  browser=read('artifacts/canvas-test-report.json');check('recorded 16 browser checks passed',browser['status']=='passed' and browser['count']==len(browser['checks'])==16)
  check('recorded frame review',read('artifacts/frame-review.json')['status']=='passed')
+ studio=read('artifacts/studio/workspace-validation-report.json');check('integrated workspace evidence validation passed',studio['status']=='passed')
+ studio_browser=read('artifacts/studio/workspace-test-report.json');check('real workspace browser and render checks passed',studio_browser['status']=='passed' and studio_browser['count']==len(studio_browser['checks']) and studio_browser['render']['status']=='passed')
+ check('custom studio MP4 hash',hashlib.sha256((R/studio_browser['render']['artifact']).read_bytes()).hexdigest()==studio_browser['render']['sha256'])
+ check('new workspace handoff PDF exists',(R/'artifacts/studio/工作台交付与Hermes验收.pdf').read_bytes().startswith(b'%PDF'))
  ab=read('artifacts/ab-2026-10-23/ab-validation-report.json');check('recorded additional A/B evidence validation',ab['evidence_validation']=='passed')
  check('A/B quality outcomes kept distinct',sum(ab['visual_quality_outcomes'].values())==5 and 'needs-human-review' in ab['visual_quality_outcomes'])
  pdf=(R/'artifacts/交付文档-创作画布研究与规划.pdf').read_bytes();check('downloadable PDF exists',pdf.startswith(b'%PDF') and len(pdf)>10000)
@@ -66,7 +70,7 @@ try:
   check('manifest covers every delivery file',expected==actual)
   for line in sums:
    digest,name=line.split('  ',1);p=R/name;check('sha256 '+name,p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==digest)
- result={'status':'passed','checks_passed':len(checks),'scope':'offline evidence, schemas, pinned references, actual media probing, mirrored-source hashes, local links'+('' if args.skip_checksums else ', full delivery checksums'),'live_github_stars':'not refreshed','browser_test':'saved evidence checked; rerun scripts/test_canvas.py for independent browser execution','long_video_generation':'not performed; supplied plans only','checksums':'skipped-development-only' if args.skip_checksums else 'verified'}
+ result={'status':'passed','checks_passed':len(checks),'scope':'offline evidence, schemas, pinned references, actual media probing, mirrored-source hashes, local links'+('' if args.skip_checksums else ', full delivery checksums'),'live_github_stars':'not refreshed','browser_test':'saved canvas/workspace evidence checked; rerun scripts/test_canvas.py and scripts/test_studio.py --render in a temporary copy for independent browser execution','long_video_generation':'not performed; supplied plans only','checksums':'skipped-development-only' if args.skip_checksums else 'verified'}
 except Exception as e:
  result={'status':'failed','checks_passed':len(checks),'error':str(e),'exception':type(e).__name__}
 (R/'artifacts/verification-report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False,indent=2));sys.exit(result['status']!='passed')

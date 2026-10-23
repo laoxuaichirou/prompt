@@ -17,8 +17,11 @@
   const clean={version:1,title:g.title,template:['ecommerce','film','longform','motion'].includes(g.template)?g.template:'ecommerce',nodes:[],edges:[]};
   for(const n of g.nodes){
    if(!n||typeof n.id!=='string'||!/^[A-Za-z0-9_-]{1,80}$/.test(n.id)||ids.has(n.id)||!kinds.includes(n.type)||typeof n.title!=='string'||n.title.length>100||typeof n.content!=='string'||n.content.length>10000||!Number.isFinite(n.x)||!Number.isFinite(n.y)||Math.abs(n.x)>10000||Math.abs(n.y)>10000)throw new Error('节点内容无效或ID重复');
-   if(n.image&&!/^\.\.\/artifacts\/IMG-[A-Z0-9-]+\.png$/.test(n.image))throw new Error('原型只允许本地样例图片');
-   ids.add(n.id);clean.nodes.push({id:n.id,type:n.type,title:n.title,content:n.content,x:n.x,y:n.y,...(n.image?{image:n.image}:{})});
+   if(n.image&&!/^\.\.\/artifacts\/(IMG-[A-Z0-9-]+|ab-2026-10-23\/AB0[1-5]-[AB])\.png$/.test(n.image))throw new Error('原型只允许本地样例图片');
+   if(n.assetId!==undefined&&(typeof n.assetId!=='string'||!/^asset-[a-f0-9]{24}$/.test(n.assetId)))throw new Error('素材引用无效');
+   if(n.media&&!/^\.\.\/artifacts\/(remotion-(kinetic|steps|comparison)|ab-2026-10-23\/remotion-[AB])\.mp4$/.test(n.media))throw new Error('只允许本地视频样片');
+   if(n.promptId!==undefined&&(typeof n.promptId!=='string'||!/^(IMG|VID|REM)-[A-Z0-9-]+$/.test(n.promptId)))throw new Error('提示词引用无效');
+   ids.add(n.id);clean.nodes.push({id:n.id,type:n.type,title:n.title,content:n.content,x:n.x,y:n.y,...(n.image?{image:n.image}:{}),...(n.media?{media:n.media}:{}),...(n.assetId?{assetId:n.assetId}:{}),...(n.promptId?{promptId:n.promptId}:{})});
   }
   for(const e of g.edges){if(!e||typeof e.source!=='string'||typeof e.target!=='string')throw new Error('连线格式无效');const err=canConnect(clean,e.source,e.target);if(err)throw new Error(err);clean.edges.push({source:e.source,target:e.target});}
   return clean;

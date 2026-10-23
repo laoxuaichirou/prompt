@@ -4,8 +4,8 @@ const titles={ecommerce:'一件商品，一套素材',film:'把一个镜头，�
 const names={text:'TEXT / 需求',image:'IMAGE / 资产',video:'VIDEO / 镜头',motion:'MOTION / 动效'};
 function template(kind){
  const shared={version:1,template:kind,title:{ecommerce:'我的商品素材',film:'山间气象站 · 镜头一',longform:'我的5分钟长视频',motion:'口播插入素材'}[kind]};
- const data={ecommerce:[['text','创作需求','为无品牌保温杯制作白底主图。\n1:1画幅，保留完整商品轮廓。\n先验证一张，再做场景套图。'],['image','商品定稿参考','本次真实生成样例 · IMG-EC-01\n正式商品任务需上传真实商品参考。','../artifacts/IMG-EC-01.png'],['image','场景图计划','保持商品外形与材质，加入自然光书桌场景。\n左侧留40%文案空间。\n待真实生成接口接入。']],film:[['text','单镜头分镜','成年女性维修员来到山间气象站。\n黎明冷光，窗内暖光。\n全景，向窗内看，一个动作。'],['image','影视关键帧','本次真实生成样例 · IMG-FILM-03\n角色、场景与光线在这里定稿。','../artifacts/IMG-FILM-03.png'],['video','5秒视频计划','引用关键帧，缓慢推近，人物保持姿态。\n声音后期补，禁止乱切。\n待视频供应商接入。']],longform:[['text','5分钟章节规划','目标300秒 · 30fps。\n60个5秒片段，按章节分组。\n先验收30秒试片，再批量生产。'],['image','场景与角色资产','每个场景复用同一套已批准资产。\n镜头表在 examples/longform-5min.json。','../artifacts/IMG-FILM-03.png'],['video','逐镜头生产计划','当前只展示一个代表镜头。\n队列、成本与连续性由生产服务管理。\n本原型没有生成5分钟影片。']],motion:[['text','口播内容','素材只准备一次，\n每个镜头都能引用。\n关键词：少搬运、先定稿、再生成。'],['image','口播插画资产','本次真实生成样例 · IMG-FILM-08\n真实文字由Remotion排版。','../artifacts/IMG-FILM-08.png'],['motion','Remotion动效','6秒关键词 / 8秒流程 / 6秒数据对照。\n真实MP4样片在artifacts目录。\n本网页仅编辑生产计划。']]};
- return {...shared,nodes:data[kind].map((a,i)=>({id:'n'+(i+1),type:a[0],title:a[1],content:a[2],...(a[3]?{image:a[3]}:{}),x:55+i*310,y:140})),edges:[{source:'n1',target:'n2'},{source:'n2',target:'n3'}]};
+ const data={ecommerce:[['text','创作需求','为无品牌保温杯制作白底主图。\n1:1画幅，保留完整商品轮廓。\n先验证一张，再做场景套图。'],['image','商品定稿参考','本次真实生成样例 · IMG-EC-01\n正式商品任务需上传真实商品参考。','../artifacts/IMG-EC-01.png'],['image','场景图计划','保持商品外形与材质，加入自然光书桌场景。\n左侧留40%文案空间。\n待真实生成接口接入。']],film:[['text','单镜头分镜','成年女性维修员来到山间气象站。\n黎明冷光，窗内暖光。\n全景，向窗内看，一个动作。'],['image','影视关键帧','本次真实生成样例 · IMG-FILM-03\n角色、场景与光线在这里定稿。','../artifacts/IMG-FILM-03.png'],['video','5秒视频计划','引用关键帧，缓慢推近，人物保持姿态。\n声音后期补，禁止乱切。\n待视频供应商接入。']],longform:[['text','5分钟章节规划','目标300秒 · 30fps。\n60个5秒片段，按章节分组。\n先验收30秒试片，再批量生产。'],['image','场景与角色资产','每个场景复用同一套已批准资产。\n镜头表在 examples/longform-5min.json。','../artifacts/IMG-FILM-03.png'],['video','逐镜头生产计划','当前只展示一个代表镜头。\n队列、成本与连续性由生产服务管理。\n本原型没有生成5分钟影片。']],motion:[['text','口播内容','素材只准备一次，\n每个镜头都能引用。\n关键词：少搬运、先定稿、再生成。'],['image','口播插画资产','本次真实生成样例 · IMG-FILM-08\n真实文字由Remotion排版。','../artifacts/IMG-FILM-08.png'],['motion','Remotion动效','6秒关键词动效 · 已实际渲染MP4。\n在“口播动效”修改文案并本机重渲染。']]};
+ return {...shared,nodes:data[kind].map((a,i)=>({id:'n'+(i+1),type:a[0],title:a[1],content:a[2],...(a[3]?{image:a[3]}:{}),...(kind==='motion'&&a[0]==='motion'?{media:'../artifacts/remotion-kinetic.mp4'}:{}),x:55+i*310,y:140})),edges:[{source:'n1',target:'n2'},{source:'n2',target:'n3'}]};
 }
 let graph=template('ecommerce'),selected='n1',past=[],future=[],pending=null,view={x:0,y:0,scale:1};
 let storageWorks=true;
@@ -15,16 +15,16 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 function toast(s){$('#toast').textContent=s;$('#toast').style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').style.display='none',3200);}
 function save(){try{localStorage.setItem(key,JSON.stringify(graph));$('#save-state').textContent='已保存在本机';storageWorks=true;}catch(e){$('#save-state').textContent='保存失败，请导出备份';storageWorks=false;toast('本机存储不可用，请导出工程备份');}}
 function checkpoint(){past.push(M.clone(graph));if(past.length>50)past.shift();future=[];}
-function changed(){$('#plan-title').textContent='先锁定素材，再开始生产';$('#plan-detail').textContent='本原型不调用生图/视频接口，不会产生生成费用。图片为本次实际生图样例。';save();render();}
+function changed(){$('#plan-title').textContent='先锁定素材，再开始生产';$('#plan-detail').textContent='从素材库与提示词库加入卡片；在线生图尚未接入。';save();render();}
 function edges(){const svg=$('#edges');svg.innerHTML='';for(const e of graph.edges){const a=graph.nodes.find(n=>n.id===e.source),b=graph.nodes.find(n=>n.id===e.target);if(!a||!b)continue;const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',`M ${a.x+244} ${a.y+96} C ${a.x+285} ${a.y+96}, ${b.x-45} ${b.y+96}, ${b.x} ${b.y+96}`);p.setAttribute('stroke','#a2b6a2');p.setAttribute('stroke-width','2');p.setAttribute('fill','none');svg.append(p);}}
 function transform(){$('#world').style.transform=`translate(${view.x}px,${view.y}px) scale(${view.scale})`;$('#zoom-value').textContent=Math.round(view.scale*100)+'%';}
 function render(){
  $('#project-name').value=graph.title;$('#workflow-title').textContent=titles[graph.template];$('#node-count').textContent=`${graph.nodes.length}个节点 · ${graph.edges.length}条引用`;
  document.querySelectorAll('[data-template]').forEach(b=>b.classList.toggle('active',b.dataset.template===graph.template));
  $('#undo').disabled=!past.length;$('#redo').disabled=!future.length;
- $('#nodes').innerHTML=graph.nodes.map(n=>`<article class="node ${selected===n.id?'selected':''}" data-id="${n.id}" style="left:${n.x}px;top:${n.y}px"><div class="node-head"><div><span class="node-type">${names[n.type]}</span><strong>${esc(n.title)}</strong></div><span class="node-index">${esc(n.id.slice(-3))}</span></div><div class="node-body">${n.image?`<img src="${esc(n.image)}" alt="${esc(n.title)}">`:''}${esc(n.content)}<br><span class="status">${n.image?'● 本次生成样例':'○ 可编辑计划'}</span></div>${n.type!=='text'?`<button class="port in" data-port="in" aria-label="${esc(n.title)} 输入端口"></button>`:''}<button class="port out ${pending===n.id?'pending':''}" data-port="out" aria-label="${esc(n.title)} 输出端口"></button></article>`).join('');
+ $('#nodes').innerHTML=graph.nodes.map(n=>`<article class="node ${selected===n.id?'selected':''}" data-id="${n.id}" style="left:${n.x}px;top:${n.y}px"><div class="node-head"><div><span class="node-type">${names[n.type]}</span><strong>${esc(n.title)}</strong></div><span class="node-index">${esc(n.id.slice(-3))}</span></div><div class="node-body">${nodeMedia(n)}${esc(n.content)}<br><span class="status">${n.assetId?'● 本机上传素材':n.image||n.media?'● 已实测素材':'○ 可编辑计划'}</span></div>${n.type!=='text'?`<button class="port in" data-port="in" aria-label="${esc(n.title)} 输入端口"></button>`:''}<button class="port out ${pending===n.id?'pending':''}" data-port="out" aria-label="${esc(n.title)} 输出端口"></button></article>`).join('');
  document.querySelectorAll('.node').forEach(el=>{
-  el.addEventListener('click',e=>{if(e.target.closest('.port'))return;selected=el.dataset.id;render();});
+  el.addEventListener('click',e=>{if(e.target.closest('.port,video,a'))return;selected=el.dataset.id;render();});
   el.querySelector('.node-head').addEventListener('pointerdown',e=>startNodeDrag(e,el));
   el.querySelectorAll('.port').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();if(b.dataset.port==='out'){pending=el.dataset.id;toast('再点击下游卡片的输入端口');render();}else if(pending){const err=M.canConnect(graph,pending,el.dataset.id);if(err)toast(err);else{checkpoint();graph.edges.push({source:pending,target:el.dataset.id});pending=null;changed();toast('引用已连接');}}else toast('先点击上游卡片的输出端口');}));
  });
@@ -58,7 +58,31 @@ $('#project-name').onchange=e=>{checkpoint();graph.title=e.target.value.slice(0,
 document.querySelectorAll('[data-template]').forEach(b=>b.onclick=()=>{checkpoint();graph=template(b.dataset.template);selected='n1';pending=null;changed();fit();toast('模板已铺好；可撤销回到上一工程');});
 document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{if(graph.nodes.length>=200){toast('原型最多200个节点');return;}checkpoint();const id=uid(),i=graph.nodes.length;graph.nodes.push({id,type:b.dataset.add,title:'新的'+names[b.dataset.add].split('/ ')[1],content:'写下需求，或连接上游素材。',x:55+(i%4)*310,y:100+Math.floor(i/4)*420});selected=id;changed();fit();});
 $('#plan').onclick=()=>{const incoming=new Set(graph.edges.map(e=>e.target));const missing=graph.nodes.filter(n=>n.type!=='text'&&!incoming.has(n.id));$('#plan-title').textContent=missing.length?'有素材尚未连接':'引用结构检查完成 · 真实生成待接入';$('#plan-detail').textContent=missing.length?'请为这些卡片选择上游引用：'+missing.map(n=>n.title).join('、'):`${graph.nodes.length}个节点，${graph.edges.length}条引用，无循环。本原型只检查结构，尚未验证真实模型、参考资产或预算。`;toast(missing.length?'存在未连接卡片':'执行计划已检查，未提交生成任务');};
-$('#export').onclick=()=>{const blob=new Blob([JSON.stringify(graph,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='creator-desk-project.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('工程JSON已导出');};
-$('#import').onclick=()=>$('#file').click();$('#file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>2*1024*1024)throw new Error('工程文件超过2MB');const next=M.validate(JSON.parse(await file.text()));checkpoint();graph=next;selected=graph.nodes[0]?.id;pending=null;changed();fit();toast('工程已导入');}catch(err){toast('导入失败：'+err.message);}finally{e.target.value='';}};
-window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo();}if(e.key==='Escape'){pending=null;render();}});
+$('#export').onclick=async()=>{try{const data=window.CreatorStudio?await window.CreatorStudio.exportProject(graph):graph;downloadJSON(data,'creator-desk-project.json');toast('工程已导出；上传素材已打包');}catch(e){toast('导出失败：'+e.message);}};
+$('#import').onclick=()=>$('#file').click();$('#file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>StudioModel.MAX_JSON)throw new Error('工程文件超过46MB');const data=JSON.parse(await file.text());const next=window.CreatorStudio?await window.CreatorStudio.importProject(data):M.validate(data);checkpoint();graph=next;selected=graph.nodes[0]?.id;pending=null;changed();fit();toast('工程已导入');}catch(err){toast('导入失败：'+err.message);}finally{e.target.value='';}};
+
+window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)||document.querySelector('[data-panel="canvas"]').hidden)return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo();}if(e.key==='Escape'){pending=null;render();}});
 window.addEventListener('resize',fit);render();fit();if(!storageWorks)toast('无法读取已保存工程，原记录未覆盖；请导出当前工作备份');
+
+
+// Integration API: graph snapshots stay serializable; media bytes live in the workspace store.
+function nodeMedia(n){
+ const asset=n.assetId&&window.CreatorStudio?.getAsset(n.assetId);
+ if(asset)return asset.mime==='video/mp4'?'<video src="'+esc(asset.dataURL)+'" controls preload="metadata" playsinline></video>':'<img src="'+esc(asset.dataURL)+'" alt="'+esc(n.title)+'">';
+ if(n.assetId)return '<p class="editor-error">素材尚未载入或已缺失，请导入完整工作区备份。</p>';
+ if(n.media)return '<video src="'+esc(n.media)+'" controls preload="metadata" playsinline></video>';
+ return n.image?'<img src="'+esc(n.image)+'" alt="'+esc(n.title)+'">':'';
+}
+function downloadJSON(data,name){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);}
+window.CreatorCanvas={
+ snapshot:()=>M.clone(graph),
+ usesAsset:id=>[graph,...past,...future].some(g=>g.nodes.some(n=>n.assetId===id)),
+ refresh:()=>render(),
+ fit,
+ add(spec){
+  if(graph.nodes.length>=200)throw new Error('画布最多200个节点');
+  const i=graph.nodes.length,node={id:uid(),type:spec.type,title:spec.title.slice(0,100),content:spec.content.slice(0,10000),x:55+(i%4)*310,y:100+Math.floor(i/4)*420,...spec};
+  const trial=M.validate({...graph,nodes:[...graph.nodes,node]});
+  checkpoint();graph=trial;selected=node.id;changed();fit();return node.id;
+ }
+};

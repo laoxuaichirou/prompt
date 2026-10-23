@@ -1,0 +1,178 @@
+#!/usr/bin/env python3
+"""Real browser acceptance, portable workspace roundtrip, optional local Remotion render."""
+from pathlib import Path
+from functools import partial
+from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
+import argparse,base64,hashlib,json,os,shutil,sys,tempfile,threading,time,urllib.request,urllib.error
+from playwright.sync_api import sync_playwright
+from studio_server import make_server,POOL,JOBS,validate_props
+R=Path(__file__).resolve().parents[1]
+a=argparse.ArgumentParser();a.add_argument('--render',action='store_true');args=a.parse_args()
+OUT=R/'artifacts/studio';OUT.mkdir(exist_ok=True)
+checks=[];errors=[]
+def check(name,value):
+ if not value:raise AssertionError(name)
+ checks.append(name)
+def api(origin,path,payload=None,headers=None):
+ data=None if payload is None else json.dumps(payload).encode()
+ request=urllib.request.Request(origin+path,data=data,headers=headers or ({'Content-Type':'application/json'} if data else {}))
+ try:
+  with urllib.request.urlopen(request) as response:return response.status,response.read(),response.headers
+ except urllib.error.HTTPError as response:return response.code,response.read(),response.headers
+server=make_server(0);threading.Thread(target=server.serve_forever,daemon=True).start()
+origin=f'http://127.0.0.1:{server.server_port}'
+temp=tempfile.TemporaryDirectory();tmp=Path(temp.name)
+try:
+ with sync_playwright() as p:
+  browser=p.chromium.launch(executable_path=os.environ.get('CANVAS_BROWSER_EXECUTABLE') or shutil.which('chromium') or '/usr/bin/chromium',args=['--no-sandbox'])
+  context=browser.new_context(viewport={'width':1536,'height':1000},accept_downloads=True)
+  page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
+  page.goto(origin+'/prototype/index.html');page.wait_for_function('!!window.CreatorStudio');page.evaluate('CreatorStudio.ready')
+  check('five workspace tabs',page.locator('[data-tab]').count()==5)
+  check('no third-party CDN needed',page.locator('script[src^="http"]').count()==0)
+  page.locator('[data-tab="assets"]').click()
+  check('three real image samples',page.locator('.asset-card img').count()==3)
+  image=R/'artifacts/IMG-EC-01.png'
+  hostile_name=tmp/'<img src=x onerror=alert(1)>.png';shutil.copyfile(image,hostile_name)
+  page.locator('#asset-file').set_input_files(str(hostile_name));page.wait_for_selector('[data-asset-add]')
+  check('upload persisted real file',len(page.evaluate('CreatorStudio.snapshot().assets'))==1)
+  check('filename is rendered as text',page.locator('[data-asset] h3').inner_text()=='<img src=x onerror=alert(1)>.png' and page.locator('[data-asset] h3 img').count()==0)
+  page.locator('#asset-file').set_input_files(str(image));page.wait_for_function('document.querySelector("#toast").textContent.includes("重复")')
+  check('same bytes deduplicated',len(page.evaluate('CreatorStudio.snapshot().assets'))==1)
+  svg=tmp/'bad.svg';svg.write_text('<svg onload="alert(1)"></svg>')
+  page.locator('#asset-file').set_input_files(str(svg));page.wait_for_function('document.querySelector("#toast").textContent.includes("不接受SVG")')
+  check('SVG rejected without mutation',len(page.evaluate('CreatorStudio.snapshot().assets'))==1)
+  page.locator('[data-asset-add]').click()
+  check('uploaded asset joins canvas',page.locator('.node.selected img').get_attribute('src').startswith('data:image/png'))
+  check('node stores an asset reference',page.evaluate('CreatorCanvas.snapshot().nodes.at(-1).assetId').startswith('asset-'))
+  page.locator('[data-tab="assets"]').click();page.locator('[data-asset-delete]').click()
+  check('referenced asset deletion refused','仍引用' in page.locator('#toast').inner_text())
+  page.locator('[data-tab="prompts"]').click()
+  check('all 50 templates searchable',page.locator('#prompt-list button').count()==50)
+  page.locator('.skill-library summary').click();check('eight original skills available',page.locator('[data-skill]').count()==8)
+  page.locator('[data-skill="ecommerce-image-director"]').click();check('skill becomes an editable canvas card','本技能为本项目原创' in page.locator('.node.selected').inner_text())
+  page.locator('[data-tab="prompts"]').click()
+  page.locator('#prompt-kind').select_option('image');check('24 image templates filtered',page.locator('#prompt-list button').count()==24)
+  page.locator('#prompt-search').fill('IMG-EC-02')
+  check('search narrows to one template',page.locator('#prompt-list button').count()==1)
+  check('missing variable prevents use',page.locator('#prompt-add').is_disabled())
+  page.locator('[data-variable="product"]').fill('无品牌保温杯')
+  check('variable renders full prompt','{{' not in page.locator('#prompt-output').input_value() and '无品牌保温杯' in page.locator('#prompt-output').input_value())
+  with page.expect_download() as download:page.locator('#prompt-download').click()
+  downloaded=tmp/'prompt.txt';download.value.save_as(str(downloaded));check('prompt text can be downloaded','无品牌保温杯' in downloaded.read_text())
+  page.locator('#prompt-add').click();check('filled prompt joins canvas',page.evaluate('CreatorCanvas.snapshot().nodes.at(-1).promptId')=='IMG-EC-02')
+  page.locator('[data-tab="compare"]').click()
+  check('five real A/B cases plus custom',page.locator('#compare-case option').count()==6)
+  page.locator('#compare-case').select_option('AB04')
+  page.wait_for_function('Array.from(document.querySelectorAll("#compare-content img")).every(e=>e.complete&&e.naturalWidth>100)')
+  check('transparent case retains corrected assessment','needs-human-review' in page.locator('#compare-content').inner_text() and '正确合成' in page.locator('#compare-content').inner_text())
+  page.locator('#compare-backdrop').select_option('dark');page.locator('#compare-native').click()
+  check('100pct alpha inspection works',page.locator('#compare-content').evaluate('(e)=>e.classList.contains("native")&&e.classList.contains("backdrop-dark")'))
+  check('native image is not shrunk',page.locator('#compare-content img').first.evaluate('(e)=>Math.abs(e.getBoundingClientRect().width-e.naturalWidth)<1'))
+  page.locator('#compare-native').click()
+  page.locator('#compare-case').select_option('AB01');page.locator('[data-choice="B"]').click();page.locator('#review-note').fill('验收：暖灰用于创意广告，实拍保真待复核')
+  page.locator('#apply-choice').click();check('approved B joins canvas',page.locator('.node.selected img').get_attribute('src').endswith('AB01-B.png'))
+  page.locator('[data-tab="compare"]').click();page.locator('#compare-case').select_option('custom')
+  custom_id=page.evaluate('CreatorStudio.snapshot().assets[0].id')
+  page.locator('[data-custom-side="left"]').select_option(custom_id)
+  page.locator('[data-custom-choice="A"]').click();page.locator('#custom-note').fill('上传素材人工对比记录')
+  page.locator('#custom-apply').click();check('custom version selection joins canvas',page.evaluate('CreatorCanvas.snapshot().nodes.at(-1).assetId')==custom_id)
+  page.locator('[data-tab="motion"]').click()
+  page.wait_for_function('document.querySelector("#motion-preview").readyState>=1')
+  check('sample MP4 has real 6s metadata',abs(page.locator('#motion-preview').evaluate('(v)=>v.duration')-6)<.05)
+  page.locator('#motion-preview').evaluate('(v)=>{v.currentTime=3}')
+  page.wait_for_function('document.querySelector("#motion-preview").currentTime>2.9')
+  page.locator('#motion-preview').evaluate('(v)=>v.play()');page.wait_for_timeout(300);page.locator('#motion-preview').evaluate('(v)=>v.pause()')
+  check('sample MP4 plays and seeks',page.locator('#motion-preview').evaluate('(v)=>v.currentTime>3&&v.paused&&!v.error'))
+  page.locator('[data-motion-field="title"]').fill('一件商品一套素材')
+  page.locator('[data-motion-field="words"]').fill('先定稿\n再复用\n少搬运')
+  page.locator('[data-motion-field="footer"]').fill('本机实际渲染验收')
+  with page.expect_download() as download:page.locator('#motion-props').click()
+  props_file=tmp/'props.json';download.value.save_as(str(props_file));props=json.loads(props_file.read_text())
+  check('motion form exports valid custom props',validate_props('KineticWords',props)['title']=='一件商品一套素材')
+  check('edited text does not pretend to rerender','上方视频仍是上次' in page.locator('#render-status').inner_text())
+  render_info={'status':'not-run','rerun':'python scripts/test_studio.py --render'}
+  if args.render:
+   page.wait_for_function('!document.querySelector("#motion-render").disabled')
+   page.locator('#motion-render').click()
+   # Check rejection while actual job is in flight.
+   page.wait_for_function('document.querySelector("#render-status").textContent.includes("渲染中")')
+   code,_,_=api(origin,'/api/render',{'composition':'KineticWords','props':props})
+   check('second concurrent render rejected',code==409)
+   page.wait_for_function('document.querySelector("#render-status").textContent.includes("渲染完成")||document.querySelector("#render-status").textContent.includes("未完成")',timeout=210000)
+   check('real local render completes','渲染完成' in page.locator('#render-status').inner_text())
+   with page.expect_download() as download:page.locator('#motion-download').click()
+   target=OUT/'custom-kinetic.mp4';download.value.save_as(str(target))
+   code,chunk,headers=api(origin,page.locator('#motion-download').get_attribute('href'),headers={'Range':'bytes=0-127'})
+   check('rendered MP4 supports HTTP ranges',code==206 and len(chunk)==128)
+   page.wait_for_function('document.querySelector("#motion-preview").readyState>=1')
+   page.locator('#motion-preview').evaluate('(v)=>{v.currentTime=3}')
+   page.wait_for_function('document.querySelector("#motion-preview").currentTime>2.9')
+   page.wait_for_function('document.querySelector("#motion-preview").readyState>=2&&!document.querySelector("#motion-preview").seeking')
+   page.wait_for_timeout(1200)
+   page.locator('#toast').evaluate('(e)=>e.style.display="none"')
+   page.screenshot(path=str(OUT/'motion-custom.png'),full_page=True)
+   check('render output stored as portable asset',any(a['mime']=='video/mp4' for a in page.evaluate('CreatorStudio.snapshot().assets')))
+   page.locator('#motion-add').click()
+   check('custom video joins canvas',page.locator('.node.selected video').get_attribute('src').startswith('data:video/mp4'))
+   render_info={'status':'passed','artifact':'artifacts/studio/custom-kinetic.mp4','sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'composition':'KineticWords','props':props,'note':'Actual browser form -> loopback API -> locked Remotion CLI -> ffprobe -> MP4 -> browser asset library'}
+  # Export immediately after editing to exercise debounced-save snapshot integrity.
+  with page.expect_download() as download:page.locator('#export').click()
+  export=tmp/'workspace.json';download.value.save_as(str(export));bundle=json.loads(export.read_text())
+  check('v2 export contains graph and bytes',bundle['format']=='creator-desk-studio' and len(bundle['workspace']['assets'])>=1 and any(n.get('assetId') for n in bundle['graph']['nodes']))
+  check('A/B choice and note included',bundle['workspace']['decisions']['AB01']=={'choice':'B','note':'验收：暖灰用于创意广告，实拍保真待复核'})
+  check('custom review included',bundle['workspace']['customCompare']['choice']=='A' and bundle['workspace']['customCompare']['note']=='上传素材人工对比记录')
+  check('prompt and motion drafts included',bundle['workspace']['promptDrafts']['IMG-EC-02']['product']=='无品牌保温杯' and bundle['workspace']['motionDrafts']['KineticWords']['title']=='一件商品一套素材')
+  page.reload();page.evaluate('CreatorStudio.ready')
+  check('assets survive browser reload',len(page.evaluate('CreatorStudio.snapshot().assets'))==len(bundle['workspace']['assets']))
+  check('uploaded canvas media restored after reload',page.locator('.node img[src^="data:"],.node video[src^="data:"]').count()>=1)
+  page.locator('[data-tab="prompts"]').click();page.locator('#prompt-search').fill('IMG-EC-02')
+  check('prompt draft survives reload',page.locator('[data-variable="product"]').input_value()=='无品牌保温杯')
+  page.locator('[data-tab="motion"]').click();check('motion draft survives reload',page.locator('[data-motion-field="title"]').input_value()=='一件商品一套素材')
+  # Independent empty browser context: no shared IndexedDB/localStorage.
+  fresh=browser.new_context(viewport={'width':1536,'height':1000});other=fresh.new_page();other.on('pageerror',lambda e:errors.append(str(e)));other.goto(origin+'/prototype/index.html');other.evaluate('CreatorStudio.ready')
+  other.locator('#file').set_input_files(str(export));other.wait_for_function('CreatorCanvas.snapshot().nodes.length>3')
+  check('portable import works in a clean browser',len(other.evaluate('CreatorStudio.snapshot().assets'))==len(bundle['workspace']['assets']) and other.evaluate('CreatorCanvas.snapshot().nodes.length')==len(bundle['graph']['nodes']))
+  check('imported image bytes identical',other.evaluate('CreatorStudio.snapshot().assets[0].sha256')==bundle['workspace']['assets'][0]['sha256'])
+  before=other.evaluate('JSON.stringify(CreatorCanvas.snapshot())')
+  tampered=json.loads(export.read_text());tampered['workspace']['assets'][0]['dataURL']=tampered['workspace']['assets'][0]['dataURL'].replace('iVBOR','AVBOR',1)
+  bad=tmp/'tampered.json';bad.write_text(json.dumps(tampered,ensure_ascii=False))
+  other.locator('#file').set_input_files(str(bad));other.wait_for_function('document.querySelector("#toast").textContent.includes("导入失败")')
+  check('tampered bytes rejected before graph mutation',other.evaluate('JSON.stringify(CreatorCanvas.snapshot())')==before)
+  legacy=tmp/'legacy.json';legacy.write_text(json.dumps({'version':1,'title':'旧版工程','template':'film','nodes':[{'id':'n1','type':'text','title':'旧需求','content':'向后兼容','x':0,'y':0}],'edges':[]}))
+  other.locator('#file').set_input_files(str(legacy));other.wait_for_function('CreatorCanvas.snapshot().title==="旧版工程"')
+  check('legacy v1 graph still imports',other.locator('.node').count()==1)
+  other.locator('[data-tab="assets"]').click();other.screenshot(path=str(OUT/'asset-library.png'),full_page=True)
+  other.locator('[data-tab="compare"]').click();other.locator('#compare-case').select_option('AB01');other.screenshot(path=str(OUT/'ab-review.png'),full_page=True)
+  for tab in ['canvas','assets','prompts','compare','motion']:
+   other.set_viewport_size({'width':390,'height':844});other.locator('[data-tab="'+tab+'"]').click()
+   check('mobile fits viewport: '+tab,other.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+  other.wait_for_timeout(300);other.locator('#toast').evaluate('(e)=>e.style.display="none"');other.screenshot(path=str(OUT/'mobile-workspace.png'),full_page=True)
+  # Static hosting: functionality still runs; rendering is explicitly unavailable.
+  static=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(R)));threading.Thread(target=static.serve_forever,daemon=True).start()
+  try:
+   static_page=browser.new_page();static_page.goto(f'http://127.0.0.1:{static.server_port}/prototype/index.html');static_page.evaluate('CreatorStudio.ready');static_page.locator('[data-tab="motion"]').click()
+   static_page.wait_for_function('document.querySelector("#render-service").textContent.includes("静态预览")')
+   check('static mode offers props but disables render',static_page.locator('#motion-render').is_disabled() and static_page.locator('#motion-props').is_enabled())
+  finally:static.shutdown();static.server_close()
+  check('no browser exceptions',not errors)
+  browser.close()
+ # Endpoint rejection tests do not spawn new jobs.
+ code,_,_=api(origin,'/api/render',{'composition':'KineticWords','props':{}},headers={'Content-Type':'application/json','Origin':'https://untrusted.invalid'})
+ check('cross-origin render rejected',code==403)
+ code,_,_=api(origin,'/api/status',headers={'Host':'attacker.invalid'})
+ check('untrusted host rejected',code==403)
+ code,_,_=api(origin,'/.git/config');check('hidden repository files not served',code==403)
+ if args.render:
+  code,_,_=api(origin,'/api/render',{'composition':'KineticWords','props':{**props,'illustration':'../../arbitrary'}})
+  check('arbitrary render props rejected',code==400)
+ result={'status':'passed','count':len(checks),'checks':checks,'browser':'real system Chromium via Playwright','render':render_info,'no_image_provider_called':True,'original_ab_evidence_unchanged':True,'source_sha256':{str(f.relative_to(R)):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted([*(R/'prototype').rglob('*'),R/'scripts/studio_server.py',R/'scripts/local_media_server.py']) if f.is_file() and f.suffix in {'.html','.css','.js'}}}
+ (OUT/'workspace-test-report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+ if args.render:
+  import subprocess
+  result_probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(OUT/'custom-kinetic.mp4')]))
+  subprocess.run(['ffmpeg','-y','-v','error','-ss','3','-i',str(OUT/'custom-kinetic.mp4'),'-frames:v','1',str(OUT/'custom-kinetic-middle.png')],check=True)
+  (OUT/'custom-kinetic-evidence.json').write_text(json.dumps({'render':render_info,'probe':result_probe,'component_sha256':hashlib.sha256((R/'remotion/src/Root.tsx').read_bytes()).hexdigest(),'lock_sha256':hashlib.sha256((R/'remotion/package-lock.json').read_bytes()).hexdigest()},ensure_ascii=False,indent=2)+'\n')
+ print(json.dumps(result,ensure_ascii=False,indent=2))
+finally:
+ server.shutdown();server.server_close();POOL.shutdown(wait=True);temp.cleanup()

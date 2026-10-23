@@ -6,6 +6,21 @@
 
 这是研究、规划与可运行样例。画布原型尚未接入真实付费生成接口；5/10分钟文件是镜头计划，三个MP4是6/8/6秒口播动效素材。
 
+## 追加：素材与动效已串成一个工作台
+
+```bash
+python scripts/studio_server.py
+# 浏览器打开 http://127.0.0.1:8765/prototype/index.html
+```
+
+五个页面包含：**画布流程 → 素材库 → 50条提示词/8个Skill → A/B评审 → 口播动效**。上传素材、填参、选版本、播放MP4、保存与导出都能直接操作。安装Remotion依赖后，可以在网页修改文字并本机重渲染新MP4。
+
+本轮已实际跑通浏览器表单渲染、MP4回到画布、带素材工程导出与空白浏览器恢复；前端无构建与CDN依赖。在线生图/AI视频模型尚未接入。
+
+[启动与Hermes验收](docs/06-创作桌工作台与Hermes验收.md) · [下载工作台交付PDF](artifacts/studio/工作台交付与Hermes验收.pdf) · [本机新渲染MP4](artifacts/studio/custom-kinetic.mp4) · [浏览器验收证据](artifacts/studio/workspace-test-report.json)
+
+![创作桌动效工作台](artifacts/studio/motion-custom.png)
+
 ## 追加：生图与动效 A/B 实测
 
 [并排查看原图](artifacts/ab-2026-10-23/README.md) · [完整测试报告](docs/05-生图与Remotion-AB测试报告.md) · [对照PDF](artifacts/ab-2026-10-23/AB对照报告.pdf)
@@ -29,7 +44,7 @@
 | 直接用模板 | [50条原创提示词](prompts/README.md) / [机器可读JSON](prompts/catalog.json) |
 | 交给Hermes执行 | [8个原创技能](skills/README.md) |
 | 阅读上游原文 | [选定MIT文本镜像](third_party/README.md) |
-| 体验画布交互 | 本机打开 [prototype/index.html](prototype/index.html) |
+| 体验完整工作台 | 运行 `python scripts/studio_server.py`，见 [启动说明](prototype/README.md) |
 | 复用口播动效 | [Remotion工程与重现步骤](remotion/README.md) |
 | 检查实测结果 | [生图与动效测试记录](docs/03-生图与动效测试记录.md) |
 
@@ -37,9 +52,9 @@
 
 ![创作桌原型](artifacts/canvas-prototype.png)
 
-选择模板，直接编辑卡片；支持拖动、引用连接、缩放、撤销重做、本机自动保存、工程JSON导入导出。四种入口对应电商、影视、长片和口播。浏览器禁用本机存储时会提示导出备份。
+选择四类模板编辑卡片，支持拖动、引用连接、缩放、撤销重做、本机保存。素材、提示词、Skill、评审版本、视频均可加入画布；工程JSON带上上传素材与草稿。
 
-原型没有构建依赖；生成按钮为明确标注的“检查执行计划”，不调用AI服务。图片卡片使用下面本次真实生图结果。
+前端没有构建依赖；“检查执行计划”只校验图结构。Remotion重新渲染在“口播动效”页面独立执行，需要本机服务及锁定依赖。图片卡片使用本次实际生图或你的上传素材。
 
 ## 初次单图测试（原件保留）
 
@@ -69,6 +84,8 @@
 # 在仓库根目录，Python3 + ffprobe；无需模型密钥
 python scripts/verify_delivery.py
 node scripts/test_model.cjs
+python scripts/verify_studio.py
+node scripts/test_studio_model.cjs
 
 # 可选：Python Playwright + 已安装Chrome/Chromium
 python scripts/test_canvas.py
@@ -84,4 +101,4 @@ python scripts/prompt_cli.py show IMG-EC-01
 
 原创代码/技能为MIT，原创提示词与研究笔记为CC BY 4.0；第三方镜像保留原许可，其他上游只提供来源与分类。详情见 [LICENSE](LICENSE)。原始课程PDF未公开分发。模型服务、Remotion/tldraw等依赖保留各自条款。
 
-本次没有实现后台队列、多人协作、真实供应商API、TTS或5–10分钟整片。后续实施范围、成本公式与验收门槛在产品规划和交付文档中逐项列明。
+本次没有实现云端生成队列、多人协作、真实供应商API、TTS或5–10分钟整片。后续实施范围、成本公式与验收门槛在产品规划和交付文档中逐项列明。

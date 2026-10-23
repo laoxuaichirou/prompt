@@ -38,7 +38,7 @@ try:
   page.locator('#plan').click();check('execution plan explicitly says no provider task','未提交生成任务' in page.locator('#toast').inner_text())
   page.locator('#zoom-in').click();check('zoom changes viewport',page.locator('#zoom-value').inner_text()!='100%')
   with page.expect_download() as d:page.locator('#export').click()
-  exported=Path(tempfile.mkdtemp())/'project.json';d.value.save_as(str(exported));data=json.loads(exported.read_text());check('export contains current graph',len(data['nodes'])==4 and len(data['edges'])==3)
+  exported=Path(tempfile.mkdtemp())/'project.json';d.value.save_as(str(exported));data=json.loads(exported.read_text());data=data.get('graph',data);check('export contains current graph',len(data['nodes'])==4 and len(data['edges'])==3)
   bad=exported.parent/'bad.json';bad.write_text('{"version":1,"title":"bad","nodes":[],"edges":[{"source":"no","target":"no"}]}')
   page.locator('#file').set_input_files(str(bad));page.wait_for_function("document.querySelector('#toast').textContent.includes('导入失败')");check('invalid import preserves project',page.locator('.node').count()==4)
   page.locator('[data-template="film"]').click();check('template changes workflow',page.locator('.node img').get_attribute('src').endswith('IMG-FILM-03.png'))

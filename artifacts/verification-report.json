@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "checks_passed": 824,
+  "checks_passed": 856,
   "scope": "offline evidence, schemas, pinned references, actual media probing, mirrored-source hashes, local links, full delivery checksums",
   "live_github_stars": "not refreshed",
-  "browser_test": "saved evidence checked; rerun scripts/test_canvas.py for independent browser execution",
+  "browser_test": "saved canvas/workspace evidence checked; rerun scripts/test_canvas.py and scripts/test_studio.py --render in a temporary copy for independent browser execution",
   "long_video_generation": "not performed; supplied plans only",
   "checksums": "verified"
 }

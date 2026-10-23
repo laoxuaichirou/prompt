@@ -1,5 +1,7 @@
 # 交付文档与Hermes本机验收
 
+**最新工作台入口：** [创作桌工作台与Hermes验收](06-创作桌工作台与Hermes验收.md)。新增素材上传、提示词/Skill入画布、A/B个人评审、完整工程迁移与本机Remotion重渲染；下文初版范围和旧PDF为历史快照，以追加文档说明最新状态。
+
 交付日期：2026-10-23（北京时间）。目标仓库：`laoxuaichirou/prompt`。本次为**研究、产品规划、资源库及可运行样例交付**；用户原需求是规划画布工具，未把后续生产系统冒充已经实现。
 
 ## 交付结果
@@ -95,3 +97,12 @@ python scripts/prompt_cli.py render IMG-EC-02 --vars '{"product":"保温杯"}'
 本轮最新main新增5组生图、10张原件，以及1组同组件素材对照、2条实际Remotion MP4。先读 [A/B测试报告](05-生图与Remotion-AB测试报告.md)，再运行 `python scripts/verify_ab_tests.py`（需要Pillow与ffprobe）。初版固定提交bc7a046不包含追加内容。
 
 请特别复核AB02的日出/曝光漂移、AB04的原PNG与目标背景合成，以及AB05的2×2布局与角色身份局限。文件/alpha检查通过不意味着这些质量问题已经修好。逐模板与技能覆盖见 `artifacts/ab-2026-10-23/coverage.json`。
+
+
+## 追加工作台验收
+
+启动 `python scripts/studio_server.py`，打开 http://127.0.0.1:8765/prototype/index.html。
+
+先读 [工作台与Hermes验收](06-创作桌工作台与Hermes验收.md)，运行 `python scripts/verify_studio.py` 和 `node scripts/test_studio_model.cjs`。浏览器独立复验用 `python scripts/test_studio.py --render`，会更新测试截图/记录，建议在临时副本执行。
+
+本轮确实通过网页文案实际输出一条新的KineticWords MP4，存入素材库并加入画布；尚未接入AI图片/视频生成供应商。上传、评审、文案草稿和MP4可随工程JSON迁移。图结构撤销与工作区评审/草稿恢复各自独立，见新增文档。
