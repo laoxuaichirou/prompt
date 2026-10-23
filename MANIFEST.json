@@ -1,0 +1,34 @@
+{
+  "product": "提示词去重合并器",
+  "release": "2026-10-23-rework-1",
+  "algorithm": "sha256",
+  "baseline": {
+    "file": "promptdedup-delivery.zip",
+    "sha256": "57dbe1e0b488ff21bb46921212be70711a44902820b346b6c0364ee80988b3a7"
+  },
+  "excludes": [
+    "MANIFEST.json"
+  ],
+  "files": [
+    {
+      "path": "promptdedup.html",
+      "bytes": 75937,
+      "sha256": "20003b968f7ab94226e2592b2b515d20b702ab2b28d2870133f573f37595464d"
+    },
+    {
+      "path": "SPEC.md",
+      "bytes": 577,
+      "sha256": "542cf972ae7dce08017aae13e99610fad8a4ad764eedf5ffb9e00dbe25413a33"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11001,
+      "sha256": "53e7b438dfa1981094ac4d586d9c48d24dedd0fd0736f8d067cee29a037f7015"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "bytes": 10265,
+      "sha256": "944431b48cf724c8fafab3d19648219a90be0a919689bf266d18a8b86d3f2d71"
+    }
+  ]
+}
