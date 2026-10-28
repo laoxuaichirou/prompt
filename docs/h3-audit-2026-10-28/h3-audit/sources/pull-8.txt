@@ -1,0 +1,445 @@
+
+
+Install h3-prompt-writing skill - #8
+
+Merged
+
+Merged
+
+ [/isacjosepinha-debug] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/isacjosepinha-debug] isacjosepinha-debug
+
+      
+
+      
+
+      commented
+
+         [#issue-5093403476] Aug 7, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Overview
+
+Installs the h3-prompt-writing skill for minimalist product advertisement generation. This skill provides Portuguese-language templates and references for generating concise, effective product announcements.
+
+Changes
+
+Adds h3-prompt-writing skill to .agents/ and .claude/ directories
+
+Includes skill metadata, agent configurations, and reference templates
+
+Updates skills-lock.json with the new skill dependency
+
+Skill Details
+
+Name: h3-prompt-writing
+
+Purpose: Gerador de anúncios de produto minimalista (Minimalist product advertisement generator)
+
+Security: Verified as safe (Socket 0 alerts, Snyk Low Risk)
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/8]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/apps/github-copilot-cli] 
+
+    
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/8/commits/1ce88e916de7c15b63cbaf347642503f9bc21d3d] Install h3-prompt-writing skill
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/8/commits/1ce88e916de7c15b63cbaf347642503f9bc21d3d] 1ce88e9
+
+      
+
+    
+
+  
+
+    
+
+      
+Adds h3-prompt-writing skill for minimalist product advertisement generation.
+
+Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>
+
+    
+
+   [/yossefchen-star] 
+
+    
+
+  
+
+              
+                     [/yossefchen-star] yossefchen-star
+
+              
+
+              approved these changes
+
+              
+                   [#pullrequestreview-4889235435] 
+                    Aug 8, 2026
+
+              
+
+            
+
+            
+
+                 [/MiniMax-AI/MiniMax-H3/pull/8/files/1ce88e916de7c15b63cbaf347642503f9bc21d3d]   
+    View reviewed changes
+
+            
+
+  
+
+  
+
+   [/yossefchen-star] 
+
+    
+
+  
+
+              
+                     [/yossefchen-star] yossefchen-star
+
+              
+
+              approved these changes
+
+              
+                   [#pullrequestreview-4889236249] 
+                    Aug 8, 2026
+
+              
+
+            
+
+            
+
+                 [/MiniMax-AI/MiniMax-H3/pull/8/files/1ce88e916de7c15b63cbaf347642503f9bc21d3d]   
+    View reviewed changes
+
+            
+
+  
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/b0175e52746879fc92f9243ed0ebcff8393a30b3] b0175e5
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/8#event-29178091780] Aug 9, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

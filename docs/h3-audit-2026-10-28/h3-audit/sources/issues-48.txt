@@ -1,0 +1,93 @@
+
+
+checkpoint inconsistent between original and diffusers #48
+
+Open
+
+Open
+
+Thanks for opening source  such great model! I have found the checkpoint under MiniMax-H3/FL2VA/transformer is inconsistent with the checkpoint under MiniMax-H3/transformer. The qkv linear weight is different and the others are same. Here is my comparison code
+
+import torch
+from safetensors.torch import load_file
+
+if __name__ == '__main__':
+
+    state_dict = {}
+    state_dict2 = {}
+    for i in range(1,14):
+        state_dict.update(load_file('MiniMax-H3/FL2VA/transformer/model-%05d-of-00013.safetensors'%i))
+
+    for i in range(1,15):
+        state_dict2.update(load_file('MiniMax-H3/transformer/diffusion_pytorch_model-%05d-of-00014.safetensors'%i))
+
+    print((state_dict['video_patch_proj.weight']-state_dict2['proj_in.weight']).abs().sum())
+    print((state_dict['video_patch_proj.bias']-state_dict2['proj_in.bias']).abs().sum())
+
+    print((state_dict['audio_patch_proj.weight']-state_dict2['audio_proj_in.weight']).abs().sum())
+    print((state_dict['audio_patch_proj.bias']-state_dict2['audio_proj_in.bias']).abs().sum())
+
+    print((state_dict['condition_proj.weight']-state_dict2['context_embedder.weight']).abs().sum())
+    print((state_dict['condition_proj.bias']-state_dict2['context_embedder.bias']).abs().sum())
+
+    print((state_dict['time_embedder.proj_in.weight']-state_dict2['time_embedder.linear_1.weight']).abs().sum())
+    print((state_dict['time_embedder.proj_in.bias']-state_dict2['time_embedder.linear_1.bias']).abs().sum())
+
+    print((state_dict['time_embedder.proj_out.weight']-state_dict2['time_embedder.linear_2.weight']).abs().sum())
+    print((state_dict['time_embedder.proj_out.bias']-state_dict2['time_embedder.linear_2.bias']).abs().sum())
+
+    for i in range(2):
+        print((state_dict['token_refiner.blocks.%d.norm1.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.norm1.weight'%i]).abs().sum())
+        print((state_dict['token_refiner.blocks.%d.norm2.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.norm2.weight'%i]).abs().sum())
+
+        print((state_dict['token_refiner.blocks.%d.attn.q_norm.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.attn.norm_q.weight'%i]).abs().sum())
+        print((state_dict['token_refiner.blocks.%d.attn.k_norm.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.attn.norm_k.weight'%i]).abs().sum())
+
+        qkv = torch.cat([state_dict2['token_refiner.refiner_blocks.%d.attn.to_q.weight'%i], state_dict2['token_refiner.refiner_blocks.%d.attn.to_k.weight'%i], state_dict2['token_refiner.refiner_blocks.%d.attn.to_v.weight'%i]], dim=0)
+        print((state_dict['token_refiner.blocks.%d.attn.qkv_proj.weight'%i].to(torch.float32) - qkv.to(torch.float32)).abs().mean())
+
+        print((state_dict['token_refiner.blocks.%d.attn.out_proj.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.attn.to_out.0.weight'%i]).abs().sum())
+
+        print((state_dict['token_refiner.blocks.%d.mlp.fc1.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.ff.net.0.proj.weight'%i]).abs().sum())
+        print((state_dict['token_refiner.blocks.%d.mlp.fc2.weight'%i]-state_dict2['token_refiner.refiner_blocks.%d.ff.net.2.weight'%i]).abs().sum())
+
+    print((state_dict['token_refiner.final_norm.weight']-state_dict2['token_refiner.final_norm.weight']).abs().sum())
+
+    for i in range(50):
+        print((state_dict['blocks.%d.norm1.weight'%i]-state_dict2['transformer_blocks.%d.norm1.weight'%i]).abs().sum())
+        print((state_dict['blocks.%d.norm2.weight'%i]-state_dict2['transformer_blocks.%d.norm2.weight'%i]).abs().sum())
+
+        print((state_dict['blocks.%d.adaln_proj.linear.weight'%i]-state_dict2['transformer_blocks.%d.adaln_proj.linear.weight'%i]).abs().sum())
+        print((state_dict['blocks.%d.adaln_proj.linear.bias'%i]-state_dict2['transformer_blocks.%d.adaln_proj.linear.bias'%i]).abs().sum())
+
+        print((state_dict['blocks.%d.attn.q_norm.weight'%i]-state_dict2['transformer_blocks.%d.attn.norm_q.weight'%i]).abs().sum())
+        print((state_dict['blocks.%d.attn.k_norm.weight'%i]-state_dict2['transformer_blocks.%d.attn.norm_k.weight'%i]).abs().sum())
+
+        qkv = torch.cat([state_dict2['transformer_blocks.%d.attn.to_q.weight'%i], state_dict2['transformer_blocks.%d.attn.to_k.weight'%i], state_dict2['transformer_blocks.%d.attn.to_v.weight'%i]], dim=0)
+        print((state_dict['blocks.%d.attn.qkv_proj.weight'%i].to(torch.float32) - qkv.to(torch.float32)).abs().mean())
+
+        print((state_dict['blocks.%d.attn.out_proj.weight'%i]-state_dict2['transformer_blocks.%d.attn.to_out.0.weight'%i]).abs().sum())
+
+        print((state_dict['blocks.%d.mlp.fc1.weight'%i]-state_dict2['transformer_blocks.%d.ff.net.0.proj.weight'%i]).abs().sum())
+        print((state_dict['blocks.%d.mlp.fc2.weight'%i]-state_dict2['transformer_blocks.%d.ff.net.2.weight'%i]).abs().sum())
+
+    print((state_dict['final_layer.norm.weight']-state_dict2['norm_out.norm.weight']).abs().sum())
+    print((state_dict['final_layer.adaln_proj.linear.weight']-state_dict2['norm_out.linear.weight']).abs().sum())
+    print((state_dict['final_layer.adaln_proj.linear.bias']-state_dict2['norm_out.linear.bias']).abs().sum())
+    print((state_dict['final_layer.video_out.weight']-state_dict2['proj_out.weight']).abs().sum())
+    print((state_dict['final_layer.video_out.bias']-state_dict2['proj_out.bias']).abs().sum())
+    print((state_dict['final_layer.audio_out.weight']-state_dict2['audio_proj_out.weight']).abs().sum())
+    print((state_dict['final_layer.audio_out.bias']-state_dict2['audio_proj_out.bias']).abs().sum())
+
+And I have checked the SHA256 of the downloaded checkpoint is consistent with the checkpoint in huggingface. I can get normal results using the diffusers checkpoint, but the results are incorrect when using the original checkpoint.
+
+I investigated this further. Since the other corresponding weights match and the SHA256 of the downloaded checkpoints is consistent, the discrepancy appears isolated to the fused qkv_proj.weight.
+
+One possibility is that the original checkpoint uses a different QKV packing/layout from the Diffusers representation, rather than a simple torch.cat([to_q, to_k, to_v], dim=0).
+
+Could you confirm the expected row layout of qkv_proj.weight in the original FL2VA implementation — specifically whether it is [all Q, all K, all V] or a per-head/interleaved layout?
+
+I also verified that the Diffusers checkpoint produces correct results while the original checkpoint produces incorrect results. If the intended layout is documented or the conversion code is available, I can investigate the conversion/loading path further.
+
+Thanks for your reply. The shape of the to_q,to_k,to_v is 7168*5376, and the shape of the qkv_proj is 21504*5376. I also found that the first few rows of qkv_proj and to_q are identical, but the last few rows are not.  (to_q[:5] == qkv_proj[:5]).all() is True (to_q[-5:] == qkv_proj[7163:7168]).all() is False. So I think the qkv packing is torch.cat([to_q, to_k, to_v], dim=0). Moreover, I have found that in addition to the inconsistency in the QKV weights, the MLP weights also differ between MiniMax-H3/Ref2VA/transformer and MiniMax-H3/transformer_ref.  ('blocks.%d.mlp.fc1.weight' == 'transformer_blocks.%d.ff.net.0.proj.weight').all() is False
+

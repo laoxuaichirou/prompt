@@ -1,0 +1,351 @@
+
+
+docs: fix logical issue in README.md - #35
+
+Merged
+
+Merged
+
+ [/lunar-me] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/lunar-me] lunar-me
+
+      
+
+      
+
+      commented
+
+         [#issue-5116953160] Aug 11, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Problem
+
+The section heading uses a hyphen between '2K' and 'Workflow' ('Full 2K-Workflow'), but the body text consistently refers to it without the hyphen as 'Full 2K Workflow' (lines 106, 178, 170). Inconsistent terminology for the same section name.
+
+This is a documentation-only fix.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/35]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+        
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/35/commits/37866ed9900b212f18a02d60e38fd3cbfc119ab1] docs: fix logical issue in README.md (section_name_hyphen_inconsistent)
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/35/commits/37866ed9900b212f18a02d60e38fd3cbfc119ab1] 37866ed
+
+      
+
+    
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/3d3b0d1356696148f0c3dfc7bce6aa054a45d76a] 3d3b0d1
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/35#event-29274290548] Aug 11, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

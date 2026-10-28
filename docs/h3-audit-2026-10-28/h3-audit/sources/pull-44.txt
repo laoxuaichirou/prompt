@@ -1,0 +1,352 @@
+
+
+docs(h3-prompt-writing): add tips for better results - #44
+
+Merged
+
+Merged
+
+ [/GyArmyBrat] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/GyArmyBrat] GyArmyBrat
+
+      
+
+      
+
+      commented
+
+         [#issue-5119689406] Aug 11, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Added a short "Tips for Better Results" section to the h3-prompt-writing skill to help users write clearer prompts.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/44]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/GyArmyBrat] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/44/commits/a107547fa669c509b8e6363fe18378d46ab3066c] docs(h3-prompt-writing): add tips for better results
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/44/commits/a107547fa669c509b8e6363fe18378d46ab3066c] a107547
+
+      
+
+    
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/d21241f0a4b3acbb34c97dae47fa417b7065e438] d21241f
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/44#event-29495136245] Aug 15, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

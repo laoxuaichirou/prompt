@@ -1,0 +1,817 @@
+
+
+docs(skills): add compatibility fields to Hub-native skills, sync i18n READMEs - #22
+
+Merged
+
+Merged
+
+ [/joeVenner] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/joeVenner] joeVenner
+
+      
+
+      
+
+      commented
+
+         [#issue-5109588240] Aug 10, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+Follow-up to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/13] #13.
+
+Add a compatibility field to the 8 Hub-native skills (3d-animation-short-generator, brand-promo-video-generator, co-op-game-intro-generator, handdrawn-live-video-generator, minimalist-product-ad-generator, music-video-subtitle-generator, paper-collage-explainer-generator, papercraft-stop-motion-explainer) noting they require the MiniMax Hub agent (canvas workspace, hub_* tools) and are not portable to generic agent harnesses — same treatment already given to h3-prompt-writing.
+
+Port the English "Agent compatibility" note added to README.md in  [https://github.com/MiniMax-AI/MiniMax-H3/pull/13] docs(skills): clarify h3-prompt-writing is agent-portable, not OpenAI-only #13 to README.zh-CN.md, README.ja.md, and README.ko.md so all four READMEs stay in sync.
+
+Test plan
+
+ Confirmed each compatibility string is grounded in that skill's actual body content (canvas nodes, hub_* tool references) rather than copied boilerplate.
+
+ Docs-only change; no code paths affected.
+
+ Frontmatter remains valid YAML in all 8 edited SKILL.md files.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/22]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/joeVenner] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/22/commits/743d51e83329cbae6c7694f1c7b89576e7c25e07] docs(skills): add compatibility fields to Hub-native skills, sync i18…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/22/commits/743d51e83329cbae6c7694f1c7b89576e7c25e07] 743d51e
+
+      
+
+    
+
+  
+
+    
+
+      
+…n READMEs
+
+Follow-up to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/13] MiniMax-AI#13: add a compatibility field to the 8 Hub-native skills
+noting they require the MiniMax Hub agent (canvas workspace, hub_*
+tools) and are not portable to generic agent harnesses, mirroring the
+note already added to h3-prompt-writing. Also port the English
+compatibility note to README.zh-CN.md, README.ja.md, and README.ko.md
+so all four READMEs stay in sync.
+
+    
+
+   [/rajpratham1] 
+
+    
+
+  
+
+              
+                     [/rajpratham1] rajpratham1
+
+              
+
+              suggested changes
+
+              
+                   [#pullrequestreview-4898700556] 
+                    Aug 10, 2026
+
+              
+
+            
+
+            
+
+                 [/MiniMax-AI/MiniMax-H3/pull/22/files/743d51e83329cbae6c7694f1c7b89576e7c25e07]   
+    View reviewed changes
+
+            
+
+  
+
+  
+
+                      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/rajpratham1] rajpratham1
+
+      
+
+      
+
+      left a comment
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+                   [#pullrequestreview-4898700556] 
+
+                      
+
+  
+
+  
+
+  
+
+      
+
+    
+
+    
+There was a problem hiding this comment.
+
+  
+
+ 
+
+  
+
+      
+
+    
+
+    
+Choose a reason for hiding this comment
+
+    
+
+      The reason will be displayed to describe this comment to others.  [https://docs.github.com/articles/managing-disruptive-comments/#hiding-a-comment] Learn more.
+
+    
+
+        
+        Choose a reason
+
+        Spam
+Abuse
+Off Topic
+Outdated
+Duplicate
+Resolved
+Low Quality
+
+        
+    Hide comment
+
+  
+
+  
+
+      
+The compatibility additions look correct overall. However, please verify the SKILL.md frontmatter for duplicated YAML keys/lines (e.g. name and description) and ensure each key appears only once. Once the frontmatter is clean and valid, this should be ready to approve.
+
+      
+
+  
+
+                    
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                      
+
+                    
+
+  
+
+    
+
+              ❤️
+            1
+  joeVenner reacted with heart emoji
+
+        
+
+    All reactions
+
+          
+
+                ❤️
+                  1 reaction
+
+          
+
+      
+
+    
+
+                  
+
+  
+
+  
+
+  
+
+   [/joeVenner] 
+
+  
+
+    
+
+      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/joeVenner] joeVenner
+
+      
+
+      
+
+      commented
+
+         [#issuecomment-5242880896] Aug 10, 2026
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+  Author
+
+    
+
+  
+
+      
+
+        
+
+  
+
+      
+
+ [https://github.com/rajpratham1] @rajpratham1 thanks for reviewing. I checked this carefully and couldn't reproduce the issue — could you point to a specific file/line?
+
+I verified three ways:
+
+Diff review — each of the 9 touched SKILL.md files gets exactly one +compatibility: ... line added; nothing else changes in the frontmatter block.
+
+Strict duplicate-key YAML parse (local) — ran a custom yaml.SafeLoader that raises on any repeated mapping key against every edited file's frontmatter. All 9 pass with no duplicates.
+
+Same check against the PR branch itself — fetched the raw files directly from raw.githubusercontent.com/joeVenner/MiniMax-H3/docs/skill-compatibility-notes-part2/... (the actual commit this PR merges) and re-ran the duplicate-key check. Same result: every file has exactly one name and one description, no duplicates anywhere.
+
+Top-level keys per file, as parsed from the PR branch:
+
+3d-animation-short-generator:     [name, description, compatibility]
+brand-promo-video-generator:      [name, description, compatibility, allowed-tools]
+co-op-game-intro-generator:       [name, description, compatibility]
+h3-prompt-writing:                [name, description, compatibility]
+handdrawn-live-video-generator:   [name, description, compatibility, trigger-words]
+minimalist-product-ad-generator:  [name, description, compatibility, metadata]
+music-video-subtitle-generator:   [name, description, compatibility, trigger-words]
+paper-collage-explainer-generator:[name, description, compatibility, trigger-words, exported-by]
+papercraft-stop-motion-explainer: [name, description, compatibility]
+
+Happy to fix it if there's a specific instance I'm missing — just need a file/line to look at.
+
+      
+
+  
+
+        
+
+            
+
+            
+
+              
+
+  
+
+      
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+            
+
+        
+
+      
+
+      
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+  
+
+    
+
+  
+
+        
+
+               [/joeVenner] 
+
+        
+
+      
+
+        
+
+               [/joeVenner] joeVenner
+
+                requested a review
+  from  [/rajpratham1] rajpratham1
+
+           [#event-29233930154] August 10, 2026 16:17          
+
+      
+
+    
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/fa6891ff7cdaaa03fa4497e89ac64ff169219acf] fa6891f
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/22#event-29274322043] Aug 11, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

@@ -1,0 +1,5 @@
+# Keep source snapshots and checksum inputs byte-for-byte.
+h3-audit/** -text -whitespace
+# Markdown hard line breaks are intentional.
+HANDOFF.zh-CN.md whitespace=-blank-at-eol
+h3-local-handoff.zip binary

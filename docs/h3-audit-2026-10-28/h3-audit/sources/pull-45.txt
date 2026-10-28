@@ -1,0 +1,370 @@
+
+
+docs: clarify local image support in conditions.uri - #45
+
+Merged
+
+Merged
+
+ [/Umanginigam] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/Umanginigam] Umanginigam
+
+      
+
+      
+
+      commented
+
+         [#issue-5123365456] Aug 11, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+Document support for local images in conditions[].uri for FL2VA examples.
+
+Motivation
+
+Issue  [https://github.com/MiniMax-AI/MiniMax-H3/issues/40] #40 asks whether the image URL can be replaced with a local image for testing. The current README only demonstrates remote CDN URLs, while the SGLang MiniMax-H3 deployment also supports file:// URIs.
+
+Changes
+
+Added a note explaining that file:// URIs are supported.
+
+Included an example using a local keyframe image.
+
+Clarified that the path is resolved by the SGLang server process.
+
+Linked to the SGLang cookbook for more details.
+
+Fixes  [https://github.com/MiniMax-AI/MiniMax-H3/issues/40] #40
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/45]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/Umanginigam] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/45/commits/9176a26ae7fcacd69c6cd7a06f660810c7a477fa] Support local image paths in image loader
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/45/commits/9176a26ae7fcacd69c6cd7a06f660810c7a477fa] 9176a26
+
+      
+
+    
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/6da473b48daf91e5aebfb56451f8a0b116348df5] 6da473b
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/45#event-29375142506] Aug 13, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

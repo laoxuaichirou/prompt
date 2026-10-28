@@ -1,0 +1,382 @@
+
+
+Add h3-prompt-writing skill installation - #7
+
+Merged
+
+Merged
+
+ [/isacjosepinha-debug] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/isacjosepinha-debug] isacjosepinha-debug
+
+      
+
+      
+
+      commented
+
+         [#issue-5093362120] Aug 7, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Installs the h3-prompt-writing skill from MiniMax-H3 repository for use in GitHub Copilot, Amp, Antigravity, Cline, and other supported agents.
+
+What's included:
+
+h3-prompt-writing skill artifacts and configurations
+
+Agent-specific YAML configuration for OpenAI
+
+Reference documentation for prompt writing best practices
+
+Skills lock file for dependency tracking
+
+Security assessment:
+
+Socket: 0 alerts
+
+Snyk: Low Risk
+
+Gen: Safe
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/7]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/apps/github-copilot-cli] 
+
+    
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/7/commits/12ebd6bd8c5d1748a678ac38f4f1238472a98a24] Add h3-prompt-writing skill installation artifacts
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/7/commits/12ebd6bd8c5d1748a678ac38f4f1238472a98a24] 12ebd6b
+
+      
+
+    
+
+  
+
+    
+
+      
+Installs the h3-prompt-writing skill from MiniMax-H3 repository for use in
+GitHub Copilot and other supported agents.
+
+Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>
+
+    
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/fbe95f7fcb94a74a531750e16ab9288871cebea0] fbe95f7
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/7#event-29179697782] Aug 9, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

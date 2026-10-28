@@ -1,0 +1,66 @@
+
+
+MiniMax H3 full INT8/BF16 are unstable in ComfyUI; pruned is fine #85
+
+Open
+
+Open
+
+I found a reproducible issue with MiniMax H3 in ComfyUI.
+
+Problem
+
+These full checkpoints show periodic brightness dips / flashing / temporal instability:
+
+minimax_h3_fl2va_int8_convrot.safetensors
+
+minimax_h3_fl2va_bf16.safetensors
+
+This checkpoint does not:
+
+minimax_h3_fl2va_pruned_int8_convrot.safetensors
+
+I also verified this is not the text encoder.
+
+Cause
+
+The issue appears related to this cast in comfy/ldm/minimax/model.py: t_emb = self.time_embedder(t_vals).to(dtype)
+
+Changing it to:
+
+t_emb = self.time_embedder(t_vals) fixed the issue locally for both full INT8 and full BF16.
+
+Notes
+
+I compared full vs pruned and found all 829 non-modulation tensors were byte-for-byte identical, so the problem appears to be in the modulation / AdaLN / time-embedding path.
+
+The dips/spikes were periodic at a 17-frame cadence. At 24 fps, that is roughly every 0.708 seconds. In our affected runs, the artifact appeared at or very near frames 17, 34, 51, 68, 85, 102, 119, 136, 153, and 170. In the continuation workflow, the behavior also lined up with H3’s temporal structure: with a 39-frame context, the first visible dip appeared 12 newly generated frames later, which is exactly the next 17-frame boundary relative to the model’s 17n+5 temporal geometry. That regular cadence is a useful reproduction clue and should make it easy to inspect frame-by-frame.
+
+Please investigate whether the full MiniMax H3 checkpoints are being downcast incorrectly in the timestep/modulation path.
+
+Shouldn't this be reported at the ComfyUI repo? The line of code you're referencing is  [https://github.com/Comfy-Org/ComfyUI/blob/e3bee7ffcb7d6547ed0bcd15221792f3b8646b17/comfy/ldm/minimax/model.py#L751] this.
+
+I provided some  [https://github.com/veda-sparse/Veda-on-ComfyUI/issues/13#issuecomment-6281718647] insights here that reference your findings, while comparing diffusers vs ComfyUI H3 implementations regarding the time_embedding layers (which retain their F32 precision, even with your ComfyUI converted INT8 ConvRot variants). Highly likely that it's a mistake on ComfyUI's side, and it should keep the layer precision for compute locked to what was inherited from weights? (that or forcing it to F32)
+
+ [https://github.com/polarathene] @polarathene
+
+Yeah, I think you’re right. Thanks for digging into the Diffusers side too, that lines up very closely with what I saw experimentally.
+
+On my end, the full INT8 and BF16 checkpoints both showed the periodic brightness instability, while the pruned INT8 checkpoint did not.
+
+Changing:
+
+t_emb = self.time_embedder(t_vals).to(dtype)
+
+to:
+
+t_emb = self.time_embedder(t_vals)
+
+eliminated the issue for both affected full models in my testing.
+
+So your observation that Diffusers preserves FP32 for the time_embedding path seems to independently support the same conclusion. I agree this is probably a ComfyUI-side precision issue rather than a problem with the H3 checkpoints themselves.
+
+I’ll move the report over to the ComfyUI repo and reference this issue/comment there. I’ll present the one-line change as the minimal repro/fix that demonstrates the cause, while leaving the exact upstream solution open to whether they want to preserve the inherited layer dtype or explicitly force FP32.
+
+Thanks again, this is really helpful confirmation!
+

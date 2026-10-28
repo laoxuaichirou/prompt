@@ -1,0 +1,16 @@
+
+
+BUG: All spoken lines sung #68
+
+Open
+
+Open
+
+No matter how I phrase a prompt, characters end up singing all of their dialog.
+
+I have tried, spoken only, normal conversation, without singing, no singing, and other variations, none of which have had any effect.
+
+Here is a redacted workflow that produced a singing video:
+
+ [https://private-user-images.githubusercontent.com/33837618/641058591-aec2a6c3-a8e1-4156-99de-86ff25aed66d.jpg] 
+

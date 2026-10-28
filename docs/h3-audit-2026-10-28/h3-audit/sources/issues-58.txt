@@ -1,0 +1,39 @@
+
+
+家里2台4070笔记本 1台3080电脑 怎么可以做个小集群？？？？ #58
+
+Closed
+
+Closed
+
+No description provided.
+
+bing chilling
+
+我觉得你在想peach，你指望三个臭皮匠顶个诸葛亮？
+
+Velu ***@***.***> 于 2026年8月19日周三 03:36写道：
+
+ [#] …
+
+ *velunor* left a comment ( [https://github.com/MiniMax-AI/MiniMax-H3/issues/58] MiniMax-AI/MiniMax-H3#58)
+ < [https://github.com/MiniMax-AI/MiniMax-H3/issues/58#issuecomment-5333099514] #58 (comment)>
+
+ bing chilling
+
+ —
+ Reply to this email directly, view it on GitHub
+ < [https://github.com/MiniMax-AI/MiniMax-H3/issues/58] #58?email_source=notifications&email_token=[removed]>,
+ or unsubscribe
+ < [[通知取消订阅链接已移除]] [通知取消订阅链接已移除]>
+ .
+ You are receiving this because you are subscribed to this thread.Message
+ ID: ***@***.***>
+
+笔记本不能联结吧，，，只能把你的任务不同阶段不同步骤分散在其他设备上弄
+
+你想依靠网络来同步权重吗？
+
+ [/RyanLee-Dev] RyanLee-Dev
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completed [https://github.com/MiniMax-AI/MiniMax-H3/issues/58#event-29780558678] on Aug 21, 2026
+

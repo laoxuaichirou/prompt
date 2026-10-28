@@ -1,0 +1,500 @@
+
+
+DRAFT - Level Of Token - 2.6x DiT speed up (LoT only) - #91
+
+Draft
+
+Draft
+
+ [/johndpope] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/johndpope] johndpope
+
+      
+
+      
+
+      commented
+
+         [#issue-5810725494] Oct 12, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited
+
+        
+
+    
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Level-of-Token (LoT) diffusion ( [https://arxiv.org/abs/2610.05816] Nakayama et al., arXiv 2610.05816) ported to the H3 DiT. The transformer runs on fewer, larger tokens where detail is low, and the full-resolution velocity is recovered afterwards. The VAE latent stays full size.
+
+This replaces  [https://github.com/MiniMax-AI/MiniMax-H3/pull/90] #90, which also carried unrelated Separable Causal Diffusion work. This branch is LoT only.
+
+Code home:  [https://github.com/scrya-com/lot-diffusion] https://github.com/scrya-com/lot-diffusion (public, Apache-2.0). It is the same code with the musubi-tuner H3 runtime bundled in third_party/, so it runs from a fresh clone; this PR carries the same files under scripts/lot/.
+
+⚠️ Research checkpoints. LoT output is still below dense quality, and it needs more training. Help wanted:  [https://github.com/scrya-com/lot-diffusion/discussions/1] scrya-com/lot-diffusion#1
+
+Links
+
+Code:  [https://github.com/scrya-com/lot-diffusion] https://github.com/scrya-com/lot-diffusion
+
+Weights:  [https://huggingface.co/johndpope/MiniMax-H3-LoT] https://huggingface.co/johndpope/MiniMax-H3-LoT (see also  [https://huggingface.co/stale2000/LevelOfToken] https://huggingface.co/stale2000/LevelOfToken)
+
+ComfyUI nodes (LoT Apply / Unscale, content-aware layouts from boxes, mask, depth, texture):  [https://github.com/scrya-com/ComfyUI-MiniMax-H3-Image-Lane] https://github.com/scrya-com/ComfyUI-MiniMax-H3-Image-Lane
+
+Help wanted / discussion:  [https://github.com/scrya-com/lot-diffusion/discussions/1] Help wanted: training Level-of-Token for MiniMax H3 scrya-com/lot-diffusion#1
+
+Results, renders and eval curves:  [https://github.com/johndpope/MiniMax-H3/issues/1] Level-of-Token: single-GPU synthetic training johndpope/MiniMax-H3#1
+
+What's in it. Everything is under scripts/lot/, plus comfyui/ (three API-format workflows). Figures stay on the results issue. The only change outside those is one .gitignore entry for scripts/lot/runs/ and __pycache__.
+
+Area
+Files
+
+Core
+adapter.py (extent heads, Procrustes bank), flow.py (eq. 9 velocity recovery, with a plain-torch fallback when LakonLab isn't installed), layout.py, layout_sources.py (mask / box / depth / texture layouts per frame)
+
+H3
+h3.py, h3_positions.py (RoPE on H3's time clock), h3_splice.py (target-video splice), h3_musubi.py (runtime)
+
+Train
+train_h3.py (adapter + rank-16 LoRA, y-space eq. 17 loss, frozen dense-teacher distillation, per-frame layout families), build_cache_h3.py (mp4 / stills → latents + text), make_pairs_h3.py, procrustes_h3.py, upload_hf.py
+
+Measure
+time_lot_h3.py, time_decode_h3.py, parity_h3.py, render_h3.py
+
+Docs
+scripts/lot/CHEATSHEET.md (quick start: download → test → time → train), scripts/lot/README.md
+
+Runtime. H3 itself runs through  [https://github.com/kohya-ss/musubi-tuner] kohya-ss/musubi-tuner (Apache-2.0), used as an unmodified library: its loader for the published ComfyUI ConvRot int8 checkpoints, block swap, LoRA network and video VAE. h3_musubi.predict(dit, x, t, text, lot=splice) is musubi's T2VA forward with three changes on the target video only (splice embedding, rectangle-centre RoPE positions, extent heads after the shared norm + AdaLN). Paths are environment variables (scripts/lot/lot_paths.py).
+
+Measured on one RTX PRO 4000 Blackwell (24 GB), pruned int8 FL2VA DiT ( [https://huggingface.co/Comfy-Org/MiniMax-H3] Comfy-Org/MiniMax-H3), run-4 weights, one DiT forward:
+
+Shape
+dense → LoT
+
+768×1344, 124 frames, 48 blocks streamed
+2.85× center (52.3 s → 18.3 s), 2.57× bands
+
+512×768, 22 frames, all resident
+2.55× center, 3.24× uniform2
+
+768×1152 still, all resident
+2.15× center, 2.48× uniform2
+
+ComfyUI sampler, 22-frame clip
+2.6× per step
+
+An untrained 1×1 LoT layout reproduces the dense forward exactly (parity_h3.py: rel_rms=0), here and in ComfyUI. The VAE decode is unchanged. Content-aware layouts (for example a face box) bring a talking-head still close to dense quality at a smaller speedup.
+
+How to check:
+
+python3 scripts/lot/test_lot.py                       # CPU, no weights: ok 28
+export MUSUBI_SRC=/path/to/musubi-tuner/src
+python3 scripts/lot/parity_h3.py                      # GPU: LoT 1x1 == dense -> ok=1
+python3 scripts/lot/time_lot_h3.py --shape clip       # needs the int8 FL2VA DiT
+
+🤖 Generated with  [https://claude.com/claude-code] Claude Code
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+              👍
+            1
+  PedroMarinhoDev reacted with thumbs up emoji
+
+        
+
+    All reactions
+
+          
+
+                👍
+                  1 reaction
+
+          
+
+      
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+      
+
+     [/johndpope] 
+ [/johndpope] johndpope
+
+    mentioned this pull request
+     [#ref-pullrequest-5796385555] 
+      Oct 12, 2026
+
+  
+
+     [/MiniMax-AI/MiniMax-H3/pull/90] 
+      DRAFT - Level Of Token - 2.6x dit speed up 
+      #90
+
+  
+
+      
+   Closed
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        
+
+               [/johndpope] 
+
+        
+
+      
+
+        
+
+               [/johndpope] johndpope
+
+               [/MiniMax-AI/MiniMax-H3/compare/8d3159052cb3c413f8de8c26dad5bac53e468eac..634661afb8567a1680c2dfbe7e6cf8cadbf59c3b] force-pushed
+    the
+
+      
+  lot-level-of-token
+
+    
+ branch
+      4 times, most recently
+    from
+     [/MiniMax-AI/MiniMax-H3/commit/8d3159052cb3c413f8de8c26dad5bac53e468eac] 8d31590    to
+     [/MiniMax-AI/MiniMax-H3/commit/634661afb8567a1680c2dfbe7e6cf8cadbf59c3b] 634661a     [/MiniMax-AI/MiniMax-H3/compare/8d3159052cb3c413f8de8c26dad5bac53e468eac..634661afb8567a1680c2dfbe7e6cf8cadbf59c3b]   
+    Compare
+
+           [#event-33082454586] October 12, 2026 21:33          
+
+      
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/91/commits/bbe171e714ddc48da3494fb53d666058a28c290e] Level-of-Token (LoT) for the H3 DiT: adapter, training, timing, Comfy…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/91/commits/bbe171e714ddc48da3494fb53d666058a28c290e] bbe171e
+
+      
+
+    
+
+  
+
+    
+
+      
+…UI workflows
+
+Research port of Level-of-Token diffusion (Nakayama et al., arXiv 2610.05816)
+to MiniMax H3: the DiT runs on fewer, larger tokens where detail is low and
+the full-resolution velocity is recovered afterwards (LakonLab eq. 9, with a
+plain-torch fallback). The VAE latent stays full size. Everything lives in
+scripts/lot/ (plus comfyui/ workflows); nothing outside it changes except one
+.gitignore line for scripts/lot/runs/.
+
+- adapter.py, flow.py, layout.py, layout_sources.py: extent heads, Procrustes
+  extent bank, asymmetric-flow recovery, quadtree layouts, and content-aware
+  layouts from masks, boxes, depth and texture (the paper's layout sources).
+- h3.py, h3_positions.py, h3_splice.py: H3 geometry, RoPE positions on H3's
+  time clock, and the target-video splice (embedding, rectangle-centre
+  positions, extent heads after the shared norm + AdaLN).
+- h3_musubi.py: runs H3 through kohya-ss/musubi-tuner (Apache-2.0), used as
+  an unmodified library for the ConvRot int8 loader, block swap, LoRA and
+  VAE; predict(dit, x, t, text, lot=splice) is its T2VA forward with the
+  LoT tail, plus a small Euler sampler matching MiniMaxH3Scheduler.
+- train_h3.py: adapter + rank-16 LoRA fine-tune with the y-space eq. 17 loss
+  and a frozen dense-teacher distillation term; per-frame box / focus /
+  texture layout families. build_cache_h3.py (mp4/still -> latents + text),
+  make_pairs_h3.py, procrustes_h3.py, upload_hf.py.
+- time_lot_h3.py, time_decode_h3.py, parity_h3.py, render_h3.py.
+- comfyui/: LoT still, clip and face-box workflows for the
+  scrya-com/ComfyUI-MiniMax-H3-Image-Lane nodes.
+
+Measured on one 24 GB RTX PRO 4000 Blackwell with the pruned int8 FL2VA
+checkpoint (Comfy-Org/MiniMax-H3): DiT forward 2.85x (center) on a 124-frame
+768x1344 clip, 2.55x on a 22-frame 512x768 clip, 2.15x on a 768x1152 still.
+An untrained all-1x1 layout reproduces the dense forward exactly (rel_rms 0).
+Quality is still below dense: research weights, more training needed.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+        
+
+               [/johndpope] 
+
+        
+
+      
+
+        
+
+               [/johndpope] johndpope
+
+               [/MiniMax-AI/MiniMax-H3/compare/634661afb8567a1680c2dfbe7e6cf8cadbf59c3b..bbe171e714ddc48da3494fb53d666058a28c290e] force-pushed
+    the
+
+      
+  lot-level-of-token
+
+    
+ branch
+    from
+     [/MiniMax-AI/MiniMax-H3/commit/634661afb8567a1680c2dfbe7e6cf8cadbf59c3b] 634661a    to
+     [/MiniMax-AI/MiniMax-H3/commit/bbe171e714ddc48da3494fb53d666058a28c290e] bbe171e     [/MiniMax-AI/MiniMax-H3/compare/634661afb8567a1680c2dfbe7e6cf8cadbf59c3b..bbe171e714ddc48da3494fb53d666058a28c290e]   
+    Compare
+
+           [#event-33082679698] October 12, 2026 21:37          
+
+      
+
+    
+

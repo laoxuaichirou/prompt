@@ -1,0 +1,138 @@
+
+
+Apple Silicon MPS: official FL2VA ComfyUI INT8 path fails on aten::_int_mm #56
+
+Open
+
+Open
+
+Local validation report — H3 FL2VA on Apple Silicon
+
+Status
+
+Blocked for a functional local generation through the official quantized ComfyUI path. Installation and model loading succeed; sampling fails on the first iteration because an MPS operator is unavailable.
+
+Machine
+
+Mac Studio Mac14,14 — Apple M2 Ultra, 24 CPU, 60 GPU, 64 GB unified memory, Metal 4, macOS 26.5.2.
+
+Tested backend
+
+ComfyUI stock 0.33.0 + PyTorch 2.13.0 + MPS, with no additional H3 custom node and no Sage Attention. Outside the sandbox, mps_available=True and ComfyUI detects Device: mps.
+
+Models
+
+minimax_h3_fl2va_pruned_int8_convrot.safetensors — ~20 GiB
+
+qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors — ~15 GiB
+
+Video VAE — ~4.8 GiB
+
+Audio VAE — ~577 MiB
+
+The FL2VA download total was confirmed at 42.5 GiB before transfer. Ref2VA and BF16/full variants were not downloaded.
+
+First test
+
+Native local T2VA workflow, audio enabled, 124 frames at 24 fps (~5 seconds), 608x352 preview, 20 steps, fixed seed and simple prompt.
+
+The prompt was accepted locally (node_errors: {}). The text encoder loaded 14,960 MB and the DiT loaded 19,996 MB. Sampling failed after 47.92 seconds at 0/20 steps. No MP4 was produced.
+
+Error
+
+NotImplementedError: The operator 'aten::_int_mm' is not currently implemented for the MPS device
+
+The error occurs in the INT8 quantized comfy_kitchen path used by the DiT ConvRot implementation. PyTorch suggests PYTORCH_ENABLE_MPS_FALLBACK=1, but that would move the operation to CPU and would not constitute a satisfactory native MPS baseline.
+
+Memory compression and swap were also non-zero after the failed run.
+
+Recommendation
+
+Please clarify whether Apple Silicon/MPS is expected to support the official INT8/NVFP4/AWQ ComfyUI workflow. A Diffusers/MPS route or an explicit BF16/CPU route may be worth testing separately. Until aten::_int_mm is implemented for MPS, the current quantized ComfyUI path should not be treated as a working Apple Silicon baseline.
+
+ [https://github.com/Jibbzeon] @Jibbzeon If you find the solution to run it fully, I would appreciate it if you could provide the full working pipeline here.
+
+Cross-referencing for Apple Silicon users debugging this model: there is a separate, silent MPS data-corruption bug that specifically hits the H3 VAE encoder above ~224x480 — F.pad(mode="constant") along the temporal axis of 5D tensors corrupts ~80% of elements with no error raised, so latents look plausible but decode to flat/solid-color (e.g. uniform tan) or washed-out video. Characterized + minimal repro in  [https://github.com/pytorch/pytorch/issues/194922] pytorch/pytorch#194922; fix pending in  [https://github.com/Comfy-Org/ComfyUI/pull/15902] Comfy-Org/ComfyUI#15902 (4-line torch.cat replacement, bit-exact vs CPU). If your H3 output on a Mac is a flat color or garbage at higher resolutions while low resolutions work, that is likely this — not the model and not the int8 path.
+
+Update / successful Apple Silicon test
+
+I wanted to share a successful result that may be useful for other Mac users.
+
+I was able to complete a full MiniMax H3 Ref2VA generation on an Apple Silicon MacBook Air with 32GB unified memory using ComfyUI Desktop.
+
+This is not the same stock configuration reported in this issue — I used ComfyUI-AppleSilicon-FP8 and a Qwen3VL 32B Q4_K_M GGUF text encoder — but the complete Ref2VA pipeline successfully finished on MPS.
+
+Environment
+
+Apple Silicon MacBook Air
+
+32GB unified memory
+
+macOS 26.6.2
+
+ComfyUI 0.34.2
+
+Python 3.13.12
+
+PyTorch 2.12.1
+
+ComfyUI-AppleSilicon-FP8 (911294c)
+
+ComfyUI-GGUF (6ea2651)
+
+ComfyUI-Spectrum-MiniMax-H3 (ce9d35e)
+
+gguf==0.18.0
+
+Models
+
+minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+qwen3vl-32B-MiniMax-H3-Q4_K_M.gguf
+
+minimax_h3_video_vae_fp16.safetensors
+
+minimax_h3_audio_vae_fp32.safetensors
+
+Test
+
+Ref2VA
+
+1 anime-style character reference image
+
+20 sampling steps
+
+Sampler: res_multistep
+
+Scheduler: simple
+
+Ref2V Turbo LoRA: bypassed / not installed
+
+Sampling completed: 20/20
+
+Sampling time: 1:28:51
+
+Total workflow execution: 1:32:07
+
+No OOM
+
+Video and audio VAEs loaded successfully
+
+Final video was successfully generated
+
+During generation I got:
+
+ninja not importable ... int8-native disabled
+
+and:
+
+INT8 Metal kernel unavailable; using comfy's int8 path.
+
+So this successful run did not use the native INT8 Metal kernel.
+
+Despite that fallback, the full Ref2VA generation completed on 32GB unified memory.
+
+I hope this information is useful for other Apple Silicon users testing MiniMax H3.
+
+I am planning to test multiple Ref2VA reference images next.
+

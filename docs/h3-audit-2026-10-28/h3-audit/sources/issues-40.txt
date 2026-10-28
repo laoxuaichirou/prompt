@@ -1,0 +1,35 @@
+
+
+Rreplace the image URL with the path to a locally stored image #40
+
+Closed
+
+Closed
+
+Hi, can I use a local image file for testing? For example, can I replace the image URL below with the path to a locally stored image?
+
+"task": "fl2va",
+
+"prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] This is a live-action, cinematic shot with a shallow depth of field. The camera holds a perfectly static shot throughout the entire eight-second duration, capturing a cozy family gathering in a traditional Japanese dining room.",
+
+"conditions": [
+
+{
+
+"type": "image",
+
+"uri": "https://cdn.hailuoai.com/prod/hailuo_demo/testsets/H3_AA_I2VA/gallery/sr_v17_variants_seed42_43_20260724/inputs/4a3a90bf9100_KDmcbkhzYo5sjjxr9FqcVmWVnzb.png",
+
+"role": "keyframe",
+
+"frame_index": 0
+
+}
+
+],
+
+Hi! I want to work on this issue. I'll investigate support for local image paths and open a PR if a change is needed.
+
+ [/RyanLee-Dev] RyanLee-Dev
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completedin  [https://github.com/MiniMax-AI/MiniMax-H3/pull/45] #45 [https://github.com/MiniMax-AI/MiniMax-H3/issues/40#event-29375143116] on Aug 13, 2026
+

@@ -1,0 +1,32 @@
+{
+  "audit_date_client_timezone": "2026-10-28 Asia/Shanghai",
+  "baseline_commit": "093f3129a3f7bd27c74928b1cd31a54fbdebe057",
+  "main_commit": "d21241f0a4b3acbb34c97dae47fa417b7065e438",
+  "main_rechecked": true,
+  "source_inventory_files": 229,
+  "baseline_after_commits": 30,
+  "changed_file_records": 30,
+  "fault_map_rows": 45,
+  "public_issues_fetched": 50,
+  "public_prs_fetched": 37,
+  "python_ast_files_checked": 48,
+  "json_files_checked": 77,
+  "bash_syntax_files_checked": 18,
+  "media_files_probed": 25,
+  "all_current_source_inventory_hashes_match": true,
+  "complete_skill_snapshots_match": true,
+  "internal_report_links_checked": true,
+  "csv_shape_checked": true,
+  "models_executed": false,
+  "weights_loaded_or_downloaded": false,
+  "generation_api_called": false,
+  "existing_environment_upgraded": false,
+  "prompt_checkout_unchanged": true,
+  "limitations": [
+    "V01–V12 original plan not provided; provisional mapping only",
+    "Issue18 comments 1/3 bodies extracted",
+    "Issue6 direct access returned404",
+    "PR visible discussion snapshots do not guarantee every collapsed review thread",
+    "External API, HF weight snapshot and production model behavior not validated"
+  ]
+}

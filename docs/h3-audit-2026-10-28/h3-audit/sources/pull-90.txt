@@ -1,0 +1,5701 @@
+
+
+DRAFT - Level Of Token - 2.6x dit speed up  - #90
+
+Closed
+
+Closed
+
+ [/johndpope] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/johndpope] johndpope
+
+      
+
+      
+
+      commented
+
+         [#issue-5796385555] Oct 10, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+ [https://github.com/shootthesound/Fizgig/discussions/183] shootthesound/Fizgig#183
+
+ [https://github.com/scrya-com/ComfyUI-MiniMax-H3-Image-Lane] https://github.com/scrya-com/ComfyUI-MiniMax-H3-Image-Lane
+
+ [https://huggingface.co/johndpope/MiniMax-H3-LoT] https://huggingface.co/johndpope/MiniMax-H3-LoT
+
+ [https://huggingface.co/stale2000/LevelOfToken] https://huggingface.co/stale2000/LevelOfToken
+
+I need to rip out the Seperable Causal Diffusion code ( my bad) i will create another PR.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/90?autoLogin=true&ref=codesmith_pr_footer]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+           [/johndpope] johndpope
+
+and others
+        added 30 commits
+         [#commits-pushed-62755ad] August 10, 2026 22:21
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/62755ad0b774dac4b80635a907ff772b7fd4f7db] Add SCD port design doc and Phase 0 probes
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/62755ad0b774dac4b80635a907ff772b7fd4f7db] 62755ad
+
+      
+
+    
+
+  
+
+    
+
+      
+Research toward a Separable Causal Diffusion port of H3: a design doc
+grounded in arXiv:2602.10095, a weights-free microbenchmark, and three
+Phase 0 measurement scripts with their results.
+
+Phase 0 measures how far the frozen base sits from SCD's target wiring,
+not whether it is already separable — the paper full fine-tunes for 55K
+steps to teach the rewiring. phase0_validate.py supersedes phase0_probe.py
+because raw cos-sim on H3's residual stream is dominated by a common-mode
+vector (0.91-0.996) and inverted the sigma-invariance result.
+
+Local additions only — not upstream mirror content, do not push to HF.
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/c9b8f969f0e0a2f86a7f2a420c0a6a3afafb0f49] Re-run Phase 0 validation on H3's own sigma density
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/c9b8f969f0e0a2f86a7f2a420c0a6a3afafb0f49] c9b8f96
+
+      
+
+    
+
+  
+
+    
+
+      
+The first run scored sigma-invariance against sigma=0, a noise level H3
+trains on ~never (median training sigma is 0.92), and on an 8-latent-frame
+clip that is off the DiT's 5n+2 grid. phase0_validate.py now draws both
+endpoints through shift_sigma(u, 12) and asserts the frame grid.
+
+The block-29/30 knee survives and is now visible on video rows as well as
+text. The video-row invariance level does not: 0.061 mean over blocks 1-25
+against the sigma=0 reference, 0.779 on-distribution. The earlier "video
+rows carry no sigma-invariant content" claim was an artefact of the
+reference point.
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/78c4569b8aca70ec22362573c98af21c367fad8e] Add Phase 0 research workflow: sweep runner, ledger, CI checks
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/78c4569b8aca70ec22362573c98af21c367fad8e] 78c4569
+
+      
+
+    
+
+  
+
+    
+
+      
+Phase 0 produced two confident wrong headlines — cos-sim on a residual
+stream that is 91-99% one shared vector, and a sigma grid where H3 has no
+training density. Both were configuration errors invisible in the output,
+and both reached the design doc before being caught by hand.
+
+- run_phase0.py sweeps both probes over a clip set on a single model load
+  and appends each run to docs/phase0_ledger.jsonl with its full config.
+  --summarize-only groups by config rather than pooling, so an
+  off-distribution run cannot be averaged in with a good one, and reports
+  whether findings hold across clips (currently n=1 for everything).
+- check_findings.py mechanically rejects sigma < 0.5 and latent_t off the
+  5n+2 grid, and verifies the 24 numbers docs/phase0_claims.json registers
+  against the JSON they cite. Runs without GPU or weights.
+- .github/workflows/scd-research.yml runs the checker, ruff, and a
+  byte-compile on changes to docs/ or scripts/scd/.
+- SCD_RESEARCH_PROTOCOL.md writes down the rules, each against the failure
+  that motivated it.
+
+phase0_validate.py and phase0_leaveout.py gain importable measure()/report()
+pairs; both re-run bit-identical to the committed results. Superseded result
+files are marked rather than deleted.
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/213c9aa728832475dc4fbad0f68e2af6eeb7b5f3] Take Phase 0 from n=1 to n=3 on deliberately dissimilar clips
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/213c9aa728832475dc4fbad0f68e2af6eeb7b5f3] 213c9aa
+
+      
+
+    
+
+  
+
+    
+
+      
+Every Phase 0 number came from one clip, one prompt, one resolution, which
+is enough to size an adapter but not to hardcode a block index. This adds a
+12-clip set and runs three of them.
+
+The three that ran — a live-action studio portrait, a photorealistic
+isometric room diorama on an arcing camera, and a miniature Formula One
+tracking shot — all return knee text 30, knee video 29, load-bearing
+{0, 1, 48, 49}. Identical, not merely close. That is the result that was
+easiest to falsify, so it is worth recording, but n=3 is still under the
+protocol's n>=5 bar and the summary continues to report "not enough to call
+anything stable". The verdict thresholds were deliberately left untouched.
+
+Prompts are Context-IR rather than the corpus's own captions. The captions
+are short free-form generation prompts, and pairing one with the DiT would
+be off-distribution in prompt space the same way sigma=0.1 is
+off-distribution in noise space — the failure this protocol exists to catch.
+Each describes only the first 29 pixel frames, which is all the probe sees.
+
+- scripts/scd/clips/ carries the prompts and MANIFEST.tsv, so the set is
+  reconstructible from the corpus even though the tensors are gitignored.
+- run_phase0.py --summarize-only now also writes docs/phase0_summary.json.
+  phase0_claims.json can only cite flat JSON and the ledger is JSONL, so
+  across-clip numbers had no citable artefact before this.
+- check_findings.py validates that summary against the ledger. Nothing
+  regenerates it when a row is appended, so a stale summary would let every
+  claim pass while the doc quotes an n that no longer exists.
+
+Local research only — not upstream mirror content, do not push to HF.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/23574b0adef997a028a467f9bab52c2bb35cf5eb] scd: audit the knee threshold, and test the split against geometry
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/23574b0adef997a028a467f9bab52c2bb35cf5eb] 23574b0
+
+      
+
+    
+
+  
+
+    
+
+      
+The block-30 split was quoted as corroborated by two curves. Sweeping knee()'s
+`frac`, which had never been swept, shows only one of them is real: the text knee
+moves 2 blocks across 0.70-0.95, the video knee moves 5 and does so monotonically,
+so "knee video 29" was reporting the threshold rather than a plateau. The sweep is
+now emitted beside every knee and the design doc no longer claims corroboration.
+
+The three-clip agreement was also measured with geometry held fixed. isodiorama640
+re-encodes the same clip and the same 29-frame window at 640x640 with a byte-identical
+text embedding — 2800 video tokens against 1792 — and returns the same knee and the
+same load-bearing set. latent_hw joins the ledger row and the grouping key so it lands
+as its own group instead of pooling into the 512 numbers.
+
+Claims may now cite a ledger row by selector, since only the largest group reaches
+the summary and a geometry control has nowhere flat to live.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/522bf60c906f9364a34790e0f1f8a0b3ca86ed27] scd: sweep the sigma pair — the knee is a contrast, not a constant
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/522bf60c906f9364a34790e0f1f8a0b3ca86ed27] 522bf60
+
+      
+
+    
+
+  
+
+    
+
+      
+Everything in Phase 0 used one sigma pair. Sweeping it in u, the parameter
+uniform on H3's own training density, moves the text knee from 30 at du=0.8 to
+37 at du=0.2 — a bigger swing than content and geometry combined, on the axis
+that matters most, since SCD reuses one encoder pass across denoising steps.
+
+That reads like "narrower separation leaves more of the stack shareable", and it
+isn't. Over the same range the curve's total drop across all 50 blocks falls
+0.78 -> 0.32 and the knee's frac sensitivity grows 2 blocks -> 13. The narrow
+pairs have not moved the knee, they have stopped resolving one. The frac sweep
+added in the previous commit is what distinguishes the two, on a case it was not
+written for.
+
+So block 30 stands, but as the knee under the widest on-distribution contrast
+rather than a property of the stack — that pair is both the most demanding
+question and the only one the probe can answer, and the two well-resolved pairs
+agree at 30 and 31.
+
+Claim row selectors compare floats with slack, and the exactly-one-match rule
+caught the isodiorama selector going ambiguous as soon as the new rows landed,
+which is what it was for.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/386babe581490d9566181e8e653f0c6198d9f567] scd: Phase 1 skeleton — encoder prefix + decoder re-composition
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/386babe581490d9566181e8e653f0c6198d9f567] 386babe
+
+      
+
+    
+
+  
+
+    
+
+      
+MiniMaxH3SCD composes H3's 50 blocks into encoder 0-29 plus decoder
+{0,1} u {45-49}: 37 layer instances from a 50-block model, which is why the
+originally planned identity test is impossible and is replaced by weight parity,
+prefix parity and independence.
+
+Two choices worth stating. The composition CONSUMES the base — tail blocks are
+moved into the decoder, not copied, because a spare copy of five 5376-wide blocks
+does not fit beside the base on a 24 GB card. And encode() captures the per-block
+arguments from the base's own first block through a hook rather than
+re-implementing its ~100-line preamble, which would drift the way Phase 0's
+transcribed numbers drifted from their JSON.
+
+Tests run a hidden-64 stand-in on CPU: 9 cases, 1.2 s, no weights, no GPU.
+Prefix parity failed first for a real reason — the base draws fresh randn silence
+audio rows per call, so two forwards with identical arguments pack different
+sequences. Both non-trivial invariants were mutation-tested; notably weight parity
+still passes when the deepcopy is removed, which is why aliases() compares
+data_ptr rather than state_dict.
+
+check_findings.py now reads the split constants with ast and fails if the decoder
+drops a block the ledger calls load-bearing. CI cannot import fizgig, so it lints
+and compiles these; the test result is recorded in the design doc.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/4a06b0465d7671d634ddc42992dc099b0942ea49] SCD Phase 2: frame-causal mask + encoder KV cache, and what the mask …
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/4a06b0465d7671d634ddc42992dc099b0942ea49] 4a06b04
+
+      
+
+    
+
+  
+
+    
+
+      
+…costs
+
+Phase 0's frame-causal mask restricts only video queries, so text and audio
+rows keep absorbing every frame and hand the future back to video at the next
+block. It is causal for one block and not for a stack, which also makes an
+encoder KV cache silently wrong. The shipping mask blinds context rows to video
+too; test_scd_attention.py pins both the property and the rejected variant's
+failure.
+
+Measuring that stricter mask on real weights split two ways. Video survives -
+centered cos 0.95-0.97 at the encoder cut, flat at 0.998 through block 25 with
+a cliff at 30, which corroborates the 29/30 split from an independent
+direction. Audio does not: 0.047 and -0.074, because audio is context under
+this mask and therefore video-blind, so the encoder cache carries no AV fusion
+and D1's second decoder pass has to create all of it. Raw cosine read 0.98 on
+those same rows at common mode 0.996 - the cos-inflation artefact that
+manufactured the first probe's headline, recurring in a script written after
+the rule against it. Protocol rule 10 now requires centered cos and common mode
+to be emitted together.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/27bdd2d4aafbfafd7cfdfe0dd1765b955008a73e] SCD Phase 2: put audio on the clock instead of in the context
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/27bdd2d4aafbfafd7cfdfe0dd1765b955008a73e] 27bdd2d
+
+      
+
+    
+
+  
+
+    
+
+      
+The strict frame-causal mask makes context rows blind to video, which is what
+makes an encoder KV cache actually a cache. Audio sat in that context class by
+scope, not by nature — §5 D1 assumed a second bidirectional pass would recover
+it. On real weights it does not: the encoder's audio rows come out at centered
+cos 0.047 / -0.074 against the bidirectional pass, so the cached prefix holds no
+audio-video fusion for that pass to reuse.
+
+So audio is ordered too, on its own 40 Hz spans, read off the packer's rotary
+t-axis rather than reconstructed from a rows-per-frame ratio: _video_t_grid's
+(1,4,4,4,4)x5/3 spans already make the two clocks commensurate, and pos[:, 0] is
+that answer for free. Both modalities causal on a shared axis is still leak-free
+— nothing carries the future backward — and audio comes back to 0.445 / 0.339.
+Not the bidirectional 0.99, and it cannot be: causal audio genuinely cannot see
+future video, so that number is a ceiling, not a target being missed. Video pays
+about 0.03 of centered cos, having lost future audio.
+
+The measurement itself was quoting raw cosine, the same artefact protocol rule 10
+exists to prevent, in a script written after the rule. Raw cos reported audio
+"recovering" to 0.980 at common mode 0.996. Both are emitted now, from
+phase0_validate's definitions.
+
+Falling out of the sentinel change (-inf rather than a magic index): the mask
+rule is just `k <= q`. Context always visible and context blind to the ordered
+rows are the same inequality read from its two ends.
+
+Under the AV clock time order is no longer row order — audio and video interleave
+in time while staying in separate slabs of [context | audio | video] — so
+encode_chunked cuts chunks by argsort/searchsorted and scatters back. A row-slice
+version passes every other test and fails only the AV chunk assertion.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/aaa2d0bec1786e6a3b875ae1bac4417a31acb69d] SCD Phase 2: close both scale blockers — block mask, and the cache th…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/aaa2d0bec1786e6a3b875ae1bac4417a31acb69d] aaa2d0b
+
+      
+
+    
+
+  
+
+    
+
+      
+…at actually mattered
+
+Tier 1 could not start: the mask was dense, and a bool [S,S] at 768p/15s is
+3.8 GB. scd_attention.block_mask builds the same `k_time <= q_time` rule as a
+compiled FlexAttention BlockMask, with queries and keys as separate time vectors
+because a chunk's queries are the new rows while its keys are the whole cache.
+encode_chunked(block=True) selects it; not a default, since a size threshold
+means nobody can tell from a call site which attention ran.
+
+Measuring that led to the larger blocker. Thirty encoder blocks hold 840 KiB per
+row, so the KV cache the mask feeds is 53 GB at the same size — 14x the mask.
+The dense mask was the visible problem and the cache was the real one, which is
+roughly the inverse of how the risk register ranked them.
+
+So §8.1's window policy ships too: encode_chunked(window=W) keeps the last W
+latent frames and evicts the rest. It evicts rather than copying CastleHill's
+reset-and-re-encode-the-overlap — an evicted row keeps the K/V it was computed
+with over the full history it saw, a re-encoded overlap row knows strictly less,
+and eviction is cheaper. What it gives up is that a chunk boundary is a clean
+restart, which matters only if drift accumulates and is Phase 5's to measure.
+
+Unlike everything else in Phase 2 this is an approximation, not a reassociation,
+so a full-width window is pinned bit-exact against window=None. On the tiny model
+a 2-frame window holds the cache at exactly 53 rows while the sequence grows
+191 -> 327 -> 463: §8.1's flat-VRAM claim as an equality.
+
+Two things this got wrong first. The window has to exempt CONTEXT explicitly —
+those rows sit at -inf, behind every horizon, so a time-only window drops the
+text rows first and the encoder loses its conditioning one chunk in with no shape
+change to notice. A row-count floor clears that mutant comfortably; only the exact
+count (53 vs 48) catches it. And the first test counted audio as context, which is
+true under the video-only clock and false under the shipping AV clock.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e18bdc89f871ccbe2548700faa9f07c18d096fcd] SCD Phase 2: measure what the sliding window costs — video is free, a…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e18bdc89f871ccbe2548700faa9f07c18d096fcd] e18bdc8
+
+      
+
+    
+
+  
+
+    
+
+      
+…udio is not
+
+The window is the only approximation in the Phase 2 encoder and was unmeasured
+at any size. Scored against the same chunked path at window=None so the window's
+cost is isolated from the mask's, on real weights, 30 encoder blocks, both sigmas.
+
+Video is flat from a 2-frame window (0.983-1.000 centered cos). Audio is still
+climbing at 6 (0.455-0.722) because a window denominated in video frames is ~6x
+tighter for audio -- window=4 is about 0.6s of audio history. Not a wall: a
+12-frame window is ~10 GB at 768p against 53 GB unbounded, so Tier 1 moves from
+window=4 to window=12.
+
+Flat VRAM now holds on real weights too: 538 -> 556 cache rows while S grows
+2134 -> 4826.
+
+window=6 at latent_t=7 scores an exact 1.0000/0.0000 and is a control, not a
+result -- eviction fires after a chunk, so with chunk_frames=1 it is first
+consulted after the final chunk has run. check_findings.py now computes the last
+chunk boundary that still has a chunk behind it and WARNs on any window at or
+past it, so the shape cannot be quoted as a finding by accident.
+
+encode_chunks moves from scd_model to scd_attention so a measurement can drive
+model.blocks[:30] without deepcopying two 5376-wide blocks it will not use.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ffd236282bb8d6132cebb8a3837a7891132b3a1e] scd: Phase 2.5 Tier 1 passes — 3.87x at 768p on real weights
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ffd236282bb8d6132cebb8a3837a7891132b3a1e] ffd2362
+
+      
+
+    
+
+  
+
+    
+
+      
+Tier 1 runs the untrained SCD graph against stock H3 on NF4 FL2VA weights:
+2.93x/3.51x/3.87x at N=8/16/30 for latent_t=12, ceiling 4.39x. The result the
+gate did not ask for matters more than the ratio — stock OOMs past ~2s at 768p
+on 24GB while SCD reaches 5.2s at 13.1GB, so at the 15s target there is nothing
+to divide. Cache flat at 12758->12796 rows across a 2.6x length span (third
+confirmation of 8.1, first at 768p) and the decoder flat at ~214 ms/frame.
+
+Two findings forced changes to the plan rather than following it:
+
+The block mask is the wrong tool for the chunked encoder. Each chunk is a new
+(Q, K) shape, so Dynamo hits its recompile limit at chunk 9 and silently falls
+back to eager flex_attention, which materializes the full scores matrix — the
+exact thing the block mask was adopted to avoid. Chunking had already solved
+that problem by bounding Q to one frame. block=False everywhere in the chunked
+path; block_mask stays for the single full-sequence pass.
+
+Transposing encode_chunks to blocks-outer (layer_major=True) is bit-exact and
+holds one block's KV cache instead of thirty, so the 53GB blocker was a
+property of the loop order, not of the encoder. Streaming AR still pays it.
+
+check_findings gained check_tier1, which recomputes each speedup from its parts
+rather than trusting the stored value, and bounds cache growth by one frame's
+rows rather than demanding equality — the window is denominated in video frames
+but audio rows land on their own 40Hz grid, so it jitters by ~20 rows. It also
+flagged that the headline row's window never evicted; phase25_tier1_w8.json is
+the control that closes it, and shows the windowed encoder marginally faster.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/7f613c2cb40e01f5b67c40c2012cb3d96c810c12] scd: window cost at real 768p geometry — video bounded, audio drifts
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/7f613c2cb40e01f5b67c40c2012cb3d96c810c12] 7f613c2
+
+      
+
+    
+
+  
+
+    
+
+      
+Re-ran the Phase 2 window sweep at 1008 rows/frame instead of the probe's 256.
+Audio is far healthier at real geometry than the probe implied (0.906 at
+window=12 vs 0.455 at the probe's widest point), but the same window scores
+0.906 at 17 frames and 0.768 at 22 — a length dependence video does not show.
+
+A pooled score cannot say whether that is a failing window or an averaging
+artefact: under a window of W the first W frames are unevicted, so a longer
+clip has a larger degraded share even if no row is worse. phase2_window_cost.py
+now reports ccos per video-frame span, which settles it. Video plateaus at
+0.989 with shrinking deltas; audio roughly halves across the post-window span
+at every width. Video's error is bounded, audio's accumulates.
+
+keep_audio exempts audio from eviction, windowing video alone — 1.3% of the
+rows, 34MB/block at 768p/15s against the video window's 350MB. It lifts pooled
+audio 0.779 -> 0.890 at window=12 and 0.912 -> 0.949 at 16, but the per-frame
+curve still slides, which locates the drift: audio degrades through the evicted
+VIDEO it attends to, not through its own missing history. So it ships opt-in,
+not as a default, and the remaining gap is Phase 3's to close — these weights
+are untrained for this split and the content is synthetic.
+
+Also relaxes check_tier1's flat-cache test from equality to a one-frame bound.
+The window holds exactly W*1008 video rows at every length, but the audio rows
+inside those spans land on their own 40Hz grid and jitter by ~20; demanding
+equality would report a bounded cache as unbounded.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e4f8d42c7cf879817b58d114740ac95bfd3c8d8b] scd: rule out white-noise audio as the cause of the window's audio drift
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e4f8d42c7cf879817b58d114740ac95bfd3c8d8b] e4f8d42
+
+      
+
+    
+
+  
+
+    
+
+      
+The 768p window-cost finding carried a caveat that the audio numbers were on
+synthetic content. Checking build_stream shows it is worse than that: video is
+noised real latents but audio is sigma_a*eps with no latent term, in every run
+including the clip-sourced ones. There is no audio-VAE path in scripts/scd at
+all, so re-encoding a clip -- the obvious way to close the caveat -- would not
+have touched it.
+
+The correlation axis is testable without the audio VAE. --audio-corr applies an
+AR(1) filter along the audio time axis in the sqrt(1-c^2) form, so the marginal
+stays N(0,1) and only the autocorrelation moves. Sweeping c to 0.95 shifts
+pooled ccos_audio by at most 0.08, non-monotonically, and leaves the per-frame
+curve halving across the post-window span as before. Video is unchanged to four
+decimals, which is the check that the knob reaches audio and nothing else.
+
+So the cheapest explanation of the drift is dead, and the keep_audio diagnosis
+gains independent support: if the drift came from audio's own evicted history,
+it would depend on how predictable that history is. It does not. Both point at
+evicted video reaching audio through the AV clock.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/7586ea5986c2b503b507a0902c0a06e945e6798a] scd: price the decoder pack Phase 3 actually specifies
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/7586ea5986c2b503b507a0902c0a06e945e6798a] 7586ea5
+
+      
+
+    
+
+  
+
+    
+
+      
+Tier 1's time_decoder_frame packs 2R rows -- the token_concat conditioning half
+plus the noisy half -- and nothing else. Section 6.2's decoder pseudocode packs
+the text rows too. That term multiplies n_steps * frames, so the difference goes
+straight into the headline rather than staying a detail.
+
+Timed both in one run at latent_t=12, window=8: 213.0 vs 267.7 ms/frame, 1.26x,
+with identical peak VRAM. N=30 goes 3.90x -> 3.18x, N=8 goes 2.96x -> 2.52x.
+
+Nothing measured decides which pack is right -- the decoder's conditioning half
+is encoder output that already attended to text, so the text is compressed
+rather than absent, and only a post-training quality comparison can say whether
+that is sufficient. So the doc now quotes the headline as a 2.5-3.2x range at
+N=30 with the dependency named, instead of the top of it as a point estimate.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/43f336b3bbdd311eb2316313b74b031a2a63c2b5] scd: token_concat decoder, and why the frame shift is not the safeguard
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/43f336b3bbdd311eb2316313b74b031a2a63c2b5] 43f336b
+
+      
+
+    
+
+  
+
+    
+
+      
+decoder_frame_input / decode_frame build one frame's decoder pass as
+[text? | enc_feat_{f-1} | noisy_f] and return the target rows. The two halves
+sit at different timesteps and the base packs one video timestep per forward,
+so this runs the base's packer twice and gathers rows -- retiming via
+mod_row % MODALITY_NUM + index * MODALITY_NUM, with the tag read back out of
+the captured mod_row rather than rebuilt.
+
+Writing the test for the shift found that the shift does not do what section
+6.2 implies. "Frame f conditions on f-1, so it never sees its own clean latent"
+holds only if the encoder is frame-causal. Under the unmasked encode() the
+f-1 rows have already attended to f, so the context half delivers the clean
+target one hop further round, and no index-level test sees it. The end-to-end
+case perturbs frame f's clean latent and asserts frame f's output is unmoved;
+it fails against encode() and passes against encode_chunked(). Phase 3's train
+loop therefore has to take encoder features from the chunked path even when the
+whole clip is resident and the unmasked one would be faster.
+
+media_start and duplicate_pos are left as knobs, not defaults -- nothing
+measured picks between them.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/28d69ba20272e145c5c7a14862b38967306642e0] scd: velocity head on decode_frame, so Phase 3 has a loss to score
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/28d69ba20272e145c5c7a14862b38967306642e0] 28d69ba
+
+      
+
+    
+
+  
+
+    
+
+      
+decode_frame(velocity=True) runs the base's own final_layer. The module had no
+output path because final_layer wants a video_t_index derived from a sorted-
+unique over timesteps and a second copy of that would drift from the base. It
+does not need copying -- the target rows' mod_row already encodes the timestep
+as index * MODALITY_NUM + tag, so the index is a division on a value the base
+itself built.
+
+The test for it took two passes. The first read the head's index with the same
+expression the implementation uses, which cannot detect that expression being
+wrong, and covered only the text-bearing pack -- where the first and last rows
+carry the same timestep, so a head reading the wrong end of mod_row is
+indistinguishable. Rebuilding the expected index from the base's untouched
+mod_row and running both packs catches both mutants.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/590ec3d904f29caeb96c05df2968b6658719a1ae] scd: clip loader and LoRA adapters, so Phase 3 has something to train
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/590ec3d904f29caeb96c05df2968b6658719a1ae] 590ec3d
+
+      
+
+    
+
+  
+
+    
+
+      
+scd_data.py reads MANIFEST.tsv rather than globbing clips/, because the
+.safetensors are gitignored and a glob would train on whatever geometry a
+re-encode left behind. Holds out isodiorama640: same source video and a
+byte-identical prompt as isodiorama, so as training data it is a near-duplicate
+at a different frame_rows.
+
+scd_lora.py installs D3's asymmetry as an installed fact rather than a comment
+-- encoder excludes adaln_proj (constant sigma, rank-1 gradient), decoder keeps
+it (its two halves sit at different timesteps by construction). Wrappers rather
+than forward-patching so the factors land in state_dict() and parameters()
+without a second registry, and nothing reads base.weight, which is what lets the
+same adapter sit on nn.Linear, bnb Linear4bit or ConvRotInt8Linear.
+
+Two faults the tests found: scd.to(bfloat16) recursed into the fp32 factors and
+put updates below the ulp, and decoder adapters named by base block index would
+have collided with the encoder's copy of blocks 0 and 1 on save.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ad8bbe40b6bfb7e0a248b2a834dd781ccf929266] scd: Phase 3 train loop, teacher-forced, with a dry run that needs no…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ad8bbe40b6bfb7e0a248b2a834dd781ccf929266] ad8bbe4
+
+      
+
+    
+
+  
+
+    
+
+      
+… weights
+
+The loss is the base's own (video_out predicts x0 - noise); §6.4 says do not
+invent a second one. Encoder features come from encode_chunked and never
+encode -- the unmasked prefix hands the decoder the clean target one hop round,
+so the loss would fall to near zero while teaching nothing.
+
+Two defaults differ from the probes and both are load-bearing: blocks_to_swap
+is 0, because scd_attention.run_block does not swap blocks in and out the way
+the base's own forward does, and every instance has to be resident; and the
+first frame is dropped from the loss on a coin flip, which is this loop's
+reading of first_frame_cond_p rather than a transcription of it.
+
+No scheduled sampling in v0, so this trains the one-step conditional and says
+nothing about error compounding over an AR rollout. Recorded as a gap rather
+than half-built.
+
+--dry-run overfits the tiny 6-block CPU model: loss 2.12 -> 1.83 over 300 steps
+with v_std steady, which is what says the gradient path is real before spending
+GPU hours on it.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/041a792b1a3e026fec59552975276a72d6831f15] scd: make the Phase 3 train loop fit in 24 GB, and run it
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/041a792b1a3e026fec59552975276a72d6831f15] 041a792
+
+      
+
+    
+
+  
+
+    
+
+      
+The loop OOM'd at 19.2 GB. Gradient checkpointing on the encoder was the
+obvious fix and was nearly useless (18.9 GB), so measuring found the real
+budget: 12.5 GB of resident NF4 weights after the split and rank-32 LoRA,
+on ~22.2 GB usable. Weights, not activations.
+
+Rank 16 (still 66 M parameters against 12 clips) and a two-stage backward
+that cuts the graph at `enc` bring the peak to 15.4 GB at 7.7 s/step. The
+cut is bit-identical to the one-shot backward, which is why the memory
+property gets its own test — `retain_graph=True` gives the same gradients
+and OOMs, so only counting live saved tensors can see it.
+
+Checkpointing stays: it is correct and cheap, it just was not the fix.
+
+Adds a fixed (clip, sigma, noise) eval grid, because a loss whose sigma is
+redrawn every step is not readable as a curve.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ea22032e5468eaad56b3efea62eb35f2920748a2] scd: sampler for the Phase 3 kill criterion, with the baseline built in
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ea22032e5468eaad56b3efea62eb35f2920748a2] ea22032
+
+      
+
+    
+
+  
+
+    
+
+      
+The criterion needs a number, so `phase3_sample` scores latent MSE and
+correlation against the clip it came from. Correlation because MSE alone
+calls a collapsed decoder a success: predicting the dataset mean beats
+predicting anything and carries no frame-specific information.
+
+Two modes. `oracle` is the regime training ran in and is a ceiling, not a
+result. `ar` is the real rollout, and the gap between them measures the
+exposure bias that teacher-forced training does nothing about.
+
+The baseline is the same split with every adapter at zero — same module
+tree, same code path — rather than the doc's "decoder-only random init".
+
+Mutation testing found three gaps and one thing I had wrong: seeding the
+AR context from the ground truth is harmless on its own, because the
+encoder is frame-causal and the frames below f are already generated. The
+dangerous version is that plus a missing write-back, which is what the
+test now pins. The square fixture also could not see a transposed
+unpatchify, so the fixture is 8x12 now.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/786bee8fd4a6ca42aae0f20eb3c3fbfe1b09dc92] docs(scd): commit to how the Phase 3 kill criterion is read, before t…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/786bee8fd4a6ca42aae0f20eb3c3fbfe1b09dc92] 786bee8
+
+      
+
+    
+
+  
+
+    
+
+      
+…he numbers land
+
+"Not pure noise" is the kind of criterion a run talks you into afterwards,
+so this records the baseline, the metric and the two failure modes while
+the answer is still unknown. The oracle/AR gap is the finding, not the
+result: training is teacher-forced, so a gap is evidence for the scheduled
+sampling curriculum rather than against the split.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/72f0c8de1cfb0c888be7f0a0792b4d8e9fed5427] docs: write up the SCD port — what is measured and what is still a bet
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/72f0c8de1cfb0c888be7f0a0792b4d8e9fed5427] 72f0c8d
+
+      
+
+    
+
+  
+
+    
+
+      
+Phases 0-2.5 are engineering and can be checked; Phase 3 is the research
+question and is 350/2000 steps in with no sample yet generated. The write-up
+separates the two explicitly rather than letting the speedup numbers stand in
+for a quality result.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d269e1ae0db152f02f3e0ecc8af3cf438533586c] docs: Phase 3 kill criterion answered — not a kill
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d269e1ae0db152f02f3e0ecc8af3cf438533586c] d269e1a
+
+      
+
+    
+
+  
+
+    
+
+      
+2000 steps, rank 16, 12 clips at 512. AR rollout scores corr[1:] +0.6064
+against +0.1229 for the unadapted split; oracle +0.9039. Both halves of the
+criterion are met.
+
+Two findings worth the record. The unadapted baseline is the collapse trap the
+metric was pre-registered to catch: MSE 1.23 against a 2.19 noise floor looks
+like partial success, but its prediction std is 0.403 against the truth's ~1.0
+and correlation says +0.12 — on MSE alone the untrained split would have scored
+as a pass. And AR does not compound: per-frame correlation rises monotonically
+0.543 -> 0.648 and the oracle/AR gap narrows, so exposure bias at this length is
+a level shift rather than a slope.
+
+Still latent-space only, on training clips, at 512, over 1.2 s. No pixels
+decoded.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/602cdd0cad2a382845209ca528853a34a69369e4] scd: per-frame sigma, multi-draw decoder, decoder LR ratio
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/602cdd0cad2a382845209ca528853a34a69369e4] 602cdd0
+
+      
+
+    
+
+  
+
+    
+
+      
+Three knobs borrowed from the SCD reference implementation, each independent:
+
+- Per-frame sigma. The reference draws a timestep per (batch, frame); v0 drew one
+  per clip, which is 7x less sigma coverage for the same encoder pass. Not free
+  here as it is there: the base packs a single video timestep per forward, so each
+  distinct sigma costs a `preamble`. `Batch.t` now raises rather than returning a
+  mean, because `preamble` broadcasts silently and would pack every frame at frame
+  0's noise level.
+
+- `--draws` (the reference's `decoder_multi_batch`). The encoder reads only the
+  clean latent, so one pass serves K noise draws. At 30 encoder blocks against 7
+  decoder blocks a second draw is ~23% more compute for twice the decoder's
+  gradient signal, and it composes with the two-stage backward for free — the
+  extra frames accumulate onto the same detached leaf.
+
+- `--decoder-lr-ratio 2.0`, split by adapter name prefix.
+
+A clip-wide sigma still packs exactly once, which keeps `evaluate`'s fixed grid
+comparable with v0: step-0 eval reproduces at 2.3863 against v0's 2.3864.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e93ae36cb9b83202af7e725af6ffdb5b3dd98df3] scd: decode sampled latents through the video VAE
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/e93ae36cb9b83202af7e725af6ffdb5b3dd98df3] e93ae36
+
+      
+
+    
+
+  
+
+    
+
+      
+Everything Phase 3 has measured is latent-space. corr[1:] = +0.61 says the sampled
+latents point the same way as the real ones; it does not say the thing decodes to
+video, and that is the cheapest measurement that could still kill the port.
+
+`phase3_sample --save-latents` writes the sample and its ground truth together, so
+the decode is a comparison rather than a picture — the VAE's own round trip is not
+lossless at 512, and a soft sample is only evidence against the split if the truth
+through the same path is sharp.
+
+Split into two scripts because the 2.4 B VAE decoder does not fit alongside the
+resident base. Defaults to CPU: 7 latents -> 22 frames at 512 takes ~3 minutes,
+which is cheaper than waiting for the card.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ed06a2cf454bd9e9ae1ab3cc3a96ee0e4ee5560f] scd: seed the first frame when measuring the AR rollout
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ed06a2cf454bd9e9ae1ab3cc3a96ee0e4ee5560f] ed06a2c
+
+      
+
+    
+
+  
+
+    
+
+      
+Frame 0's context half is zeros by construction and --decoder-text is off by
+default, so frame 0 is generated from nothing at all: no context, no text. The
+only way it can score is by having memorised the 12 training clips. v0 did
+(corr +0.444); v1, which fits the actual objective better, did not (-0.067) --
+and because frame 1 conditions on encoder(generated frame 0), one hallucinated
+frame poisons the whole rollout. That is the entire v0/v1 AR gap:
+
+              oracle corr[1:]   ar corr[1:]   frame 0
+    v0           +0.9039         +0.6064      +0.444
+    v1           +0.9233         -0.1180      -0.068
+
+v1 is BETTER at the thing the split is for -- denoise frame f given a real
+context -- and worse at hallucinating a first frame, which the port never
+claimed to provide and which no H3 mode asks for: T2VA has text, FL2VA/I2VA has
+a real first frame.
+
+--seed-frames N takes the first N frames from the truth. N=1 is what FL2VA and
+I2VA do and makes `ar` measure the rollout rather than recall; frames 1.. are
+still generated, still fed back, still compounding. Default 0 keeps every
+earlier run comparable, and a test pins that seeding does not quietly widen into
+an oracle.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/a6fdabb50c3139032d320c5116a8cfc741fbd5e8] scd: architecture validation gate and workflow
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/a6fdabb50c3139032d320c5116a8cfc741fbd5e8] a6fdabb
+
+      
+
+    
+
+  
+
+    
+
+      
+Add validate_architecture.py (unit tests, claims, Tier 0/1 headlines)
+and the validate-scd-arch Grok workflow so architecture checks write a
+single JSON + Markdown report under docs/. Decode stems keep parent
+dirs so multi-run mp4s do not clobber each other.
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b7fd1ff2270ac5e52ddb0c15a2be4772a03f4b4e] docs: refresh arch validation results from live gate run
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b7fd1ff2270ac5e52ddb0c15a2be4772a03f4b4e] b7fd1ff
+
+      
+
+    
+
+  
+
+    
+
+      
+Re-ran validate_architecture via the validate-scd-arch workflow; all
+gates passed (61 unit tests, claims, Tier 0/1 headlines).
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/4bf7e79fd0cf2396852ff42ee733fe81faba00a9] scd: scheduled sampling curriculum and doubled clip windows
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/4bf7e79fd0cf2396852ff42ee733fe81faba00a9] 4bf7e79
+
+      
+
+    
+
+  
+
+    
+
+      
+Add 0→50% AR context schedule (--ss-*), warm-start via --init-lora, and
+second temporal windows (*_w2) so the train set is 24 clips. Pure
+teacher-forcing LoRA had plateaued on blur; SS is the next recipe bet.
+
+    
+
+  
+
+    
+
+  
+           [/johndpope] johndpope
+
+and others
+        added 25 commits
+         [#commits-pushed-452ca61] October 10, 2026 07:13
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/452ca61c2ac08497e8af0e3c63764fb4eff35a2d] scd: fix phase3_race lint (ruff F401, F541, F841)
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/452ca61c2ac08497e8af0e3c63764fb4eff35a2d] 452ca61
+
+      
+
+    
+
+  
+
+    
+
+      
+Drop the unused `math` and `lora_param_groups` imports, the placeholder-
+free f-string, and the `h29` load that nothing reads (decoder-only arms
+keep h29 frozen; only h49 trains). No behavior change beyond skipping
+that unused GPU copy. `ruff check scripts/scd` and check_findings.py pass.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/de14a28cd79b627d33464cc652a5ddf2465e2a15] Merge branch 'main' into lot-progress
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+    
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/de14a28cd79b627d33464cc652a5ddf2465e2a15] de14a28
+
+      
+
+    
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/424f9450f5ab746a17782f71da3994fb5fb877b7] Merge pull request  [https://github.com/johndpope/MiniMax-H3/pull/2] #2  [/MiniMax-AI/MiniMax-H3/pull/90/commits/424f9450f5ab746a17782f71da3994fb5fb877b7] from johndpope/lot-progress
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+    
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/424f9450f5ab746a17782f71da3994fb5fb877b7] 424f945
+
+      
+
+    
+
+  
+
+    
+
+      
+Lot progress
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ee0a6ac03f09badbdafce0271d01bc85d9c97588] lot: same-seed renders after the 2,000-step phase-5 run
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ee0a6ac03f09badbdafce0271d01bc85d9c97588] ee0a6ac
+
+      
+
+    
+
+  
+
+    
+
+      
+Held-out prompts, dense | dense+LoRA | LoT fitted (frozen) | LoT trained,
+bands and all-2x2. Training removes the streak and grid artifacts; coarse
+regions come out smooth but soft.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/6caaa2ef5b9e68b1e6e095d2b39f87d307cfa79a] Merge remote-tracking branch 'origin/lot-progress' into lot-train
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/6caaa2ef5b9e68b1e6e095d2b39f87d307cfa79a] 6caaa2e
+
+      
+
+    
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/57b1ce54799d3166515f07ac98bb0764c70baba0] lot: train_h3 --shift/--dense-shift/--init/multi --cache, mp4 trainin…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/57b1ce54799d3166515f07ac98bb0764c70baba0] 57b1ce5
+
+      
+
+    
+
+  
+
+    
+
+      
+…g guide
+
+Run 1 (shift 12 everywhere) left coarse regions soft: 57% of steps above
+sigma 0.9, 3.5% below 0.3. --shift sets the LoT steps' density (3: 12.6%
+below 0.3, 25% above 0.9) and --dense-shift keeps H3's 12 for the dense
+anchor steps. --init warm-starts adapter + LoRA from an earlier run;
+--cache repeats so clips and stills of other styles can be mixed.
+
+README: training from your own mp4s, each step run here first: ffmpeg cut
+to 24 fps / 22 frames / 640x384 (validated by Fizgig's clip checker),
+Fizgig latent + text caching (latent_7x24x40), Procrustes, --check, train,
+render. Measured: clips OOM at swap 4 and fit at swap 8 (20.0 GB peak).
+Handoff gains the training context.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/21ec3758d50f3be4584666280097b4139a7c6fea] docs: point READMEs and AGENTS.md at the VFM flywheel
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/21ec3758d50f3be4584666280097b4139a7c6fea] 21ec375
+
+      
+
+    
+
+  
+
+    
+
+      
+Local VFM training recreations live in the sibling MiniMax-H3-vfm
+checkout. Add AGENTS.md, CLAUDE.md pointer, four-language README
+banners, balls-flywheel skill, and babysit/flywheel workflows so
+agents can find the graph instead of the upstream model card.
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/88205ab317362add6be91b3e360f8274fe53e12c] lot: cheatsheet and pointers from the READMEs, AGENTS.md and CLAUDE.md
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/88205ab317362add6be91b3e360f8274fe53e12c] 88205ab
+
+      
+
+    
+
+  
+
+    
+
+      
+scripts/lot/CHEATSHEET.md: one page from a fresh checkout to a trained
+LoT adapter: health checks, clip cut, Fizgig caching, extent bank,
+--check, train, watch, render, plus flags, measured numbers on a 24 GB
+card, and the gotchas (head sign, y-space, swap cost, style vs LoT).
+
+All four READMEs get a LoT banner beside the VFM one (local-research
+banners stay in every translation); AGENTS.md lists LoT as a track with
+pointers; CLAUDE.md names scripts/lot/ as local.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b671fd4eb7d6bb77dfc7504f2e8526a67fa4879a] lot: run 1 vs run 2 (shift 3) same-seed renders on held-out prompts
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b671fd4eb7d6bb77dfc7504f2e8526a67fa4879a] b671fd4
+
+      
+
+    
+
+  
+
+    
+
+      
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/dfc859febd4ab97337fcf99e5b73bd01cbd00d2b] lot: train_h3 --distill, a frozen dense-teacher term for LoT steps
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/dfc859febd4ab97337fcf99e5b73bd01cbd00d2b] dfc859f
+
+      
+
+    
+
+  
+
+    
+
+      
+Runs 1 and 2 cut held-out loss but coarse regions stayed soft. On LoT
+steps the base model (LoRA off, dense layout) now predicts the clean
+latent from the same x_t, and the student's estimate (mapped back with
+to_x) is pulled toward it with eq. 17's weight. The target is still a
+one-step posterior mean; the point is that LoT learns dense H3's
+prediction at every sigma, with no style drift from the teacher.
+--data-weight scales the data term. Evals report gap_uniform2 and
+gap_mosaic, the distance distillation drives.
+
+--check on the GPU: grads flow, peak unchanged at 20.4 GB (swap 4).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/5131068e1051a968f96e5e3983eab2aacf523435] lot: train_h3 evals pass a fixed layout; skip the teacher on dense evals
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/5131068e1051a968f96e5e3983eab2aacf523435] 5131068
+
+      
+
+    
+
+  
+
+    
+
+      
+Evals pass their own layout (kind 'fixed'), so the distill guard computed
+a teacher gap for the dense eval and hit a missing gap_dense slot at
+step 0. Verified with a 30-step run, evals at 0 and 30.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/897590a6abc188bb761f841d4bc23325115320ae] docs: LoT handoff covers run 2 results, run 3 (distillation), and the…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/897590a6abc188bb761f841d4bc23325115320ae] 897590a
+
+      
+
+    
+
+  
+
+    
+
+      
+… edit-demo question
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/70ca8fec382dce84b75ee17b8d6227c80a63ac6c] lot: runs 1-3 same-seed renders; distillation (run 3) is the first vi…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/70ca8fec382dce84b75ee17b8d6227c80a63ac6c] 70ca8fe
+
+      
+
+    
+
+  
+
+    
+
+      
+…sible gain
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/03afb3d8911c5625d935ff8d72d1d2d096cb1df1] lot: Nikki talk + pose cache builder; crop cap and held-out prompt ca…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/03afb3d8911c5625d935ff8d72d1d2d096cb1df1] 03afb3d
+
+      
+
+    
+
+  
+
+    
+
+      
+…che options
+
+build_cache_h3.py turns h3-atlas H3 latents into a train_h3 cache with no
+VAE pass: 50 Nikki talking-head clips (set_t_talk, full H3 prompts) and 466
+pose transitions (set_a_pose_ext, captions from the from/to card names, hash
+suffixes dropped). Each keeps the first 7 latent frames (22 pixel frames, a
+clip start) as latent_7x48x32. The text phase loads Qwen3-VL once in its own
+process and is resumable.
+
+train_h3 --max-latent-hw H W caps a random spatial crop for clips too big
+to train whole. render_h3 --prompt-cache takes held-out prompts from a
+given train_h3 cache.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/435e2b02f2a65ddc105b1b0027246d4b5d7a49e3] lot: upload_hf.py publishes a train_h3 run to the Hub; adapters load …
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/435e2b02f2a65ddc105b1b0027246d4b5d7a49e3] 435e2b0
+
+      
+
+    
+
+  
+
+    
+
+      
+…from safetensors
+
+upload_hf.py stages adapter.safetensors (converted from adapter.pt: heads,
+shape MLP and the fitted extent bank), lora.safetensors, the training log and
+a model card with the held-out eval table, then uploads to a repo created
+private unless --public. train_h3 --init and render_h3 --trained read either
+adapter file; render_h3 --pairs is now needed only for the lot_fit variant,
+since a trained adapter carries its own bank.
+
+Published run 3 to johndpope/MiniMax-H3-LoT (private), run3_iso3d_distill/.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/02b85f89d94a3f8cb2b7cb109adf906359008207] lot: render_h3 --holdout/--pick; Nikki run 3 vs run 4 grid
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/02b85f89d94a3f8cb2b7cb109adf906359008207] 02b85f8
+
+      
+
+    
+
+  
+
+    
+
+      
+--holdout matches the split train_h3 used for that cache (run 4 held out
+12 per cache) and --pick renders chosen held-out indices, so the one
+held-out talking-head clip can sit next to the poses.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ac2fbdccb1f9acba21d77f15b40e2ba9af3ac624] lot: ComfyUI support: grid layouts, torch eq. 9, vendoring, workflow
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/ac2fbdccb1f9acba21d77f15b40e2ba9af3ac624] ac2fbdc
+
+      
+
+    
+
+  
+
+    
+
+      
+- h3.grid_layout(name, T, H, W): center / bands / uniform2 / uniform4 / dense
+  for any token grid (4x4 super-cells, 1x1 edges). dense is raster order,
+  so it reproduces the stock forward exactly. center keeps fine tokens in
+  the middle (portraits, talking heads).
+- flow.asymflow_velocity_torch: LakonLab's s = k = 1 eq. 9 in plain torch,
+  used when no LakonLab checkout exists (ComfyUI). Test pins it to LakonLab.
+- vendor_comfy.py copies the LoT core into a ComfyUI pack with relative
+  imports (no top-level 'layout'/'flow' collisions).
+- upload_hf.py writes the help-wanted, territory and data warnings into
+  every card and uploads LICENSE + NOTICE (H3 Community License s.III).
+- comfyui/h3_lot_image_api.json: T=1 LoT + dense A/B workflow for the
+  ComfyUI-MiniMax-H3-Image-Lane nodes; cheatsheet section and warning.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/432f6d4e8b16dda134d049c2175266ee2f688923] lot: h3.grid_layout imports dense_layout at top level (vendoring rewr…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/432f6d4e8b16dda134d049c2175266ee2f688923] 432f6d4
+
+      
+
+    
+
+  
+
+    
+
+      
+…ites only top-level imports)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/f99453a91cf5f259d2fe6d533fc82731e9d1552d] lot: ComfyUI LoT center vs dense still
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/f99453a91cf5f259d2fe6d533fc82731e9d1552d] f99453a
+
+      
+
+    
+
+  
+
+    
+
+      
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d3701354a448227d584678a7d023fd2170fbc5bb] docs: LoT READMEs and cheatsheet catch up with public weights and Com…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d3701354a448227d584678a7d023fd2170fbc5bb] d370135
+
+      
+
+    
+
+  
+
+    
+
+      
+…fyUI
+
+All four README banners: public HF weights, the ComfyUI nodes, current
+speedups (2.61x clip, 1.75-2.29x still), the help-wanted link (Fizgig
+#183) and the license's territory restriction.
+
+Cheatsheet: use-the-weights section, build_cache_h3 path, the distill
+recipe as the default train command, render --prompt-cache/--holdout/
+--pick, new flags, re-measured numbers (trained adapter, ComfyUI),
+a runs table (1-4), and gotchas (faces vs bands, zsh word splitting,
+pkill self-match, the int8/nvfp4 symlink, license).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b98a4c0ce67e7416fe6322bbef77ce26b8e4f475] lot: ComfyUI video workflow, frame strip, cheatsheet (2.6x per step o…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/b98a4c0ce67e7416fe6322bbef77ce26b8e4f475] b98a4c0
+
+      
+
+    
+
+  
+
+    
+
+      
+…n a 22-frame clip)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/983a7446fa78fe0fe27253d2c8f48741fcfc2a57] lot: portable paths, time_lot_h3.py, and a download -> test -> time -…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/983a7446fa78fe0fe27253d2c8f48741fcfc2a57] 983a744
+
+      
+
+    
+
+  
+
+    
+
+      
+…> train quick start
+
+lot_paths.py: every machine path (Fizgig src, int8 DiT, video VAE, text
+encoder, stills cache) is now an env var with this machine as default;
+no script hardcodes /media/2TB any more.
+
+time_lot_h3.py: one DiT forward, dense vs each LoT layout, on a still,
+a 22-frame clip or the long clip, with or without trained weights (an HF
+download works). Measured with run-4 weights, all blocks resident:
+still center 1.92x / bands 1.63x / uniform2 2.16x; 512x768x22 clip
+center 2.51x / bands 1.96x / uniform2 3.08x (21.4 GB peak). Swap 4 on
+the clip shows only 1.52x: streaming hides the gain.
+
+Cheatsheet: a quick start with Path A (ComfyUI: install, download,
+validate it/s) and Path B (env vars, tests, parity, timing, render).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/5184201ecd26802616cb90ab72ec6f62ed1db59f] lot: upload_hf card commands point at the run's subfolder; timing too…
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/5184201ecd26802616cb90ab72ec6f62ed1db59f] 5184201
+
+      
+
+    
+
+  
+
+    
+
+      
+…l and ComfyUI links
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/2cdf747e88d9ea57e27fd093f16c7d34c35ab1e9] lot: content-aware layouts (mask, boxes, depth, texture) for ComfyUI …
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/2cdf747e88d9ea57e27fd093f16c7d34c35ab1e9] 2cdf747
+
+      
+
+    
+
+  
+
+    
+
+      
+…and training
+
+layout_sources.py turns each of the LoT supplementary's layout sources into
+a per-token desired-extent map and a quadtree layout per latent frame, so
+layouts follow the content over time: mask_layout (with secondary mask),
+boxes_to_mask, depth_layout (depth-of-field band), texture_layout (the VRS
+source), score_layout; pixel frames map onto H3's (1,4,4,4,4) latent clock.
+
+train_h3: new per-frame layout families box (drifting primary/secondary
+boxes), focus (in-focus ellipse + 2x2 ring) and texture (latent-detail
+quantiles), mixed with dense/uniform/mosaic via --layout-mix. Evals add a
+fixed focus layout and gap_focus; the mosaic eval keeps the exact runs 1-4
+path so curves stay comparable. --check now forces each family.
+
+GPU --check (run 4 init, Nikki clips + stills, swap 8, distill): all six
+families finite with LoRA and adapter grads, peak 20.1 GB.
+
+comfyui/h3_lot_boxes_api.json: face-box layout, nearly identical to dense on
+the held-out talk prompt (576/864 tokens). Tests: ok 28.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/868d1ad9c8c678a5b853747ebd200ea35210993a] lot: ComfyUI face-box layout vs dense vs center
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/868d1ad9c8c678a5b853747ebd200ea35210993a] 868d1ad
+
+      
+
+    
+
+  
+
+    
+
+      
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+      
+
+     [/johndpope] 
+ [/johndpope] johndpope
+
+    mentioned this pull request
+     [#ref-issue-5809664156] 
+      Oct 12, 2026
+
+  
+
+     [/dcharatan/millivid/issues/3] 
+      FYI - Level of token on h3 minimax
+      dcharatan/millivid#3
+
+  
+
+      
+
+  
+
+  Open
+
+  
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/johndpope] 
+
+         [/claude] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d49fa26ab6a4dd98d2ca3bbb492754ef59db511d] lot: tests run without a LakonLab checkout (plain-torch eq. 9 path)
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/90/commits/d49fa26ab6a4dd98d2ca3bbb492754ef59db511d] d49fa26
+
+      
+
+    
+
+  
+
+    
+
+      
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+      
+
+     [/johndpope] 
+ [/johndpope] johndpope
+
+    mentioned this pull request
+     [#ref-pullrequest-5810725494] 
+      Oct 12, 2026
+
+  
+
+     [/MiniMax-AI/MiniMax-H3/pull/91] 
+      DRAFT - Level Of Token - 2.6x DiT speed up (LoT only)
+      #91
+
+  
+
+      
+   Draft
+
+  
+
+  
+
+  
+
+   [/johndpope] 
+
+  
+
+    
+
+      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/johndpope] johndpope
+
+      
+
+      
+
+      commented
+
+         [#issuecomment-6120628149] Oct 12, 2026
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+  Author
+
+    
+
+  
+
+      
+
+        
+
+  
+
+      
+
+Superseded by  [https://github.com/MiniMax-AI/MiniMax-H3/pull/91] #91, which carries only the Level-of-Token work (scripts/lot, comfyui workflows, assets/lot-*). It's a fresh branch from current main, without the Separable Causal Diffusion code this PR picked up from the fork's main.
+
+      
+
+  
+
+        
+
+            
+
+            
+
+              
+
+  
+
+      
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+            
+
+        
+
+      
+
+      
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/johndpope] 
+ [/johndpope] johndpope
+
+          closed this
+
+       [#event-33030880575] Oct 12, 2026
+
+    
+
+  
+

@@ -1,0 +1,76 @@
+
+
+EVERY SINGLE GENERATION PUTS ON WEDDING RING!!! MAKE IT STOP!!! #86
+
+Open
+
+Open
+
+Repeated hallucination of wedding rings on characters with bare-hand references
+
+Summary
+
+MiniMax H3 repeatedly generates wedding rings or ring-like jewelry on characters whose reference images clearly show bare hands.
+
+This happens both through the official MiniMax API and through local/open-weight H3 Ref2VA workflows.
+
+Expected behavior
+
+If the supplied character references and dedicated hand references show bare fingers, H3 should preserve that detail and not invent rings or other finger jewelry.
+
+Actual behavior
+
+H3 frequently adds a ring, usually resembling a wedding band, even when:
+
+The character reference shows bare hands.
+
+Dedicated hand-reference images also show bare fingers.
+
+The prompt contains no request for jewelry.
+
+The intended character design has no rings.
+
+The issue becomes especially noticeable when the hands are visible or interacting with objects.
+
+Reproducibility
+
+have reproduced this behavior with:
+
+The official MiniMax H3 API.
+
+Local H3 Ref2VA generation.
+
+Because it occurs in both environments, this does not appear to be specific to Wan2GP, ComfyUI, or another frontend.
+
+Why this matters
+
+This is a character-continuity problem.
+
+A wedding ring is not a minor texture variation. It changes a visible character attribute and can make an otherwise usable shot unusable in a sequence.
+
+In my case, shots have needed to be regenerated solely because H3 invented rings that do not exist in the character references.
+
+Possible cause
+
+This appears to be a reference-fidelity or model-prior issue where learned visual priors are overriding details established by the references.
+
+It may be worth investigating whether hand details and the absence of accessories are being underweighted during Ref2VA conditioning.
+
+Additional material available
+
+I can provide:
+
+Exact prompts
+
+Character reference sheets
+
+Dedicated hand references
+
+Failed outputs
+
+API task IDs
+
+Local configuration details
+
+Multiple examples showing the same issue across different shots
+

@@ -1,0 +1,182 @@
+[
+  {
+    "commit": "e0a5da658eb872757d977ea3781c4b8a20fbe47e",
+    "author_date": "2026-08-06T13:30:48+08:00",
+    "title": "Polish skills README with status and install-name notes",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/e0a5da658eb872757d977ea3781c4b8a20fbe47e"
+  },
+  {
+    "commit": "319e2008f4a3a520ee11170cb82e43ba3d7f2f69",
+    "author_date": "2026-08-06T13:32:31+08:00",
+    "title": "Declare skills WIP status and contribution rewards in skills README",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/319e2008f4a3a520ee11170cb82e43ba3d7f2f69"
+  },
+  {
+    "commit": "a71bc89bcc7af80784f0be75a34b9b208fe126c4",
+    "author_date": "2026-08-06T13:33:54+08:00",
+    "title": "Merge pull request #1 from RyanLee-Dev/docs/optimize-skills-readme",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/a71bc89bcc7af80784f0be75a34b9b208fe126c4"
+  },
+  {
+    "commit": "e57206882b2b0d8df87b03aab91472ba27bcffc3",
+    "author_date": "2026-08-06T17:50:51+08:00",
+    "title": "Update README.md",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/e57206882b2b0d8df87b03aab91472ba27bcffc3"
+  },
+  {
+    "commit": "edb9ae3bf4023c29e617abf33643ee41aeb46fe0",
+    "author_date": "2026-08-06T17:51:26+08:00",
+    "title": "Update README.md",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/edb9ae3bf4023c29e617abf33643ee41aeb46fe0"
+  },
+  {
+    "commit": "8d8824efaf94586c0cc9ac7ad8d0723d4d6420ea",
+    "author_date": "2026-08-06T17:52:52+08:00",
+    "title": "Update README.md",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/8d8824efaf94586c0cc9ac7ad8d0723d4d6420ea"
+  },
+  {
+    "commit": "12ebd6bd8c5d1748a678ac38f4f1238472a98a24",
+    "author_date": "2026-08-07T16:31:18-03:00",
+    "title": "Add h3-prompt-writing skill installation artifacts",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/12ebd6bd8c5d1748a678ac38f4f1238472a98a24"
+  },
+  {
+    "commit": "1ce88e916de7c15b63cbaf347642503f9bc21d3d",
+    "author_date": "2026-08-07T16:38:02-03:00",
+    "title": "Install h3-prompt-writing skill",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/1ce88e916de7c15b63cbaf347642503f9bc21d3d"
+  },
+  {
+    "commit": "8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55",
+    "author_date": "2026-08-09T07:14:01+05:30",
+    "title": "Add requirements.txt and fix init_weights for weight_norm Conv1d",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55"
+  },
+  {
+    "commit": "597042140567efefd8c4adcfe8124c20f63a3399",
+    "author_date": "2026-08-09T10:05:36+05:30",
+    "title": "Fix folder/link mismatch for music-video-subtitle-generator skill",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/597042140567efefd8c4adcfe8124c20f63a3399"
+  },
+  {
+    "commit": "e4a0b9c23dcbb8870d48a8eecab4bcc4058fc331",
+    "author_date": "2026-08-09T16:33:32+08:00",
+    "title": "Merge pull request #12 from Anuj04432/fix/mv-subtitle-skill-folder-name",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/e4a0b9c23dcbb8870d48a8eecab4bcc4058fc331"
+  },
+  {
+    "commit": "8317f43ddabe950f3a6c8908090a22c8b0228e4c",
+    "author_date": "2026-08-09T16:33:51+08:00",
+    "title": "Merge pull request #10 from karandhaodiyal28-hash/fix/requirements-txt-and-init-weights",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/8317f43ddabe950f3a6c8908090a22c8b0228e4c"
+  },
+  {
+    "commit": "b0175e52746879fc92f9243ed0ebcff8393a30b3",
+    "author_date": "2026-08-09T16:34:27+08:00",
+    "title": "Merge pull request #8 from isacjosepinha-debug/isacjosepinha-debug-effective-happiness",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/b0175e52746879fc92f9243ed0ebcff8393a30b3"
+  },
+  {
+    "commit": "fbe95f7fcb94a74a531750e16ab9288871cebea0",
+    "author_date": "2026-08-09T18:05:54+08:00",
+    "title": "Merge pull request #7 from isacjosepinha-debug/isacjosepinha-debug-didactic-winner",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/fbe95f7fcb94a74a531750e16ab9288871cebea0"
+  },
+  {
+    "commit": "b7227fa6a6206e9fb30562383d39e53cf3866a48",
+    "author_date": "2026-08-09T18:40:41+08:00",
+    "title": "Add multilingual README files",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/b7227fa6a6206e9fb30562383d39e53cf3866a48"
+  },
+  {
+    "commit": "b731d8846cf789f284d538013d5caea053c511c8",
+    "author_date": "2026-08-09T16:27:52+01:00",
+    "title": "docs(skills): clarify h3-prompt-writing is agent-portable, not OpenAI-only",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/b731d8846cf789f284d538013d5caea053c511c8"
+  },
+  {
+    "commit": "c22aafa3073efdc4ad94f8ec82889b9e736331c0",
+    "author_date": "2026-08-09T22:05:04+05:30",
+    "title": "Fix init_weights in dac_utils.py for weight_norm Conv1d layers",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/c22aafa3073efdc4ad94f8ec82889b9e736331c0"
+  },
+  {
+    "commit": "3f192aa37fe1ac7815ae8026ddff777c2cb98960",
+    "author_date": "2026-08-10T10:37:18+08:00",
+    "title": "Merge pull request #14 from karandhaodiyal28-hash/fix/dac-utils-init-weights-weight-norm",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/3f192aa37fe1ac7815ae8026ddff777c2cb98960"
+  },
+  {
+    "commit": "05d91ff89f58b665e56424fd66db9ef0351b3015",
+    "author_date": "2026-08-10T10:41:10+08:00",
+    "title": "Merge pull request #13 from joeVenner/docs/skill-compatibility-notes",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/05d91ff89f58b665e56424fd66db9ef0351b3015"
+  },
+  {
+    "commit": "743d51e83329cbae6c7694f1c7b89576e7c25e07",
+    "author_date": "2026-08-10T12:27:54+01:00",
+    "title": "docs(skills): add compatibility fields to Hub-native skills, sync i18n READMEs",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/743d51e83329cbae6c7694f1c7b89576e7c25e07"
+  },
+  {
+    "commit": "ca38d0f07369c7c6c4fea207ead8f18043c90e5c",
+    "author_date": "2026-08-11T02:38:59+05:30",
+    "title": "docs: remove unnecessary backslash escaping in README",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/ca38d0f07369c7c6c4fea207ead8f18043c90e5c"
+  },
+  {
+    "commit": "37866ed9900b212f18a02d60e38fd3cbfc119ab1",
+    "author_date": "2026-08-11T17:25:55+12:00",
+    "title": "docs: fix logical issue in README.md (section_name_hyphen_inconsistent)",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/37866ed9900b212f18a02d60e38fd3cbfc119ab1"
+  },
+  {
+    "commit": "ed3cda4e66e6174b59bf1b7ac99c2ae2587769fa",
+    "author_date": "2026-08-11T17:06:21+08:00",
+    "title": "Update README.md",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/ed3cda4e66e6174b59bf1b7ac99c2ae2587769fa"
+  },
+  {
+    "commit": "3d3b0d1356696148f0c3dfc7bce6aa054a45d76a",
+    "author_date": "2026-08-11T18:43:59+08:00",
+    "title": "Merge pull request #35 from lunar-me/fix-docs/issue-005",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/3d3b0d1356696148f0c3dfc7bce6aa054a45d76a"
+  },
+  {
+    "commit": "fa6891ff7cdaaa03fa4497e89ac64ff169219acf",
+    "author_date": "2026-08-11T18:44:41+08:00",
+    "title": "Merge pull request #22 from joeVenner/docs/skill-compatibility-notes-part2",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/fa6891ff7cdaaa03fa4497e89ac64ff169219acf"
+  },
+  {
+    "commit": "a107547fa669c509b8e6363fe18378d46ab3066c",
+    "author_date": "2026-08-11T16:55:43+05:30",
+    "title": "docs(h3-prompt-writing): add tips for better results",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/a107547fa669c509b8e6363fe18378d46ab3066c"
+  },
+  {
+    "commit": "9176a26ae7fcacd69c6cd7a06f660810c7a477fa",
+    "author_date": "2026-08-11T23:57:34+05:30",
+    "title": "Support local image paths in image loader",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/9176a26ae7fcacd69c6cd7a06f660810c7a477fa"
+  },
+  {
+    "commit": "80365054c7fbaace01ed417076fecd532c1ae0e0",
+    "author_date": "2026-08-12T17:47:33-07:00",
+    "title": "Merge pull request #27 from yahyadeveloper9/fix-readme-escaping",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/80365054c7fbaace01ed417076fecd532c1ae0e0"
+  },
+  {
+    "commit": "6da473b48daf91e5aebfb56451f8a0b116348df5",
+    "author_date": "2026-08-13T09:51:29+08:00",
+    "title": "Merge pull request #45 from Umanginigam/fix-local-image-uri",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/6da473b48daf91e5aebfb56451f8a0b116348df5"
+  },
+  {
+    "commit": "d21241f0a4b3acbb34c97dae47fa417b7065e438",
+    "author_date": "2026-08-15T16:31:16+08:00",
+    "title": "Merge pull request #44 from GyArmyBrat/improve-skills",
+    "url": "https://github.com/MiniMax-AI/MiniMax-H3/commit/d21241f0a4b3acbb34c97dae47fa417b7065e438"
+  }
+]

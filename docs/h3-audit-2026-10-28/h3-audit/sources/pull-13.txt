@@ -1,0 +1,566 @@
+
+
+docs(skills): clarify h3-prompt-writing is agent-portable, not OpenAI-only - #13
+
+Merged
+
+Merged
+
+ [/joeVenner] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/joeVenner] joeVenner
+
+      
+
+      
+
+      commented
+
+         [#issue-5103289605] Aug 9, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+Add a compatibility field to h3-prompt-writing/SKILL.md (mirrored across skills/, .claude/skills/, and .agents/skills/) clarifying the skill works with any agent that can read local files, with no external API calls or MiniMax Hub tools required.
+
+Add a README note explaining agents/openai.yaml only supplies optional ChatGPT/Codex UI metadata (per OpenAI's skill spec) and does not restrict h3-prompt-writing to OpenAI agents.
+
+Document that the other eight skills are MiniMax Hub-native (canvas workflow, hub_* tools) and not portable to generic agent harnesses — mirroring the compatibility notes already published in the awesome-minimax-h3 reference repo.
+
+Test plan
+
+ Verified agents/openai.yaml reflects OpenAI's documented Codex skills UI-override format (checked against learn.chatgpt.com/docs/build-skills) — it is additive, not exclusive.
+
+ Confirmed the three tracked copies of h3-prompt-writing (skills/, .claude/skills/, .agents/skills/) remain byte-identical after the edit.
+
+ Docs-only change; no code paths affected.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/13]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/joeVenner] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/13/commits/b731d8846cf789f284d538013d5caea053c511c8] docs(skills): clarify h3-prompt-writing is agent-portable, not OpenAI…
+
+          
+                  …
+
+           [/MiniMax-AI/MiniMax-H3/commit/b731d8846cf789f284d538013d5caea053c511c8#comments] 
+
+    
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/13/commits/b731d8846cf789f284d538013d5caea053c511c8] b731d88
+
+      
+
+    
+
+  
+
+    
+
+      
+…-only
+
+Add a compatibility field to the h3-prompt-writing SKILL.md (mirrored
+across skills/, .claude/skills/, and .agents/skills/) and a README
+note explaining that agents/openai.yaml only adds optional Codex/
+ChatGPT UI metadata and does not restrict the skill to OpenAI agents.
+Also documents that the other eight skills are MiniMax Hub-native and
+not portable to generic agent harnesses, mirroring the compatibility
+notes in the awesome-minimax-h3 reference repo.
+
+    
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/05d91ff89f58b665e56424fd66db9ef0351b3015] 05d91ff
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/13#event-29199478932] Aug 10, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+
+  
+
+    
+
+  
+
+        
+
+               [/joeVenner] 
+
+        
+
+      
+
+        
+
+               [/joeVenner] joeVenner
+
+          
+    deleted the
+
+      
+        docs/skill-compatibility-notes
+
+    branch
+
+           [#event-29218740614] August 10, 2026 11:23          
+
+      
+
+    
+
+  
+
+    
+
+  
+
+  
+
+      
+
+     [/joeVenner] 
+ [/joeVenner] joeVenner
+
+    mentioned this pull request
+     [#ref-pullrequest-5109588240] 
+      Aug 10, 2026
+
+  
+
+     [/MiniMax-AI/MiniMax-H3/pull/22] 
+      docs(skills): add compatibility fields to Hub-native skills, sync i18n READMEs
+      #22
+
+  
+
+      
+   Merged
+
+  
+
+  
+
+      
+
+    
+
+      
+
+  
+
+    
+
+    3 tasks done
+
+  
+
+  
+
+    
+
+  
+
+    
+
+   [/RyanLee-Dev] RyanLee-Dev 
+
+      pushed a commit
+      that referenced
+      this pull request
+
+     [#ref-commit-743d51e] 
+      Aug 11, 2026
+
+    
+
+      
+
+  
+
+    
+
+      
+
+  
+
+         [/joeVenner] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/commit/743d51e83329cbae6c7694f1c7b89576e7c25e07] docs(skills): add compatibility fields to Hub-native skills, sync i18…
+
+          
+            …
+
+      
+
+      
+
+          
+
+    
+
+    
+
+  
+
+      
+
+      
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/commit/743d51e83329cbae6c7694f1c7b89576e7c25e07] 743d51e
+
+      
+
+    
+
+  
+
+    
+
+      
+…n READMEs
+
+Follow-up to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/13] #13: add a compatibility field to the 8 Hub-native skills
+noting they require the MiniMax Hub agent (canvas workspace, hub_*
+tools) and are not portable to generic agent harnesses, mirroring the
+note already added to h3-prompt-writing. Also port the English
+compatibility note to README.zh-CN.md, README.ja.md, and README.ko.md
+so all four READMEs stay in sync.
+
+    
+
+    
+
+  
+

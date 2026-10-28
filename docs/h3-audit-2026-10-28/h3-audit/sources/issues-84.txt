@@ -1,0 +1,120 @@
+
+
+MiniMax H3 Ref2VA: Significant Reference-Fidelity Regression in Local ComfyUI #84
+
+Open
+
+Open
+
+Description
+
+I’m experiencing a significant reference-fidelity issue with MiniMax H3 Ref2VA in my local ComfyUI setup.
+
+The model is expected to preserve the major visual identity and spatial structure of the reference image while animating it. However, in my current local setup, major elements of the reference can be substantially reinterpreted or changed.
+
+Examples include:
+
+Object geometry and proportions changing
+
+Fabric folds and clothing structure being altered
+
+Frame/box geometry changing
+
+Background structures being reinterpreted
+
+Overall composition drifting from the reference
+
+Important visual details being regenerated rather than preserved
+
+This is not simply a minor temporal inconsistency. The generated result can differ substantially from the original reference structure.
+
+Important comparison
+
+I have an older local setup where the same general workflow and the same model files produced substantially better reference fidelity.
+
+I also get substantially better reference adherence when running the same general H3 Ref2VA workflow through RunningHub.
+
+This suggests that the problem may be related to the local ComfyUI/runtime/inference path rather than the model weights themselves.
+
+Where the divergence appears
+
+An important observation is that the reference fidelity appears to diverge during TAEH3 sampling, before the final video VAE decoding stage.
+
+Therefore, this does not appear to be only a video-VAE decoding or rendering issue.
+
+Environment
+
+GPU: NVIDIA RTX 4070 SUPER 12 GB
+
+RAM: 32 GB
+
+CPU: Intel Core i5-14600K
+
+ComfyUI: v0.37.2
+
+Windows
+
+Local H3 Ref2VA workflow
+
+Model files:
+
+"minimax_h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors"
+
+"minimax_h3_video_vae_int8_convrot.safetensors"
+
+"minimax_h3_audio_vae_fp32.safetensors"
+
+"qwen3vl_32b_minimax_h3_nvfp4_awq_2.safetensors"
+
+Related observation: fp16 accumulation
+
+Another H3 user reported that removing the "--fast fp16_accumulation" startup flag and ensuring that no custom nodes enabled fp16 accumulation made reference adherence substantially better.
+
+I have not established that this is the root cause of my specific issue, but it may be worth investigating because numerical precision or attention/runtime settings could potentially affect reference conditioning.
+
+Possible areas to investigate
+
+Could you please check whether recent changes or runtime differences can affect:
+
+Ref2VA reference conditioning
+
+Reference-latent injection
+
+Qwen3-VL image/reference encoding
+
+Reference image preprocessing and "ref_image_size"
+
+TAEH3 sampling
+
+Sampler/scheduler or sigma-shift behavior
+
+"ModelSamplingAV"
+
+OUTER_SAMPLE wrappers or other model patches
+
+Attention backend/runtime differences
+
+INT8/NVFP4 execution and numerical precision
+
+"torch.backends.cuda.matmul.allow_fp16_accumulation"
+
+Recent ComfyUI changes affecting the H3 Ref2VA execution path
+
+Related ComfyUI investigation
+
+I have documented the local ComfyUI investigation here:
+
+ [https://github.com/Comfy-Org/ComfyUI/issues/16589] Comfy-Org/ComfyUI#16589
+
+There is also another user reporting similar H3 reference-adherence degradation in that discussion.
+
+Expected behavior
+
+The major visual identity, geometry, proportions, spatial relationships, and important structures of the reference image should remain substantially consistent while the model performs the requested animation.
+
+Actual behavior
+
+The reference is being substantially reinterpreted during generation, with major structures and visual details changing even though the same general workflow and model files previously produced much stronger reference adherence.
+
+Any guidance on which component or recent change could cause this behavior would be greatly appreciated.
+

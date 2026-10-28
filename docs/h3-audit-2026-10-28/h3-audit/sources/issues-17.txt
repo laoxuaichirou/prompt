@@ -1,0 +1,202 @@
+
+
+Ref2VA: multi-subject voice identity can bleed between reference-image subjects #17
+
+Open
+
+Open
+
+I’m seeing a repeatable speaker-routing issue with MiniMax H3 Ref2VA in multi-character dialogue scenes.
+
+Visual subject binding works extremely well: multiple characters referenced from separate images remain visually distinct and consistent. However, the audio branch can fail to keep different voice identities attached to the correct subjects. One subject’s voice characteristics can bleed into another subject, or one voice can effectively dominate both speakers.
+
+Example setup:
+
+<Subject 1> = female character from <Picture 1>
+
+Voice A = distinct British female voice anchor
+
+<Subject 2> = female character from <Picture 2>
+
+Voice B = distinct American female voice anchor
+
+Dialogue alternates: Subject 2 → Subject 1 → Subject 2.
+
+The visual identities and speaker/lip assignments remain correct, but Voice B can bleed into Subject 1, causing both subjects to share or partially share the same vocal identity, or Subject 1 uses a completely different voice that wasn't prompted.
+
+Update: I originally reported this as a Ref2VA-specific issue, but I have now reproduced the same multi-speaker voice bleed using FL2VA from a single composed first frame with no last frame.
+
+In FL2VA, explicitly conditioning Subject 2 to speak in an American voice causes Subject 1’s voice to become American as well. Conversely, explicitly conditioning Subject 1 to speak in an Elizabeth Swann / Keira Knightley-style British voice restores Subject 1’s voice, but Subject 2 also shifts to a British voice.
+
+The issue also persists with only one speaker transition (A → B), with explicit  tags, and with pure <Subject 1> / <Subject 2> speaker labels.
+
+This suggests the issue may not be specific to Ref2VA reference routing. It may instead involve multi-speaker voice conditioning being applied too globally across the audio stream rather than remaining reliably bound to an individual speaker.
+
+For comparison, other two-character combinations can work correctly, so this does not appear to be a universal inability to generate two distinct voices.
+
+has the issue with the conditioning being applied too globally been fixed?
+
+Same-gender speakers do not work. With two men (or three) the voices collapse into one. Mixed gender is better but not clean either, it still bleeds somewhat.
+
+I also reproduced this on the paid closed-source version, and it bleeds the same way with two same-gender speakers. So this does not look like a quantization or ComfyUI issue.
+
+Builds tested, all with the same result:
+
+minimax_h3_ref2va_int8_convrot (full)
+
+minimax_h3_ref2va_pruned_bf16
+
+the paid closed-source model
+
+My guess is the model separates speakers mainly by coarse acoustic features like pitch, formants and vocal tract length, rather than by the reference-to-subject binding in the prompt. Voices that are close together in those features end up sharing one identity.
+
+I had this happening consistently on one particular clip. I had four subjects, only two of which talked. But one subject's voice kept overriding the other. I thought maybe the audio refs needed shortening to less than 15s total - no change.
+
+But in the end, I fixed it for this clip - there was a mention in the prompt of the two non-speaking subjects sharing a small chuckle. This chuckle, not formatted formally as dialogue, apparently counted as dialogue, and was apparently enough to throw the whole sequence off. I removed the reference to the chuckle and hey presto, everyone was speaking with their own voice. Worth mentioning as it seems like these tiny incidental vocalisations can cause this sort of inexplicable behaviour.
+
+我用自己的音色，单角色没有问题，之前多角色也成功过，但这此，我测试了20次，全都翻车了，没有一次是成功的，我改提示词，进行各种组合都失败的。明天我准备把我的音色调一试试，因为我把自己的音色换成那种口音很轻的音色，它是能正常分别的，最后问题或许是我的原始声音不能被很好的支持。
+
+I found a workaround for the voice swap / voice re-entry problem.
+
+In my case, the normal documented pattern fails:
+
+Speaker A = S1 with Audio 1
+
+Speaker B = S2 with Audio 2
+
+Speaker A again = S1 with Audio 1
+
+The model gets the first two lines correct, but when Speaker A talks again, it often reuses Speaker B’s voice.
+
+What worked for me was treating each speaking turn as a new speaker turn ID and duplicating the returning speaker’s voice reference in a new audio slot:
+
+Audio 1 = Speaker A voice
+
+Audio 2 = Speaker B voice
+
+Audio 3 = Speaker A voice again (same file as Audio 1)
+
+Then write the dialogue like this:
+
+first line: S1 using Audio 1
+
+second line: S2 using Audio 2
+
+third line: S3 using Audio 3
+
+So for an A -> B -> A exchange, S1/S2/S3 + duplicated voice ref for A worked, while S1/S2/S1 did not.
+
+This seems to suggest that the model can move forward to a new voice correctly, but may fail to restore a previously used voice unless it gets a fresh audio reference slot.
+
+Additional findings: speaker swapping is highly sensitive to requested clip duration (partial workaround)
+
+I've been extensively testing MiniMax H3 for a dialogue-heavy film production, particularly two-person male/male conversations. I can confirm the speaker/voice identity problems described here, including failures with both FL2VA and Ref2VA. I have tested literally thousands of shots (over several weeks) of various durations from 5-30 seconds at various resolutions, etc.
+
+My testing environment:
+
+NVIDIA RTX 5090, 32 GB (also an older 3090)
+
+ComfyUI, local inference
+
+Primarily FL2VA pruned INT8 ConvRot
+
+Also tested BF16 and Ref2VA
+
+Typically 16 sampling steps (but tested many others too)
+
+Separate visual and audio references for each character (different voices, pitches, cadence, etc.)
+
+Multiple alternating dialogue turns (few to many)
+
+The most important finding: small changes to the requested video duration can correct speaker swaps without changing the dialogue or character references.
+
+Examples from actual production testing:
+
+A two-speaker male-male dialogue shot repeatedly failed at 12.5 seconds. Increasing the requested duration to 14 seconds produced correct speaker assignment.
+
+Another difficult shot failed repeatedly until approximately 1–2 seconds were added to its duration, along with explicit instructions describing which subject was listening during the other subject's dialogue.
+
+One 47-word dialogue segment worked around 14–16 seconds but became unreliable when extended to 20–21 seconds. Sometimes a slight 0.7 shift longer can get it out of this bad "zone" as I visualize it.
+
+I've also experimented with estimating shot duration from dialogue word count. A starting estimate of approximately 0.36 seconds per spoken word has produced better overall results than even slight cahnges in seconds per word in my test scenes (e.g. .34, .35, .37, .38, etc.). This is an empirical production heuristic, not a universal speech-speed setting.
+
+Partial workaround for others to try:
+
+Keep the prompt, reference images, audio references, seed and sampling configuration unchanged.
+
+If the speakers swap, change only the requested duration by approximately 1–2 seconds and regenerate. Try both directions when practical.
+
+Add explicit listening instructions for the non-speaking character during each dialogue turn.
+
+Avoid overly long dialogue segments or excessive speaker transitions. I've had better results with roughly six or fewer dialogue turns per shot.
+
+Once a segment works, preserve that exact configuration. Do not assume a similar shot will work with the same timing.
+
+Example method of best practices that (for me) produces a 60-70% success rate in my shots (with the overall 0.36 sec timing as basic duration length):
+
+====================
+
+subject_definitions:
+
+(S1) is <Subject 1> BILL. <Picture 1> is identity and wardrobe authority.
+
+(S2) is <Subject 2> TED. <Picture 2> is identity and wardrobe authority.
+
+<Subject 3> is the physical location shown in <Picture 3>. Preserve its original materials, time of day, light direction/color, background geography, and furnishings as the setting seen from the requested camera position. If the scene reference contains staged actors, those depicted people are the same physical cast instances named by the character subjects, not additional people. Use their screen-side placement and approximate spacing as staging authority; the requested [SHOT] camera controls crop and distance.
+
+(S1) is <Subject 1> BILL. <Audio 1> is only this character voice timbre; do not copy its words.
+
+(S2) is <Subject 2> TED. <Audio 2> is only this character voice timbre; do not copy its words.
+
+Keep the supplied voice identities separate.
+
+Only words inside ... are spoken.
+
+Speak each  block exactly once, in written order. Camera cuts never restart dialogue.
+
+summary:
+
+Scene: INT. NEIGHBORHOOD COFFEE SHOP - LATE NIGHT.
+
+The coffee shop is practical and modest, with wooden tables, chairs, a coffee counter, espresso machines, a wall clock, and warm electric lighting. Bill and Ted stay together at the same small table while Bill examines a receipt and discusses it with Ted.
+
+Visible actors in this shot: BILL, TED.
+
+Preserve the established screen-side positions and spacing. Do not swap, duplicate, or add cast members.
+
+Start already at the requested MEDIUM camera distance; do not begin wide and move in.
+
+[SHOT 1]: HARD CUT TO MEDIUM TWO-SHOT ON TED AND BILL
+
+Opening coverage: frame both actors at a true medium distance; do not begin scenic wide.
+
+BILL: [English] The night manager confirms no one paid for that order. Register was locked before eight.
+
+TED: [English] Fifteen minutes of waiting just became fifteen minutes of wasted time.
+
+BILL: [English] The coffee shop receipt is worse.
+
+(He turns the receipt around.)
+
+overall_soundscape:
+
+Natural diegetic ambience and clean production dialogue only.
+
+non_diegetic_music:
+
+None.
+
+===================
+
+Important: This is not a reliable fix. Some shots work immediately, some require several attempts, and others remain unstable. Switching precision, rearranging reference slots and simplifying prompts have NOT consistently eliminated the problem.
+
+My suspicion is that the requested duration affects the model's internal temporal alignment and speaker-conditioning behavior. The fact that such a small timing change can dramatically alter speaker identity suggests the problem goes deeper than prompt formatting.
+
+It would be NICE if MiniMax could investigate whether speaker identity binding or audio conditioning is sensitive to temporal token allocation, dialogue-turn boundaries, or duration-dependent sampling behavior.
+
+Hello Minimax, "Bueller, Bueller..."
+
+I'd be interested to hear whether others can reproduce the duration sensitivity with fixed seeds and otherwise identical inputs.
+
+This is particularly important for narrative filmmaking, where multi-character conversations need to work reliably across dozens or hundreds of shots.
+

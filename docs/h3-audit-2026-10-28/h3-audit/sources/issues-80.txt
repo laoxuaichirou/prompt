@@ -1,0 +1,10 @@
+
+
+R2V fail to translate Mandarin to Cantonese #80
+
+Open
+
+Open
+
+I tried to upload a reference video seaking madarin and let the model generate a video that speaks cantonese, and it fails to do so. The outcome was still Mandarin
+

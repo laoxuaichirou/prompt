@@ -1,0 +1,78 @@
+
+
+minimax h3微调线稿风格的视频生成用于动画制作，有什么建议吗？ #73
+
+Open
+
+Open
+
+minimax h3 目前应用在线稿上生成时存在线稿消失虚化的情况，即使经过大模型的提示词增强之后也是会存在这种情况，想通过微调的lora或者dit结构来解决这个问题，有什么建议吗？或者已经有社区生态在做特定风格的微调了吗？
+
+欢迎大家评论！
+
+这种干净的线稿风格，线条干净，没有阴影线，没有填充。
+
+ [https://private-user-images.githubusercontent.com/250907484/644730355-3bfb8232-cab7-4e52-a80b-f28f8acbb4c3.png] 
+
+Create a realistic cinematic Arabic educational short film, approximately 10 seconds long.
+
+SCENE 1 – “The School Counselor”
+
+Location: A modern Palestinian secondary school in the morning. The school is calm and welcoming. Students are walking through the corridor toward their classrooms. Natural morning sunlight enters through the windows.
+
+Main character: A professional male Palestinian school counselor in his 40s, modest formal clothes, calm face, friendly expression, carrying a notebook. He is walking through the school corridor and greeting students warmly.
+
+Action:
+
+The counselor walks slowly through the corridor. He notices a male student around 16 years old sitting alone on a bench, looking sad and worried. The counselor stops, smiles gently, sits beside him, and speaks to him in a reassuring and compassionate way.
+
+Dialogue in natural Palestinian Arabic:
+
+المرشد: "صباح الخير يا بني، شايفك اليوم مش على عادتك... خير؟"
+
+الطالب: "ما بعرف يا أستاذ... حاسس إني مش قادر أركز ومضايق."
+
+The counselor listens carefully without interrupting, showing empathy and understanding.
+
+Camera:
+
+Start with a wide cinematic shot of the school corridor, then slowly move toward the counselor and student. Finish with a medium close-up showing the counselor listening attentively to the student.
+
+Visual style:
+
+Highly realistic cinematic film, authentic Palestinian school environment, natural facial expressions, realistic human movement, soft morning lighting, professional cinematography, shallow depth of field, 4K quality, emotionally warm and inspiring atmosphere.
+
+Audio:
+
+Natural school ambience in the background, quiet footsteps and distant student voices. Clear Arabic dialogue with accurate lip synchronization. No background music during the dialogue.
+
+Important:
+
+Keep the same counselor and student appearance throughout the scene. No subtitles, no text on screen, no logos, no distorted faces, no extra fingers, no unnatural body movements.
+
+with or without prompt skill rewrite
+
+  
+
+    
+
+    860513b3-e235-4833-be3f-266b6cb20202.mp4
+
+  
+
+  
+
+  
+
+  
+
+    
+
+    9792ba37-ec08-4128-ae2e-8e18d455f806.mp4
+
+  
+
+  
+
+  
+

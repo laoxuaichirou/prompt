@@ -1,0 +1,12 @@
+
+
+The sparse-attention version release plan #89
+
+Open
+
+Open
+
+Hi, great work!
+
+anyway, is there a plan to release the sparse-attention version? full-attention is much slow for me.
+

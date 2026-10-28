@@ -1,0 +1,12 @@
+
+
+Adding minimax support to brain #79
+
+Open
+
+Open
+
+I have created a pull request where work is progressing on adding minimax support to brain.  [https://github.com/swedishembedded/brain/pull/1] swedishembedded/brain#1
+
+Feel free to comment and explore.
+

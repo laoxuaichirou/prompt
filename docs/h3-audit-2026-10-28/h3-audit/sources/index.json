@@ -1,0 +1,437 @@
+[
+  {
+    "type": "issues",
+    "number": 3,
+    "title": "没有requirement.txt ？？"
+  },
+  {
+    "type": "issues",
+    "number": 4,
+    "title": "Fail to inference with diffusers"
+  },
+  {
+    "type": "issues",
+    "number": 5,
+    "title": "H3 is currently the best opensource model"
+  },
+  {
+    "type": "issues",
+    "number": 9,
+    "title": "qq"
+  },
+  {
+    "type": "issues",
+    "number": 11,
+    "title": "Skill folder name doesn't match its documented display name (music-video-subtitle-generator)"
+  },
+  {
+    "type": "issues",
+    "number": 16,
+    "title": "Check out my full swift port"
+  },
+  {
+    "type": "issues",
+    "number": 17,
+    "title": "Ref2VA: multi-subject voice identity can bleed between reference-image subjects"
+  },
+  {
+    "type": "issues",
+    "number": 18,
+    "title": "Code hangs during inference deployment with vLLM"
+  },
+  {
+    "type": "issues",
+    "number": 20,
+    "title": "Request for MiniMax-H3 weight download permission"
+  },
+  {
+    "type": "issues",
+    "number": 23,
+    "title": "動画"
+  },
+  {
+    "type": "issues",
+    "number": 24,
+    "title": "2.11.3 KHTUVwVIVXYZe"
+  },
+  {
+    "type": "issues",
+    "number": 40,
+    "title": "Rreplace the image URL with the path to a locally stored image"
+  },
+  {
+    "type": "issues",
+    "number": 42,
+    "title": "MiniMax-H3 inference hangs for a long time with 0% GPU utilization in local SGLang deployment"
+  },
+  {
+    "type": "issues",
+    "number": 46,
+    "title": "Question: Are MiniMax H3 VAE tile settings configurable?"
+  },
+  {
+    "type": "issues",
+    "number": 47,
+    "title": "."
+  },
+  {
+    "type": "issues",
+    "number": 48,
+    "title": "checkpoint inconsistent between original and diffusers"
+  },
+  {
+    "type": "issues",
+    "number": 50,
+    "title": "视频开头有少许爆破音"
+  },
+  {
+    "type": "issues",
+    "number": 51,
+    "title": "音频开头存在边界幽灵的情况，希望官方关注一下"
+  },
+  {
+    "type": "issues",
+    "number": 56,
+    "title": "Apple Silicon MPS: official FL2VA ComfyUI INT8 path fails on aten::_int_mm"
+  },
+  {
+    "type": "issues",
+    "number": 57,
+    "title": "【招聘】 MiniMax 视频模型全球开源生态"
+  },
+  {
+    "type": "issues",
+    "number": 58,
+    "title": "家里2台4070笔记本 1台3080电脑 怎么可以做个小集群？？？？"
+  },
+  {
+    "type": "issues",
+    "number": 59,
+    "title": "Apoloaguilarhernandez@gmail.com\nCAPITAL CONTABLE:CC\nAUTORIDA APOLO AGUILAR HERNANDEZ - SATM-"
+  },
+  {
+    "type": "issues",
+    "number": 60,
+    "title": "如果是用I2V二採或放大latent都會失敗"
+  },
+  {
+    "type": "issues",
+    "number": 61,
+    "title": "Prompt length？"
+  },
+  {
+    "type": "issues",
+    "number": 62,
+    "title": "Use The SageAttention BUG?"
+  },
+  {
+    "type": "issues",
+    "number": 63,
+    "title": "b"
+  },
+  {
+    "type": "issues",
+    "number": 65,
+    "title": "Question: Can modality row selection be moved before the output projections?"
+  },
+  {
+    "type": "issues",
+    "number": 68,
+    "title": "BUG: All spoken lines sung"
+  },
+  {
+    "type": "issues",
+    "number": 69,
+    "title": "动作迁移效果不好，音频对不齐，动作好像也不是很一致"
+  },
+  {
+    "type": "issues",
+    "number": 70,
+    "title": "av.error.ArgumentError: Invalid argument: 'avcodec_send_frame()' returned 22"
+  },
+  {
+    "type": "issues",
+    "number": 72,
+    "title": "Minimax H3 vs Seedance 2.0, minimax h3 as good as seedance2.0! Unbelievable!!! WOW!"
+  },
+  {
+    "type": "issues",
+    "number": 73,
+    "title": "minimax h3微调线稿风格的视频生成用于动画制作，有什么建议吗？"
+  },
+  {
+    "type": "issues",
+    "number": 74,
+    "title": "高动态太糊了2.0 50步都救不了"
+  },
+  {
+    "type": "issues",
+    "number": 75,
+    "title": "考虑开源没蒸馏CFG的权重版本吗"
+  },
+  {
+    "type": "issues",
+    "number": 76,
+    "title": "Salam"
+  },
+  {
+    "type": "issues",
+    "number": 78,
+    "title": "a YouTube video about Jordan"
+  },
+  {
+    "type": "issues",
+    "number": 79,
+    "title": "Adding minimax support to brain"
+  },
+  {
+    "type": "issues",
+    "number": 80,
+    "title": "R2V fail to translate Mandarin to Cantonese"
+  },
+  {
+    "type": "issues",
+    "number": 81,
+    "title": "台词说什么画面就会变出什么，太扯了"
+  },
+  {
+    "type": "issues",
+    "number": 82,
+    "title": "H3 ignores/refuses weather (snowfall) and breath-vapor instructions; coat-transfer causes persistent garment penetration; object duplication under high-angle framing"
+  },
+  {
+    "type": "issues",
+    "number": 84,
+    "title": "MiniMax H3 Ref2VA: Significant Reference-Fidelity Regression in Local ComfyUI"
+  },
+  {
+    "type": "issues",
+    "number": 85,
+    "title": "MiniMax H3 full INT8/BF16 are unstable in ComfyUI; pruned is fine"
+  },
+  {
+    "type": "issues",
+    "number": 86,
+    "title": "EVERY SINGLE GENERATION PUTS ON WEDDING RING!!! MAKE IT STOP!!!"
+  },
+  {
+    "type": "issues",
+    "number": 87,
+    "title": "،her"
+  },
+  {
+    "type": "issues",
+    "number": 88,
+    "title": "Subject: Architectural Blueprint: Five-Stage Modular AI Video Pipeline with Stage-Isolated VRAM Caching, Environment-Aware Physics, and Spatial Audio Rendering"
+  },
+  {
+    "type": "issues",
+    "number": 89,
+    "title": "The sparse-attention version release plan"
+  },
+  {
+    "type": "issues",
+    "number": 92,
+    "title": "loss of init.py"
+  },
+  {
+    "type": "issues",
+    "number": 94,
+    "title": "حين تصبح المهارة المرفوضة هي سلاح الدمار الشامل"
+  },
+  {
+    "type": "issues",
+    "number": 95,
+    "title": "MiniMax H3: extra/repeated Mandarin dialogue and clipped speech onset when using standalone reference audio"
+  },
+  {
+    "type": "issues",
+    "number": 96,
+    "title": "Render-level probe: assistant-marker injection survives chat-template rendering (downstream unverified)"
+  },
+  {
+    "type": "pull",
+    "number": 1,
+    "title": "Polish skills README with status and contribution notes"
+  },
+  {
+    "type": "pull",
+    "number": 2,
+    "title": "docs: encourage skill contributions with API credit rewards"
+  },
+  {
+    "type": "pull",
+    "number": 7,
+    "title": "Add h3-prompt-writing skill installation"
+  },
+  {
+    "type": "pull",
+    "number": 8,
+    "title": "Install h3-prompt-writing skill"
+  },
+  {
+    "type": "pull",
+    "number": 10,
+    "title": "Add requirements.txt and fix init_weights for weight_norm Conv1d"
+  },
+  {
+    "type": "pull",
+    "number": 12,
+    "title": "Fix folder/link mismatch for music-video-subtitle-generator skill"
+  },
+  {
+    "type": "pull",
+    "number": 13,
+    "title": "docs(skills): clarify h3-prompt-writing is agent-portable, not OpenAI-only"
+  },
+  {
+    "type": "pull",
+    "number": 14,
+    "title": "Fix init_weights in dac_utils.py for weight_norm Conv1d layers"
+  },
+  {
+    "type": "pull",
+    "number": 15,
+    "title": "Create SECURITY.md for security policy"
+  },
+  {
+    "type": "pull",
+    "number": 19,
+    "title": "Fix login bug"
+  },
+  {
+    "type": "pull",
+    "number": 22,
+    "title": "docs(skills): add compatibility fields to Hub-native skills, sync i18n READMEs"
+  },
+  {
+    "type": "pull",
+    "number": 25,
+    "title": "Readme changes"
+  },
+  {
+    "type": "pull",
+    "number": 26,
+    "title": "Update full-2k-i2va-h3-base.sh"
+  },
+  {
+    "type": "pull",
+    "number": 27,
+    "title": "docs: remove unnecessary backslash escaping in README"
+  },
+  {
+    "type": "pull",
+    "number": 28,
+    "title": "Create Marcus WiseLayne"
+  },
+  {
+    "type": "pull",
+    "number": 29,
+    "title": "docs: fix logical issue in README.md"
+  },
+  {
+    "type": "pull",
+    "number": 30,
+    "title": "docs: fix logical issue in README.md"
+  },
+  {
+    "type": "pull",
+    "number": 31,
+    "title": "docs: fix logical issue in skills/minimalist-product-ad-generator/SKILL.md"
+  },
+  {
+    "type": "pull",
+    "number": 32,
+    "title": "docs: fix grammar issue in skills/3d-animation-short-generator/SKILL.md"
+  },
+  {
+    "type": "pull",
+    "number": 33,
+    "title": "docs: fix grammar issue in skills/co-op-game-intro-generator/SKILL.md"
+  },
+  {
+    "type": "pull",
+    "number": 34,
+    "title": "docs: fix grammar issue in README.md"
+  },
+  {
+    "type": "pull",
+    "number": 35,
+    "title": "docs: fix logical issue in README.md"
+  },
+  {
+    "type": "pull",
+    "number": 36,
+    "title": "docs: fix grammar issue in h3-video-prompt-template.md"
+  },
+  {
+    "type": "pull",
+    "number": 37,
+    "title": "Fix MiniMax-H3 dependency versions and Diffusers links"
+  },
+  {
+    "type": "pull",
+    "number": 38,
+    "title": "Poll asynchronous jobs before downloading example outputs"
+  },
+  {
+    "type": "pull",
+    "number": 39,
+    "title": "Create SECURITY.MD for security policy and reporting"
+  },
+  {
+    "type": "pull",
+    "number": 43,
+    "title": "Add initial devcontainer configuration"
+  },
+  {
+    "type": "pull",
+    "number": 44,
+    "title": "docs(h3-prompt-writing): add tips for better results"
+  },
+  {
+    "type": "pull",
+    "number": 45,
+    "title": "docs: clarify local image support in conditions.uri"
+  },
+  {
+    "type": "pull",
+    "number": 49,
+    "title": "Merge pull request #1 from MiniMax-AI/mainname: Python application\n\non: [push, pull_request]\n\njobs: \n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Set up Python\n        uses: actions/setup-python@v5\n        with:\n          python-version: \"3.11\"\n      - name: Install deps\n        run: |\n          python -m pip install --upgrade pip\n          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n          pip install flake8 pytest || true\n      - name: Lint\n        run: |\n          flake8. --count --select=E9,F63,F7,F82 --show-source --statistics || true\n      - name: Test\n        run: |\n          pytest -q || echo \"no tests - ok\""
+  },
+  {
+    "type": "pull",
+    "number": 66,
+    "title": "docs: fix stray escaped pipe in README output resolution row"
+  },
+  {
+    "type": "pull",
+    "number": 67,
+    "title": "Add skill: h3-character-eval — calibrated character-retention measurement"
+  },
+  {
+    "type": "pull",
+    "number": 71,
+    "title": "feat(video-vae): expose temporal chunk callback"
+  },
+  {
+    "type": "pull",
+    "number": 77,
+    "title": "docs: note 32GB Mac memory limitation"
+  },
+  {
+    "type": "pull",
+    "number": 83,
+    "title": "Add files via upload"
+  },
+  {
+    "type": "pull",
+    "number": 90,
+    "title": "DRAFT - Level Of Token - 2.6x dit speed up"
+  },
+  {
+    "type": "pull",
+    "number": 91,
+    "title": "DRAFT - Level Of Token - 2.6x DiT speed up (LoT only)"
+  }
+]

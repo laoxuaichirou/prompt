@@ -1,0 +1,340 @@
+
+
+Poll asynchronous jobs before downloading example outputs - #38
+
+Open
+
+Open
+
+ [/Ray0907] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/Ray0907] Ray0907
+
+      
+
+      
+
+      commented
+
+         [#issue-5117441714] Aug 11, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+add shared polling helpers for SGLang and MiniMax Open Platform jobs
+
+wait for terminal success before reading result fields or downloading output
+
+stop immediately on failed, cancelled, or unexpected states
+
+add configurable polling timeout and transient HTTP retries
+
+apply the flow to all 18 asynchronous README scripts
+
+Why
+
+The video endpoints return an asynchronous job ID. The examples previously
+
+queried each job only once and then attempted to read or download its output,
+
+which fails whenever the job is still queued or processing.
+
+The defaults poll every 10 seconds for up to two hours. Users can override
+
+POLL_INTERVAL_SECONDS, POLL_TIMEOUT_SECONDS, and the HTTP_* retry values
+
+for their deployment.
+
+Validation
+
+bash -n passed for all 19 scripts in scripts/readme
+
+mock responses verified queued-to-completed, failed, unexpected, and timeout paths
+
+verified all 18 async examples source the polling helper
+
+git diff --check
+
+The SGLang status handling follows its documented asynchronous video flow:
+
+ [https://docs.sglang.io/cookbook/diffusion/MiniMax/MiniMax-H3#4-generate-video-and-audio] https://docs.sglang.io/cookbook/diffusion/MiniMax/MiniMax-H3#4-generate-video-and-audio
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/38]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/Ray0907] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/38/commits/4cf34d283d170d56aee870e5a4dcbcb64f69dc8d] Add robust async job polling to examples
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/38/commits/4cf34d283d170d56aee870e5a4dcbcb64f69dc8d] 4cf34d2
+
+      
+
+    
+
+  
+
+  
+
+    
+
+  
+
+        
+
+               [/Ray0907] 
+
+        
+
+      
+
+        
+
+               [/Ray0907] Ray0907
+
+              marked this pull request as ready for review
+
+           [#event-29263894243] August 11, 2026 06:43          
+
+      
+
+    
+

@@ -1,0 +1,61 @@
+
+
+av.error.ArgumentError: Invalid argument: 'avcodec_send_frame()' returned 22 #70
+
+Open
+
+Open
+
+can't avoid it while running H3 comfy(0.34.0)on 4090,linux server
+
+I also encountered this error, RTX 3090 with 48 GB RAM, running int8 ref2v model with ref2v turbo 4step LoRA...
+
+Hardware
+
+GPU: RTX 3090, 24 GB VRAM
+
+System RAM: 47 GB
+
+OS: Windows 11
+
+Workflow
+
+MiniMax H3 Ref2Vid / Ref2VA
+
+8 reference images + 1 reference video
+
+~0.9 MP output
+
+4 sampling steps
+
+Dynamic VRAM loading enabled
+
+use-sage-attention enabled
+
+The sampling itself completed successfully, but it took a very long time due to memory pressure/offloading:
+
+[INFO] Model MiniMaxH3 prepared for dynamic VRAM loading. 19995MB Staged. 208 patches attached. Force pre-loaded 210 weights: 1175 KB.
+100%|██████████| 4/4 [7:00:35<00:00, 6308.79s/it]
+[INFO] Comfy model compiler graph breaks: 1, rogues: 0
+[INFO] Requested to load MiniMaxH3AudioVAE
+[INFO] Model MiniMaxH3AudioVAE prepared for dynamic VRAM loading. 576MB Staged.
+[INFO] Model MiniMaxH3VideoVAE prepared for dynamic VRAM loading. 2677MB Staged.
+
+It then fails only at final video saving/audio muxing:
+
+av.error.ArgumentError: Invalid argument: 'avcodec_send_frame()' returned 22
+
+The traceback points to:
+
+output.mux(audio_stream.encode(frame))
+
+inside ComfyUI's video.save_to() path.
+
+This suggests that the video sampling/video VAE decode completed, but the decoded audio tensor may contain invalid values or an unsupported format for AAC/FFmpeg. It would be helpful if the save path either:
+
+logged the underlying FFmpeg/AAC error in full (for example NaN/Inf audio samples, sample rate, channel count, or sample format), and/or
+
+fell back to saving a video-only file when audio encoding fails, instead of losing the completed generation.
+
+I tried to save the mute video and the audio separatly ,and found that all the audio are actually nothing ,but i dont know the reason ,I changed nothing of the work flow.I dought that the model has something wrong with audio generation.
+

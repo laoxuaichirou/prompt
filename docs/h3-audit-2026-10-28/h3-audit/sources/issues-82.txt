@@ -1,0 +1,62 @@
+
+
+H3 ignores/refuses weather (snowfall) and breath-vapor instructions; coat-transfer causes persistent garment penetration; object duplication under high-angle framing #82
+
+Open
+
+Open
+
+H3 — Instruction refusals and geometry failures (evidence from 15s/2K/16:9 text+image-to-video jobs)
+
+All jobs below used the full prompt delivered to the model (single-line, verified reaching the model — see note on prompt truncation below). Model: H3.1, accessed via the Higgsfield platform (text+image-to-video, 15s / 2K / 16:9 jobs). Session 2026-09-22 → 2026-09-23.
+
+Prompt family: elevated 3/4 high-angle winter forest scene, two hunters, exactly two spears, one satchel, dynamic coat-transfer action ("rescuer drapes coat onto hunter"). A concrete first-frame anchor image was always supplied as Image 1 with a full-preservation clause; identity-only character-sheet crops were passed as additional references.
+
+All observations are tied to specific job IDs; thumbnails are available on CDN and can be attached on request.
+
+1. Snowfall instruction ignored/refused
+
+Prompts requested "dense heavy snowfall continues through the whole clip", with visible snowfall texture inherited from the concrete first-frame anchor. Across the v9.2 → v13 launches H3 produced a static winter sky with no visible falling-snow motion — even when the opening frame itself contained snowfall texture.
+
+Evidence job: 8a9b0dc8-9a5d-4a10-bbbf-482ef7a525ae
+
+2. Breath-vapor instruction ignored
+
+Prompts requested "visible breath vapor from both men" / "natural breath vapor remains visible". No vapor appeared in any generated video across the entire prompt family.
+
+Same evidence jobs as the family above.
+
+3. Garment penetration under coat-transfer action (persistent across 3 prompt formulations)
+
+With the dynamic "rescuer drapes coat onto hunter" action, the coat fabric intersected the hunter's arm/forearm and the arm stayed exposed. This survived three different prompt formulations:
+
+Abstract/topological constraints ("no coat panel, edge, or fold crosses through the right arm…")
+
+Direct visible-state language ("The coat rests on the forearm naturally; the arm does not pass through the fabric")
+
+Simplified natural-motion language (flattened v13)
+
+Jobs (2026-09-23):
+
+0e1e5a1d… (v9.2): coat–hand intersection + a duplicated third spear
+
+34065870… (v12) and 8d44aef3… (v13): these two were also affected by an unrelated CLI-side silent multi-line prompt truncation (host platform's CLI cut prompts at the first blank line), filed separately at  [https://github.com/higgsfield-ai/cli/issues/94] CLI silently truncates multi-line --prompt at the first blank line (job completes with a fraction of the prompt) higgsfield-ai/cli#94 — so the coat action never reached the model in those runs
+
+8a9b0dc8… (v13 flattened, single line — full prompt verifiably reached the model): the coat-transfer motion executed, and the garment penetration still occurred
+
+This makes 8a9b0dc8… the clean evidence case: full prompt delivered, penetration still present.
+
+4. Object duplication under high-angle framing
+
+A third spear appeared near the frame edge in v9.2 despite an explicit count lock ("exactly two spears exist") on the elevated 3/4 high-angle anchor. The same count locks generally hold on other framings, so this appears specific to high-angle/elevated composition.
+
+What worked (for contrast)
+
+Identity locking via character-sheet crops (boots, satchel) holds reliably when references are passed correctly.
+
+Count locks ("only two people exist; exactly two spears") generally hold outside high-angle framing.
+
+Single-line flattened prompts reach the model in full (the A/B proof in §3).
+
+Happy to attach thumbnails and the exact prompt texts for each job ID listed.
+

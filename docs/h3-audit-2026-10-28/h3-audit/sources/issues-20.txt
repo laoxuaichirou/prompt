@@ -1,0 +1,46 @@
+
+
+Request for MiniMax-H3 weight download permission #20
+
+Open
+
+Open
+
+Dear MiniMax Technical Team,
+
+My Hugging Face account ID: chenying7598
+
+I am an individual AI enthusiast and self-learner based in China. I am writing to formally apply for access permission to download the full weights of MiniMax-H3 text-to-video multimodal model.
+
+My usage scope is strictly limited to personal non-commercial purposes only:
+
+Study the technical framework and operational principle of large-scale multimodal video generation models;
+
+Create gentle, daily-themed children short videos exclusively for personal viewing, no commercial profit, no public sharing or dissemination.
+
+I solemnly promise to abide by all clauses of the MiniMax-H3 open-source community license:
+
+I will never resell, redistribute, transfer or leak the model weights to any third party, and will not utilize the model to generate violent, pornographic, illegal, harmful or inappropriate content.
+
+Could you kindly review my application? I appreciate your time and consideration.
+
+Best regards
+
+chenying7598
+
+Hello  [https://github.com/shenying7598-design] @shenying7598-design ,
+
+Thank you for your interest in the MiniMax-H3 model and for taking the time to open this issue.
+
+After checking the model page on Hugging Face ( [https://huggingface.co/MiniMaxAI/MiniMax-H3] https://huggingface.co/MiniMaxAI/MiniMax-H3), it appears that the model weights are publicly accessible without requiring a separate application or manual approval for most users.
+
+You can download the weights directly using git lfs or the huggingface_hub Python library. There is no login or access request button visible on the page, and the model is available under the "MiniMax H3 Community License" which you can review on the Hugging Face repository.
+
+One important note: If you are located in the United States, the European Union, the United Kingdom, or South Korea, these territories are excluded under the default license terms. For users in these regions, an official application form is required:  [https://platform.minimax.io/h3-license] https://platform.minimax.io/h3-license
+
+Since this is not a code-related issue or bug report, I'd suggest closing this issue and proceeding with the download from Hugging Face instead (or submitting the license request form if you are in an excluded territory). If you encounter any specific technical problems during download or usage, feel free to open a new issue with details.
+
+Hope this helps!
+
+— A passerby
+

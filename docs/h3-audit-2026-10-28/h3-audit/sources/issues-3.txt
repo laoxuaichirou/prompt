@@ -1,0 +1,24 @@
+
+
+没有requirement.txt ？？ #3
+
+Closed
+
+Closed
+
+No description provided.
+
+ [/RyanLee-Dev] RyanLee-Dev
+added a commit that references this issue  [https://github.com/MiniMax-AI/MiniMax-H3/issues/3#event-29178081904] on Aug 9, 2026
+
+ [https://github.com/MiniMax-AI/MiniMax-H3/commit/8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55] 
+
+Add requirements.txt and fix init_weights for weight_norm Conv1d
+
+...
+
+ [https://github.com/MiniMax-AI/MiniMax-H3/commit/8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55] 8e1fa26
+
+ [/RyanLee-Dev] RyanLee-Dev
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completedin  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10 [https://github.com/MiniMax-AI/MiniMax-H3/issues/3#event-29178081923] on Aug 9, 2026
+

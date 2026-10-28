@@ -1,0 +1,299 @@
+
+
+docs: fix stray escaped pipe in README output resolution row - #66
+
+Open
+
+Open
+
+ [/Vividshow] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/Vividshow] Vividshow
+
+      
+
+      
+
+      commented
+
+         [#issue-5235633577] Aug 24, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+The "Output resolution" row in the input/output specification table (README.md) has a leftover \| artifact: "2K | generation can be achieved with H3-Regenerate-2K"
+
+The other language READMEs (ZH/KO/JA) read cleanly, e.g. ZH: "可通过 H3-Regenerate-2K 实现 2K 生成" ("2K generation can be achieved with H3-Regenerate-2K"), with no equivalent stray character
+
+This fixes the English README to match
+
+Test plan
+
+ Visual diff review — single-line change, no other content affected
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/66]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/Vividshow] 
+
+        
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/66/commits/36eb2dc70884b4b9c5529d096781ea4389684b9d] docs: fix stray escaped pipe in output resolution table row
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/66/commits/36eb2dc70884b4b9c5529d096781ea4389684b9d] 36eb2dc
+
+      
+
+    
+
+  
+
+    
+
+      
+The 'Output resolution' cell in the input/output specification table
+had a leftover '\|' artifact that doesn't match the other language
+READMEs (ZH/KO/JA), which read cleanly as "2K generation can be
+achieved with H3-Regenerate-2K".
+
+    
+

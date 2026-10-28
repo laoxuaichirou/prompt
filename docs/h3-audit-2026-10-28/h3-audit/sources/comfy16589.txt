@@ -1,0 +1,823 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MiniMax H3 Ref2VA: major reference-fidelity regression in local ComfyUI despite same workflow/model files #16589
+
+
+
+
+
+
+
+
+
+
+
+
+Open
+
+
+
+
+Open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Custom Node Testing
+
+
+ I have tried disabling custom nodes and the issue persists
+
+
+
+Expected Behavior
+
+MiniMax H3 Ref2VA should preserve the major visual identity and spatial structure of the reference image while animating it.
+
+
+In my case the reference is a luxury perfume product shot containing:
+
+
+
+a dark green/black perfume bottle
+
+
+gold bottle details
+
+
+AMOUAGE EPIC branding
+
+
+green velvet fabric with clearly visible folds/wrinkles
+
+
+a specific gold frame around the box
+
+
+specific box geometry
+
+
+specific marble/dark background
+
+
+a specific camera composition and object proportions
+
+
+
+The goal is animation of the reference, not reconstruction/redesign of the product.
+
+
+Actual Behavior
+
+My current local ComfyUI installation produces a realistic-looking result, but reference fidelity is substantially worse than it was previously on the same computer.
+
+
+The current result changes/reinterprets major reference structures:
+
+
+
+velvet wrinkles/folds are largely removed
+
+
+bottle shape/proportions change
+
+
+gold frame changes
+
+
+box geometry changes
+
+
+background changes
+
+
+important reference details are replaced by newly generated details
+
+
+overall composition becomes an interpretation of the reference rather than a faithful animation
+
+
+
+This is a reference-preservation regression rather than a general image-quality problem.
+
+
+Important Regression Observation
+
+The same type of MiniMax H3 Ref2VA workflow previously produced a highly reference-faithful result in my older local ComfyUI environment.
+
+
+The current local environment uses the same model files and I have not intentionally changed the workflow or model files.
+
+
+Model files:
+
+
+
+minimax_h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors
+
+
+minimax_h3_video_vae_int8_convrot.safetensors
+
+
+minimax_h3_audio_vae_fp32.safetensors
+
+
+qwen3vl_32b_minimax_h3_nvfp4_awq_2.safetensors
+
+
+
+RunningHub can also produce a highly reference-faithful result with the same general H3 model/workflow combination, but I am NOT reporting RunningHub as the problem. The important comparison is OLD LOCAL (good) vs CURRENT LOCAL (bad).
+
+
+Sampling Observation
+
+I used MiniMax H3 Preview Override / TAEH3 to inspect the latent during sampling.
+
+
+The current generation starts diverging from the reference during the sampling trajectory itself: the bottle, box, fabric structure and other major visual elements begin moving toward a different interpretation.
+
+
+Therefore I suspect the issue is occurring before final VAE decoding, potentially in the reference-conditioning or sampling path.
+
+
+What I would like investigated
+
+Could a ComfyUI core change, MiniMax H3 implementation change, custom-node change, model patch/wrapper, or runtime change alter the effective H3 Ref2VA execution path while leaving the workflow JSON and model files unchanged?
+
+
+In particular, I would like to investigate:
+
+
+
+MiniMax H3 Ref2VA reference conditioning
+
+
+reference latent injection
+
+
+Qwen3-VL image/reference encoding
+
+
+ref_image_size preprocessing
+
+
+ModelSamplingAV
+
+
+video/audio sigma shift
+
+
+sigma schedule / actual sigma points
+
+
+sampler/scheduler behavior
+
+
+OUTER_SAMPLE wrappers
+
+
+model patches/wrappers
+
+
+attention backend / optimized attention
+
+
+PyTorch/CUDA runtime differences
+
+
+INT8 execution path
+
+
+any recent MiniMax H3 changes that could alter sampling behavior
+
+
+
+Why I suspect a regression
+
+There have been multiple recent MiniMax H3 changes in ComfyUI affecting the model and sampling implementation, including changes around:
+
+
+
+H3 sampling/model execution
+
+
+sigma/timestep handling
+
+
+H3 model patches
+
+
+H3 reference/condition video paths
+
+
+attention patch hooks
+
+
+PDD/sampling support
+
+
+
+I am specifically concerned that one of these changes may have altered the effective Ref2VA trajectory or conditioning behavior.
+
+
+I am not claiming that a particular change is the cause yet. I would like help identifying the exact execution-path difference.
+
+
+Reproduction / diagnostic information
+
+I can provide:
+
+
+
+current ComfyUI commit/version
+
+
+old ComfyUI commit/version, if recoverable
+
+
+custom-node versions/commits
+
+
+complete workflow JSON
+
+
+console logs
+
+
+PyTorch/CUDA versions
+
+
+sampler/scheduler
+
+
+sigma shift values
+
+
+seed
+
+
+screenshots of intermediate TAEH3 previews
+
+
+OLD LOCAL output vs CURRENT LOCAL output
+
+
+model file hashes
+
+
+
+The key diagnostic goal is to determine whether OLD LOCAL and CURRENT LOCAL are actually executing the same H3 Ref2VA conditioning and sampling path.
+
+
+Additional note
+
+I am aware that diffusion sampling is stochastic, so I am not reporting ordinary seed-to-seed variation. The observed difference is a much larger structural change in reference preservation, and it is visible during intermediate sampling.
+
+
+I would appreciate guidance on which H3/ComfyUI components should be compared between the old and current local environments to identify the regression.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+noticed this as well. I tend to use hybrid and it was working perfectly. Now the ref adherence is not accurate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+looks like it might be the fault  of --fast fp16_accumulation startup flag.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hey! I’m having the same H3 ref-adherence issue. You mentioned --fast fp16_accumulation might be the cause. What did you test exactly? Did turning it off fix the problem for you? And did any ComfyUI dev/maintainer reply about it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hey! I’m having the same H3 ref-adherence issue. You mentioned --fast fp16_accumulation might be the cause. What did you test exactly? Did turning it off fix the problem for you? And did any ComfyUI dev/maintainer reply about it?
+
+
+
+It got alot better then i removed th3 flag from startup and made sure no nodes were adding any fp16 accumulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [https://github.com/PlagueKind] @PlagueKind Could you please tell me exactly what you removed and from where to disable fp16_accumulation? I normally start ComfyUI with python main.py, so I need the exact file/path or startup command change you made. If possible, please paste the before/after command and tell me how you checked that no Custom Node was enabling torch.backends.cuda.matmul.allow_fp16_accumulation. Thanks!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi, just following up on this issue. The MiniMax H3 Ref2VA reference-fidelity regression is still reproducible in my local setup, and I’d appreciate any guidance from the maintainers on whether this is a known regression or which diagnostics would be most useful.
+
+
+I can provide the old/current ComfyUI commits, custom-node commits, complete workflow JSON, console logs, PyTorch/CUDA versions, sampler/scheduler and sigma settings, intermediate TAEH3 previews, and model hashes. In particular, I’d be happy to test whether the H3 reference-conditioning/sampling path changed between versions.
+
+
+Could someone please take a look when possible? Thanks!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [https://github.com/n8704918-prog] @n8704918-prog
+
+
+
+I can provide the old/current ComfyUI commits,
+
+
+
+I'd suggest that the best way to get people looking at this is to clearly demonstrate the issue. That would mean providing an example of a generation that clearly regresses in reference fidelity from one ComfyUI version to another using the same workflow and same seed.
+
+
+Assuming that you still have outputs that reflect what you believe was a better result in the recent past you should be able to re-run the generation on a current install and verify that there is indeed a regression. Then you should be able to use the date of the output to track down roughly what commit/version you were on. From there you should be able to generate a simple demo workflow using core ComfyUI nodes and show that the regression isn't in some other node that you're using.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is the most recent version of ComfyUI that is working correctly for you? Which version started the regression for you?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I also had an issue where --fast fp16_accumulation caused infinities:  [https://github.com/Comfy-Org/ComfyUI/issues/17014] #17014
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

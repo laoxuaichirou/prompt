@@ -1,0 +1,25 @@
+
+
+Fail to inference with diffusers #4
+
+Open
+
+Open
+
+Hi, congrat to your awsome work!  I try to load the pre-downloaded ckpt files with diffusers, following the  inference frameworks in  [https://huggingface.co/docs/diffusers/main/en/api/pipelines/minimax_h3] diffusers doc
+
+hoowever, I got WARNING: Did not find branch or tag 'refs/pull/14355/head', assuming revision or ref. when runing the installation cmd: pip install git+https://github.com/huggingface/diffusers.git@refs/pull/14355/head . Is it broken, or diffusers lib is still on the road?   [https://github.com/RyanLee-Dev] @RyanLee-Dev
+
+Hi  [https://github.com/fangchuan] @fangchuan. That PR, #14355, has been merged, so could you try to install diffusers from the source  [https://huggingface.co/docs/diffusers/main/en/installation?install=source] as usual?
+
+ [/RyanLee-Dev] RyanLee-Dev
+added a commit that references this issue  [https://github.com/MiniMax-AI/MiniMax-H3/issues/4#event-29178081924] on Aug 9, 2026
+
+ [https://github.com/MiniMax-AI/MiniMax-H3/commit/8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55] 
+
+Add requirements.txt and fix init_weights for weight_norm Conv1d
+
+...
+
+ [https://github.com/MiniMax-AI/MiniMax-H3/commit/8e1fa26b0d92ebb1bcdfe84cd9a608482d010f55] 8e1fa26
+

@@ -1,0 +1,16 @@
+
+
+. #47
+
+Closed as not planned
+
+Closed as not planned
+
+.
+
+ [/itsMahmud] itsMahmud
+changed the title [-]Scail2 like complex motion control lora[/-] [+].[/+]  [https://github.com/MiniMax-AI/MiniMax-H3/issues/47#event-29517338445] on Aug 16, 2026
+
+ [/itsMahmud] itsMahmud
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Anot-planned] not planned [https://github.com/MiniMax-AI/MiniMax-H3/issues/47#event-29517346301] on Aug 16, 2026
+

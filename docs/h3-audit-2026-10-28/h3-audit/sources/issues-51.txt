@@ -1,0 +1,27 @@
+
+
+音频开头存在边界幽灵的情况，希望官方关注一下 #51
+
+Closed
+
+Closed
+
+反馈一个问题：边界幽灵。每一代音频都以一个毫秒级的、从未被说过的词的片段开始，就像“某事”或“第一”的尾音在开头就能听到一样，仿佛音频片段是从句子中间开始的。我猜测降噪器在 t=0 时没有左侧上下文，并用想象中的声音衰减填充了边缘，而音频 VAE 的边缘填充可能加剧了这种情况。即使提示音要求干净地开始，也无法解决所有种子点的问题。我在后期处理中剪掉了每个片段开头 50 到 200 毫秒，交叉淡入淡出效果可以覆盖掉这些片段。
+
+  
+
+    
+
+    MiniMax_H3.mp4
+
+  
+
+  
+
+  
+
+这个问题我们已经发现，下个版本会修复
+
+ [/RyanLee-Dev] RyanLee-Dev
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completed [https://github.com/MiniMax-AI/MiniMax-H3/issues/51#event-29780567055] on Aug 21, 2026
+

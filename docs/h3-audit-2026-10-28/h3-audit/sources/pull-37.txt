@@ -1,0 +1,330 @@
+
+
+Fix MiniMax-H3 dependency versions and Diffusers links - #37
+
+Open
+
+Open
+
+ [/Ray0907] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/Ray0907] Ray0907
+
+      
+
+      
+
+      commented
+
+         [#issue-5117376651] Aug 11, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+pin Diffusers to the commit that merged MiniMax-H3 support
+
+raise the Transformers minimum to the first Qwen3-VL release
+
+declare PyYAML, einops, and torchvision as direct dependencies
+
+replace the removed minimax-h3 branch links in all localized READMEs
+
+Why
+
+Diffusers 0.39.0 predates MiniMax-H3 support, and the documented
+
+minimax-h3 branch no longer exists. Qwen3-VL is also unavailable in the
+
+currently declared Transformers minimum. A clean install can therefore miss
+
+required model classes and directly imported packages.
+
+Validation
+
+python -m pip install --dry-run --ignore-installed --no-deps -r requirements.txt
+
+verified the pinned Diffusers commit and documentation path through GitHub
+
+git diff --check
+
+Addresses  [https://github.com/MiniMax-AI/MiniMax-H3/issues/4] #4 and the dependency/documentation concerns from  [https://github.com/MiniMax-AI/MiniMax-H3/issues/6] #6.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/37]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/Ray0907] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/37/commits/96ae5d44485f21dbe135c771d4780ea36d350132] Fix dependency versions and Diffusers links
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/37/commits/96ae5d44485f21dbe135c771d4780ea36d350132] 96ae5d4
+
+      
+
+    
+
+  
+
+  
+
+    
+
+  
+
+        
+
+               [/Ray0907] 
+
+        
+
+      
+
+        
+
+               [/Ray0907] Ray0907
+
+              marked this pull request as ready for review
+
+           [#event-29263893455] August 11, 2026 06:43          
+
+      
+
+    
+

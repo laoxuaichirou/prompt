@@ -1,0 +1,40 @@
+
+
+Question: Are MiniMax H3 VAE tile settings configurable? #46
+
+Open
+
+Open
+
+Hi,
+
+I am using the MiniMax H3 video VAE in ComfyUI.
+
+The official configuration uses vae_clip_length = 17, vae_tile_size = 256, and vae_tile_overlap_min = 64.
+
+With an 864×480, 362-frame video, the original tiling strategy is very slow. However, changing the spatial tile size or overlap causes visible shadows and block-like artifacts.
+
+Could you please clarify:
+
+Are tile_size and tile_overlap configurable?
+
+What alignment rules must they follow? For example, must they be multiples of 16?
+
+Are temporal chunk size and temporal overlap configurable?
+
+Is full-frame spatial decoding valid when enough VRAM is available?
+
+Is there an official way to accelerate VAE decoding without artifacts?
+
+Changing the tile settings causes visible artifacts at tile boundaries. Are there any required padding, blending, or positional-coordinate rules that must be preserved?
+
+Environment:
+
+ComfyUI
+
+minimax_h3_video_vae_fp16.safetensors
+
+RTX 2080 Ti 22 GB
+
+864×480, 362 frames
+

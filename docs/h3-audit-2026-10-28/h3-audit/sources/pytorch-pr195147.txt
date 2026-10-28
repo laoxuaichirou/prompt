@@ -1,0 +1,3647 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements - #195147
+
+
+Closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+Closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/robertomeroni] 
+  
+
+
+  
+
+          
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/robertomeroni] robertomeroni
+    
+
+      
+
+      
+
+      commented
+
+
+         [#issue-5278873193] Aug 28, 2026
+
+
+
+      
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Contributor
+
+
+        
+
+    
+
+  
+
+
+
+
+          
+
+        
+
+  
+  
+    
+
+      
+Issue
+
+Fixes  [https://github.com/pytorch/pytorch/issues/194922] #194922
+
+
+Summary
+
+MPSGraph's padTensor: and padGradientWithIncomingGradientTensor: overwrite the copied input data at rank > 4, mostly with zeros and partly with other wrong values. The shape is correct, so nothing notices: F.pad(randn(1, 3, 9, 256, 544), (0,0,0,0,2,0)) is garbage in 79% of its elements. The boundary is in elements, not bytes: max(output last dim, product of output dims after the padded axis) >= 65536.
+
+
+pad_out_template builds the graph at the operand's own rank, and only the trailing padding_size / 2 dims are padded, so this folds the leading dims into one batch dim, pads at rank <= 4 (measured correct at any extent), and reshapes back in-graph. It is in the shared template, so it also fixes reflection_pad3d and replication_pad3d, equally corrupt today, forward and backward.  [https://github.com/pytorch/pytorch/pull/194944] #194944 fixes constant padding only, and applies cleanly on top.
+
+
+Checklist
+
+
+ Passes lint (spin fixlint)
+
+
+ Added/updated tests
+
+
+ Updated documentation (if applicable)
+
+
+ Included benchmark results (for PRs impacting perf)
+
+
+
+BC-breaking?
+
+No.
+
+
+
+AI assistance was used: Claude Code wrote the patch, the test and this description under my direction; I reviewed every line.
+
+    
+
+  
+  
+
+
+
+      
+
+
+          
+          
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+
+                    
+
+          
+
+  
+    
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+        
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+    
+
+
+  
+          
+
+  
+
+    
+
+      
+
+
+  
+
+         [/robertomeroni] 
+          
+  
+
+
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/8f109835ce7e95548efb4aec0927bef847cb1fa1] [MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements
+        
+
+          
+                  …
+          
+      
+
+
+      
+
+        
+
+    
+    
+    
+    
+    
+
+  
+
+      
+
+
+      
+
+        
+
+          
+
+    
+    
+    
+
+  
+
+  
+
+    
+  
+
+
+
+        
+
+      
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/8f109835ce7e95548efb4aec0927bef847cb1fa1] 8f10983
+        
+      
+
+    
+
+  
+
+    
+
+      
+MPSGraph's padTensor:/padGradientWithIncomingGradientTensor: silently overwrite the
+copied input data when the operand has rank > 4 and the output has a large inner
+extent. The shape is correct and the padded border is correct, so nothing downstream
+notices: F.pad(x, (0,0,0,0,2,0)) on a (1,3,9,256,544) float32 tensor returns garbage
+in 79% of its elements. Most of the corrupt region reads exactly 0.0, the remainder
+holds other wrong values, and the extent varies between identical calls in one
+process.
+
+The boundary is in elements, not bytes: corruption starts once
+max(output last dim, product of output dims after the padded axis) reaches 65536.
+It is bracketed to a single element for float32; int64 is clean at a trailing
+32768 (262144 bytes) and corrupt at 65536.
+
+pad_out_template builds the graph at the operand's own rank, so a 5D or 6D input
+reaches the broken configuration. Only the trailing padding_size / 2 dimensions are
+ever padded; everything in front of them is batch. Folding those leading dimensions
+into one keeps the padding arithmetic identical while handing MPSGraph a rank <= 4
+operand, which is correct at and far above the same inner extent. The output tensor
+is left at full rank and the collapsed result is reshaped back inside the graph,
+following the ND workaround already used by Linear.mm.
+
+Because the fold happens in the shared template, this covers constant_pad_nd,
+reflection_pad3d and replication_pad3d, forward and backward - all of which corrupt
+today. A narrower alternative, routing only the bad shapes to
+at::native::constant_pad_nd (extending the existing pad.size() > 6 fallback), would
+fix constant padding alone and needs a magic 65536 threshold; the reflection and
+replication paths have no such composite fallback.
+
+Fixes  [https://github.com/pytorch/pytorch/issues/194922] pytorch#194922
+
+Test Plan:
+
+```
+python test/test_mps.py TestPad -v
+python test/test_mps.py -k pad
+```
+
+test_pad_5d_large_inner_dims covers constant, replicate and reflect on a 5D tensor
+whose inner dimensions are exactly at the threshold, plus the pad-size-2 and
+pad-size-4 variants, and checks the gradients as well as the forward output.
+Measured before the fix (2.14.0a0+gitbf47514): the five cases are 50-100% wrong in
+the forward direction and 67-83% wrong in the gradient. All 8 TestPad tests pass
+after it, and the 143 tests matching -k pad are OK with 12 skipped.
+
+Authored with assistance from Claude Code.
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+    
+
+
+  
+    
+
+        
+
+               [/robertomeroni] 
+
+
+        
+
+      
+
+        
+
+               [/robertomeroni] robertomeroni
+
+
+                requested a review
+  from  [/malfet] malfet
+    as a  [/pytorch/pytorch/blob/4687d3465afbe4b55b85296aecdec528d710c3af/CODEOWNERS#L629] code owner
+
+
+           [#event-30168336767] August 28, 2026 13:50          
+        
+
+      
+
+    
+
+
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/apps/pytorch-bot] 
+ [/apps/pytorch-bot] pytorch-bot
+Bot
+
+
+
+            added
+       [/pytorch/pytorch/issues?q=state%3Aopen%20label%3Aciflow%2Fmps] 
+  ciflow/mps
+
+  Run MPS tests (subset of trunk)
+
+       [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22release%20notes%3A%20mps%22] 
+  release notes: mps
+
+  Release notes category
+
+  labels
+
+
+       [#event-30168338795] Aug 28, 2026
+
+    
+
+  
+
+
+
+
+  
+
+   [/apps/pytorch-bot] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/apps/pytorch-bot] pytorch-bot
+    Bot
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5453337032] Aug 28, 2026
+
+
+
+      
+  •
+
+  
+    
+      
+
+        
+          edited
+          
+        
+        
+    
+
+      
+
+    
+    
+      
+  
+        
+  
+    
+    
+    Loading
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+    
+  
+
+
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+
+
+        
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+
+🔗 Helpful Links
+
+🧪 See artifacts and rendered test results at  [https://hud.pytorch.org/pr/195147] hud.pytorch.org/pr/195147
+
+
+📄 Preview  [https://docs-preview.pytorch.org/pytorch/pytorch/195147/index.html] Python docs built from this PR
+
+
+📄 Preview  [https://docs-preview.pytorch.org/pytorch/pytorch/195147/cppdocs/index.html] C++ docs built from this PR
+
+
+❓ Need help or want to give feedback on the CI? Visit the  [https://github.com/pytorch/pytorch/wiki/Bot-commands] bot commands wiki
+
+
+
+Note: Links to docs will display an error until the docs builds have been completed.
+
+
+❌ 1 Unclassified Failure
+
+As of commit  [https://github.com/pytorch/pytorch/commit/7a26d215db6da5baecb5e3ad3db3b0108a2b3581] 7a26d21 with merge base  [https://github.com/pytorch/pytorch/commit/6d74a9c1817dad03090101b37948c86b735b57a1] 6d74a9c ( [https://camo.githubusercontent.com/f5f3d5f90e1450be00b876e2aa2b76194ae8db35fb2ba4cdd1e7e1496ebcc5e5/68747470733a2f2f696d672e736869656c64732e696f2f646174652f313738373930323132383f6c6162656c3d26636f6c6f723d464646464646267374796c653d666c61742d737175617265] ):
+
+UNCLASSIFIED FAILURE - DrCI could not classify the following job because the workflow did not run on the merge base. The failure may be pre-existing on trunk or introduced by this PR:
+
+
+
+
+
+
+ [https://hud.pytorch.org/pr/pytorch/pytorch/195147#99287620211] Mac MPS / macos-py3-arm64-mps / test (test_mps, 1, 1, macos-m1-14) ( [https://github.com/pytorch/pytorch/actions/runs/33322607772/job/99287620211] gh) (this job did not run on the merge base, so DrCI cannot tell whether the failure is pre-existing)
+
+test/test_mps.py::TestBinaryIteratorConformance::test_simple_add_bfloat16_float32_float32_shape0
+
+AI verdict:  [https://hud.pytorch.org/pr/pytorch/pytorch/195147#99287620211] 
+
+The commit only moves a pad regression test from test_mps.py to test_nn.py and removes instantiate_parametrized_tests(TestPad). The failing test TestBinaryIteratorConformance::test_simple_add_bfloat16_float32_float32_shape0 is a completely unrelated test that hangs (killed by KeyboardInterrupt/timeout), not a test assertion failure.
+
+
+ [https://hud.pytorch.org/pr/pytorch/pytorch/195147#99287620211] Full reasoning on HUD →
+
+
+
+
+
+
+
+
+
+This comment was automatically generated by Dr. CI and updates every 15 minutes.
+
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+  
+
+   [/apps/pytorch-bot] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/apps/pytorch-bot] pytorch-bot
+    Bot
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5453337569] Aug 28, 2026
+
+
+
+      
+  •
+
+  
+    
+      
+
+        
+          edited
+          
+        
+        
+    
+
+      
+
+    
+    
+      
+  
+        
+  
+    
+    
+    Loading
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+    
+  
+
+
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+
+
+        
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+
+Workflows were awaiting approval. CI has now been triggered for the ciflow labels on this PR.
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/pytorchbot] 
+ [/pytorchbot] pytorchbot
+
+
+
+
+          added
+  the  [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22open%20source%22] 
+  open source
+
+ label
+
+
+       [#event-30168850633] Aug 28, 2026
+
+    
+
+  
+
+
+
+   [/Isalia20] 
+  
+
+    
+
+
+  
+            
+
+              
+                     [/Isalia20] Isalia20
+    
+
+              
+
+              reviewed
+
+
+              
+                   [#pullrequestreview-5052970201] 
+                    Aug 28, 2026
+                  
+              
+              
+            
+
+
+            
+
+
+
+                 [/pytorch/pytorch/pull/195147/files/8f109835ce7e95548efb4aec0927bef847cb1fa1]   
+    View reviewed changes
+  
+
+
+            
+
+
+
+
+
+
+  
+  
+  
+            
+    
+      
+
+          
+    
+
+Comment thread
+
+
+        
+               [/pytorch/pytorch/pull/195147/files/8f109835ce7e95548efb4aec0927bef847cb1fa1#diff-fdee6c1352305cfc875c3f14dc43440e2c681f8f229ef8977289bb7fbe389966] test/test_mps.py
+
+            
+              Outdated
+        
+            
+      
+        
+    
+
+      
+    Show resolved
+  
+
+            
+      
+        
+    
+
+      
+    Hide resolved
+  
+
+      
+
+
+        
+
+          
+  
+            
+  
+    
+    
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   [/malfet] 
+  
+
+    
+
+
+  
+            
+
+              
+                     [/malfet] malfet
+    
+
+              
+
+              approved these changes
+
+
+              
+                   [#pullrequestreview-5052984484] 
+                    Aug 28, 2026
+                  
+              
+              
+            
+
+
+            
+
+
+
+                 [/pytorch/pytorch/pull/195147/files/8f109835ce7e95548efb4aec0927bef847cb1fa1]   
+    View reviewed changes
+  
+
+
+            
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+    
+
+
+  
+           [/robertomeroni] robertomeroni
+  
+
+        added 2 commits
+         [#commits-pushed-4a03fe8] August 29, 2026 09:50
+
+
+
+
+  
+  
+
+    
+
+
+  
+          
+
+  
+
+    
+
+      
+
+
+  
+
+         [/robertomeroni] 
+          
+  
+
+
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/4a03fe85788a0a8ecfc9c45dc3944886a93601ad] Parametrize the pad modes in test_pad_5d_large_inner_dims
+        
+
+          
+                  …
+          
+      
+
+
+      
+
+        
+
+    
+    
+    
+    
+    
+
+  
+
+      
+
+
+      
+
+        
+
+          
+
+    
+    
+    
+
+  
+
+  
+
+    
+  
+
+
+
+        
+
+      
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/4a03fe85788a0a8ecfc9c45dc3944886a93601ad] 4a03fe8
+        
+      
+
+    
+
+  
+
+    
+
+      
+Replace the manual mode loop and the inner helper with @parametrize over mode
+and (shape, padding), and register TestPad with instantiate_parametrized_tests.
+The four combinations that would need a 6-element pad for a 5D input are
+skipped, so the same five cases run as before.
+
+Authored with assistance from Claude Code.
+
+    
+
+
+
+
+
+
+
+
+
+  
+  
+
+    
+
+
+  
+          
+
+  
+
+    
+
+      
+
+
+  
+
+         [/robertomeroni] 
+          
+  
+
+
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/7a26d215db6da5baecb5e3ad3db3b0108a2b3581] Move the pad regression test to test_nn.py as a device-generic test
+        
+
+          
+                  …
+          
+      
+
+
+      
+
+        
+
+    
+    
+    
+    
+    
+
+  
+
+      
+
+
+      
+
+        
+
+          
+
+    
+    
+    
+
+  
+
+  
+
+    
+  
+
+
+
+        
+
+      
+
+
+      
+
+        
+           [/pytorch/pytorch/pull/195147/commits/7a26d215db6da5baecb5e3ad3db3b0108a2b3581] 7a26d21
+        
+      
+
+    
+
+  
+
+    
+
+      
+Review feedback asked for coverage beyond MPS. TestNNDeviceType runs under Mac
+MPS CI (run_test.py puts test_nn in the --mps set) and on CUDA in pull, so this
+keeps the MPS coverage and adds CUDA.
+
+CPU is the reference the results are compared against, so the test is scoped
+with onlyAccelerator. The neighbouring large-shape pad tests use onlyCUDA for
+the same reason.
+
+Authored with assistance from Claude Code.
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+   [/Isalia20] 
+  
+
+    
+
+
+  
+            
+
+              
+                     [/Isalia20] Isalia20
+    
+
+              
+
+              approved these changes
+
+
+              
+                   [#pullrequestreview-5061315625] 
+                    Aug 30, 2026
+                  
+              
+              
+            
+
+
+            
+
+
+
+                 [/pytorch/pytorch/pull/195147/files/7a26d215db6da5baecb5e3ad3db3b0108a2b3581]   
+    View reviewed changes
+  
+
+
+            
+
+
+
+
+
+
+  
+  
+  
+              
+
+                      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/Isalia20] Isalia20
+    
+
+      
+
+      
+
+      left a comment
+
+
+
+
+
+      
+  •
+
+  
+    
+      
+
+        
+          edited
+          
+        
+        
+    
+
+      
+
+    
+    
+      
+  
+        
+  
+    
+    
+    Loading
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+    
+  
+
+
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Collaborator
+
+
+        
+
+    
+
+  
+
+
+
+                   [#pullrequestreview-5061315625] 
+
+                      
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+
+    
+There was a problem hiding this comment.
+
+
+
+  
+
+
+ 
+
+  
+    
+      
+    
+
+    
+
+    
+Choose a reason for hiding this comment
+
+    
+
+      The reason will be displayed to describe this comment to others.  [https://docs.github.com/articles/managing-disruptive-comments/#hiding-a-comment] Learn more.
+    
+
+
+    
+      
+        
+        Choose a reason
+        
+        Spam
+Abuse
+Off Topic
+Outdated
+Duplicate
+Resolved
+Low Quality
+      
+        
+    Hide comment
+  
+
+
+
+  
+
+
+
+
+  
+    
+
+      
+LGTM thanks! let's wait for tests to run
+
+      
+    
+
+  
+  
+
+
+
+
+                    
+                  
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+
+                      
+
+                    
+
+  
+    
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/Isalia20] 
+ [/Isalia20] Isalia20
+
+
+
+
+          added
+  the  [/pytorch/pytorch/issues?q=state%3Aopen%20label%3Aciflow%2Ftrunk] 
+  ciflow/trunk
+
+  Trigger trunk jobs on your pull request
+ label
+
+
+       [#event-30241002340] Aug 30, 2026
+
+    
+
+  
+
+
+
+
+  
+
+   [/robertomeroni] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/robertomeroni] robertomeroni
+    
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5477227479] Aug 31, 2026
+
+
+
+      
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Contributor
+
+
+        
+
+  Author
+
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+ [https://github.com/Isalia20] @Isalia20 thanks! There is one failing test, but looks unrelated
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+  
+
+   [/Isalia20] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/Isalia20] Isalia20
+    
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5477248753] Aug 31, 2026
+
+
+
+      
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Collaborator
+
+
+        
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+ [https://github.com/pytorchbot] @pytorchbot merge -i
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+              👍
+            1
+  pytorch-bot[bot] reacted with thumbs up emoji
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+              
+
+                👍
+                  1 reaction
+              
+
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/pytorchmergebot] 
+ [/pytorchmergebot] pytorchmergebot
+
+
+
+
+          added
+  the  [/pytorch/pytorch/issues?q=state%3Aopen%20label%3Amerging] 
+  merging
+
+ label
+
+
+       [#event-30273430771] Aug 31, 2026
+
+    
+
+  
+
+
+
+
+  
+
+   [/pytorchmergebot] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/pytorchmergebot] pytorchmergebot
+    
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5477268448] Aug 31, 2026
+
+
+
+      
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Collaborator
+
+
+        
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+Merge started
+
+Your change will be merged while ignoring the following 1 checks:  [https://github.com/pytorch/pytorch/actions/runs/33322607772/job/99287620211] Mac MPS / macos-py3-arm64-mps / test (test_mps, 1, 1, macos-m1-14)
+
+
+Learn more about merging in the  [https://github.com/pytorch/pytorch/wiki/Bot-commands] wiki.
+
+
+Questions? Feedback? Please reach out to the  [https://github.com/pytorch/pytorch/wiki/Dev-Infra-Office-Hours] PyTorch DevX Team
+Advanced Debugging
+
+Check the merge workflow status
+
+ [https://github.com/pytorch/pytorch/actions/runs/33384057066] here
+
+
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/pytorchmergebot] 
+ [/pytorchmergebot] pytorchmergebot
+
+
+
+
+          closed this
+  in
+    
+       [/pytorch/pytorch/commit/72bca5e6d542341e6bcd795aaa293968843c29b2] 72bca5e
+    
+
+
+       [#event-30273476101] Aug 31, 2026
+
+    
+
+  
+
+
+
+
+    
+
+      
+    
+
+    
+
+    
+
+
+      
+
+
+           [/pytorchmergebot] 
+ [/pytorchmergebot] pytorchmergebot
+
+
+
+
+            added
+       [/pytorch/pytorch/issues?q=state%3Aopen%20label%3AMerged] 
+  Merged
+
+
+    and removed
+       [/pytorch/pytorch/issues?q=state%3Aopen%20label%3Amerging] 
+  merging
+
+
+  labels
+
+
+       [#event-30273476250] Aug 31, 2026
+
+    
+
+  
+
+
+  
+
+    
+    
+
+  
+
+
+  
+
+      
+
+
+     [/MohammadSadeghSalehi] 
+ [/MohammadSadeghSalehi] MohammadSadeghSalehi
+
+
+
+    mentioned this pull request
+     [#ref-pullrequest-5261724223] 
+      Aug 31, 2026
+    
+
+
+
+
+
+  
+
+     [/pytorch/pytorch/pull/194944] 
+      [MPS] Work around MPSGraph constant pad dropping input above 2^16 inner extent
+      #194944
+  
+
+
+
+  
+
+      
+   Closed
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+   [/MohammadSadeghSalehi] 
+
+
+
+
+
+
+  
+
+
+
+    
+
+      
+
+  
+
+    
+
+      
+          
+      
+
+      
+             [/MohammadSadeghSalehi] MohammadSadeghSalehi
+    
+
+      
+
+      
+
+      commented
+
+
+         [#issuecomment-5478281542] Aug 31, 2026
+
+
+
+      
+    
+
+
+  
+
+  
+
+    
+
+      
+          
+    
+    
+
+  
+
+
+        
+            
+  
+      
+              Copy link
+
+  
+
+
+            
+  
+      
+              Copy Markdown
+
+  
+
+
+        
+      
+    
+
+
+    
+
+        
+
+  
+    Contributor
+
+
+        
+
+    
+
+  
+
+
+
+
+
+      
+
+
+        
+
+
+  
+    
+
+      
+          
+Nice fix, and a better one than mine. Folding into the batch dim inside pad_out_template keeps the MPSGraph path and picks up reflection_pad3d and replication_pad3d forward and backward, which I had not checked at all. I have closed  [https://github.com/pytorch/pytorch/pull/194944] #194944.
+
+
+Your boundary condition is sharper than what I posted on the issue. I only varied the product of the two innermost dims and concluded 65536 there; max(output last dim, product of output dims after the padded axis) is the right statement.
+
+
+One thing worth recording for later, since this works around the fault rather than removing it. I isolated it to MPSGraph itself, no PyTorch involved: padTensor: with MPSGraphPaddingModeConstant writes the constant fill value in place of the input data above the threshold, entirely at twice it. Filed with Apple as FB24527244 with a standalone repro attached. So if the rank <= 4 path ever changes shape, the same fault is still sitting underneath.
+
+
+      
+    
+  
+
+
+
+
+        
+
+            
+
+            
+
+              
+
+  
+    
+      
+    
+
+      
+
+        
+            
+    All reactions
+  
+
+
+          
+          
+        
+      
+
+    
+
+
+
+            
+
+        
+
+      
+
+
+      
+            
+  
+  
+
+    
+  
+    
+    
+
+  
+
+  
+
+    
+    
+
+    Sorry, something went wrong.
+  
+
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+        
+There was an error while loading. Please reload this page.
+
+
+
+
+
+  
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+
+    
+
+
+  
+    
+
+        
+
+               [/robertomeroni] 
+
+
+        
+
+      
+
+        
+
+               [/robertomeroni] robertomeroni
+
+
+          
+    deleted the
+    
+      
+        contrib/mps-pad5d-temporal
+    
+    branch
+
+           [#event-30285835366] August 31, 2026 14:42          
+        
+
+      
+
+    
+
+
+
+
+
+
+  
+    
+    
+
+  
+  
+
+    
+
+   [/orrangetabby17] orrangetabby17 
+
+      pushed a commit
+        to orrangetabby17/pytorch
+      that referenced
+      this pull request
+
+     [#ref-commit-e8f07fb] 
+      Sep 2, 2026
+    
+    
+
+      
+
+
+  
+
+    
+
+      
+
+
+  
+
+         [/robertomeroni] 
+          
+         [/orrangetabby17] 
+          
+  
+
+
+
+
+
+      
+
+        
+           [/orrangetabby17/pytorch/commit/e8f07fbab33e94ec2e2a0bfd53998978b32d97c8] [MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements ( [https://github.com/pytorch/pytorch/pull/195147] …
+        
+
+          
+            …
+          
+
+      
+
+
+      
+
+          
+
+    
+    
+    
+
+  
+
+      
+
+
+      
+
+      
+
+
+      
+      
+
+        
+           [/orrangetabby17/pytorch/commit/e8f07fbab33e94ec2e2a0bfd53998978b32d97c8] e8f07fb
+        
+      
+
+    
+
+  
+
+    
+
+      
+ [https://github.com/pytorch/pytorch/pull/195147] …pytorch#195147)
+
+## Issue
+
+Fixes  [https://github.com/pytorch/pytorch/issues/194922] pytorch#194922
+
+## Summary
+
+MPSGraph's `padTensor:` and `padGradientWithIncomingGradientTensor:` overwrite the copied input data at rank > 4, mostly with zeros and partly with other wrong values. The shape is correct, so nothing notices: `F.pad(randn(1, 3, 9, 256, 544), (0,0,0,0,2,0))` is garbage in 79% of its elements. The boundary is in elements, not bytes: `max(output last dim, product of output dims after the padded axis) >= 65536`.
+
+`pad_out_template` builds the graph at the operand's own rank, and only the trailing `padding_size / 2` dims are padded, so this folds the leading dims into one batch dim, pads at rank <= 4 (measured correct at any extent), and reshapes back in-graph. It is in the shared template, so it also fixes `reflection_pad3d` and `replication_pad3d`, equally corrupt today, forward and backward.  [https://github.com/pytorch/pytorch/pull/194944] pytorch#194944 fixes constant padding only, and applies cleanly on top.
+
+## Checklist
+
+- [x] Passes lint (`spin fixlint`)
+- [x] Added/updated tests
+- [ ] Updated documentation (if applicable)
+- [ ] Included benchmark results (for PRs impacting perf)
+
+## BC-breaking?
+
+No.
+
+---
+AI assistance was used: Claude Code wrote the patch, the test and this description under my direction; I reviewed every line.
+
+Pull Request resolved:  [https://github.com/pytorch/pytorch/pull/195147] pytorch#195147
+Approved by:  [https://github.com/malfet] https://github.com/malfet,  [https://github.com/Isalia20] https://github.com/Isalia20
+
+    
+
+
+
+
+    
+
+  
+
+
+
+
+  
+    
+    
+
+  
+  
+
+    
+
+   [/Sanskaaar1] Sanskaaar1 
+
+      pushed a commit
+        to Sanskaaar1/pytorch
+      that referenced
+      this pull request
+
+     [#ref-commit-74ef109] 
+      Sep 8, 2026
+    
+    
+
+      
+
+
+  
+
+    
+
+      
+
+
+  
+
+         [/robertomeroni] 
+          
+         [/Sanskaaar1] 
+          
+  
+
+
+
+
+
+      
+
+        
+           [/Sanskaaar1/pytorch/commit/74ef109785c0a40d90121da3f15131a511e363d8] [MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements ( [https://github.com/pytorch/pytorch/pull/195147] …
+        
+
+          
+            …
+          
+
+      
+
+
+      
+
+          
+
+    
+    
+    
+
+  
+
+      
+
+
+      
+
+      
+
+
+      
+      
+
+        
+           [/Sanskaaar1/pytorch/commit/74ef109785c0a40d90121da3f15131a511e363d8] 74ef109
+        
+      
+
+    
+
+  
+
+    
+
+      
+ [https://github.com/pytorch/pytorch/pull/195147] …pytorch#195147)
+
+## Issue
+
+Fixes  [https://github.com/pytorch/pytorch/issues/194922] pytorch#194922
+
+## Summary
+
+MPSGraph's `padTensor:` and `padGradientWithIncomingGradientTensor:` overwrite the copied input data at rank > 4, mostly with zeros and partly with other wrong values. The shape is correct, so nothing notices: `F.pad(randn(1, 3, 9, 256, 544), (0,0,0,0,2,0))` is garbage in 79% of its elements. The boundary is in elements, not bytes: `max(output last dim, product of output dims after the padded axis) >= 65536`.
+
+`pad_out_template` builds the graph at the operand's own rank, and only the trailing `padding_size / 2` dims are padded, so this folds the leading dims into one batch dim, pads at rank <= 4 (measured correct at any extent), and reshapes back in-graph. It is in the shared template, so it also fixes `reflection_pad3d` and `replication_pad3d`, equally corrupt today, forward and backward.  [https://github.com/pytorch/pytorch/pull/194944] pytorch#194944 fixes constant padding only, and applies cleanly on top.
+
+## Checklist
+
+- [x] Passes lint (`spin fixlint`)
+- [x] Added/updated tests
+- [ ] Updated documentation (if applicable)
+- [ ] Included benchmark results (for PRs impacting perf)
+
+## BC-breaking?
+
+No.
+
+---
+AI assistance was used: Claude Code wrote the patch, the test and this description under my direction; I reviewed every line.
+
+Pull Request resolved:  [https://github.com/pytorch/pytorch/pull/195147] pytorch#195147
+Approved by:  [https://github.com/malfet] https://github.com/malfet,  [https://github.com/Isalia20] https://github.com/Isalia20
+
+    
+
+
+
+
+    
+
+  
+
+
+
+
+  
+
+    
+    
+
+  
+
+
+  
+
+      
+
+
+     [/buggz2k] 
+ [/buggz2k] buggz2k
+
+
+
+    mentioned this pull request
+     [#ref-issue-5520135725] 
+      Sep 21, 2026
+    
+
+
+
+
+
+  
+
+     [/Comfy-Org/ComfyUI/issues/16433] 
+      Qwen-Image-2.1 VAE encode is broken on MPS: encode→decode round-trip returns 6.6 dB PSNR (49.1 dB on CPU), silently corrupting every image-edit workflow
+      Comfy-Org/ComfyUI#16433
+  
+
+
+
+  
+
+      
+
+  
+    
+
+  Open
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+    
+
+  
+
+
+  
+
+      
+
+
+     [/lafam-org] 
+ [/lafam-org] lafam-org
+
+
+
+    mentioned this pull request
+     [#ref-issue-5259588778] 
+      Oct 22, 2026
+    
+
+
+
+
+
+  
+
+     [/pytorch/pytorch/issues/194922] 
+      F.pad(mode="constant") with temporal-axis padding silently corrupts ~80% of elements for large 5D tensors on MPS
+      #194922
+  
+
+
+
+  
+
+      
+
+  
+    
+
+  Closed
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

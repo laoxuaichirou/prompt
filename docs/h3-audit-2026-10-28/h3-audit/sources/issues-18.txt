@@ -1,0 +1,56 @@
+
+
+Code hangs during inference deployment with vLLM #18
+
+Open
+
+Open
+
+I encountered an issue where the code hangs during inference deployment with vLLM. How can I resolve this problem?
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:46] Route: /v1/chat/completions/batch, Methods: POST
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/audio/speech/stream, Endpoint: streaming_speech
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/video/chat/stream, Endpoint: streaming_video_chat
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime/video, Endpoint: streaming_video_output
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime, Endpoint: realtime_websocket
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime/robot/openpi, Endpoint: realtime_robot_openpi
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/duplex, Endpoint: duplex_websocket
+
+(APIServer pid=2311773) INFO:     Started server process [2311773]
+
+(APIServer pid=2311773) INFO:     Waiting for application startup.
+
+(APIServer pid=2311773) INFO:     Application startup complete.
+
+I encountered an issue where the code hangs during inference deployment with vLLM. How can I resolve this problem?
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:46] Route: /v1/chat/completions/batch, Methods: POST
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/audio/speech/stream, Endpoint: streaming_speech
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/video/chat/stream, Endpoint: streaming_video_chat
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime/video, Endpoint: streaming_video_output
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime, Endpoint: realtime_websocket
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/realtime/robot/openpi, Endpoint: realtime_robot_openpi
+
+(APIServer pid=2311773) INFO 08-10 12:10:18 [launcher.py:57] Route: /v1/duplex, Endpoint: duplex_websocket
+
+(APIServer pid=2311773) INFO:     Started server process [2311773]
+
+(APIServer pid=2311773) INFO:     Waiting for application startup.
+
+(APIServer pid=2311773) INFO:     Application startup complete.
+
+Bro there is no issue in it, your application already started well...
+
+Thank you for your reply. What should I do next?
+

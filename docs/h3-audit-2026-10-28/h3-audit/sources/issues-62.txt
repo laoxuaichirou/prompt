@@ -1,0 +1,124 @@
+
+
+Use The SageAttention BUG? #62
+
+Open
+
+Open
+
+I encountered a service crash when using SageAttention.What is this problem?The following is the log information in the cmd.
+
+Stack (most recent call first):
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\modules\attention.py", line 578 in attention_sage
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\modules\attention.py", line 160 in wrapper
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\minimax\model.py", line 181 in forward
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1789 in _call_impl
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1778 in _wrapped_call_impl
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\minimax\model.py", line 270 in forward
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1789 in _call_impl
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1778 in _wrapped_call_impl
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\minimax\model.py", line 629 in _forward
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\ldm\minimax\model.py", line 499 in forward
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1789 in _call_impl
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\nn\modules\module.py", line 1778 in _wrapped_call_impl
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\model_base.py", line 240 in _apply_model
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\model_base.py", line 196 in apply_model
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 335 in _calc_cond_batch
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 219 in calc_cond_batch_outer
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 211 in calc_cond_batch
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 620 in sampling_function
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1218 in predict_noise
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1215 in outer_predict_noise
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1208 in call
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 640 in call
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\k_diffusion\sampling.py", line 1418 in res_multistep
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\utils_contextlib.py", line 124 in decorate_context
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\k_diffusion\sampling.py", line 1460 in sample_res_multistep
+
+File "D:\Master\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\utils_contextlib.py", line 124 in decorate_context
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1005 in sample
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1235 in inner_sample
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1260 in outer_sample
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\patcher_extension.py", line 113 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy\samplers.py", line 1333 in sample
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy_extras\nodes_custom_sampler.py", line 1049 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy_api\latest_io.py", line 1935 in EXECUTE_NORMALIZED
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\comfy_api\internal_init.py", line 149 in wrapped_func
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 306 in process_inputs
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 318 in _async_map_node_over_list
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 344 in get_output_data
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 545 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 789 in execute_async
+
+File "asyncio\events.py", line 89 in _run
+
+File "asyncio\base_events.py", line 2060 in _run_once
+
+File "asyncio\base_events.py", line 683 in run_forever
+
+File "asyncio\base_events.py", line 712 in run_until_complete
+
+File "asyncio\runners.py", line 119 in run
+
+File "asyncio\runners.py", line 196 in run
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\execution.py", line 728 in execute
+
+File "D:\Master\ComfyUI_windows_portable\ComfyUI\main.py", line 372 in prompt_worker
+
+File "threading.py", line 995 in run
+
+File "threading.py", line 1044 in _bootstrap_inner
+
+File "threading.py", line 1015 in _bootstrap
+
+Extension modules: sqlalchemy.cyextension.collections, sqlalchemy.cyextension.immutabledict, sqlalchemy.cyextension.processors, sqlalchemy.cyextension.resultproxy, sqlalchemy.cyextension.util, greenlet._greenlet, markupsafe._speedups, yaml._yaml, PIL._imaging, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, torch._C, torch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, psutil._psutil_windows, PIL._imagingft, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, charset_normalizer.md, charset_normalizer.cd, scipy.ndimage._nd_image, scipy.ndimage._rank_filter_1d, scipy.special._ufuncs_cxx, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._internal_matfuncs, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg.cython_lapack, scipy.linalg._decomp_update, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, _ni_label, scipy.ndimage._ni_label, regex._regex, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy._lib.messagestream, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy._lib._uarray._uarray, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.spatial._ckdtree, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, scipy.optimize._direct, scipy.interpolate._fitpack, scipy.interpolate._dierckx, scipy.interpolate._ppoly, scipy.interpolate._interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy.stats._ansari_swilk_statistics, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._rcont.rcont, scipy.stats._qmvnt_cy, av._core, av.logging, av.buffer, av.audio.format, av.error, av.dictionary, av.container.pyio, av.format, av.index, av.utils, av.stream, av.container.streams, av.sidedata.encparams, av.sidedata.motionvectors, av.sidedata.sidedata, av.opaque, av.packet, av.container.input, av.bitstream, av.container.output, av.container.core, av.codec.context, av.video.format, av.video.reformatter, av.plane, av.video.plane, av.video.frame, av.video.stream, av.codec.hwaccel, av.codec.codec, av.frame, av.audio.layout, av.audio.plane, av.audio.frame, av.audio.stream, av.filter.link, av.filter.context, av.filter.graph, av.filter.filter, av.filter.loudnorm, av.audio.resampler, av.audio.codeccontext, av.audio.fifo, av.device, av.video.codeccontext, av.subtitles.stream, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, scipy.signal._sigtools, scipy.signal._max_len_seq_inner, scipy.signal._upfirdn_apply, scipy.signal._spline, scipy.signal._sosfilt, scipy.signal._peak_finding_utils, cuda_utils (total: 180)
+

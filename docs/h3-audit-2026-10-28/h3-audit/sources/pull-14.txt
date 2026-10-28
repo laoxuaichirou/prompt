@@ -1,0 +1,766 @@
+
+
+Fix init_weights in dac_utils.py for weight_norm Conv1d layers - #14
+
+Merged
+
+Merged
+
+ [/karandhaodiyal28-hash] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/karandhaodiyal28-hash] karandhaodiyal28-hash
+
+      
+
+      
+
+      commented
+
+         [#issue-5103587985] Aug 9, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Follow-up to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10: fix init_weights in dac_utils.py for weight_norm Conv1d
+
+What's in this PR
+
+The same init_weights bug pattern from  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10 exists in a second
+
+file in this repo: FL2VA/audio_vae/dac_utils.py (duplicated verbatim
+
+under Ref2VA/). This PR applies the same fix there, scoped only to
+
+the audio VAE helper so it stays small and reviewable.
+
+Why
+
+dac_audio_vae.py ships its own init_weights (the version fixed in
+
+ [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10), but the BigVGAN decoder — the upsampling stack that
+
+actually turns the latent audio into a waveform — uses a different
+
+init_weights from dac_utils.py:
+
+def init_weights(m, mean=0.0, std=0.01):
+    classname = m.__class__.__name__
+    if classname.find("Conv") != -1:
+        m.weight.data.normal_(mean, std)
+
+BigVGAN wraps every Conv1d in
+
+torch.nn.utils.parametrizations.weight_norm, and calls
+
+init_weights on three ModuleLists / Modules:
+
+dac_bigvgan.py:64 — self.convs1.apply(init_weights)
+
+dac_bigvgan.py:81 — self.convs2.apply(init_weights)
+
+dac_bigvgan.py:175 — self.conv_post.apply(init_weights)
+
+So every conv in the BigVGAN decoder silently stays at its default
+
+initialization under the new parametrizations.weight_norm API,
+
+because the in-place m.weight.data.normal_(...) writes to a
+
+temporary recomputed tensor. DacAudioVAE.__init__ does call
+
+self.apply(...) after constructing the decoder, so this propagates
+
+into the saved checkpoint when training from scratch.
+
+Fix
+
+Same pattern as  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10 — branch on the parametrized attributes and init
+
+the underlying weight_v / weight_g directly:
+
+def init_weights(m, mean=0.0, std=0.01):
+    """Initialize ``Conv*`` layers, including those wrapped with ``weight_norm``.
+
+    BigVGAN (``dac_bigvgan.py``) wraps every conv in
+    ``torch.nn.utils.parametrizations.weight_norm`` and then calls
+    ``self.convs1.apply(init_weights)`` / ``self.convs2.apply(init_weights)``
+    / ``self.conv_post.apply(init_weights)``. Under the parametrization
+    API, ``m.weight`` is computed on access from ``m.weight_g`` and
+    ``m.weight_v``, so the previous ``m.weight.data.normal_(...)`` was
+    a silent no-op for the stored parameters. Branch on the
+    parametrized attributes to actually update the underlying
+    parameters, matching the legacy ``torch.nn.utils.weight_norm``
+    behaviour that this file historically targeted.
+    """
+    classname = m.__class__.__name__
+    if classname.find("Conv") != -1:
+        if hasattr(m, "weight_v") and hasattr(m, "weight_g"):
+            m.weight_v.data.normal_(mean, std)
+            m.weight_g.data.fill_(1.0)
+        else:
+            m.weight.data.normal_(mean, std)
+
+dac_utils.py is duplicated verbatim across FL2VA/ and Ref2VA/,
+
+so the same change is applied to both copies.
+
+Risk
+
+Identical to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] #10: gated by hasattr on the parametrized attributes.
+
+Plain Conv* layers (and the legacy torch.nn.utils.weight_norm
+
+path) take the same code path as before. Inference is unchanged
+
+(checkpoint weights are loaded via load_state_dict); the fix only
+
+matters when constructing the model from scratch.
+
+Test plan
+
+python -c "import ast; ast.parse(open('FL2VA/audio_vae/dac_utils.py').read())"
+
+— passes.
+
+Loading a DacAudioVAE from a checkpoint still produces the same
+
+state dict as before.
+
+The companion fix in dac_audio_vae.py ( [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] Add requirements.txt and fix init_weights for weight_norm Conv1d #10) is already merged on
+
+main.
+
+Follow-ups (out of scope for this PR)
+
+dac_utils.py does not initialize bias. The legacy HiFi-GAN
+
+code this is adapted from historically didn't either, so this is
+
+preserving the historical behavior, not a regression — but worth
+
+noting.
+
+The class-name match find("Conv") matches any class with "Conv"
+
+in its name (Conv1d, Conv2d, Conv3d, ConvTranspose*, etc.). All
+
+convolutions in BigVGAN are Conv1d, so this is a non-issue in
+
+practice, but a stricter isinstance(m, (nn.Conv1d,)) check
+
+would be more defensive.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/14]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/karandhaodiyal28-hash] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/14/commits/c22aafa3073efdc4ad94f8ec82889b9e736331c0] Fix init_weights in dac_utils.py for weight_norm Conv1d layers
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/14/commits/c22aafa3073efdc4ad94f8ec82889b9e736331c0] c22aafa
+
+      
+
+    
+
+  
+
+    
+
+      
+Follow-up to  [https://github.com/MiniMax-AI/MiniMax-H3/pull/10] MiniMax-AI#10. The audio VAE has a second, structurally identical
+\init_weights\ in \FL2VA/audio_vae/dac_utils.py\ (and its duplicate
+under \Ref2VA/\) that is applied to every conv in BigVGAN via
+\self.convs1.apply(init_weights)\ / \self.convs2.apply(...)\ /
+\self.conv_post.apply(...)\. BigVGAN wraps every \Conv1d\ in
+\	orch.nn.utils.parametrizations.weight_norm\, so under that API
+\m.weight\ is recomputed on access from \m.weight_g\ and
+\m.weight_v\ and the previous \m.weight.data.normal_(...)\ was a
+silent no-op for the stored parameters.
+
+Branch on the parametrized attributes and init the underlying
+\weight_v\ / \weight_g\ directly, matching the legacy
+\	orch.nn.utils.weight_norm\ behaviour this file historically
+targeted. Inference is unchanged (checkpoint weights are loaded via
+\load_state_dict\); the fix only matters when constructing the model
+from scratch, where the old code left BigVGAN's conv stacks at their
+default initialization.
+
+The \dac_utils.py\ source is duplicated verbatim across \FL2VA/\ and
+\Ref2VA/\, so the same change is applied to both copies.
+
+    
+
+  
+
+    
+
+  
+
+        
+
+               [/apps/copilot-pull-request-reviewer] 
+
+        
+
+      
+
+        
+
+               [/apps/copilot-pull-request-reviewer] Copilot
+AI
+
+                lite review requested due to automatic review settings
+
+           [#event-29187322914] August 9, 2026 16:35          
+
+      
+
+    
+
+           [/apps/copilot-pull-request-reviewer] 
+
+    
+
+          
+
+            
+
+          
+
+          
+
+            
+
+              
+                   [/apps/copilot-pull-request-reviewer] Copilot
+AI
+
+              
+
+              reviewed
+
+              
+                   [#pullrequestreview-4891886515] 
+                    Aug 9, 2026
+
+              
+
+            
+
+            
+
+            
+
+          
+
+        
+
+  
+
+  
+
+                      
+
+  
+
+    
+
+      
+
+            
+
+      
+
+      
+           [/apps/copilot-pull-request-reviewer] Copilot
+AI
+
+      
+
+      
+
+      left a comment
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+                   [#pullrequestreview-4891886515] 
+
+                      
+
+  
+
+  
+
+  
+
+      
+
+    
+
+    
+There was a problem hiding this comment.
+
+  
+
+ 
+
+  
+
+      
+
+    
+
+    
+Choose a reason for hiding this comment
+
+    
+
+      The reason will be displayed to describe this comment to others.  [https://docs.github.com/articles/managing-disruptive-comments/#hiding-a-comment] Learn more.
+
+    
+
+        
+        Choose a reason
+
+        Spam
+Abuse
+Off Topic
+Outdated
+Duplicate
+Resolved
+Low Quality
+
+        
+    Hide comment
+
+  
+
+  
+
+      
+Copilot was unable to review this pull request because the user who requested the review has reached their quota limit.
+
+      
+
+  
+
+                    
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                      
+
+                    
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+                  
+
+  
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/3f192aa37fe1ac7815ae8026ddff777c2cb98960] 3f192aa
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/14#event-29199394298] Aug 10, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

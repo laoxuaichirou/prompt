@@ -1,0 +1,469 @@
+
+
+Fix login bug - #19
+
+Open
+
+Open
+
+ [/abhinav-sengar] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/abhinav-sengar] abhinav-sengar
+
+      
+
+      
+
+      commented
+
+         [#issue-5106936191] Aug 10, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Description
+
+This pull request fixes/improves [briefly describe the issue].
+
+Changes Made
+
+Fixed [change 1]
+
+Updated [change 2]
+
+Tested the changes locally
+
+Testing
+
+Verified that the changes work as expected.
+
+No existing functionality was affected.
+
+Related Issue
+
+Fixes #[issue-number]
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/19]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/abhinav-sengar] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/19/commits/bad8f78d0fca453c9647bdeec4e0cc4ae0b5c0d1] Fix login bug
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/19/commits/bad8f78d0fca453c9647bdeec4e0cc4ae0b5c0d1] bad8f78
+
+      
+
+    
+
+  
+
+  
+
+   [/YoungUsing] 
+
+  
+
+    
+
+      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/YoungUsing] YoungUsing
+
+      
+
+      
+
+      commented
+
+         [#issuecomment-5239420138] Aug 10, 2026
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+      
+
+        
+
+  
+
+      
+
+I noticed several issues that make this PR unsuitable for merging in its current form:
+
+Title vs. actual changes – The title says “Fix login bug”, but the code modifications are entirely about model internals (attention layers, audio processing, weight initialization). There is no obvious relation to any login functionality.
+
+Missing description – The PR description is still the default template with no explanation of the changes, motivation, or testing. This makes it hard for anyone (including maintainers) to understand the purpose.
+
+Potentially risky logic change – For example, in CausalAttention.forward, the reshape dimension was changed from -1 to self.qkv_out_dim. This alters tensor shapes and could introduce bugs, but without any rationale, it’s impossible to assess whether it’s intentional or accidental.
+
+Compiled files included – The PR adds .pyc cache files (under __pycache__/), which are typically excluded from version control. This indicates the contributor may not have reviewed their changes carefully.
+
+I would suggest closing this PR and opening a new one that:
+
+Focuses on a single, clearly stated issue or feature.
+
+Provides a detailed description of what was changed and why.
+
+Excludes any compiled or auto-generated files.
+
+Only includes changes that actually relate to the stated goal.
+
+      
+
+  
+
+        
+
+            
+
+            
+
+              
+
+  
+
+      
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+            
+
+        
+
+      
+
+      
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+

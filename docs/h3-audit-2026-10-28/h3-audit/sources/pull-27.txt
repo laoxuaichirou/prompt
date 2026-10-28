@@ -1,0 +1,352 @@
+
+
+docs: remove unnecessary backslash escaping in README - #27
+
+Merged
+
+Merged
+
+ [/yahyadeveloper9] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/yahyadeveloper9] yahyadeveloper9
+
+      
+
+      
+
+      commented
+
+         [#issue-5114384597] Aug 10, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Removed backslashes that were escaping valid dots and dashes for better readability.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/27]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/yahyadeveloper9] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/27/commits/ca38d0f07369c7c6c4fea207ead8f18043c90e5c] docs: remove unnecessary backslash escaping in README
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/27/commits/ca38d0f07369c7c6c4fea207ead8f18043c90e5c] ca38d0f
+
+      
+
+    
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/Odysseusailoon] 
+
+        
+
+      
+
+               [/Odysseusailoon] Odysseusailoon
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/80365054c7fbaace01ed417076fecd532c1ae0e0] 8036505
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/27#event-29373305055] Aug 13, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

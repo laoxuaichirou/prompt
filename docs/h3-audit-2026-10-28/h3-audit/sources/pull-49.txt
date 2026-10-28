@@ -1,0 +1,660 @@
+
+
+Merge pull request #1 from MiniMax-AI/mainname: Python application
+
+on: [push, pull_request]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pytest || true
+      - name: Lint
+        run: |
+          flake8. --count --select=E9,F63,F7,F82 --show-source --statistics || true
+      - name: Test
+        run: |
+          pytest -q || echo "no tests - ok" - #49
+
+Closed
+
+Closed
+
+ [/leadsystemsarchitect-crypto] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+      
+
+      
+
+      commented
+
+         [#issue-5133922305] Aug 12, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Clarify skill compatibility and fix Conv1d weight initialization
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/49]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/leadsystemsarchitect-crypto] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/49/commits/c327881ae5d9e3c0431a56ededa36a2a44c0fead] Merge pull request  [https://github.com/leadsystemsarchitect-crypto/MiniMax-H3/pull/1] #1  [/MiniMax-AI/MiniMax-H3/pull/49/commits/c327881ae5d9e3c0431a56ededa36a2a44c0fead] from MiniMax-AI/main
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+    
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/49/commits/c327881ae5d9e3c0431a56ededa36a2a44c0fead] c327881
+
+      
+
+    
+
+  
+
+    
+
+      
+Clarify skill compatibility and fix Conv1d weight initialization
+
+    
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/leadsystemsarchitect-crypto] 
+ [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+          closed this
+
+       [#event-29357882758] Aug 12, 2026
+
+    
+
+  
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/leadsystemsarchitect-crypto] 
+ [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+        reopened this
+
+       [#event-29357888881] Aug 12, 2026
+
+    
+
+  
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/Odysseusailoon] 
+ [/Odysseusailoon] Odysseusailoon
+
+          closed this
+
+       [#event-29373293001] Aug 13, 2026
+
+    
+
+  
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/leadsystemsarchitect-crypto] 
+ [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+        changed the title
+Merge pull request #1 from MiniMax-AI/main
+
+Merge pull request #1 from MiniMax-AI/mainname: Python application
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pytest || true
+      - name: Lint
+        run: |
+          flake8. --count --select=E9,F63,F7,F82 --show-source --statistics || true
+      - name: Test
+        run: |
+          pytest -q || echo "no tests - ok"
+
+       [#event-29373701555] Aug 13, 2026
+
+    
+
+  
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/leadsystemsarchitect-crypto] 
+ [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+        changed the title
+Merge pull request #1 from MiniMax-AI/mainname: Python application
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pytest || true
+      - name: Lint
+        run: |
+          flake8. --count --select=E9,F63,F7,F82 --show-source --statistics || true
+      - name: Test
+        run: |
+          pytest -q || echo "no tests - ok"
+
+Merge pull request #1 from MiniMax-AI/mainname: Python application
+
+on: [push, pull_request]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pytest || true
+      - name: Lint
+        run: |
+          flake8. --count --select=E9,F63,F7,F82 --show-source --statistics || true
+      - name: Test
+        run: |
+          pytest -q || echo "no tests - ok"
+
+       [#event-29439590299] Aug 14, 2026
+
+    
+
+  
+
+  
+
+   [/leadsystemsarchitect-crypto] 
+
+  
+
+    
+
+      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/leadsystemsarchitect-crypto] leadsystemsarchitect-crypto
+
+      
+
+      
+
+      commented
+
+         [#issuecomment-5443989775] Aug 27, 2026
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+  Author
+
+    
+
+  
+
+      
+
+        
+
+  
+
+      
+
+def init_weights(m, mean = 0.0, std = 0.01):
+
+if classname.find("Conv") != -1:
+
+if hasattr(m, "weight_v") and hasattr(m, "weight_g"):
+
+m.weight_v.data.normal_(mean, std) # init direction
+
+m.weight_g.data.fill_(1.0)         # init norm to 1
+
+else:
+
+m.weight.data.normal_(mean, std)   # normal conv
+
+      
+
+  
+
+        
+
+            
+
+            
+
+              
+
+  
+
+      
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+            
+
+        
+
+      
+
+      
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+

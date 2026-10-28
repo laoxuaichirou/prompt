@@ -1,0 +1,945 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+F.pad(mode="constant") with temporal-axis padding silently corrupts ~80% of elements for large 5D tensors on MPS #194922
+
+
+
+
+
+
+
+
+
+
+
+
+Closed
+
+
+
+
+Closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🐛 Describe the bug
+
+F.pad with mode="constant" along the temporal (dim 2) axis of a 5D tensor silently writes wrong values into most of the output tensor on the MPS backend when the padded spatial extent is large. No error is raised; corrupted values look statistically plausible (same distribution), so downstream models silently produce garbage.
+
+
+This silently corrupted a production video-VAE encoder (ComfyUI MiniMax-H3 VAE) above ~224x480 resolution: latents looked plausible but decoded to flat "tan" videos.
+
+
+Environment
+
+
+PyTorch 2.13.0, macOS arm64, Apple M4 Max
+
+
+Reproduces in fp32 and fp16 (fp16 additionally produces NaNs in the padded output)
+
+
+
+Minimal repro
+
+
+import torch
+import torch.nn.functional as F
+
+torch.manual_seed(3)
+x = torch.randn(1, 3, 9, 256, 544)          # 5D, fp32
+pad = (0, 0, 0, 0, 2, 0)                    # temporal front-only
+
+a = F.pad(x.to("mps"), pad).cpu()           # MPS
+b = F.pad(x, pad)                           # CPU
+print(torch.equal(a, b))                    # False (~80% of elements differ)
+print(float((a - b).abs().max()))           # ~5-6 (input range is +/-4)
+
+
+
+Characterization
+
+Elementwise compare vs CPU (torch.equal), pad=(0,0,0,0,2,0), fp32, T=9, C=3:
+
+
+
+
+
+spatial size
+elems/frame (padded)
+bad fraction
+
+
+
+
+
+96x224
+22K
+0.0%
+
+
+
+128x288
+37K
+0.0%
+
+
+
+160x352
+57K
+0.0%
+
+
+
+192x416
+81K
+74.8%
+
+
+
+224x480
+109K
+58.4%
+
+
+
+252x540
+137K
+80.3%
+
+
+
+256x544
+141K
+79.7%
+
+
+
+352x768
+272K
+80.5%
+
+
+
+
+
+Threshold tracks elements per spatial frame, near 2^16 = 65,536
+
+
+Damage pattern (256x544): output frame 0 (the newly padded frame) is 100% correct; frame 1 is 4.6% bad; frames 2+ are 94.06% bad. Exactly 131,072 (2^17) elements wrong per frame, 8,192 (2^13) correct — the power-of-2 geometry suggests a tiling/grid bug in the pad kernel
+
+
+Reproduces with: back-only (0,0,0,0,0,2), symmetric (0,0,0,0,1,1), any value, C=128, T=2..17, fp16 (NaNs)
+
+
+Does not reproduce with spatial-only constant padding (2,0,0,0,0,0) even at 352x768, nor with mode="reflect"/"replicate" on any axis
+
+
+A conv3d consuming the corrupted pad output is itself correct; padding on CPU then moving to MPS gives bit-exact conv results
+
+
+.clone(), .contiguous(), or inserting ops between pad and consumer do not change the corrupted values (values are wrong at pad time, not a layout issue)
+
+
+
+Impact
+
+Any MPS user of 3D-conv models with causal/temporal zero-padding at >= ~256px spatial sizes (video VAE encoders, video diffusion) gets silent data corruption. Because the threshold is size-dependent and the pattern is model-code-dependent, it presents to users as "model X breaks at 720p on Mac" rather than as a framework bug.
+
+
+Workaround
+
+Replace temporal constant-pad with torch.cat of a zero slab (bit-exact vs CPU, verified), or perform the pad on CPU.
+
+
+Possibly related class of bug:  [https://github.com/pytorch/pytorch/pull/188359] #188359 (silently incorrect conv2d output for kernel size >= 256 on MPS).
+
+
+cc  [https://github.com/kulinseth] @kulinseth  [https://github.com/malfet] @malfet  [https://github.com/DenisVieriu97] @DenisVieriu97  [https://github.com/jhavukainen] @jhavukainen  [https://github.com/aditvenk] @aditvenk  [https://github.com/Isalia20] @Isalia20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/apps/github-actions] github-actions
+added 
+ [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22triage%20review%22] triage review
+ 
+ [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22module%3A%20correctness%20(silent)%22] module: correctness (silent)issue that returns an incorrect result silentlyissue that returns an incorrect result silently
+ 
+ [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22module%3A%20padding%22] module: padding
+ 
+ [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22module%3A%20mps%22] module: mpsRelated to Apple Metal Performance Shaders frameworkRelated to Apple Metal Performance Shaders framework
+ 
+ [/pytorch/pytorch/issues?q=state%3Aopen%20label%3A%22bot-triaged%22] bot-triagedThis is a label only to be used by the auto triage botThis is a label only to be used by the auto triage bot
+  [https://github.com/pytorch/pytorch/issues/194922#event-30057316405] on Aug 26, 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Confirmed on a second chip, with the threshold pinned exactly and the trigger narrowed to rank 5.
+
+
+Environment: Apple M1 Pro, macOS 26.6 (Darwin 25.6.0), torch 2.13.0. Your repro reproduces at 80.21% bad (you saw 79.7% on M4 Max), max abs diff 4.98.
+
+
+The threshold is exactly H*W = 65536, not "near 2^16"
+
+Bisecting with pad=(0,0,0,0,2,0), x of shape (1,1,4,H,W):
+
+
+
+   H     W      H*W   vs 65536   bad frac
+  64  1000    64000     -1536     0.0000
+  64  1020    65280      -256     0.0000
+  64  1023    65472       -64     0.0000
+  64  1024    65536         0     0.6667
+  64  1025    65600       +64     0.6660
+ 256   256    65536         0     0.6667
+ 256   257    65792      +256     0.6641
+
+
+
+
+Clean at 65472, broken at 65536, and it does not depend on how the extent splits between H and W: 64x1024 and 256x256 both break. So the trigger is the per-channel spatial frame reaching 2^16 elements exactly.
+
+
+It is rank-5 specific, not a general inner-extent overflow
+
+Holding the inner extent fixed at 65536 and varying the rank:
+
+
+
+5D, pad dim 2 (temporal), H*W=65472    clean
+5D, pad dim 2 (temporal), H*W=65536    0.6667 bad
+4D, pad dim 1 (channel),  H*W=65536    clean
+3D, pad dim 0,            H*W=65536    clean
+5D, pad dim 3 (H)                      clean
+5D, pad last dim (W) only              clean
+
+
+
+
+A 4D or 3D tensor with an identical 65536-element inner extent is clean, so this is not simply "an inner dimension crossed 2^16". It requires rank 5 and padding dim 2 and H*W >= 65536 together.
+
+
+That combination is what selects the dimension-inflation branch in pad_out_template, which only runs when ndims > padding_dim + 1:
+
+
+ [https://github.com/pytorch/pytorch/blob/main/aten/src/ATen/native/mps/operations/Pad.mm] https://github.com/pytorch/pytorch/blob/main/aten/src/ATen/native/mps/operations/Pad.mm
+
+
+
+} else if (ndims > padding_dim + 1) {
+    const int dim_diff = (int)ndims - padding_dim - 1;
+    // this virtually inflates the padding with zeros if ndims > padding_dim + 2
+    padding_dim += dim_diff - 1;
+    dim_w += dim_diff;
+    dim_h += dim_diff;
+    dim_d += dim_diff;
+    dim_slices++;
+
+
+
+For a 5D input with a 6-element pad this is the only rank that takes that branch with a non-trivial dim_diff, which fits the rank-5 selectivity above.
+
+
+Damage geometry
+
+On this machine the correct-element count per frame is exactly 8192 = 2^13, with the remaining 409600 of 417792 wrong, for every frame from index 2 onward (frames 0 and 1 are fully correct here; you saw frame 1 partially bad on M4 Max, so that part looks chip- or driver-dependent).
+
+
+Repro
+
+
+import torch, torch.nn.functional as F
+torch.manual_seed(0)
+for W in (1023, 1024):
+    x = torch.randn(1, 1, 4, 64, W)
+    a = F.pad(x.to("mps"), (0,0,0,0,2,0)).cpu()
+    b = F.pad(x, (0,0,0,0,2,0))
+    print(64*W, float((a != b).float().mean()))
+
+
+
+Since constant_pad_nd_mps goes through pad_out_template into MPSGraph rather than a PyTorch Metal kernel, it would be worth establishing whether the fault is in what PyTorch hands to MPSGraph for the inflated-padding case or in MPSGraph's own constant pad above 2^16. If it is the latter, the torch.cat workaround you found is probably the right shape for a fix on the PyTorch side, gated on rank and extent. Happy to test candidate patches on this machine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Follow-up: this is a bug in Apple's MPSGraph, not in PyTorch. Here is a standalone reproduction with no PyTorch in the process, plus a guard condition and a fallback that is bit-exact.
+
+
+Standalone MPSGraph repro
+
+Objective-C++ calling -padTensor:withPaddingMode:leftPadding:rightPadding:constantValue:name: directly, input filled with (i % 1000) + 1 so the pad constant is distinguishable from data:
+
+
+
+  N=1 C=1 T=4 H=64  W=1023  H*W=65472   bad=0/392832       (0.0000)
+  N=1 C=1 T=4 H=64  W=1024  H*W=65536   bad=262144/393216  (0.6667)
+  N=1 C=1 T=4 H=256 W=256   H*W=65536   bad=262144/393216  (0.6667)
+  N=1 C=1 T=4 H=64  W=2048  H*W=131072  bad=524288/786432  (0.6667)
+
+
+
+
+Same 2^16 threshold as through PyTorch. bad equals the input element count exactly, so above the threshold the padded region is written correctly and every copied input element is wrong.
+
+
+What it writes
+
+
+  first copied frame, elems 0..5:  got 0 0 0 0 0 0
+  expected                         1 2 3 4 5 6
+  zeros among copied region: 196992/262144   (H*W=65536)
+  zeros among copied region: 524288/524288   (H*W=131072)
+
+
+
+
+MPSGraph writes the constant fill value in place of the input data. At twice the threshold the input is dropped entirely. That is consistent with the flat "tan" videos in the original report: the VAE was consuming zeros.
+
+
+Exact guard condition
+
+It is not rank-5-specific. Rank 6 corrupts identically (0.6667), while rank 4 with the same 65536 inner extent is clean. The discriminator is the dimension-inflation branch in pad_out_template, ndims > padding_dim + 1, which rank 4 never takes (4 > 4 is false) and ranks 5 and 6 do:
+
+
+
+5D pad dim2, H*W=65472   clean
+5D pad dim2, H*W=65536   0.6667 bad
+6D pad dim3, H*W=65536   0.6667 bad
+4D pad dim1, H*W=65536   clean
+3D pad dim0, H*W=65536   clean
+
+
+
+
+So the failing configuration is: ndims > padding_dim + 1 and the product of the two innermost dimensions >= 65536.
+
+
+The existing generic path is a correct fallback
+
+at::native::constant_pad_nd (already used in constant_pad_nd_mps for pad.size() > 6) is bit-exact against CPU on every failing shape:
+
+
+
+shape                        inner    mps bad   fallback bad
+(1, 1, 4, 64, 1023)          65472     0.0000         0.0000
+(1, 1, 4, 64, 1024)          65536     0.6667         0.0000
+(1, 3, 9, 256, 544)         139264     0.8021         0.0000
+(1, 1, 4, 256, 257)          65792     0.6641         0.0000
+
+
+
+
+So a minimal fix is to extend the existing guard in constant_pad_nd_mps to route this configuration to at::native::constant_pad_nd as well, rather than handing it to MPSGraph.
+
+
+I am building from source to test that patch and will open a PR unless a maintainer would prefer a different shape for the workaround, for instance gating on an OS version once Apple fixes it upstream. Worth someone filing this with Apple in parallel, since the underlying fault is theirs.
+
+
+Environment for all of the above: Apple M1 Pro, macOS 26.6 (Darwin 25.6.0), torch 2.13.0, Xcode clang 17.0.0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Filed with Apple as FB24527244 (Metal / macOS / Incorrect-Unexpected Behaviour), with the standalone mpsgraph_pad.mm attached, so the upstream fault is now tracked on their side.
+
+
+Restating the split for whoever picks this up: the fault is in MPSGraph's constant pad, so PyTorch cannot fix the kernel, but PyTorch currently hands it the failing configuration and returns silently wrong tensors to users on current stable. A guard is still worth having independently of Apple's timeline.
+
+
+I have a patch building locally: extend the existing pad.size() > 6 fallback in constant_pad_nd_mps to also route ndims > padding_dim + 1 with an inner extent of at least 65536 to at::native::constant_pad_nd, plus a regression test that brackets the threshold at 64x1023 against 64x1024 in float32 and float16. That keeps the fast MPSGraph path for everything below the threshold and only diverts the shapes that are currently broken.
+
+
+Happy to open it as a PR, or to leave it if a maintainer would rather gate on an OS version so the workaround lifts automatically once Apple ships a fix. Say which you prefer and I will send it that way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/pytorchmergebot] pytorchmergebot
+closed this as  [/pytorch/pytorch/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completedin  [https://github.com/pytorch/pytorch/commit/72bca5e6d542341e6bcd795aaa293968843c29b2] 72bca5e [https://github.com/pytorch/pytorch/issues/194922#event-30273475566] on Aug 31, 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/apps/pull] pull
+added a commit that references this issue  [https://github.com/pytorch/pytorch/issues/194922#event-30273798792] on Aug 31, 2026
+
+
+
+
+ [https://github.com/sree-hari-s/pytorch/commit/72bca5e6d542341e6bcd795aaa293968843c29b2] 
+
+[MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements ( [https://github.com/pytorch/pytorch/pull/195147] …
+
+
+...
+
+ [https://docs.github.com/articles/closing-issues-via-commit-messages] This issue will close once commit 72bca5e is merged into the 'main' branch.
+
+ [https://github.com/sree-hari-s/pytorch/commit/72bca5e6d542341e6bcd795aaa293968843c29b2] 72bca5e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/orrangetabby17] orrangetabby17
+added a commit that references this issue  [https://github.com/pytorch/pytorch/issues/194922#event-30399494112] on Sep 2, 2026
+
+
+
+
+ [https://github.com/orrangetabby17/pytorch/commit/e8f07fbab33e94ec2e2a0bfd53998978b32d97c8] 
+
+[MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements ( [https://github.com/pytorch/pytorch/pull/195147] …
+
+
+...
+
+ [https://docs.github.com/articles/closing-issues-via-commit-messages] This issue will close once commit e8f07fb is merged into the 'main' branch.
+
+ [https://github.com/orrangetabby17/pytorch/commit/e8f07fbab33e94ec2e2a0bfd53998978b32d97c8] e8f07fb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ [/Sanskaaar1] Sanskaaar1
+added a commit that references this issue  [https://github.com/pytorch/pytorch/issues/194922#event-30734152739] on Sep 8, 2026
+
+
+
+
+ [https://github.com/Sanskaaar1/pytorch/commit/74ef109785c0a40d90121da3f15131a511e363d8] 
+
+[MPS] Fix pad corrupting rank > 4 tensors with >= 2^16 inner elements ( [https://github.com/pytorch/pytorch/pull/195147] …
+
+
+...
+
+ [https://docs.github.com/articles/closing-issues-via-commit-messages] This issue will close once commit 74ef109 is merged into the 'main' branch.
+
+ [https://github.com/Sanskaaar1/pytorch/commit/74ef109785c0a40d90121da3f15131a511e363d8] 74ef109
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Still reproduces on the current stable wheel (torch 2.14.1) and is fixed in the nightlies — one more data point, plus a second real-world victim.
+
+
+Environment: torch 2.14.1 (pip wheel, released 2026-09-30), Python 3.12.15, macOS 26.6.2, MacBook Pro with Apple M5 Pro (48 GB).
+
+
+
+
+
+shape (fp32)
+pad
+H·W
+torch 2.14.1
+nightly 2.16.0.dev20261021
+
+
+
+
+
+(1,1,4,64,1023)
+(0,0,0,0,2,0)
+65472
+ok
+ok
+
+
+
+(1,1,4,64,1024)
+(0,0,0,0,2,0)
+65536
+66.7% of elements wrong
+ok
+
+
+
+(1,3,9,256,544)
+(0,0,0,0,2,0)
+139264
+80.2% wrong
+ok
+
+
+
+(1,160,1,192,256)
+(0,0,0,0,1,0)
+49152
+ok
+ok
+
+
+
+(1,160,1,256,256)
+(0,0,0,0,1,0)
+65536
+copied slab is all zeros (50% wrong)
+ok
+
+
+
+(1,160,1,320,256)
+(0,0,0,0,1,0)
+81920
+same
+ok
+
+
+
+
+Same in bf16 and fp16. .clone(), .contiguous(), torch.mps.synchronize() and torch.constant_pad_nd change nothing; torch.cat([zeros, x], 2) is bit-exact. Rank-3/4 tensors with the same element counts and the same 65536-element inner extent are fine, so the trigger really is rank ≥ 5 + a padded axis in front of the two innermost dims + inner extent ≥ 2^16, independent of the total size.
+
+
+release/2.14 has neither  [https://github.com/pytorch/pytorch/pull/195147] #195147 nor  [https://github.com/pytorch/pytorch/pull/195368] #195368, so the latest stable release still silently corrupts this op; release/2.15 has both (2.15.0 is at rc7). Is a 2.14.x cherry-pick an option, or is 2.15.0 the fix vehicle?
+
+
+Second production impact, for people searching: ComfyUI's Wan 2.2 VAE encoder (AvgDown3D in comfy/ldm/wan/vae2_2.py) temporally pads the single-frame first chunk with F.pad(x, (0,0,0,0,pad_t,0)). For a 1024x1024 input the tensor at that pad is exactly (1,160,1,256,256), so on Apple silicon the VAE round trip and image-to-video come out washed out from about 1 megapixel up, while smaller inputs are fine. Replacing that pad with torch.cat on MPS makes the round trip match CPU.
+
+
+(Measured and written with AI assistance (Claude Code) at the account owner's request; all numbers are from this machine.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

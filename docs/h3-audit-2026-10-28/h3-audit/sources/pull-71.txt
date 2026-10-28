@@ -1,0 +1,561 @@
+
+
+feat(video-vae): expose temporal chunk callback - #71
+
+Closed
+
+Closed
+
+ [/hsliuustc0106] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/hsliuustc0106] hsliuustc0106
+
+      
+
+      
+
+      commented
+
+         [#issue-5306214170] Sep 1, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Summary
+
+Expose a versioned, optional temporal chunk callback from the MiniMax H3 video VAE's public decode_temporal and decode_base methods.
+
+The callback is invoked by the existing streaming temporal assembler only after overlap blending and final padding removal. The VAE remains the sole owner of temporal planning and returns the same complete tensor as before.
+
+API contract
+
+temporal_chunk_callback_api_version = 1 identifies this contract. Each callback receives:
+
+a borrowed, read-only raw decoder-domain BCTHW tensor;
+
+chunk_index and total_chunks;
+
+the contiguous frame_start offset;
+
+is_final for the terminal nonempty chunk.
+
+Chunks are ordered, nonempty, use the decoder's dtype/device, and concatenate exactly to the complete raw decode. Callback exceptions are retained until the decoder finishes its remaining collectives, preventing one spatial-parallel rank from stranding its peers. Image decode, training mode, and frame_num trimming are intentionally rejected when a callback is supplied.
+
+The callback is synchronous on the current decoder stream and has no rank policy. A consumer that retains a chunk or reads it on another stream must establish the required stream ordering and lifetime itself.
+
+Validation
+
+pytest -q tests/test_temporal_chunk_callback.py: 30 passed.
+
+Coverage includes padding that truncates or fully removes the final logical part, exact metadata/total_chunks, isolated head/tail frames, non-identity overlap blending, mutation isolation, terminal and early callback failures, recovery, and a real two-process Gloo collective-failure test.
+
+An additional synthetic differential sweep covered 11,222 valid combinations of temporal ratio, clip length, token drop, padding, isolated head/tail flags, and latent length with zero full-output, chunk-concatenation, or metadata mismatches.
+
+A real-checkpoint integration used this commit with vLLM-Omni adapter commit 3c578c62303b945d414c198681abe4819f4164cc on the frozen MiniMax-H3 weights. On 4× NVIDIA L20X, all serial and chunk-pipelined arms produced the same 209 frames, frame hash, 43,785,934-byte MP4 hash, decoded-RGB hash, dimensions/FPS, and stereo 32-kHz AAC metadata.
+
+The bundled feasibility result was 3.2513 ± 0.0124 s serial versus 2.3374 ± 0.0080 s chunk-pipelined, a 0.9139 s (28.11%) reduction from VAE-arm start to complete MP4. This changes publication, pinned D2H, buffer reuse, and encoder scheduling as one bundle; it is not an isolated callback-overhead or production-serving benchmark. A separate Nsight trace confirmed pairwise VAE↔D2H and VAE↔MP4 overlap, but no sustained simultaneous three-stage intersection.
+
+Related downstream investigation:  [https://github.com/vllm-project/vllm-omni/issues/6872] vllm-project/vllm-omni#6872
+
+Hugging Face publication request
+
+The GitHub and current Hugging Face FL2VA/Ref2VA video_vae/klvae.py files started byte-identical, but prior GitHub fixes have not automatically appeared in the Hub snapshot. After merge, please publish both updated remote-code copies to MiniMaxAI/MiniMax-H3; downstream adapters fail closed until temporal_chunk_callback_api_version == 1 is present in the loaded model code.
+
+Reproducibility
+
+MiniMax base: d21241f0a4b3acbb34c97dae47fa417b7065e438
+
+MiniMax callback commit: e33cde9de2f0322cf3e2811273a5829059dae1fc
+
+Frozen HF snapshot: 42ed227ee7df40d41602854ae760620d6eb651fe
+
+Controlled 4-GPU JSON SHA-256: cf2b0a0592a1128e5ef103e1be937861957e59b67b56ba7c0d609fe55f57c82c
+
+Nsight report SHA-256: ad05fc31dc7e4263121f016b002c688c2608dff896cba09075222b00fc99facb
+
+The commit includes a DCO sign-off. The implementation was AI-assisted and manually reviewed, tested, and benchmarked.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/71]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/hsliuustc0106] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/71/commits/e33cde9de2f0322cf3e2811273a5829059dae1fc] feat(video-vae): expose temporal chunk callback
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/71/commits/e33cde9de2f0322cf3e2811273a5829059dae1fc] e33cde9
+
+      
+
+    
+
+  
+
+    
+
+      
+Signed-off-by: hsliuustc0106 <liuhongsheng4@huawei.com>
+
+    
+
+  
+
+    
+
+  
+
+  
+
+      
+
+  This was referenced Sep 1, 2026
+
+  
+
+     [/vllm-project/vllm-omni/pull/6885] 
+      [Model] MiniMax-H3: expose temporal VAE chunks
+      vllm-project/vllm-omni#6885
+
+  
+
+      
+   Closed
+
+  
+
+      
+
+  
+
+     [/vllm-project/vllm-omni/issues/6872] 
+      [RFC]: Chunkwise VAE-to-Transport-to-MP4 Overlap for Low-Latency Video Diffusion
+      vllm-project/vllm-omni#6872
+
+  
+
+      
+
+  
+
+  Open
+
+  
+
+  
+
+  
+
+   [/hsliuustc0106] 
+
+  
+
+    
+
+      
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/hsliuustc0106] hsliuustc0106
+
+      
+
+      
+
+      commented
+
+         [#issuecomment-5487007224] Sep 1, 2026
+
+      
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+        
+
+  Author
+
+    
+
+  
+
+      
+
+        
+
+  
+
+      
+
+Downstream update: vLLM-Omni #6885 now includes a source-gated compatibility assembler for the current Hub snapshot, so it no longer depends on this PR or an immediate Hub republish. This PR remains useful as the cleaner long-term native callback API; vLLM can switch to it after a future merge/release.
+
+      
+
+  
+
+        
+
+            
+
+            
+
+              
+
+  
+
+      
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+            
+
+        
+
+      
+
+      
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+      
+
+    
+
+    
+
+      
+
+           [/hsliuustc0106] 
+ [/hsliuustc0106] hsliuustc0106
+
+          closed this
+
+       [#event-30385192029] Sep 2, 2026
+
+    
+
+  
+

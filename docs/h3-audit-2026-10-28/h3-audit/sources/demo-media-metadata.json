@@ -1,0 +1,596 @@
+[
+  {
+    "path": "assets/3d-animation-short-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "8.010000"
+      }
+    }
+  },
+  {
+    "path": "assets/brand-promo-video-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 203,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "7.130000"
+      }
+    }
+  },
+  {
+    "path": "assets/co-op-game-intro-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "7.760000"
+      }
+    }
+  },
+  {
+    "path": "assets/fl2va.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "assets/full-arch.png",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 3936,
+          "height": 2186,
+          "r_frame_rate": "25/1"
+        }
+      ],
+      "format": {}
+    }
+  },
+  {
+    "path": "assets/h3_direct_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "10.125000"
+      }
+    }
+  },
+  {
+    "path": "assets/h3_direct_768p.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "10.125000"
+      }
+    }
+  },
+  {
+    "path": "assets/handdrawn-live-video-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "8.010000"
+      }
+    }
+  },
+  {
+    "path": "assets/i2va.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "assets/i2va_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "assets/i2va_direct_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "assets/i2va_direct_768p.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "assets/minimalist-product-ad-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 203,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "6.760000"
+      }
+    }
+  },
+  {
+    "path": "assets/minimax-h3-header.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 640,
+          "height": 193,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "41.760000"
+      }
+    }
+  },
+  {
+    "path": "assets/music-video-subtitle-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "8.010000"
+      }
+    }
+  },
+  {
+    "path": "assets/overview.png",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 3616,
+          "height": 1336,
+          "r_frame_rate": "25/1"
+        }
+      ],
+      "format": {}
+    }
+  },
+  {
+    "path": "assets/paper-collage-explainer-generator.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "7.510000"
+      }
+    }
+  },
+  {
+    "path": "assets/papercraft-stop-motion-explainer.gif",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "codec_type": "video",
+          "width": 360,
+          "height": 202,
+          "r_frame_rate": "8/1"
+        }
+      ],
+      "format": {
+        "duration": "7.510000"
+      }
+    }
+  },
+  {
+    "path": "assets/r2va.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "5.175000"
+      }
+    }
+  },
+  {
+    "path": "assets/r2va_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "5.167000"
+      }
+    }
+  },
+  {
+    "path": "assets/r2va_direct_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "5.167000"
+      }
+    }
+  },
+  {
+    "path": "assets/r2va_direct_768p.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "5.167000"
+      }
+    }
+  },
+  {
+    "path": "assets/ref2va.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "5.175000"
+      }
+    }
+  },
+  {
+    "path": "assets/t2va.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "10.125000"
+      }
+    }
+  },
+  {
+    "path": "assets/t2va_2k.mp4",
+    "probe_exit": 0,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "32000",
+          "channels": 2,
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "10.125000"
+      }
+    }
+  }
+]

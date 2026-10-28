@@ -1,0 +1,441 @@
+
+
+Fix folder/link mismatch for music-video-subtitle-generator skill - #12
+
+Merged
+
+Merged
+
+ [/Anuj04432] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/Anuj04432] Anuj04432
+
+      
+
+      
+
+      commented
+
+         [#issue-5100890876] Aug 9, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+Fixes  [https://github.com/MiniMax-AI/MiniMax-H3/issues/11] #11
+
+Problem
+
+Every skill in skills/ has a folder name that matches its documented
+
+display name — except one. The music-video-subtitle-generator skill
+
+(shown in README.md's skill grid and in skills/README.md) was linked to:
+
+skills/mv-subtitle-skill-confirmed/SKILL.md
+
+...while its display name, image alt text, and asset filename all use
+
+music-video-subtitle-generator. The folder mv-subtitle-skill-confirmed
+
+appears to be a leftover internal/working name that was never renamed to
+
+match the convention before merging.
+
+Why it matters
+
+The README documents skill installation as:
+
+npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill <name>
+
+A user reading the docs and running:
+
+npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill music-video-subtitle-generator
+
+would not resolve to this skill, since the CLI appears to match --skill
+
+against the folder name, and the real folder was mv-subtitle-skill-confirmed
+
+— a name that appears nowhere in the user-facing docs.
+
+What this PR does
+
+Renamed the skill folder to match its documented name:
+
+skills/mv-subtitle-skill-confirmed/ → skills/music-video-subtitle-generator/
+
+Updated README.md — the skill grid entry now links to
+
+skills/music-video-subtitle-generator/SKILL.md instead of the old path.
+
+Updated skills/README.md — removed a stale note
+
+("Installable under the name music-video-subtitle-generator
+
+(folder: mv-subtitle-skill-confirmed)") that flagged the old
+
+mismatch and is no longer accurate now that the folder is renamed;
+
+the section now matches the format of every other skill entry in
+
+the file, and both SKILL.md / SKILL.cn.md links point to the
+
+new path.
+
+Grepped the repo for any remaining references to
+
+mv-subtitle-skill-confirmed to confirm nothing else was left pointing
+
+at the old path.
+
+Result
+
+music-video-subtitle-generator is now consistent everywhere — folder
+
+name, README link, skills index link, and installable skill name all
+
+match, so npx skills add --skill music-video-subtitle-generator resolves
+
+correctly.
+
+No functional change to the skill's content — this is a pure rename/link fix.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/12]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/Anuj04432] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/12/commits/597042140567efefd8c4adcfe8124c20f63a3399] Fix folder/link mismatch for music-video-subtitle-generator skill
+
+          
+                  …
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/12/commits/597042140567efefd8c4adcfe8124c20f63a3399] 5970421
+
+      
+
+    
+
+  
+
+    
+
+      
+Renames skills/mv-subtitle-skill-confirmed -> skills/music-video-subtitle-generator
+to match the display name used throughout README.md and skills/README.md,
+so \
+px skills add --skill music-video-subtitle-generator\ resolves correctly.
+
+    
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/e4a0b9c23dcbb8870d48a8eecab4bcc4058fc331] e4a0b9c
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/12#event-29178076355] Aug 9, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

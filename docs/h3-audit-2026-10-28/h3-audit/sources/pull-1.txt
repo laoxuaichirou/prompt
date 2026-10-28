@@ -1,0 +1,440 @@
+
+
+Polish skills README with status and contribution notes - #1
+
+Merged
+
+Merged
+
+ [/RyanLee-Dev] 
+
+  
+
+          
+
+  
+
+    
+
+      
+
+      
+
+      
+             [/RyanLee-Dev] RyanLee-Dev
+
+      
+
+      
+
+      commented
+
+         [#issue-5077977164] Aug 6, 2026
+
+      
+  •
+
+  
+
+      
+
+        
+          edited by blacksmith-sh
+          Bot
+
+        
+
+      
+
+    
+
+      
+
+        
+
+    
+
+    Loading
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+      
+
+    
+
+  
+
+        
+
+  
+
+              Copy link
+
+  
+
+            
+
+      
+              Copy Markdown
+
+  
+
+        
+
+    
+
+    
+
+        
+
+  
+    Contributor
+
+        
+
+    
+
+  
+
+          
+
+        
+
+  
+
+    
+
+      
+This PR polishes skills/README.md only (the root README is untouched).
+
+Adds a Status section clarifying that the skills are actively evolving: the 8 style skills ship with bilingual SKILL.md/SKILL.cn.md, while h3-prompt-writing is currently English-only.
+
+Clarifies that the MV subtitle skill is installed under the name music-video-subtitle-generator while living in the mv-subtitle-skill-confirmed folder.
+
+Adds a short Contribute note inviting community contributions and mentioning the API credit rewards for qualifying PRs.
+
+Documentation-only change.
+
+ [https://app.blacksmith.sh/MiniMax-AI/codesmith/MiniMax-H3/pr/1]   [https://backend.blacksmith.sh/track/enable-autofix] 
+
+Need help on this PR? Tag @codesmith-bot with what you need. Autofix is disabled.
+
+    
+
+  
+
+      
+
+          
+
+  
+
+    
+
+    
+
+  
+
+  
+
+    
+
+    Sorry, something went wrong.
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+                    
+
+          
+
+  
+
+    
+
+      
+
+        
+
+    All reactions
+
+          
+
+        
+
+    
+
+        
+
+  
+
+  
+
+    
+
+  
+           [/RyanLee-Dev] RyanLee-Dev
+
+        added 2 commits
+         [#commits-pushed-e0a5da6] August 6, 2026 13:32
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/RyanLee-Dev] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/1/commits/e0a5da658eb872757d977ea3781c4b8a20fbe47e] Polish skills README with status and install-name notes
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/1/commits/e0a5da658eb872757d977ea3781c4b8a20fbe47e] e0a5da6
+
+      
+
+    
+
+  
+
+  
+
+    
+
+  
+
+  
+
+    
+
+      
+
+  
+
+         [/RyanLee-Dev] 
+
+  
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/1/commits/319e2008f4a3a520ee11170cb82e43ba3d7f2f69] Declare skills WIP status and contribution rewards in skills README
+
+      
+
+      
+
+        
+
+    
+
+    
+
+    
+
+  
+
+      
+
+      
+
+        
+
+          
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+        
+           [/MiniMax-AI/MiniMax-H3/pull/1/commits/319e2008f4a3a520ee11170cb82e43ba3d7f2f69] 319e200
+
+      
+
+    
+
+  
+
+ 
+
+    
+
+  
+
+  
+
+            Hide details
+          View details
+
+    
+
+        
+
+               [/RyanLee-Dev] 
+
+        
+
+      
+
+               [/RyanLee-Dev] RyanLee-Dev
+
+            merged commit  [/MiniMax-AI/MiniMax-H3/commit/a71bc89bcc7af80784f0be75a34b9b208fe126c4] a71bc89
+          into
+
+          
+
+    MiniMax-AI:main
+
+         [https://github.com/MiniMax-AI/MiniMax-H3/pull/1#event-29049397480] Aug 6, 2026
+
+          
+
+            1 check passed
+
+      
+
+    
+
+      
+
+        
+
+          
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+      
+        Uh oh!
+
+      
+
+There was an error while loading. Please reload this page.
+
+  
+
+  
+
+      
+
+  
+

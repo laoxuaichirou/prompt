@@ -1,0 +1,134 @@
+
+
+MiniMax H3: extra/repeated Mandarin dialogue and clipped speech onset when using standalone reference audio #95
+
+Open
+
+Open
+
+ [https://github.com/user-attachments/files/33673279/MiniMax_H3_reference_audio_repro.zip] MiniMax_H3_reference_audio_repro.zip
+
+ [https://github.com/user-attachments/files/33673325/MiniMax_H3_reference_audio_repro.zip] MiniMax_H3_reference_audio_repro.zip
+
+Summary
+
+When using standalone reference audio for a character's voice, I have encountered extra opening dialogue, repeated words/sentences, and clipped or missing initial syllables. Disabling reference audio has been the practical workaround in my project, although this makes voice consistency harder.
+
+I initially encountered this in a third-party Director workflow. I also tried the native official reference-to-video workflow and reported similar unwanted speech. I am not yet certain whether the cause is model behavior, the reference clip, prompt formatting, quantization, or the integration.
+
+Evidence limitation: I deleted the abnormal output videos. The attached bundle contains inputs and newly prepared A/B workflows, not a recorded successful reproduction. These exact packaged workflows have been checked structurally but have not yet been run on the GPU. My earlier native-workflow test is a historical observation, not a verified result for the attached native baseline.
+
+Observed behavior in earlier tests
+
+An opening phrase such as 听说这个电话亭 could be generated even though it was not the requested dialogue.
+
+The start of the requested sentence could be clipped or lose initial syllables.
+
+Other runs repeated parts of the requested dialogue multiple times.
+
+Replacing the voice reference improved the clipped-onset problem in one run, but did not establish a stable fix; repetition occurred in later testing.
+
+A one-second opening with environment sound only was requested. In an earlier generated clip, speech-like audio started around 0.4–0.5 seconds. That clip is no longer available, so this timing cannot be independently verified from this bundle.
+
+These symptoms occurred across different runs; I am not claiming every run exhibits all symptoms or that timing drift alone proves an implementation bug. I do not have a measured failure rate.
+
+Expected behavior
+
+For a voice/timbre reference, the generated speech should follow the specified dialogue without introducing reference-derived or unsolicited words or repeating the sentence. If the model only supports a different use of audio references, please clarify the supported prompting pattern and limitations.
+
+Prepared core-only reproduction
+
+The native_*.json files use native ComfyUI nodes and do not require Director, KJNodes, Seed-VC, or a custom importer. They are adapted from:
+
+ [https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_r2v.json] https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_r2v.json
+
+Copy the bundle's input/h3_audio_repro directory into ComfyUI/input/ without renaming its files.
+
+Install the model files named in the workflow loaders.
+
+Load native_A_with_audio.json. Confirm the reference audio connects to MiniMaxH3ReferenceToVideo.ref_audios.ref_audio_0. Run and retain the MP4 and console log.
+
+Run native_B_no_audio_same_prompt.json. It keeps the same prompt, model, seed, steps, images, frame length, and sampler settings, but disconnects the reference-audio input. The unused LoadAudio node remains in the graph. Output prefixes differ so results do not overwrite one another.
+
+Since B deliberately leaves an unbound <Audio 1> mention in the prompt, also run native_C_no_audio_clean_prompt.json. C removes the introductory reference-audio instructions and preserves the dialogue block and scene instructions.
+
+If necessary, repeat with voice_alternative.wav selected in A's LoadAudio node. Record each result separately; do not mix sample changes into the same A/B comparison.
+
+The output MP4s are written under ComfyUI/output/video/ with H3_audio_repro_ prefixes. To check more seeds, change the seed identically across A/B/C and keep all other settings fixed.
+
+Prepared native baseline settings
+
+Diffusion model: minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+Text encoder: qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors, type minimax
+
+Video VAE: minimax_h3_video_vae_int8_convrot.safetensors
+
+Audio VAE: minimax_h3_audio_vae_fp32.safetensors
+
+Seed: 666, fixed; sampler: res_multistep; scheduler: simple; steps: 20; denoise: 1
+
+Turbo/LoRA: removed from this isolated baseline
+
+Resolution: official template selector at 0.4 megapixels, 16:9; frame rate: 24
+
+Requested scene duration: 13 seconds; valid H3 frame length: 328 frames (approximately 13.667 seconds)
+
+Five image references, one optional standalone audio reference, no reference video or video soundtrack
+
+These are the prepared baseline settings, not a claim that every earlier test used this configuration. The historical Director path used a hybrid model and FL2V Turbo LoRA. Its separate director_A_with_audio.json and director_B_no_audio.json are included only as supplementary cases and require the current Director plugin.
+
+Prompt and reference audio
+
+The full original Mandarin prompt is in prompt_original.txt and embedded in the workflows. It uses <Audio 1>, (S3), and one <d>[Chinese] ... </d> dialogue block. It asks for the reference's voice/timbre rather than its words. There is only one dialogue block; the visual description contains semantic references to parts of the same sentence, which may be relevant to repetition.
+
+Both reference clips are extracted from earlier generated video, rather than clean studio recordings. They may contain ambient sound:
+
+voice_original.wav: 3.2 seconds, 32 kHz, mono, PCM 16-bit.
+
+voice_alternative.wav: approximately 2.333 seconds, 32 kHz, stereo, PCM 16-bit.
+
+The alternate clip was cut at a generated segment boundary; no speech transcription or source separation was performed. File hashes and formats are listed in assets_manifest.json. Please advise if reference length, background sound, or the nonconsecutive speaker ID (S3) is unsupported or requires different formatting.
+
+Historical troubleshooting
+
+Normalized Speaker ID notation and retained the character's (S3) identity.
+
+Tried disabling acceleration and increasing sampling steps; the issue was not reliably eliminated.
+
+Tried a pure Ref2VA model as well as the hybrid workflow.
+
+Tried the native official workflow as well as the Director path.
+
+Replaced the reference clip and adjusted opening-silence instructions.
+
+I cannot provide controlled per-configuration result videos for these historical tests, because the outputs were deleted. I am not attributing the behavior to a specific change based only on these experiments.
+
+Environment
+
+Values recovered from an earlier ComfyUI startup log, not freshly collected from a new reproduction:
+
+OS: Windows
+
+ComfyUI: 0.41.3
+
+Python: 3.13.12
+
+PyTorch: 2.12.1+cu130
+
+GPU: NVIDIA GeForce RTX 4090 D; reported VRAM: 23028 MB
+
+Exact current ComfyUI commit, frontend version, driver version, command-line arguments, and a fresh startup log: not captured yet. Model weight hashes are also not captured. I will add current environment details and newly generated A/B output videos when available.
+
+Questions
+
+Is standalone audio reference intended to preserve only voice identity while independently generating the supplied dialogue?
+
+Is there a recommended reference length, sample format, or prompt structure for Mandarin speech?
+
+Are extra/repeated dialogue or unstable speech onset known limitations with these weights or quantized encoders?
+
+Is there a recommended model/integration revision to test next?
+
+The bundle's validation.json records static checks and explicitly marks GPU execution as not performed.
+

@@ -1,0 +1,99 @@
+
+
+H3 is currently the best opensource model #5
+
+Open
+
+Open
+
+Edited: Thank you i crafted a system prompt and it worked, i was wrong, H3 is really a capable model.
+
+You opened weights saying these weights are same as closed source weights, and yet there are limitations for example i generated a video with this just single text prompt in API and it worked:
+
+"follow text instructions from first frame"
+
+and closed source model generated a video correctly:
+
+  
+
+    
+
+    Hailuo_Video_follow.text.instructions.from._541712491691143176.mp4
+
+  
+
+  
+
+  
+
+now look at the output from open weights with same prompt but i even tried different and it never worked:
+
+here the result from both open weights:
+
+ [https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96] https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96
+
+ [https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1] https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1
+
+one with ref2vid and other fl2vid.
+
+And i must say what is this? i mean it contains a large 32b vl encoder and it still fails to understand simple tasks? i am not saying that the models are bad in fact they are the best one so far as opensource, but selling with fake cherry on top of it is not right.
+
+hi, You opened weights saying these weights are same as closed source weights, and yet there are limitations for example i generated a video with this just single text prompt in API and it worked:
+
+"follow text instructions from first frame"
+
+and closed source model generated a video correctly:
+
+Hailuo_Video_follow.text.instructions.from._541712491691143176.mp4
+
+now look at the output from open weights with same prompt but i even tried different and it never worked:
+
+here the result from both open weights:
+
+ [https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96] https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96  [https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1] https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1
+
+one with ref2vid and other fl2vid.
+
+And i must say what is this? i mean it contains a large 32b vl encoder and it still fails to understand simple tasks? i am not saying that the models are bad in fact they are the best one so far as opensource, but selling with fake cherry on top of it is not right.
+
+I am not from the Minimax team, but theeir API version uses a prompt enhancer. No model can understand simple words literally, a prompt enhancer is needed for every model. That's how the DiT arch works. They literally state it on their HF page. 32B for text encoding because video models need complex understanding which can only happen in large LLMs. Every multi-shot model out there use large LLMs for prompt encoding.
+
+ [/OrangeUnknownCat] OrangeUnknownCat
+changed the title [-]Same tactics as used by alibaba wan team[/-] [+]H3 is currently the best opensource model[/+]  [https://github.com/MiniMax-AI/MiniMax-H3/issues/5#event-29108185762] on Aug 7, 2026
+
+hi, You opened weights saying these weights are same as closed source weights, and yet there are limitations for example i generated a video with this just single text prompt in API and it worked:
+
+"follow text instructions from first frame"
+
+and closed source model generated a video correctly:
+
+Hailuo_Video_follow.text.instructions.from._541712491691143176.mp4
+
+now look at the output from open weights with same prompt but i even tried different and it never worked:
+
+here the result from both open weights:
+
+ [https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96] https://github.com/user-attachments/assets/20d2975a-4f30-4541-8e8e-0dd126ebaf96  [https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1] https://github.com/user-attachments/assets/acec3afa-6bdb-4750-aa4a-957cd0ac60a1
+
+one with ref2vid and other fl2vid.
+
+And i must say what is this? i mean it contains a large 32b vl encoder and it still fails to understand simple tasks? i am not saying that the models are bad in fact they are the best one so far as opensource, but selling with fake cherry on top of it is not right.
+
+I am not from the Minimax team, but theeir API version uses a prompt enhancer. No model can understand simple words literally, a prompt enhancer is needed for every model. That's how the DiT arch works. They literally state it on their HF page. 32B for text encoding because video models need complex understanding which can only happen in large LLMs. Every multi-shot model out there use large LLMs for prompt encoding.
+
+Hi,
+
+Thank you for the reply, yes i was wrong i did not read the whole page correctly they mentioned they have not open sourced the prompt enhancer. what they stated:
+
+"Because H3-Context-IR relies on a multi-stage workflow and multiple hosted models and services, it is not included in this open-source release. "
+
+After reading this i built my own system prompt for this specific task not based on their guide, took 5 hours though because vllm output was not good for H3, now after running it i got these result on all tries works very good now.
+
+ [https://github.com/user-attachments/assets/915247f7-63cd-4665-8b04-56cc824bee83] https://github.com/user-attachments/assets/915247f7-63cd-4665-8b04-56cc824bee83
+
+ [https://github.com/user-attachments/assets/0760ae1c-f016-4de5-925e-36c730435cce] https://github.com/user-attachments/assets/0760ae1c-f016-4de5-925e-36c730435cce
+
+ [https://github.com/user-attachments/assets/fc47ecb8-e55d-468f-abd5-c8b69833d180] https://github.com/user-attachments/assets/fc47ecb8-e55d-468f-abd5-c8b69833d180
+
+and i must mention i use ref2vid model here with just single image with overlaid text on it since this was the goal, not separate image.
+

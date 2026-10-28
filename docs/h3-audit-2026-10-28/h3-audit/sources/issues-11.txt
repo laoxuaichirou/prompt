@@ -1,0 +1,153 @@
+
+
+Skill folder name doesn't match its documented display name (music-video-subtitle-generator) #11
+
+Closed
+
+Closed
+
+Skill Name Mismatch: music-video-subtitle-generator vs mv-subtitle-skill-confirmed
+
+Description
+
+The README lists music-video-subtitle-generator as one of the 8 available style skills, but the linked skill path points to:
+
+skills/mv-subtitle-skill-confirmed/SKILL.md
+
+The folder name does not match the skill name displayed in the README. This creates an inconsistency between the public skill name and the actual directory structure.
+
+Why it matters
+
+According to the README, users can install skills using:
+
+npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill
+
+A user reading the README would reasonably expect the skill to be available under the name:
+
+music-video-subtitle-generator
+
+However, the repository uses:
+
+mv-subtitle-skill-confirmed
+
+If the CLI resolves skills based on the directory/skill identifier, a user following the README may be unable to resolve the skill using the name they see in the documentation.
+
+This can lead to:
+
+Confusion when installing or referencing the skill.
+
+A mismatch between documentation and repository structure.
+
+Difficulty discovering the correct skill directory.
+
+Potential installation or resolution failures for users relying on the documented name.
+
+Additional maintenance overhead because the README and filesystem use different identifiers.
+
+Steps to Reproduce
+
+Open README.md.
+
+Navigate to the Prompt Writing Skill section.
+
+Find the skill named music-video-subtitle-generator.
+
+Follow the link provided for the skill.
+
+Observe that the link points to:
+
+skills/mv-subtitle-skill-confirmed/SKILL.md
+
+Compare the displayed skill name with the directory name.
+
+Expected Behavior
+
+The skill name shown in the README should match the corresponding skill directory.
+
+For example:
+
+music-video-subtitle-generator
+
+should point to:
+
+skills/music-video-subtitle-generator/SKILL.md
+
+This would keep the documented name, filesystem path, and CLI-facing skill identifier consistent.
+
+Actual Behavior
+
+The README displays:
+
+music-video-subtitle-generator
+
+but the actual directory is:
+
+skills/mv-subtitle-skill-confirmed/
+
+This creates a naming mismatch.
+
+Suggested Fix
+
+Rename:
+
+skills/mv-subtitle-skill-confirmed/
+
+to:
+
+skills/music-video-subtitle-generator/
+
+Then update the corresponding README link from:
+
+skills/mv-subtitle-skill-confirmed/SKILL.md
+
+to:
+
+skills/music-video-subtitle-generator/SKILL.md
+
+It would also be worth checking the repository for any other references to mv-subtitle-skill-confirmed and updating them if they are intended to use the public skill name.
+
+Additional Checks
+
+After making the rename, verify:
+
+The SKILL.md file remains in the expected location.
+
+No internal references still point to the old directory.
+
+The README skill grid links to the new path.
+
+Any installation examples or documentation use the same skill identifier.
+
+The skill can be discovered/resolved using the name shown in the README.
+
+Acceptance Criteria
+
+ Directory is renamed to skills/music-video-subtitle-generator/.
+
+ SKILL.md exists at the new path.
+
+ README links to the new path.
+
+ References to mv-subtitle-skill-confirmed are updated where appropriate.
+
+ The documented skill name and directory name are consistent.
+
+ The skill remains installable/discoverable using music-video-subtitle-generator.
+
+Files Checked
+
+README.md
+
+Prompt Writing Skill section
+
+Skill grid
+
+skills/mv-subtitle-skill-confirmed/SKILL.md
+
+Scope
+
+This appears to be a small documentation/repository-structure consistency issue. No changes to the actual skill implementation should be necessary unless an internal reference depends on the old directory name.
+
+ [/RyanLee-Dev] RyanLee-Dev
+closed this as  [/MiniMax-AI/MiniMax-H3/issues?q=is%3Aissue%20state%3Aclosed%20archived%3Afalse%20reason%3Acompleted] completedin  [https://github.com/MiniMax-AI/MiniMax-H3/pull/12] #12 [https://github.com/MiniMax-AI/MiniMax-H3/issues/11#event-29178076708] on Aug 9, 2026
+
