@@ -1,0 +1,11 @@
+﻿pair,arm,trial,mode,stage,skill_sha256,task_file,reference_files,model,seed,parameters,output_files,status,quality_verdict,issues,calls,elapsed_seconds,cost,notes
+P1,A,1,text,initial,,,,,,,,not-run,not-evaluated,,,,,
+P1,B,1,text,initial,,,,,,,,not-run,not-evaluated,,,,,
+P2,A,1,image,initial,,,,,,,,not-run,not-evaluated,,,,,
+P2,B,1,image,initial,,,,,,,,not-run,not-evaluated,,,,,
+P3,A,1,text,initial,,,,,,,,not-run,not-evaluated,,,,,
+P3,B,1,text,initial,,,,,,,,not-run,not-evaluated,,,,,
+P3,A,1,video,initial,,,,,,,,not-run,not-evaluated,,,,,
+P3,B,1,video,initial,,,,,,,,not-run,not-evaluated,,,,,
+P4,A,1,code,initial,,,,,,,,not-run,not-evaluated,,,,,
+P4,B,1,code,initial,,,,,,,,not-run,not-evaluated,,,,,

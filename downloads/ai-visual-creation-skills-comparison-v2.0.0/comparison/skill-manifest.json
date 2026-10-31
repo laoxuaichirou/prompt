@@ -1,0 +1,114 @@
+{
+  "version": "2.0.0",
+  "skills": [
+    {
+      "arm": "A",
+      "name": "ash-swordswoman-source",
+      "file": "A-source-faithful/skills/ash-swordswoman-source/SKILL.md",
+      "sha256": "9427d6b5cb4d91d97e08f127020d100320b1c6dd49c71ab94bc232dd8a02190e",
+      "classification": "original-prompt-carrier",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "crimson-blade-source",
+      "file": "A-source-faithful/skills/crimson-blade-source/SKILL.md",
+      "sha256": "ac5775b5f6510e27d7f8118143a3b0d1afb2b1e66c9af0f4d3353f01f48ee160",
+      "classification": "original-prompt-carrier",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "ctx-6-dev",
+      "file": "A-source-faithful/skills/ctx-6-dev/SKILL.md",
+      "sha256": "927f6c61f0a2eebf8b993e32f24c35026037af9ca7d16aae6d44e712d12b43ec",
+      "classification": "exact-original-extracted-from-rar",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "seedance-director",
+      "file": "A-source-faithful/skills/seedance-director/SKILL.md",
+      "sha256": "96eb5ba3e66dffce46e52edd0801b94562e8260e1ea9c4187326cf8e12b2592e",
+      "classification": "exact-original-skill",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "tutorial-canvas-foundation",
+      "file": "A-source-faithful/skills/tutorial-canvas-foundation/SKILL.md",
+      "sha256": "633998507f00502cc3ca2ec98ff98a3eccbea7e41ffdc08b10ca45ecc9e67706",
+      "classification": "course-derived-faithful-wrapper",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "tutorial-film-production",
+      "file": "A-source-faithful/skills/tutorial-film-production/SKILL.md",
+      "sha256": "b6363e012662596c450e8211ac0f62979762890a017fe729322a85223142714d",
+      "classification": "course-derived-faithful-wrapper",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "A",
+      "name": "visual-ad-source",
+      "file": "A-source-faithful/skills/visual-ad-source/SKILL.md",
+      "sha256": "88de16df25221827d7deba0927166e348863ab4dda68925032cad5e7fd85806b",
+      "classification": "original-prompt-carrier",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "none-for-this-package"
+    },
+    {
+      "arm": "B",
+      "name": "context-driven-dev",
+      "file": "B-adapted/skills/context-driven-dev/SKILL.md",
+      "sha256": "9618375a6458a694151f10e3ab6ce1b8144b83533208143a42e2ba10a52af00c",
+      "classification": "adapted-v1-frozen",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "not-a-paired-trial; see evidence/"
+    },
+    {
+      "arm": "B",
+      "name": "creative-workflow-planner",
+      "file": "B-adapted/skills/creative-workflow-planner/SKILL.md",
+      "sha256": "a03eaa0bc774ec8430616d3b277ef4b661bcb61601a3e5a3782c997e4c46d409",
+      "classification": "adapted-v1-frozen",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "not-a-paired-trial; see evidence/"
+    },
+    {
+      "arm": "B",
+      "name": "image-storyboard-director",
+      "file": "B-adapted/skills/image-storyboard-director/SKILL.md",
+      "sha256": "9a68491a1189addfe96a69a9f33eafca53378b161e68d8d431e8973b21256999",
+      "classification": "adapted-v1-frozen",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "not-a-paired-trial; see evidence/"
+    },
+    {
+      "arm": "B",
+      "name": "video-prompt-director",
+      "file": "B-adapted/skills/video-prompt-director/SKILL.md",
+      "sha256": "3069ec0859a866a54feae9012a7f92c2b5693d11ff3c46436f7bddbbf0fadd0c",
+      "classification": "adapted-v1-frozen",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "not-a-paired-trial; see evidence/"
+    },
+    {
+      "arm": "B",
+      "name": "visual-consistency-reviewer",
+      "file": "B-adapted/skills/visual-consistency-reviewer/SKILL.md",
+      "sha256": "38c30c8d9fe5be2b7fe7cadeed0d12da8f650258149e46b3ad96713e1c373308",
+      "classification": "adapted-v1-frozen",
+      "skill_end_to_end_status": "not-run",
+      "historical_method_evidence": "not-a-paired-trial; see evidence/"
+    }
+  ],
+  "evaluation": "No A/B outcomes yet; prior images are method trials preceding skill authoring."
+}
